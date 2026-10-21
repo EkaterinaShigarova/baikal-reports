@@ -1,0 +1,21 @@
+# Immutable originals and processing products stay local
+/data/
+/.venv/
+/.tools/
+/.cache/
+*.pdf
+*.PDF
+*.sqlite*
+*.db
+*.partial
+*.log
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.env
+.env.*
+!.env.example
+credentials*.json
+*service-account*.json
+.DS_Store

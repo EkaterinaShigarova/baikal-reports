@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "baikal-llm-wiki"
+version = "0.1.0"
+description = "Evidence-linked Baikal report processing and persistent knowledge wiki"
+requires-python = ">=3.11"
+dependencies = ["PyMuPDF==1.26.6", "pdfplumber==0.11.9", "fastapi==0.141.1", "uvicorn==0.52.1"]
+
+[project.scripts]
+baikal = "baikal.cli:main"
+
+[tool.setuptools]
+packages = ["baikal"]
