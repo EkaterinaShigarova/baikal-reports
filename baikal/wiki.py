@@ -77,6 +77,16 @@ def append_log(operation, message):
     atomic_text(path, old + f"\n## [{date}] {operation} | {message}\n")
 
 
+def scoped_text(source, page):
+    """Keep national-review evidence within its reviewed Baikal section."""
+    ranges = source.get("wiki_page_ranges")
+    if ranges and not any(a <= page["page"] <= b for a, b in ranges):
+        return ""
+    text = page["text"]
+    stop = source.get("wiki_stop_before", {}).get(str(page["page"]))
+    return text.split(stop, 1)[0] if stop else text
+
+
 def build():
     sources = load_sources()["sources"]
     local_ids = {
@@ -116,9 +126,9 @@ def build():
             "",
         ]
         for p in pages:
-            text = p["text"]
+            text = scoped_text(s, p)
             n = p["page"]
-            first = " ".join(text.split())[:230].rstrip()
+            first = " ".join(p["text"].split())[:230].rstrip()
             for key, (name, pattern) in TOPICS.items():
                 m = re.search(pattern, text, re.I)
                 if m:
@@ -152,7 +162,12 @@ def build():
         summary += [
             "",
             "## Ограничения",
-            "Текст — автоматическое извлечение. Таблицы, графики и OCR требуют проверки; соответствие зеркала официальной публикации отдельно не подтверждено.",
+            "Текст — автоматическое извлечение. Таблицы, графики и OCR требуют проверки. "
+            + (
+                "Публикация скачана с официального сайта; это не проверка электронной подписи."
+                if s["authenticity"] == "official_verified"
+                else "Соответствие зеркала официальной публикации отдельно не подтверждено."
+            ),
         ]
         changed += write_page(WIKI / "sources" / f"{sid}.md", "\n".join(summary))
         index.append((f"sources/{sid}.md", title))
@@ -261,6 +276,19 @@ def lint():
     errors = []
     warnings = []
     cat = {s["id"]: s for s in load_sources()["sources"]}
+    provenance = read_json(ROOT / "datasets/article_provenance.json", {})
+    for name, refs in provenance.items():
+        if not (WIKI / name).is_file():
+            errors.append(f"article provenance without page: {name}")
+        for ref in refs:
+            current = cat.get(ref["source_id"])
+            if not current or current.get("sha256") != ref.get("sha256"):
+                warnings.append(
+                    f"stale synthesis: {name}: source revision {ref['source_id']}; review before reuse"
+                )
+    for path in (WIKI / "syntheses").glob("*.md"):
+        if str(path.relative_to(WIKI)) not in provenance:
+            warnings.append(f"synthesis missing revision provenance: {path.name}")
     links = {}
     allpages = set(WIKI.rglob("*.md"))
     for path in allpages:

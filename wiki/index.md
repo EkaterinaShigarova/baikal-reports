@@ -2,12 +2,17 @@
 
 Сохранённая база знаний с проверяемыми ссылками.
 
+- [2015.pdf](sources/drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab.md)
+- [Госдоклад_2022 (23857770 v1).pdf](sources/drive-1oYm8VhJ3_eRNdxbrGfLXhf6_vI6s6SJq.md)
 - [госдоклад_2023_О_состоянии_озера_Байкал_версия_26122024 (2) (1) (1).pdf](sources/drive-1C-SRfbklf00M5rsLajYO_2nFCdmCL1fi.md)
 - [Государственный доклад о состоянии оз. Байкал и мерах по его охране в 2024 году.pdf](sources/drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos.md)
 - [Доклад Байкал 2019 год.pdf](sources/drive-1RWGLrOzFO32Jxrlv-B2n_PafSFoRVySn.md)
 - [Доклад Байкал 2020 год.pdf](sources/drive-1ScikzOKs0VW7ZZS1XWKyoOfcHeYklUEP.md)
 - [Доклад Байкал 2021 год (1).pdf](sources/drive-1oLnz6N8ueMCEL8p2HnPDtT7dx1tAE8RB.md)
 - [Доклад Байкал за 2018 год.pdf](sources/drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ.md)
+- [Доклад Байкал-07.12.2018-2.pdf](sources/drive-1jl98YhWpGzbTkJXflFXv0fHB7yKqPRJr.md)
+- [Доклад_Байкал_2016_.pdf](sources/drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0.md)
+- [Росгидромет: Обзор состояния и загрязнения окружающей среды в Российской Федерации за 2025 год](sources/official-b4e3fcfe0e41e26ea03b.md)
 - [Качество воды](topics/water-quality.md)
 - [Гидрология и водный баланс](topics/hydrology.md)
 - [Сточные воды и водопользование](topics/wastewater.md)
@@ -19,7 +24,14 @@
 - [Озеро Байкал](entities/baikal.md)
 - [Река Селенга](entities/selenga.md)
 - [Байкальская природная территория](entities/baikal-natural-area.md)
+- [Атмосферный воздух: выбросы теплоэнергетики и границы сравнения](syntheses/air-pollution.md)
+- [Байкальская нерпа: численность, воспроизводство и ограничения сравнения](syntheses/baikal-seal.md)
 - [Выбросы теплоэнергетики: что подтверждает ретроспективный ряд](syntheses/emissions-and-comparability.md)
+- [Экологические проблемы Байкала: связанная картина и пределы знаний](syntheses/environmental-problems.md)
+- [Рыбы и биоразнообразие: почему одного показателя недостаточно](syntheses/fish-and-biodiversity.md)
+- [Притоки Байкала: водный сток и вынос веществ в 2024–2025 годах](syntheses/river-inputs-2025.md)
+- [Отходы и загрязнение: территория, класс опасности и меры управления](syntheses/waste-and-pollution.md)
+- [Качество воды: нормы, станции и локальные превышения](syntheses/water-quality-evidence.md)
 - [Поиск в сохранённой Wiki](queries/04bc1a01d895.md)
 
 [Журнал](LOG.md)

@@ -57,12 +57,22 @@ def find(
 
 
 @app.get("/api/observations")
-def data(territory: str | None = None, year: int | None = None):
+def data(
+    territory: str | None = None,
+    year: int | None = None,
+    year_from: int | None = None,
+    year_to: int | None = None,
+):
+    if year_from is not None and year_to is not None and year_from > year_to:
+        raise HTTPException(422, "Начальный год больше конечного")
     return [
         r
         for r in observations()
         if (not territory or r["territory"] == territory)
         and (not year or r["year"] == year)
+        and (year_from is None or r["year"] >= year_from)
+        and (year_to is None or r["year"] <= year_to)
+        and r["review_status"] == "reviewed"
     ]
 
 
@@ -109,7 +119,11 @@ def page(sid: str, n: int):
     result = read_json(page_dir(s) / "pages" / f"{n:04d}.json")
     if not result:
         raise HTTPException(404, "Страница ещё не обработана")
-    return dict(result, source=s)
+    audit = next(
+        (a for a in read_json(page_dir(s) / "table_audit.json", []) if a["page"] == n),
+        None,
+    )
+    return dict(result, source=s, table_audit=audit)
 
 
 @app.get("/api/documents/{sid}/preview/{n}")

@@ -1,0 +1,112 @@
+[
+  {
+    "source_id": "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
+    "sha256": "26dc3610938c5b8f91e85b4179ee1092f20aa03684135d0534b8ad2ab9629023",
+    "year": 2015,
+    "pages_audited": 169,
+    "pages_flagged": 102,
+    "tables_audited": 312,
+    "tables_flagged": 134,
+    "status": "heuristic_review_required"
+  },
+  {
+    "source_id": "drive-1oYm8VhJ3_eRNdxbrGfLXhf6_vI6s6SJq",
+    "sha256": "6363b7b441d241e4718714b0062a2e011647e14b8219193f0a40a08270568e8e",
+    "year": 2022,
+    "pages_audited": 176,
+    "pages_flagged": 65,
+    "tables_audited": 216,
+    "tables_flagged": 73,
+    "status": "heuristic_review_required"
+  },
+  {
+    "source_id": "drive-1C-SRfbklf00M5rsLajYO_2nFCdmCL1fi",
+    "sha256": "da48b7061dc74cdc300213ca2e4b6f0d124ac5aab5aa7f2da84d3c3451d07066",
+    "year": 2023,
+    "pages_audited": 160,
+    "pages_flagged": 55,
+    "tables_audited": 229,
+    "tables_flagged": 90,
+    "status": "heuristic_review_required"
+  },
+  {
+    "source_id": "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos",
+    "sha256": "557959d2c8996b990487e9d2acd501ca4048f29e3c7a6fe27e49f8fc1c554fd8",
+    "year": 2024,
+    "pages_audited": 150,
+    "pages_flagged": 18,
+    "tables_audited": 213,
+    "tables_flagged": 24,
+    "status": "heuristic_review_required"
+  },
+  {
+    "source_id": "drive-1RWGLrOzFO32Jxrlv-B2n_PafSFoRVySn",
+    "sha256": "747fadeaf55107fbf9fbb5965696912195b4795436a9f300c009a4f5e5d9839a",
+    "year": 2019,
+    "pages_audited": 170,
+    "pages_flagged": 40,
+    "tables_audited": 382,
+    "tables_flagged": 95,
+    "status": "heuristic_review_required"
+  },
+  {
+    "source_id": "drive-1ScikzOKs0VW7ZZS1XWKyoOfcHeYklUEP",
+    "sha256": "48bfd75a6c75a685d4f5ff2ea52cd1aba78d6d0a6bd45fbd311d5305a9b84c54",
+    "year": 2020,
+    "pages_audited": 171,
+    "pages_flagged": 62,
+    "tables_audited": 195,
+    "tables_flagged": 62,
+    "status": "heuristic_review_required"
+  },
+  {
+    "source_id": "drive-1oLnz6N8ueMCEL8p2HnPDtT7dx1tAE8RB",
+    "sha256": "9f0ff38111fe9092e96e8bed6e602f92a5b1e63f6cd9bbcb856d76dc3b7fb391",
+    "year": 2021,
+    "pages_audited": 164,
+    "pages_flagged": 11,
+    "tables_audited": 196,
+    "tables_flagged": 15,
+    "status": "heuristic_review_required"
+  },
+  {
+    "source_id": "drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ",
+    "sha256": "c813f2671ebb235dd3291076f3c728bb78d821391024e2bce754849c79fa992a",
+    "year": 2018,
+    "pages_audited": 148,
+    "pages_flagged": 86,
+    "tables_audited": 232,
+    "tables_flagged": 97,
+    "status": "heuristic_review_required"
+  },
+  {
+    "source_id": "drive-1jl98YhWpGzbTkJXflFXv0fHB7yKqPRJr",
+    "sha256": "80935438545af9b1fd55811ea6b4345822b62301ba472e71e76f1a67f7b4967d",
+    "year": 2017,
+    "pages_audited": 148,
+    "pages_flagged": 80,
+    "tables_audited": 243,
+    "tables_flagged": 100,
+    "status": "heuristic_review_required"
+  },
+  {
+    "source_id": "drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0",
+    "sha256": "60ccb6065b32d959457faf9745023d763c9f6641ad7c9c8cdee7a88fea454139",
+    "year": 2016,
+    "pages_audited": 169,
+    "pages_flagged": 90,
+    "tables_audited": 375,
+    "tables_flagged": 131,
+    "status": "heuristic_review_required"
+  },
+  {
+    "source_id": "official-b4e3fcfe0e41e26ea03b",
+    "sha256": "f42cd72201a7bb8652d10a571c5f472e9f9bd738d78939d676b13d0ee6146920",
+    "year": 2025,
+    "pages_audited": 124,
+    "pages_flagged": 36,
+    "tables_audited": 187,
+    "tables_flagged": 61,
+    "status": "heuristic_review_required"
+  }
+]

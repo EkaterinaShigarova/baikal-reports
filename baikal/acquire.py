@@ -260,13 +260,13 @@ def write_sources():
         "",
         "Google Drive — зеркало передачи. Подлинность официальной публикации указывается отдельно. Год из имени — подсказка, не подтверждение.",
         "",
-        "| Документ | Год по титулу / подсказка | Ведомство | Официальный URL | Доступ / обработка | Подлинность |",
-        "| --- | --- | --- | --- | --- | --- |",
+        "| Документ | Год по титулу / подсказка | Тип | Ведомство | Официальный URL | Доступ / обработка | Подлинность |",
+        "| --- | --- | --- | --- | --- | --- | --- |",
     ]
     for s in cat["sources"]:
         year = s.get("report_year") or f"{s.get('year_hint', '?')} (имя)"
         lines.append(
-            f"| [{s['name']}]({s['url']}) | {year} | {s.get('agency', '?')} | {s.get('official_url') or 'Не подтверждён'} | {s['status']} ({s.get('extracted_pages', 0)}/{s.get('pages', '?')} стр.) | {s.get('authenticity', 'unknown')} |"
+            f"| [{s['name']}]({s['url']}) | {year} | {'Общероссийский обзор с разделом о Байкале' if s.get('document_type') == 'supplementary_national_review' else 'Госдоклад о Байкале'} | {s.get('agency', '?')} | {s.get('official_url') or 'Не подтверждён'} | {s['status']} ({s.get('extracted_pages', 0)}/{s.get('pages', '?')} стр.) | {s.get('authenticity', 'unknown')} |"
         )
     lines += [
         "",
@@ -280,7 +280,7 @@ def write_sources():
             s for s in cat["sources"] if s.get("report_year", s.get("year_hint")) == y
         ]
         lines.append(
-            f"| {y} | {len(items)} документ(ов)"
+            f"| {y} | {sum(s.get('document_type') != 'supplementary_national_review' for s in items)} госдоклад(ов) о Байкале; {sum(s.get('document_type') == 'supplementary_national_review' for s in items)} дополнительных обзоров"
             + (
                 " (год требует проверки)"
                 if items and any(not s.get("report_year") for s in items)

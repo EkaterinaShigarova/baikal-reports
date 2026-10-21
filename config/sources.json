@@ -2,7 +2,7 @@
   "sources": [
     {
       "id": "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
-      "status": "discovered",
+      "status": "processed",
       "drive_id": "1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
       "name": "2015.pdf",
       "mime": "application/pdf",
@@ -12,12 +12,20 @@
       "year_hint": 2015,
       "authenticity": "mirror_unverified",
       "official_url": null,
-      "agency": "Требует проверки титула",
-      "last_seen": "2026-10-21T12:04:28.096450+00:00"
+      "agency": "Минприроды России (по титулу PDF; официальный URL не подтверждён)",
+      "last_seen": "2026-10-21T12:04:28.096450+00:00",
+      "download_final_url": "https://drive.usercontent.google.com/download?id=1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab&export=download",
+      "sha256": "26dc3610938c5b8f91e85b4179ee1092f20aa03684135d0534b8ad2ab9629023",
+      "bytes": 388310570,
+      "pages": 372,
+      "remote_changed": false,
+      "report_year": 2015,
+      "extracted_pages": 372,
+      "document_type": "baikal_state_report"
     },
     {
       "id": "drive-1oYm8VhJ3_eRNdxbrGfLXhf6_vI6s6SJq",
-      "status": "discovered",
+      "status": "processed",
       "drive_id": "1oYm8VhJ3_eRNdxbrGfLXhf6_vI6s6SJq",
       "name": "Госдоклад_2022 (23857770 v1).pdf",
       "mime": "application/pdf",
@@ -27,8 +35,15 @@
       "year_hint": 2022,
       "authenticity": "mirror_unverified",
       "official_url": null,
-      "agency": "Требует проверки титула",
-      "last_seen": "2026-10-21T12:04:28.096479+00:00"
+      "agency": "Минприроды России (по титулу PDF; официальный URL не подтверждён)",
+      "last_seen": "2026-10-21T12:04:28.096479+00:00",
+      "sha256": "6363b7b441d241e4718714b0062a2e011647e14b8219193f0a40a08270568e8e",
+      "bytes": 100524952,
+      "pages": 374,
+      "remote_changed": false,
+      "report_year": 2022,
+      "extracted_pages": 374,
+      "document_type": "baikal_state_report"
     },
     {
       "id": "drive-1C-SRfbklf00M5rsLajYO_2nFCdmCL1fi",
@@ -49,11 +64,12 @@
       "pages": 414,
       "remote_changed": false,
       "report_year": 2023,
-      "extracted_pages": 414
+      "extracted_pages": 414,
+      "document_type": "baikal_state_report"
     },
     {
       "id": "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos",
-      "status": "downloaded",
+      "status": "processed",
       "drive_id": "1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos",
       "name": "Государственный доклад о состоянии оз. Байкал и мерах по его охране в 2024 году.pdf",
       "mime": "application/pdf",
@@ -63,12 +79,15 @@
       "year_hint": 2024,
       "authenticity": "mirror_unverified",
       "official_url": null,
-      "agency": "Требует проверки титула",
+      "agency": "Минприроды России (по титулу PDF; официальный URL не подтверждён)",
       "last_seen": "2026-10-21T12:04:28.096491+00:00",
       "sha256": "557959d2c8996b990487e9d2acd501ca4048f29e3c7a6fe27e49f8fc1c554fd8",
       "bytes": 30433910,
       "pages": 353,
-      "remote_changed": false
+      "remote_changed": false,
+      "report_year": 2024,
+      "extracted_pages": 353,
+      "document_type": "baikal_state_report"
     },
     {
       "id": "drive-1RWGLrOzFO32Jxrlv-B2n_PafSFoRVySn",
@@ -89,7 +108,8 @@
       "pages": 348,
       "remote_changed": false,
       "report_year": 2019,
-      "extracted_pages": 348
+      "extracted_pages": 348,
+      "document_type": "baikal_state_report"
     },
     {
       "id": "drive-1ScikzOKs0VW7ZZS1XWKyoOfcHeYklUEP",
@@ -110,7 +130,8 @@
       "pages": 361,
       "remote_changed": false,
       "report_year": 2020,
-      "extracted_pages": 361
+      "extracted_pages": 361,
+      "document_type": "baikal_state_report"
     },
     {
       "id": "drive-1oLnz6N8ueMCEL8p2HnPDtT7dx1tAE8RB",
@@ -131,7 +152,8 @@
       "pages": 372,
       "remote_changed": false,
       "report_year": 2021,
-      "extracted_pages": 372
+      "extracted_pages": 372,
+      "document_type": "baikal_state_report"
     },
     {
       "id": "drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ",
@@ -152,11 +174,12 @@
       "pages": 342,
       "remote_changed": false,
       "report_year": 2018,
-      "extracted_pages": 342
+      "extracted_pages": 342,
+      "document_type": "baikal_state_report"
     },
     {
       "id": "drive-1jl98YhWpGzbTkJXflFXv0fHB7yKqPRJr",
-      "status": "discovered",
+      "status": "processed",
       "drive_id": "1jl98YhWpGzbTkJXflFXv0fHB7yKqPRJr",
       "name": "Доклад Байкал-07.12.2018-2.pdf",
       "mime": "application/pdf",
@@ -166,12 +189,20 @@
       "year_hint": 2018,
       "authenticity": "mirror_unverified",
       "official_url": null,
-      "agency": "Требует проверки титула",
-      "last_seen": "2026-10-21T12:04:28.096510+00:00"
+      "agency": "Минприроды России (по титулу PDF; официальный URL не подтверждён)",
+      "last_seen": "2026-10-21T12:04:28.096510+00:00",
+      "download_final_url": "https://drive.usercontent.google.com/download?id=1jl98YhWpGzbTkJXflFXv0fHB7yKqPRJr&export=download",
+      "sha256": "80935438545af9b1fd55811ea6b4345822b62301ba472e71e76f1a67f7b4967d",
+      "bytes": 237121292,
+      "pages": 341,
+      "remote_changed": false,
+      "report_year": 2017,
+      "extracted_pages": 341,
+      "document_type": "baikal_state_report"
     },
     {
       "id": "drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0",
-      "status": "discovered",
+      "status": "processed",
       "drive_id": "1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0",
       "name": "Доклад_Байкал_2016_.pdf",
       "mime": "application/pdf",
@@ -181,17 +212,51 @@
       "year_hint": 2016,
       "authenticity": "mirror_unverified",
       "official_url": null,
-      "agency": "Требует проверки титула",
-      "last_seen": "2026-10-21T12:04:28.096513+00:00"
+      "agency": "Минприроды России (по титулу PDF; официальный URL не подтверждён)",
+      "last_seen": "2026-10-21T12:04:28.096513+00:00",
+      "sha256": "60ccb6065b32d959457faf9745023d763c9f6641ad7c9c8cdee7a88fea454139",
+      "bytes": 103039770,
+      "pages": 374,
+      "remote_changed": false,
+      "report_year": 2016,
+      "extracted_pages": 374,
+      "document_type": "baikal_state_report"
+    },
+    {
+      "id": "official-b4e3fcfe0e41e26ea03b",
+      "name": "Росгидромет: Обзор состояния и загрязнения окружающей среды в Российской Федерации за 2025 год",
+      "url": "https://www.meteorf.gov.ru/upload/iblock/af9/%D0%90%D0%B2%D1%82%D0%BE%D1%80%D1%81%D0%BA%D0%B8%D0%B9%20%D0%B2%D0%B0%D1%80%D0%B8%D0%B0%D0%BD%D1%82%20%D0%9E%D0%B1%D0%B7%D0%BE%D1%80%D0%B0%20%D0%B7%D0%B0%202026%20%D0%B3.-%D0%B8%D1%81%D0%BF%D1%80%D0%B0%D0%B2.pdf",
+      "download_url": "https://www.meteorf.gov.ru/upload/iblock/af9/%D0%90%D0%B2%D1%82%D0%BE%D1%80%D1%81%D0%BA%D0%B8%D0%B9%20%D0%B2%D0%B0%D1%80%D0%B8%D0%B0%D0%BD%D1%82%20%D0%9E%D0%B1%D0%B7%D0%BE%D1%80%D0%B0%20%D0%B7%D0%B0%202026%20%D0%B3.-%D0%B8%D1%81%D0%BF%D1%80%D0%B0%D0%B2.pdf",
+      "official_url": "https://www.meteorf.gov.ru/upload/iblock/af9/%D0%90%D0%B2%D1%82%D0%BE%D1%80%D1%81%D0%BA%D0%B8%D0%B9%20%D0%B2%D0%B0%D1%80%D0%B8%D0%B0%D0%BD%D1%82%20%D0%9E%D0%B1%D0%B7%D0%BE%D1%80%D0%B0%20%D0%B7%D0%B0%202026%20%D0%B3.-%D0%B8%D1%81%D0%BF%D1%80%D0%B0%D0%B2.pdf",
+      "year_hint": 2025,
+      "agency": "Росгидромет",
+      "authenticity": "official_verified",
+      "status": "processed",
+      "sha256": "f42cd72201a7bb8652d10a571c5f472e9f9bd738d78939d676b13d0ee6146920",
+      "bytes": 16075454,
+      "expected_bytes": 16075454,
+      "pages": 227,
+      "report_year": 2025,
+      "publication_year": 2026,
+      "document_type": "supplementary_national_review",
+      "discovered_on": "https://www.meteorf.gov.ru/product/infomaterials/",
+      "download_final_url": "https://www.meteorf.gov.ru/upload/iblock/af9/%D0%90%D0%B2%D1%82%D0%BE%D1%80%D1%81%D0%BA%D0%B8%D0%B9%20%D0%B2%D0%B0%D1%80%D0%B8%D0%B0%D0%BD%D1%82%20%D0%9E%D0%B1%D0%B7%D0%BE%D1%80%D0%B0%20%D0%B7%D0%B0%202026%20%D0%B3.-%D0%B8%D1%81%D0%BF%D1%80%D0%B0%D0%B2.pdf",
+      "authenticity_basis": "HTTP 200 from official meteorf.gov.ru PDF linked by official publication index; full 16075454-byte PDF opened without repair; title page confirms Rosgidromet, reporting year 2025 and publication year 2026. Not a dedicated Baikal state report or digital-signature verification.",
+      "title_excerpt": "ФЕДЕРАЛЬНАЯ СЛУЖБА ПО ГИДРОМЕТЕОРОЛОГИИ \nИ МОНИТОРИНГУ ОКРУЖАЮЩЕЙ СРЕДЫ \n(РОСГИДРОМЕТ) \n \n \n \n \n \n \n \n \n \n \n \nО Б З О Р  \nСОСТОЯНИЯ И ЗАГРЯЗНЕНИЯ ОКРУЖАЮЩЕЙ СРЕДЫ \nВ РОССИЙСКОЙ ФЕДЕРАЦИИ \nЗА 2025 ГОД \n \n \n \n \n \n \n \n \n \n \n \n \n \nМОСКВА \n2026",
+      "verified_at": "2026-10-22",
+      "extracted_pages": 227,
+      "wiki_page_ranges": [
+        [
+          156,
+          174
+        ]
+      ],
+      "wiki_stop_before": {
+        "174": "4.3. Арктическая зона Российской Федерации"
+      }
     }
   ],
   "discovery": [
-    {
-      "url": "https://www.mnr.gov.ru/docs/gosudarstvennye_doklady/",
-      "status": "blocked_or_failed",
-      "error": "HTTP Error 503: Service Unavailable",
-      "checked_at": "2026-10-21T12:04:31.253892+00:00"
-    },
     {
       "url": "https://www.mnr.gov.ru/activity/directions/okhrana_ozera_baykal/",
       "status": "blocked_or_failed",
@@ -199,22 +264,46 @@
       "checked_at": "2026-10-21T12:04:36.031571+00:00"
     },
     {
+      "url": "https://www.google.com/search?q=%D0%91%D0%B0%D0%B9%D0%BA%D0%B0%D0%BB%20%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%202014%20site%3Amnr.gov.ru",
+      "status": 200,
+      "checked_at": "2026-10-22",
+      "error": "HTTP response received"
+    },
+    {
+      "url": "https://www.bing.com/search?q=%D0%91%D0%B0%D0%B9%D0%BA%D0%B0%D0%BB%20%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%202003%20site%3Abaikalake.ru",
+      "status": 200,
+      "checked_at": "2026-10-22",
+      "error": "HTTP response received"
+    },
+    {
       "url": "https://baikalake.ru/security/info/reports/",
-      "status": "blocked_or_failed",
-      "error": "HTTP Error 503: Service Unavailable",
-      "checked_at": "2026-10-21T12:04:38.426117+00:00"
+      "status": 503,
+      "checked_at": "2026-10-22",
+      "error": "upstream connect error or disconnect/reset before headers. reset reason: remote connection failure, transport failure reason: TLS_error:|268435581:SSL routines:OPENSSL_internal:CERTIFICATE_VERIFY_FAILED:TLS_error_end"
+    },
+    {
+      "url": "https://www.mnr.gov.ru/docs/gosudarstvennye_doklady/",
+      "status": 503,
+      "checked_at": "2026-10-22",
+      "error": "upstream connect error or disconnect/reset before headers. reset reason: connection timeout"
     },
     {
       "url": "https://voda.gov.ru/",
-      "status": "blocked_or_failed",
-      "error": "HTTP Error 503: Service Unavailable",
-      "checked_at": "2026-10-21T12:04:48.122901+00:00"
+      "status": 503,
+      "checked_at": "2026-10-22",
+      "error": "upstream connect error or disconnect/reset before headers. reset reason: remote connection failure, transport failure reason: TLS_error:|268435581:SSL routines:OPENSSL_internal:CERTIFICATE_VERIFY_FAILED:TLS_error_end"
     },
     {
       "url": "https://www.meteorf.gov.ru/",
       "status": 200,
-      "checked_at": "2026-10-21T12:04:59.861950+00:00",
-      "pdf_links": []
+      "checked_at": "2026-10-22",
+      "error": "HTTP response received"
+    },
+    {
+      "url": "https://www.meteorf.gov.ru/product/infomaterials/",
+      "status": 200,
+      "checked_at": "2026-10-22",
+      "error": "Official 2025 national review linked here: downloaded, title checked, all 227 pages processed; see official-b4e3fcfe0e41e26ea03b."
     }
   ]
 }

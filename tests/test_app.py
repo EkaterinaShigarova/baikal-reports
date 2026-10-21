@@ -30,8 +30,26 @@ class API(unittest.TestCase):
 
     def test_filter(self):
         rows = self.client.get("/api/observations", params={"year": 2018}).json()
-        self.assertEqual(len(rows), 7)
+        self.assertGreaterEqual(len(rows), 10)
         self.assertTrue(all(r["year"] == 2018 for r in rows))
+
+    def test_year_range_and_invalid_range(self):
+        rows = self.client.get(
+            "/api/observations", params={"year_from": 2022, "year_to": 2023}
+        ).json()
+        self.assertTrue(rows)
+        self.assertTrue(
+            all(
+                2022 <= r["year"] <= 2023 and r["review_status"] == "reviewed"
+                for r in rows
+            )
+        )
+        self.assertEqual(
+            self.client.get(
+                "/api/observations", params={"year_from": 2024, "year_to": 2022}
+            ).status_code,
+            422,
+        )
 
     def test_search_uses_real_fts_and_parameterization(self):
         from baikal import store

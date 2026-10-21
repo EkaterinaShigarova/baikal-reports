@@ -20,6 +20,8 @@ def main(argv=None):
     a.add_argument("--url", required=True)
     a.add_argument("--name", required=True)
     a.add_argument("--year", type=int)
+    a = sub.add_parser("audit-tables")
+    a.add_argument("--source")
     sub.add_parser("export-candidates")
     sub.add_parser("build")
     sub.add_parser("lint")
@@ -29,6 +31,11 @@ def main(argv=None):
     q.add_argument("--save", action="store_true")
     s = sub.add_parser("synthesize")
     s.add_argument("topic")
+    s.add_argument(
+        "--allow-remote",
+        action="store_true",
+        help="Explicit consent to call configured remote LLM (may incur costs)",
+    )
     s = sub.add_parser("serve")
     s.add_argument("--host", default="127.0.0.1")
     s.add_argument("--port", type=int, default=8000)
@@ -85,6 +92,10 @@ def main(argv=None):
             from .acquire import add_official
 
             print(add_official(args.url, args.name, args.year))
+        elif args.command == "audit-tables":
+            from .tableqa import audit
+
+            print(json.dumps(audit(args.source), ensure_ascii=False, indent=2))
         elif args.command == "export-candidates":
             from .store import export_candidates
 
@@ -111,7 +122,7 @@ def main(argv=None):
         elif args.command == "synthesize":
             from .llm import synthesize
 
-            print(synthesize(args.topic))
+            print(synthesize(args.topic, allow_remote=args.allow_remote))
         elif args.command == "serve":
             import uvicorn
 
