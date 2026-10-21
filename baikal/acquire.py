@@ -89,7 +89,8 @@ def download(source, refresh=False):
     try:
         with open_url(source['download_url'],180) as response, target.open('wb') as f:
             shutil.copyfileobj(response,f,1024*1024)
-        if target.read_bytes()[:5]!=b'%PDF-':
+        with target.open('rb') as check: signature=check.read(5)
+        if signature!=b'%PDF-':
             raise ValueError('Response is not PDF (Google confirmation, quota or authentication may be required)')
         expected=source.get('expected_bytes')
         if expected and target.stat().st_size!=expected:raise ValueError('Downloaded size differs from listed metadata')
