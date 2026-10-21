@@ -32,7 +32,7 @@
     },
     {
       "id": "drive-1C-SRfbklf00M5rsLajYO_2nFCdmCL1fi",
-      "status": "discovered",
+      "status": "processed",
       "drive_id": "1C-SRfbklf00M5rsLajYO_2nFCdmCL1fi",
       "name": "госдоклад_2023_О_состоянии_озера_Байкал_версия_26122024 (2) (1) (1).pdf",
       "mime": "application/pdf",
@@ -42,12 +42,18 @@
       "year_hint": 2023,
       "authenticity": "mirror_unverified",
       "official_url": null,
-      "agency": "Требует проверки титула",
-      "last_seen": "2026-10-21T12:04:28.096486+00:00"
+      "agency": "Минприроды России (по титулу PDF; официальный URL не подтверждён)",
+      "last_seen": "2026-10-21T12:04:28.096486+00:00",
+      "sha256": "da48b7061dc74cdc300213ca2e4b6f0d124ac5aab5aa7f2da84d3c3451d07066",
+      "bytes": 19594529,
+      "pages": 414,
+      "remote_changed": false,
+      "report_year": 2023,
+      "extracted_pages": 414
     },
     {
       "id": "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos",
-      "status": "discovered",
+      "status": "downloaded",
       "drive_id": "1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos",
       "name": "Государственный доклад о состоянии оз. Байкал и мерах по его охране в 2024 году.pdf",
       "mime": "application/pdf",
@@ -58,11 +64,15 @@
       "authenticity": "mirror_unverified",
       "official_url": null,
       "agency": "Требует проверки титула",
-      "last_seen": "2026-10-21T12:04:28.096491+00:00"
+      "last_seen": "2026-10-21T12:04:28.096491+00:00",
+      "sha256": "557959d2c8996b990487e9d2acd501ca4048f29e3c7a6fe27e49f8fc1c554fd8",
+      "bytes": 30433910,
+      "pages": 353,
+      "remote_changed": false
     },
     {
       "id": "drive-1RWGLrOzFO32Jxrlv-B2n_PafSFoRVySn",
-      "status": "downloaded",
+      "status": "processed",
       "drive_id": "1RWGLrOzFO32Jxrlv-B2n_PafSFoRVySn",
       "name": "Доклад Байкал 2019 год.pdf",
       "mime": "application/pdf",
@@ -72,12 +82,14 @@
       "year_hint": 2019,
       "authenticity": "mirror_unverified",
       "official_url": null,
-      "agency": "Требует проверки титула",
+      "agency": "Минприроды России (по титулу PDF; официальный URL не подтверждён)",
       "last_seen": "2026-10-21T12:04:28.096495+00:00",
       "sha256": "747fadeaf55107fbf9fbb5965696912195b4795436a9f300c009a4f5e5d9839a",
       "bytes": 14878852,
       "pages": 348,
-      "remote_changed": false
+      "remote_changed": false,
+      "report_year": 2019,
+      "extracted_pages": 348
     },
     {
       "id": "drive-1ScikzOKs0VW7ZZS1XWKyoOfcHeYklUEP",
@@ -102,7 +114,7 @@
     },
     {
       "id": "drive-1oLnz6N8ueMCEL8p2HnPDtT7dx1tAE8RB",
-      "status": "discovered",
+      "status": "processed",
       "drive_id": "1oLnz6N8ueMCEL8p2HnPDtT7dx1tAE8RB",
       "name": "Доклад Байкал 2021 год (1).pdf",
       "mime": "application/pdf",
@@ -112,8 +124,14 @@
       "year_hint": 2021,
       "authenticity": "mirror_unverified",
       "official_url": null,
-      "agency": "Требует проверки титула",
-      "last_seen": "2026-10-21T12:04:28.096503+00:00"
+      "agency": "Минприроды России (по титулу PDF; официальный URL не подтверждён)",
+      "last_seen": "2026-10-21T12:04:28.096503+00:00",
+      "sha256": "9f0ff38111fe9092e96e8bed6e602f92a5b1e63f6cd9bbcb856d76dc3b7fb391",
+      "bytes": 25328698,
+      "pages": 372,
+      "remote_changed": false,
+      "report_year": 2021,
+      "extracted_pages": 372
     },
     {
       "id": "drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ",

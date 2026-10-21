@@ -6,11 +6,11 @@ Google Drive — зеркало передачи. Подлинность офи�
 | --- | --- | --- | --- | --- | --- |
 | [2015.pdf](https://drive.google.com/file/d/1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab/view) | 2015 (имя) | Требует проверки титула | Не подтверждён | discovered (0/? стр.) | mirror_unverified |
 | [Госдоклад_2022 (23857770 v1).pdf](https://drive.google.com/file/d/1oYm8VhJ3_eRNdxbrGfLXhf6_vI6s6SJq/view) | 2022 (имя) | Требует проверки титула | Не подтверждён | discovered (0/? стр.) | mirror_unverified |
-| [госдоклад_2023_О_состоянии_озера_Байкал_версия_26122024 (2) (1) (1).pdf](https://drive.google.com/file/d/1C-SRfbklf00M5rsLajYO_2nFCdmCL1fi/view) | 2023 (имя) | Требует проверки титула | Не подтверждён | discovered (0/? стр.) | mirror_unverified |
-| [Государственный доклад о состоянии оз. Байкал и мерах по его охране в 2024 году.pdf](https://drive.google.com/file/d/1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos/view) | 2024 (имя) | Требует проверки титула | Не подтверждён | discovered (0/? стр.) | mirror_unverified |
-| [Доклад Байкал 2019 год.pdf](https://drive.google.com/file/d/1RWGLrOzFO32Jxrlv-B2n_PafSFoRVySn/view) | 2019 (имя) | Требует проверки титула | Не подтверждён | downloaded (0/348 стр.) | mirror_unverified |
+| [госдоклад_2023_О_состоянии_озера_Байкал_версия_26122024 (2) (1) (1).pdf](https://drive.google.com/file/d/1C-SRfbklf00M5rsLajYO_2nFCdmCL1fi/view) | 2023 | Минприроды России (по титулу PDF; официальный URL не подтверждён) | Не подтверждён | processed (414/414 стр.) | mirror_unverified |
+| [Государственный доклад о состоянии оз. Байкал и мерах по его охране в 2024 году.pdf](https://drive.google.com/file/d/1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos/view) | 2024 (имя) | Требует проверки титула | Не подтверждён | downloaded (0/353 стр.) | mirror_unverified |
+| [Доклад Байкал 2019 год.pdf](https://drive.google.com/file/d/1RWGLrOzFO32Jxrlv-B2n_PafSFoRVySn/view) | 2019 | Минприроды России (по титулу PDF; официальный URL не подтверждён) | Не подтверждён | processed (348/348 стр.) | mirror_unverified |
 | [Доклад Байкал 2020 год.pdf](https://drive.google.com/file/d/1ScikzOKs0VW7ZZS1XWKyoOfcHeYklUEP/view) | 2020 | Минприроды России (по титулу PDF; официальный URL не подтверждён) | Не подтверждён | processed (361/361 стр.) | mirror_unverified |
-| [Доклад Байкал 2021 год (1).pdf](https://drive.google.com/file/d/1oLnz6N8ueMCEL8p2HnPDtT7dx1tAE8RB/view) | 2021 (имя) | Требует проверки титула | Не подтверждён | discovered (0/? стр.) | mirror_unverified |
+| [Доклад Байкал 2021 год (1).pdf](https://drive.google.com/file/d/1oLnz6N8ueMCEL8p2HnPDtT7dx1tAE8RB/view) | 2021 | Минприроды России (по титулу PDF; официальный URL не подтверждён) | Не подтверждён | processed (372/372 стр.) | mirror_unverified |
 | [Доклад Байкал за 2018 год.pdf](https://drive.google.com/file/d/1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ/view) | 2018 | Минприроды России (по титулу PDF; официальный URL не подтверждён) | Не подтверждён | processed (342/342 стр.) | mirror_unverified |
 | [Доклад Байкал-07.12.2018-2.pdf](https://drive.google.com/file/d/1jl98YhWpGzbTkJXflFXv0fHB7yKqPRJr/view) | 2018 (имя) | Требует проверки титула | Не подтверждён | discovered (0/? стр.) | mirror_unverified |
 | [Доклад_Байкал_2016_.pdf](https://drive.google.com/file/d/1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0/view) | 2016 (имя) | Требует проверки титула | Не подтверждён | discovered (0/? стр.) | mirror_unverified |
@@ -35,11 +35,11 @@ Google Drive — зеркало передачи. Подлинность офи�
 | 2016 | 1 документ(ов) (год требует проверки) |
 | 2017 | Публикация не проверена; отсутствие не установлено |
 | 2018 | 2 документ(ов) (год требует проверки) |
-| 2019 | 1 документ(ов) (год требует проверки) |
+| 2019 | 1 документ(ов) |
 | 2020 | 1 документ(ов) |
-| 2021 | 1 документ(ов) (год требует проверки) |
+| 2021 | 1 документ(ов) |
 | 2022 | 1 документ(ов) (год требует проверки) |
-| 2023 | 1 документ(ов) (год требует проверки) |
+| 2023 | 1 документ(ов) |
 | 2024 | 1 документ(ов) (год требует проверки) |
 | 2025 | Публикация не проверена; отсутствие не установлено |
 | 2026 | Публикация не проверена; отсутствие не установлено |
