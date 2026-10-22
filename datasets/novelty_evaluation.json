@@ -1,0 +1,684 @@
+{
+  "version": 1,
+  "research_date": "2026-10-22",
+  "baseline_commit": "d8d4fe37a7b13d6bb2688fd75bc2e9a9a76d70fe",
+  "experiment_id": "1f2cda4825e0f1855bbf76acff6071693dd82c93440222b985b0a45215ab31ad",
+  "manifest_path": "data/wiki_updates/novelty_experiments/1f2cda4825e0f1855bbf76acff6071693dd82c93440222b985b0a45215ab31ad.json",
+  "manifest_file_sha256": "85110b808507e56e8e6c61f45394fb773acf7626bb8a6ae49846ddb2bc1e9be5",
+  "protocol_path": "docs/NOVELTY_PROTOCOL.md",
+  "pins": {
+    "baikal/novelty.py": "a8cdded32b3f4d89ac658645200081c525318daad0242ca682d92315f0e70f5b",
+    "scripts/evaluate_novelty.py": "6d7c29d7507b8123f5a1ee8bc8ffb761d6a7686cef920e1b8611ba0f821efbba",
+    "docs/NOVELTY_PROTOCOL.md": "d891ffb25b9604e5078cba4b935d6ffbd96aea17bae619dbba0ca15aef7d0de8",
+    "datasets/typed_facts_evaluation.json": "ed76e0e16212afb0c690ba713d3ccc0db3ff0754cb1dd82a281fbde88728e8da",
+    "datasets/typed_evidence_2015.json": "a5f8cde78ed687654ba666ebdda1a426b10b5128696b67a168e82f1f8ba88c89",
+    "baikal/source_first.py": "20eb996c29a0bb252ec8a9453476a5940d51138cda7bf2475b66d866f6bf0f7a",
+    "baikal/typed_facts.py": "78732f9d87b983b71cdd1921c2193883930a0ecd2adbfd5e8861caabeb80e721",
+    "baikal/typed_fact_context.py": "e920c8ac7e21b7bcb90d1bc98e478c4c293a21af7c53fc6cd4210f648db233d7",
+    "scripts/evaluate_source_first.py": "e2cbda900e5b709a600e995ed46828fc2d43880a6877e8af59b6703043e23f88"
+  },
+  "model_profile": {
+    "id": "qwen25-7b-q4km",
+    "repo": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+    "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f",
+    "license": "apache-2.0",
+    "max_total_bytes": 6442450944,
+    "memory_limit_min_bytes": 17179869184,
+    "memory_available_min_bytes": 17179869184,
+    "disk_reserve_bytes": 3221225472,
+    "request_timeout_seconds": 600,
+    "files": [
+      {
+        "filename": "qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+        "bytes": 3993201344,
+        "sha256": "dfce12e3862a5283ccfb88221b48480e58745165de856439950d0f22590580db"
+      },
+      {
+        "filename": "qwen2.5-7b-instruct-q4_k_m-00002-of-00002.gguf",
+        "bytes": 689872288,
+        "sha256": "539cf93f78e887edea1c04e2d7d8cdaca9d01dae9c9025bcb8accbe29df3d72a"
+      }
+    ]
+  },
+  "runtime": {
+    "model_bundle": {
+      "profile": "qwen25-7b-q4km",
+      "repo": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f",
+      "license": "apache-2.0",
+      "files": [
+        {
+          "filename": "qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+          "bytes": 3993201344,
+          "sha256": "dfce12e3862a5283ccfb88221b48480e58745165de856439950d0f22590580db"
+        },
+        {
+          "filename": "qwen2.5-7b-instruct-q4_k_m-00002-of-00002.gguf",
+          "bytes": 689872288,
+          "sha256": "539cf93f78e887edea1c04e2d7d8cdaca9d01dae9c9025bcb8accbe29df3d72a"
+        }
+      ],
+      "total_bytes": 4683073632
+    },
+    "server_sha256": "ea2082a6ea129e3fbe0e32c4a57cf0fd754572b5a0fb824b89b9ed80b64836f6",
+    "server_version": "version: 0.7.0-dev (build 1, commit 620d222)\nbuilt with GNU 14.2.0 for Linux x86_64",
+    "backend_probe": {
+      "exit_code": 0,
+      "output": "Available devices:\n  (none)"
+    },
+    "threads": 4,
+    "context_tokens": 8192,
+    "gpu_layers": 0,
+    "resources_before": {
+      "memory_limit_bytes": 34359738368,
+      "memory_available_bytes": 23949504512,
+      "disk_free_bytes": 22119477248,
+      "cpu_affinity_count": 5,
+      "cpu_quota": "400000 100000"
+    },
+    "server_log_path": "data/llm-evaluation/source-first-server-1792684223676471729.log",
+    "timeout_seconds": 600,
+    "command": [
+      "/workspace/baikal-reports/data/llm-runtime/build-avx2/bin/llama-server",
+      "-m",
+      "/workspace/baikal-reports/data/models/qwen25-7b-q4km/qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+      "--alias",
+      "baikal-local-evaluation",
+      "-c",
+      "8192",
+      "-t",
+      "4",
+      "-tb",
+      "4",
+      "-ngl",
+      "0",
+      "--parallel",
+      "1",
+      "--batch-size",
+      "256",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "55677"
+    ],
+    "server_wall_seconds": 350.429,
+    "peak_child_rss_kib": 8184656
+  },
+  "runtime_rebuilt": false,
+  "model_downloaded": false,
+  "input_sha256": "6b5bb8c11c834cf2c2a1b63fac8052f091ecbbe8b7fe736a2b54af445c77ea66",
+  "prompt_sha256": "ccf60a7ef91e1cae78ab18e626f73a42b02386781e94f1ccad7c02b6b172a2f8",
+  "context_preflight": {
+    "prompt_tokens_native": 6318,
+    "output_tokens_reserved": 1200,
+    "safety_reserve": 128,
+    "context_tokens": 8192,
+    "generation_requests": 0
+  },
+  "generation_requests": 1,
+  "fact_extraction_requests": 0,
+  "run": {
+    "id": "e05281510224fe67c5c387e2ceedcfcab20eed3e37c6072eeafacc9fdcce1fb7",
+    "path": "data/wiki_updates/novelty_runs/e05281510224fe67c5c387e2ceedcfcab20eed3e37c6072eeafacc9fdcce1fb7.json",
+    "file_sha256": "7ef43b3e66f2f35bb1598465f7d56079fa7199384e28481baee461f395c4bb3a",
+    "request_sha256": "a9bf1bd3fd958f1d8b37c1b40a7781b8b4a0dbc6491d60bf101f112ecbdc736c",
+    "raw_response_sha256": "226a16d1fd75a88897c4568736346b683daa4d0750810c7c5b21c9b5d006ce2f",
+    "model_content_sha256": "b22b144ef5e163d9031a036e1fb03e144dd2cba169e284544ab6be84ef3c510a",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 342,
+      "prompt_tokens": 6318,
+      "total_tokens": 6660,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "elapsed_seconds": 346.314,
+    "errors": []
+  },
+  "actual_model_decisions": {
+    "decisions": [
+      {
+        "fact_id": "Fef1cdb41001456e0",
+        "classification": "insufficient_evidence",
+        "explanation": {
+          "fact_id": "Fef1cdb41001456e0",
+          "relation": "comparison_underdetermined",
+          "wiki_paragraph_ids": [
+            "W6",
+            "W9"
+          ]
+        }
+      },
+      {
+        "fact_id": "Fb1a1009f18b2ca3b",
+        "classification": "insufficient_evidence",
+        "explanation": {
+          "fact_id": "Fb1a1009f18b2ca3b",
+          "relation": "comparison_underdetermined",
+          "wiki_paragraph_ids": [
+            "W6",
+            "W9"
+          ]
+        }
+      },
+      {
+        "fact_id": "Fdbb02a29d87d7c6e",
+        "classification": "insufficient_evidence",
+        "explanation": {
+          "fact_id": "Fdbb02a29d87d7c6e",
+          "relation": "comparison_underdetermined",
+          "wiki_paragraph_ids": [
+            "W6",
+            "W9"
+          ]
+        }
+      }
+    ],
+    "source_conflicts": [
+      {
+        "conflict_id": "Ca9ac9df8ed463425",
+        "status": "documented_in_wiki",
+        "wiki_paragraph_ids": [
+          "W9"
+        ]
+      }
+    ]
+  },
+  "classification_explanation_contract": {
+    "format": "reference_only_no_free_scientific_prose",
+    "quantity_period_territory_source_display": "copied_from_immutable_records_not_generated_by_model",
+    "display_reason_origin": "deterministic_template",
+    "semantic_correctness_not_guaranteed_by_schema": true
+  },
+  "article": {
+    "path": "wiki/syntheses/selenga-sediments.md",
+    "sha256": "a67b8fbbfda3d9716f31c291485877d576d8c315587604486a411d85918984e6",
+    "full_article_including_notes": true,
+    "paragraphs": [
+      {
+        "id": "W1",
+        "text": "# Авандельта Селенги: донные отложения и грунтовая вода"
+      },
+      {
+        "id": "W2",
+        "text": "<!-- REVIEW STATUS START -->\nСтатус: **Содержательная сверка с источниками (автоматизированная)**. Требуется научная рецензия. [Объём проверки](../topics/knowledge-quality.md#article-selenga-sediments).\n<!-- REVIEW STATUS END -->"
+      },
+      {
+        "id": "W3",
+        "text": "## Почему это отдельный объект наблюдений"
+      },
+      {
+        "id": "W4",
+        "text": "Грунтовая вода и донные отложения авандельты — разные среды, отличные от поверхностной воды реки и от годового выноса веществ через замыкающий створ. Доклады представляют для них отдельные гидрохимические и геохимические характеристики. Значение в воде нельзя напрямую сравнивать с содержанием в сухом донном материале. [drive-1RWGLrOzFO32Jxrlv-B2n_PafSFoRVySn:p32](../sources/drive-1RWGLrOzFO32Jxrlv-B2n_PafSFoRVySn.md#page-32) [drive-1oYm8VhJ3_eRNdxbrGfLXhf6_vI6s6SJq:p40](../sources/drive-1oYm8VhJ3_eRNdxbrGfLXhf6_vI6s6SJq.md#page-40)"
+      },
+      {
+        "id": "W5",
+        "text": "## Источники и доказательства"
+      },
+      {
+        "id": "W6",
+        "text": "В докладе 2015 года максимумы содержания исследованных ароматических углеводородов отмечены напротив выносов протоки Усть-Харауз. По бенз(а)пирену источник относит загрязнённость к фоновому уровню, а по сумме ПАУ — к слабому загрязнению. Эти две оценки относятся к разным показателям и не противоречат друг другу автоматически. На той же странице отдельно обсуждается изменение содержания канцерогенных аренов. [drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab:p26](../sources/drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab.md#page-26)"
+      },
+      {
+        "id": "W7",
+        "text": "В 2019 году на авандельте проведена одна сентябрьская съёмка с отбором грунтовой воды и донного материала. Доклад описывает разнонаправленные изменения растворённого кислорода, соединений азота, железа и фосфатного фосфора относительно предыдущей съёмки. Это локальное сезонное сравнение авторов; оно не является средней годовой характеристикой всей Селенги. [drive-1RWGLrOzFO32Jxrlv-B2n_PafSFoRVySn:p31](../sources/drive-1RWGLrOzFO32Jxrlv-B2n_PafSFoRVySn.md#page-31)"
+      },
+      {
+        "id": "W8",
+        "text": "Таблицы 2022 года снова разделяют грунтовую воду и донные отложения. Для отдельных показателей приведены интервалы и средние значения; для части веществ стоят прочерки. Прочерк не имеет однозначного значения «ноль»: без пояснения метода он не должен превращаться в числовое наблюдение. Структурная преемственность таблиц облегчает поиск, но ещё не доказывает одинаковую выборку станций. [drive-1RWGLrOzFO32Jxrlv-B2n_PafSFoRVySn:p32](../sources/drive-1RWGLrOzFO32Jxrlv-B2n_PafSFoRVySn.md#page-32) [drive-1oYm8VhJ3_eRNdxbrGfLXhf6_vI6s6SJq:p40](../sources/drive-1oYm8VhJ3_eRNdxbrGfLXhf6_vI6s6SJq.md#page-40)"
+      },
+      {
+        "id": "W9",
+        "text": "## Неоднозначность первоисточника 2015 года"
+      },
+      {
+        "id": "W10",
+        "text": "В первом абзаце PDF-страницы 26 после перечисления «ПАУ, бенз(а)пирена и канцерогенных аренов» напечатаны максимумы 124,9; 61,8; 7,9 нг/г с.о. В таблице 1.1.1.3.6 за 2015 год максимум БП составляет 7,9, а канцерогенов — 61,8 нг/г с.о. Изображение оригинала подтверждает это расхождение порядка двух последних показателей. Проект сохраняет обе записи и не выбирает исправленное значение: нужны первичные результаты анализа или уточнение составителей. Числа из спорного абзаца не включаются в проверенные наблюдения. Эта неоднозначность не отменяет того, что разные классификационные оценки относятся к бенз(а)пирену и сумме ПАУ. [drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab:p26](../sources/drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab.md#page-26)"
+      },
+      {
+        "id": "W11",
+        "text": "## Интерпретация"
+      },
+      {
+        "id": "W12",
+        "text": "Наблюдения подтверждают неоднородность авандельты и необходимость различать протоки, среды и химические группы. По выбранным страницам нельзя утверждать, что дельта полностью задерживает загрязнение или, наоборот, является постоянным источником для всего озера. Для оценки таких функций нужны балансы поступления, осаждения и переноса, а не только локальные концентрации."
+      },
+      {
+        "id": "W13",
+        "text": "## Ограничения и пробелы"
+      },
+      {
+        "id": "W14",
+        "text": "Новые числовые ряды по донным отложениям не сформированы: не проверены соответствие станций, влажная/сухая масса и методики определения. Речной вынос за 2024–2025 годы уже имеется в другом наборе, но относится к иному объекту измерения. Между ним и данными грунтовой воды прямого преобразования нет."
+      },
+      {
+        "id": "W15",
+        "text": "## Связанные статьи"
+      },
+      {
+        "id": "W16",
+        "text": "- [Вынос веществ притоками](river-inputs-2025.md)\n- [Устойчивые органические загрязнители](persistent-organic-pollutants.md)\n- [Омуль и нерестовые реки](baikal-omul.md)"
+      },
+      {
+        "id": "W17",
+        "text": "<!-- HUMAN NOTES -->\n"
+      }
+    ],
+    "preceding_version": {
+      "article": "syntheses/selenga-sediments.md",
+      "sha256": "a67b8fbbfda3d9716f31c291485877d576d8c315587604486a411d85918984e6",
+      "path": "data/wiki_updates/versions/a67b8fbbfda3d9716f31c291485877d576d8c315587604486a411d85918984e6.md"
+    }
+  },
+  "source_evidence": [
+    {
+      "id": "S2",
+      "source_id": "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
+      "sha256": "26dc3610938c5b8f91e85b4179ee1092f20aa03684135d0534b8ad2ab9629023",
+      "page": 26,
+      "report_year": 2015,
+      "observation_period": null,
+      "quote": "Содержание полициклических ароматических углеводородов в донных отложениях\n                       на авандельте р. Селенга в 2011–2015 гг., в нг/г с.о.\n                     (в числителе – интервалы значений, в знаменателе – средние значения)\n                                                                    Канцерогены –  Канцерогены –                   БП –     БП –     ПАУ –     ПАУ –          Годы                                                       протока Усть-    весь полигон                         протока       весь        весь       протока         наблюдений                                                    Харауз (% от   (% от суммы                       Усть-Харауз   полигон    полигон    Усть-Харауз                                                              суммы ПАУ)      ПАУ)\n                               0,5–7,8       0,1–7,8     20,0–125,9     27,2–125,9        6,4–22,9           1,2–22,9            2011 г.                                  3,2            1,4          57,0           70,4         17,8 (31,2 %)      10,2 (17,5 %)\n                               0,8–1,7       0,2–1,7      17,7–61,5      19,9–61,5        7,0–11,0           4,7–11,2            2013 г.                                  1,0            1,0          33,4           33,8          9,3 (27,8 %)        8,4 (25,1 %)\n                               0,8–3,1       0,1–3,0     24,3–149,9     65,4–149,9        7,2–17,1           1,2–17,1            2014 г.                                  1,7            1,0          65,7          103,0        11,0 (16,7 %)       6,3 (9,6 %)\n                               1,2–7,9       0,1–7,9      3,0–124,9     24,3–124,9        9,9–61,8           1,0–61,8            2015 г.                                  3,9            2,1          36,9           61,7         30,3 (49,2 %)      17,1 (43,5 %)\n        Изменение по\n        средним (%),       129,4        110         –43,8          –40,1            175,5             171,4\n        2015 г. / 2014 г.",
+      "quote_basis": "exact_cached_page_text",
+      "source_authenticity": "mirror_unverified",
+      "novelty": "already_quoted_fragment",
+      "publication_year": null
+    },
+    {
+      "id": "S1",
+      "source_id": "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
+      "sha256": "26dc3610938c5b8f91e85b4179ee1092f20aa03684135d0534b8ad2ab9629023",
+      "page": 26,
+      "report_year": 2015,
+      "observation_period": null,
+      "quote": "Максимальное содержание ПАУ, бенз(а)пирена и канцерогенных аренов в 2015 г. были\n      отмечены на авандельте реки непосредственно напротив выносов протокой Усть-Харауз:\n       124,9 нг/г с.о., 61,8 нг/г с.о. и 7,9 нг/г с.о. (таблица 1.1.1.3.6). Уровень загрязненности на\n1.1  авандельте р. Селенга по бенз(а)пирену можно отнести к фоновому значению, а по сумме    ПАУ – как слабо загрязненному. Однако следует отметить, что содержание канцерогенных\n      аренов в 2015 г. увеличилось по сравнению с 2014 г. в 2,7 раза.",
+      "quote_basis": "exact_cached_page_text",
+      "source_authenticity": "mirror_unverified",
+      "novelty": "already_quoted_fragment",
+      "publication_year": null
+    }
+  ],
+  "table_caption": "Содержание полициклических ароматических углеводородов в донных отложениях\n                       на авандельте р. Селенга в 2011–2015 гг., в нг/г с.о.\n                     (в числителе – интервалы значений, в знаменателе – средние значения)",
+  "unresolved_source_variants": [
+    {
+      "id": "ORDER_2015",
+      "status": "unresolved_source",
+      "source_fragment_ids": [
+        "S1",
+        "S2"
+      ],
+      "pairs": [
+        {
+          "indicator": "БП",
+          "prose_maximum": "61,8",
+          "table_maximum": "7,9",
+          "cell_id": "T2015_C1"
+        },
+        {
+          "indicator": "канцерогенные арены",
+          "prose_maximum": "7,9",
+          "table_maximum": "61,8",
+          "cell_id": "T2015_C5"
+        }
+      ],
+      "unit": "нг/г с.о.",
+      "origin": "Ordered source prose versus checked2015 table columns; preserve both, do not repair."
+    }
+  ],
+  "reused_records": [
+    {
+      "fact": {
+        "text": "В 2015 году содержание бенз(а)пирена на весь полигон было 2,1 нг/г с.о.",
+        "primary_evidence_id": "S2",
+        "cell_id": "T2015_C2",
+        "source_role": "table",
+        "statistic": "mean",
+        "observation_year": 2015,
+        "year_basis_id": "Y_ROW_2015",
+        "indicator": "БП",
+        "value": "2,1",
+        "unit": "нг/г с.о.",
+        "territory": "весь полигон",
+        "limitations": [
+          "Values from the table are the means, while the prose mentions the maximum."
+        ],
+        "ambiguity_ids": [],
+        "time": {
+          "report_year": 2015,
+          "observation_year": 2015,
+          "publication_year": null
+        },
+        "statement_kind": "source_statement",
+        "fact_id": "Fef1cdb41001456e0"
+      },
+      "binding_sha256": "99295d31bedbd22cd12708042bd778c72bc3ffecb49c5ec8e9408f583a7a4284",
+      "evidence_ids": [
+        "S2"
+      ],
+      "cell": {
+        "cell_id": "T2015_C2",
+        "row_index": 4,
+        "column_index": 2,
+        "row_header": "2015 г.",
+        "header": "БП –\nвесь\nполигон",
+        "indicator": "БП",
+        "territory": "весь полигон",
+        "unit": "нг/г с.о.",
+        "observation_year": 2015,
+        "raw_cell": "0,1–7,9\n2,1",
+        "range_min": "0,1",
+        "range_max": "7,9",
+        "mean": "2,1",
+        "source_fragment_id": "S2",
+        "bbox": [
+          183.49946763780383,
+          340.8734893798828,
+          235.04579332139758,
+          367.0329956054687
+        ]
+      },
+      "source_review_limitations": [
+        "Это среднее из отчётной таблицы в сухом донном материале, не годовой речной вынос и не сопоставимый многолетний ряд.",
+        "В тексте факта среднее не названо явно; оно задано полем statistic и ограничением модели. Для публикации требуется ясная редакционная формулировка без смены значения.",
+        "Сверка переноса не является научной рецензией специалистом."
+      ],
+      "model_classification": "insufficient_evidence",
+      "expected_classification_preregistered": "new_detail",
+      "semantic_decision": {
+        "status": "rejected",
+        "reason": "Среднее БП 2,1 нг/г с.о. за 2015 год по всему полигону подтверждено собственной ячейкой T2015_C2. Полная статья не содержит этой записи или словесного эквивалента. W6 обсуждает максимумы и качественную классификацию, W9 — только заголовок. Это новая для статьи деталь; сохранённые ограничения не делают сравнение невозможным."
+      }
+    },
+    {
+      "fact": {
+        "text": "В 2015 году содержание ПАУ на весь полигон было 36,9 нг/г с.о.",
+        "primary_evidence_id": "S2",
+        "cell_id": "T2015_C3",
+        "source_role": "table",
+        "statistic": "mean",
+        "observation_year": 2015,
+        "year_basis_id": "Y_ROW_2015",
+        "indicator": "ПАУ",
+        "value": "36,9",
+        "unit": "нг/г с.о.",
+        "territory": "весь полигон",
+        "limitations": [
+          "Values from the table are the means, while the prose mentions the maximum."
+        ],
+        "ambiguity_ids": [],
+        "time": {
+          "report_year": 2015,
+          "observation_year": 2015,
+          "publication_year": null
+        },
+        "statement_kind": "source_statement",
+        "fact_id": "Fb1a1009f18b2ca3b"
+      },
+      "binding_sha256": "6ba388817679abb4df458418f18304270468cb0d7244c2817762b54323a77400",
+      "evidence_ids": [
+        "S2"
+      ],
+      "cell": {
+        "cell_id": "T2015_C3",
+        "row_index": 4,
+        "column_index": 3,
+        "row_header": "2015 г.",
+        "header": "ПАУ –\nвесь\nполигон",
+        "indicator": "ПАУ",
+        "territory": "весь полигон",
+        "unit": "нг/г с.о.",
+        "observation_year": 2015,
+        "raw_cell": "3,0–124,9\n36,9",
+        "range_min": "3,0",
+        "range_max": "124,9",
+        "mean": "36,9",
+        "source_fragment_id": "S2",
+        "bbox": [
+          235.04579332139758,
+          340.8734893798828,
+          296.2999382019043,
+          367.0329956054687
+        ]
+      },
+      "source_review_limitations": [
+        "Это среднее из отчётной таблицы в сухом донном материале, не годовой речной вынос и не сопоставимый многолетний ряд.",
+        "В тексте факта среднее не названо явно; оно задано полем statistic и ограничением модели. Для публикации требуется ясная редакционная формулировка без смены значения.",
+        "Сверка переноса не является научной рецензией специалистом."
+      ],
+      "model_classification": "insufficient_evidence",
+      "expected_classification_preregistered": "new_detail",
+      "semantic_decision": {
+        "status": "rejected",
+        "reason": "Среднее ПАУ 36,9 нг/г с.о. за 2015 год по всему полигону подтверждено T2015_C3 и отсутствует в полной статье. W6 не содержит этого среднего; W9 — заголовок. Новая для статьи численная деталь, а не противоречие с максимумами или невозможность сравнения."
+      }
+    },
+    {
+      "fact": {
+        "text": "В 2015 году содержание ПАУ на протоку Усть-Харауз было 61,7 нг/г с.о.",
+        "primary_evidence_id": "S2",
+        "cell_id": "T2015_C4",
+        "source_role": "table",
+        "statistic": "mean",
+        "observation_year": 2015,
+        "year_basis_id": "Y_ROW_2015",
+        "indicator": "ПАУ",
+        "value": "61,7",
+        "unit": "нг/г с.о.",
+        "territory": "протока Усть-Харауз",
+        "limitations": [
+          "Values from the table are the means, while the prose mentions the maximum."
+        ],
+        "ambiguity_ids": [],
+        "time": {
+          "report_year": 2015,
+          "observation_year": 2015,
+          "publication_year": null
+        },
+        "statement_kind": "source_statement",
+        "fact_id": "Fdbb02a29d87d7c6e"
+      },
+      "binding_sha256": "c49f354bd8e34cbb3e27d22819ad37b77596fe97ddbb7eb864f01fcbd34a5d3c",
+      "evidence_ids": [
+        "S2"
+      ],
+      "cell": {
+        "cell_id": "T2015_C4",
+        "row_index": 4,
+        "column_index": 4,
+        "row_header": "2015 г.",
+        "header": "ПАУ –\nпротока\nУсть-Харауз",
+        "indicator": "ПАУ",
+        "territory": "протока Усть-Харауз",
+        "unit": "нг/г с.о.",
+        "observation_year": 2015,
+        "raw_cell": "24,3–124,9\n61,7",
+        "range_min": "24,3",
+        "range_max": "124,9",
+        "mean": "61,7",
+        "source_fragment_id": "S2",
+        "bbox": [
+          296.2999382019043,
+          340.8734893798828,
+          361.18282318115234,
+          367.0329956054687
+        ]
+      },
+      "source_review_limitations": [
+        "Это среднее из отчётной таблицы в сухом донном материале, не годовой речной вынос и не сопоставимый многолетний ряд.",
+        "В тексте факта среднее не названо явно; оно задано полем statistic и ограничением модели. Для публикации требуется ясная редакционная формулировка без смены значения.",
+        "Сверка переноса не является научной рецензией специалистом."
+      ],
+      "model_classification": "insufficient_evidence",
+      "expected_classification_preregistered": "new_detail",
+      "semantic_decision": {
+        "status": "rejected",
+        "reason": "Среднее ПАУ 61,7 нг/г с.о. за 2015 год по протоке Усть-Харауз подтверждено T2015_C4 и отсутствует в статье. Локализацию нельзя сужать до точки напротив выносов. W6 относится к максимумам, W9 не содержит утверждения. Категория недостаточности не соответствует сравнению сохранённой записи с полной статьёй."
+      }
+    }
+  ],
+  "original_source_review": {
+    "bundle_sha256": "26d96001ab511682080f3dc66bf5ad70eb24a68ae95bc946b56c6b79d7150d12",
+    "review_kind": "source_comparison_non_expert",
+    "expert_review": false,
+    "fact_decisions": {
+      "F10ce8377a97ab2c5": {
+        "status": "rejected",
+        "reason": "Число 3,9 и столбец БП/протока верны, но текст переносит на среднее точечную локализацию максимума из прозы. S2 не подтверждает, что среднее относится непосредственно к точке напротив выносов. Факт не исправляется.",
+        "limitations": [
+          "Более точная пространственная локализация требует самостоятельного подтверждения; запись не передаётся дальше."
+        ]
+      },
+      "Fef1cdb41001456e0": {
+        "status": "supported",
+        "reason": "Сверены на изображении PDF26: строка2015, собственный столбец/территория, нижнее среднее значение по подписи таблицы, нг/г с.о. Структурное поле statistic=mean и ограничение модели явно отличают среднее от максимума. Утверждение не делает межгодового или причинного вывода.",
+        "limitations": [
+          "Это среднее из отчётной таблицы в сухом донном материале, не годовой речной вынос и не сопоставимый многолетний ряд.",
+          "В тексте факта среднее не названо явно; оно задано полем statistic и ограничением модели. Для публикации требуется ясная редакционная формулировка без смены значения.",
+          "Сверка переноса не является научной рецензией специалистом."
+        ]
+      },
+      "Fb1a1009f18b2ca3b": {
+        "status": "supported",
+        "reason": "Сверены на изображении PDF26: строка2015, собственный столбец/территория, нижнее среднее значение по подписи таблицы, нг/г с.о. Структурное поле statistic=mean и ограничение модели явно отличают среднее от максимума. Утверждение не делает межгодового или причинного вывода.",
+        "limitations": [
+          "Это среднее из отчётной таблицы в сухом донном материале, не годовой речной вынос и не сопоставимый многолетний ряд.",
+          "В тексте факта среднее не названо явно; оно задано полем statistic и ограничением модели. Для публикации требуется ясная редакционная формулировка без смены значения.",
+          "Сверка переноса не является научной рецензией специалистом."
+        ]
+      },
+      "Fdbb02a29d87d7c6e": {
+        "status": "supported",
+        "reason": "Сверены на изображении PDF26: строка2015, собственный столбец/территория, нижнее среднее значение по подписи таблицы, нг/г с.о. Структурное поле statistic=mean и ограничение модели явно отличают среднее от максимума. Утверждение не делает межгодового или причинного вывода.",
+        "limitations": [
+          "Это среднее из отчётной таблицы в сухом донном материале, не годовой речной вынос и не сопоставимый многолетний ряд.",
+          "В тексте факта среднее не названо явно; оно задано полем statistic и ограничением модели. Для публикации требуется ясная редакционная формулировка без смены значения.",
+          "Сверка переноса не является научной рецензией специалистом."
+        ]
+      }
+    },
+    "conflict_decisions": {
+      "Ca9ac9df8ed463425": {
+        "status": "supported",
+        "reason": "Существование неоднозначности БП/канцерогенов подтверждается прозой и таблицей оригинала. Общее предупреждение модели соответствует конфликту; обе цитаты неизменны. Это сохранение заранее переданного сигнала, не самостоятельное обнаружение.",
+        "limitations": [
+          "Формулировка модели общая и на английском; она не восстанавливает пары чисел. Пары проза61,8/7,9 против таблицы7,9/61,8 сохранены в typed_view, не исправлены.",
+          "Два модельных максимума с неверной ссылкой/ролью отклонены; общее предупреждение не делает их допустимыми."
+        ]
+      }
+    }
+  },
+  "semantic_review": {
+    "id": "11bbff2ea45495d0e38789c5771b201b89302b657c58544268e549b241d556aa",
+    "path": "data/wiki_updates/novelty_semantic_reviews/11bbff2ea45495d0e38789c5771b201b89302b657c58544268e549b241d556aa.json",
+    "file_sha256": "542f994249ea0a94ec4fee4a64aec8c4ea07129ecd43715f5cfb527e2ae98cfb",
+    "decision": {
+      "run_id": "e05281510224fe67c5c387e2ceedcfcab20eed3e37c6072eeafacc9fdcce1fb7",
+      "review_kind": "semantic_comparison_non_expert",
+      "expert_review": false,
+      "decisions": {
+        "Fef1cdb41001456e0": {
+          "status": "rejected",
+          "reason": "Среднее БП 2,1 нг/г с.о. за 2015 год по всему полигону подтверждено собственной ячейкой T2015_C2. Полная статья не содержит этой записи или словесного эквивалента. W6 обсуждает максимумы и качественную классификацию, W9 — только заголовок. Это новая для статьи деталь; сохранённые ограничения не делают сравнение невозможным."
+        },
+        "Fb1a1009f18b2ca3b": {
+          "status": "rejected",
+          "reason": "Среднее ПАУ 36,9 нг/г с.о. за 2015 год по всему полигону подтверждено T2015_C3 и отсутствует в полной статье. W6 не содержит этого среднего; W9 — заголовок. Новая для статьи численная деталь, а не противоречие с максимумами или невозможность сравнения."
+        },
+        "Fdbb02a29d87d7c6e": {
+          "status": "rejected",
+          "reason": "Среднее ПАУ 61,7 нг/г с.о. за 2015 год по протоке Усть-Харауз подтверждено T2015_C4 и отсутствует в статье. Локализацию нельзя сужать до точки напротив выносов. W6 относится к максимумам, W9 не содержит утверждения. Категория недостаточности не соответствует сравнению сохранённой записи с полной статьёй."
+        }
+      },
+      "conflicts": {
+        "Ca9ac9df8ed463425": {
+          "status": "rejected",
+          "reason": "Метка documented_in_wiki верна на уровне полной статьи, но выбранный W9 содержит только заголовок. Существенное описание обеих спорных пар находится в W10, который модель не выбрала. Решение по ссылке не исправляется вместо модели."
+        }
+      }
+    }
+  },
+  "summary": {
+    "source_checked_records_reused": 3,
+    "completed_real_responses": 1,
+    "programmatically_valid_classifications": 3,
+    "semantically_correct_classifications": 0,
+    "false_abstentions": 3,
+    "new_details_confirmed_absent_by_separate_review": 3,
+    "new_details_correctly_identified_by_model": 0,
+    "cross_fact_quantity_substitutions": 0,
+    "unknown_reference_ids": 0,
+    "heading_only_conflict_anchors": 1,
+    "semantic_findings": 4,
+    "unpublished_draft_packets": 0,
+    "admitted_draft_additions": 0,
+    "published_changes": 0,
+    "observations_added": 0
+  },
+  "comparison_with_preceding_attempt": {
+    "baseline_report": "datasets/typed_facts_evaluation.json",
+    "baseline_report_sha256": "ed76e0e16212afb0c690ba713d3ccc0db3ff0754cb1dd82a281fbde88728e8da",
+    "previous": {
+      "finish_reason": "length",
+      "programmatically_accepted": 0,
+      "semantically_accepted": 0,
+      "partial_new_detail_labels_diagnostic_only": 3,
+      "partial_cross_fact_value_territory_swaps": 2,
+      "prompt_tokens": 7597,
+      "completion_tokens": 595,
+      "elapsed_seconds": 471.909,
+      "peak_child_rss_kib": 8150284
+    },
+    "current": {
+      "finish_reason": "stop",
+      "programmatically_accepted": 3,
+      "semantically_accepted": 0,
+      "prompt_tokens": 6318,
+      "completion_tokens": 342,
+      "elapsed_seconds": 346.314,
+      "peak_child_rss_kib": 8184656
+    },
+    "caveat": "Different explanation contract and complete article context. No claim of improved general model reasoning. Partial old labels were not completed/admissible decisions."
+  },
+  "cause_assessment": {
+    "observed": [
+      "No truncation; native budget check and citation deduplication worked.",
+      "Reference-only explanations prevent free numeric/year/territory substitutions. This is a program contract, not measured prose generation ability.",
+      "All three decisions abstain despite source-supported records and absent concrete means in the full Wiki article.",
+      "Conflict status matches the article generally, but its sole anchor W9 is a heading rather than substantive W10."
+    ],
+    "hypotheses_not_established": [
+      "The model may overgeneralize uncertainty in disputed maxima to non-conflicting table means. Its internal reason is not recoverable from selected relation codes.",
+      "Long source context may distract from the article-relative classification task; one run does not isolate this effect or model capacity."
+    ],
+    "next_step": "Build a small reviewed article-claim ledger with indicator/statistic/period/territory/unit/source bindings; use exact tuple matching only as a duplicate signal, not proof of semantic novelty. Evaluate a balanced held-out set of all four relation categories before further real generation or publication."
+  },
+  "preservation": {
+    "baseline_path": "data/llm-evaluation/baseline-d8d4fe3.json",
+    "baseline_file_sha256": "5d2bcd0b9cc0b784b81fe9fb24998478e72066b125a10490a0c96bce5b56579a",
+    "protected_files_unchanged": 36,
+    "wiki_files_unchanged": 49,
+    "synthesis_articles_unchanged": 22,
+    "reviewed_observations_unchanged": 168,
+    "page_checkpoints_same_size_mtime": 3878,
+    "pdfs_same_sha256": 11,
+    "archived_complete_article_same_sha256": true
+  },
+  "validation": {
+    "unit_tests_passed": 129,
+    "scientific_references_checked": 162,
+    "encyclopedia_records_checked": 47,
+    "observation_records_checked": 168,
+    "wiki_lint_errors": 0,
+    "unresolved_year_coverage_warnings_retained": true,
+    "new_fact_bindings_checked": 3,
+    "new_fact_source_documents": 1,
+    "new_fact_unique_physical_pages": 1
+  },
+  "draft": {
+    "created": false,
+    "reason": "No semantically correct new_detail classification; known conflict anchor also rejected. No --draft invocation or editorial decision."
+  },
+  "published": false,
+  "expert_review": false
+}
