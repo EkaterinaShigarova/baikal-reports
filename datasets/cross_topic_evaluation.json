@@ -1,0 +1,509 @@
+{
+  "version": 1,
+  "baseline_commit": "421df70c540a95cdf5ea1ee22fd2d037a67554f9",
+  "preregistration_commit": "fecece1eb2f954109591eae40c1d955318bc0f59",
+  "pins": {
+    "baikal/cross_topic.py": "e70e1737ec66c9ce4cd50a9c7b7ebde2e204aae904bb619e1592c865d1ad41ac",
+    "scripts/evaluate_cross_topic.py": "cfc360a6dfa900f4c24ef466e9afcadc7eed98c8bc5eab7c0ed83e52c5d4e916",
+    "datasets/cross_topic_claims.json": "fdfde56083465f765c951248329f88ae7d1a0ae343fdb47badfc9418c17ad6ef",
+    "datasets/cross_topic_benchmark.json": "886fe3940537983fd9d5d2f2e448c2a1bc4ac615930d2d8e9e09e219fdda1075",
+    "docs/CROSS_TOPIC_PROTOCOL.md": "e97d3bf577de5fe576e9f70cb7e3acdb537a90bff26c8be6df1e20e14392faaf",
+    "baikal/claim_coverage.py": "74a64efc06e909974abebdb29ad976b6324223abc4f9b2b1b75d504c3cbf20d1",
+    "baikal/typed_fact_context.py": "e920c8ac7e21b7bcb90d1bc98e478c4c293a21af7c53fc6cd4210f648db233d7",
+    "scripts/evaluate_source_first.py": "e2cbda900e5b709a600e995ed46828fc2d43880a6877e8af59b6703043e23f88"
+  },
+  "experiment": {
+    "id": "241261817cc23750b99ce9d2d6acf29fa72ec225d3685608250353f599780a8f",
+    "path": "data/wiki_updates/cross_topic_experiments/241261817cc23750b99ce9d2d6acf29fa72ec225d3685608250353f599780a8f.json"
+  },
+  "coverage": {
+    "claims": 27,
+    "articles": [
+      {
+        "article": "wiki/syntheses/baikal-seal.md",
+        "claims": 13,
+        "represented_blocks": 5,
+        "blocks": 7,
+        "semantic_completeness_established": false
+      },
+      {
+        "article": "wiki/syntheses/water-quality-evidence.md",
+        "claims": 14,
+        "represented_blocks": 5,
+        "blocks": 10,
+        "semantic_completeness_established": false
+      }
+    ],
+    "exact_local_excerpts_checked": 6,
+    "expert_review": false
+  },
+  "case_results": [
+    {
+      "id": "T01",
+      "fact_sha256": "8ee0749be3cf33698135c87a78a22b6f17d0bc1286d48170e375786410afd68c",
+      "target_sha256": "8ee0749be3cf33698135c87a78a22b6f17d0bc1286d48170e375786410afd68c",
+      "structural_result": {
+        "relation": "same_fact",
+        "basis": "exact_typed_value"
+      },
+      "actual_relation": "same_fact",
+      "expected_relation": "same_fact",
+      "correct": true,
+      "scope": "article",
+      "reason": "Та же расчётная численность 2018, источник и схема учёта. Не новый факт."
+    },
+    {
+      "id": "T02",
+      "fact_sha256": "12571b51ee358a7f513a23008f0ef1772bfb57c3ae92db81ce83f1dd6f0db40e",
+      "target_sha256": "ca6f151a5d4060a4c676e00979f37369c8432dd2f641d34ec6325ea8f291c8f4",
+      "structural_result": {
+        "relation": "incomparable",
+        "differences": [
+          "object",
+          "indicator",
+          "statistic",
+          "unit",
+          "territory",
+          "period",
+          "value_qualifier",
+          "method_description"
+        ]
+      },
+      "actual_relation": "incomparable",
+      "expected_relation": "incomparable",
+      "correct": true,
+      "scope": "article",
+      "reason": "Длина обследованного побережья не число ледовых разрезов. Примерная длина около 200 км относится к обследованию 2018, эпизод гибели — осень 2017. Новизна требует отдельной всей статьи."
+    },
+    {
+      "id": "T03",
+      "fact_sha256": "8ee0749be3cf33698135c87a78a22b6f17d0bc1286d48170e375786410afd68c",
+      "target_sha256": "a9a1ce6adfcc2295bc72860d1854e3314d2fbd37a3e4c91cb72c6b078e648cd8",
+      "structural_result": {
+        "relation": "incomparable",
+        "differences": [
+          "period",
+          "method_description"
+        ]
+      },
+      "actual_relation": "incomparable",
+      "expected_relation": "incomparable",
+      "correct": true,
+      "scope": "source_pair",
+      "reason": "Периоды и описанные схемы различны. Разница 137,6/163,2 не доказывает тренд или принципиальную несовместимость методов."
+    },
+    {
+      "id": "T04",
+      "fact_sha256": "917db78bdbf8d7715705114deb34fa05fdd3830c793fb62d21e0599a5263b4c6",
+      "target_sha256": "86b522b2af89ab4778d90e28e6162e564858282714c156771bf819d9d0297da6",
+      "structural_result": {
+        "relation": "incomparable",
+        "differences": [
+          "territory"
+        ]
+      },
+      "actual_relation": "incomparable",
+      "expected_relation": "incomparable",
+      "correct": true,
+      "scope": "article",
+      "reason": "250 и 35 км² описывают разные зоны, не два значения одной площади."
+    },
+    {
+      "id": "T05",
+      "fact_sha256": "9e815d6aa4ab8deace2025b036a173535f02c496fe239b3ec17088f66d4b2c93",
+      "target_sha256": "971477c45fe348ab3c799333bebf57fbedd0a4d493dbc06b9ff9c788ced60d61",
+      "structural_result": {
+        "relation": "incomparable",
+        "differences": [
+          "statistic",
+          "unit",
+          "method_description"
+        ]
+      },
+      "actual_relation": "incomparable",
+      "expected_relation": "incomparable",
+      "correct": true,
+      "scope": "source_pair",
+      "reason": "Реальное расхождение сообщений 5 проб/7 наблюдений за 2024. Статистика и единица различаются, агрегация неизвестна; доказанного конфликта сопоставимых измерений нет."
+    },
+    {
+      "id": "T06",
+      "fact_sha256": "a0f614d408f173f704fd2e7ae607926b4e85be106aad1ff02757e29dd27fe936",
+      "target_sha256": "8ee0749be3cf33698135c87a78a22b6f17d0bc1286d48170e375786410afd68c",
+      "structural_result": {
+        "relation": "incomparable",
+        "differences": [
+          "indicator",
+          "statistic",
+          "unit",
+          "value_qualifier"
+        ]
+      },
+      "actual_relation": "incomparable",
+      "expected_relation": "incomparable",
+      "correct": true,
+      "scope": "article",
+      "reason": "Ошибка приплода ≤13% не ошибка расчёта общей популяции и не её численность."
+    },
+    {
+      "id": "T07",
+      "fact_sha256": "60b4dfd0f6f522efd8ef14822fafbec97502b96b7a457fdb6314f1a8e6a0663a",
+      "target_sha256": "8914712a65fe79315d665b7301ecfe8ff9f1f4c1b70776a9d264112c04f1ec38",
+      "structural_result": {
+        "relation": "incomparable",
+        "differences": [
+          "message_kind",
+          "method_description"
+        ]
+      },
+      "actual_relation": "incomparable",
+      "expected_relation": "incomparable",
+      "correct": true,
+      "scope": "article",
+      "reason": "Норматив 0,001 мг/дм3 не измерение и не кратность максимального превышения."
+    },
+    {
+      "id": "T08",
+      "fact_sha256": "4e8aa2c8234fcc246650877b68b5c4e9be5d9ad178e947a84421b294eec4722f",
+      "target_sha256": "8ee0749be3cf33698135c87a78a22b6f17d0bc1286d48170e375786410afd68c",
+      "structural_result": {
+        "relation": "insufficient",
+        "reason": "method_not_documented"
+      },
+      "actual_relation": "insufficient",
+      "expected_relation": "insufficient",
+      "correct": true,
+      "scope": "source_pair",
+      "reason": "Та же цифра в выводах не даёт дополнительного описания метода; неизвестность методики не объявляется несовместимостью."
+    },
+    {
+      "id": "T09",
+      "fact_sha256": "83b17129b97f0c191c1828566161bec29d9297afc6046c3628b2ce7ca326f141",
+      "target_sha256": "583331d7ab3f178597b0f0fd812dc1b9f14578a9564f5fa27aa1e3cff868a4d0",
+      "structural_result": {
+        "relation": "incomparable",
+        "differences": [
+          "statistic"
+        ]
+      },
+      "actual_relation": "incomparable",
+      "expected_relation": "incomparable",
+      "correct": true,
+      "scope": "source_pair",
+      "reason": "Среднее и максимум кислорода одного года не конкурирующие оценки. Аналитический метод неизвестен."
+    },
+    {
+      "id": "T10",
+      "fact_sha256": "d9c9a6384bbf97d7b70c6938f6a05e190f55e3f2cf94e48ebedd39bf563e5d48",
+      "target_sha256": "9e815d6aa4ab8deace2025b036a173535f02c496fe239b3ec17088f66d4b2c93",
+      "structural_result": {
+        "relation": "insufficient",
+        "reason": "unknown_period"
+      },
+      "actual_relation": "insufficient",
+      "expected_relation": "insufficient",
+      "correct": true,
+      "scope": "incomplete_projection",
+      "reason": "Явно неполная проекция реального сообщения; пустой период не заполняется годом доклада."
+    },
+    {
+      "id": "T11",
+      "fact_sha256": "b0d9f627a7af8edb6b3470c8840568eb7fa9f00a7cd245d3edd3046085581427",
+      "target_sha256": "f6f63d3d46660ff090d472dabc8d6063f531685efc6a9ede318e0202f4e401a1",
+      "structural_result": {
+        "relation": "semantic_required"
+      },
+      "actual_relation": "semantic_equivalent",
+      "expected_relation": "semantic_equivalent",
+      "correct": true,
+      "scope": "semantic_article_pair",
+      "reason": "Только смысловое отношение эндемик/эндемичное в одной фразе. Не новые данные о распространении и не вся статья."
+    },
+    {
+      "id": "T12",
+      "fact_sha256": "d791891ecdc621d5376b2a979cac1a9bccc22288655b33a510848d0ae7574858",
+      "target_sha256": "60b4dfd0f6f522efd8ef14822fafbec97502b96b7a457fdb6314f1a8e6a0663a",
+      "structural_result": {
+        "relation": "same_fact",
+        "basis": "exact_typed_value"
+      },
+      "actual_relation": "same_fact",
+      "expected_relation": "same_fact",
+      "correct": true,
+      "scope": "article",
+      "reason": "Один специальный норматив с 1985 в двух докладах. Год доклада не подставлен как год наблюдения; актуальность права сегодня не утверждается."
+    }
+  ],
+  "semantic_review": {
+    "case_id": "T11",
+    "run_id": "3dcc56df421158d31fb1a905ad60b6bdbdd590f341b30fd85f684a9871927dd6",
+    "raw_response_sha256": "51284ec24d3ce1c0a893e96d1fe281ffec268fe02a25549ef531528e29abe483",
+    "fact_sha256": "b0d9f627a7af8edb6b3470c8840568eb7fa9f00a7cd245d3edd3046085581427",
+    "target_sha256": "f6f63d3d46660ff090d472dabc8d6063f531685efc6a9ede318e0202f4e401a1",
+    "decision": "semantic_equivalent",
+    "expert_review": false,
+    "reason": "В контексте байкальской нерпы эндемик Байкала передаёт тот же смысл, что эндемичное водное млекопитающее. Источник прямо называет нерпу эндемиком. Не добавлены утверждения о современном распространении за пределами выбранного описания, причинности или состоянии всей популяции."
+  },
+  "model": {
+    "experiment_id": "241261817cc23750b99ce9d2d6acf29fa72ec225d3685608250353f599780a8f",
+    "run_id": "3dcc56df421158d31fb1a905ad60b6bdbdd590f341b30fd85f684a9871927dd6",
+    "path": "data/wiki_updates/cross_topic_runs/3dcc56df421158d31fb1a905ad60b6bdbdd590f341b30fd85f684a9871927dd6.json",
+    "errors": [],
+    "parsed": {
+      "fact_id": "PARAPHRASE-N01",
+      "target_id": "N01",
+      "relation": "entails"
+    },
+    "checked": {
+      "fact_id": "PARAPHRASE-N01",
+      "target_id": "N01",
+      "relation": "entails"
+    },
+    "raw_response_sha256": "51284ec24d3ce1c0a893e96d1fe281ffec268fe02a25549ef531528e29abe483",
+    "request_sha256": "164563f9d1e36e1c435e65143adaacb35273498c9360c4c9eb41d037ef63300f",
+    "elapsed_seconds": 32.105,
+    "usage": {
+      "completion_tokens": 30,
+      "prompt_tokens": 754,
+      "total_tokens": 784,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "runtime": {
+      "model_bundle": {
+        "profile": "qwen25-7b-q4km",
+        "repo": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+        "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f",
+        "license": "apache-2.0",
+        "files": [
+          {
+            "filename": "qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+            "bytes": 3993201344,
+            "sha256": "dfce12e3862a5283ccfb88221b48480e58745165de856439950d0f22590580db"
+          },
+          {
+            "filename": "qwen2.5-7b-instruct-q4_k_m-00002-of-00002.gguf",
+            "bytes": 689872288,
+            "sha256": "539cf93f78e887edea1c04e2d7d8cdaca9d01dae9c9025bcb8accbe29df3d72a"
+          }
+        ],
+        "total_bytes": 4683073632
+      },
+      "server_sha256": "ea2082a6ea129e3fbe0e32c4a57cf0fd754572b5a0fb824b89b9ed80b64836f6",
+      "server_version": "version: 0.7.0-dev (build 1, commit 620d222)\nbuilt with GNU 14.2.0 for Linux x86_64",
+      "backend_probe": {
+        "exit_code": 0,
+        "output": "Available devices:\n  (none)"
+      },
+      "threads": 4,
+      "context_tokens": 8192,
+      "gpu_layers": 0,
+      "resources_before": {
+        "memory_limit_bytes": 34359738368,
+        "memory_available_bytes": 23940272128,
+        "disk_free_bytes": 22114947072,
+        "cpu_affinity_count": 5,
+        "cpu_quota": "400000 100000"
+      },
+      "server_log_path": "data/llm-evaluation/source-first-server-1792691411870810384.log",
+      "timeout_seconds": 600,
+      "command": [
+        "/workspace/baikal-reports/data/llm-runtime/build-avx2/bin/llama-server",
+        "-m",
+        "/workspace/baikal-reports/data/models/qwen25-7b-q4km/qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+        "--alias",
+        "baikal-local-evaluation",
+        "-c",
+        "8192",
+        "-t",
+        "4",
+        "-tb",
+        "4",
+        "-ngl",
+        "0",
+        "--parallel",
+        "1",
+        "--batch-size",
+        "256",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "44671"
+      ],
+      "server_wall_seconds": 36.201,
+      "peak_child_rss_kib": 8175784
+    },
+    "context_preflight": {
+      "prompt_tokens_native": 754,
+      "output_tokens_reserved": 256,
+      "safety_reserve": 128,
+      "context_tokens": 8192,
+      "generation_requests": 0
+    },
+    "finish_reason": "stop"
+  },
+  "absence_review": {
+    "case_id": "T02",
+    "fact_sha256": "12571b51ee358a7f513a23008f0ef1772bfb57c3ae92db81ce83f1dd6f0db40e",
+    "article_sha256": "d2330425b2e694ac3a06fb72c129c293641e2ea30dce65aec2dade1e82e36312",
+    "reviewed_block_ids": [
+      "B01",
+      "B02",
+      "B03",
+      "B04",
+      "B05",
+      "B06",
+      "B07"
+    ],
+    "expert_review": false,
+    "reason": "Проверены все семь содержательных блоков статьи, включая табличный повтор и раздел ограничений. Статья сообщает причины гибели, но не летнюю съёмку около 200 км берега. Источник PDF53 описывает обследование летом 2018 и оценку эпизода осени 2017. Это разные временные роли; около 200 км не точная длина всего берега."
+  },
+  "candidate": {
+    "fact": {
+      "id": "SOURCE-COAST-2018",
+      "article_evidence": null,
+      "evidence_ids": [
+        "N18"
+      ],
+      "source_support": {
+        "evidence_id": "N18",
+        "quote": "Летом 2018 года, после освобождения озера ото льда, Байкальским филиалом ФГБНУ\n       «Госрыбцентр» было проведено исследование участков побережья протяжённостью около\n       200 км, которое показало, что "
+      },
+      "features": {
+        "object": "обследование побережья",
+        "indicator": "протяжённость обследованных участков",
+        "value": "200",
+        "statistic": "survey_extent",
+        "unit": "км",
+        "territory": "обследованные участки побережья Байкала",
+        "period": {
+          "year": 2018,
+          "season": "лето"
+        },
+        "message_kind": "reported_observation",
+        "value_kind": "numeric",
+        "attribution": "source_statement",
+        "comparison_scope": "specified_source_message"
+      },
+      "observation_year": 2018,
+      "report_year": 2018,
+      "publication_year": null,
+      "method": {
+        "kind": "летнее обследование побережья после освобождения ото льда"
+      },
+      "value_qualifier": "approximate",
+      "status": "source_statement_checked_non_expert",
+      "expert_review": false,
+      "limitations": [
+        "Сообщение источника сверено, не независимое подтверждение измерения. Подлинность зеркала и сопоставимость рядов не повышаются автоматически."
+      ]
+    },
+    "absence_review": {
+      "case_id": "T02",
+      "fact_sha256": "12571b51ee358a7f513a23008f0ef1772bfb57c3ae92db81ce83f1dd6f0db40e",
+      "article_sha256": "d2330425b2e694ac3a06fb72c129c293641e2ea30dce65aec2dade1e82e36312",
+      "reviewed_block_ids": [
+        "B01",
+        "B02",
+        "B03",
+        "B04",
+        "B05",
+        "B06",
+        "B07"
+      ],
+      "expert_review": false,
+      "reason": "Проверены все семь содержательных блоков статьи, включая табличный повтор и раздел ограничений. Статья сообщает причины гибели, но не летнюю съёмку около 200 км берега. Источник PDF53 описывает обследование летом 2018 и оценку эпизода осени 2017. Это разные временные роли; около 200 км не точная длина всего берега."
+    },
+    "source": {
+      "id": "N18",
+      "source_id": "drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ",
+      "sha256": "c813f2671ebb235dd3291076f3c728bb78d821391024e2bce754849c79fa992a",
+      "page": 53,
+      "report_year": 2018,
+      "publication_year": null,
+      "source_authenticity": "mirror_unverified",
+      "quote": "       52                                                             Государственный доклад\n          Байкальская нерпа (Pusa/Phoca sibirica Gm.) – единственное водное млекопитающее\n       Байкала, эндемик, заселяет всю акваторию водоёма. Распространение зависит от сезо-\n       на года, кочёвки носят преимущественно пищевой характер, отчасти обусловлены ледо-\n1. 1  выми (температурными) условиями. Нерпа – потенциально долгоживущий вид. Она имеет      сложную достаточно стабильную половую и возрастную структуру популяции. При этом\n       популяция обладает большим репродуктивным потенциалом, поскольку около половины чис-\n       ленности самок – неполовозрелые особи, не участвующие в воспроизводстве, что, несомнен-\n        но, свидетельствует о высокой численности байкальской нерпы.\n          Традиционный учёт численности приплода нерпы был провёден Байкальским филиалом\n     ФГБНУ «Госрыбцентр» в марте-апреле 2018 года по всей акватории Байкала (28 стандарт-\n      ных разрезов, 196 учётных площадок). Расчётная численность приплода – 26,1 тыс. голов,\n      при этом статистическая ошибка расчёта численности приплода составила не более 13 %.\n      Общая численность популяции байкальской нерпы в 2018 году, по сравнению с 2017 годом,\n       увеличилась на 9,3 тыс. особей и составила 137,6 тыс. экз.\n          Высокая численность нерпы подтверждается и косвенными показателями, свидетель-\n      ствующими о расширении мест её обитания. Все чаще нерпа встречается на мелководных\n       участках Байкала, особенно в местах постановки сетных орудий лова.\n          Летом 2018 года, после освобождения озера ото льда, Байкальским филиалом ФГБНУ\n       «Госрыбцентр» было проведено исследование участков побережья протяжённостью около\n       200 км, которое показало, что первоначально озвученная величина гибели нерпы осенью\n       2017 года была значительно занижена. Согласно полученным результатам, количество по-\n      гибших животных составило не менее 1 тыс. экз. Данная величина ориентировочна, посколь-\n       ку неизвестно, сколько погибших особей нерпы утонуло, а сколько было выброшено на берег.\n           Согласно правилам рыболовства, промышленная добыча байкальской нерпы запреща-\n        ется. Промысел проводится только в целях обеспечения традиционного образа жизни и осу-\n       ществления традиционной хозяйственной деятельности коренных малочисленных народов, а\n       также в научно-исследовательских и контрольных целях. Всего в 2018 году, по официальной\n        статистике, было добыто 1742 экз. нерпы (в 2017 г. – 2078, в 2016 г. – 1631, в 2015 г. – 1434, в\n       2014 г. – 547, в 2013 г. – 1755). С учётом незаконной добычи, изъятие составило 2200-2300 го-\n       лов (в 2017 г. – 2500-2600, в 2016 г. – 2000-2200, в 2015 г. – 1900-2100, в 2014 г. – 950-1150, в\n       2013 – 2300-2800 голов). В 1977–2001 гг. среднегодовая добыча, с учётом незаконной, состав-\n       ляла 6-7 тыс. голов. Таким образом, промысловая нагрузка на популяцию нерпы остается на\n       низком уровне.\n          Величина общего допустимого изъятия (ОДУ) нерпы, при условии сохранения общей\n       численности популяции на стабильном уровне, как показывают расчёты, составляет не ме-\n       нее 5-6 тыс. шт. в год. Принимая во внимание существующий запрет промышленной добычи\n       нерпы, на 2018 и 2019 годы ОДУ установлен в объёме 3000 голов.\n        В связи с высокой численностью байкальской нерпы, массовой гибелью особей в осен-\n      ний период 2017 года и рисками новых эпизоотий Росрыболовством в 2018 году было пред-\n      ложено внести изменения в Правила рыболовства для Байкальского рыбохозяйственного\n       бассейна в части возобновления промышленной добычи нерпы. В ходе обсуждений проект\n       приказа получил многочисленные негативные отзывы со стороны общественности и эколо-\n       гических организаций и был отозван. Кроме того, активной критике подверглись методиче-\n       ские подходы к определению запасов этого вида.\n        В связи с важностью вопроса, ФГБНУ «Всероссийский научно-исследовательский ин-\n       ститут рыбного хозяйства и океанографии» было принято решение о проведении углублён-\n      ных исследований байкальского эндемика, часть которых была выполнена в 2018 году, а часть\n       планируется к выполнению в 2019 году, в том числе апробация альтернативных методов\n       учёта численности приплода и общей численности (с применением беспилотных летатель-"
+    },
+    "previous_complete_article": {
+      "article": "syntheses/baikal-seal.md",
+      "sha256": "d2330425b2e694ac3a06fb72c129c293641e2ea30dce65aec2dade1e82e36312",
+      "path": "data/wiki_updates/versions/d2330425b2e694ac3a06fb72c129c293641e2ea30dce65aec2dade1e82e36312.md"
+    },
+    "proposed_wording": "Летом 2018 года после освобождения озера ото льда обследованы участки побережья протяжённостью около 200 км. Это пространственный охват обследования последствий гибели осени 2017, а не длина всего побережья и не новое доказательство причины смертности (доклад 2018, PDF53).",
+    "status": "unpublished_evidence_candidate",
+    "editorial_decision": null,
+    "expert_review": false,
+    "published": false,
+    "origin": "Curated primary-source detail with separate full-article review; not discovered/generated by Qwen",
+    "id": "9fd6f12e7238260621decadfe86ccf1e6c3720dac0bee18195d28f0dcafffc14",
+    "path": "data/wiki_updates/cross_topic_candidates/9fd6f12e7238260621decadfe86ccf1e6c3720dac0bee18195d28f0dcafffc14.json"
+  },
+  "selenga_review": {
+    "path": "datasets/selenga_scope_review.json",
+    "sha256": "40eee3af2b681430c451654bfd7aac657c79cabe0eda1b3c254aec7704e5394a",
+    "editorial_packet": "datasets/selenga_editorial_packet.json",
+    "editorial_packet_sha256": "6c232292152ac084e652951c39dda9f71904aa39970a0b8d44028dc738b2f96f",
+    "issues_assessed": 4,
+    "source_structure_or_event_facets": 8,
+    "coverage_increased": false,
+    "published": false
+  },
+  "research_plans": {
+    "path": "datasets/research_topic_plans.json",
+    "sha256": "a06788afddcd55c2112100c6f8fd0418387834bd0869f824634829d95fb4baa8",
+    "plans": 2,
+    "statements": 9,
+    "new_articles": 0
+  },
+  "summary": {
+    "examples": 12,
+    "correct": 12,
+    "incorrect": 0,
+    "structural_decisions": 11,
+    "structural_correct": 11,
+    "real_llm_requests": 1,
+    "semantic_correct": 1,
+    "new_unpublished_evidence_candidates": 1,
+    "existing_candidates_prepared_for_editorial_review": 2,
+    "comparable_interdocument_measurement_conflicts_confirmed": 0,
+    "documented_interdocument_message_disagreements": 1,
+    "automatic_publications": 0,
+    "added_reviewed_observations": 0
+  },
+  "preservation": {
+    "protected_files": 159,
+    "wiki_files": 49,
+    "analytical_articles": 22,
+    "reviewed_observations": 168,
+    "unchanged_checkpoints_size_mtime": 3878,
+    "unchanged_pdf_sha256": 11
+  },
+  "limitations": [
+    "Partial registries, not full semantic inventories; one represented block may contain unregistered claims.",
+    "Structured features were curated in advance, not extracted unaided by Qwen.",
+    "One correct semantic paraphrase is not a general model accuracy or novelty benchmark.",
+    "No proven conflict of methodologically comparable environmental measurements was established; source discrepancy remains unresolved.",
+    "Two of the three Selenga deferred statements still need methodological sources/model specification; dataset scope has been assessed, not the whole source collection.",
+    "All substantive/editorial reviews are non-expert, without a documented human approval or institutional endorsement."
+  ],
+  "expert_review": false,
+  "published": false,
+  "validation": {
+    "unit_tests_passed": 173,
+    "unit_tests_failed": 0,
+    "wiki_lint_errors": 0,
+    "wiki_lint_existing_warnings": "Missing title-verified processed sources for 2003–2014 and 2026; not resolved by this sprint.",
+    "scientific_evidence_references_checked": 162,
+    "encyclopedia_references_checked": 47,
+    "reviewed_observations_checked": 168,
+    "new_exact_local_excerpt_references_checked": 18,
+    "local_document_links_checked": 129,
+    "physical_page_links_checked": 16,
+    "public_copy_without_private_data_tested": true,
+    "protected_files_unchanged": 159,
+    "page_checkpoint_size_mtime_unchanged": 3878,
+    "original_pdf_sha256_unchanged": 11,
+    "expert_review": false
+  }
+}

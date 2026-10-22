@@ -1,0 +1,109 @@
+{
+  "version": 1,
+  "article": {
+    "path": "wiki/syntheses/selenga-sediments.md",
+    "sha256": "a67b8fbbfda3d9716f31c291485877d576d8c315587604486a411d85918984e6"
+  },
+  "prior_candidate_packet": {
+    "review_id": "d7d1a7ced1c0d3b480289840576f20948c6517f845025ffe0395af10c55488af",
+    "review_path": "data/wiki_updates/coverage_reviews/d7d1a7ced1c0d3b480289840576f20948c6517f845025ffe0395af10c55488af.json",
+    "candidate_packet_id": "6031cdc119d96f595ae1cd08a425c12edaf93981228733090193e9fc0566d487",
+    "candidate_packet_path": "data/wiki_updates/coverage_candidates/6031cdc119d96f595ae1cd08a425c12edaf93981228733090193e9fc0566d487.json",
+    "candidates": 2,
+    "published": false
+  },
+  "source": {
+    "id": "E19_31",
+    "source_id": "drive-1RWGLrOzFO32Jxrlv-B2n_PafSFoRVySn",
+    "sha256": "747fadeaf55107fbf9fbb5965696912195b4795436a9f300c009a4f5e5d9839a",
+    "page": 31,
+    "report_year": 2019,
+    "publication_year": null,
+    "quote": "Состояние донных отложений на авандельте реки Селенги\n    В 2019 году проведена одна съёмка в сентябре, отобрано 12 проб с глубины 23 –\n58 м. В 2019 году, в сравнении со съёмкой 2018 года, среднее содержание растворённого\nкислорода в грунтовой воде увеличилось в 1,4 раза до значения 9,27 мг/дм3. В грунтовой\nводе увеличилось среднее содержание азота аммонийного в 3,2 раза, железа (II) – в 1,5\nраза, железа (III) – в 3,3 раза, летучих фенолов – с нулевых значений до 0,001 мг/дм3, азота\nнитритного и нитратного – с нулевых значений до 0,005 и 0,031 мг/дм3 соответственно.\nСреднее содержание фосфора фосфатного уменьшилось в 1,7 раза. Уровень водородного",
+    "source_authenticity": "mirror_unverified"
+  },
+  "candidate_facts": [
+    {
+      "features": {
+        "object": "съёмка авандельты",
+        "indicator": "число отобранных проб",
+        "value": "12",
+        "statistic": "count",
+        "unit": "проба",
+        "territory": "авандельта Селенги",
+        "period": {
+          "year": 2019,
+          "month": 9
+        },
+        "message_kind": "observation",
+        "value_kind": "numeric",
+        "attribution": "source_statement",
+        "comparison_scope": "specified_event_or_table"
+      },
+      "source_evidence_id": "E19_31",
+      "source_binding": "f8fe886f8737e1823408bbab663ee5c8041ed194225036229d1215ee2e5a4a61",
+      "text": "Источник сообщает об отборе 12 проб в сентябрьской съёмке; разбивка по средам не установлена.",
+      "fact_id": "SAMPLES12-3a0d6a6ad112"
+    },
+    {
+      "features": {
+        "object": "съёмка авандельты",
+        "indicator": "глубины отбора проб",
+        "value": "23–58",
+        "statistic": "range",
+        "unit": "м",
+        "territory": "авандельта Селенги",
+        "period": {
+          "year": 2019,
+          "month": 9
+        },
+        "message_kind": "observation",
+        "value_kind": "numeric",
+        "attribution": "source_statement",
+        "comparison_scope": "specified_event_or_table"
+      },
+      "source_evidence_id": "E19_31",
+      "source_binding": "f8fe886f8737e1823408bbab663ee5c8041ed194225036229d1215ee2e5a4a61",
+      "text": "В докладе указаны глубины отбора 23–58 м; это диапазон, не средняя глубина.",
+      "fact_id": "DEPTH-29911f2dc898"
+    }
+  ],
+  "proposed_addition": "Доклад за 2019 год сообщает об одной сентябрьской съёмке авандельты: отобрано 12 проб с глубин 23–58 м (PDF-страница 31). Число проб здесь сохраняется в формулировке источника: их распределение между грунтовой водой и донными отложениями не установлено. Глубины приведены как диапазон, не средняя величина.",
+  "editorial_questions": [
+    "Уточнить по методике, как источник считает 12 проб; не приписывать по 12 каждой среде.",
+    "Сохранить физический номер PDF31 и различие с напечатанным номером.",
+    "Сопроводить добавление ограничением сопоставимости станций и горизонтов."
+  ],
+  "scope_correction": {
+    "unit_id": "U25",
+    "article_evidence": {
+      "id": "U25",
+      "quote": "Речной вынос за 2024–2025 годы уже имеется в другом наборе, но относится к иному объекту измерения.",
+      "start": 3834,
+      "end": 3933
+    },
+    "assessment": "editorial_scope_ambiguity_confirmed",
+    "reason": "Годовой речной вынос в reviewed наборе относится к Баргузину, Верхней Ангаре, Турке и Тые; территория Селенги отсутствует. Упоминание её имени внутри общей цитаты таблицы не меняет территорию записи.",
+    "source_context_ids": [
+      "E19_31",
+      "E19_32",
+      "E22_40"
+    ],
+    "proposed_editorial_wording": "Отдельный проверенный набор речного выноса за 2024–2025 годы содержит данные других притоков — Баргузина, Верхней Ангары, Турки и Тыи; это не ряд по Селенге и не данные грунтовой воды авандельты.",
+    "verified_environmental_fact": false,
+    "expert_review": false,
+    "editorial_decision": null
+  },
+  "previous_complete_article": {
+    "article": "syntheses/selenga-sediments.md",
+    "sha256": "a67b8fbbfda3d9716f31c291485877d576d8c315587604486a411d85918984e6",
+    "path": "data/wiki_updates/versions/a67b8fbbfda3d9716f31c291485877d576d8c315587604486a411d85918984e6.md"
+  },
+  "status": "unpublished_awaiting_editorial_review",
+  "editorial_decision": null,
+  "expert_review": false,
+  "published": false,
+  "changes_to_observations": 0,
+  "local_packet_id": "87501aeefc8c187c50f3ffa39ac9798c65170f4595df66f7699ee89abf0e1ce8",
+  "local_packet_path": "data/wiki_updates/selenga_editorial_packets/87501aeefc8c187c50f3ffa39ac9798c65170f4595df66f7699ee89abf0e1ce8.json"
+}
