@@ -209,6 +209,10 @@ class TypedFacts(unittest.TestCase):
     def test_transport_sends_schema_and_preserves_rejection_without_real_network(self):
         class Opener:
             def open(self, req, **kwargs):
+                if req.full_url.endswith("/apply-template"):
+                    return io.BytesIO(b'{"prompt":"synthetic"}')
+                if req.full_url.endswith("/tokenize"):
+                    return io.BytesIO(b'{"tokens":[1,2]}')
                 payload = json.loads(req.data)
                 self_outer.assertEqual(
                     payload["response_format"]["type"], "json_schema"

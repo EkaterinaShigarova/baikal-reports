@@ -51,6 +51,7 @@ Baikal LLM Wiki помогает собирать сведения об экол
 | Подтверждения отдельных утверждений | [datasets/scientific_review_claims.json](../datasets/scientific_review_claims.json) | Найти документ, страницу, цитату и решение сверки |
 | Версии источников статьи | [datasets/article_provenance.json](../datasets/article_provenance.json) | Узнать, на каких файлах основана статья |
 | Представление спорной таблицы 2015 | [datasets/typed_evidence_2015.json](../datasets/typed_evidence_2015.json) | Увидеть подписи/ячейки и оба варианта расхождения; это экспериментальные доказательства, не новые проверенные наблюдения |
+| Последний небольшой отчёт о фактах | [datasets/typed_facts_evaluation.json](../datasets/typed_facts_evaluation.json) | Три записи, прошедшие сверку по источнику; это не новые строки проверенной таблицы и не готовое обновление Wiki |
 | Итоги опытов с моделью | [docs/LLM_EVALUATION.md](LLM_EVALUATION.md) | Узнать реальные успехи, отказы и ограничения |
 | Что уже сделано и что дальше | [PROGRESS.md](../PROGRESS.md), [docs/REMAINING.md](REMAINING.md) | Найти прогресс и очередь задач |
 

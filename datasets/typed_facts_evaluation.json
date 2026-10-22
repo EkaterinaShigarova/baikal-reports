@@ -1,0 +1,791 @@
+{
+  "version": 1,
+  "research_date": "2026-10-22",
+  "baseline_commit": "21392a3b46408f6c406fae67415a0058ae61835e",
+  "execution_code_snapshot_commit": "4fe1c06d8e57aef58c18352aed119bfc879913c2",
+  "execution_snapshot_note": "Committed after generation as an exact source snapshot; content SHA256 equals the pre-generation immutable manifest. This does not claim the commit existed before inference.",
+  "experiment_id": "a9911ba93791456cc154f49df27fb345933f9ff49a7a4435f2cec0fb7e2304a3",
+  "manifest_path": "data/wiki_updates/typed_fact_experiments/a9911ba93791456cc154f49df27fb345933f9ff49a7a4435f2cec0fb7e2304a3.json",
+  "manifest_file_sha256": "a46cff06a07b3f41f54c2f38154e052a15bd9fd27aef9d8336e71d0b0b023655",
+  "protocol_path": "docs/TYPED_FACTS_PROTOCOL.md",
+  "protocol_sha256": "5b0d66490b641e1ad4a685920b36bf51c9ba48d2f323a2cb4d7281c85474aba9",
+  "executed_module_sha256": "78732f9d87b983b71cdd1921c2193883930a0ecd2adbfd5e8861caabeb80e721",
+  "executed_runner_sha256": "d4ef5f725c712848e97ec4778bb55ee4a7c05ae81904c3948cdbb85e88f11eb0",
+  "table_view_sha256": "a5f8cde78ed687654ba666ebdda1a426b10b5128696b67a168e82f1f8ba88c89",
+  "baseline_report_sha256": "0fea06f4bbc29e0d8d5a72cf795a0e65aa3b39255af627033c390c64b5c8e109",
+  "model_profile": {
+    "profile": "qwen25-7b-q4km",
+    "repo": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+    "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f",
+    "license": "apache-2.0",
+    "files": [
+      {
+        "filename": "qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+        "bytes": 3993201344,
+        "sha256": "dfce12e3862a5283ccfb88221b48480e58745165de856439950d0f22590580db"
+      },
+      {
+        "filename": "qwen2.5-7b-instruct-q4_k_m-00002-of-00002.gguf",
+        "bytes": 689872288,
+        "sha256": "539cf93f78e887edea1c04e2d7d8cdaca9d01dae9c9025bcb8accbe29df3d72a"
+      }
+    ],
+    "total_bytes": 4683073632
+  },
+  "runtime_rebuilt": false,
+  "model_downloaded": false,
+  "runtime_phases": [
+    {
+      "stage": "extract",
+      "model_bundle": {
+        "profile": "qwen25-7b-q4km",
+        "repo": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+        "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f",
+        "license": "apache-2.0",
+        "files": [
+          {
+            "filename": "qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+            "bytes": 3993201344,
+            "sha256": "dfce12e3862a5283ccfb88221b48480e58745165de856439950d0f22590580db"
+          },
+          {
+            "filename": "qwen2.5-7b-instruct-q4_k_m-00002-of-00002.gguf",
+            "bytes": 689872288,
+            "sha256": "539cf93f78e887edea1c04e2d7d8cdaca9d01dae9c9025bcb8accbe29df3d72a"
+          }
+        ],
+        "total_bytes": 4683073632
+      },
+      "server_sha256": "ea2082a6ea129e3fbe0e32c4a57cf0fd754572b5a0fb824b89b9ed80b64836f6",
+      "server_version": "version: 0.7.0-dev (build 1, commit 620d222)\nbuilt with GNU 14.2.0 for Linux x86_64",
+      "backend_probe": {
+        "exit_code": 0,
+        "output": "Available devices:\n  (none)"
+      },
+      "threads": 4,
+      "context_tokens": 8192,
+      "gpu_layers": 0,
+      "resources_before": {
+        "memory_limit_bytes": 34359738368,
+        "memory_available_bytes": 23946776576,
+        "disk_free_bytes": 22121164800,
+        "cpu_affinity_count": 5,
+        "cpu_quota": "400000 100000"
+      },
+      "server_log_path": "data/llm-evaluation/source-first-server-1792680915360018631.log",
+      "timeout_seconds": 600,
+      "command": [
+        "/workspace/baikal-reports/data/llm-runtime/build-avx2/bin/llama-server",
+        "-m",
+        "/workspace/baikal-reports/data/models/qwen25-7b-q4km/qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+        "--alias",
+        "baikal-local-evaluation",
+        "-c",
+        "8192",
+        "-t",
+        "4",
+        "-tb",
+        "4",
+        "-ngl",
+        "0",
+        "--parallel",
+        "1",
+        "--batch-size",
+        "256",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "53859"
+      ],
+      "server_wall_seconds": 433.637,
+      "peak_child_rss_kib": 8311092
+    },
+    {
+      "stage": "compare",
+      "model_bundle": {
+        "profile": "qwen25-7b-q4km",
+        "repo": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+        "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f",
+        "license": "apache-2.0",
+        "files": [
+          {
+            "filename": "qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+            "bytes": 3993201344,
+            "sha256": "dfce12e3862a5283ccfb88221b48480e58745165de856439950d0f22590580db"
+          },
+          {
+            "filename": "qwen2.5-7b-instruct-q4_k_m-00002-of-00002.gguf",
+            "bytes": 689872288,
+            "sha256": "539cf93f78e887edea1c04e2d7d8cdaca9d01dae9c9025bcb8accbe29df3d72a"
+          }
+        ],
+        "total_bytes": 4683073632
+      },
+      "server_sha256": "ea2082a6ea129e3fbe0e32c4a57cf0fd754572b5a0fb824b89b9ed80b64836f6",
+      "server_version": "version: 0.7.0-dev (build 1, commit 620d222)\nbuilt with GNU 14.2.0 for Linux x86_64",
+      "backend_probe": {
+        "exit_code": 0,
+        "output": "Available devices:\n  (none)"
+      },
+      "threads": 4,
+      "context_tokens": 8192,
+      "gpu_layers": 0,
+      "resources_before": {
+        "memory_limit_bytes": 34359738368,
+        "memory_available_bytes": 23951482880,
+        "disk_free_bytes": 22120914944,
+        "cpu_affinity_count": 5,
+        "cpu_quota": "400000 100000"
+      },
+      "server_log_path": "data/llm-evaluation/source-first-server-1792681506792710939.log",
+      "timeout_seconds": 600,
+      "command": [
+        "/workspace/baikal-reports/data/llm-runtime/build-avx2/bin/llama-server",
+        "-m",
+        "/workspace/baikal-reports/data/models/qwen25-7b-q4km/qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+        "--alias",
+        "baikal-local-evaluation",
+        "-c",
+        "8192",
+        "-t",
+        "4",
+        "-tb",
+        "4",
+        "-ngl",
+        "0",
+        "--parallel",
+        "1",
+        "--batch-size",
+        "256",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "56337"
+      ],
+      "server_wall_seconds": 476.005,
+      "peak_child_rss_kib": 8150284
+    }
+  ],
+  "elapsed_inference_phases_seconds": 909.642,
+  "peak_inference_child_rss_kib": 8311092,
+  "cases": [
+    {
+      "topic": "baikal-sturgeon",
+      "article_sha256": "59c8be41094a9fd76d117dd9138ba22d15cdeabd8d9c24474f7d20c8df13245b",
+      "article_path": "wiki/syntheses/baikal-sturgeon.md",
+      "source_evidence": [
+        {
+          "source_id": "drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0",
+          "sha256": "60ccb6065b32d959457faf9745023d763c9f6641ad7c9c8cdee7a88fea454139",
+          "page": 222,
+          "report_year": 2016,
+          "observation_period": null,
+          "quote": "Для получения икры в 2016 г. использовались производители маточного стада\n       осётра, выращенные на Гусиноозёрском осетровом рыбоводном хозяйстве (ГОРХ) ФГБУ\n      «Байкалрыбвод». Молодь осётра подращивалась в бассейнах ИЦА-2, установленных в цехе\n1.4  подращивания молоди Селенгинского экспериментального рыбоводного завода, а также в      бассейнах и лотках ГОРХ.",
+          "quote_basis": "exact_cached_page_text",
+          "source_authenticity": "mirror_unverified",
+          "novelty": "already_quoted_fragment",
+          "publication_year": null
+        },
+        {
+          "source_id": "drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0",
+          "sha256": "60ccb6065b32d959457faf9745023d763c9f6641ad7c9c8cdee7a88fea454139",
+          "page": 222,
+          "report_year": 2016,
+          "observation_period": null,
+          "quote": "В результате подращивания получено и выпущено в р. Селенгу\n      1044 тыс. шт. молоди осётра, в т.ч. 1029 тыс. шт. средней навеской 3,0 г в целях выполнения\n      государственного задания (рис. 1.4.6.3).",
+          "quote_basis": "exact_cached_page_text",
+          "source_authenticity": "mirror_unverified",
+          "novelty": "already_quoted_fragment",
+          "publication_year": null
+        }
+      ],
+      "extraction": {
+        "run_id": "081eb568b4e94cab4a9e2f5595a73a18da03aca054a11494a822d4a694a246a1",
+        "path": "data/wiki_updates/typed_fact_runs/081eb568b4e94cab4a9e2f5595a73a18da03aca054a11494a822d4a694a246a1.json",
+        "file_sha256": "811f79ef70330baae8c52d78c6d2c2bbf1e5a23cb0e2bb7e2ee950b5a7910477",
+        "raw_response_sha256": "1b381ff41ec02bbeef0e8b94d62fcac8669b7612f9b176e89a00e86e86f78d15",
+        "request_sha256": "1c335a8ec9aa30fb0c44f4aeeed566cd98e1a141a5695b2ba2831aee974913f8",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 288,
+          "prompt_tokens": 1062,
+          "total_tokens": 1350,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "elapsed_seconds": 75.14,
+        "raw_records": 1,
+        "programmatically_admissible": 0,
+        "programmatic_rejections": [
+          {
+            "index": 0,
+            "record": {
+              "text": "В 2016 году для получения икры использовались производители маточного стада осетра, выращенные на Гусиноозёрском осетровом рыбоводном хозяйстве.",
+              "primary_evidence_id": "S1",
+              "cell_id": null,
+              "source_role": "prose",
+              "statistic": "statement",
+              "observation_year": 2016,
+              "year_basis_id": "Y_EGGS_2016",
+              "indicator": "получение икры",
+              "value": "Гусиноозёрское осетровое рыбоводное хозяйство, ФГБУ «Байкалрыбвод»",
+              "unit": null,
+              "territory": null,
+              "limitations": [
+                "Точное название рыбоводного хозяйства указано в источнике, но не дает полной информации о местоположении или принадлежности."
+              ],
+              "ambiguity_ids": []
+            },
+            "reason": "Quantitative prose requires value/unit"
+          }
+        ],
+        "source_checked_records": [],
+        "source_review": {
+          "bundle_sha256": "98bece406b9e2d1acfefd9e41679301a3b3817e4becb985fc106cbeaa40ce1e5",
+          "review_kind": "source_comparison_non_expert",
+          "expert_review": false,
+          "fact_decisions": {},
+          "conflict_decisions": {}
+        },
+        "fully_source_supported_fact_ids": [],
+        "model_conflict_summary": [],
+        "global_model_limitations": [
+          "Источник не предоставляет дополнительной информации о местоположении или принадлежности Гусиноозёрского осетрового рыбоводного хозяйства."
+        ]
+      },
+      "comparison": {
+        "status": "skipped_no_supported_facts",
+        "generation_requests": 0
+      }
+    },
+    {
+      "topic": "selenga-sediments",
+      "article_sha256": "a67b8fbbfda3d9716f31c291485877d576d8c315587604486a411d85918984e6",
+      "article_path": "wiki/syntheses/selenga-sediments.md",
+      "source_evidence": [
+        {
+          "source_id": "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
+          "sha256": "26dc3610938c5b8f91e85b4179ee1092f20aa03684135d0534b8ad2ab9629023",
+          "page": 26,
+          "report_year": 2015,
+          "observation_period": null,
+          "quote": "Максимальное содержание ПАУ, бенз(а)пирена и канцерогенных аренов в 2015 г. были\n      отмечены на авандельте реки непосредственно напротив выносов протокой Усть-Харауз:\n       124,9 нг/г с.о., 61,8 нг/г с.о. и 7,9 нг/г с.о. (таблица 1.1.1.3.6). Уровень загрязненности на\n1.1  авандельте р. Селенга по бенз(а)пирену можно отнести к фоновому значению, а по сумме    ПАУ – как слабо загрязненному. Однако следует отметить, что содержание канцерогенных\n      аренов в 2015 г. увеличилось по сравнению с 2014 г. в 2,7 раза.",
+          "quote_basis": "exact_cached_page_text",
+          "source_authenticity": "mirror_unverified",
+          "novelty": "already_quoted_fragment",
+          "publication_year": null
+        },
+        {
+          "source_id": "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
+          "sha256": "26dc3610938c5b8f91e85b4179ee1092f20aa03684135d0534b8ad2ab9629023",
+          "page": 26,
+          "report_year": 2015,
+          "observation_period": null,
+          "quote": "Содержание полициклических ароматических углеводородов в донных отложениях\n                       на авандельте р. Селенга в 2011–2015 гг., в нг/г с.о.\n                     (в числителе – интервалы значений, в знаменателе – средние значения)\n                                                                    Канцерогены –  Канцерогены –                   БП –     БП –     ПАУ –     ПАУ –          Годы                                                       протока Усть-    весь полигон                         протока       весь        весь       протока         наблюдений                                                    Харауз (% от   (% от суммы                       Усть-Харауз   полигон    полигон    Усть-Харауз                                                              суммы ПАУ)      ПАУ)\n                               0,5–7,8       0,1–7,8     20,0–125,9     27,2–125,9        6,4–22,9           1,2–22,9            2011 г.                                  3,2            1,4          57,0           70,4         17,8 (31,2 %)      10,2 (17,5 %)\n                               0,8–1,7       0,2–1,7      17,7–61,5      19,9–61,5        7,0–11,0           4,7–11,2            2013 г.                                  1,0            1,0          33,4           33,8          9,3 (27,8 %)        8,4 (25,1 %)\n                               0,8–3,1       0,1–3,0     24,3–149,9     65,4–149,9        7,2–17,1           1,2–17,1            2014 г.                                  1,7            1,0          65,7          103,0        11,0 (16,7 %)       6,3 (9,6 %)\n                               1,2–7,9       0,1–7,9      3,0–124,9     24,3–124,9        9,9–61,8           1,0–61,8            2015 г.                                  3,9            2,1          36,9           61,7         30,3 (49,2 %)      17,1 (43,5 %)\n        Изменение по\n        средним (%),       129,4        110         –43,8          –40,1            175,5             171,4\n        2015 г. / 2014 г.",
+          "quote_basis": "exact_cached_page_text",
+          "source_authenticity": "mirror_unverified",
+          "novelty": "already_quoted_fragment",
+          "publication_year": null
+        }
+      ],
+      "extraction": {
+        "run_id": "faf0be5d8c5f1692e72608cd5c83e52fad290a8cc4974930cd21390639a364f9",
+        "path": "data/wiki_updates/typed_fact_runs/faf0be5d8c5f1692e72608cd5c83e52fad290a8cc4974930cd21390639a364f9.json",
+        "file_sha256": "efb7833d6d641c327f9ea2721243888e59fcbf51c0fbdce28274865674591a5e",
+        "raw_response_sha256": "d0cac83ff62cc54dab4cd606a61eb5d7cd81b6c3f0ab97a77fc50e28a4899cfb",
+        "request_sha256": "1ddde820713a5d5b97b301c2b976f42eb7bb547cdfcd294c54d53ba46e9d8fcd",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 1365,
+          "prompt_tokens": 4001,
+          "total_tokens": 5366,
+          "prompt_tokens_details": {
+            "cached_tokens": 613
+          }
+        },
+        "elapsed_seconds": 354.392,
+        "raw_records": 6,
+        "programmatically_admissible": 4,
+        "programmatic_rejections": [
+          {
+            "index": 0,
+            "record": {
+              "text": "В 2015 году максимальное содержание бенз(а)пирена на авандельте реки непосредственно напротив выносов протокой Усть-Харауз было 61,8 нг/г с.о.",
+              "primary_evidence_id": "S1",
+              "cell_id": "T2015_C1",
+              "source_role": "table",
+              "statistic": "range_max",
+              "observation_year": 2015,
+              "year_basis_id": "Y_MAX_2015",
+              "indicator": "БП",
+              "value": "61,8",
+              "unit": "нг/г с.о.",
+              "territory": "протока Усть-Харауз",
+              "limitations": [
+                "Ambiguity between prose and table values for benz(a)pyrene and carcinogens."
+              ],
+              "ambiguity_ids": [
+                "ORDER_2015"
+              ]
+            },
+            "reason": "Missing table cell/statistic"
+          },
+          {
+            "index": 1,
+            "record": {
+              "text": "В 2015 году содержание канцерогенных аренов на авандельте реки непосредственно напротив выносов протокой Усть-Харауз было 61,8 нг/г с.о.",
+              "primary_evidence_id": "S1",
+              "cell_id": "T2015_C5",
+              "source_role": "table",
+              "statistic": "range_max",
+              "observation_year": 2015,
+              "year_basis_id": "Y_MAX_2015",
+              "indicator": "канцерогенные арены",
+              "value": "61,8",
+              "unit": "нг/г с.о.",
+              "territory": "протока Усть-Харауз",
+              "limitations": [
+                "Ambiguity between prose and table values for benz(a)pyrene and carcinogens."
+              ],
+              "ambiguity_ids": [
+                "ORDER_2015"
+              ]
+            },
+            "reason": "Missing table cell/statistic"
+          }
+        ],
+        "source_checked_records": [
+          {
+            "text": "В 2015 году содержание бенз(а)пирена на авандельте реки непосредственно напротив выносов протокой Усть-Харауз было 3,9 нг/г с.о.",
+            "primary_evidence_id": "S2",
+            "cell_id": "T2015_C1",
+            "source_role": "table",
+            "statistic": "mean",
+            "observation_year": 2015,
+            "year_basis_id": "Y_ROW_2015",
+            "indicator": "БП",
+            "value": "3,9",
+            "unit": "нг/г с.о.",
+            "territory": "протока Усть-Харауз",
+            "limitations": [
+              "Values from the table are the means, while the prose mentions the maximum."
+            ],
+            "ambiguity_ids": [],
+            "time": {
+              "report_year": 2015,
+              "observation_year": 2015,
+              "publication_year": null
+            },
+            "statement_kind": "source_statement",
+            "fact_id": "F10ce8377a97ab2c5"
+          },
+          {
+            "text": "В 2015 году содержание бенз(а)пирена на весь полигон было 2,1 нг/г с.о.",
+            "primary_evidence_id": "S2",
+            "cell_id": "T2015_C2",
+            "source_role": "table",
+            "statistic": "mean",
+            "observation_year": 2015,
+            "year_basis_id": "Y_ROW_2015",
+            "indicator": "БП",
+            "value": "2,1",
+            "unit": "нг/г с.о.",
+            "territory": "весь полигон",
+            "limitations": [
+              "Values from the table are the means, while the prose mentions the maximum."
+            ],
+            "ambiguity_ids": [],
+            "time": {
+              "report_year": 2015,
+              "observation_year": 2015,
+              "publication_year": null
+            },
+            "statement_kind": "source_statement",
+            "fact_id": "Fef1cdb41001456e0"
+          },
+          {
+            "text": "В 2015 году содержание ПАУ на весь полигон было 36,9 нг/г с.о.",
+            "primary_evidence_id": "S2",
+            "cell_id": "T2015_C3",
+            "source_role": "table",
+            "statistic": "mean",
+            "observation_year": 2015,
+            "year_basis_id": "Y_ROW_2015",
+            "indicator": "ПАУ",
+            "value": "36,9",
+            "unit": "нг/г с.о.",
+            "territory": "весь полигон",
+            "limitations": [
+              "Values from the table are the means, while the prose mentions the maximum."
+            ],
+            "ambiguity_ids": [],
+            "time": {
+              "report_year": 2015,
+              "observation_year": 2015,
+              "publication_year": null
+            },
+            "statement_kind": "source_statement",
+            "fact_id": "Fb1a1009f18b2ca3b"
+          },
+          {
+            "text": "В 2015 году содержание ПАУ на протоку Усть-Харауз было 61,7 нг/г с.о.",
+            "primary_evidence_id": "S2",
+            "cell_id": "T2015_C4",
+            "source_role": "table",
+            "statistic": "mean",
+            "observation_year": 2015,
+            "year_basis_id": "Y_ROW_2015",
+            "indicator": "ПАУ",
+            "value": "61,7",
+            "unit": "нг/г с.о.",
+            "territory": "протока Усть-Харауз",
+            "limitations": [
+              "Values from the table are the means, while the prose mentions the maximum."
+            ],
+            "ambiguity_ids": [],
+            "time": {
+              "report_year": 2015,
+              "observation_year": 2015,
+              "publication_year": null
+            },
+            "statement_kind": "source_statement",
+            "fact_id": "Fdbb02a29d87d7c6e"
+          }
+        ],
+        "source_review": {
+          "bundle_sha256": "26d96001ab511682080f3dc66bf5ad70eb24a68ae95bc946b56c6b79d7150d12",
+          "review_kind": "source_comparison_non_expert",
+          "expert_review": false,
+          "fact_decisions": {
+            "F10ce8377a97ab2c5": {
+              "status": "rejected",
+              "reason": "Число 3,9 и столбец БП/протока верны, но текст переносит на среднее точечную локализацию максимума из прозы. S2 не подтверждает, что среднее относится непосредственно к точке напротив выносов. Факт не исправляется.",
+              "limitations": [
+                "Более точная пространственная локализация требует самостоятельного подтверждения; запись не передаётся дальше."
+              ]
+            },
+            "Fef1cdb41001456e0": {
+              "status": "supported",
+              "reason": "Сверены на изображении PDF26: строка2015, собственный столбец/территория, нижнее среднее значение по подписи таблицы, нг/г с.о. Структурное поле statistic=mean и ограничение модели явно отличают среднее от максимума. Утверждение не делает межгодового или причинного вывода.",
+              "limitations": [
+                "Это среднее из отчётной таблицы в сухом донном материале, не годовой речной вынос и не сопоставимый многолетний ряд.",
+                "В тексте факта среднее не названо явно; оно задано полем statistic и ограничением модели. Для публикации требуется ясная редакционная формулировка без смены значения.",
+                "Сверка переноса не является научной рецензией специалистом."
+              ]
+            },
+            "Fb1a1009f18b2ca3b": {
+              "status": "supported",
+              "reason": "Сверены на изображении PDF26: строка2015, собственный столбец/территория, нижнее среднее значение по подписи таблицы, нг/г с.о. Структурное поле statistic=mean и ограничение модели явно отличают среднее от максимума. Утверждение не делает межгодового или причинного вывода.",
+              "limitations": [
+                "Это среднее из отчётной таблицы в сухом донном материале, не годовой речной вынос и не сопоставимый многолетний ряд.",
+                "В тексте факта среднее не названо явно; оно задано полем statistic и ограничением модели. Для публикации требуется ясная редакционная формулировка без смены значения.",
+                "Сверка переноса не является научной рецензией специалистом."
+              ]
+            },
+            "Fdbb02a29d87d7c6e": {
+              "status": "supported",
+              "reason": "Сверены на изображении PDF26: строка2015, собственный столбец/территория, нижнее среднее значение по подписи таблицы, нг/г с.о. Структурное поле statistic=mean и ограничение модели явно отличают среднее от максимума. Утверждение не делает межгодового или причинного вывода.",
+              "limitations": [
+                "Это среднее из отчётной таблицы в сухом донном материале, не годовой речной вынос и не сопоставимый многолетний ряд.",
+                "В тексте факта среднее не названо явно; оно задано полем statistic и ограничением модели. Для публикации требуется ясная редакционная формулировка без смены значения.",
+                "Сверка переноса не является научной рецензией специалистом."
+              ]
+            }
+          },
+          "conflict_decisions": {
+            "Ca9ac9df8ed463425": {
+              "status": "supported",
+              "reason": "Существование неоднозначности БП/канцерогенов подтверждается прозой и таблицей оригинала. Общее предупреждение модели соответствует конфликту; обе цитаты неизменны. Это сохранение заранее переданного сигнала, не самостоятельное обнаружение.",
+              "limitations": [
+                "Формулировка модели общая и на английском; она не восстанавливает пары чисел. Пары проза61,8/7,9 против таблицы7,9/61,8 сохранены в typed_view, не исправлены.",
+                "Два модельных максимума с неверной ссылкой/ролью отклонены; общее предупреждение не делает их допустимыми."
+              ]
+            }
+          }
+        },
+        "fully_source_supported_fact_ids": [
+          "Fef1cdb41001456e0",
+          "Fb1a1009f18b2ca3b",
+          "Fdbb02a29d87d7c6e"
+        ],
+        "model_conflict_summary": [
+          {
+            "conflict_id": "ORDER_2015",
+            "description": "Ambiguity between prose and table values for benz(a)pyrene and carcinogens. Preserved both values without choosing the correct one.",
+            "limitations": [
+              "Ambiguity between prose and table values for benz(a)pyrene and carcinogens."
+            ]
+          }
+        ],
+        "global_model_limitations": [
+          "Ambiguity between prose and table values for benz(a)pyrene and carcinogens."
+        ]
+      },
+      "comparison": {
+        "run_id": "fe3e64254bc08d5dab19a1dff2587f0e3b3b459c01ca8d710a018bda2402e13c",
+        "path": "data/wiki_updates/typed_fact_runs/fe3e64254bc08d5dab19a1dff2587f0e3b3b459c01ca8d710a018bda2402e13c.json",
+        "file_sha256": "34a36635b0170185fd48c44b3584552249b8b774a69a23647d7189bb2f1c46a3",
+        "raw_response_sha256": "a6d975464c8ac4e5fd3e0034e43bc39ec27dfa5cd0778d0f6a162c95d851ce55",
+        "request_sha256": "16a1b83bc92148da9d2d6d7db0539ae62a55b071a5f58b63dc99e409c6e09efb",
+        "usage": {
+          "completion_tokens": 595,
+          "prompt_tokens": 7597,
+          "total_tokens": 8192,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "elapsed_seconds": 471.909,
+        "finish_reason": "length",
+        "programmatic_errors": [
+          "ValueError: Incomplete response, not accepted"
+        ],
+        "accepted": false,
+        "partial_decisions_for_diagnostics_only": [
+          {
+            "fact_id": "Fef1cdb41001456e0",
+            "classification": "new_detail",
+            "existing_excerpt": null,
+            "reason": "В 2015 году содержание бенз(а)пирена на весь полигон было 2,1 нг/г с.о. Это новая деталь, не описана в Wiki.",
+            "limitations": [
+              "Values from the table are the means, while the prose mentions the maximum."
+            ]
+          },
+          {
+            "fact_id": "Fb1a1009f18b2ca3b",
+            "classification": "new_detail",
+            "existing_excerpt": null,
+            "reason": "В 2015 году содержание ПАУ на протоку Усть-Харауз было 61,7 нг/г с.о. Это новая деталь, не описана в Wiki.",
+            "limitations": [
+              "Values from the table are the means, while the prose mentions the maximum."
+            ]
+          },
+          {
+            "fact_id": "Fdbb02a29d87d7c6e",
+            "classification": "new_detail",
+            "existing_excerpt": null,
+            "reason": "В 2015 году содержание ПАУ на весь полигон было 36,9 нг/г с.о. Это новая деталь, не описана в Wiki.",
+            "limitations": [
+              "Values from the table are the means, while the prose mentions the maximum."
+            ]
+          }
+        ],
+        "partial_rationale_errors": [
+          {
+            "fact_id": "Fb1a1009f18b2ca3b",
+            "assigned_value": "36,9",
+            "rationale_wrong_value": "61,7",
+            "assigned_territory": "весь полигон",
+            "rationale_wrong_territory": "протока Усть-Харауз"
+          },
+          {
+            "fact_id": "Fdbb02a29d87d7c6e",
+            "assigned_value": "61,7",
+            "rationale_wrong_value": "36,9",
+            "assigned_territory": "протока Усть-Харауз",
+            "rationale_wrong_territory": "весь полигон"
+          }
+        ],
+        "partial_source_wiki_mix": "Unclosed existing_excerpt begins with source prose absent from Wiki, not a validated complete field.",
+        "drafts_created": 0
+      }
+    }
+  ],
+  "source_review_file_sha256": "88bcd62f23a0f270400616b0e222dcf20d0345e44b0037f3410e4f56c36d265e",
+  "summary": {
+    "real_generation_attempts": 3,
+    "http_model_responses": 3,
+    "completed_responses": 2,
+    "truncated_responses": 1,
+    "unused_generation_slots": 1,
+    "raw_fact_records": 7,
+    "programmatically_admissible_facts": 4,
+    "programmatic_fact_rejections": 3,
+    "additional_semantic_rejections": 1,
+    "fully_source_supported_experimental_records": 3,
+    "expert_verified_facts": 0,
+    "source_supported_details_absent_from_wiki": 3,
+    "release_1029_3g_extracted": false,
+    "ratio2_7_extracted": false,
+    "model_conflict_warning_nonempty": true,
+    "conflict_warning_supplied_in_input": true,
+    "both_disputed_versions_preserved_in_evidence": true,
+    "model_successfully_reconstructed_both_disputed_pairs": false,
+    "correct_table_means_source_supported": 3,
+    "comparison_requests": 1,
+    "complete_comparison_responses": 0,
+    "partial_new_detail_labels_observed": 3,
+    "partial_rationales_assigned_to_wrong_fact_ids": 2,
+    "strictly_accepted_update_responses": 0,
+    "editorial_addition_drafts_created": 0,
+    "wiki_updates_applied": 0,
+    "verified_observations_added": 0
+  },
+  "comparison_rows": [
+    {
+      "approach": "Qwen7B source-first previous",
+      "extraction_requests": 2,
+      "raw_fact_records": 5,
+      "fully_admissible_records": 0,
+      "comparison_requests": 0,
+      "valid_update_responses": 0,
+      "elapsed_seconds": 173.041,
+      "peak_child_rss_kib": 8146296
+    },
+    {
+      "approach": "Qwen7B typed evidence + constrained decoding",
+      "extraction_requests": 2,
+      "raw_fact_records": 7,
+      "fully_admissible_records": 3,
+      "comparison_requests": 1,
+      "valid_update_responses": 0,
+      "elapsed_seconds": 909.642,
+      "extraction_elapsed_seconds": 433.637,
+      "peak_child_rss_kib": 8311092
+    }
+  ],
+  "post_experiment_hardening": {
+    "after_model_generations": true,
+    "no_model_generations_repeated": true,
+    "changes": [
+      "Lossless shared exact citations with original fragment IDs",
+      "Filter review notes to supported fact/conflict IDs only",
+      "Native template/tokenization full output-budget preflight plus128token safety reserve before slot consumption",
+      "Reject unsupported numbers in the rationale attached to an immutable fact ID"
+    ],
+    "context_helper_sha256": "e920c8ac7e21b7bcb90d1bc98e478c4c293a21af7c53fc6cd4210f648db233d7",
+    "native_tokenizer_diagnostic_path": "data/llm-evaluation/typed-facts-tokenizer-diagnostic-21392a3.json",
+    "native_tokenizer_diagnostic_sha256": "478d5365f3fc4783fc814a8949fd3a4a37131ccb9d1bd8c15b0adfbb87e36a3d",
+    "original_prompt_tokens": 7597,
+    "compact_budget": {
+      "prompt_tokens_native": 4808,
+      "output_tokens_reserved": 2400,
+      "safety_reserve": 128,
+      "context_tokens": 8192,
+      "generation_requests": 0
+    },
+    "native_metadata_requests": 4,
+    "generation_requests": 0,
+    "candidate_fact_content_and_ids_unchanged": true,
+    "native_diagnostic_runtime": {
+      "model_bundle": {
+        "profile": "qwen25-7b-q4km",
+        "repo": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+        "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f",
+        "license": "apache-2.0",
+        "files": [
+          {
+            "filename": "qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+            "bytes": 3993201344,
+            "sha256": "dfce12e3862a5283ccfb88221b48480e58745165de856439950d0f22590580db"
+          },
+          {
+            "filename": "qwen2.5-7b-instruct-q4_k_m-00002-of-00002.gguf",
+            "bytes": 689872288,
+            "sha256": "539cf93f78e887edea1c04e2d7d8cdaca9d01dae9c9025bcb8accbe29df3d72a"
+          }
+        ],
+        "total_bytes": 4683073632
+      },
+      "server_sha256": "ea2082a6ea129e3fbe0e32c4a57cf0fd754572b5a0fb824b89b9ed80b64836f6",
+      "server_version": "version: 0.7.0-dev (build 1, commit 620d222)\nbuilt with GNU 14.2.0 for Linux x86_64",
+      "backend_probe": {
+        "exit_code": 0,
+        "output": "Available devices:\n  (none)"
+      },
+      "threads": 4,
+      "context_tokens": 8192,
+      "gpu_layers": 0,
+      "resources_before": {
+        "memory_limit_bytes": 34359738368,
+        "memory_available_bytes": 23951323136,
+        "disk_free_bytes": 22120570880,
+        "cpu_affinity_count": 5,
+        "cpu_quota": "400000 100000"
+      },
+      "server_log_path": "data/llm-evaluation/source-first-server-1792682409532584589.log",
+      "timeout_seconds": 600,
+      "command": [
+        "/workspace/baikal-reports/data/llm-runtime/build-avx2/bin/llama-server",
+        "-m",
+        "/workspace/baikal-reports/data/models/qwen25-7b-q4km/qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+        "--alias",
+        "baikal-local-evaluation",
+        "-c",
+        "8192",
+        "-t",
+        "4",
+        "-tb",
+        "4",
+        "-ngl",
+        "0",
+        "--parallel",
+        "1",
+        "--batch-size",
+        "256",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "55203"
+      ],
+      "server_wall_seconds": 4.438,
+      "peak_child_rss_kib": 8074776
+    },
+    "real_novelty_quality_after_hardening_evaluated": false,
+    "current_runner_sha256": "20c5c53dbea1b5a77dca16dd7cc9e386bf810fa7524a7e264c92264a9b57d11d"
+  },
+  "limitations": [
+    "Three fully source-supported structured records are not expert-verified measurements or additions to observations.",
+    "This combines manually checked target-table representation, source year anchors, model decoding and strict source review; it does not establish general PDF extraction accuracy.",
+    "The model received the already detected source conflict; nonempty warning is not independent conflict discovery.",
+    "First-stage records omit mean in the prose text; statistic=mean and model limitation make their meaning explicit. Publication needs careful editorial wording.",
+    "Some model limitations are generic and in English. English arrays were retained, not silently translated or inserted.",
+    "Partial classification output cannot be accepted as a complete proposal; correct superficial new_detail labels coexist with wrong fact-ID rationales.",
+    "Current source contains explicit post-experiment hardening; the actual generation code is preserved by execution snapshot commit and hashes.",
+    "Drive source mirrors remain mirror_unverified; no institutional or specialist approval is claimed."
+  ],
+  "next_step": "One separately preregistered comparison of the same three immutable source-checked fact IDs using compact context and the verified budget guard; do not repeat PDF extraction or replace the model. Then separately address omitted release/ratio details and numeric value field design.",
+  "preservation": {
+    "articles": 22,
+    "observations": 168,
+    "checkpoints": 3878,
+    "pdfs": 11,
+    "protected_file_sha256_matches": 35,
+    "published_wiki_file_sha256_matches": 49,
+    "pdf_sha256_matches": 11,
+    "checkpoint_size_mtime_matches": 3878
+  },
+  "paid_api_used": false,
+  "documents_sent_to_external_llm": false,
+  "user_guide_path": "docs/USER_GUIDE.md",
+  "user_guide_status": "initial_draft_not_final_windows_manual",
+  "technical_validation": {
+    "unittest_passed": 119,
+    "unittest_failed": 0,
+    "ruff_f_errors": 0,
+    "wiki_lint_errors": 0,
+    "wiki_lint_warnings": 13,
+    "scientific_evidence_references_checked_locally": 162,
+    "encyclopedia_records_checked_locally": 47,
+    "observations_checked_locally": 168,
+    "typed_table_columns_and_headers_checked": 6,
+    "frozen_source_cases_checked": 2,
+    "source_supported_records_rechecked": 3,
+    "real_partial_rationale_swaps_rejected_by_new_guard": 2,
+    "native_tokenizer_diagnostic_generation_requests": 0,
+    "relative_markdown_file_links_checked": 86,
+    "frozen_protocol_and_executed_code_snapshot_verified": true,
+    "generation_slots_consumed": 3,
+    "new_source_first_drafts": 0,
+    "runtime_shared_libraries_sha256": {
+      "data/llm-runtime/build-avx2/bin/libllama-server-impl.so": "975f1be730d9c62ebcb3b3ac6e86ab06a26e55fd1d712e40872cc81cf9ee78e3",
+      "data/llm-runtime/build-avx2/bin/libggml.so.0.27.0": "824923cfd81c0ce60cb424984bda301cede6cbf4aa38ed668a0bbf93e60c220d",
+      "data/llm-runtime/build-avx2/bin/libmtmd.so.0.7.0": "307c478edcef785cf8d49b1fc1f7022b495947e67788c7d9bb3261ee48197012",
+      "data/llm-runtime/build-avx2/bin/libllama-common.so.0.7.0": "4217e3999fb62ba9072c883e1e75841acc59f4e2aabe87cf8ae5356c6e77d9a4",
+      "data/llm-runtime/build-avx2/bin/libggml-base.so.0.27.0": "eeaf4e97b568dee9e6af83759d1e16b22f57e370ee503fdc6c7a4c0698db9096",
+      "data/llm-runtime/build-avx2/bin/libggml-cpu.so.0.27.0": "9097a7714db48b912e5db1f1326c86e843887b2a38d6831d661a1ee55ade584d",
+      "data/llm-runtime/build-avx2/bin/libllama.so.0.7.0": "33f255d60f0770d04e733dae01ffad85fde66c748e2d7e6e6e1916864ecc0ac1"
+    }
+  }
+}

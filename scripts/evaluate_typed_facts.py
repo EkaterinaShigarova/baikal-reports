@@ -1,7 +1,6 @@
 """Bounded typed-fact experiment, reusing the installed local server and gates."""
 
 import argparse
-import copy
 import json
 import time
 import urllib.request
@@ -10,7 +9,6 @@ from baikal.core import ROOT, read_json, atomic_json, sha256
 from baikal.source_first import (
     freeze_cases,
     select_supported,
-    comparison_input,
     compare_checked,
     save_draft,
     check_sources,
@@ -25,6 +23,11 @@ from baikal.typed_facts import (
     validate_view,
 )
 from baikal.updates import digest, save_packet
+from baikal.typed_fact_context import (
+    comparison_wire,
+    preflight,
+    validate_reason_bindings,
+)
 
 try:
     from scripts.evaluate_source_first import local_server, reserve_attempt
@@ -54,6 +57,7 @@ def prepare(root=ROOT):
         "protocol_sha256": sha256(root / "docs/TYPED_FACTS_PROTOCOL.md"),
         "module_sha256": sha256(root / "baikal/typed_facts.py"),
         "runner_sha256": sha256(root / "scripts/evaluate_typed_facts.py"),
+        "context_module_sha256": sha256(root / "baikal/typed_fact_context.py"),
         "extract_prompt": PROMPT,
         "compare_prompt": COMPARE_PROMPT,
         "max_tokens": 2400,
@@ -74,6 +78,7 @@ def load(root, pid):
         ("docs/TYPED_FACTS_PROTOCOL.md", "protocol_sha256"),
         ("baikal/typed_facts.py", "module_sha256"),
         ("scripts/evaluate_typed_facts.py", "runner_sha256"),
+        ("baikal/typed_fact_context.py", "context_module_sha256"),
         ("datasets/typed_evidence_2015.json", "table_view_sha256"),
         ("datasets/source_first_evaluation.json", "baseline_report_sha256"),
     ]:
@@ -105,6 +110,9 @@ def call(
             "json_schema": {"name": "typed_facts", "strict": True, "schema": schema},
         },
     }
+    # Native formatting/tokenization are not generation; reject over-budget input
+    # before consuming one of the four immutable generation slots.
+    budget = preflight(endpoint, opener, payload)
     record = {
         "experiment_id": eid,
         "topic": case["topic"],
@@ -112,6 +120,7 @@ def call(
         "request": payload,
         "runtime": runtime,
         "published": False,
+        "context_preflight": budget,
     }
     save_packet(root, "typed_fact_inputs", record)
     req = urllib.request.Request(
@@ -209,11 +218,7 @@ def phase(args, root=ROOT):
         if not supported["facts"]:
             skipped.append({"topic": c["topic"], "reason": "no_supported_facts"})
             continue
-        supplied = comparison_input(c, supported)
-        supplied["source_review_notes"] = {
-            k: copy.deepcopy(decision[k])
-            for k in ["fact_decisions", "conflict_decisions"]
-        }
+        supplied = comparison_wire(c, supported, decision)
         jobs.append((c, supplied, compare_schema(supported), supported, review_id))
     if not jobs:
         return {
@@ -245,6 +250,7 @@ def phase(args, root=ROOT):
 
                 def validator(x, supplied=supplied, schema=schema):
                     validate_schema(x, schema)
+                    validate_reason_bindings(x, supplied)
                     return compare_checked(x, supplied)
 
             result = call(
