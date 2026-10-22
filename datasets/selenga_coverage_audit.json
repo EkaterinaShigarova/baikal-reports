@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "registry_sha256": "5a4b0541b7884397350ca9b11e8f297aaa9dfcc88c4d67dbf5fbfb014df5258a",
+  "registry_path": "datasets/selenga_claim_registry_v2.json",
+  "article_sha256": "a67b8fbbfda3d9716f31c291485877d576d8c315587604486a411d85918984e6",
+  "expert_review": false,
+  "review_kind": "content_source_audit_non_expert",
+  "overrides": [
+    {
+      "card_id": "V9b54f6dda3b49fe0",
+      "card_sha256": "299b1231db907caee2d8131ea8c690f52d2f388e37dd4166da77851bf82c7937",
+      "original_status": "source_checked_non_expert",
+      "effective_status": "methodological_context_not_direct_source_fact",
+      "reason": "Заголовки подтверждают разделение грунтовой воды и донного материала, но не буквально все сравнения с поверхностной водой и годовым речным выносом из составного предложения. Полную фразу следует считать методическим контекстом, не прямым сообщением выбранных страниц.",
+      "promotion": false
+    }
+  ],
+  "effective_source_checked_cards": 14,
+  "note": "Номинально 15 исходных отметок сверки; одна консервативно понижена после содержательной проверки. Никакая неопределённость не повышается до факта. На V07 и типизированные сравнения это не влияет."
+}
