@@ -1,0 +1,437 @@
+{
+  "version": 1,
+  "date_utc": "2026-10-22T12:03:17.615388+00:00",
+  "baseline_commit": "daf21bc1d48932950847cf3c4e002c21800e3863",
+  "protocol_document": "docs/LLM_7B_PROTOCOL.md",
+  "protocol_sha256": "a84e8d98b6685455397e2cf3b32c977a3069e9a6d24983e959e95de29a2ab4e2",
+  "protocol_original_before_acquisition_amendment_sha256": "7296375ff72d7a6306fff5fd368f715bdb5b7f203ee9d4847aba4b841f9afd9c",
+  "model_profile": {
+    "id": "qwen25-7b-q4km",
+    "repo": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+    "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f",
+    "license": "apache-2.0",
+    "max_total_bytes": 6442450944,
+    "memory_limit_min_bytes": 17179869184,
+    "memory_available_min_bytes": 17179869184,
+    "disk_reserve_bytes": 3221225472,
+    "request_timeout_seconds": 600,
+    "files": [
+      {
+        "filename": "qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+        "bytes": 3993201344,
+        "sha256": "dfce12e3862a5283ccfb88221b48480e58745165de856439950d0f22590580db"
+      },
+      {
+        "filename": "qwen2.5-7b-instruct-q4_k_m-00002-of-00002.gguf",
+        "bytes": 689872288,
+        "sha256": "539cf93f78e887edea1c04e2d7d8cdaca9d01dae9c9025bcb8accbe29df3d72a"
+      }
+    ]
+  },
+  "model_loaded_and_run": true,
+  "runtime": {
+    "model_sha256": "dfce12e3862a5283ccfb88221b48480e58745165de856439950d0f22590580db",
+    "model_file_name": "qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+    "model_bytes": 3993201344,
+    "server_sha256": "ea2082a6ea129e3fbe0e32c4a57cf0fd754572b5a0fb824b89b9ed80b64836f6",
+    "model_profile": "qwen25-7b-q4km",
+    "model_bundle": {
+      "profile": "qwen25-7b-q4km",
+      "repo": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f",
+      "license": "apache-2.0",
+      "files": [
+        {
+          "filename": "qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+          "bytes": 3993201344,
+          "sha256": "dfce12e3862a5283ccfb88221b48480e58745165de856439950d0f22590580db"
+        },
+        {
+          "filename": "qwen2.5-7b-instruct-q4_k_m-00002-of-00002.gguf",
+          "bytes": 689872288,
+          "sha256": "539cf93f78e887edea1c04e2d7d8cdaca9d01dae9c9025bcb8accbe29df3d72a"
+        }
+      ],
+      "total_bytes": 4683073632
+    },
+    "frozen_comparison": {
+      "path": "/workspace/baikal-reports/datasets/llm_comparison_v2.json",
+      "sha256": "c6ec98ef0f133e40219aaa817c6a821cd0035c6c53f076e8bdcc20ffccd521ba",
+      "matched_cases": 2,
+      "model_messages_identical": true
+    },
+    "request_timeout_seconds": 600,
+    "server_version": "version: 0.7.0-dev (build 1, commit 620d222)\nbuilt with GNU 14.2.0 for Linux x86_64",
+    "backend_probe": {
+      "exit_code": 0,
+      "output": "Available devices:\n  (none)"
+    },
+    "threads": 4,
+    "context_tokens": 8192,
+    "gpu_layers": 0,
+    "server_log_path": "data/llm-evaluation/server-ce3709ca42e54bbb8d970ea57726b957.log"
+  },
+  "runtime_rebuilt": false,
+  "comparison_rows": [
+    {
+      "model": "Qwen2.5-1.5B Q4_K_M",
+      "protocol": "v1 historical",
+      "input_comparable_to_7b": false,
+      "real_responses": 2,
+      "programmatically_accepted": 0,
+      "programmatically_rejected": 2,
+      "complete_update_criteria_passed": 0,
+      "elapsed_seconds": 178.14,
+      "peak_child_rss_kib": 2202876,
+      "errors": [
+        "Reconstructed primary quote",
+        "Wiki quote attributed to wrong primary page",
+        "Heading labelled new",
+        "Empty limitations"
+      ]
+    },
+    {
+      "model": "Qwen2.5-1.5B Q4_K_M",
+      "protocol": "v2",
+      "input_comparable_to_7b": true,
+      "real_responses": 2,
+      "programmatically_accepted": 0,
+      "programmatically_rejected": 2,
+      "complete_update_criteria_passed": 0,
+      "elapsed_seconds": 96.097,
+      "peak_child_rss_kib": 2111708,
+      "errors": [
+        "Input echo",
+        "Wrong topic ID",
+        "Wrong limitations type",
+        "Fabricated existing excerpt/conflict",
+        "Unsupported significant variation claim"
+      ]
+    },
+    {
+      "model": "Qwen2.5-7B Q4_K_M",
+      "protocol": "v2 frozen",
+      "input_comparable_to_7b": true,
+      "real_responses": 2,
+      "programmatically_accepted": 2,
+      "programmatically_rejected": 0,
+      "complete_update_criteria_passed": 0,
+      "elapsed_seconds": 265.996,
+      "peak_child_rss_kib": 8253248,
+      "errors": [
+        "Sturgeon statement assigned to irrelevant 2016 fragments",
+        "Unsupported observation period 2020",
+        "Missed novel release subgroup",
+        "Factor2.7 incorrectly classified already_present",
+        "Known2015 source discrepancy omitted",
+        "Null Selenga period fields"
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "topic": "baikal-sturgeon",
+      "run_id": "5972468187a55bfcd77d1d9e260208dc01bfebb95f9bd6cf176ed14daa61cf2b",
+      "run_record_sha256": "1a6864ee78da0124eeed245c24af2e62ffc0868b1496d246dc7e97a8cf17223e",
+      "raw_response_sha256": "e39b559cc831911138425eab09ff87f2bbc71a14c0149b78adbd2234e3bf6211",
+      "request_payload_sha256": "424d46bc643e0edefb09d6335d525e875afd482926bcc129445377da7a306a89",
+      "payload_identical_to_baseline": true,
+      "finish_reason": "stop",
+      "claims": [
+        {
+          "index": 0,
+          "text": "Многолетний запрет и искусственное воспроизводство ещё не обеспечили заметного увеличения запасов байкальского осетра.",
+          "novelty": "already_present",
+          "observation_period": "2020 год"
+        }
+      ],
+      "validation_errors": [],
+      "citations": [
+        {
+          "claim_index": 0,
+          "source_id": "drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0",
+          "sha256": "60ccb6065b32d959457faf9745023d763c9f6641ad7c9c8cdee7a88fea454139",
+          "physical_page": 222,
+          "exact_cached_quote": true
+        },
+        {
+          "claim_index": 0,
+          "source_id": "drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0",
+          "sha256": "60ccb6065b32d959457faf9745023d763c9f6641ad7c9c8cdee7a88fea454139",
+          "physical_page": 222,
+          "exact_cached_quote": true
+        }
+      ],
+      "usage": {
+        "completion_tokens": 243,
+        "prompt_tokens": 1654,
+        "total_tokens": 1897,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "elapsed_seconds": 94.672,
+      "draft_id": "50dcb17b35bddb4509fe174a47fe6341bf39a4c9b67687f898b2d4a62f5b18ac",
+      "draft_path": "data/wiki_updates/llm_drafts/50dcb17b35bddb4509fe174a47fe6341bf39a4c9b67687f898b2d4a62f5b18ac.json",
+      "draft_sha256": "bdf8b8cb1a1eafcaadaac794ce3e7ae00fad0f9fbc2fdb640af6d4d299cc7bb4",
+      "programmatic_validation_passed": true,
+      "semantic_review_status": "automated_source_comparison_not_expert_review",
+      "semantic_review": {
+        "scientific_claim_blocks": 1,
+        "source_supported_with_assigned_evidence": 0,
+        "all_update_criteria_passed": false,
+        "new_detail_labels": 0,
+        "source_supported_new_details_mentioned": 0,
+        "missed_expected_release_detail": true,
+        "issues": [
+          {
+            "type": "evidence_entailment",
+            "claim_index": 0,
+            "reason": "Claim on lack of stock recovery is already in Wiki based on report 2020/PDF51; assigned S1/S2 from 2016/PDF222 only describe hatchery production/release."
+          },
+          {
+            "type": "temporal_attribution",
+            "claim_index": 0,
+            "reason": "observation_period=2020 год is copied from background/report scope; the selected evidence does not establish observations in 2020."
+          }
+        ],
+        "diagnostic_source": {
+          "source_id": "drive-1ScikzOKs0VW7ZZS1XWKyoOfcHeYklUEP",
+          "sha256": "48bfd75a6c75a685d4f5ff2ea52cd1aba78d6d0a6bd45fbd311d5305a9b84c54",
+          "physical_page": 51,
+          "report_year": 2020,
+          "used_as_new_model_input": false
+        },
+        "novelty": "already_present is correct for the emitted statement; expected 1029 thousand /3.0g new detail was not proposed",
+        "limitations": "Nonempty and relevant in part; does not remedy the wrong supporting fragments."
+      },
+      "published": false
+    },
+    {
+      "topic": "selenga-sediments",
+      "run_id": "c59e4968f9acb5a1546753a4fab01ef79cfd423f5333b191094dfc442647af7c",
+      "run_record_sha256": "bdeded37a46f4905b10c784a58fc9181b57273a6d9b0ac147f7e12b17e655480",
+      "raw_response_sha256": "058186ba3d304004952b4027aa503a42b03ec1d347b5cac08da3991aa29a7feb",
+      "request_payload_sha256": "9c623050b0310932c2ffa1b4f13c2cbbeefc5f82e967e107e906fd79eef0d11b",
+      "payload_identical_to_baseline": true,
+      "finish_reason": "stop",
+      "claims": [
+        {
+          "index": 0,
+          "text": "Максимальное содержание ПАУ и бенз(а)пирена в 2015 году на авандельте реки Селенга было отмечено напротив выносов протоки Усть-Харауз.",
+          "novelty": "already_present",
+          "observation_period": null
+        },
+        {
+          "index": 1,
+          "text": "Содержание канцерогенных аренов в 2015 году на авандельте реки Селенга увеличилось по сравнению с 2014 годом в 2,7 раза.",
+          "novelty": "already_present",
+          "observation_period": null
+        },
+        {
+          "index": 2,
+          "text": "Донные отложения авандельты реки Селенга в 2011–2015 годах содержали различные уровни ПАУ, бенз(а)пирена и канцерогенных аренов.",
+          "novelty": "already_present",
+          "observation_period": null
+        }
+      ],
+      "validation_errors": [],
+      "citations": [
+        {
+          "claim_index": 0,
+          "source_id": "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
+          "sha256": "26dc3610938c5b8f91e85b4179ee1092f20aa03684135d0534b8ad2ab9629023",
+          "physical_page": 26,
+          "exact_cached_quote": true
+        },
+        {
+          "claim_index": 1,
+          "source_id": "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
+          "sha256": "26dc3610938c5b8f91e85b4179ee1092f20aa03684135d0534b8ad2ab9629023",
+          "physical_page": 26,
+          "exact_cached_quote": true
+        },
+        {
+          "claim_index": 2,
+          "source_id": "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
+          "sha256": "26dc3610938c5b8f91e85b4179ee1092f20aa03684135d0534b8ad2ab9629023",
+          "physical_page": 26,
+          "exact_cached_quote": true
+        }
+      ],
+      "usage": {
+        "completion_tokens": 518,
+        "prompt_tokens": 2820,
+        "total_tokens": 3338,
+        "prompt_tokens_details": {
+          "cached_tokens": 503
+        }
+      },
+      "elapsed_seconds": 164.814,
+      "draft_id": "bb6b9e3032a83ebcb63e2db7c80a49cf5fd5d67152b31314115943707597a897",
+      "draft_path": "data/wiki_updates/llm_drafts/bb6b9e3032a83ebcb63e2db7c80a49cf5fd5d67152b31314115943707597a897.json",
+      "draft_sha256": "c4573fa7517fecf3cf361b522066292defcd7e182611050f3e9093c0c111d82f",
+      "programmatic_validation_passed": true,
+      "semantic_review_status": "automated_source_comparison_not_expert_review",
+      "semantic_review": {
+        "scientific_claim_blocks": 3,
+        "source_supported_with_assigned_evidence": 3,
+        "all_update_criteria_passed": false,
+        "new_detail_labels": 0,
+        "source_supported_new_details_mentioned": 1,
+        "known_discrepancy_reproduced": false,
+        "issues": [
+          {
+            "type": "novelty_false_negative",
+            "claim_index": 1,
+            "reason": "Factor 2.7 for carcinogenic arenes in 2015 vs2014 is supported by S1 and absent from the existing article, but labelled already_present."
+          },
+          {
+            "type": "known_source_uncertainty_omitted",
+            "reason": "Known prose/table order discrepancy for BP/carcinogen maxima is not discussed; potential_conflicts empty."
+          },
+          {
+            "type": "period_fields_incomplete",
+            "claim_indices": [
+              0,
+              1,
+              2
+            ],
+            "reason": "All three observation_period fields null despite explicit periods in claim/source text."
+          }
+        ],
+        "claim_review": [
+          {
+            "index": 0,
+            "verdict": "supported_existing_fact",
+            "evidence_ids": [
+              "S1"
+            ]
+          },
+          {
+            "index": 1,
+            "verdict": "source_supported_new_detail_wrongly_labelled_existing",
+            "evidence_ids": [
+              "S1"
+            ],
+            "observation_period": "2015 relative to 2014",
+            "unit": "dimensionless ratio 2.7",
+            "interpretation_limit": "Author statement from report, not independently recomputed observation or approved comparable time series."
+          },
+          {
+            "index": 2,
+            "verdict": "source_supported_general_table_description_not_useful_substantive_update",
+            "evidence_ids": [
+              "S2"
+            ],
+            "interpretation_limit": "No claim of statistical significance; does not establish station/method comparability or complete annual coverage."
+          }
+        ],
+        "limitations": "Retains method/station/media caveats from existing Wiki; misses specific source ambiguity."
+      },
+      "published": false
+    }
+  ],
+  "scientific_summary": {
+    "real_responses": 2,
+    "programmatically_accepted": 2,
+    "programmatically_rejected": 0,
+    "drafts_saved_unpublished": 2,
+    "complete_update_criteria_passed": 0,
+    "source_supported_claims": 3,
+    "total_claim_blocks": 4,
+    "model_correctly_labelled_new_details": 0,
+    "source_supported_new_details_mentioned": 1,
+    "proposed_new_detail_claims": 0,
+    "sturgeon_evidence_misattribution_blocks": 1,
+    "unsupported_observation_period_blocks": 1,
+    "novelty_false_negative_blocks": 1,
+    "known_discrepancy_omission_cases": 1,
+    "null_period_fields_with_explicit_years": 3,
+    "fabricated_environmental_values_in_claim_text": 0,
+    "fabricated_conflicts": 0,
+    "editorial_changes_applied": 0,
+    "verified_observations_added": 0,
+    "expert_review_claimed": false
+  },
+  "counter_bug": {
+    "original_result_path": "data/llm-evaluation/result-7b-daf21bc.json",
+    "original_result_sha256": "542ce069ff8c258809dbcd63b95d1f5730fafa0a7158a65cacb77f3f7cf66669",
+    "original_model_generated_updates": 0,
+    "corrected_validated_drafts": 2,
+    "cause": "**outcome overwrote pending-review status with draft; summary only counted pending status. Fixed merge order; original result preserved.",
+    "model_rerun_for_counter_fix": false,
+    "scientific_validation_changed": false
+  },
+  "acquisition": {
+    "official_metadata_url": "https://huggingface.co/api/models/Qwen/Qwen2.5-7B-Instruct-GGUF/revision/bb5d59e06d9551d752d08b292a50eb208b07ab1f?blobs=true",
+    "license_verified": "apache-2.0",
+    "total_verified_model_bytes": 4683073632,
+    "initial_max_connections": 2,
+    "continuation_max_connections": 4,
+    "range_chunk_bytes": 268435456,
+    "range_probe": {
+      "status": 206,
+      "range": "bytes 0-0/3993201344",
+      "body_bytes": 1
+    },
+    "prefix_bytes_retained": 774897664,
+    "automatic_range_retries": 0,
+    "every_final_shard_sha256_verified": true,
+    "elapsed_wall_seconds_approx": 1687.95,
+    "wall_duration_basis": "Acquisition plan and verified bundle filesystem timestamps, includes bounded continuation and intervening preparation.",
+    "working_disk_budget_bytes": 12587372736,
+    "model_files_in_git": false
+  },
+  "preservation": {
+    "analytical_articles": 22,
+    "reviewed_observations": 168,
+    "checkpoints": 3878,
+    "pdfs": 11,
+    "baseline_reports_unchanged": true
+  },
+  "paid_api_used": false,
+  "documents_sent_to_external_llm": false,
+  "limitations": [
+    "Two fixed cases, target topics already specified, not general model accuracy or autonomous routing benchmark.",
+    "Citation binding verifies provenance identity and exact text, not entailment, novelty or temporal role.",
+    "Source mirrors remain mirror_unverified; this experiment is not official-authenticity or scientific expert review.",
+    "Source-supported new detail in output is not an approved observation or an editorial update."
+  ],
+  "conclusion": "7B improves schema/language and Selenga source-grounded content versus1.5B, but neither response completes reliable Wiki-update assessment.",
+  "next_step": {
+    "name": "source-first atomic fact staging followed by Wiki comparison",
+    "bounded_scope": "Same two packets, at most four main model calls (one source-only extraction and one fact-ID novelty assessment per case), separately preregistered.",
+    "requirements": [
+      "Extract only from sources before showing Wiki context.",
+      "Retain immutable fact IDs, exact fragments, subject/territory, units and explicit observation/report/publication time roles.",
+      "Check evidence entailment and fields before novelty stage; uncertain or unsupported facts stay out.",
+      "Second stage can select fact IDs and label novelty, cannot rewrite scientific fact/reattach evidence.",
+      "Require editorial review and preserve all current Wiki/data versions."
+    ],
+    "implementation_in_this_sprint": false
+  },
+  "technical_validation": {
+    "unittest_passed": 93,
+    "unittest_failed": 0,
+    "wiki_lint_errors": 0,
+    "wiki_lint_warnings": 13,
+    "scientific_evidence_references_checked_locally": 162,
+    "encyclopedia_records_checked_locally": 47,
+    "observations_checked_locally": 168,
+    "protected_file_sha256_matches": 30,
+    "pdf_sha256_matches": 11,
+    "checkpoint_size_mtime_matches": 3878,
+    "relative_markdown_file_links_checked": 54,
+    "identical_complete_request_payloads": 2,
+    "frozen_protocol_sha256_matches": true,
+    "ruff_f_errors": 0
+  },
+  "resources_before_acquisition": {
+    "memory_limit_bytes": 34359738368,
+    "memory_available_bytes": 32847831040,
+    "disk_free_bytes": 30800977920,
+    "cpu_affinity_count": 5,
+    "cpu_quota": "400000 100000"
+  }
+}

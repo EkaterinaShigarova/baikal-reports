@@ -43,7 +43,12 @@ class ModelAcquisition(unittest.TestCase):
 
     def test_standalone_entrypoints_import_without_project_cwd(self):
         with tempfile.TemporaryDirectory() as d:
-            for name in ["download_evaluation_model.py", "evaluate_local_llm.py"]:
+            for name in [
+                "download_evaluation_model.py",
+                "evaluate_local_llm.py",
+                "download_7b_model.py",
+                "resume_7b_ranges.py",
+            ]:
                 completed = subprocess.run(
                     [sys.executable, str(ROOT / "scripts" / name), "--help"],
                     cwd=d,
@@ -110,16 +115,16 @@ class ModelAcquisition(unittest.TestCase):
             root = Path(d)
             p = root / FILENAME
             p.write_bytes(b"Existing model")
-            with patch(
-                "scripts.download_evaluation_model.open_model_url"
-            ) as network:
+            with patch("scripts.download_evaluation_model.open_model_url") as network:
                 with self.assertRaisesRegex(ValueError, "left unchanged"):
                     download(plan(self.metadata(), self.resource()), root)
                 network.assert_not_called()
             self.assertEqual(p.read_bytes(), b"Existing model")
 
     def test_redirect_failure_reports_cdn_without_signed_query_and_cleans_partial(self):
-        signed = "https://us.aws.cdn.hf.co/xet-bridge-us/example?Signature=private-token"
+        signed = (
+            "https://us.aws.cdn.hf.co/xet-bridge-us/example?Signature=private-token"
+        )
 
         def fake_opener(handler):
             class Opener:
@@ -132,7 +137,9 @@ class ModelAcquisition(unittest.TestCase):
                         {},
                         signed,
                     )
-                    raise urllib.error.URLError("Tunnel connection failed: 403 Forbidden")
+                    raise urllib.error.URLError(
+                        "Tunnel connection failed: 403 Forbidden"
+                    )
 
             return Opener()
 
@@ -148,7 +155,9 @@ class ModelAcquisition(unittest.TestCase):
                 raised.exception.blocked_url,
                 "https://us.aws.cdn.hf.co/xet-bridge-us/example",
             )
-            self.assertIn("Tunnel connection failed: 403 Forbidden", str(raised.exception))
+            self.assertIn(
+                "Tunnel connection failed: 403 Forbidden", str(raised.exception)
+            )
             self.assertNotIn("private-token", str(raised.exception))
             self.assertFalse((root / FILENAME).exists())
             self.assertFalse((root / (FILENAME + ".partial")).exists())
@@ -157,7 +166,9 @@ class ModelAcquisition(unittest.TestCase):
         url = "https://huggingface.co/api/models/example?blobs=true"
         with patch(
             "scripts.download_evaluation_model.urllib.request.OpenerDirector.open",
-            side_effect=urllib.error.URLError("Tunnel connection failed: 403 Forbidden"),
+            side_effect=urllib.error.URLError(
+                "Tunnel connection failed: 403 Forbidden"
+            ),
         ):
             with self.assertRaises(ModelAccessError) as raised:
                 open_model_url(url, timeout=1)

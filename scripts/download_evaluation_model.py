@@ -41,11 +41,12 @@ class DownloadRedirects(urllib.request.HTTPRedirectHandler):
         return redirected
 
 
-def open_model_url(url, timeout):
+def open_model_url(url, timeout, headers=None):
     redirects = DownloadRedirects(url)
     opener = urllib.request.build_opener(redirects)
     try:
-        return opener.open(url, timeout=timeout)
+        request = urllib.request.Request(url, headers=headers) if headers else url
+        return opener.open(request, timeout=timeout)
     except OSError as exc:
         raise ModelAccessError(redirects.current_url, exc) from exc
 
@@ -90,16 +91,21 @@ def plan(metadata, res):
     }
 
 
-def download(info, directory):
+def download(info, directory, max_bytes=MAX_BYTES):
+    filename = info["filename"]
+    if not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9._-]*\.gguf", filename):
+        raise ValueError("Unsafe GGUF filename")
+    if not 0 < info["bytes"] <= max_bytes:
+        raise ValueError("Model exceeds declared resource budget")
     directory.mkdir(parents=True, exist_ok=True)
-    final = directory / FILENAME
+    final = directory / filename
     if final.exists():
         if sha256(final) != info["sha256"]:
             raise ValueError("Existing model checksum mismatch; file left unchanged")
         return final
     if shutil.disk_usage(directory).free < info["bytes"] + 2 * 1024**3:
         raise ValueError("Disk reserve changed; download cancelled")
-    partial = directory / (FILENAME + ".partial")
+    partial = directory / (filename + ".partial")
     created = False
     try:
         with partial.open("xb") as f:
@@ -109,7 +115,7 @@ def download(info, directory):
             with open_model_url(info["url"], timeout=60) as response:
                 while chunk := response.read(1024 * 1024):
                     total += len(chunk)
-                    if total > info["bytes"] or total > MAX_BYTES:
+                    if total > info["bytes"] or total > max_bytes:
                         raise ValueError("Model exceeded declared resource budget")
                     h.update(chunk)
                     f.write(chunk)
@@ -119,7 +125,7 @@ def download(info, directory):
             if f.read(4) != b"GGUF":
                 raise ValueError("Downloaded file is not GGUF")
         partial.replace(final)
-        atomic_json(directory / (FILENAME + ".source.json"), info)
+        atomic_json(directory / (filename + ".source.json"), info)
         return final
     finally:
         if created and partial.exists():

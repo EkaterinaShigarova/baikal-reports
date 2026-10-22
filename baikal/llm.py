@@ -70,7 +70,10 @@ def synthesize(
     assessment=False,
     runtime=None,
     assessment_protocol="v1",
+    request_timeout=180,
 ):
+    if type(request_timeout) is not int or not 1 <= request_timeout <= 600:
+        raise ValueError("LLM request timeout must be bounded to 1..600 seconds")
     evidence = (
         load_proposal(ROOT, proposal, topic)["evidence"]
         if proposal
@@ -166,10 +169,13 @@ def synthesize(
         "preceding_versions": preceding,
         "published": False,
         "assessment_protocol": assessment_protocol,
+        "request_timeout_seconds": request_timeout,
     }
     save_packet(ROOT, "llm_inputs", request_record)
     try:
-        with urllib.request.build_opener(*handlers).open(req, timeout=180) as response:
+        with urllib.request.build_opener(*handlers).open(
+            req, timeout=request_timeout
+        ) as response:
             raw = response.read(2 * 1024 * 1024).decode("utf-8")
     except Exception as exc:
         run_id, _ = save_packet(

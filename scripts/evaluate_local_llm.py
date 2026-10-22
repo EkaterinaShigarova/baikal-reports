@@ -14,6 +14,51 @@ from pathlib import Path
 from baikal.core import ROOT, atomic_json, read_json, sha256
 from baikal.evaluation import prepare_cases, resources
 from baikal.llm import synthesize
+from baikal.local_models import profile_7b, verify_7b
+
+
+def draft_result(case_id, outcome):
+    # synthesize returns status=draft; it must not overwrite the review status.
+    return {"case": case_id, **outcome, "status": "draft_pending_semantic_review"}
+
+
+def frozen_v2_inputs(prepared, baseline_path=ROOT / "datasets/llm_comparison_v2.json"):
+    baseline = read_json(baseline_path)
+    previous = baseline["v2"]["cases"]
+    if (
+        prepared.get("assessment_protocol") != "v2"
+        or len(prepared["cases"]) != 2
+        or len(previous) != 2
+        or {c["topic"] for c in prepared["cases"]} != {c["topic"] for c in previous}
+    ):
+        raise ValueError("7B comparison requires exactly two frozen v2 cases")
+    for case in prepared["cases"]:
+        old = next(c for c in previous if c["topic"] == case["topic"])
+        path = ROOT / old["run_record_path"]
+        if sha256(path) != old["run_record_sha256"]:
+            raise ValueError("Baseline model run integrity mismatch")
+        run = read_json(path)
+        current = read_json(ROOT / case["path"])
+        messages = [
+            {"role": "system", "content": current["system_prompt"]},
+            {
+                "role": "user",
+                "content": json.dumps(current["input"], ensure_ascii=False),
+            },
+        ]
+        if (
+            messages != run["request"]["messages"]
+            or run["request"]["temperature"] != 0
+            or run["request"]["max_tokens"] != 1800
+            or old["article_sha256"] != case["article_sha256"]
+        ):
+            raise ValueError("Frozen evidence/article/prompt/sampling mismatch")
+    return {
+        "path": str(baseline_path),
+        "sha256": sha256(baseline_path),
+        "matched_cases": 2,
+        "model_messages_identical": True,
+    }
 
 
 def runtime_info(server):
@@ -47,7 +92,15 @@ def run(args, prepared):
         )
     model, server = args.model_file.resolve(), args.server_binary.resolve()
     res = resources()
-    if (
+    profile = getattr(args, "model_profile", "qwen25-1.5b-q4km")
+    bundle, comparison, timeout = None, None, 180
+    if profile == "qwen25-7b-q4km":
+        bundle = verify_7b(model, res)
+        if args.model_sha256 != bundle["files"][0]["sha256"]:
+            raise ValueError("7B first shard checksum argument differs from profile")
+        comparison = frozen_v2_inputs(prepared)
+        timeout = profile_7b()["request_timeout_seconds"]
+    elif (
         model.stat().st_size > 2 * 1024**3
         or res["memory_limit_bytes"] < 8 * 1024**3
         or res["memory_available_bytes"] < 4 * 1024**3
@@ -59,7 +112,7 @@ def run(args, prepared):
     with model.open("rb") as f:
         if f.read(4) != b"GGUF":
             raise ValueError("Expected a GGUF model header")
-    if sha256(model) != args.model_sha256:
+    if bundle is None and sha256(model) != args.model_sha256:
         raise ValueError("Model SHA256 mismatch")
     runtime = runtime_info(server)
     with socket.socket() as sock:
@@ -93,6 +146,10 @@ def run(args, prepared):
         "model_file_name": model.name,
         "model_bytes": model.stat().st_size,
         "server_sha256": sha256(server),
+        "model_profile": profile,
+        "model_bundle": bundle,
+        "frozen_comparison": comparison,
+        "request_timeout_seconds": timeout,
         **runtime,
         "threads": 4,
         "context_tokens": 8192,
@@ -140,14 +197,9 @@ def run(args, prepared):
                         assessment=True,
                         runtime=metadata,
                         assessment_protocol=prepared.get("assessment_protocol", "v1"),
+                        request_timeout=timeout,
                     )
-                    results.append(
-                        {
-                            "case": case["id"],
-                            "status": "draft_pending_semantic_review",
-                            **outcome,
-                        }
-                    )
+                    results.append(draft_result(case["id"], outcome))
                 except ValueError as exc:
                     results.append(
                         {"case": case["id"], "status": "rejected", "reason": str(exc)}
@@ -201,6 +253,11 @@ if __name__ == "__main__":
     mode.add_argument("--run", action="store_true")
     parser.add_argument("--model-file", type=Path)
     parser.add_argument("--model-sha256")
+    parser.add_argument(
+        "--model-profile",
+        choices=["qwen25-1.5b-q4km", "qwen25-7b-q4km"],
+        default="qwen25-1.5b-q4km",
+    )
     parser.add_argument("--server-binary", type=Path)
     parser.add_argument("--assessment-protocol", choices=["v1", "v2"], default="v1")
     parser.add_argument(
