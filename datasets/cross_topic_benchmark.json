@@ -1,0 +1,1145 @@
+{
+  "version": 1,
+  "registry_file_sha256": "fdfde56083465f765c951248329f88ae7d1a0ae343fdb47badfc9418c17ad6ef",
+  "max_model_requests": 1,
+  "examples": [
+    {
+      "id": "T01",
+      "fact": {
+        "id": "N07",
+        "article_evidence": {
+          "start": 1358,
+          "end": 1406,
+          "quote": "Общая расчётная численность — 137,6 тыс. особей."
+        },
+        "evidence_ids": [
+          "N18"
+        ],
+        "source_support": {
+          "evidence_id": "N18",
+          "quote": "Традиционный учёт численности приплода нерпы был провёден Байкальским филиалом\n     ФГБНУ «Госрыбцентр» в марте-апреле 2018 года по всей акватории Байкала (28 стандарт-\n      ных разрезов, 196 учётных площадок). Расчётная численность приплода – 26,1 тыс. голов,\n      при этом статистическая ошибка расчёта численности приплода составила не более 13 %.\n      Общая численность популяции байкальской нерпы в 2018 году, по сравнению с 2017 годом,\n       увеличилась на 9,3 тыс. особей и составила 137,6 тыс. экз."
+        },
+        "features": {
+          "object": "байкальская нерпа",
+          "indicator": "общая численность",
+          "value": "137,6",
+          "statistic": "estimated_count",
+          "unit": "тыс. особей",
+          "territory": "озеро Байкал — оценка для всего озера",
+          "period": {
+            "year": 2018
+          },
+          "message_kind": "reported_observation",
+          "value_kind": "numeric",
+          "attribution": "source_statement",
+          "comparison_scope": "specified_source_message"
+        },
+        "observation_year": 2018,
+        "report_year": 2018,
+        "publication_year": null,
+        "method": {
+          "survey": "март–апрель 2018, вся акватория; расчёт по учёту приплода",
+          "extrapolation_details": null
+        },
+        "value_qualifier": "exact",
+        "status": "source_statement_checked_non_expert",
+        "expert_review": false,
+        "limitations": [
+          "Сообщение источника сверено, не независимое подтверждение измерения. Подлинность зеркала и сопоставимость рядов не повышаются автоматически."
+        ],
+        "sha256": "77badeb3e5db835acfa9c218a47d251b348419a3a5d141249f148fbea7984f96"
+      },
+      "target": {
+        "id": "N07",
+        "article_evidence": {
+          "start": 1358,
+          "end": 1406,
+          "quote": "Общая расчётная численность — 137,6 тыс. особей."
+        },
+        "evidence_ids": [
+          "N18"
+        ],
+        "source_support": {
+          "evidence_id": "N18",
+          "quote": "Традиционный учёт численности приплода нерпы был провёден Байкальским филиалом\n     ФГБНУ «Госрыбцентр» в марте-апреле 2018 года по всей акватории Байкала (28 стандарт-\n      ных разрезов, 196 учётных площадок). Расчётная численность приплода – 26,1 тыс. голов,\n      при этом статистическая ошибка расчёта численности приплода составила не более 13 %.\n      Общая численность популяции байкальской нерпы в 2018 году, по сравнению с 2017 годом,\n       увеличилась на 9,3 тыс. особей и составила 137,6 тыс. экз."
+        },
+        "features": {
+          "object": "байкальская нерпа",
+          "indicator": "общая численность",
+          "value": "137,6",
+          "statistic": "estimated_count",
+          "unit": "тыс. особей",
+          "territory": "озеро Байкал — оценка для всего озера",
+          "period": {
+            "year": 2018
+          },
+          "message_kind": "reported_observation",
+          "value_kind": "numeric",
+          "attribution": "source_statement",
+          "comparison_scope": "specified_source_message"
+        },
+        "observation_year": 2018,
+        "report_year": 2018,
+        "publication_year": null,
+        "method": {
+          "survey": "март–апрель 2018, вся акватория; расчёт по учёту приплода",
+          "extrapolation_details": null
+        },
+        "value_qualifier": "exact",
+        "status": "source_statement_checked_non_expert",
+        "expert_review": false,
+        "limitations": [
+          "Сообщение источника сверено, не независимое подтверждение измерения. Подлинность зеркала и сопоставимость рядов не повышаются автоматически."
+        ],
+        "sha256": "77badeb3e5db835acfa9c218a47d251b348419a3a5d141249f148fbea7984f96"
+      },
+      "fact_sha256": "8ee0749be3cf33698135c87a78a22b6f17d0bc1286d48170e375786410afd68c",
+      "target_sha256": "8ee0749be3cf33698135c87a78a22b6f17d0bc1286d48170e375786410afd68c",
+      "scope": "article",
+      "expected": "same_fact",
+      "gold_reason": "Та же расчётная численность 2018, источник и схема учёта. Не новый факт.",
+      "expert_review": false
+    },
+    {
+      "id": "T02",
+      "fact": {
+        "id": "SOURCE-COAST-2018",
+        "article_evidence": null,
+        "evidence_ids": [
+          "N18"
+        ],
+        "source_support": {
+          "evidence_id": "N18",
+          "quote": "Летом 2018 года, после освобождения озера ото льда, Байкальским филиалом ФГБНУ\n       «Госрыбцентр» было проведено исследование участков побережья протяжённостью около\n       200 км, которое показало, что "
+        },
+        "features": {
+          "object": "обследование побережья",
+          "indicator": "протяжённость обследованных участков",
+          "value": "200",
+          "statistic": "survey_extent",
+          "unit": "км",
+          "territory": "обследованные участки побережья Байкала",
+          "period": {
+            "year": 2018,
+            "season": "лето"
+          },
+          "message_kind": "reported_observation",
+          "value_kind": "numeric",
+          "attribution": "source_statement",
+          "comparison_scope": "specified_source_message"
+        },
+        "observation_year": 2018,
+        "report_year": 2018,
+        "publication_year": null,
+        "method": {
+          "kind": "летнее обследование побережья после освобождения ото льда"
+        },
+        "value_qualifier": "approximate",
+        "status": "source_statement_checked_non_expert",
+        "expert_review": false,
+        "limitations": [
+          "Сообщение источника сверено, не независимое подтверждение измерения. Подлинность зеркала и сопоставимость рядов не повышаются автоматически."
+        ]
+      },
+      "target": {
+        "id": "N03",
+        "article_evidence": {
+          "start": 1133,
+          "end": 1156,
+          "quote": "28 стандартных разрезов"
+        },
+        "evidence_ids": [
+          "N18"
+        ],
+        "source_support": {
+          "evidence_id": "N18",
+          "quote": "Традиционный учёт численности приплода нерпы был провёден Байкальским филиалом\n     ФГБНУ «Госрыбцентр» в марте-апреле 2018 года по всей акватории Байкала (28 стандарт-\n      ных разрезов, 196 учётных площадок). Расчётная численность приплода – 26,1 тыс. голов,\n      при этом статистическая ошибка расчёта численности приплода составила не более 13 %.\n      Общая численность популяции байкальской нерпы в 2018 году, по сравнению с 2017 годом,\n       увеличилась на 9,3 тыс. особей и составила 137,6 тыс. экз."
+        },
+        "features": {
+          "object": "байкальская нерпа",
+          "indicator": "число учётных разрезов",
+          "value": "28",
+          "statistic": "count",
+          "unit": "разрез",
+          "territory": "озеро Байкал — оценка для всего озера",
+          "period": {
+            "year": 2018
+          },
+          "message_kind": "reported_observation",
+          "value_kind": "numeric",
+          "attribution": "source_statement",
+          "comparison_scope": "specified_source_message"
+        },
+        "observation_year": 2018,
+        "report_year": 2018,
+        "publication_year": null,
+        "method": {
+          "survey": "март–апрель 2018, вся акватория; расчёт по учёту приплода",
+          "extrapolation_details": null
+        },
+        "value_qualifier": "exact",
+        "status": "source_statement_checked_non_expert",
+        "expert_review": false,
+        "limitations": [
+          "Сообщение источника сверено, не независимое подтверждение измерения. Подлинность зеркала и сопоставимость рядов не повышаются автоматически."
+        ],
+        "sha256": "c50f626a8ea79facec412d428ad94a5209e39fe5f42d90c1029825ffa5017d27"
+      },
+      "fact_sha256": "12571b51ee358a7f513a23008f0ef1772bfb57c3ae92db81ce83f1dd6f0db40e",
+      "target_sha256": "ca6f151a5d4060a4c676e00979f37369c8432dd2f641d34ec6325ea8f291c8f4",
+      "scope": "article",
+      "expected": "incomparable",
+      "gold_reason": "Длина обследованного побережья не число ледовых разрезов. Примерная длина около 200 км относится к обследованию 2018, эпизод гибели — осень 2017. Новизна требует отдельной всей статьи.",
+      "expert_review": false
+    },
+    {
+      "id": "T03",
+      "fact": {
+        "id": "N07",
+        "article_evidence": {
+          "start": 1358,
+          "end": 1406,
+          "quote": "Общая расчётная численность — 137,6 тыс. особей."
+        },
+        "evidence_ids": [
+          "N18"
+        ],
+        "source_support": {
+          "evidence_id": "N18",
+          "quote": "Традиционный учёт численности приплода нерпы был провёден Байкальским филиалом\n     ФГБНУ «Госрыбцентр» в марте-апреле 2018 года по всей акватории Байкала (28 стандарт-\n      ных разрезов, 196 учётных площадок). Расчётная численность приплода – 26,1 тыс. голов,\n      при этом статистическая ошибка расчёта численности приплода составила не более 13 %.\n      Общая численность популяции байкальской нерпы в 2018 году, по сравнению с 2017 годом,\n       увеличилась на 9,3 тыс. особей и составила 137,6 тыс. экз."
+        },
+        "features": {
+          "object": "байкальская нерпа",
+          "indicator": "общая численность",
+          "value": "137,6",
+          "statistic": "estimated_count",
+          "unit": "тыс. особей",
+          "territory": "озеро Байкал — оценка для всего озера",
+          "period": {
+            "year": 2018
+          },
+          "message_kind": "reported_observation",
+          "value_kind": "numeric",
+          "attribution": "source_statement",
+          "comparison_scope": "specified_source_message"
+        },
+        "observation_year": 2018,
+        "report_year": 2018,
+        "publication_year": null,
+        "method": {
+          "survey": "март–апрель 2018, вся акватория; расчёт по учёту приплода",
+          "extrapolation_details": null
+        },
+        "value_qualifier": "exact",
+        "status": "source_statement_checked_non_expert",
+        "expert_review": false,
+        "limitations": [
+          "Сообщение источника сверено, не независимое подтверждение измерения. Подлинность зеркала и сопоставимость рядов не повышаются автоматически."
+        ],
+        "sha256": "77badeb3e5db835acfa9c218a47d251b348419a3a5d141249f148fbea7984f96"
+      },
+      "target": {
+        "id": "N10",
+        "article_evidence": {
+          "start": 1789,
+          "end": 1825,
+          "quote": "общая численность 163,2 тыс. особей."
+        },
+        "evidence_ids": [
+          "N24"
+        ],
+        "source_support": {
+          "evidence_id": "N24",
+          "quote": "Общая  численность  популяции  байкальской    объеме  3000  голов.  Аналогичный  объем ОДУ\nнерпы в 2024 г., согласно расчетам, составила 163,2    установлен на 2025 г.\nтыс. особей."
+        },
+        "features": {
+          "object": "байкальская нерпа",
+          "indicator": "общая численность",
+          "value": "163,2",
+          "statistic": "estimated_count",
+          "unit": "тыс. особей",
+          "territory": "озеро Байкал — оценка для всего озера",
+          "period": {
+            "year": 2024
+          },
+          "message_kind": "reported_observation",
+          "value_kind": "numeric",
+          "attribution": "source_statement",
+          "comparison_scope": "specified_source_message"
+        },
+        "observation_year": 2024,
+        "report_year": 2024,
+        "publication_year": null,
+        "method": {
+          "survey": "апрель 2024, южная и средняя части; расчёт для всего озера",
+          "extrapolation_details": null
+        },
+        "value_qualifier": "exact",
+        "status": "source_statement_checked_non_expert",
+        "expert_review": false,
+        "limitations": [
+          "Сообщение источника сверено, не независимое подтверждение измерения. Подлинность зеркала и сопоставимость рядов не повышаются автоматически."
+        ],
+        "sha256": "3cf59dff22ba934b6c5ffad8380a612a735075befda6e4733c544fcd64084387"
+      },
+      "fact_sha256": "8ee0749be3cf33698135c87a78a22b6f17d0bc1286d48170e375786410afd68c",
+      "target_sha256": "a9a1ce6adfcc2295bc72860d1854e3314d2fbd37a3e4c91cb72c6b078e648cd8",
+      "scope": "source_pair",
+      "expected": "incomparable",
+      "gold_reason": "Периоды и описанные схемы различны. Разница 137,6/163,2 не доказывает тренд или принципиальную несовместимость методов.",
+      "expert_review": false
+    },
+    {
+      "id": "T04",
+      "fact": {
+        "id": "W01",
+        "article_evidence": {
+          "start": 638,
+          "end": 661,
+          "quote": "зона наблюдений 250 км²"
+        },
+        "evidence_ids": [
+          "W18"
+        ],
+        "source_support": {
+          "evidence_id": "W18",
+          "quote": "Район влияния сточных вод КОС г. Байкальска. В районе влияния сточных вод\n     КОС г. Байкальска наблюдения выполнялись на площади 250 км2. В центральной части\n      зоны наблюдения, в районе наиболее активного влияния сточных вод (полигон площа-\n      дью 35 км2) исследовалось загрязнение вод серой несульфатной и тяжёлыми металла-\n       ми. Кроме того, наблюдения осуществляли в контрольном створе (100 м от глубинного\n      выпуска КОС)."
+        },
+        "features": {
+          "object": "поверхностная вода озера Байкал",
+          "indicator": "площадь зоны наблюдений",
+          "value": "250",
+          "statistic": "spatial_descriptor",
+          "unit": "км²",
+          "territory": "полигон влияния КОС Байкальска",
+          "period": {
+            "year": 2018
+          },
+          "message_kind": "reported_observation",
+          "value_kind": "numeric",
+          "attribution": "source_statement",
+          "comparison_scope": "specified_source_message"
+        },
+        "observation_year": 2018,
+        "report_year": 2018,
+        "publication_year": null,
+        "method": {
+          "kind": "атрибутированное описание источника; не измерительная методика"
+        },
+        "value_qualifier": "exact",
+        "status": "source_statement_checked_non_expert",
+        "expert_review": false,
+        "limitations": [
+          "Сообщение источника сверено, не независимое подтверждение измерения. Подлинность зеркала и сопоставимость рядов не повышаются автоматически."
+        ],
+        "sha256": "fa0628129c9fdcb60de0a9a33f006377c9810a7013b5d6a39863bc15f6468c7f"
+      },
+      "target": {
+        "id": "W02",
+        "article_evidence": {
+          "start": 663,
+          "end": 689,
+          "quote": "центральный полигон 35 км²"
+        },
+        "evidence_ids": [
+          "W18"
+        ],
+        "source_support": {
+          "evidence_id": "W18",
+          "quote": "Район влияния сточных вод КОС г. Байкальска. В районе влияния сточных вод\n     КОС г. Байкальска наблюдения выполнялись на площади 250 км2. В центральной части\n      зоны наблюдения, в районе наиболее активного влияния сточных вод (полигон площа-\n      дью 35 км2) исследовалось загрязнение вод серой несульфатной и тяжёлыми металла-\n       ми. Кроме того, наблюдения осуществляли в контрольном створе (100 м от глубинного\n      выпуска КОС)."
+        },
+        "features": {
+          "object": "поверхностная вода озера Байкал",
+          "indicator": "площадь зоны наблюдений",
+          "value": "35",
+          "statistic": "spatial_descriptor",
+          "unit": "км²",
+          "territory": "центральная часть полигона КОС Байкальска",
+          "period": {
+            "year": 2018
+          },
+          "message_kind": "reported_observation",
+          "value_kind": "numeric",
+          "attribution": "source_statement",
+          "comparison_scope": "specified_source_message"
+        },
+        "observation_year": 2018,
+        "report_year": 2018,
+        "publication_year": null,
+        "method": {
+          "kind": "атрибутированное описание источника; не измерительная методика"
+        },
+        "value_qualifier": "exact",
+        "status": "source_statement_checked_non_expert",
+        "expert_review": false,
+        "limitations": [
+          "Сообщение источника сверено, не независимое подтверждение измерения. Подлинность зеркала и сопоставимость рядов не повышаются автоматически."
+        ],
+        "sha256": "fc147cb6c64720b761cbc8fa70ac4615d023d68ab5f21dcb17dd7e1b27c24d41"
+      },
+      "fact_sha256": "917db78bdbf8d7715705114deb34fa05fdd3830c793fb62d21e0599a5263b4c6",
+      "target_sha256": "86b522b2af89ab4778d90e28e6162e564858282714c156771bf819d9d0297da6",
+      "scope": "article",
+      "expected": "incomparable",
+      "gold_reason": "250 и 35 км² описывают разные зоны, не два значения одной площади.",
+      "expert_review": false
+    },
+    {
+      "id": "T05",
+      "fact": {
+        "id": "W08",
+        "article_evidence": {
+          "start": 1508,
+          "end": 1523,
+          "quote": "пять нарушений;"
+        },
+        "evidence_ids": [
+          "W24"
+        ],
+        "source_support": {
+          "evidence_id": "W24",
+          "quote": "Летучие фенолы                                                                                                   2,0 ПДК,                                              0,001 – 0,002               70 – 5(0,001 мг/дм3)                                                                                  5 раз"
+        },
+        "features": {
+          "object": "поверхностная вода озера Байкал",
+          "indicator": "нарушения по летучим фенолам",
+          "value": "5",
+          "statistic": "sample_violations",
+          "unit": "проба",
+          "territory": "контрольный створ 100 м от выпуска КОС Байкальска",
+          "period": {
+            "year": 2024
+          },
+          "message_kind": "reported_observation",
+          "value_kind": "numeric",
+          "attribution": "source_statement",
+          "comparison_scope": "specified_source_message"
+        },
+        "observation_year": 2024,
+        "report_year": 2024,
+        "publication_year": null,
+        "method": {
+          "kind": "таблица 1.1.1.3: пробы; аналитический метод неизвестен"
+        },
+        "value_qualifier": "exact",
+        "status": "source_statement_checked_non_expert",
+        "expert_review": false,
+        "limitations": [
+          "Сообщение источника сверено, не независимое подтверждение измерения. Подлинность зеркала и сопоставимость рядов не повышаются автоматически."
+        ],
+        "article_number_word": "пять",
+        "sha256": "779b774439c58c4a34623404eb6ec1afad799f829738d2bcb7269567c0fcc5c6"
+      },
+      "target": {
+        "id": "W14",
+        "article_evidence": {
+          "start": 3261,
+          "end": 3295,
+          "quote": "записи «7 – 7» за 2024 и 2025 годы"
+        },
+        "evidence_ids": [
+          "W25"
+        ],
+        "source_support": {
+          "evidence_id": "W25",
+          "quote": "Летучие фенолы, мг/л                   0,0 - 0,002     0,0 - 0,002        7 - 7          7 - 7          2            2"
+        },
+        "features": {
+          "object": "поверхностная вода озера Байкал",
+          "indicator": "нарушения по летучим фенолам",
+          "value": "7",
+          "statistic": "observation_violations",
+          "unit": "наблюдение",
+          "territory": "контрольный створ 100 м от выпуска КОС Байкальска",
+          "period": {
+            "year": 2024
+          },
+          "message_kind": "reported_observation",
+          "value_kind": "numeric",
+          "attribution": "source_statement",
+          "comparison_scope": "specified_source_message"
+        },
+        "observation_year": 2024,
+        "report_year": 2025,
+        "publication_year": 2026,
+        "method": null,
+        "value_qualifier": "exact",
+        "status": "source_statement_checked_non_expert",
+        "expert_review": false,
+        "limitations": [
+          "Ретроспективный год 2024, доклад 2025. Агрегация наблюдений не пояснена; нельзя отождествлять с пробами специализированного доклада."
+        ],
+        "sha256": "0538ae49d5d591fa77b4b201538301ecabf827802dc5dc6216230cd1bae3d348"
+      },
+      "fact_sha256": "9e815d6aa4ab8deace2025b036a173535f02c496fe239b3ec17088f66d4b2c93",
+      "target_sha256": "971477c45fe348ab3c799333bebf57fbedd0a4d493dbc06b9ff9c788ced60d61",
+      "scope": "source_pair",
+      "expected": "incomparable",
+      "gold_reason": "Реальное расхождение сообщений 5 проб/7 наблюдений за 2024. Статистика и единица различаются, агрегация неизвестна; доказанного конфликта сопоставимых измерений нет.",
+      "expert_review": false,
+      "documented_source_disagreement": {
+        "values": [
+          "5",
+          "7"
+        ],
+        "observation_year": 2024,
+        "report_years": [
+          2024,
+          2025
+        ],
+        "same_measurement_conflict_established": false,
+        "retain_both": true
+      }
+    },
+    {
+      "id": "T06",
+      "fact": {
+        "id": "N06",
+        "article_evidence": {
+          "start": 1225,
+          "end": 1302,
+          "quote": "источник сообщает статистическую ошибку расчёта именно приплода не более 13%;"
+        },
+        "evidence_ids": [
+          "N18"
+        ],
+        "source_support": {
+          "evidence_id": "N18",
+          "quote": "Традиционный учёт численности приплода нерпы был провёден Байкальским филиалом\n     ФГБНУ «Госрыбцентр» в марте-апреле 2018 года по всей акватории Байкала (28 стандарт-\n      ных разрезов, 196 учётных площадок). Расчётная численность приплода – 26,1 тыс. голов,\n      при этом статистическая ошибка расчёта численности приплода составила не более 13 %.\n      Общая численность популяции байкальской нерпы в 2018 году, по сравнению с 2017 годом,\n       увеличилась на 9,3 тыс. особей и составила 137,6 тыс. экз."
+        },
+        "features": {
+          "object": "байкальская нерпа",
+          "indicator": "ошибка расчёта приплода",
+          "value": "13",
+          "statistic": "relative_error_upper_bound",
+          "unit": "%",
+          "territory": "озеро Байкал — оценка для всего озера",
+          "period": {
+            "year": 2018
+          },
+          "message_kind": "reported_observation",
+          "value_kind": "numeric",
+          "attribution": "source_statement",
+          "comparison_scope": "specified_source_message"
+        },
+        "observation_year": 2018,
+        "report_year": 2018,
+        "publication_year": null,
+        "method": {
+          "survey": "март–апрель 2018, вся акватория; расчёт по учёту приплода",
+          "extrapolation_details": null
+        },
+        "value_qualifier": "upper_bound",
+        "status": "source_statement_checked_non_expert",
+        "expert_review": false,
+        "limitations": [
+          "Сообщение источника сверено, не независимое подтверждение измерения. Подлинность зеркала и сопоставимость рядов не повышаются автоматически."
+        ],
+        "sha256": "d8d291107a36618ce248c930d8e0fc3c8abc490669a8a5863ea2fc2eff480e7c"
+      },
+      "target": {
+        "id": "N07",
+        "article_evidence": {
+          "start": 1358,
+          "end": 1406,
+          "quote": "Общая расчётная численность — 137,6 тыс. особей."
+        },
+        "evidence_ids": [
+          "N18"
+        ],
+        "source_support": {
+          "evidence_id": "N18",
+          "quote": "Традиционный учёт численности приплода нерпы был провёден Байкальским филиалом\n     ФГБНУ «Госрыбцентр» в марте-апреле 2018 года по всей акватории Байкала (28 стандарт-\n      ных разрезов, 196 учётных площадок). Расчётная численность приплода – 26,1 тыс. голов,\n      при этом статистическая ошибка расчёта численности приплода составила не более 13 %.\n      Общая численность популяции байкальской нерпы в 2018 году, по сравнению с 2017 годом,\n       увеличилась на 9,3 тыс. особей и составила 137,6 тыс. экз."
+        },
+        "features": {
+          "object": "байкальская нерпа",
+          "indicator": "общая численность",
+          "value": "137,6",
+          "statistic": "estimated_count",
+          "unit": "тыс. особей",
+          "territory": "озеро Байкал — оценка для всего озера",
+          "period": {
+            "year": 2018
+          },
+          "message_kind": "reported_observation",
+          "value_kind": "numeric",
+          "attribution": "source_statement",
+          "comparison_scope": "specified_source_message"
+        },
+        "observation_year": 2018,
+        "report_year": 2018,
+        "publication_year": null,
+        "method": {
+          "survey": "март–апрель 2018, вся акватория; расчёт по учёту приплода",
+          "extrapolation_details": null
+        },
+        "value_qualifier": "exact",
+        "status": "source_statement_checked_non_expert",
+        "expert_review": false,
+        "limitations": [
+          "Сообщение источника сверено, не независимое подтверждение измерения. Подлинность зеркала и сопоставимость рядов не повышаются автоматически."
+        ],
+        "sha256": "77badeb3e5db835acfa9c218a47d251b348419a3a5d141249f148fbea7984f96"
+      },
+      "fact_sha256": "a0f614d408f173f704fd2e7ae607926b4e85be106aad1ff02757e29dd27fe936",
+      "target_sha256": "8ee0749be3cf33698135c87a78a22b6f17d0bc1286d48170e375786410afd68c",
+      "scope": "article",
+      "expected": "incomparable",
+      "gold_reason": "Ошибка приплода ≤13% не ошибка расчёта общей популяции и не её численность.",
+      "expert_review": false
+    },
+    {
+      "id": "T07",
+      "fact": {
+        "id": "W06",
+        "article_evidence": {
+          "start": 1050,
+          "end": 1075,
+          "quote": "0,001 мг/дм³ для фенолов."
+        },
+        "evidence_ids": [
+          "W18"
+        ],
+        "source_support": {
+          "evidence_id": "W18",
+          "quote": "Оценка показателей качества воды озера Байкал в контроль-\n      ном створе проводилась в соответствии со специальными нормами ПДК, введёнными\n        с 01.01.1985  г. (разработаны Росгидрометом для контрольного створа БЦБК), которые\n       соответствуют следующим значениям (мг/дм3): минеральные вещества – 117; взвешен-\n      ные вещества – 1,1; сульфаты – 10; хлориды – 2; фенолы – 0,001; водородный показатель\n       от 6,5 до 8,5 единиц рН."
+        },
+        "features": {
+          "object": "поверхностная вода озера Байкал",
+          "indicator": "фенолы",
+          "value": "0,001",
+          "statistic": "regulatory_limit",
+          "unit": "мг/дм3",
+          "territory": "контрольный створ 100 м от выпуска КОС Байкальска",
+          "period": {
+            "valid_since": "1985-01-01"
+          },
+          "message_kind": "regulatory_criterion",
+          "value_kind": "numeric",
+          "attribution": "source_statement",
+          "comparison_scope": "specified_source_message"
+        },
+        "observation_year": null,
+        "report_year": 2018,
+        "publication_year": null,
+        "method": {
+          "kind": "специальные нормы контрольного створа с 01.01.1985; не аналитический метод"
+        },
+        "value_qualifier": "exact",
+        "status": "source_statement_checked_non_expert",
+        "expert_review": false,
+        "limitations": [
+          "Сообщение источника сверено, не независимое подтверждение измерения. Подлинность зеркала и сопоставимость рядов не повышаются автоматически."
+        ],
+        "sha256": "b627eb94bcdbd2a67282571355c4562d60e8509ddee7ebc28a4a1402609b0b24"
+      },
+      "target": {
+        "id": "W09",
+        "article_evidence": {
+          "start": 1524,
+          "end": 1556,
+          "quote": "максимальное превышение — 2 ПДК."
+        },
+        "evidence_ids": [
+          "W24"
+        ],
+        "source_support": {
+          "evidence_id": "W24",
+          "quote": "Летучие фенолы                                                                                                   2,0 ПДК,                                              0,001 – 0,002               70 – 5(0,001 мг/дм3)                                                                                  5 раз"
+        },
+        "features": {
+          "object": "поверхностная вода озера Байкал",
+          "indicator": "превышение норм летучих фенолов",
+          "value": "2",
+          "statistic": "maximum_multiple",
+          "unit": "ПДК",
+          "territory": "контрольный створ 100 м от выпуска КОС Байкальска",
+          "period": {
+            "year": 2024
+          },
+          "message_kind": "reported_observation",
+          "value_kind": "numeric",
+          "attribution": "source_statement",
+          "comparison_scope": "specified_source_message"
+        },
+        "observation_year": 2024,
+        "report_year": 2024,
+        "publication_year": null,
+        "method": {
+          "kind": "таблица 1.1.1.3: пробы; аналитический метод неизвестен"
+        },
+        "value_qualifier": "exact",
+        "status": "source_statement_checked_non_expert",
+        "expert_review": false,
+        "limitations": [
+          "Сообщение источника сверено, не независимое подтверждение измерения. Подлинность зеркала и сопоставимость рядов не повышаются автоматически."
+        ],
+        "sha256": "bbd7fb35157589f3fe7e247856de2c7788ccae097d71341f4428b6a2e83ee669"
+      },
+      "fact_sha256": "60b4dfd0f6f522efd8ef14822fafbec97502b96b7a457fdb6314f1a8e6a0663a",
+      "target_sha256": "8914712a65fe79315d665b7301ecfe8ff9f1f4c1b70776a9d264112c04f1ec38",
+      "scope": "article",
+      "expected": "incomparable",
+      "gold_reason": "Норматив 0,001 мг/дм3 не измерение и не кратность максимального превышения.",
+      "expert_review": false
+    },
+    {
+      "id": "T08",
+      "fact": {
+        "id": "SOURCE-SUMMARY-2018",
+        "article_evidence": {
+          "start": 1358,
+          "end": 1406,
+          "quote": "Общая расчётная численность — 137,6 тыс. особей."
+        },
+        "evidence_ids": [
+          "N18C"
+        ],
+        "source_support": {
+          "evidence_id": "N18C",
+          "quote": "4. Общая численность популяции байкальской нерпы в 2018 году, по сравнению с 2017 го-\nдом, увеличилась на 9,3 тыс. особей и составила 137,6 тыс. экз.\n    "
+        },
+        "features": {
+          "object": "байкальская нерпа",
+          "indicator": "общая численность",
+          "value": "137,6",
+          "statistic": "estimated_count",
+          "unit": "тыс. особей",
+          "territory": "озеро Байкал — оценка для всего озера",
+          "period": {
+            "year": 2018
+          },
+          "message_kind": "reported_observation",
+          "value_kind": "numeric",
+          "attribution": "source_statement",
+          "comparison_scope": "specified_source_message"
+        },
+        "observation_year": 2018,
+        "report_year": 2018,
+        "publication_year": null,
+        "method": null,
+        "value_qualifier": "exact",
+        "status": "source_statement_checked_non_expert",
+        "expert_review": false,
+        "limitations": [
+          "Сообщение источника сверено, не независимое подтверждение измерения. Подлинность зеркала и сопоставимость рядов не повышаются автоматически."
+        ]
+      },
+      "target": {
+        "id": "N07",
+        "article_evidence": {
+          "start": 1358,
+          "end": 1406,
+          "quote": "Общая расчётная численность — 137,6 тыс. особей."
+        },
+        "evidence_ids": [
+          "N18"
+        ],
+        "source_support": {
+          "evidence_id": "N18",
+          "quote": "Традиционный учёт численности приплода нерпы был провёден Байкальским филиалом\n     ФГБНУ «Госрыбцентр» в марте-апреле 2018 года по всей акватории Байкала (28 стандарт-\n      ных разрезов, 196 учётных площадок). Расчётная численность приплода – 26,1 тыс. голов,\n      при этом статистическая ошибка расчёта численности приплода составила не более 13 %.\n      Общая численность популяции байкальской нерпы в 2018 году, по сравнению с 2017 годом,\n       увеличилась на 9,3 тыс. особей и составила 137,6 тыс. экз."
+        },
+        "features": {
+          "object": "байкальская нерпа",
+          "indicator": "общая численность",
+          "value": "137,6",
+          "statistic": "estimated_count",
+          "unit": "тыс. особей",
+          "territory": "озеро Байкал — оценка для всего озера",
+          "period": {
+            "year": 2018
+          },
+          "message_kind": "reported_observation",
+          "value_kind": "numeric",
+          "attribution": "source_statement",
+          "comparison_scope": "specified_source_message"
+        },
+        "observation_year": 2018,
+        "report_year": 2018,
+        "publication_year": null,
+        "method": {
+          "survey": "март–апрель 2018, вся акватория; расчёт по учёту приплода",
+          "extrapolation_details": null
+        },
+        "value_qualifier": "exact",
+        "status": "source_statement_checked_non_expert",
+        "expert_review": false,
+        "limitations": [
+          "Сообщение источника сверено, не независимое подтверждение измерения. Подлинность зеркала и сопоставимость рядов не повышаются автоматически."
+        ],
+        "sha256": "77badeb3e5db835acfa9c218a47d251b348419a3a5d141249f148fbea7984f96"
+      },
+      "fact_sha256": "4e8aa2c8234fcc246650877b68b5c4e9be5d9ad178e947a84421b294eec4722f",
+      "target_sha256": "8ee0749be3cf33698135c87a78a22b6f17d0bc1286d48170e375786410afd68c",
+      "scope": "source_pair",
+      "expected": "insufficient",
+      "gold_reason": "Та же цифра в выводах не даёт дополнительного описания метода; неизвестность методики не объявляется несовместимостью.",
+      "expert_review": false
+    },
+    {
+      "id": "T09",
+      "fact": {
+        "id": "SOURCE-OXY-MEAN-2024",
+        "article_evidence": null,
+        "evidence_ids": [
+          "W24"
+        ],
+        "source_support": {
+          "evidence_id": "W24",
+          "quote": "В воде контрольного 100-метрового створа по\nведено 7 съемок: в феврале, марте, апреле, июне,    сравнению с 2023 г. среднее содержание растворен-\nавгусте, сентябре и октябре, было отобрано 147     ного кислорода существенно не изменилось и со-\nпроб.                                              ставило 11,50 мг/дм3, максимальное содержание\n    Оценка показателей качества воды оз. Байкал    растворенного кислорода составило 13,46 мг/дм3\nв контрольном 100-метровом створе проводилась в     (февраль), минимальное – 9,42 мг/дм3 (сентябрь);\nсоответствии со специальными нормами  (ПДК),    "
+        },
+        "features": {
+          "object": "поверхностная вода озера Байкал",
+          "indicator": "растворённый кислород",
+          "value": "11,50",
+          "statistic": "mean",
+          "unit": "мг/дм3",
+          "territory": "контрольный створ 100 м от выпуска КОС Байкальска",
+          "period": {
+            "year": 2024
+          },
+          "message_kind": "reported_observation",
+          "value_kind": "numeric",
+          "attribution": "source_statement",
+          "comparison_scope": "specified_source_message"
+        },
+        "observation_year": 2024,
+        "report_year": 2024,
+        "publication_year": null,
+        "method": null,
+        "value_qualifier": "exact",
+        "status": "source_statement_checked_non_expert",
+        "expert_review": false,
+        "limitations": [
+          "Сообщение источника сверено, не независимое подтверждение измерения. Подлинность зеркала и сопоставимость рядов не повышаются автоматически."
+        ]
+      },
+      "target": {
+        "id": "SOURCE-OXY-MAX-2024",
+        "article_evidence": null,
+        "evidence_ids": [
+          "W24"
+        ],
+        "source_support": {
+          "evidence_id": "W24",
+          "quote": "В воде контрольного 100-метрового створа по\nведено 7 съемок: в феврале, марте, апреле, июне,    сравнению с 2023 г. среднее содержание растворен-\nавгусте, сентябре и октябре, было отобрано 147     ного кислорода существенно не изменилось и со-\nпроб.                                              ставило 11,50 мг/дм3, максимальное содержание\n    Оценка показателей качества воды оз. Байкал    растворенного кислорода составило 13,46 мг/дм3\nв контрольном 100-метровом створе проводилась в     (февраль), минимальное – 9,42 мг/дм3 (сентябрь);\nсоответствии со специальными нормами  (ПДК),    "
+        },
+        "features": {
+          "object": "поверхностная вода озера Байкал",
+          "indicator": "растворённый кислород",
+          "value": "13,46",
+          "statistic": "maximum",
+          "unit": "мг/дм3",
+          "territory": "контрольный створ 100 м от выпуска КОС Байкальска",
+          "period": {
+            "year": 2024
+          },
+          "message_kind": "reported_observation",
+          "value_kind": "numeric",
+          "attribution": "source_statement",
+          "comparison_scope": "specified_source_message"
+        },
+        "observation_year": 2024,
+        "report_year": 2024,
+        "publication_year": null,
+        "method": null,
+        "value_qualifier": "exact",
+        "status": "source_statement_checked_non_expert",
+        "expert_review": false,
+        "limitations": [
+          "Сообщение источника сверено, не независимое подтверждение измерения. Подлинность зеркала и сопоставимость рядов не повышаются автоматически."
+        ]
+      },
+      "fact_sha256": "83b17129b97f0c191c1828566161bec29d9297afc6046c3628b2ce7ca326f141",
+      "target_sha256": "583331d7ab3f178597b0f0fd812dc1b9f14578a9564f5fa27aa1e3cff868a4d0",
+      "scope": "source_pair",
+      "expected": "incomparable",
+      "gold_reason": "Среднее и максимум кислорода одного года не конкурирующие оценки. Аналитический метод неизвестен.",
+      "expert_review": false
+    },
+    {
+      "id": "T10",
+      "fact": {
+        "id": "INCOMPLETE-PROJECTION-W08",
+        "article_evidence": {
+          "start": 1508,
+          "end": 1523,
+          "quote": "пять нарушений;"
+        },
+        "evidence_ids": [
+          "W24"
+        ],
+        "source_support": {
+          "evidence_id": "W24",
+          "quote": "Летучие фенолы                                                                                                   2,0 ПДК,                                              0,001 – 0,002               70 – 5(0,001 мг/дм3)                                                                                  5 раз"
+        },
+        "features": {
+          "object": "поверхностная вода озера Байкал",
+          "indicator": "нарушения по летучим фенолам",
+          "value": "5",
+          "statistic": "sample_violations",
+          "unit": "проба",
+          "territory": "контрольный створ 100 м от выпуска КОС Байкальска",
+          "period": {},
+          "message_kind": "reported_observation",
+          "value_kind": "numeric",
+          "attribution": "source_statement",
+          "comparison_scope": "specified_source_message"
+        },
+        "observation_year": null,
+        "report_year": 2024,
+        "publication_year": null,
+        "method": {
+          "kind": "таблица 1.1.1.3: пробы; аналитический метод неизвестен"
+        },
+        "value_qualifier": "exact",
+        "status": "source_statement_checked_non_expert",
+        "expert_review": false,
+        "limitations": [
+          "Сообщение источника сверено, не независимое подтверждение измерения. Подлинность зеркала и сопоставимость рядов не повышаются автоматически."
+        ],
+        "article_number_word": "пять"
+      },
+      "target": {
+        "id": "W08",
+        "article_evidence": {
+          "start": 1508,
+          "end": 1523,
+          "quote": "пять нарушений;"
+        },
+        "evidence_ids": [
+          "W24"
+        ],
+        "source_support": {
+          "evidence_id": "W24",
+          "quote": "Летучие фенолы                                                                                                   2,0 ПДК,                                              0,001 – 0,002               70 – 5(0,001 мг/дм3)                                                                                  5 раз"
+        },
+        "features": {
+          "object": "поверхностная вода озера Байкал",
+          "indicator": "нарушения по летучим фенолам",
+          "value": "5",
+          "statistic": "sample_violations",
+          "unit": "проба",
+          "territory": "контрольный створ 100 м от выпуска КОС Байкальска",
+          "period": {
+            "year": 2024
+          },
+          "message_kind": "reported_observation",
+          "value_kind": "numeric",
+          "attribution": "source_statement",
+          "comparison_scope": "specified_source_message"
+        },
+        "observation_year": 2024,
+        "report_year": 2024,
+        "publication_year": null,
+        "method": {
+          "kind": "таблица 1.1.1.3: пробы; аналитический метод неизвестен"
+        },
+        "value_qualifier": "exact",
+        "status": "source_statement_checked_non_expert",
+        "expert_review": false,
+        "limitations": [
+          "Сообщение источника сверено, не независимое подтверждение измерения. Подлинность зеркала и сопоставимость рядов не повышаются автоматически."
+        ],
+        "article_number_word": "пять",
+        "sha256": "779b774439c58c4a34623404eb6ec1afad799f829738d2bcb7269567c0fcc5c6"
+      },
+      "fact_sha256": "d9c9a6384bbf97d7b70c6938f6a05e190f55e3f2cf94e48ebedd39bf563e5d48",
+      "target_sha256": "9e815d6aa4ab8deace2025b036a173535f02c496fe239b3ec17088f66d4b2c93",
+      "scope": "incomplete_projection",
+      "expected": "insufficient",
+      "gold_reason": "Явно неполная проекция реального сообщения; пустой период не заполняется годом доклада.",
+      "expert_review": false
+    },
+    {
+      "id": "T11",
+      "fact": {
+        "id": "PARAPHRASE-N01",
+        "article_evidence": {
+          "start": 388,
+          "end": 419,
+          "quote": "эндемичное водное млекопитающее"
+        },
+        "evidence_ids": [
+          "N18"
+        ],
+        "source_support": {
+          "evidence_id": "N18",
+          "quote": "Байкальская нерпа (Pusa/Phoca sibirica Gm.) – единственное водное млекопитающее\n       Байкала, эндемик, заселяет всю акваторию водоёма."
+        },
+        "features": {
+          "object": "байкальская нерпа",
+          "indicator": "эндемизм",
+          "value": "эндемик Байкала",
+          "statistic": "source_description",
+          "unit": null,
+          "territory": "озеро Байкал — оценка для всего озера",
+          "period": {
+            "kind": "not_dated_source_description"
+          },
+          "message_kind": "source_description",
+          "value_kind": "qualitative",
+          "attribution": "source_statement",
+          "comparison_scope": "specified_source_message"
+        },
+        "observation_year": null,
+        "report_year": 2018,
+        "publication_year": null,
+        "method": {
+          "kind": "атрибутированное описание источника; не измерительная методика"
+        },
+        "value_qualifier": "exact",
+        "status": "source_statement_checked_non_expert",
+        "expert_review": false,
+        "limitations": [
+          "Сообщение источника сверено, не независимое подтверждение измерения. Подлинность зеркала и сопоставимость рядов не повышаются автоматически."
+        ]
+      },
+      "target": {
+        "id": "N01",
+        "article_evidence": {
+          "start": 388,
+          "end": 419,
+          "quote": "эндемичное водное млекопитающее"
+        },
+        "evidence_ids": [
+          "N18"
+        ],
+        "source_support": {
+          "evidence_id": "N18",
+          "quote": "Байкальская нерпа (Pusa/Phoca sibirica Gm.) – единственное водное млекопитающее\n       Байкала, эндемик, заселяет всю акваторию водоёма."
+        },
+        "features": {
+          "object": "байкальская нерпа",
+          "indicator": "эндемизм",
+          "value": "эндемичное",
+          "statistic": "source_description",
+          "unit": null,
+          "territory": "озеро Байкал — оценка для всего озера",
+          "period": {
+            "kind": "not_dated_source_description"
+          },
+          "message_kind": "source_description",
+          "value_kind": "qualitative",
+          "attribution": "source_statement",
+          "comparison_scope": "specified_source_message"
+        },
+        "observation_year": null,
+        "report_year": 2018,
+        "publication_year": null,
+        "method": {
+          "kind": "атрибутированное описание источника; не измерительная методика"
+        },
+        "value_qualifier": "exact",
+        "status": "source_statement_checked_non_expert",
+        "expert_review": false,
+        "limitations": [
+          "Сообщение источника сверено, не независимое подтверждение измерения. Подлинность зеркала и сопоставимость рядов не повышаются автоматически."
+        ],
+        "sha256": "97a5f983bd386944dff290e644541a263c000b012f87cdac2684c33779bf09ba"
+      },
+      "fact_sha256": "b0d9f627a7af8edb6b3470c8840568eb7fa9f00a7cd245d3edd3046085581427",
+      "target_sha256": "f6f63d3d46660ff090d472dabc8d6063f531685efc6a9ede318e0202f4e401a1",
+      "scope": "semantic_article_pair",
+      "expected": "semantic_equivalent",
+      "gold_reason": "Только смысловое отношение эндемик/эндемичное в одной фразе. Не новые данные о распространении и не вся статья.",
+      "expert_review": false
+    },
+    {
+      "id": "T12",
+      "fact": {
+        "id": "SOURCE-NORM-2024",
+        "article_evidence": {
+          "start": 1050,
+          "end": 1075,
+          "quote": "0,001 мг/дм³ для фенолов."
+        },
+        "evidence_ids": [
+          "W24"
+        ],
+        "source_support": {
+          "evidence_id": "W24",
+          "quote": "Оценка показателей качества воды оз. Байкал    растворенного кислорода составило 13,46 мг/дм3\nв контрольном 100-метровом створе проводилась в     (февраль), минимальное – 9,42 мг/дм3 (сентябрь);\nсоответствии со специальными нормами  (ПДК),    средняя величина рН воды составила 7,87 ед. рН,\nвведенными с 01.01.1985 (разработаны Росгидро-    значения варьировали от 7,62 до 8,16 ед. рН.\nметом для контрольного створа БЦБК), которые со-       В течение 2024  г. концентрация взвешенных\nответствуют следующим значениям (мг/дм3): мине-    веществ находилась в диапазоне от 1,0 (0,9 ПДК) до\nральные вещества – 117,0; взвешенные вещества –     2,1 мг/дм3 (1,9 ПДК); максимальное содержание фе-\n1,1, сульфаты – 10,0; хлориды – 2; фенолы – 0,001;    нолов превышало норму в 2,0 раза в 5 пробах: в\nводородный показатель от 6,5 до 8,5 ед. рН. Крите-     феврале, марте и апреле.\nрием оценки качества воды для серы несульфатной        Данные о нарушении качества воды оз. Байкал\nявляется фоновое значение, равное средней ее кон-    в исследуемом районе в 2024 г. по сравнению с\nцентрации в воде оз. Байкал (0,10 мг/дм3).             2023 г. приведены в таблице (таблица 1.1.1.3).\n\n"
+        },
+        "features": {
+          "object": "поверхностная вода озера Байкал",
+          "indicator": "фенолы",
+          "value": "0,001",
+          "statistic": "regulatory_limit",
+          "unit": "мг/дм3",
+          "territory": "контрольный створ 100 м от выпуска КОС Байкальска",
+          "period": {
+            "valid_since": "1985-01-01"
+          },
+          "message_kind": "regulatory_criterion",
+          "value_kind": "numeric",
+          "attribution": "source_statement",
+          "comparison_scope": "specified_source_message"
+        },
+        "observation_year": null,
+        "report_year": 2024,
+        "publication_year": null,
+        "method": {
+          "kind": "специальные нормы контрольного створа с 01.01.1985; не аналитический метод"
+        },
+        "value_qualifier": "exact",
+        "status": "source_statement_checked_non_expert",
+        "expert_review": false,
+        "limitations": [
+          "Сообщение источника сверено, не независимое подтверждение измерения. Подлинность зеркала и сопоставимость рядов не повышаются автоматически."
+        ]
+      },
+      "target": {
+        "id": "W06",
+        "article_evidence": {
+          "start": 1050,
+          "end": 1075,
+          "quote": "0,001 мг/дм³ для фенолов."
+        },
+        "evidence_ids": [
+          "W18"
+        ],
+        "source_support": {
+          "evidence_id": "W18",
+          "quote": "Оценка показателей качества воды озера Байкал в контроль-\n      ном створе проводилась в соответствии со специальными нормами ПДК, введёнными\n        с 01.01.1985  г. (разработаны Росгидрометом для контрольного створа БЦБК), которые\n       соответствуют следующим значениям (мг/дм3): минеральные вещества – 117; взвешен-\n      ные вещества – 1,1; сульфаты – 10; хлориды – 2; фенолы – 0,001; водородный показатель\n       от 6,5 до 8,5 единиц рН."
+        },
+        "features": {
+          "object": "поверхностная вода озера Байкал",
+          "indicator": "фенолы",
+          "value": "0,001",
+          "statistic": "regulatory_limit",
+          "unit": "мг/дм3",
+          "territory": "контрольный створ 100 м от выпуска КОС Байкальска",
+          "period": {
+            "valid_since": "1985-01-01"
+          },
+          "message_kind": "regulatory_criterion",
+          "value_kind": "numeric",
+          "attribution": "source_statement",
+          "comparison_scope": "specified_source_message"
+        },
+        "observation_year": null,
+        "report_year": 2018,
+        "publication_year": null,
+        "method": {
+          "kind": "специальные нормы контрольного створа с 01.01.1985; не аналитический метод"
+        },
+        "value_qualifier": "exact",
+        "status": "source_statement_checked_non_expert",
+        "expert_review": false,
+        "limitations": [
+          "Сообщение источника сверено, не независимое подтверждение измерения. Подлинность зеркала и сопоставимость рядов не повышаются автоматически."
+        ],
+        "sha256": "b627eb94bcdbd2a67282571355c4562d60e8509ddee7ebc28a4a1402609b0b24"
+      },
+      "fact_sha256": "d791891ecdc621d5376b2a979cac1a9bccc22288655b33a510848d0ae7574858",
+      "target_sha256": "60b4dfd0f6f522efd8ef14822fafbec97502b96b7a457fdb6314f1a8e6a0663a",
+      "scope": "article",
+      "expected": "same_fact",
+      "gold_reason": "Один специальный норматив с 1985 в двух докладах. Год доклада не подставлен как год наблюдения; актуальность права сегодня не утверждается.",
+      "expert_review": false
+    }
+  ],
+  "expert_review": false,
+  "scope": "New selected scoped examples, not a blind estimate of arbitrary text accuracy. T05 documents a report disagreement, not a proven physical contradiction."
+}
