@@ -18,9 +18,29 @@ from scripts.download_evaluation_model import (
     ModelAccessError,
 )
 from baikal.core import ROOT
+from scripts.evaluate_local_llm import runtime_info
 
 
 class ModelAcquisition(unittest.TestCase):
+    def test_version_success_does_not_hide_backend_sigill(self):
+        responses = [
+            subprocess.CompletedProcess([], 0, "version: fixture", ""),
+            subprocess.CompletedProcess([], -4, "", ""),
+        ]
+        with patch("scripts.evaluate_local_llm.subprocess.run", side_effect=responses):
+            with self.assertRaisesRegex(ValueError, "--list-devices failed: SIGILL"):
+                runtime_info(Path("synthetic-server"))
+
+    def test_runtime_preflight_records_successful_backend_initialization(self):
+        responses = [
+            subprocess.CompletedProcess([], 0, "version: fixture", ""),
+            subprocess.CompletedProcess([], 0, "Available devices:", ""),
+        ]
+        with patch("scripts.evaluate_local_llm.subprocess.run", side_effect=responses):
+            result = runtime_info(Path("synthetic-server"))
+        self.assertEqual(result["server_version"], "version: fixture")
+        self.assertEqual(result["backend_probe"]["exit_code"], 0)
+
     def test_standalone_entrypoints_import_without_project_cwd(self):
         with tempfile.TemporaryDirectory() as d:
             for name in ["download_evaluation_model.py", "evaluate_local_llm.py"]:

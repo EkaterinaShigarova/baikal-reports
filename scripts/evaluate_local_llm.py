@@ -4,6 +4,7 @@ import argparse
 import json
 import os
 import resource
+import signal
 import socket
 import subprocess
 import time
@@ -13,6 +14,30 @@ from pathlib import Path
 from baikal.core import ROOT, atomic_json, read_json, sha256
 from baikal.evaluation import prepare_cases, resources
 from baikal.llm import synthesize
+
+
+def runtime_info(server):
+    """Version-only checks do not initialize CPU backends or detect ISA mismatch."""
+    outputs = {}
+    for flag in ["--version", "--list-devices"]:
+        result = subprocess.run(
+            [str(server), flag], capture_output=True, text=True, timeout=20
+        )
+        if result.returncode:
+            reason = (
+                signal.Signals(-result.returncode).name
+                if result.returncode < 0
+                else f"exit {result.returncode}"
+            )
+            raise ValueError(
+                f"Local runtime {flag} failed: {reason}; "
+                "check CPU compatibility before inference (version alone is insufficient)"
+            )
+        outputs[flag] = (result.stdout + result.stderr).strip()
+    return {
+        "server_version": outputs["--version"],
+        "backend_probe": {"exit_code": 0, "output": outputs["--list-devices"]},
+    }
 
 
 def run(args, prepared):
@@ -36,13 +61,7 @@ def run(args, prepared):
             raise ValueError("Expected a GGUF model header")
     if sha256(model) != args.model_sha256:
         raise ValueError("Model SHA256 mismatch")
-    version = subprocess.run(
-        [str(server), "--version"],
-        capture_output=True,
-        text=True,
-        timeout=10,
-        check=True,
-    )
+    runtime = runtime_info(server)
     with socket.socket() as sock:
         sock.bind(("127.0.0.1", 0))
         port = sock.getsockname()[1]
@@ -74,7 +93,7 @@ def run(args, prepared):
         "model_file_name": model.name,
         "model_bytes": model.stat().st_size,
         "server_sha256": sha256(server),
-        "server_version": (version.stdout + version.stderr).strip(),
+        **runtime,
         "threads": 4,
         "context_tokens": 8192,
         "gpu_layers": 0,
@@ -94,7 +113,9 @@ def run(args, prepared):
             deadline = time.monotonic() + 60
             while True:
                 if process.poll() is not None:
-                    raise ValueError("Local runtime exited; inspect ignored server.log")
+                    raise ValueError(
+                        f"Local runtime exited ({process.returncode}); inspect {log_path}"
+                    )
                 try:
                     with opener.open(
                         f"http://127.0.0.1:{port}/health", timeout=1

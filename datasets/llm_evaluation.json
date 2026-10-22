@@ -1,12 +1,12 @@
 {
-  "version": 2,
+  "version": 3,
   "date": "2026-10-22",
-  "baseline_commit": "d55b5ebe2334797610b50c19a1ca5ec0536f1c6a",
-  "status": "blocked_model_cdn",
-  "main_experiment_complete": false,
-  "model_inference_executed": false,
-  "model_used": null,
-  "model_sha256": null,
+  "baseline_commit": "755c7f03ee8f89147df34b082bbd4395abfec5fd",
+  "status": "real_generation_evaluated_both_outputs_rejected",
+  "main_experiment_complete": true,
+  "model_inference_executed": true,
+  "model_used": "Qwen/Qwen2.5-1.5B-Instruct-GGUF",
+  "model_sha256": "6a1a2eb6d15622bf3c96857206351ba97e1af16c30d7a74ee38970e434e9407e",
   "planned_model": {
     "repo": "Qwen/Qwen2.5-1.5B-Instruct-GGUF",
     "revision": "91cad51170dc346986eccefdc2dd33a9da36ead9",
@@ -16,42 +16,33 @@
     "license": "apache-2.0",
     "url": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct-GGUF/resolve/91cad51170dc346986eccefdc2dd33a9da36ead9/qwen2.5-1.5b-instruct-q4_k_m.gguf?download=true",
     "metadata_verified": true,
-    "weights_sha256_verified": false,
+    "weights_sha256_verified": true,
     "max_download_bytes": 2147483648
   },
   "model_generated_updates": 0,
-  "model_bytes_downloaded": 0,
+  "model_bytes_downloaded": 1117320736,
   "runtime_installed": true,
   "paid_api_called": false,
   "project_evidence_sent_to_external_service": false,
   "resources": {
     "memory_limit_bytes": 34359738368,
-    "memory_available_bytes": 34257780736,
-    "disk_free_bytes": 32034562048,
+    "memory_available_bytes": 34260328448,
+    "disk_free_bytes": 32034557952,
     "cpu_affinity_count": 5,
     "cpu_quota": "400000 100000"
   },
   "network_probes": [
     {
       "url": "https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct-GGUF?blobs=true",
-      "status": 200,
       "method": "GET",
-      "metadata_validated": true
+      "status": "metadata_validated"
     },
     {
       "url": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct-GGUF/resolve/91cad51170dc346986eccefdc2dd33a9da36ead9/qwen2.5-1.5b-instruct-q4_k_m.gguf?download=true",
-      "status": 302,
-      "method": "HEAD",
-      "redirect_to": "https://us.aws.cdn.hf.co/xet-bridge-us/66e98ae0be5913b903da60c1/6ca5463cf24c16cd56d7ad7461524d813b07b3f29889b2fbdbb8286a7e97a14a"
-    },
-    {
-      "url": "https://us.aws.cdn.hf.co/xet-bridge-us/66e98ae0be5913b903da60c1/6ca5463cf24c16cd56d7ad7461524d813b07b3f29889b2fbdbb8286a7e97a14a",
-      "status": "proxy_connect_rejected",
-      "method": "HEAD",
-      "error": "Tunnel connection failed: 403 Forbidden",
-      "proxy_connect_authority": "us.aws.cdn.hf.co:443",
-      "cause": "Proxy refused the TLS tunnel; its policy rationale is not exposed. No response from model CDN origin was received.",
-      "signed_query_omitted": true
+      "method": "GET",
+      "status": "download_completed_sha256_verified",
+      "connect_403_encountered": false,
+      "bytes_received": 1117320736
     }
   ],
   "available_distribution_metadata": [
@@ -70,9 +61,6 @@
     }
   ],
   "preparation": {
-    "status": "prepared_only",
-    "model_inference_executed": false,
-    "model_generated_updates": 0,
     "cases": [
       {
         "id": "11166def4822d605345f57c4e5cf0ef2494c69f47ced208d8cd407926710fcd3",
@@ -129,20 +117,30 @@
     },
     "published_articles_changed": 0,
     "reviewed_observations_changed": 0,
-    "resources": {
-      "memory_limit_bytes": 34359738368,
-      "memory_available_bytes": 32847314944,
-      "disk_free_bytes": 31766659072,
-      "cpu_affinity_count": 5,
-      "cpu_quota": "400000 100000"
-    }
+    "status": "prepared_only",
+    "model_inference_executed": false,
+    "model_generated_updates": 0
   },
   "semantic_model_quality": {
-    "assessed": false,
-    "hallucinations": null,
-    "correct_novelty_classifications": null,
-    "correct_conflicts": null,
-    "generated_claims": null
+    "assessed": true,
+    "scope": "Two fixed cases; source checking of model outputs, not scientific expert review or a general benchmark. Inputs include the existing Wiki and known issues.",
+    "model_claim_entries": 3,
+    "scientific_claim_blocks_assessed": 2,
+    "non_assertive_heading_entries": 1,
+    "exact_evidence_quotes": 1,
+    "attempted_evidence_quotes": 3,
+    "unsupported_citations": 2,
+    "empty_limitations_outputs": 2,
+    "false_new_detail_labels": 1,
+    "new_substantive_details": 0,
+    "invented_environmental_values_in_claim_text": 0,
+    "model_proposed_environmental_values": 0,
+    "known_selenga_conflict_reproduced": false,
+    "validated_drafts": 0,
+    "accepted_editorial_updates": 0,
+    "contradictions_resolved": 0,
+    "general_model_accuracy": null,
+    "lexical_comparison": "Lexical baseline: 10 candidates / 7 topics, no semantic conclusions. Model chooses both topics correctly but contributes no usable new detail; superiority not established."
   },
   "editorial_workflow_test": {
     "execution_kind": "synthetic_unit_fixtures",
@@ -158,13 +156,14 @@
     "scientific_review_blocks": 107
   },
   "limitations": [
-    "Official model metadata and LFS SHA256 are available, but weights could not be downloaded through the CDN proxy tunnel.",
-    "The runtime CLI was built and executed; no model was loaded and no inference server was started.",
-    "Neither prepared case produced a model answer; semantic quality, hallucinations and comparison with lexical routing remain unassessed.",
-    "Synthetic transport/approval tests are not model inference or actual human review."
+    "Both real responses are complete (finish_reason=stop) but rejected for citation and limitations errors; no automatic publication.",
+    "The 1.5B model produced no usable new scientific detail in these two cases; this is not a general model accuracy estimate.",
+    "The Selenga response copied Wiki text into a wrongly attributed source quote.",
+    "The original native runtime failed with SIGILL in this environment; an AVX2 build from the same pinned sources was required. Exact faulting instruction was not identified.",
+    "All quality assessment is automated source checking, not human scientific expert review."
   ],
   "technical_validation": {
-    "unittest_passed": 68,
+    "unittest_passed": 70,
     "unittest_failed": 0,
     "wiki_lint_errors": 0,
     "wiki_lint_warnings": "Missing processed source years 2003–2014 and 2026",
@@ -175,77 +174,256 @@
     "unchanged_protected_files": 28,
     "unchanged_analytical_articles": 22,
     "immutable_pdf_sha256_checked": 11,
-    "expert_approval": false
+    "expert_approval": false,
+    "actual_model_responses_retained": 2,
+    "auto_published_updates": 0,
+    "local_document_links_checked": 32
   },
-  "checked_at": "2026-10-22T18:01:37.468017+08:00",
+  "checked_at": "2026-10-22T18:51:03.585195+08:00",
   "timezone": "Asia/Irkutsk",
-  "model_responses_received": 0,
+  "model_responses_received": 2,
   "runtime": {
     "source_repository": "https://github.com/ggml-org/llama.cpp.git",
     "source_tag": "v0.7.0",
     "source_commit": "620d2225cc436ab0b001e3200e590e3b286ef9ab",
-    "server_sha256": "b316a0c9f8c3e183faba31bff9ce751ea905468beff613e4ff1a58278874771c",
-    "server_version": "version: 0.7.0-dev (build 1, commit 620d222)\nbuilt with GNU 14.2.0 for Linux x86_64",
+    "server_binary_path": "data/llm-runtime/build-avx2/bin/llama-server",
+    "server_sha256": "ea2082a6ea129e3fbe0e32c4a57cf0fd754572b5a0fb824b89b9ed80b64836f6",
     "shared_libraries_sha256": {
-      "data/llm-runtime/build/bin/libggml-base.so.0.27.0": "1d01fcc3593495a787f54d6cd110932f933c084b5008652072be6d98d8aa046f",
-      "data/llm-runtime/build/bin/libllama-server-impl.so": "e231e3492a281e8a07491162ee1cf541c9c12ff7a842e499b2adbe0a445c1c16",
-      "data/llm-runtime/build/bin/libllama-common.so.0.7.0": "b68cf952c6f67eee46638b2506ffc36d23275699efe472df4df8b9857ce76b24",
-      "data/llm-runtime/build/bin/libllama.so.0.7.0": "97e683e165cfa0c5bbcc15acff16e7238b941a65dcbe3642201ae7007fe4f83a",
-      "data/llm-runtime/build/bin/libggml.so.0.27.0": "e2511092f68bf706fb92abd2e41ba54d50f717a717bdc5b982aa27085520facc",
-      "data/llm-runtime/build/bin/libggml-cpu.so.0.27.0": "879d0fa5c0c8362aec5eb0ec6f8db54cfb35517b46c23b45e02c817f10bf9288",
-      "data/llm-runtime/build/bin/libmtmd.so.0.7.0": "e1fd69f005eff43726f313b8d0d3d298f9121e9b46e41bca28130525bba52c2b"
+      "data/llm-runtime/build-avx2/bin/libllama-server-impl.so": "975f1be730d9c62ebcb3b3ac6e86ab06a26e55fd1d712e40872cc81cf9ee78e3",
+      "data/llm-runtime/build-avx2/bin/libggml.so.0.27.0": "824923cfd81c0ce60cb424984bda301cede6cbf4aa38ed668a0bbf93e60c220d",
+      "data/llm-runtime/build-avx2/bin/libmtmd.so.0.7.0": "307c478edcef785cf8d49b1fc1f7022b495947e67788c7d9bb3261ee48197012",
+      "data/llm-runtime/build-avx2/bin/libllama-common.so.0.7.0": "4217e3999fb62ba9072c883e1e75841acc59f4e2aabe87cf8ae5356c6e77d9a4",
+      "data/llm-runtime/build-avx2/bin/libggml-base.so.0.27.0": "eeaf4e97b568dee9e6af83759d1e16b22f57e370ee503fdc6c7a4c0698db9096",
+      "data/llm-runtime/build-avx2/bin/libggml-cpu.so.0.27.0": "9097a7714db48b912e5db1f1326c86e843887b2a38d6831d661a1ee55ade584d",
+      "data/llm-runtime/build-avx2/bin/libllama.so.0.7.0": "33f255d60f0770d04e733dae01ffad85fde66c748e2d7e6e6e1916864ecc0ac1"
     },
-    "cmake_version": "cmake version 4.4.4",
-    "compiler_version": "g++ (Debian 14.2.0-19) 14.2.0",
     "build_flags": [
       "CMAKE_BUILD_TYPE=Release",
+      "GGML_NATIVE=OFF",
+      "GGML_AVX=ON",
+      "GGML_AVX2=ON",
+      "GGML_FMA=ON",
+      "GGML_F16C=ON",
+      "GGML_AVX512=OFF",
       "GGML_CUDA=OFF",
       "LLAMA_CURL=OFF",
       "LLAMA_BUILD_TESTS=OFF",
       "LLAMA_BUILD_SERVER=ON"
     ],
     "build_jobs": 4,
-    "model_loaded": false,
-    "inference_executed": false,
-    "resources_after_build": {
-      "memory_limit_bytes": 34359738368,
-      "memory_available_bytes": 33851179008,
-      "disk_free_bytes": 31735001088,
-      "cpu_affinity_count": 5,
-      "cpu_quota": "400000 100000"
+    "original_build_preserved": true,
+    "rebuild_reason_record": "data/llm-evaluation/runtime-failure-755c7f0.json",
+    "cpu_model": "AMD EPYC 7763 64-Core Processor",
+    "model_sha256": "6a1a2eb6d15622bf3c96857206351ba97e1af16c30d7a74ee38970e434e9407e",
+    "model_file_name": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "model_bytes": 1117320736,
+    "server_version": "version: 0.7.0-dev (build 1, commit 620d222)\nbuilt with GNU 14.2.0 for Linux x86_64",
+    "backend_probe": {
+      "exit_code": 0,
+      "output": "Available devices:\n  (none)"
     },
-    "command_line_executed": true,
-    "model_server_started": false,
-    "command_exit_codes": {
-      "--version": 0,
-      "--help": 0
-    }
+    "threads": 4,
+    "context_tokens": 8192,
+    "gpu_layers": 0,
+    "server_log_path": "data/llm-evaluation/server-07f7d5462db7447ebdd7c1f4aec76012.log",
+    "model_loaded": true,
+    "inference_executed": true,
+    "model_server_started": true,
+    "model_server_terminated_after_run": true,
+    "temperature": 0,
+    "max_completion_tokens_per_case": 1800
   },
   "acquisition_attempt": {
     "method": "GET",
     "command": ".venv/bin/python scripts/download_evaluation_model.py",
-    "status": "proxy_connect_rejected",
-    "error": "Tunnel connection failed: 403 Forbidden",
-    "followup_diagnostic": "One HEAD redirect trace identified the CDN address; no further model download attempts.",
-    "partial_removed": true,
-    "model_bytes_saved": 0,
-    "raw_network_trace_path": "data/llm-evaluation/network-trace-20261022.json",
-    "raw_network_trace_sha256": "d66c7a3f19ff26028a7105964763e4d885349618d220b97dd9b30386730269bb"
+    "status": "download_completed_sha256_verified",
+    "attempts": 1,
+    "model_bytes_saved": 1117320736,
+    "official_metadata_revision": "91cad51170dc346986eccefdc2dd33a9da36ead9",
+    "weights_sha256_verified": true
   },
   "case_results": [
     {
+      "id": "11166def4822d605345f57c4e5cf0ef2494c69f47ced208d8cd407926710fcd3",
       "topic": "baikal-sturgeon",
-      "status": "not_run_model_unavailable",
-      "actual_model_response_received": false,
-      "semantic_quality_evaluated": false,
-      "hallucinations": null
+      "proposal_id": "af115a757d2d49e4b0920614d34cd2b04397d526aa1852f1924ed24d55caaf9e",
+      "path": "data/wiki_updates/evaluation_inputs/11166def4822d605345f57c4e5cf0ef2494c69f47ced208d8cd407926710fcd3.json",
+      "lexical_proposal_id": "794e15cb11ab975dee91fb593323b356ec12808d9f8edc48a1bae02ea8813e14",
+      "diagnostics": {
+        "lexical_window_contains_other_fish": true,
+        "reference_new_detail": "1029 тыс. шт. со средней навеской 3,0 г: проверить как деталь выпуска, не выживаемость"
+      },
+      "article_sha256": "59c8be41094a9fd76d117dd9138ba22d15cdeabd8d9c24474f7d20c8df13245b",
+      "source_pages": [
+        {
+          "source_id": "drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0",
+          "sha256": "60ccb6065b32d959457faf9745023d763c9f6641ad7c9c8cdee7a88fea454139",
+          "page": 222,
+          "report_year": 2016
+        },
+        {
+          "source_id": "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos",
+          "sha256": "557959d2c8996b990487e9d2acd501ca4048f29e3c7a6fe27e49f8fc1c554fd8",
+          "page": 67,
+          "report_year": 2024
+        }
+      ],
+      "article_context_truncated": false,
+      "status": "rejected_after_real_generation",
+      "actual_model_response_received": true,
+      "run_id": "aab43f2424d40ce570f5a1c62fecde397e92130f7f7e47ac95d417ae300bb569",
+      "run_record_sha256": "6916ae73826527229bdec92393be183140a9c1c618c797f3a119507f8a167a53",
+      "raw_http_response_sha256": "2bfc3cd336c6d8d3640637f589dbc1a8615a5512f56c3ed734a4b616c53ebf24",
+      "model_content_sha256": "f0fdf0068d189661003629c4dd0459ddee7841d7ac9f0e5cc49270571f84a73f",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 1638,
+        "prompt_tokens": 4319,
+        "total_tokens": 5957,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "elapsed_seconds": 120.543,
+      "citation_checks": [
+        {
+          "claim_index": 0,
+          "source_id": "drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0",
+          "page": 222,
+          "provided_source_page": true,
+          "quote_exact_in_provided_evidence": true
+        },
+        {
+          "claim_index": 1,
+          "source_id": "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos",
+          "page": 67,
+          "provided_source_page": true,
+          "quote_exact_in_provided_evidence": false
+        }
+      ],
+      "errors": [
+        "claim 1: unsupported citation",
+        "missing limitations"
+      ],
+      "run_record_path": "data/wiki_updates/llm_runs/aab43f2424d40ce570f5a1c62fecde397e92130f7f7e47ac95d417ae300bb569.json",
+      "semantic_quality_evaluated": true,
+      "scientific_claim_blocks_assessed": 2,
+      "new_substantive_details": 0,
+      "assessment": "Both substantive statements repeat existing knowledge. The 2016 production chain is supported within the supplied excerpt; the 2024 transport/temperature claim is supported by the full cached PDF page but not by the supplied excerpt. One exact quotation is rewritten.",
+      "rubric": {
+        "understanding": "partial: repeats two source-supported existing statements",
+        "novelty": "partial: already_present correct for both, but 1029 thousand / 3.0 g detail missed",
+        "topic_selection": "correct",
+        "substantive_update": "failed: no new detail proposed",
+        "citations": "failed: one of two quotes matches; the other is reconstructed",
+        "no_invented_values": "no invented environmental values in claim text; no evidence of general reliability",
+        "conflicts": "not demonstrated; no cross-species numeric assertion made",
+        "uncertainty": "failed: limitations empty, observation period 2016 not recorded separately"
+      },
+      "claim_reviews": [
+        {
+          "index": 0,
+          "model_text": "Доклад 2016 года описывает производственную цепочку: маточное стадо Гусиноозёрского хозяйства использовали для получения икры, молодь подращивалась в бассейнах Селенгинского экспериментального рыбоводного завода и самого хозяйства.",
+          "verdict": "supported_existing_fact",
+          "source_id": "drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0",
+          "sha256": "60ccb6065b32d959457faf9745023d763c9f6641ad7c9c8cdee7a88fea454139",
+          "physical_page": 222,
+          "observation_period": "2016",
+          "interpretation_limit": "Production chain and release do not measure juvenile survival."
+        },
+        {
+          "index": 1,
+          "model_text": "В докладе 2024 года описаны инфраструктурные ограничения: производителей приходится перевозить между садковой линией и заводом, работа осложняется температурным режимом сбросного канала Гусиноозёрской ГРЭС. Реконструкция хозяйства названа актуальным мероприятием для содержания ремонтно-маточного стада и выпуска молоди.",
+          "verdict": "supported_by_full_source_page_but_not_supplied_quote",
+          "source_id": "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos",
+          "sha256": "557959d2c8996b990487e9d2acd501ca4048f29e3c7a6fe27e49f8fc1c554fd8",
+          "physical_page": 67,
+          "report_year": 2024,
+          "observation_period": null,
+          "interpretation_limit": "Report describes infrastructure and a proposed reconstruction, not its completion. Model quote is not verbatim."
+        }
+      ]
     },
     {
+      "id": "3b4186a8826c3173e598ea00778893fd62efe9353d35bf88c35ca49b585bbff1",
       "topic": "selenga-sediments",
-      "status": "not_run_model_unavailable",
-      "actual_model_response_received": false,
-      "semantic_quality_evaluated": false,
-      "hallucinations": null
+      "proposal_id": "09e06b7f3237a9e33fbdf06b48b58ec18428275e077021c6d56f9cbc146ca9a0",
+      "path": "data/wiki_updates/evaluation_inputs/3b4186a8826c3173e598ea00778893fd62efe9353d35bf88c35ca49b585bbff1.json",
+      "lexical_proposal_id": "25718271f24b342c13aac6591fda74b389c5d085149d71c748cf8e25bba88a60",
+      "diagnostics": {
+        "lexical_window_contains_2015_carcinogen_row": false,
+        "curated_window_contains_2015_carcinogen_row": true
+      },
+      "article_sha256": "a67b8fbbfda3d9716f31c291485877d576d8c315587604486a411d85918984e6",
+      "source_pages": [
+        {
+          "source_id": "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
+          "sha256": "26dc3610938c5b8f91e85b4179ee1092f20aa03684135d0534b8ad2ab9629023",
+          "page": 26,
+          "report_year": 2015
+        }
+      ],
+      "article_context_truncated": false,
+      "status": "rejected_after_real_generation",
+      "actual_model_response_received": true,
+      "run_id": "7631887de83a106245c715a81a9779c67a14dfd8c77b15b13846279de3001a45",
+      "run_record_sha256": "4d17059a6a9f37341dee11ee0a6a600d8467446438b309dc50b2d6d055a8e02f",
+      "raw_http_response_sha256": "807d95ff64abc15b767c154d0a89184468aa939e4a66fc03a71e10ac570ed15e",
+      "model_content_sha256": "ef0409571ae468bf51f1a6d7488e65607ee2617aae64a400e3ff7a0513055c9a",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 238,
+        "prompt_tokens": 4680,
+        "total_tokens": 4918,
+        "prompt_tokens_details": {
+          "cached_tokens": 354
+        }
+      },
+      "elapsed_seconds": 56.265,
+      "citation_checks": [
+        {
+          "claim_index": 0,
+          "source_id": "drive-1RWGLrOzFO32Jxrlv-B2n_PafSFoRVySn",
+          "page": 32,
+          "provided_source_page": false,
+          "quote_exact_in_provided_evidence": false
+        }
+      ],
+      "errors": [
+        "claim 0: unsupported citation",
+        "missing limitations"
+      ],
+      "run_record_path": "data/wiki_updates/llm_runs/7631887de83a106245c715a81a9779c67a14dfd8c77b15b13846279de3001a45.json",
+      "semantic_quality_evaluated": true,
+      "scientific_claim_blocks_assessed": 0,
+      "new_substantive_details": 0,
+      "assessment": "The only claim is the existing article title, incorrectly labelled new_detail. Its quote is copied from the Wiki, not the cited 2019/PDF32 or supplied 2015/PDF26. The known prose/table discrepancy is not discussed.",
+      "rubric": {
+        "understanding": "failed to provide a substantive evidence-based statement",
+        "novelty": "failed: article title labelled new_detail",
+        "topic_selection": "correct",
+        "substantive_update": "failed: title only",
+        "citations": "failed: reference outside evidence packet, quote from Wiki absent on cited page",
+        "no_invented_values": "no environmental value proposed; unsupported attribution found",
+        "conflicts": "not demonstrated: known 2015 discrepancy omitted",
+        "uncertainty": "failed: limitations empty; disputed variants not addressed"
+      },
+      "claim_reviews": [
+        {
+          "index": 0,
+          "model_text": "Авандельта Селенги: донные отложения и грунтовая вода",
+          "model_novelty": "new_detail",
+          "verdict": "existing_heading_not_new_scientific_claim",
+          "model_source_id": "drive-1RWGLrOzFO32Jxrlv-B2n_PafSFoRVySn",
+          "cited_source_sha256": "747fadeaf55107fbf9fbb5965696912195b4795436a9f300c009a4f5e5d9839a",
+          "cited_report_year": 2019,
+          "model_physical_page": 32,
+          "model_quote": "На той же странице отдельно обсуждается изменение содержания канцерогенных аренов.",
+          "quote_in_cited_page": false,
+          "quote_in_existing_article": true,
+          "interpretation_limit": "Source exists, but was not in the evidence packet and does not contain the quoted Wiki sentence."
+        }
+      ]
     }
   ],
   "attempt_history": [
@@ -297,6 +475,92 @@
         "immutable_pdf_sha256_checked": 11,
         "expert_approval": false
       }
+    },
+    {
+      "date": "2026-10-22",
+      "baseline_commit": "d55b5ebe2334797610b50c19a1ca5ec0536f1c6a",
+      "status": "blocked_model_cdn",
+      "checked_at": "2026-10-22T18:01:37.468017+08:00",
+      "network_probes": [
+        {
+          "url": "https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct-GGUF?blobs=true",
+          "status": 200,
+          "method": "GET",
+          "metadata_validated": true
+        },
+        {
+          "url": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct-GGUF/resolve/91cad51170dc346986eccefdc2dd33a9da36ead9/qwen2.5-1.5b-instruct-q4_k_m.gguf?download=true",
+          "status": 302,
+          "method": "HEAD",
+          "redirect_to": "https://us.aws.cdn.hf.co/xet-bridge-us/66e98ae0be5913b903da60c1/6ca5463cf24c16cd56d7ad7461524d813b07b3f29889b2fbdbb8286a7e97a14a"
+        },
+        {
+          "url": "https://us.aws.cdn.hf.co/xet-bridge-us/66e98ae0be5913b903da60c1/6ca5463cf24c16cd56d7ad7461524d813b07b3f29889b2fbdbb8286a7e97a14a",
+          "status": "proxy_connect_rejected",
+          "method": "HEAD",
+          "error": "Tunnel connection failed: 403 Forbidden",
+          "proxy_connect_authority": "us.aws.cdn.hf.co:443",
+          "cause": "Proxy refused the TLS tunnel; its policy rationale is not exposed. No response from model CDN origin was received.",
+          "signed_query_omitted": true
+        }
+      ],
+      "acquisition_attempt": {
+        "method": "GET",
+        "command": ".venv/bin/python scripts/download_evaluation_model.py",
+        "status": "proxy_connect_rejected",
+        "error": "Tunnel connection failed: 403 Forbidden",
+        "followup_diagnostic": "One HEAD redirect trace identified the CDN address; no further model download attempts.",
+        "partial_removed": true,
+        "model_bytes_saved": 0,
+        "raw_network_trace_path": "data/llm-evaluation/network-trace-20261022.json",
+        "raw_network_trace_sha256": "d66c7a3f19ff26028a7105964763e4d885349618d220b97dd9b30386730269bb"
+      },
+      "model_inference_executed": false,
+      "model_responses_received": 0,
+      "model_generated_updates": 0,
+      "runtime_installed": true,
+      "technical_validation": {
+        "unittest_passed": 68,
+        "unittest_failed": 0,
+        "wiki_lint_errors": 0,
+        "wiki_lint_warnings": "Missing processed source years 2003–2014 and 2026",
+        "scientific_evidence_references_checked": 162,
+        "encyclopedia_evidence_checked": 47,
+        "observation_records_checked": 168,
+        "unchanged_checkpoint_inventory_and_metadata": 3878,
+        "unchanged_protected_files": 28,
+        "unchanged_analytical_articles": 22,
+        "immutable_pdf_sha256_checked": 11,
+        "expert_approval": false
+      }
     }
-  ]
+  ],
+  "runtime_failure_before_experiment": {
+    "previous_server_sha256": "b316a0c9f8c3e183faba31bff9ce751ea905468beff613e4ff1a58278874771c",
+    "initial_run_log": "data/llm-evaluation/inference-755c7f0.log",
+    "initial_server_log": "data/llm-evaluation/server-00bdb5c43cae4de5ba34694275ba9675.log",
+    "backend_probe_returncode": -4,
+    "signal": "SIGILL",
+    "backend_probe_output": "",
+    "previous_build_native": true,
+    "cpu_model": "AMD EPYC 7763 64-Core Processor",
+    "cpu_features_available": [
+      "AVX",
+      "AVX2",
+      "FMA",
+      "F16C"
+    ],
+    "cpu_avx512_available": false,
+    "oom_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+    "reason_for_rebuild": "Original backend fails before model loading; --version alone succeeded. Exact faulting instruction not identified; native-target ISA incompatibility is the suspected cause. Original build preserved; separate AVX2 build requested."
+  },
+  "resources_after_experiment": {
+    "memory_limit_bytes": 34359738368,
+    "memory_available_bytes": 32877252608,
+    "disk_free_bytes": 30803095552,
+    "cpu_affinity_count": 5,
+    "cpu_quota": "400000 100000"
+  },
+  "elapsed_seconds": 178.14,
+  "peak_child_rss_kib": 2202876
 }
