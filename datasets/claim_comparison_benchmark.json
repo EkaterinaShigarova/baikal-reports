@@ -1,0 +1,770 @@
+{
+  "version": 1,
+  "research_date": "2026-10-23",
+  "baseline_commit": "3ce5604ae73e77dfda2587e0470d499899d167bc",
+  "registry_sha256": "8c7e668a45a88ff4c62235b4b04a5a2fd7f04403411bb85c573bfb9235f70397",
+  "design": "2 examples per category. Source-attribution contradiction is scored pairwise; it is already documented in the article. I1 is an explicitly incomplete real-source projection. No faulty model outputs are ground truth.",
+  "examples": [
+    {
+      "case_id": "A1",
+      "fact": {
+        "origin_claim_id": "L1f11e4bf4a239adc",
+        "features": {
+          "object": "донные отложения авандельты Селенги",
+          "indicator": "бенз(а)пирен",
+          "value": "7,9",
+          "qualitative_value": null,
+          "value_kind": "quantitative",
+          "statistic": "maximum",
+          "unit": "нг/г с.о.",
+          "territory": "авандельта Селенги — область отчётной сводки",
+          "period": {
+            "start": 2015,
+            "end": 2015
+          },
+          "statement_kind": "reported_observation",
+          "comparison_scope": "reported_summary",
+          "attribution": "table"
+        },
+        "source_evidence_ids": [
+          "S2"
+        ],
+        "source_context": {
+          "source_id": "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
+          "sha256": "26dc3610938c5b8f91e85b4179ee1092f20aa03684135d0534b8ad2ab9629023",
+          "page": 26,
+          "report_year": 2015,
+          "publication_year": null,
+          "source_authenticity": "mirror_unverified",
+          "role": "table",
+          "caption_quote": "Содержание полициклических ароматических углеводородов в донных отложениях\n                       на авандельте р. Селенга в 2011–2015 гг., в нг/г с.о.\n                     (в числителе – интервалы значений, в знаменателе – средние значения)",
+          "cells": [
+            {
+              "cell_id": "T2015_C1",
+              "row_index": 4,
+              "column_index": 1,
+              "row_header": "2015 г.",
+              "header": "БП –\nпротока\nУсть-Харауз",
+              "indicator": "БП",
+              "territory": "протока Усть-Харауз",
+              "unit": "нг/г с.о.",
+              "observation_year": 2015,
+              "raw_cell": "1,2–7,9\n3,9",
+              "range_min": "1,2",
+              "range_max": "7,9",
+              "mean": "3,9",
+              "source_fragment_id": "S2",
+              "bbox": [
+                119.05868445502387,
+                340.8734893798828,
+                183.49946763780383,
+                367.0329956054687
+              ]
+            },
+            {
+              "cell_id": "T2015_C2",
+              "row_index": 4,
+              "column_index": 2,
+              "row_header": "2015 г.",
+              "header": "БП –\nвесь\nполигон",
+              "indicator": "БП",
+              "territory": "весь полигон",
+              "unit": "нг/г с.о.",
+              "observation_year": 2015,
+              "raw_cell": "0,1–7,9\n2,1",
+              "range_min": "0,1",
+              "range_max": "7,9",
+              "mean": "2,1",
+              "source_fragment_id": "S2",
+              "bbox": [
+                183.49946763780383,
+                340.8734893798828,
+                235.04579332139758,
+                367.0329956054687
+              ]
+            }
+          ],
+          "notice": "Exact previously checked table cells; caption defines intervals/means. No new extraction."
+        },
+        "limitations": [
+          "Зафиксировано сообщение доклада, а не независимо подтверждённое измерение; зеркало mirror_unverified.",
+          "Территория максимума задана здесь только как область отчётной сводки авандельты; это не координаты станции и не разрешение сравнивать разные выборки.",
+          "Год публикации неизвестен. Автоматизированная сверка не является научной экспертизой."
+        ],
+        "unresolved_value_conflict_ids": [
+          "K_BP_ORDER_2015"
+        ],
+        "fact_id": "M97996f7f2e5eced0",
+        "binding_sha256": "bb459ad44b45d0e2fa10f965b38733ebbed32470dd08dbcd4df757afebd9e72f"
+      },
+      "target_claim_ids": [
+        "L1788d9bc5db328b3",
+        "L1f11e4bf4a239adc",
+        "La650412754bb0a9f"
+      ],
+      "comparison_scope": "Сравнение с релевантными утверждениями статьи; new_detail остаётся кандидатом до отдельной проверки полной статьи.",
+      "expected": {
+        "classification": "already_present",
+        "reason": "Число 7,9, максимум БП, единица/период/сводный объект и атрибуция таблице совпадают с утверждением статьи.",
+        "review_kind": "source_comparison_non_expert",
+        "expert_review": false,
+        "article_sha256": "a67b8fbbfda3d9716f31c291485877d576d8c315587604486a411d85918984e6",
+        "source_ids": [
+          "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab"
+        ]
+      },
+      "evaluation_note": null
+    },
+    {
+      "case_id": "A2",
+      "fact": {
+        "origin_claim_id": "La650412754bb0a9f",
+        "features": {
+          "object": "донные отложения авандельты Селенги",
+          "indicator": "бенз(а)пирен",
+          "value": null,
+          "qualitative_value": "фоновое значение",
+          "value_kind": "qualitative",
+          "statistic": "classification",
+          "unit": null,
+          "territory": "авандельта Селенги — область отчётной сводки",
+          "period": {
+            "start": 2015,
+            "end": 2015
+          },
+          "statement_kind": "author_assessment",
+          "comparison_scope": "reported_summary",
+          "attribution": "prose"
+        },
+        "source_evidence_ids": [
+          "S1"
+        ],
+        "source_context": {
+          "source_id": "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
+          "sha256": "26dc3610938c5b8f91e85b4179ee1092f20aa03684135d0534b8ad2ab9629023",
+          "page": 26,
+          "report_year": 2015,
+          "publication_year": null,
+          "source_authenticity": "mirror_unverified",
+          "role": "prose",
+          "quote": "Максимальное содержание ПАУ, бенз(а)пирена и канцерогенных аренов в 2015 г. были\n      отмечены на авандельте реки непосредственно напротив выносов протокой Усть-Харауз:\n       124,9 нг/г с.о., 61,8 нг/г с.о. и 7,9 нг/г с.о. (таблица 1.1.1.3.6). Уровень загрязненности на\n1.1  авандельте р. Селенга по бенз(а)пирену можно отнести к фоновому значению, а по сумме    ПАУ – как слабо загрязненному. Однако следует отметить, что содержание канцерогенных\n      аренов в 2015 г. увеличилось по сравнению с 2014 г. в 2,7 раза."
+        },
+        "limitations": [
+          "Зафиксировано сообщение доклада, а не независимо подтверждённое измерение; зеркало mirror_unverified.",
+          "Территория максимума задана здесь только как область отчётной сводки авандельты; это не координаты станции и не разрешение сравнивать разные выборки.",
+          "Год публикации неизвестен. Автоматизированная сверка не является научной экспертизой."
+        ],
+        "unresolved_value_conflict_ids": [],
+        "fact_id": "Mf3958060051443a2",
+        "binding_sha256": "8d2dfaef70076ab5a78f181755693891fc883ab889e257d26e1e3c118bcccbf1"
+      },
+      "target_claim_ids": [
+        "L1788d9bc5db328b3",
+        "L1f11e4bf4a239adc",
+        "La650412754bb0a9f"
+      ],
+      "comparison_scope": "Сравнение с релевантными утверждениями статьи; new_detail остаётся кандидатом до отдельной проверки полной статьи.",
+      "expected": {
+        "classification": "already_present",
+        "reason": "Фоновое значение в источнике и фоновый уровень в статье передают ту же качественную оценку; это не новое число или новая классификация.",
+        "review_kind": "source_comparison_non_expert",
+        "expert_review": false,
+        "article_sha256": "a67b8fbbfda3d9716f31c291485877d576d8c315587604486a411d85918984e6",
+        "source_ids": [
+          "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab"
+        ]
+      },
+      "evaluation_note": null
+    },
+    {
+      "case_id": "N1",
+      "fact": {
+        "fact_id": "Fef1cdb41001456e0",
+        "original_fact_sha256": "99295d31bedbd22cd12708042bd778c72bc3ffecb49c5ec8e9408f583a7a4284",
+        "origin_claim_id": null,
+        "features": {
+          "object": "донные отложения авандельты Селенги",
+          "indicator": "бенз(а)пирен",
+          "value": "2,1",
+          "qualitative_value": null,
+          "value_kind": "quantitative",
+          "statistic": "mean",
+          "unit": "нг/г с.о.",
+          "territory": "весь полигон",
+          "period": {
+            "start": 2015,
+            "end": 2015
+          },
+          "statement_kind": "reported_observation",
+          "comparison_scope": "table_cell_statistic",
+          "attribution": "table"
+        },
+        "source_evidence_ids": [
+          "S2"
+        ],
+        "source_context": {
+          "source_id": "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
+          "sha256": "26dc3610938c5b8f91e85b4179ee1092f20aa03684135d0534b8ad2ab9629023",
+          "page": 26,
+          "report_year": 2015,
+          "publication_year": null,
+          "source_authenticity": "mirror_unverified",
+          "role": "table",
+          "caption_quote": "Содержание полициклических ароматических углеводородов в донных отложениях\n                       на авандельте р. Селенга в 2011–2015 гг., в нг/г с.о.\n                     (в числителе – интервалы значений, в знаменателе – средние значения)",
+          "cells": [
+            {
+              "cell_id": "T2015_C2",
+              "row_index": 4,
+              "column_index": 2,
+              "row_header": "2015 г.",
+              "header": "БП –\nвесь\nполигон",
+              "indicator": "БП",
+              "territory": "весь полигон",
+              "unit": "нг/г с.о.",
+              "observation_year": 2015,
+              "raw_cell": "0,1–7,9\n2,1",
+              "range_min": "0,1",
+              "range_max": "7,9",
+              "mean": "2,1",
+              "source_fragment_id": "S2",
+              "bbox": [
+                183.49946763780383,
+                340.8734893798828,
+                235.04579332139758,
+                367.0329956054687
+              ]
+            }
+          ],
+          "notice": "Exact previously checked table cells; caption defines intervals/means. No new extraction."
+        },
+        "limitations": [
+          "Values from the table are the means, while the prose mentions the maximum.",
+          "Это среднее из отчётной таблицы в сухом донном материале, не годовой речной вынос и не сопоставимый многолетний ряд.",
+          "В тексте факта среднее не названо явно; оно задано полем statistic и ограничением модели. Для публикации требуется ясная редакционная формулировка без смены значения.",
+          "Сверка переноса не является научной рецензией специалистом."
+        ],
+        "unresolved_value_conflict_ids": [],
+        "binding_sha256": "3df110910a568b76a48e6423da468084536183c5e7fdc41a1dfde8d5ab51717e"
+      },
+      "target_claim_ids": [
+        "L1788d9bc5db328b3",
+        "L1f11e4bf4a239adc",
+        "La650412754bb0a9f"
+      ],
+      "comparison_scope": "Сравнение с релевантными утверждениями статьи; new_detail остаётся кандидатом до отдельной проверки полной статьи.",
+      "expected": {
+        "classification": "new_detail",
+        "reason": "Сохранённое среднее БП 2,1 по всему полигону отсутствует в полной статье. Максимумы и фон не выражают это среднее.",
+        "review_kind": "source_comparison_non_expert",
+        "expert_review": false,
+        "article_sha256": "a67b8fbbfda3d9716f31c291485877d576d8c315587604486a411d85918984e6",
+        "source_ids": [
+          "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab"
+        ]
+      },
+      "evaluation_note": null
+    },
+    {
+      "case_id": "N2",
+      "fact": {
+        "fact_id": "Fb1a1009f18b2ca3b",
+        "original_fact_sha256": "6ba388817679abb4df458418f18304270468cb0d7244c2817762b54323a77400",
+        "origin_claim_id": null,
+        "features": {
+          "object": "донные отложения авандельты Селенги",
+          "indicator": "сумма ПАУ",
+          "value": "36,9",
+          "qualitative_value": null,
+          "value_kind": "quantitative",
+          "statistic": "mean",
+          "unit": "нг/г с.о.",
+          "territory": "весь полигон",
+          "period": {
+            "start": 2015,
+            "end": 2015
+          },
+          "statement_kind": "reported_observation",
+          "comparison_scope": "table_cell_statistic",
+          "attribution": "table"
+        },
+        "source_evidence_ids": [
+          "S2"
+        ],
+        "source_context": {
+          "source_id": "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
+          "sha256": "26dc3610938c5b8f91e85b4179ee1092f20aa03684135d0534b8ad2ab9629023",
+          "page": 26,
+          "report_year": 2015,
+          "publication_year": null,
+          "source_authenticity": "mirror_unverified",
+          "role": "table",
+          "caption_quote": "Содержание полициклических ароматических углеводородов в донных отложениях\n                       на авандельте р. Селенга в 2011–2015 гг., в нг/г с.о.\n                     (в числителе – интервалы значений, в знаменателе – средние значения)",
+          "cells": [
+            {
+              "cell_id": "T2015_C3",
+              "row_index": 4,
+              "column_index": 3,
+              "row_header": "2015 г.",
+              "header": "ПАУ –\nвесь\nполигон",
+              "indicator": "ПАУ",
+              "territory": "весь полигон",
+              "unit": "нг/г с.о.",
+              "observation_year": 2015,
+              "raw_cell": "3,0–124,9\n36,9",
+              "range_min": "3,0",
+              "range_max": "124,9",
+              "mean": "36,9",
+              "source_fragment_id": "S2",
+              "bbox": [
+                235.04579332139758,
+                340.8734893798828,
+                296.2999382019043,
+                367.0329956054687
+              ]
+            }
+          ],
+          "notice": "Exact previously checked table cells; caption defines intervals/means. No new extraction."
+        },
+        "limitations": [
+          "Values from the table are the means, while the prose mentions the maximum.",
+          "Это среднее из отчётной таблицы в сухом донном материале, не годовой речной вынос и не сопоставимый многолетний ряд.",
+          "В тексте факта среднее не названо явно; оно задано полем statistic и ограничением модели. Для публикации требуется ясная редакционная формулировка без смены значения.",
+          "Сверка переноса не является научной рецензией специалистом."
+        ],
+        "unresolved_value_conflict_ids": [],
+        "binding_sha256": "77024a92a36e2e81fceb0f16e3d87eda52a5b00b994fc65c8cf7ddfaab4d3dc2"
+      },
+      "target_claim_ids": [
+        "L8c8c408673aac019",
+        "Lcab0a28f7d6147fb"
+      ],
+      "comparison_scope": "Сравнение с релевантными утверждениями статьи; new_detail остаётся кандидатом до отдельной проверки полной статьи.",
+      "expected": {
+        "classification": "new_detail",
+        "reason": "Сохранённое среднее ПАУ 36,9 по всему полигону отсутствует в полной статье; максимум и слабое загрязнение не являются его эквивалентом.",
+        "review_kind": "source_comparison_non_expert",
+        "expert_review": false,
+        "article_sha256": "a67b8fbbfda3d9716f31c291485877d576d8c315587604486a411d85918984e6",
+        "source_ids": [
+          "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab"
+        ]
+      },
+      "evaluation_note": null
+    },
+    {
+      "case_id": "C1",
+      "fact": {
+        "origin_claim_id": "L1f11e4bf4a239adc",
+        "features": {
+          "object": "донные отложения авандельты Селенги",
+          "indicator": "бенз(а)пирен",
+          "value": "7,9",
+          "qualitative_value": null,
+          "value_kind": "quantitative",
+          "statistic": "maximum",
+          "unit": "нг/г с.о.",
+          "territory": "авандельта Селенги — область отчётной сводки",
+          "period": {
+            "start": 2015,
+            "end": 2015
+          },
+          "statement_kind": "reported_observation",
+          "comparison_scope": "reported_summary",
+          "attribution": "table"
+        },
+        "source_evidence_ids": [
+          "S2"
+        ],
+        "source_context": {
+          "source_id": "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
+          "sha256": "26dc3610938c5b8f91e85b4179ee1092f20aa03684135d0534b8ad2ab9629023",
+          "page": 26,
+          "report_year": 2015,
+          "publication_year": null,
+          "source_authenticity": "mirror_unverified",
+          "role": "table",
+          "caption_quote": "Содержание полициклических ароматических углеводородов в донных отложениях\n                       на авандельте р. Селенга в 2011–2015 гг., в нг/г с.о.\n                     (в числителе – интервалы значений, в знаменателе – средние значения)",
+          "cells": [
+            {
+              "cell_id": "T2015_C1",
+              "row_index": 4,
+              "column_index": 1,
+              "row_header": "2015 г.",
+              "header": "БП –\nпротока\nУсть-Харауз",
+              "indicator": "БП",
+              "territory": "протока Усть-Харауз",
+              "unit": "нг/г с.о.",
+              "observation_year": 2015,
+              "raw_cell": "1,2–7,9\n3,9",
+              "range_min": "1,2",
+              "range_max": "7,9",
+              "mean": "3,9",
+              "source_fragment_id": "S2",
+              "bbox": [
+                119.05868445502387,
+                340.8734893798828,
+                183.49946763780383,
+                367.0329956054687
+              ]
+            },
+            {
+              "cell_id": "T2015_C2",
+              "row_index": 4,
+              "column_index": 2,
+              "row_header": "2015 г.",
+              "header": "БП –\nвесь\nполигон",
+              "indicator": "БП",
+              "territory": "весь полигон",
+              "unit": "нг/г с.о.",
+              "observation_year": 2015,
+              "raw_cell": "0,1–7,9\n2,1",
+              "range_min": "0,1",
+              "range_max": "7,9",
+              "mean": "2,1",
+              "source_fragment_id": "S2",
+              "bbox": [
+                183.49946763780383,
+                340.8734893798828,
+                235.04579332139758,
+                367.0329956054687
+              ]
+            }
+          ],
+          "notice": "Exact previously checked table cells; caption defines intervals/means. No new extraction."
+        },
+        "limitations": [
+          "Зафиксировано сообщение доклада, а не независимо подтверждённое измерение; зеркало mirror_unverified.",
+          "Территория максимума задана здесь только как область отчётной сводки авандельты; это не координаты станции и не разрешение сравнивать разные выборки.",
+          "Год публикации неизвестен. Автоматизированная сверка не является научной экспертизой."
+        ],
+        "unresolved_value_conflict_ids": [
+          "K_BP_ORDER_2015"
+        ],
+        "fact_id": "M97996f7f2e5eced0",
+        "binding_sha256": "bb459ad44b45d0e2fa10f965b38733ebbed32470dd08dbcd4df757afebd9e72f"
+      },
+      "target_claim_ids": [
+        "L1788d9bc5db328b3"
+      ],
+      "comparison_scope": "Отношение к указанному сообщению прозы, не новизна относительно всей Wiki. Конфликт таблицы и прозы уже документирован.",
+      "expected": {
+        "classification": "contradiction",
+        "reason": "Таблица относит максимум 7,9 к БП, проза по порядку перечисления — 61,8. Это реальное документированное расхождение атрибуции, уже сохранённое в статье, не новый конфликт Wiki.",
+        "review_kind": "source_comparison_non_expert",
+        "expert_review": false,
+        "article_sha256": "a67b8fbbfda3d9716f31c291485877d576d8c315587604486a411d85918984e6",
+        "source_ids": [
+          "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab"
+        ]
+      },
+      "evaluation_note": "Пара известных конфликтующих сообщений, а не новое противоречие статьи."
+    },
+    {
+      "case_id": "C2",
+      "fact": {
+        "origin_claim_id": "L48f482bcea6de637",
+        "features": {
+          "object": "донные отложения авандельты Селенги",
+          "indicator": "канцерогенные арены",
+          "value": "61,8",
+          "qualitative_value": null,
+          "value_kind": "quantitative",
+          "statistic": "maximum",
+          "unit": "нг/г с.о.",
+          "territory": "авандельта Селенги — область отчётной сводки",
+          "period": {
+            "start": 2015,
+            "end": 2015
+          },
+          "statement_kind": "reported_observation",
+          "comparison_scope": "reported_summary",
+          "attribution": "table"
+        },
+        "source_evidence_ids": [
+          "S2"
+        ],
+        "source_context": {
+          "source_id": "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
+          "sha256": "26dc3610938c5b8f91e85b4179ee1092f20aa03684135d0534b8ad2ab9629023",
+          "page": 26,
+          "report_year": 2015,
+          "publication_year": null,
+          "source_authenticity": "mirror_unverified",
+          "role": "table",
+          "caption_quote": "Содержание полициклических ароматических углеводородов в донных отложениях\n                       на авандельте р. Селенга в 2011–2015 гг., в нг/г с.о.\n                     (в числителе – интервалы значений, в знаменателе – средние значения)",
+          "cells": [
+            {
+              "cell_id": "T2015_C5",
+              "row_index": 4,
+              "column_index": 5,
+              "row_header": "2015 г.",
+              "header": "Канцерогены –\nпротока Усть-\nХарауз (% от\nсуммы ПАУ)",
+              "indicator": "канцерогенные арены",
+              "territory": "протока Усть-Харауз",
+              "unit": "нг/г с.о.",
+              "observation_year": 2015,
+              "raw_cell": "9,9–61,8\n30,3 (49,2 %)",
+              "range_min": "9,9",
+              "range_max": "61,8",
+              "mean": "30,3",
+              "source_fragment_id": "S2",
+              "bbox": [
+                361.18282318115234,
+                340.8734893798828,
+                438.3861355251736,
+                367.0329956054687
+              ]
+            },
+            {
+              "cell_id": "T2015_C6",
+              "row_index": 4,
+              "column_index": 6,
+              "row_header": "2015 г.",
+              "header": "Канцерогены –\nвесь полигон\n(% от суммы\nПАУ)",
+              "indicator": "канцерогенные арены",
+              "territory": "весь полигон",
+              "unit": "нг/г с.о.",
+              "observation_year": 2015,
+              "raw_cell": "1,0–61,8\n17,1 (43,5 %)",
+              "range_min": "1,0",
+              "range_max": "61,8",
+              "mean": "17,1",
+              "source_fragment_id": "S2",
+              "bbox": [
+                438.3861355251736,
+                340.8734893798828,
+                515.1727905273438,
+                367.0329956054687
+              ]
+            }
+          ],
+          "notice": "Exact previously checked table cells; caption defines intervals/means. No new extraction."
+        },
+        "limitations": [
+          "Зафиксировано сообщение доклада, а не независимо подтверждённое измерение; зеркало mirror_unverified.",
+          "Территория максимума задана здесь только как область отчётной сводки авандельты; это не координаты станции и не разрешение сравнивать разные выборки.",
+          "Год публикации неизвестен. Автоматизированная сверка не является научной экспертизой."
+        ],
+        "unresolved_value_conflict_ids": [
+          "K_CARC_ORDER_2015"
+        ],
+        "fact_id": "M83532bdc7952d8a8",
+        "binding_sha256": "d29d1175c1b19f0410c2ffae2c29d83c5990e7b1afb2522238ab6e61cc85b1ba"
+      },
+      "target_claim_ids": [
+        "Lf6d5c12cfac9bb25"
+      ],
+      "comparison_scope": "Отношение к указанному сообщению прозы, не новизна относительно всей Wiki. Конфликт таблицы и прозы уже документирован.",
+      "expected": {
+        "classification": "contradiction",
+        "reason": "Таблица относит максимум 61,8 к канцерогенным аренам, проза — 7,9. Оба варианта действительно напечатаны; правильное измерение из этого не выбирается.",
+        "review_kind": "source_comparison_non_expert",
+        "expert_review": false,
+        "article_sha256": "a67b8fbbfda3d9716f31c291485877d576d8c315587604486a411d85918984e6",
+        "source_ids": [
+          "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab"
+        ]
+      },
+      "evaluation_note": "Пара известных конфликтующих сообщений, а не новое противоречие статьи."
+    },
+    {
+      "case_id": "I1",
+      "fact": {
+        "origin_claim_id": "La650412754bb0a9f",
+        "features": {
+          "object": "донные отложения авандельты Селенги",
+          "indicator": "бенз(а)пирен",
+          "value": null,
+          "qualitative_value": "фоновое значение",
+          "value_kind": "qualitative",
+          "statistic": "classification",
+          "unit": null,
+          "territory": "авандельта Селенги — область отчётной сводки",
+          "period": null,
+          "statement_kind": "author_assessment",
+          "comparison_scope": "reported_summary",
+          "attribution": "prose"
+        },
+        "source_evidence_ids": [
+          "S1"
+        ],
+        "source_context": {
+          "source_id": "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
+          "sha256": "26dc3610938c5b8f91e85b4179ee1092f20aa03684135d0534b8ad2ab9629023",
+          "page": 26,
+          "report_year": 2015,
+          "publication_year": null,
+          "source_authenticity": "mirror_unverified",
+          "role": "prose",
+          "quote": "Уровень загрязненности на\n1.1  авандельте р. Селенга по бенз(а)пирену можно отнести к фоновому значению, а по сумме    ПАУ – как слабо загрязненному."
+        },
+        "limitations": [
+          "Зафиксировано сообщение доклада, а не независимо подтверждённое измерение; зеркало mirror_unverified.",
+          "Территория максимума задана здесь только как область отчётной сводки авандельты; это не координаты станции и не разрешение сравнивать разные выборки.",
+          "Год публикации неизвестен. Автоматизированная сверка не является научной экспертизой.",
+          "Контрольный неполный вход: observation period намеренно не передан, цитата оценки не содержит даты. Это пропуск входных метаданных, не утверждение, что полный доклад не датирует наблюдение. Год доклада не подставлять."
+        ],
+        "unresolved_value_conflict_ids": [],
+        "fact_id": "Pdd6294b22596eef3",
+        "binding_sha256": "bc068b5d9e535bd3c034e3dee7d9cf364bc5968af0477604cc66b706b6af4b0f",
+        "test_projection": {
+          "withheld_fields": [
+            "period"
+          ],
+          "reason": "Safety control for missing extraction metadata; not a new source fact."
+        }
+      },
+      "target_claim_ids": [
+        "L1788d9bc5db328b3",
+        "L1f11e4bf4a239adc",
+        "La650412754bb0a9f"
+      ],
+      "comparison_scope": "Сравнение с релевантными утверждениями статьи; new_detail остаётся кандидатом до отдельной проверки полной статьи.",
+      "expected": {
+        "classification": "insufficient_evidence",
+        "reason": "В контрольном входе отсутствует период наблюдения и цитата без даты не позволяет восстановить его из report_year. Это намеренно неполная проекция.",
+        "review_kind": "source_comparison_non_expert",
+        "expert_review": false,
+        "article_sha256": "a67b8fbbfda3d9716f31c291485877d576d8c315587604486a411d85918984e6",
+        "source_ids": [
+          "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab"
+        ]
+      },
+      "evaluation_note": null
+    },
+    {
+      "case_id": "I2",
+      "fact": {
+        "origin_claim_id": "L1f11e4bf4a239adc",
+        "features": {
+          "object": "донные отложения авандельты Селенги",
+          "indicator": "бенз(а)пирен",
+          "value": "7,9",
+          "qualitative_value": null,
+          "value_kind": "quantitative",
+          "statistic": "maximum",
+          "unit": "нг/г с.о.",
+          "territory": "авандельта Селенги — область отчётной сводки",
+          "period": {
+            "start": 2015,
+            "end": 2015
+          },
+          "statement_kind": "reported_observation",
+          "comparison_scope": "reported_summary",
+          "attribution": "unqualified"
+        },
+        "source_evidence_ids": [
+          "S2"
+        ],
+        "source_context": {
+          "variants": [
+            {
+              "source_id": "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
+              "sha256": "26dc3610938c5b8f91e85b4179ee1092f20aa03684135d0534b8ad2ab9629023",
+              "page": 26,
+              "report_year": 2015,
+              "publication_year": null,
+              "source_authenticity": "mirror_unverified",
+              "role": "prose",
+              "quote": "Максимальное содержание ПАУ, бенз(а)пирена и канцерогенных аренов в 2015 г. были\n      отмечены на авандельте реки непосредственно напротив выносов протокой Усть-Харауз:\n       124,9 нг/г с.о., 61,8 нг/г с.о. и 7,9 нг/г с.о. (таблица 1.1.1.3.6). Уровень загрязненности на\n1.1  авандельте р. Селенга по бенз(а)пирену можно отнести к фоновому значению, а по сумме    ПАУ – как слабо загрязненному. Однако следует отметить, что содержание канцерогенных\n      аренов в 2015 г. увеличилось по сравнению с 2014 г. в 2,7 раза."
+            },
+            {
+              "source_id": "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
+              "sha256": "26dc3610938c5b8f91e85b4179ee1092f20aa03684135d0534b8ad2ab9629023",
+              "page": 26,
+              "report_year": 2015,
+              "publication_year": null,
+              "source_authenticity": "mirror_unverified",
+              "role": "table",
+              "caption_quote": "Содержание полициклических ароматических углеводородов в донных отложениях\n                       на авандельте р. Селенга в 2011–2015 гг., в нг/г с.о.\n                     (в числителе – интервалы значений, в знаменателе – средние значения)",
+              "cells": [
+                {
+                  "cell_id": "T2015_C1",
+                  "row_index": 4,
+                  "column_index": 1,
+                  "row_header": "2015 г.",
+                  "header": "БП –\nпротока\nУсть-Харауз",
+                  "indicator": "БП",
+                  "territory": "протока Усть-Харауз",
+                  "unit": "нг/г с.о.",
+                  "observation_year": 2015,
+                  "raw_cell": "1,2–7,9\n3,9",
+                  "range_min": "1,2",
+                  "range_max": "7,9",
+                  "mean": "3,9",
+                  "source_fragment_id": "S2",
+                  "bbox": [
+                    119.05868445502387,
+                    340.8734893798828,
+                    183.49946763780383,
+                    367.0329956054687
+                  ]
+                },
+                {
+                  "cell_id": "T2015_C2",
+                  "row_index": 4,
+                  "column_index": 2,
+                  "row_header": "2015 г.",
+                  "header": "БП –\nвесь\nполигон",
+                  "indicator": "БП",
+                  "territory": "весь полигон",
+                  "unit": "нг/г с.о.",
+                  "observation_year": 2015,
+                  "raw_cell": "0,1–7,9\n2,1",
+                  "range_min": "0,1",
+                  "range_max": "7,9",
+                  "mean": "2,1",
+                  "source_fragment_id": "S2",
+                  "bbox": [
+                    183.49946763780383,
+                    340.8734893798828,
+                    235.04579332139758,
+                    367.0329956054687
+                  ]
+                }
+              ],
+              "notice": "Exact previously checked table cells; caption defines intervals/means. No new extraction."
+            }
+          ]
+        },
+        "limitations": [
+          "Зафиксировано сообщение доклада, а не независимо подтверждённое измерение; зеркало mirror_unverified.",
+          "Территория максимума задана здесь только как область отчётной сводки авандельты; это не координаты станции и не разрешение сравнивать разные выборки.",
+          "Год публикации неизвестен. Автоматизированная сверка не является научной экспертизой.",
+          "Проверяется возможность назвать 7,9 истинным максимумом, а не сообщение таблицы. При конфликте первоисточника этого установить нельзя."
+        ],
+        "unresolved_value_conflict_ids": [
+          "K_BP_ORDER_2015"
+        ],
+        "fact_id": "U5e0a5517c29f5799",
+        "binding_sha256": "869720655101089fa114771a0670b684fc36919b69c3758bae1fbee0565c6b28"
+      },
+      "target_claim_ids": [
+        "L1788d9bc5db328b3",
+        "L1f11e4bf4a239adc",
+        "La650412754bb0a9f"
+      ],
+      "comparison_scope": "Сравнение с релевантными утверждениями статьи; new_detail остаётся кандидатом до отдельной проверки полной статьи.",
+      "expected": {
+        "classification": "insufficient_evidence",
+        "reason": "При конфликте прозы и таблицы нельзя признать один из максимумов истинным без первичных результатов; атрибутированное сообщение и истинное измерение — разные задачи.",
+        "review_kind": "source_comparison_non_expert",
+        "expert_review": false,
+        "article_sha256": "a67b8fbbfda3d9716f31c291485877d576d8c315587604486a411d85918984e6",
+        "source_ids": [
+          "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab"
+        ]
+      },
+      "evaluation_note": null
+    }
+  ],
+  "expected_counts": {
+    "already_present": 2,
+    "new_detail": 2,
+    "contradiction": 2,
+    "insufficient_evidence": 2
+  },
+  "new_detail_ground_truth": "Полная статья просмотрена: ни 2,1, ни 36,9 или их словесные эквиваленты в ней не приведены. Решение о новизне не выводится только из частичного реестра.",
+  "third_previous_fact": "Fdbb02a29d87d7c6e preserved in its original package, not included in this balanced benchmark; no extraction repeated.",
+  "expert_review": false
+}
