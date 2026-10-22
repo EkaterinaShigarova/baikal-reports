@@ -1,0 +1,314 @@
+{
+  "version": 1,
+  "date": "2026-10-22T11:11:25.271103+00:00",
+  "baseline_commit": "903a62be44aef9bb89bb204f20aba7707f0532d7",
+  "protocol_document": "docs/LLM_COMPARISON_PROTOCOL.md",
+  "preregistered_protocol_sha256": "6b808f4a356a0fc028275fff4899a5e0f16a56d4e1db40d4a2cc21ae437ff8da",
+  "model": {
+    "repo": "Qwen/Qwen2.5-1.5B-Instruct-GGUF",
+    "sha256": "6a1a2eb6d15622bf3c96857206351ba97e1af16c30d7a74ee38970e434e9407e",
+    "changed": false,
+    "downloaded_again": false
+  },
+  "runtime": {
+    "model_sha256": "6a1a2eb6d15622bf3c96857206351ba97e1af16c30d7a74ee38970e434e9407e",
+    "model_file_name": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "model_bytes": 1117320736,
+    "server_sha256": "ea2082a6ea129e3fbe0e32c4a57cf0fd754572b5a0fb824b89b9ed80b64836f6",
+    "server_version": "version: 0.7.0-dev (build 1, commit 620d222)\nbuilt with GNU 14.2.0 for Linux x86_64",
+    "backend_probe": {
+      "exit_code": 0,
+      "output": "Available devices:\n  (none)"
+    },
+    "threads": 4,
+    "context_tokens": 8192,
+    "gpu_layers": 0,
+    "server_log_path": "data/llm-evaluation/server-82f8d7dbec9646ccb47aef5ef3cfbdba.log"
+  },
+  "parameters": {
+    "temperature": 0,
+    "max_tokens": 1800,
+    "threads": 4,
+    "context_tokens": 8192
+  },
+  "comparison_scope": "Bundled prompt/protocol and curated-context intervention, two fixed cases, one call each. Not a causal model-size test or a blind benchmark.",
+  "baseline": {
+    "report": "datasets/llm_evaluation.json",
+    "report_sha256": "762f8fee98d7a5e11f3ad6a8053aa4341d8bee9657f779a95c6faf36acbd32b5",
+    "real_wiki_responses": 2,
+    "programmatically_accepted": 0,
+    "semantically_usable_updates": 0,
+    "exact_model_copied_quotes": 1,
+    "attempted_model_copied_quotes": 3,
+    "elapsed_seconds": 178.14
+  },
+  "v2": {
+    "real_wiki_responses": 2,
+    "programmatically_accepted": 0,
+    "semantically_usable_updates": 0,
+    "source_quotes_bound_in_accepted_drafts": 0,
+    "model_quote_copying_metric": "not_applicable_ID_protocol",
+    "proper_target_ids": 0,
+    "substantive_defects_in_selenga_answer": 3,
+    "input_echo_failures": 1,
+    "new_substantive_details": 0,
+    "elapsed_seconds": 96.097,
+    "peak_child_rss_kib": 2111708,
+    "claims_or_observations_published": 0,
+    "cases": [
+      {
+        "topic": "selenga-sediments",
+        "run_id": "733cb2014022eae1a0baeebb9448bac7eaf7e87f5c13c75ca5bd9ee32767b762",
+        "run_record_path": "data/wiki_updates/llm_runs/733cb2014022eae1a0baeebb9448bac7eaf7e87f5c13c75ca5bd9ee32767b762.json",
+        "run_record_sha256": "92f27ef63dab666ff8b5070fc6cc65113ff2679ccc1df36407c7f138e49b34cb",
+        "raw_response_sha256": "209615858593013b4d8cf8be662af4b85cfcdf4562eeb316e20fcb22c04a5a8d",
+        "status": "rejected",
+        "validator_errors": [
+          "v2 validation: nonempty explicit limitations required"
+        ],
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 477,
+          "prompt_tokens": 2820,
+          "total_tokens": 3297,
+          "prompt_tokens_details": {
+            "cached_tokens": 503
+          }
+        },
+        "elapsed_seconds": 40.037,
+        "source_pages": [
+          {
+            "source_id": "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
+            "sha256": "26dc3610938c5b8f91e85b4179ee1092f20aa03684135d0534b8ad2ab9629023",
+            "page": 26,
+            "report_year": 2015
+          },
+          {
+            "source_id": "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
+            "sha256": "26dc3610938c5b8f91e85b4179ee1092f20aa03684135d0534b8ad2ab9629023",
+            "page": 26,
+            "report_year": 2015
+          }
+        ],
+        "article_sha256": "a67b8fbbfda3d9716f31c291485877d576d8c315587604486a411d85918984e6",
+        "protocol_audit": {
+          "proper_target_id": false,
+          "has_claims_list": true,
+          "limitations_is_nonempty_list": false,
+          "selected_ids": [
+            "S1",
+            "S2",
+            "S1",
+            "S2"
+          ],
+          "selected_ids_known": true,
+          "existing_excerpt_checks": [
+            false
+          ]
+        },
+        "semantic_audit": {
+          "outcome": "unsupported_generalization_and_fabricated_conflict",
+          "usable_new_details": 0,
+          "known_2015_discrepancy_preserved": false,
+          "substantive_defects": [
+            "Unqualified significant temporal variation labelled new_detail without method/comparability justification.",
+            "English existing_excerpt absent from the Russian article; alleged undocumented conflict unsupported.",
+            "Same thesis simultaneously placed in claims and unsupported_candidates."
+          ],
+          "substantive_defect_count": 3,
+          "review_excerpt": "The content of aromatic hydrocarbons, benzo(a)pyrene, and carcinogenic compounds in Selenga sediments varies significantly over time.",
+          "fabricated_existing_excerpt": "The content of aromatic hydrocarbons, benzo(a)pyrene, and carcinogenic compounds in Selenga sediments varies significantly over time.",
+          "semantic_review": "Table values differ, but an unqualified significance/trend claim and contradiction with an absent Wiki sentence are not supported."
+        }
+      },
+      {
+        "topic": "baikal-sturgeon",
+        "run_id": "eccf0e3049644239ac32e25ce127758ddc8b213bc09ed1436cc5b55d2542ec49",
+        "run_record_path": "data/wiki_updates/llm_runs/eccf0e3049644239ac32e25ce127758ddc8b213bc09ed1436cc5b55d2542ec49.json",
+        "run_record_sha256": "1dc5317a34a367696edeb1324e661ac00ce38fc3f63d0324c94009a0b2945ca7",
+        "raw_response_sha256": "4144ddfec5bc27afdbf3b1378c4faec9f4b72ad50c25277c46829666aa0261ea",
+        "status": "rejected",
+        "validator_errors": [
+          "v2 validation: nonempty explicit limitations required"
+        ],
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 1127,
+          "prompt_tokens": 1654,
+          "total_tokens": 2781,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "elapsed_seconds": 53.567,
+        "source_pages": [
+          {
+            "source_id": "drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0",
+            "sha256": "60ccb6065b32d959457faf9745023d763c9f6641ad7c9c8cdee7a88fea454139",
+            "page": 222,
+            "report_year": 2016
+          },
+          {
+            "source_id": "drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0",
+            "sha256": "60ccb6065b32d959457faf9745023d763c9f6641ad7c9c8cdee7a88fea454139",
+            "page": 222,
+            "report_year": 2016
+          }
+        ],
+        "article_sha256": "59c8be41094a9fd76d117dd9138ba22d15cdeabd8d9c24474f7d20c8df13245b",
+        "protocol_audit": {
+          "proper_target_id": false,
+          "has_claims_list": false,
+          "limitations_is_nonempty_list": false,
+          "selected_ids": [],
+          "selected_ids_known": true,
+          "existing_excerpt_checks": []
+        },
+        "semantic_audit": {
+          "outcome": "input_echo_not_an_assessment",
+          "usable_new_details": 0,
+          "missed_release_subgroup": true,
+          "semantic_review": "No claims/novelty decisions; copied input is not an update proposal."
+        }
+      }
+    ]
+  },
+  "root_cause_assessment": [
+    {
+      "finding": "Baseline existing articles were complete, JSON not truncated.",
+      "certainty": "observed",
+      "implication": "Missing complete article context or token truncation do not explain these failures."
+    },
+    {
+      "finding": "2024 short source window interleaves grayling/sturgeon and omits the transport/temperature passage.",
+      "certainty": "observed",
+      "implication": "Evidence selection/extraction layout is a confirmed input defect; original sources not rewritten."
+    },
+    {
+      "finding": "Baseline required long exact quotes and source IDs beside a source-linked Wiki and a large catalog.",
+      "certainty": "observed_design_risk",
+      "implication": "Likely copy/attribution burden; contribution not isolated experimentally."
+    },
+    {
+      "finding": "v1 citation/limitations rejections were valid; heading/repeat/blank-string guard coverage was incomplete.",
+      "certainty": "observed",
+      "implication": "v2 adds conservative guards and exact ID binding; no checks relaxed."
+    },
+    {
+      "finding": "v2 echoes input, uses wrong topic ID, repeats English prose and ignores schema despite shorter inputs.",
+      "certainty": "observed_behavior",
+      "implication": "Instruction-following/model-capacity limitations plausible; not uniquely proven."
+    }
+  ],
+  "diagnostic_control": {
+    "separate_from_wiki_experiments": true,
+    "calls": 1,
+    "request": {
+      "model": "control",
+      "temperature": 0,
+      "max_tokens": 64,
+      "messages": [
+        {
+          "role": "system",
+          "content": "Верни только JSON, без пояснений."
+        },
+        {
+          "role": "user",
+          "content": "Запиши число 7 в поле answer, а в поле status слово готово."
+        }
+      ]
+    },
+    "expected": {
+      "answer": 7,
+      "status": "готово"
+    },
+    "actual": {
+      "answer": "7",
+      "status": "готово"
+    },
+    "strict_match": false,
+    "result": "valid_JSON_but_numeric_type_wrong",
+    "raw_response_sha256": "3d139aa96631b593753d70ceae626923b0451dc5e3034f8ddafde67395d8426e",
+    "local_result": "data/llm-evaluation/control-result-903a62b.json",
+    "chat_template_sha256": "4e9918361c284a93880606d182d64da6a9fe97cdc1f5c5a78c1c8840444246fc",
+    "template": "Qwen ChatML with system/user/assistant roles; no obvious missing-role template defect observed",
+    "limitations": "One short diagnostic cannot prove runtime correctness in every mode or identify a unique model-size cause."
+  },
+  "next_model": {
+    "url": "https://huggingface.co/api/models/Qwen/Qwen2.5-7B-Instruct-GGUF?blobs=true",
+    "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f",
+    "license": "apache-2.0",
+    "files": [
+      {
+        "rfilename": "qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+        "blobId": "72de309249b41bf41019dd2efc5cb8e4a19c8c8e",
+        "size": 3993201344,
+        "lfs": {
+          "sha256": "dfce12e3862a5283ccfb88221b48480e58745165de856439950d0f22590580db",
+          "size": 3993201344,
+          "pointerSize": 135
+        }
+      },
+      {
+        "rfilename": "qwen2.5-7b-instruct-q4_k_m-00002-of-00002.gguf",
+        "blobId": "c550b63c2e50a9984b5535c5c21ccd168c0cb08f",
+        "size": 689872288,
+        "lfs": {
+          "sha256": "539cf93f78e887edea1c04e2d7d8cdaca9d01dae9c9025bcb8accbe29df3d72a",
+          "size": 689872288,
+          "pointerSize": 134
+        }
+      }
+    ],
+    "weights_downloaded": false,
+    "model_tested": false,
+    "total_model_bytes": 4683073632,
+    "estimated_ram_gib": [
+      12,
+      16
+    ],
+    "minimum_disk_budget_gib": 7,
+    "estimates_measured": false,
+    "runtime_timeout_note": "Benchmark latency before choosing a new bounded deadline; current 180s request budget may be inadequate.",
+    "current_downloader_compatible": false,
+    "compatibility_reason": "Two shards, first ~3.72 GiB, exceeds current 2 GiB budget; requires explicit bounded multishard SHA256 downloader and evaluation support, not disabling checks.",
+    "comparison_required": "Same frozen v2 inputs/schema/sampling; zero publications; compare semantic outcomes before replacing the 1.5B model."
+  },
+  "preservation": {
+    "analytical_articles_unchanged": 22,
+    "reviewed_observations_unchanged": 168,
+    "protected_files": 28,
+    "checkpoints": 3878,
+    "immutable_pdfs": 11
+  },
+  "paid_api_called": false,
+  "documents_sent_to_remote_llm": false,
+  "overall_conclusion": "Citation infrastructure and input boundaries improved; semantic quality did not improve. Both v2 responses rejected; no scientific updates published.",
+  "post_experiment_validator_fix": "Catalog title guard added for reviewed_body without H1; prompts unchanged, both original limitations rejections unchanged. Separate regression test; no repeat model calls.",
+  "technical_validation": {
+    "unittest_passed": 81,
+    "ruff_F_errors": 0,
+    "wiki_lint_errors": 0,
+    "scientific_evidence_references_checked": 162,
+    "encyclopedia_evidence_checked": 47,
+    "observations_checked": 168,
+    "local_document_links_checked": 40,
+    "protected_files_sha256_unchanged": 28,
+    "checkpoints_size_mtime_unchanged": 3878,
+    "immutable_pdfs_sha256_unchanged": 11,
+    "baseline_evaluation_report_unchanged": true,
+    "baseline_raw_model_responses_unchanged": 2
+  },
+  "environment": {
+    "cpu_model": "AMD EPYC 7763 64-Core Processor",
+    "resources_before": {
+      "memory_limit_bytes": 34359738368,
+      "memory_available_bytes": 32877993984,
+      "disk_free_bytes": 30802653184,
+      "cpu_affinity_count": 5,
+      "cpu_quota": "400000 100000"
+    },
+    "baseline_cpu_model": "AMD EPYC 7763 64-Core Processor",
+    "performance_comparison_limit": "Different prompt lengths/output lengths and potentially different host performance; duration is descriptive, not a controlled speed benchmark."
+  }
+}

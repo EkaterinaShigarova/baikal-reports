@@ -15,6 +15,74 @@ from baikal.updates import save_packet
 
 
 class EditorialAssessment(unittest.TestCase):
+    def v2_transport_fixture(self, invalid=False):
+        with tempfile.TemporaryDirectory() as d:
+            root = Path(d)
+            article, _, pid, _, _, result = self.fixture(root)
+            before = article.read_bytes()
+            result["claims"][0].pop("evidence")
+            result["claims"][0]["evidence_ids"] = ["S99" if invalid else "S1"]
+            result["unsupported_candidates"] = []
+            raw = json.dumps(
+                {
+                    "choices": [
+                        {
+                            "message": {"content": json.dumps(result)},
+                            "finish_reason": "stop",
+                        }
+                    ]
+                }
+            )
+            response = MagicMock()
+            response.__enter__.return_value = io.BytesIO(raw.encode())
+            opener = MagicMock()
+            opener.open.return_value = response
+            with (
+                patch.object(llm, "ROOT", root),
+                patch.dict(
+                    os.environ,
+                    {
+                        "BAIKAL_LLM_URL": "http://127.0.0.1:12345/v1/chat/completions",
+                        "BAIKAL_LLM_MODEL": "synthetic-fixture",
+                    },
+                ),
+                patch.object(llm.urllib.request, "build_opener", return_value=opener),
+            ):
+                if invalid:
+                    with self.assertRaisesRegex(
+                        ValueError, "unknown or missing evidence ID"
+                    ):
+                        llm.synthesize(
+                            "test-topic",
+                            proposal=pid,
+                            assessment=True,
+                            assessment_protocol="v2",
+                        )
+                else:
+                    outcome = llm.synthesize(
+                        "test-topic",
+                        proposal=pid,
+                        assessment=True,
+                        assessment_protocol="v2",
+                    )
+                    self.assertFalse(outcome["published"])
+            record = json.loads(
+                next((root / "data/wiki_updates/llm_runs").glob("*.json")).read_text()
+            )
+            self.assertEqual(record["raw_response"], raw)
+            self.assertEqual(
+                record["status"], "rejected" if invalid else "citation_checked"
+            )
+            wire = json.loads(record["request"]["messages"][1]["content"])
+            self.assertIn("source_fragments", wire)
+            self.assertEqual(article.read_bytes(), before)
+
+    def test_v2_transport_binds_citations_without_publication(self):
+        self.v2_transport_fixture()
+
+    def test_v2_transport_retains_rejected_raw_answer(self):
+        self.v2_transport_fixture(invalid=True)
+
     def fixture(self, root):
         topic = "test-topic"
         name = "syntheses/test.md"

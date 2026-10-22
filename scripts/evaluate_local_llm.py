@@ -139,6 +139,7 @@ def run(args, prepared):
                         proposal=case["proposal_id"],
                         assessment=True,
                         runtime=metadata,
+                        assessment_protocol=prepared.get("assessment_protocol", "v1"),
                     )
                     results.append(
                         {
@@ -201,12 +202,13 @@ if __name__ == "__main__":
     parser.add_argument("--model-file", type=Path)
     parser.add_argument("--model-sha256")
     parser.add_argument("--server-binary", type=Path)
+    parser.add_argument("--assessment-protocol", choices=["v1", "v2"], default="v1")
     parser.add_argument(
         "--output", type=Path, default=ROOT / "data/llm-evaluation/result.json"
     )
     args = parser.parse_args()
     try:
-        result = prepare_cases()
+        result = prepare_cases(assessment_protocol=args.assessment_protocol)
         result["resources"] = resources()
         if args.run:
             result = run(args, result)

@@ -41,6 +41,7 @@ def main(argv=None):
     q.add_argument("--save", action="store_true")
     s = sub.add_parser("synthesize")
     s.add_argument("topic")
+    s.add_argument("--assessment-protocol", choices=["v1", "v2"], default="v1")
     s.add_argument(
         "--proposal", help="ID of a local evidence proposal; draft stays unpublished"
     )
@@ -156,6 +157,7 @@ def main(argv=None):
                     allow_remote=args.allow_remote,
                     proposal=args.proposal,
                     assessment=args.assess_update,
+                    assessment_protocol=args.assessment_protocol,
                 )
             )
         elif args.command == "prepare-change":
