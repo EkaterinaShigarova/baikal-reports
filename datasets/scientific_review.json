@@ -5,7 +5,7 @@
   "institutional_approval": false,
   "status_labels": {
     "automatic_draft": "Автоматический черновик",
-    "ai_source_checked": "Проверен AI-агентом по первоисточнику",
+    "ai_source_checked": "Содержательная сверка с источниками (автоматизированная)",
     "needs_scientific_review": "Требуется научная рецензия",
     "specialist_verified": "Проверен специалистом"
   },
@@ -29,17 +29,72 @@
         "drive-1oYm8VhJ3_eRNdxbrGfLXhf6_vI6s6SJq": "6363b7b441d241e4718714b0062a2e011647e14b8219193f0a40a08270568e8e"
       },
       "coverage": "Существенные фактические/методические смысловые блоки, перечисленные в реестре; повторы не считаются повторно.",
-      "body_sha256": "5733f267e4c4abb33122e2c5faca2c47fc2a1f8b2d69550b2bc98be0a7197e71"
+      "body_sha256": "5733f267e4c4abb33122e2c5faca2c47fc2a1f8b2d69550b2bc98be0a7197e71",
+      "open_questions": [
+        "Согласовать сезоны, глубины, состав станций и методы; численность и биомасса не взаимозаменяемы."
+      ],
+      "finding_ids": [],
+      "review_method": "LLM-assisted semantic source check plus programmatic provenance validation; not specialist review",
+      "reviewed_evidence": [
+        {
+          "source_id": "drive-1ScikzOKs0VW7ZZS1XWKyoOfcHeYklUEP",
+          "sha256": "48bfd75a6c75a685d4f5ff2ea52cd1aba78d6d0a6bd45fbd311d5305a9b84c54",
+          "page": 41
+        },
+        {
+          "source_id": "drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0",
+          "sha256": "60ccb6065b32d959457faf9745023d763c9f6641ad7c9c8cdee7a88fea454139",
+          "page": 32
+        },
+        {
+          "source_id": "drive-1oYm8VhJ3_eRNdxbrGfLXhf6_vI6s6SJq",
+          "sha256": "6363b7b441d241e4718714b0062a2e011647e14b8219193f0a40a08270568e8e",
+          "page": 52
+        }
+      ]
     },
     "syntheses/protected-areas-management.md": {
-      "status": "needs_scientific_review",
-      "reviewer_type": null,
-      "reviewed_at": null,
-      "claim_ids": [],
+      "status": "ai_source_checked",
+      "reviewer_type": "ai_agent",
+      "reviewed_at": "2026-10-22",
+      "claim_ids": [
+        "protected-areas-management-01",
+        "protected-areas-management-02",
+        "protected-areas-management-03",
+        "protected-areas-management-04",
+        "protected-areas-management-05"
+      ],
       "scientific_review_required": true,
       "human_confirmation": null,
-      "source_revisions": {},
-      "coverage": "Проверка существенных утверждений в рамках этого спринта не выполнялась."
+      "source_revisions": {
+        "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab": "26dc3610938c5b8f91e85b4179ee1092f20aa03684135d0534b8ad2ab9629023",
+        "drive-1oLnz6N8ueMCEL8p2HnPDtT7dx1tAE8RB": "9f0ff38111fe9092e96e8bed6e602f92a5b1e63f6cd9bbcb856d76dc3b7fb391",
+        "drive-1C-SRfbklf00M5rsLajYO_2nFCdmCL1fi": "da48b7061dc74cdc300213ca2e4b6f0d124ac5aab5aa7f2da84d3c3451d07066"
+      },
+      "coverage": "Существенные смысловые блоки перечислены в реестре; методические ограничения отделены от наблюдаемых фактов. Научная рецензия требуется.",
+      "body_sha256": "1bacdaccba24779382cfdb732af8bf4e37bce2e62aab8403a08e509a2aaea3a6",
+      "open_questions": [
+        "Установить уникальность посетителей и неизменность учётных объектов; оценивать состояние природы отдельно от административной активности."
+      ],
+      "finding_ids": [],
+      "review_method": "LLM-assisted semantic source check plus programmatic provenance validation; not specialist review",
+      "reviewed_evidence": [
+        {
+          "source_id": "drive-1C-SRfbklf00M5rsLajYO_2nFCdmCL1fi",
+          "sha256": "da48b7061dc74cdc300213ca2e4b6f0d124ac5aab5aa7f2da84d3c3451d07066",
+          "page": 81
+        },
+        {
+          "source_id": "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
+          "sha256": "26dc3610938c5b8f91e85b4179ee1092f20aa03684135d0534b8ad2ab9629023",
+          "page": 57
+        },
+        {
+          "source_id": "drive-1oLnz6N8ueMCEL8p2HnPDtT7dx1tAE8RB",
+          "sha256": "9f0ff38111fe9092e96e8bed6e602f92a5b1e63f6cd9bbcb856d76dc3b7fb391",
+          "page": 75
+        }
+      ]
     },
     "syntheses/tourism-pressure.md": {
       "status": "ai_source_checked",
@@ -60,37 +115,154 @@
         "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos": "557959d2c8996b990487e9d2acd501ca4048f29e3c7a6fe27e49f8fc1c554fd8"
       },
       "coverage": "Существенные фактические/методические смысловые блоки, перечисленные в реестре; повторы не считаются повторно.",
-      "body_sha256": "d75b93f4fd07b8e35400011ddb36085c59cf326e9d0392e4f1fd47abe0f4d96c"
+      "body_sha256": "d75b93f4fd07b8e35400011ddb36085c59cf326e9d0392e4f1fd47abe0f4d96c",
+      "open_questions": [
+        "Проверить уникальность туристов, состав объектов, период учёта и реальные эффекты мер; прогнозы отделять от выполненных работ."
+      ],
+      "finding_ids": [],
+      "review_method": "LLM-assisted semantic source check plus programmatic provenance validation; not specialist review",
+      "reviewed_evidence": [
+        {
+          "source_id": "drive-1C-SRfbklf00M5rsLajYO_2nFCdmCL1fi",
+          "sha256": "da48b7061dc74cdc300213ca2e4b6f0d124ac5aab5aa7f2da84d3c3451d07066",
+          "page": 81
+        },
+        {
+          "source_id": "drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ",
+          "sha256": "c813f2671ebb235dd3291076f3c728bb78d821391024e2bce754849c79fa992a",
+          "page": 280
+        },
+        {
+          "source_id": "drive-1oYm8VhJ3_eRNdxbrGfLXhf6_vI6s6SJq",
+          "sha256": "6363b7b441d241e4718714b0062a2e011647e14b8219193f0a40a08270568e8e",
+          "page": 287
+        },
+        {
+          "source_id": "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos",
+          "sha256": "557959d2c8996b990487e9d2acd501ca4048f29e3c7a6fe27e49f8fc1c554fd8",
+          "page": 202
+        }
+      ]
     },
     "syntheses/waste-and-pollution.md": {
-      "status": "needs_scientific_review",
-      "reviewer_type": null,
-      "reviewed_at": null,
-      "claim_ids": [],
+      "status": "ai_source_checked",
+      "reviewer_type": "ai_agent",
+      "reviewed_at": "2026-10-22",
+      "claim_ids": [
+        "waste-and-pollution-01",
+        "waste-and-pollution-02",
+        "waste-and-pollution-03",
+        "waste-and-pollution-04"
+      ],
       "scientific_review_required": true,
       "human_confirmation": null,
-      "source_revisions": {},
-      "coverage": "Проверка существенных утверждений в рамках этого спринта не выполнялась."
+      "source_revisions": {
+        "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos": "557959d2c8996b990487e9d2acd501ca4048f29e3c7a6fe27e49f8fc1c554fd8",
+        "drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ": "c813f2671ebb235dd3291076f3c728bb78d821391024e2bce754849c79fa992a"
+      },
+      "coverage": "Существенные смысловые блоки перечислены в реестре; методические ограничения отделены от наблюдаемых фактов. Научная рецензия требуется.",
+      "body_sha256": "c5ee5642b22555c5e9ee97873ee211ef3af8530aaf65a8bef75c10cee1dcd61c",
+      "open_questions": [
+        "Сверить исходную форму отходов, границы и состав предприятий; не переносить статистику субъектов на акваторию."
+      ],
+      "finding_ids": [],
+      "review_method": "LLM-assisted semantic source check plus programmatic provenance validation; not specialist review",
+      "reviewed_evidence": [
+        {
+          "source_id": "drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ",
+          "sha256": "c813f2671ebb235dd3291076f3c728bb78d821391024e2bce754849c79fa992a",
+          "page": 252
+        },
+        {
+          "source_id": "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos",
+          "sha256": "557959d2c8996b990487e9d2acd501ca4048f29e3c7a6fe27e49f8fc1c554fd8",
+          "page": 327
+        }
+      ]
     },
     "syntheses/forest-fires.md": {
-      "status": "needs_scientific_review",
-      "reviewer_type": null,
-      "reviewed_at": null,
-      "claim_ids": [],
+      "status": "ai_source_checked",
+      "reviewer_type": "ai_agent",
+      "reviewed_at": "2026-10-22",
+      "claim_ids": [
+        "forest-fires-01",
+        "forest-fires-02",
+        "forest-fires-03",
+        "forest-fires-04"
+      ],
       "scientific_review_required": true,
       "human_confirmation": null,
-      "source_revisions": {},
-      "coverage": "Проверка существенных утверждений в рамках этого спринта не выполнялась."
+      "source_revisions": {
+        "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab": "26dc3610938c5b8f91e85b4179ee1092f20aa03684135d0534b8ad2ab9629023",
+        "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos": "557959d2c8996b990487e9d2acd501ca4048f29e3c7a6fe27e49f8fc1c554fd8",
+        "drive-1RWGLrOzFO32Jxrlv-B2n_PafSFoRVySn": "747fadeaf55107fbf9fbb5965696912195b4795436a9f300c009a4f5e5d9839a"
+      },
+      "coverage": "Существенные смысловые блоки перечислены в реестре; методические ограничения отделены от наблюдаемых фактов. Научная рецензия требуется.",
+      "body_sha256": "3edd5e8dff583c47e2af12a3d92756a288e8c97fa19ce5474267a5ea57641d1e",
+      "open_questions": [
+        "Собрать одинаковый территориальный ряд и отдельно учитывать пожар, пройденную площадь и выявленную гибель; детализация таблиц ещё не проверена."
+      ],
+      "finding_ids": [],
+      "review_method": "LLM-assisted semantic source check plus programmatic provenance validation; not specialist review",
+      "reviewed_evidence": [
+        {
+          "source_id": "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
+          "sha256": "26dc3610938c5b8f91e85b4179ee1092f20aa03684135d0534b8ad2ab9629023",
+          "page": 140
+        },
+        {
+          "source_id": "drive-1RWGLrOzFO32Jxrlv-B2n_PafSFoRVySn",
+          "sha256": "747fadeaf55107fbf9fbb5965696912195b4795436a9f300c009a4f5e5d9839a",
+          "page": 142
+        },
+        {
+          "source_id": "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos",
+          "sha256": "557959d2c8996b990487e9d2acd501ca4048f29e3c7a6fe27e49f8fc1c554fd8",
+          "page": 139
+        }
+      ]
     },
     "syntheses/groundwater-geological-monitoring.md": {
-      "status": "needs_scientific_review",
-      "reviewer_type": null,
-      "reviewed_at": null,
-      "claim_ids": [],
+      "status": "ai_source_checked",
+      "reviewer_type": "ai_agent",
+      "reviewed_at": "2026-10-22",
+      "claim_ids": [
+        "groundwater-geological-monitoring-01",
+        "groundwater-geological-monitoring-02",
+        "groundwater-geological-monitoring-03",
+        "groundwater-geological-monitoring-04"
+      ],
       "scientific_review_required": true,
       "human_confirmation": null,
-      "source_revisions": {},
-      "coverage": "Проверка существенных утверждений в рамках этого спринта не выполнялась."
+      "source_revisions": {
+        "drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0": "60ccb6065b32d959457faf9745023d763c9f6641ad7c9c8cdee7a88fea454139",
+        "drive-1ScikzOKs0VW7ZZS1XWKyoOfcHeYklUEP": "48bfd75a6c75a685d4f5ff2ea52cd1aba78d6d0a6bd45fbd311d5305a9b84c54",
+        "drive-1oYm8VhJ3_eRNdxbrGfLXhf6_vI6s6SJq": "6363b7b441d241e4718714b0062a2e011647e14b8219193f0a40a08270568e8e"
+      },
+      "coverage": "Существенные смысловые блоки перечислены в реестре; методические ограничения отделены от наблюдаемых фактов. Научная рецензия требуется.",
+      "body_sha256": "26f334d83582eda1192e2a1d780e3f770d7ae6831c1241328cdefe8b6a9cdd24",
+      "open_questions": [
+        "Получить координаты скважин, глубины фильтров, гидрогеологические комплексы и первичные журналы; сеть ограничена указанной территорией."
+      ],
+      "finding_ids": [],
+      "review_method": "LLM-assisted semantic source check plus programmatic provenance validation; not specialist review",
+      "reviewed_evidence": [
+        {
+          "source_id": "drive-1ScikzOKs0VW7ZZS1XWKyoOfcHeYklUEP",
+          "sha256": "48bfd75a6c75a685d4f5ff2ea52cd1aba78d6d0a6bd45fbd311d5305a9b84c54",
+          "page": 91
+        },
+        {
+          "source_id": "drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0",
+          "sha256": "60ccb6065b32d959457faf9745023d763c9f6641ad7c9c8cdee7a88fea454139",
+          "page": 106
+        },
+        {
+          "source_id": "drive-1oYm8VhJ3_eRNdxbrGfLXhf6_vI6s6SJq",
+          "sha256": "6363b7b441d241e4718714b0062a2e011647e14b8219193f0a40a08270568e8e",
+          "page": 101
+        }
+      ]
     },
     "syntheses/spirogyra-observations.md": {
       "status": "ai_source_checked",
@@ -112,37 +284,215 @@
         "drive-1jl98YhWpGzbTkJXflFXv0fHB7yKqPRJr": "80935438545af9b1fd55811ea6b4345822b62301ba472e71e76f1a67f7b4967d"
       },
       "coverage": "Существенные фактические/методические смысловые блоки, перечисленные в реестре; повторы не считаются повторно.",
-      "body_sha256": "41fec1849fdceec139be57579a0a9174a7fe6cc432d92841809b6716f93f7f2d"
+      "body_sha256": "41fec1849fdceec139be57579a0a9174a7fe6cc432d92841809b6716f93f7f2d",
+      "open_questions": [
+        "Уточнить систематические группы и стандартизацию сетных, грунтовых и обрастательных проб; обнаружение нитей не измеряет площадь зарастания."
+      ],
+      "finding_ids": [
+        "F02"
+      ],
+      "review_method": "LLM-assisted semantic source check plus programmatic provenance validation; not specialist review",
+      "reviewed_evidence": [
+        {
+          "source_id": "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
+          "sha256": "26dc3610938c5b8f91e85b4179ee1092f20aa03684135d0534b8ad2ab9629023",
+          "page": 40
+        },
+        {
+          "source_id": "drive-1jl98YhWpGzbTkJXflFXv0fHB7yKqPRJr",
+          "sha256": "80935438545af9b1fd55811ea6b4345822b62301ba472e71e76f1a67f7b4967d",
+          "page": 39
+        },
+        {
+          "source_id": "drive-1oLnz6N8ueMCEL8p2HnPDtT7dx1tAE8RB",
+          "sha256": "9f0ff38111fe9092e96e8bed6e602f92a5b1e63f6cd9bbcb856d76dc3b7fb391",
+          "page": 55
+        }
+      ]
     },
     "syntheses/selenga-sediments.md": {
-      "status": "needs_scientific_review",
-      "reviewer_type": null,
-      "reviewed_at": null,
-      "claim_ids": [],
+      "status": "ai_source_checked",
+      "reviewer_type": "ai_agent",
+      "reviewed_at": "2026-10-22",
+      "claim_ids": [
+        "selenga-sediments-01",
+        "selenga-sediments-02",
+        "selenga-sediments-03",
+        "selenga-sediments-04",
+        "selenga-sediments-05",
+        "selenga-sediments-06"
+      ],
       "scientific_review_required": true,
       "human_confirmation": null,
-      "source_revisions": {},
-      "coverage": "Проверка существенных утверждений в рамках этого спринта не выполнялась."
+      "source_revisions": {
+        "drive-1RWGLrOzFO32Jxrlv-B2n_PafSFoRVySn": "747fadeaf55107fbf9fbb5965696912195b4795436a9f300c009a4f5e5d9839a",
+        "drive-1oYm8VhJ3_eRNdxbrGfLXhf6_vI6s6SJq": "6363b7b441d241e4718714b0062a2e011647e14b8219193f0a40a08270568e8e",
+        "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab": "26dc3610938c5b8f91e85b4179ee1092f20aa03684135d0534b8ad2ab9629023"
+      },
+      "coverage": "Существенные смысловые блоки перечислены в реестре; методические ограничения отделены от наблюдаемых фактов. Научная рецензия требуется.",
+      "body_sha256": "68044ec73c4d559a37444b137a1e18ecd7972daaf545049878c4b8f2ac85ee25",
+      "open_questions": [
+        "Уточнить порядок максимумов БП и канцерогенных аренов в прозе/таблице 2015; сопоставить станции и сухую/влажную основу."
+      ],
+      "finding_ids": [],
+      "review_method": "LLM-assisted semantic source check plus programmatic provenance validation; not specialist review",
+      "reviewed_evidence": [
+        {
+          "source_id": "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
+          "sha256": "26dc3610938c5b8f91e85b4179ee1092f20aa03684135d0534b8ad2ab9629023",
+          "page": 26
+        },
+        {
+          "source_id": "drive-1RWGLrOzFO32Jxrlv-B2n_PafSFoRVySn",
+          "sha256": "747fadeaf55107fbf9fbb5965696912195b4795436a9f300c009a4f5e5d9839a",
+          "page": 31
+        },
+        {
+          "source_id": "drive-1RWGLrOzFO32Jxrlv-B2n_PafSFoRVySn",
+          "sha256": "747fadeaf55107fbf9fbb5965696912195b4795436a9f300c009a4f5e5d9839a",
+          "page": 32
+        },
+        {
+          "source_id": "drive-1oYm8VhJ3_eRNdxbrGfLXhf6_vI6s6SJq",
+          "sha256": "6363b7b441d241e4718714b0062a2e011647e14b8219193f0a40a08270568e8e",
+          "page": 40
+        }
+      ]
     },
     "syntheses/environmental-problems.md": {
-      "status": "needs_scientific_review",
-      "reviewer_type": null,
-      "reviewed_at": null,
-      "claim_ids": [],
+      "status": "ai_source_checked",
+      "reviewer_type": "ai_agent",
+      "reviewed_at": "2026-10-22",
+      "claim_ids": [
+        "environmental-problems-01",
+        "environmental-problems-02",
+        "environmental-problems-03",
+        "environmental-problems-04",
+        "environmental-problems-05",
+        "environmental-problems-06"
+      ],
       "scientific_review_required": true,
       "human_confirmation": null,
-      "source_revisions": {},
-      "coverage": "Проверка существенных утверждений в рамках этого спринта не выполнялась."
+      "source_revisions": {
+        "drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ": "c813f2671ebb235dd3291076f3c728bb78d821391024e2bce754849c79fa992a",
+        "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos": "557959d2c8996b990487e9d2acd501ca4048f29e3c7a6fe27e49f8fc1c554fd8",
+        "official-b4e3fcfe0e41e26ea03b": "f42cd72201a7bb8652d10a571c5f472e9f9bd738d78939d676b13d0ee6146920"
+      },
+      "coverage": "Существенные смысловые блоки перечислены в реестре; методические ограничения отделены от наблюдаемых фактов. Научная рецензия требуется.",
+      "body_sha256": "4cf443d2d5d5cc503d71fe3d731859b0cffc761781b9b327fb7be93386e74725",
+      "open_questions": [
+        "Не строить единый индекс из несопоставимых показателей; проверить официальные экземпляры зеркал и непокрытые годы."
+      ],
+      "finding_ids": [
+        "F05"
+      ],
+      "review_method": "LLM-assisted semantic source check plus programmatic provenance validation; not specialist review",
+      "reviewed_evidence": [
+        {
+          "source_id": "drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ",
+          "sha256": "c813f2671ebb235dd3291076f3c728bb78d821391024e2bce754849c79fa992a",
+          "page": 17
+        },
+        {
+          "source_id": "drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ",
+          "sha256": "c813f2671ebb235dd3291076f3c728bb78d821391024e2bce754849c79fa992a",
+          "page": 53
+        },
+        {
+          "source_id": "drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ",
+          "sha256": "c813f2671ebb235dd3291076f3c728bb78d821391024e2bce754849c79fa992a",
+          "page": 54
+        },
+        {
+          "source_id": "drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ",
+          "sha256": "c813f2671ebb235dd3291076f3c728bb78d821391024e2bce754849c79fa992a",
+          "page": 168
+        },
+        {
+          "source_id": "drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ",
+          "sha256": "c813f2671ebb235dd3291076f3c728bb78d821391024e2bce754849c79fa992a",
+          "page": 252
+        },
+        {
+          "source_id": "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos",
+          "sha256": "557959d2c8996b990487e9d2acd501ca4048f29e3c7a6fe27e49f8fc1c554fd8",
+          "page": 18
+        },
+        {
+          "source_id": "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos",
+          "sha256": "557959d2c8996b990487e9d2acd501ca4048f29e3c7a6fe27e49f8fc1c554fd8",
+          "page": 69
+        },
+        {
+          "source_id": "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos",
+          "sha256": "557959d2c8996b990487e9d2acd501ca4048f29e3c7a6fe27e49f8fc1c554fd8",
+          "page": 166
+        },
+        {
+          "source_id": "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos",
+          "sha256": "557959d2c8996b990487e9d2acd501ca4048f29e3c7a6fe27e49f8fc1c554fd8",
+          "page": 327
+        },
+        {
+          "source_id": "official-b4e3fcfe0e41e26ea03b",
+          "sha256": "f42cd72201a7bb8652d10a571c5f472e9f9bd738d78939d676b13d0ee6146920",
+          "page": 1
+        },
+        {
+          "source_id": "official-b4e3fcfe0e41e26ea03b",
+          "sha256": "f42cd72201a7bb8652d10a571c5f472e9f9bd738d78939d676b13d0ee6146920",
+          "page": 156
+        }
+      ]
     },
     "syntheses/river-inputs-2025.md": {
-      "status": "needs_scientific_review",
-      "reviewer_type": null,
-      "reviewed_at": null,
-      "claim_ids": [],
+      "status": "ai_source_checked",
+      "reviewer_type": "ai_agent",
+      "reviewed_at": "2026-10-22",
+      "claim_ids": [
+        "river-inputs-2025-01",
+        "river-inputs-2025-02",
+        "river-inputs-2025-03",
+        "river-inputs-2025-04",
+        "river-inputs-2025-05",
+        "river-inputs-2025-06"
+      ],
       "scientific_review_required": true,
       "human_confirmation": null,
-      "source_revisions": {},
-      "coverage": "Проверка существенных утверждений в рамках этого спринта не выполнялась."
+      "source_revisions": {
+        "official-b4e3fcfe0e41e26ea03b": "f42cd72201a7bb8652d10a571c5f472e9f9bd738d78939d676b13d0ee6146920"
+      },
+      "coverage": "Существенные смысловые блоки перечислены в реестре; методические ограничения отделены от наблюдаемых фактов. Научная рецензия требуется.",
+      "body_sha256": "e8bd05f5ea9c2b500dfe417879bc6780912fcfd4d28c20e5ba175ce5a20831b8",
+      "open_questions": [
+        "Проверить первичные методы интегрирования годового выноса и отбора проб; межтабличное и межтерриториальное сравнение не разрешено автоматически."
+      ],
+      "finding_ids": [
+        "F06"
+      ],
+      "review_method": "LLM-assisted semantic source check plus programmatic provenance validation; not specialist review",
+      "reviewed_evidence": [
+        {
+          "source_id": "official-b4e3fcfe0e41e26ea03b",
+          "sha256": "f42cd72201a7bb8652d10a571c5f472e9f9bd738d78939d676b13d0ee6146920",
+          "page": 1
+        },
+        {
+          "source_id": "official-b4e3fcfe0e41e26ea03b",
+          "sha256": "f42cd72201a7bb8652d10a571c5f472e9f9bd738d78939d676b13d0ee6146920",
+          "page": 156
+        },
+        {
+          "source_id": "official-b4e3fcfe0e41e26ea03b",
+          "sha256": "f42cd72201a7bb8652d10a571c5f472e9f9bd738d78939d676b13d0ee6146920",
+          "page": 165
+        },
+        {
+          "source_id": "official-b4e3fcfe0e41e26ea03b",
+          "sha256": "f42cd72201a7bb8652d10a571c5f472e9f9bd738d78939d676b13d0ee6146920",
+          "page": 170
+        }
+      ]
     },
     "syntheses/emissions-and-comparability.md": {
       "status": "ai_source_checked",
@@ -160,27 +510,110 @@
         "drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ": "c813f2671ebb235dd3291076f3c728bb78d821391024e2bce754849c79fa992a"
       },
       "coverage": "Существенные фактические/методические смысловые блоки, перечисленные в реестре; повторы не считаются повторно.",
-      "body_sha256": "57a8b1ad5407e9e8c6d9540505ac8a8abacd999e33d4493388d2f4d925b5fe3f"
+      "body_sha256": "3fdf1d0002b4d1f7178b931e4f4212f05313d68f05a95683fdf9afd502273135",
+      "open_questions": [
+        "Независимо установить преемственность источников разных компаний; не объединять ряды по одному названию."
+      ],
+      "finding_ids": [],
+      "review_method": "LLM-assisted semantic source check plus programmatic provenance validation; not specialist review",
+      "reviewed_evidence": [
+        {
+          "source_id": "drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ",
+          "sha256": "c813f2671ebb235dd3291076f3c728bb78d821391024e2bce754849c79fa992a",
+          "page": 19
+        },
+        {
+          "source_id": "drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ",
+          "sha256": "c813f2671ebb235dd3291076f3c728bb78d821391024e2bce754849c79fa992a",
+          "page": 168
+        }
+      ]
     },
     "syntheses/epishura-benthos.md": {
-      "status": "needs_scientific_review",
-      "reviewer_type": null,
-      "reviewed_at": null,
-      "claim_ids": [],
+      "status": "ai_source_checked",
+      "reviewer_type": "ai_agent",
+      "reviewed_at": "2026-10-22",
+      "claim_ids": [
+        "epishura-benthos-01",
+        "epishura-benthos-02",
+        "epishura-benthos-03",
+        "epishura-benthos-04",
+        "epishura-benthos-05"
+      ],
       "scientific_review_required": true,
       "human_confirmation": null,
-      "source_revisions": {},
-      "coverage": "Проверка существенных утверждений в рамках этого спринта не выполнялась."
+      "source_revisions": {
+        "drive-1C-SRfbklf00M5rsLajYO_2nFCdmCL1fi": "da48b7061dc74cdc300213ca2e4b6f0d124ac5aab5aa7f2da84d3c3451d07066",
+        "drive-1jl98YhWpGzbTkJXflFXv0fHB7yKqPRJr": "80935438545af9b1fd55811ea6b4345822b62301ba472e71e76f1a67f7b4967d",
+        "drive-1ScikzOKs0VW7ZZS1XWKyoOfcHeYklUEP": "48bfd75a6c75a685d4f5ff2ea52cd1aba78d6d0a6bd45fbd311d5305a9b84c54"
+      },
+      "coverage": "Существенные смысловые блоки перечислены в реестре; методические ограничения отделены от наблюдаемых фактов. Научная рецензия требуется.",
+      "body_sha256": "6b4e3cf593c69c779ba3fd1342e34a5becd4138ec23fadba797187ef8b38b4c3",
+      "open_questions": [
+        "Разделить сезонную/пространственную и антропогенную изменчивость при совместном анализе биологии и химии."
+      ],
+      "finding_ids": [
+        "F07"
+      ],
+      "review_method": "LLM-assisted semantic source check plus programmatic provenance validation; not specialist review",
+      "reviewed_evidence": [
+        {
+          "source_id": "drive-1C-SRfbklf00M5rsLajYO_2nFCdmCL1fi",
+          "sha256": "da48b7061dc74cdc300213ca2e4b6f0d124ac5aab5aa7f2da84d3c3451d07066",
+          "page": 49
+        },
+        {
+          "source_id": "drive-1ScikzOKs0VW7ZZS1XWKyoOfcHeYklUEP",
+          "sha256": "48bfd75a6c75a685d4f5ff2ea52cd1aba78d6d0a6bd45fbd311d5305a9b84c54",
+          "page": 42
+        },
+        {
+          "source_id": "drive-1jl98YhWpGzbTkJXflFXv0fHB7yKqPRJr",
+          "sha256": "80935438545af9b1fd55811ea6b4345822b62301ba472e71e76f1a67f7b4967d",
+          "page": 32
+        }
+      ]
     },
     "syntheses/fish-and-biodiversity.md": {
-      "status": "needs_scientific_review",
-      "reviewer_type": null,
-      "reviewed_at": null,
-      "claim_ids": [],
+      "status": "ai_source_checked",
+      "reviewer_type": "ai_agent",
+      "reviewed_at": "2026-10-22",
+      "claim_ids": [
+        "fish-and-biodiversity-01",
+        "fish-and-biodiversity-02",
+        "fish-and-biodiversity-03",
+        "fish-and-biodiversity-04"
+      ],
       "scientific_review_required": true,
       "human_confirmation": null,
-      "source_revisions": {},
-      "coverage": "Проверка существенных утверждений в рамках этого спринта не выполнялась."
+      "source_revisions": {
+        "drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ": "c813f2671ebb235dd3291076f3c728bb78d821391024e2bce754849c79fa992a",
+        "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos": "557959d2c8996b990487e9d2acd501ca4048f29e3c7a6fe27e49f8fc1c554fd8"
+      },
+      "coverage": "Существенные смысловые блоки перечислены в реестре; методические ограничения отделены от наблюдаемых фактов. Научная рецензия требуется.",
+      "body_sha256": "f894c2c4b4ebe129e1b60ab883dd60f3c5ef7ead85b53eb047b00eb085d516f2",
+      "open_questions": [
+        "Восстановить состав среднемноголетней нормы 4,3 млн; диапазон биомассы не превращать в отдельные годовые точки."
+      ],
+      "finding_ids": [],
+      "review_method": "LLM-assisted semantic source check plus programmatic provenance validation; not specialist review",
+      "reviewed_evidence": [
+        {
+          "source_id": "drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ",
+          "sha256": "c813f2671ebb235dd3291076f3c728bb78d821391024e2bce754849c79fa992a",
+          "page": 47
+        },
+        {
+          "source_id": "drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ",
+          "sha256": "c813f2671ebb235dd3291076f3c728bb78d821391024e2bce754849c79fa992a",
+          "page": 54
+        },
+        {
+          "source_id": "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos",
+          "sha256": "557959d2c8996b990487e9d2acd501ca4048f29e3c7a6fe27e49f8fc1c554fd8",
+          "page": 63
+        }
+      ]
     },
     "syntheses/water-quality-evidence.md": {
       "status": "ai_source_checked",
@@ -203,7 +636,42 @@
         "official-b4e3fcfe0e41e26ea03b": "f42cd72201a7bb8652d10a571c5f472e9f9bd738d78939d676b13d0ee6146920"
       },
       "coverage": "Существенные фактические/методические смысловые блоки, перечисленные в реестре; повторы не считаются повторно.",
-      "body_sha256": "6bf2c6d457a4b286e43ad6398623885fb4d1dcb65ca414f88745fd7595dd6268"
+      "body_sha256": "6bf2c6d457a4b286e43ad6398623885fb4d1dcb65ca414f88745fd7595dd6268",
+      "open_questions": [
+        "Получить журналы проб и правила агрегации: фенолы 70–5 и 7–7 за 2024 пока не согласованы."
+      ],
+      "finding_ids": [
+        "F01",
+        "F03"
+      ],
+      "review_method": "LLM-assisted semantic source check plus programmatic provenance validation; not specialist review",
+      "reviewed_evidence": [
+        {
+          "source_id": "drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ",
+          "sha256": "c813f2671ebb235dd3291076f3c728bb78d821391024e2bce754849c79fa992a",
+          "page": 17
+        },
+        {
+          "source_id": "drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ",
+          "sha256": "c813f2671ebb235dd3291076f3c728bb78d821391024e2bce754849c79fa992a",
+          "page": 19
+        },
+        {
+          "source_id": "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos",
+          "sha256": "557959d2c8996b990487e9d2acd501ca4048f29e3c7a6fe27e49f8fc1c554fd8",
+          "page": 18
+        },
+        {
+          "source_id": "official-b4e3fcfe0e41e26ea03b",
+          "sha256": "f42cd72201a7bb8652d10a571c5f472e9f9bd738d78939d676b13d0ee6146920",
+          "page": 158
+        },
+        {
+          "source_id": "official-b4e3fcfe0e41e26ea03b",
+          "sha256": "f42cd72201a7bb8652d10a571c5f472e9f9bd738d78939d676b13d0ee6146920",
+          "page": 159
+        }
+      ]
     },
     "syntheses/baikal-seal.md": {
       "status": "ai_source_checked",
@@ -224,7 +692,29 @@
         "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos": "557959d2c8996b990487e9d2acd501ca4048f29e3c7a6fe27e49f8fc1c554fd8"
       },
       "coverage": "Существенные фактические/методические смысловые блоки, перечисленные в реестре; повторы не считаются повторно.",
-      "body_sha256": "62c8cac10645658bddcf74cec3ce3f4879a0739bda87e05d5f766b881138831d"
+      "body_sha256": "62c8cac10645658bddcf74cec3ce3f4879a0739bda87e05d5f766b881138831d",
+      "open_questions": [
+        "Согласовать экстраполяцию, ошибки и пересмотры учётов 2018/2024; сопоставимость пока не подтверждена."
+      ],
+      "finding_ids": [],
+      "review_method": "LLM-assisted semantic source check plus programmatic provenance validation; not specialist review",
+      "reviewed_evidence": [
+        {
+          "source_id": "drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ",
+          "sha256": "c813f2671ebb235dd3291076f3c728bb78d821391024e2bce754849c79fa992a",
+          "page": 53
+        },
+        {
+          "source_id": "drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ",
+          "sha256": "c813f2671ebb235dd3291076f3c728bb78d821391024e2bce754849c79fa992a",
+          "page": 54
+        },
+        {
+          "source_id": "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos",
+          "sha256": "557959d2c8996b990487e9d2acd501ca4048f29e3c7a6fe27e49f8fc1c554fd8",
+          "page": 69
+        }
+      ]
     },
     "syntheses/air-pollution.md": {
       "status": "ai_source_checked",
@@ -244,17 +734,66 @@
         "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos": "557959d2c8996b990487e9d2acd501ca4048f29e3c7a6fe27e49f8fc1c554fd8"
       },
       "coverage": "Существенные фактические/методические смысловые блоки, перечисленные в реестре; повторы не считаются повторно.",
-      "body_sha256": "8ce05cb712c9e0859c6bd86a4191d35448f90397f352bc91f6d4280d7adbd858"
+      "body_sha256": "8ce05cb712c9e0859c6bd86a4191d35448f90397f352bc91f6d4280d7adbd858",
+      "open_questions": [
+        "Проверить состав источников предприятий, методы учёта и связь выбросов с измеренными концентрациями."
+      ],
+      "finding_ids": [],
+      "review_method": "LLM-assisted semantic source check plus programmatic provenance validation; not specialist review",
+      "reviewed_evidence": [
+        {
+          "source_id": "drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ",
+          "sha256": "c813f2671ebb235dd3291076f3c728bb78d821391024e2bce754849c79fa992a",
+          "page": 168
+        },
+        {
+          "source_id": "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos",
+          "sha256": "557959d2c8996b990487e9d2acd501ca4048f29e3c7a6fe27e49f8fc1c554fd8",
+          "page": 166
+        }
+      ]
     },
     "syntheses/baikal-sturgeon.md": {
-      "status": "needs_scientific_review",
-      "reviewer_type": null,
-      "reviewed_at": null,
-      "claim_ids": [],
+      "status": "ai_source_checked",
+      "reviewer_type": "ai_agent",
+      "reviewed_at": "2026-10-22",
+      "claim_ids": [
+        "baikal-sturgeon-01",
+        "baikal-sturgeon-02",
+        "baikal-sturgeon-03",
+        "baikal-sturgeon-04"
+      ],
       "scientific_review_required": true,
       "human_confirmation": null,
-      "source_revisions": {},
-      "coverage": "Проверка существенных утверждений в рамках этого спринта не выполнялась."
+      "source_revisions": {
+        "drive-1ScikzOKs0VW7ZZS1XWKyoOfcHeYklUEP": "48bfd75a6c75a685d4f5ff2ea52cd1aba78d6d0a6bd45fbd311d5305a9b84c54",
+        "drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0": "60ccb6065b32d959457faf9745023d763c9f6641ad7c9c8cdee7a88fea454139",
+        "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos": "557959d2c8996b990487e9d2acd501ca4048f29e3c7a6fe27e49f8fc1c554fd8"
+      },
+      "coverage": "Существенные смысловые блоки перечислены в реестре; методические ограничения отделены от наблюдаемых фактов. Научная рецензия требуется.",
+      "body_sha256": "54638cdb75808eb437eda718e3c242a94b2068618e491be9f01637a3b5d0ecee",
+      "open_questions": [
+        "Проследить выживание выпущенной молоди и возврат производителей; реконструкция и выпуск не удостоверяют восстановление популяции."
+      ],
+      "finding_ids": [],
+      "review_method": "LLM-assisted semantic source check plus programmatic provenance validation; not specialist review",
+      "reviewed_evidence": [
+        {
+          "source_id": "drive-1ScikzOKs0VW7ZZS1XWKyoOfcHeYklUEP",
+          "sha256": "48bfd75a6c75a685d4f5ff2ea52cd1aba78d6d0a6bd45fbd311d5305a9b84c54",
+          "page": 51
+        },
+        {
+          "source_id": "drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0",
+          "sha256": "60ccb6065b32d959457faf9745023d763c9f6641ad7c9c8cdee7a88fea454139",
+          "page": 222
+        },
+        {
+          "source_id": "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos",
+          "sha256": "557959d2c8996b990487e9d2acd501ca4048f29e3c7a6fe27e49f8fc1c554fd8",
+          "page": 67
+        }
+      ]
     },
     "syntheses/baikal-omul.md": {
       "status": "ai_source_checked",
@@ -274,7 +813,34 @@
         "drive-1C-SRfbklf00M5rsLajYO_2nFCdmCL1fi": "da48b7061dc74cdc300213ca2e4b6f0d124ac5aab5aa7f2da84d3c3451d07066"
       },
       "coverage": "Существенные фактические/методические смысловые блоки, перечисленные в реестре; повторы не считаются повторно.",
-      "body_sha256": "41a4d1e3f1f703272337c68cc64887ef56a975a142405e47f179610e96726693"
+      "body_sha256": "41a4d1e3f1f703272337c68cc64887ef56a975a142405e47f179610e96726693",
+      "open_questions": [
+        "Установить длительность базовых многолетних рядов и сопоставимость нерестовых учётов."
+      ],
+      "finding_ids": [],
+      "review_method": "LLM-assisted semantic source check plus programmatic provenance validation; not specialist review",
+      "reviewed_evidence": [
+        {
+          "source_id": "drive-1C-SRfbklf00M5rsLajYO_2nFCdmCL1fi",
+          "sha256": "da48b7061dc74cdc300213ca2e4b6f0d124ac5aab5aa7f2da84d3c3451d07066",
+          "page": 64
+        },
+        {
+          "source_id": "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
+          "sha256": "26dc3610938c5b8f91e85b4179ee1092f20aa03684135d0534b8ad2ab9629023",
+          "page": 42
+        },
+        {
+          "source_id": "drive-1RWGLrOzFO32Jxrlv-B2n_PafSFoRVySn",
+          "sha256": "747fadeaf55107fbf9fbb5965696912195b4795436a9f300c009a4f5e5d9839a",
+          "page": 49
+        },
+        {
+          "source_id": "drive-1RWGLrOzFO32Jxrlv-B2n_PafSFoRVySn",
+          "sha256": "747fadeaf55107fbf9fbb5965696912195b4795436a9f300c009a4f5e5d9839a",
+          "page": 50
+        }
+      ]
     },
     "syntheses/bcbk-legacy.md": {
       "status": "ai_source_checked",
@@ -296,7 +862,39 @@
         "drive-1C-SRfbklf00M5rsLajYO_2nFCdmCL1fi": "da48b7061dc74cdc300213ca2e4b6f0d124ac5aab5aa7f2da84d3c3451d07066"
       },
       "coverage": "Существенные фактические/методические смысловые блоки, перечисленные в реестре; повторы не считаются повторно.",
-      "body_sha256": "19eddf4539331370b44313c55887dcfe97beed3c9885dd7ac4b4190fa73700dc"
+      "body_sha256": "19eddf4539331370b44313c55887dcfe97beed3c9885dd7ac4b4190fa73700dc",
+      "open_questions": [
+        "Восстановить локальные журналы мониторинга, баланс переноса и подтверждение фактически выполненной рекультивации."
+      ],
+      "finding_ids": [],
+      "review_method": "LLM-assisted semantic source check plus programmatic provenance validation; not specialist review",
+      "reviewed_evidence": [
+        {
+          "source_id": "drive-1C-SRfbklf00M5rsLajYO_2nFCdmCL1fi",
+          "sha256": "da48b7061dc74cdc300213ca2e4b6f0d124ac5aab5aa7f2da84d3c3451d07066",
+          "page": 353
+        },
+        {
+          "source_id": "drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0",
+          "sha256": "60ccb6065b32d959457faf9745023d763c9f6641ad7c9c8cdee7a88fea454139",
+          "page": 170
+        },
+        {
+          "source_id": "drive-1jl98YhWpGzbTkJXflFXv0fHB7yKqPRJr",
+          "sha256": "80935438545af9b1fd55811ea6b4345822b62301ba472e71e76f1a67f7b4967d",
+          "page": 95
+        },
+        {
+          "source_id": "drive-1oLnz6N8ueMCEL8p2HnPDtT7dx1tAE8RB",
+          "sha256": "9f0ff38111fe9092e96e8bed6e602f92a5b1e63f6cd9bbcb856d76dc3b7fb391",
+          "page": 249
+        },
+        {
+          "source_id": "drive-1oLnz6N8ueMCEL8p2HnPDtT7dx1tAE8RB",
+          "sha256": "9f0ff38111fe9092e96e8bed6e602f92a5b1e63f6cd9bbcb856d76dc3b7fb391",
+          "page": 250
+        }
+      ]
     },
     "syntheses/north-baikal-water.md": {
       "status": "ai_source_checked",
@@ -316,7 +914,29 @@
         "official-b4e3fcfe0e41e26ea03b": "f42cd72201a7bb8652d10a571c5f472e9f9bd738d78939d676b13d0ee6146920"
       },
       "coverage": "Существенные фактические/методические смысловые блоки, перечисленные в реестре; повторы не считаются повторно.",
-      "body_sha256": "cbaf04973fc5d860f201ea4c3e66c12bd20c11285dac85f5b685d1e296d5e899"
+      "body_sha256": "cbaf04973fc5d860f201ea4c3e66c12bd20c11285dac85f5b685d1e296d5e899",
+      "open_questions": [
+        "Уточнить смысл фоновой статистики и одинаковых 0,124 мг/л для нитратов/хлоридов."
+      ],
+      "finding_ids": [],
+      "review_method": "LLM-assisted semantic source check plus programmatic provenance validation; not specialist review",
+      "reviewed_evidence": [
+        {
+          "source_id": "drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0",
+          "sha256": "60ccb6065b32d959457faf9745023d763c9f6641ad7c9c8cdee7a88fea454139",
+          "page": 19
+        },
+        {
+          "source_id": "drive-1oLnz6N8ueMCEL8p2HnPDtT7dx1tAE8RB",
+          "sha256": "9f0ff38111fe9092e96e8bed6e602f92a5b1e63f6cd9bbcb856d76dc3b7fb391",
+          "page": 36
+        },
+        {
+          "source_id": "official-b4e3fcfe0e41e26ea03b",
+          "sha256": "f42cd72201a7bb8652d10a571c5f472e9f9bd738d78939d676b13d0ee6146920",
+          "page": 161
+        }
+      ]
     },
     "syntheses/water-level-regulation.md": {
       "status": "ai_source_checked",
@@ -337,7 +957,29 @@
         "drive-1jl98YhWpGzbTkJXflFXv0fHB7yKqPRJr": "80935438545af9b1fd55811ea6b4345822b62301ba472e71e76f1a67f7b4967d"
       },
       "coverage": "Существенные фактические/методические смысловые блоки, перечисленные в реестре; повторы не считаются повторно.",
-      "body_sha256": "951628fbd73e799ef0e74a5035a1db669b3765eef1008937a0ae311af85d68a2"
+      "body_sha256": "951628fbd73e799ef0e74a5035a1db669b3765eef1008937a0ae311af85d68a2",
+      "open_questions": [
+        "Запросить первичный уровенный ряд и уточнение нормы: напечатанные 0,5 м расходятся с арифметическими 0,05 м."
+      ],
+      "finding_ids": [],
+      "review_method": "LLM-assisted semantic source check plus programmatic provenance validation; not specialist review",
+      "reviewed_evidence": [
+        {
+          "source_id": "drive-1ScikzOKs0VW7ZZS1XWKyoOfcHeYklUEP",
+          "sha256": "48bfd75a6c75a685d4f5ff2ea52cd1aba78d6d0a6bd45fbd311d5305a9b84c54",
+          "page": 13
+        },
+        {
+          "source_id": "drive-1jl98YhWpGzbTkJXflFXv0fHB7yKqPRJr",
+          "sha256": "80935438545af9b1fd55811ea6b4345822b62301ba472e71e76f1a67f7b4967d",
+          "page": 12
+        },
+        {
+          "source_id": "drive-1oYm8VhJ3_eRNdxbrGfLXhf6_vI6s6SJq",
+          "sha256": "6363b7b441d241e4718714b0062a2e011647e14b8219193f0a40a08270568e8e",
+          "page": 15
+        }
+      ]
     },
     "syntheses/persistent-organic-pollutants.md": {
       "status": "ai_source_checked",
@@ -357,7 +999,29 @@
         "official-b4e3fcfe0e41e26ea03b": "f42cd72201a7bb8652d10a571c5f472e9f9bd738d78939d676b13d0ee6146920"
       },
       "coverage": "Существенные фактические/методические смысловые блоки, перечисленные в реестре; повторы не считаются повторно.",
-      "body_sha256": "a8d5d3a19f3cbcd3535b01de3378ea256dce532c26ef0cd6271406b3298c7e0c"
+      "body_sha256": "a8d5d3a19f3cbcd3535b01de3378ea256dce532c26ef0cd6271406b3298c7e0c",
+      "open_questions": [
+        "Проверить пределы обнаружения, конгенерный состав и различия сред/горизонтов перед сравнением СОЗ."
+      ],
+      "finding_ids": [],
+      "review_method": "LLM-assisted semantic source check plus programmatic provenance validation; not specialist review",
+      "reviewed_evidence": [
+        {
+          "source_id": "drive-1RWGLrOzFO32Jxrlv-B2n_PafSFoRVySn",
+          "sha256": "747fadeaf55107fbf9fbb5965696912195b4795436a9f300c009a4f5e5d9839a",
+          "page": 287
+        },
+        {
+          "source_id": "drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0",
+          "sha256": "60ccb6065b32d959457faf9745023d763c9f6641ad7c9c8cdee7a88fea454139",
+          "page": 302
+        },
+        {
+          "source_id": "official-b4e3fcfe0e41e26ea03b",
+          "sha256": "f42cd72201a7bb8652d10a571c5f472e9f9bd738d78939d676b13d0ee6146920",
+          "page": 167
+        }
+      ]
     }
   },
   "issues": [
@@ -531,7 +1195,8 @@
       "claim_ids": [
         "baikal-seal-02",
         "baikal-seal-03",
-        "baikal-seal-05"
+        "baikal-seal-05",
+        "environmental-problems-03"
       ],
       "evidence": [
         {
@@ -662,6 +1327,34 @@
       "conclusion": "Два оригинала подтверждают расхождение, не ошибку распознавания колонок. мг/л и мг/дм³ эквивалентны. Если считать семь ретроспективных записей семью съёмками с нарушениями за 2024, такая трактовка не согласуется с пятью пробами в трёх месяцах без дополнительных данных. Метод агрегации ретроспективной строки не раскрыт. Общая доля/тренд превышений не рассчитывается.",
       "next_step": "Росгидромет: первичные журналы, совпадение станций/горизонтов и правила ретроспективной агрегации.",
       "specialist_required": true
+    },
+    {
+      "id": "selenga-pah-order",
+      "title": "Порядок максимумов БП и канцерогенных аренов в докладе 2015",
+      "status": "unresolved_source",
+      "claim_ids": [
+        "selenga-sediments-02",
+        "selenga-sediments-05"
+      ],
+      "evidence": [
+        {
+          "source_id": "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
+          "sha256": "26dc3610938c5b8f91e85b4179ee1092f20aa03684135d0534b8ad2ab9629023",
+          "report_year": 2015,
+          "page": 26,
+          "quote": "      26                                                             Государственный доклад\n         Максимальное содержание ПАУ, бенз(а)пирена и канцерогенных аренов в 2015 г. были\n      отмечены на авандельте реки непосредственно напротив выносов протокой Усть-Харауз:\n       124,9 нг/г с.о., 61,8 нг/г с.о. и 7,9 нг/г с.о. (таблица 1.1.1.3.6). Уровень загрязненности на\n1.1  авандельте р. Селенга по бенз(а)пирену можно отнести к фоновому значению, а по сумме    ПАУ – как слабо загрязненному. Однако следует отметить, что содержание канцерогенных\n      аренов в 2015 г. увеличилось по сравнению с 2014 г. в 2,7 раза.\n\n                                                                         Таблица 1.1.1.3.6\n         Содержание полициклических ароматических углеводородов в донных отложениях\n                       на авандельте р. Селенга в 2011–2015 гг., в нг/г с.о.\n                     (в числителе – интервалы значений, в знаменателе – средние значения)\n                                                                    Канцерогены –  Канцерогены –                   БП –     БП –     ПАУ –     ПАУ –          Годы                                                       протока Усть-    весь полигон                         протока       весь        весь       протока         наблюдений                                                    Харауз (% от   (% от суммы                       Усть-Харауз   полигон    полигон    Усть-Харауз                                                              суммы ПАУ)      ПАУ)\n                               0,5–7,8       0,1–7,8     20,0–125,9     27,2–125,9        6,4–22,9           1,2–22,9            2011 г.                                  3,2            1,4          57,0           70,4         17,8 (31,2 %)      10,2 (17,5 %)\n                               0,8–1,7       0,2–1,7      17,7–61,5      19,9–61,5        7,0–11,0           4,7–11,2            2013 г.                                  1,0            1,0          33,4           33,8          9,3 (27,8 %)        8,4 (25,1 %)\n                               0,8–3,1       0,1–3,0     24,3–149,9     65,4–149,9        7,2–17,1           1,2–17,1            2014 г.                                  1,7            1,0          65,7          103,0        11,0 (16,7 %)       6,3 (9,6 %)\n                               1,2–7,9       0,1–7,9      3,0–124,9     24,3–124,9        9,9–61,8           1,0–61,8            2015 г.                                  3,9            2,1          36,9           61,7         30,3 (49,2 %)      17,1 (43,5 %)\n        Изменение по\n        средним (%),       129,4        110         –43,8          –40,1            175,5             171,4\n        2015 г. / 2014 г.\n       Примечания. Изменения значений показателей:     – в пределах 10 %,     – уменьшение более 10 %,\n           – увеличение более 10 %.\n\n         Состояние донных отложений на севере озера в зоне влияния трассы БАМ\n       В 2015 г. было отобрано в июне-июле и сентябре по 17 проб грунтовой воды и по 17 проб\n     донных отложений. Станции отбора проб находились на глубинах 20–250 м.\n        По характерному показателю состояния экосистемы озера содержанию растворенного\n      кислорода в грунтовой воде в 2015 г. можно отметить улучшение по сравнению с преды­\n     дущим годом наблюдений. Среднее содержание растворенного кислорода увеличилось по\n      сравнению с 2014 г. – с 8,75 до 9,27 мг/л, а на Участке – с 7,80 до 8,92 мг/л.\n       В 2015   г. определенное увеличение  в гидрохимической  характеристике  грунто­\n      вой воды отмечается по сравнению с 2014  г. по содержанию фосфатного фосфора. Со­\n      держание фосфатного фосфора на полигоне увеличилось в 2 раза, достигнув величины\n       0,004 мг/л (таблица 1.1.1.3.7).\n       В 2015 г. по сравнению с 2014 г., содержание серы сульфидной уменьшилось в целом на\n      полигоне до 0,006 %. В 2014 г. содержание сульфидной серы составляло 0,008 %, в 2013 г. –\n       0,006 %. (таблица 1.1.1.3.8).\n         Среди геохимических показателей качественного состояния донных отложений на поли­\n       гоне, где отмечен рост содержаний можно, выделить только легкогидролизуемые углеводы\n      (ЛГУ). Содержание ЛГУ в донных отложениях на полигоне в 2015 г. увеличилось в 1,3 раза\n      по сравнению с 2014 г. – с 0,76 до 0,99 %.",
+          "quote_basis": "exact_cached_page_text",
+          "original_page_visually_checked": true,
+          "source_authenticity": "mirror_unverified"
+        }
+      ],
+      "source_versions": [
+        "Проза PDF 26: ПАУ / бенз(а)пирен / канцерогенные арены — 124,9 / 61,8 / 7,9 нг/г с.о.",
+        "Таблица 1.1.1.3.6, 2015: максимум БП 7,9; канцерогенов 61,8 нг/г с.о."
+      ],
+      "conclusion": "Оригинальное изображение подтверждает несоответствие порядка показателей в прозе и таблице. Исходные сообщения сохранены; произвольная перестановка чисел в данных запрещена.",
+      "next_step": "Запросить протоколы определения ПАУ/БП и разъяснение составителей; проверить систематику суммы канцерогенных аренов.",
+      "specialist_required": true
     }
   ],
   "findings": [
@@ -693,6 +1386,44 @@
       "description": "Проект обозначен университетским вопреки уточнённому автором научно-исследовательскому контексту.",
       "action": "Исправлены README и только существующая текстовая метка HTML. Указана работа автора в ИДСТУ СО РАН без официального одобрения/публикации институтом.",
       "basis": "explicit user instruction in this sprint"
+    },
+    {
+      "id": "F05",
+      "claim_id": "environmental-problems-01",
+      "review_batch": "remaining-ten",
+      "kind": "wiki_error",
+      "description": "В обзорной статье повторялось неподтверждённое обозначение пунктов как фоновых.",
+      "action": "Исправлено на пункты наблюдений; классификация воды не изменена."
+    },
+    {
+      "id": "F06",
+      "claim_id": "river-inputs-2025-02",
+      "review_batch": "remaining-ten",
+      "kind": "wiki_error",
+      "description": "Зеркальные экземпляры специализированных докладов названы официальными до независимого подтверждения.",
+      "action": "Снято слово «официальные»; официальный статус обзора Росгидромета и неподтверждённость зеркал разделены."
+    },
+    {
+      "id": "F07",
+      "claim_id": "epishura-benthos-03",
+      "review_batch": "remaining-ten",
+      "kind": "wiki_error",
+      "description": "Наблюдаемая изменчивость названа естественной без отделения антропогенного влияния.",
+      "action": "Оставлено наблюдаемое сезонное/пространственное различие; происхождение вариации не приписывается автоматически."
+    }
+  ],
+  "review_batches": [
+    {
+      "id": "priority-twelve",
+      "baseline_commit": "e763e8d209478f4202a1546826d4fe55e02e3a33",
+      "articles": 12,
+      "claims": 59
+    },
+    {
+      "id": "remaining-ten",
+      "baseline_commit": "c7b8d188720f33a37dfcda61ad1c488deb63c1d8",
+      "articles": 10,
+      "claims": 48
     }
   ]
 }

@@ -2,7 +2,8 @@
 
 import json, os, re, urllib.request, urllib.parse
 from .core import ROOT, read_json
-from .wiki import WIKI, write_page, append_log, build
+from .updates import load_proposal, save_packet, archive_article
+from .encyclopedia import catalog, topics
 
 
 def validate_claims(result, evidence):
@@ -45,10 +46,34 @@ class NoRedirect(urllib.request.HTTPRedirectHandler):
         )
 
 
-def synthesize(topic, allow_remote=False):
-    evidence = read_json(ROOT / "datasets/wiki_evidence.json", {}).get(topic, [])[:12]
+def synthesize(topic, allow_remote=False, proposal=None):
+    evidence = (
+        load_proposal(ROOT, proposal, topic)["evidence"]
+        if proposal
+        else read_json(ROOT / "datasets/wiki_evidence.json", {}).get(topic, [])
+    )[:12]
     if not evidence:
         raise ValueError("No compiled evidence for topic")
+    sources = {
+        s["id"]: s
+        for s in read_json(ROOT / "config/sources.json", {"sources": []})["sources"]
+    }
+    refs = []
+    for e in evidence:
+        source = sources.get(e["source_id"], {})
+        sha = source.get("sha256", "")
+        if not re.fullmatch(r"[0-9a-f]{64}", sha):
+            raise ValueError("Draft source SHA256 unavailable")
+        if e.get("sha256") and e["sha256"] != sha:
+            raise ValueError("Draft evidence source revision changed")
+        refs.append(
+            {
+                **e,
+                "sha256": sha,
+                "report_year": source.get("report_year"),
+                "observation_period": e.get("observation_period"),
+            }
+        )
     url = os.getenv("BAIKAL_LLM_URL")
     model = os.getenv("BAIKAL_LLM_MODEL")
     if not url or not model:
@@ -78,38 +103,29 @@ def synthesize(topic, allow_remote=False):
     errors = validate_claims(result, evidence)
     if errors:
         raise ValueError("; ".join(errors))
-    lines = [
-        f"# {result.get('title', topic)}",
-        "",
-        "**Черновик LLM: требуется семантическая проверка.** Ссылки и цитаты проверены программно; истинность вывода этим не гарантирована.",
-        "",
-        "## Источники и доказательства",
-        "",
+    targets = [
+        t["article"]
+        for _, _, t in topics(catalog(ROOT))
+        if t["id"] == topic and t.get("article")
     ]
-    for c in result["claims"]:
-        lines.append(c["text"])
-        for e in c["evidence"]:
-            lines.append(
-                f"> {e['quote']}\n\n[{e['source_id']}:p{e['page']}](../sources/{e['source_id']}.md#page-{e['page']})"
-            )
-    lines += [
-        "",
-        "## Ограничения",
-        "Пакет ограничен 12 выдержками. Модель не видела все документы. Числа не переносятся в проверенный набор автоматически.",
-    ]
-    write_page(WIKI / "syntheses" / f"{topic}-llm-draft.md", "\n\n".join(lines))
-    from .core import load_sources, atomic_json
-
-    sources = {s["id"]: s for s in load_sources()["sources"]}
-    provenance = read_json(ROOT / "datasets/article_provenance.json", {})
-    refs = {
-        (r["source_id"], r["page"]) for c in result["claims"] for r in c["evidence"]
+    packet = {
+        "version": 1,
+        "topic": topic,
+        "status": "draft",
+        "published": False,
+        "model": model,
+        "proposal_id": proposal,
+        "result": result,
+        "evidence": refs,
+        "preceding_versions": [archive_article(ROOT, name) for name in targets],
+        "limitations": "Citation matching is not semantic approval; observation periods and claims require review. No values are promoted to reviewed datasets.",
     }
-    provenance[f"syntheses/{topic}-llm-draft.md"] = [
-        {"source_id": sid, "page": page, "sha256": sources.get(sid, {}).get("sha256")}
-        for sid, page in sorted(refs)
-    ]
-    atomic_json(ROOT / "datasets/article_provenance.json", provenance)
-    append_log("synthesize", topic)
-    build()
-    return {"topic": topic, "status": "draft", "claims": len(result["claims"])}
+    pid, path = save_packet(ROOT, "llm_drafts", packet)
+    return {
+        "topic": topic,
+        "status": "draft",
+        "claims": len(result["claims"]),
+        "published": False,
+        "id": pid,
+        "path": path,
+    }

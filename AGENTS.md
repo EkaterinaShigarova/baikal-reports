@@ -41,3 +41,8 @@ This is the author's research project at the Matrosov Institute for System Dynam
 - Preserve conflicting source statements. A calculated consistency check is not permission to repair a source value. Separate observation year, report year, publication year and planning horizon.
 - Preserve reviewed corrections and human notes during rebuilds. Managed review banners are refreshed automatically; changing a reviewed body or source revision invalidates its effective review status. Recheck affected claims before updating hashes; never refresh hashes merely to silence lint.
 - Run `python scripts/check_scientific_review.py --require-local` when checkpoints are available. Use ordinary lint without local PDFs in a clean checkout. Machine checks verify provenance and consistency, not scientific truth.
+
+## Public documentation and update proposals
+- Describe capabilities and limitations in neutral research language. Omit optional development-tool attribution from presentation text. Preserve Git history, third-party notices, actual review provenance and the technical description of LLM methods. Never imply human/expert review where none occurred.
+- Keep proposed changes and model drafts outside the published Wiki until semantic review. Unknown text fragments are not automatically new scientific knowledge; shared topic or changed wording is not proof of a contradiction.
+- Preserve complete preceding article versions and manual notes when preparing an update. Source revisions and unresolved issues must remain visible; do not auto-promote candidates into reviewed observations.

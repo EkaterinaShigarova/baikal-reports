@@ -1,7 +1,7 @@
 # Устойчивые органические загрязнители: ПХБ, пестициды и разные среды
 
 <!-- REVIEW STATUS START -->
-Статус: **Проверен AI-агентом по первоисточнику**. Требуется научная рецензия. [Объём проверки](../topics/knowledge-quality.md#article-persistent-organic-pollutants).
+Статус: **Содержательная сверка с источниками (автоматизированная)**. Требуется научная рецензия. [Объём проверки](../topics/knowledge-quality.md#article-persistent-organic-pollutants).
 <!-- REVIEW STATUS END -->
 
 ## Группа веществ и место измерения

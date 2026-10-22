@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "description": "Lexical routing for review proposals, not semantic discovery or publication approval.",
+  "patterns": {
+    "baikal-sturgeon": "ос[её]тр",
+    "baikal-omul": "омул",
+    "fish-and-biodiversity": "ихтиофаун|нерестов|морфо.?экологическ",
+    "phytoplankton": "фитопланктон",
+    "spirogyra-observations": "спирогир|Spirogyra",
+    "epishura-benthos": "эпишур|Epischura|зообентос",
+    "baikal-seal": "нерп|Pusa|Phoca",
+    "water-quality-evidence": "гидрохим|качество вод",
+    "persistent-organic-pollutants": "полихлор|ПХБ|пестицид|стойк.{0,12}органическ",
+    "ports-oil": "порт.{0,60}нефт|нефт.{0,60}порт",
+    "selenga-sediments": "авандельт|Усть.Харауз",
+    "north-baikal-water": "северн.{0,20}Байкал|трасс.{0,10}БАМ",
+    "river-inputs-2025": "вынос.{0,40}веществ|замыкающ.{0,15}створ",
+    "water-level-regulation": "уровень.{0,20}Байкал|уровня.{0,20}Байкал|приточност",
+    "bcbk-legacy": "БЦБК|шлам.лигнин|Байкальск.{0,10}ЦБК",
+    "waste-and-pollution": "отход.{0,15}класс|класс.{0,15}опасност|свалк",
+    "air-pollution": "выброс.{0,30}атмосфер|загрязнен.{0,15}атмосфер",
+    "tourism-pressure": "туризм|турист|рекреац",
+    "municipal-treatment": "очистн.{0,20}сооружен|коммунальн.{0,20}сток|КОС",
+    "forest-fires": "лесн.{0,10}пожар|лесовосстанов|противопожар",
+    "protected-areas-management": "заповедник|ООПТ|заказник",
+    "groundwater-geological-monitoring": "подземн.{0,10}вод|скважин|эндогенн",
+    "emissions-and-comparability": "теплоэнергетик|Иркутскэнерго|энергетическ.{0,10}компан"
+  }
+}

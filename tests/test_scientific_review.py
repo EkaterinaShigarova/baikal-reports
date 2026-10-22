@@ -74,8 +74,8 @@ class ScientificReview(unittest.TestCase):
         report = validate()
         self.assertEqual(report["errors"], [])
         self.assertEqual(report["warnings"], [])
-        self.assertGreaterEqual(report["articles_reviewed"], 12)
-        self.assertGreaterEqual(report["claims_reviewed"], 59)
+        self.assertGreaterEqual(report["articles_reviewed"], 22)
+        self.assertGreaterEqual(report["claims_reviewed"], 107)
         self.assertTrue(
             all(
                 e["status"] != "specialist_verified"

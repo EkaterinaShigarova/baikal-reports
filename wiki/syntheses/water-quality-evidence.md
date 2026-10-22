@@ -1,7 +1,7 @@
 # Качество воды: нормы, станции и локальные превышения
 
 <!-- REVIEW STATUS START -->
-Статус: **Проверен AI-агентом по первоисточнику**. Требуется научная рецензия. [Объём проверки](../topics/knowledge-quality.md#article-water-quality-evidence).
+Статус: **Содержательная сверка с источниками (автоматизированная)**. Требуется научная рецензия. [Объём проверки](../topics/knowledge-quality.md#article-water-quality-evidence).
 <!-- REVIEW STATUS END -->
 
 ## Пространство измерения

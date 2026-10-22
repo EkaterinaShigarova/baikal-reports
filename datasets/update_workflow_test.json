@@ -1,0 +1,115 @@
+{
+  "test_kind": "isolated simulation of arrival of existing cached page texts",
+  "documents": 3,
+  "pages": 3,
+  "source_pages": [
+    {
+      "source_id": "drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0",
+      "sha256": "60ccb6065b32d959457faf9745023d763c9f6641ad7c9c8cdee7a88fea454139",
+      "report_year": 2016,
+      "physical_page": 222,
+      "text_sha256": "a4757b13359d695a5594ef2f400ef0109bfe4dd48fc771b8b7dbec089c2658f0"
+    },
+    {
+      "source_id": "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos",
+      "sha256": "557959d2c8996b990487e9d2acd501ca4048f29e3c7a6fe27e49f8fc1c554fd8",
+      "report_year": 2024,
+      "physical_page": 67,
+      "text_sha256": "62226bd1e4f9f0a73bfba07dc61870047f1ccbc917bc27fde4758abeea1849bd"
+    },
+    {
+      "source_id": "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
+      "sha256": "26dc3610938c5b8f91e85b4179ee1092f20aa03684135d0534b8ad2ab9629023",
+      "report_year": 2015,
+      "physical_page": 26,
+      "text_sha256": "142ea509f87fd06f354fc9df7245905b90a636586746fd326b77b7b942edd20b"
+    }
+  ],
+  "proposals": [
+    {
+      "id": "682a12a88cfc0e96edf9df4b347136fbd931c88a0207e49a2ddff9da7933d83d",
+      "topic": "baikal-sturgeon",
+      "kind": "article_update",
+      "known_issue_ids": []
+    },
+    {
+      "id": "47555230c9a4b9182dbbe5d62c52706896074e9e994bf5e600907da7410d42ad",
+      "topic": "baikal-omul",
+      "kind": "article_update",
+      "known_issue_ids": []
+    },
+    {
+      "id": "794e15cb11ab975dee91fb593323b356ec12808d9f8edc48a1bae02ea8813e14",
+      "topic": "baikal-sturgeon",
+      "kind": "article_update",
+      "known_issue_ids": []
+    },
+    {
+      "id": "2821f0a68128cfe812a6d55f3719e533684338b49124c4d249146a9d0d09542d",
+      "topic": "baikal-omul",
+      "kind": "article_update",
+      "known_issue_ids": []
+    },
+    {
+      "id": "7cd0c18027ff916a68c515b5022dba16c96be559483cbdef8ee98869f3d84c7d",
+      "topic": "north-baikal-water",
+      "kind": "article_update",
+      "known_issue_ids": [
+        "chloride-background"
+      ]
+    },
+    {
+      "id": "81bf21a11f32a1d6b5d2fa081c4ce92a3181108df3d13d7e32e7386fc5b16d48",
+      "topic": "protected-areas-management",
+      "kind": "article_update",
+      "known_issue_ids": []
+    },
+    {
+      "id": "e4d63ee381e44e2f388c20bd92a9f4633296c5ff1b005928512885a479897131",
+      "topic": "water-quality-evidence",
+      "kind": "article_update",
+      "known_issue_ids": [
+        "water-observation-methods"
+      ]
+    },
+    {
+      "id": "25718271f24b342c13aac6591fda74b389c5d085149d71c748cf8e25bba88a60",
+      "topic": "selenga-sediments",
+      "kind": "article_update",
+      "known_issue_ids": [
+        "selenga-pah-order"
+      ]
+    },
+    {
+      "id": "0f7a9f09928c901c0774bafee1497b74ff53cc17768ab2930cd52412a32fae7b",
+      "topic": "north-baikal-water",
+      "kind": "article_update",
+      "known_issue_ids": [
+        "chloride-background"
+      ]
+    },
+    {
+      "id": "5f533458d324ced79e039e64b39e7e2f3ecabe8ad5a3abb24d2e28e4c5230b81",
+      "topic": "municipal-treatment",
+      "kind": "new_article_candidate",
+      "known_issue_ids": []
+    }
+  ],
+  "proposal_count": 10,
+  "published_articles_changed": 0,
+  "new_articles_published": 0,
+  "existing_articles_preserved": 22,
+  "reviewed_observations_changed": 0,
+  "repeated_run_new_proposals": 0,
+  "preceding_versions_preserved": true,
+  "manual_notes_preserved": true,
+  "llm_inference_executed": false,
+  "model_http_fixture_used": false,
+  "new_pdf_downloads": 0,
+  "pdf_extraction_or_ocr": false,
+  "limitations": [
+    "Source discovery/download was not exercised against the network.",
+    "Routing and text novelty do not prove new knowledge or semantic contradiction detection.",
+    "Semantic generation by a real local LLM remains untested."
+  ]
+}

@@ -26,11 +26,18 @@ def main(argv=None):
     sub.add_parser("build")
     sub.add_parser("lint")
     sub.add_parser("status")
+    u = sub.add_parser("propose-updates")
+    u.add_argument("--source", required=True)
+    u.add_argument("--pages", type=int, nargs="+")
+    u.add_argument("--limit", type=int, default=20)
     q = sub.add_parser("query")
     q.add_argument("question")
     q.add_argument("--save", action="store_true")
     s = sub.add_parser("synthesize")
     s.add_argument("topic")
+    s.add_argument(
+        "--proposal", help="ID of a local evidence proposal; draft stays unpublished"
+    )
     s.add_argument(
         "--allow-remote",
         action="store_true",
@@ -119,10 +126,24 @@ def main(argv=None):
             from .wiki import query
 
             print(query(args.question, args.save))
+        elif args.command == "propose-updates":
+            from .updates import propose
+
+            print(
+                json.dumps(
+                    propose(args.source, pages=args.pages, limit=args.limit),
+                    ensure_ascii=False,
+                    indent=2,
+                )
+            )
         elif args.command == "synthesize":
             from .llm import synthesize
 
-            print(synthesize(args.topic, allow_remote=args.allow_remote))
+            print(
+                synthesize(
+                    args.topic, allow_remote=args.allow_remote, proposal=args.proposal
+                )
+            )
         elif args.command == "serve":
             import uvicorn
 
