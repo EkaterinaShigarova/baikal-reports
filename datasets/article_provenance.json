@@ -174,5 +174,268 @@
       "sha256": "f42cd72201a7bb8652d10a571c5f472e9f9bd738d78939d676b13d0ee6146920",
       "page": 170
     }
+  ],
+  "syntheses/baikal-omul.md": [
+    {
+      "source_id": "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
+      "sha256": "26dc3610938c5b8f91e85b4179ee1092f20aa03684135d0534b8ad2ab9629023",
+      "page": 42
+    },
+    {
+      "source_id": "drive-1RWGLrOzFO32Jxrlv-B2n_PafSFoRVySn",
+      "sha256": "747fadeaf55107fbf9fbb5965696912195b4795436a9f300c009a4f5e5d9839a",
+      "page": 49
+    },
+    {
+      "source_id": "drive-1RWGLrOzFO32Jxrlv-B2n_PafSFoRVySn",
+      "sha256": "747fadeaf55107fbf9fbb5965696912195b4795436a9f300c009a4f5e5d9839a",
+      "page": 50
+    },
+    {
+      "source_id": "drive-1C-SRfbklf00M5rsLajYO_2nFCdmCL1fi",
+      "sha256": "da48b7061dc74cdc300213ca2e4b6f0d124ac5aab5aa7f2da84d3c3451d07066",
+      "page": 64
+    }
+  ],
+  "syntheses/baikal-sturgeon.md": [
+    {
+      "source_id": "drive-1ScikzOKs0VW7ZZS1XWKyoOfcHeYklUEP",
+      "sha256": "48bfd75a6c75a685d4f5ff2ea52cd1aba78d6d0a6bd45fbd311d5305a9b84c54",
+      "page": 51
+    },
+    {
+      "source_id": "drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0",
+      "sha256": "60ccb6065b32d959457faf9745023d763c9f6641ad7c9c8cdee7a88fea454139",
+      "page": 222
+    },
+    {
+      "source_id": "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos",
+      "sha256": "557959d2c8996b990487e9d2acd501ca4048f29e3c7a6fe27e49f8fc1c554fd8",
+      "page": 67
+    }
+  ],
+  "syntheses/phytoplankton.md": [
+    {
+      "source_id": "drive-1ScikzOKs0VW7ZZS1XWKyoOfcHeYklUEP",
+      "sha256": "48bfd75a6c75a685d4f5ff2ea52cd1aba78d6d0a6bd45fbd311d5305a9b84c54",
+      "page": 41
+    },
+    {
+      "source_id": "drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0",
+      "sha256": "60ccb6065b32d959457faf9745023d763c9f6641ad7c9c8cdee7a88fea454139",
+      "page": 32
+    },
+    {
+      "source_id": "drive-1oYm8VhJ3_eRNdxbrGfLXhf6_vI6s6SJq",
+      "sha256": "6363b7b441d241e4718714b0062a2e011647e14b8219193f0a40a08270568e8e",
+      "page": 52
+    }
+  ],
+  "syntheses/spirogyra-observations.md": [
+    {
+      "source_id": "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
+      "sha256": "26dc3610938c5b8f91e85b4179ee1092f20aa03684135d0534b8ad2ab9629023",
+      "page": 40
+    },
+    {
+      "source_id": "drive-1jl98YhWpGzbTkJXflFXv0fHB7yKqPRJr",
+      "sha256": "80935438545af9b1fd55811ea6b4345822b62301ba472e71e76f1a67f7b4967d",
+      "page": 39
+    },
+    {
+      "source_id": "drive-1oLnz6N8ueMCEL8p2HnPDtT7dx1tAE8RB",
+      "sha256": "9f0ff38111fe9092e96e8bed6e602f92a5b1e63f6cd9bbcb856d76dc3b7fb391",
+      "page": 55
+    }
+  ],
+  "syntheses/epishura-benthos.md": [
+    {
+      "source_id": "drive-1C-SRfbklf00M5rsLajYO_2nFCdmCL1fi",
+      "sha256": "da48b7061dc74cdc300213ca2e4b6f0d124ac5aab5aa7f2da84d3c3451d07066",
+      "page": 49
+    },
+    {
+      "source_id": "drive-1jl98YhWpGzbTkJXflFXv0fHB7yKqPRJr",
+      "sha256": "80935438545af9b1fd55811ea6b4345822b62301ba472e71e76f1a67f7b4967d",
+      "page": 32
+    },
+    {
+      "source_id": "drive-1ScikzOKs0VW7ZZS1XWKyoOfcHeYklUEP",
+      "sha256": "48bfd75a6c75a685d4f5ff2ea52cd1aba78d6d0a6bd45fbd311d5305a9b84c54",
+      "page": 42
+    }
+  ],
+  "syntheses/selenga-sediments.md": [
+    {
+      "source_id": "drive-1RWGLrOzFO32Jxrlv-B2n_PafSFoRVySn",
+      "sha256": "747fadeaf55107fbf9fbb5965696912195b4795436a9f300c009a4f5e5d9839a",
+      "page": 32
+    },
+    {
+      "source_id": "drive-1oYm8VhJ3_eRNdxbrGfLXhf6_vI6s6SJq",
+      "sha256": "6363b7b441d241e4718714b0062a2e011647e14b8219193f0a40a08270568e8e",
+      "page": 40
+    },
+    {
+      "source_id": "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
+      "sha256": "26dc3610938c5b8f91e85b4179ee1092f20aa03684135d0534b8ad2ab9629023",
+      "page": 26
+    },
+    {
+      "source_id": "drive-1RWGLrOzFO32Jxrlv-B2n_PafSFoRVySn",
+      "sha256": "747fadeaf55107fbf9fbb5965696912195b4795436a9f300c009a4f5e5d9839a",
+      "page": 31
+    }
+  ],
+  "syntheses/north-baikal-water.md": [
+    {
+      "source_id": "drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0",
+      "sha256": "60ccb6065b32d959457faf9745023d763c9f6641ad7c9c8cdee7a88fea454139",
+      "page": 19
+    },
+    {
+      "source_id": "drive-1oLnz6N8ueMCEL8p2HnPDtT7dx1tAE8RB",
+      "sha256": "9f0ff38111fe9092e96e8bed6e602f92a5b1e63f6cd9bbcb856d76dc3b7fb391",
+      "page": 36
+    },
+    {
+      "source_id": "official-b4e3fcfe0e41e26ea03b",
+      "sha256": "f42cd72201a7bb8652d10a571c5f472e9f9bd738d78939d676b13d0ee6146920",
+      "page": 161
+    }
+  ],
+  "syntheses/persistent-organic-pollutants.md": [
+    {
+      "source_id": "drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0",
+      "sha256": "60ccb6065b32d959457faf9745023d763c9f6641ad7c9c8cdee7a88fea454139",
+      "page": 302
+    },
+    {
+      "source_id": "drive-1RWGLrOzFO32Jxrlv-B2n_PafSFoRVySn",
+      "sha256": "747fadeaf55107fbf9fbb5965696912195b4795436a9f300c009a4f5e5d9839a",
+      "page": 287
+    },
+    {
+      "source_id": "official-b4e3fcfe0e41e26ea03b",
+      "sha256": "f42cd72201a7bb8652d10a571c5f472e9f9bd738d78939d676b13d0ee6146920",
+      "page": 167
+    }
+  ],
+  "syntheses/water-level-regulation.md": [
+    {
+      "source_id": "drive-1ScikzOKs0VW7ZZS1XWKyoOfcHeYklUEP",
+      "sha256": "48bfd75a6c75a685d4f5ff2ea52cd1aba78d6d0a6bd45fbd311d5305a9b84c54",
+      "page": 13
+    },
+    {
+      "source_id": "drive-1oYm8VhJ3_eRNdxbrGfLXhf6_vI6s6SJq",
+      "sha256": "6363b7b441d241e4718714b0062a2e011647e14b8219193f0a40a08270568e8e",
+      "page": 15
+    },
+    {
+      "source_id": "drive-1jl98YhWpGzbTkJXflFXv0fHB7yKqPRJr",
+      "sha256": "80935438545af9b1fd55811ea6b4345822b62301ba472e71e76f1a67f7b4967d",
+      "page": 12
+    }
+  ],
+  "syntheses/bcbk-legacy.md": [
+    {
+      "source_id": "drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0",
+      "sha256": "60ccb6065b32d959457faf9745023d763c9f6641ad7c9c8cdee7a88fea454139",
+      "page": 170
+    },
+    {
+      "source_id": "drive-1jl98YhWpGzbTkJXflFXv0fHB7yKqPRJr",
+      "sha256": "80935438545af9b1fd55811ea6b4345822b62301ba472e71e76f1a67f7b4967d",
+      "page": 95
+    },
+    {
+      "source_id": "drive-1oLnz6N8ueMCEL8p2HnPDtT7dx1tAE8RB",
+      "sha256": "9f0ff38111fe9092e96e8bed6e602f92a5b1e63f6cd9bbcb856d76dc3b7fb391",
+      "page": 249
+    },
+    {
+      "source_id": "drive-1oLnz6N8ueMCEL8p2HnPDtT7dx1tAE8RB",
+      "sha256": "9f0ff38111fe9092e96e8bed6e602f92a5b1e63f6cd9bbcb856d76dc3b7fb391",
+      "page": 250
+    },
+    {
+      "source_id": "drive-1C-SRfbklf00M5rsLajYO_2nFCdmCL1fi",
+      "sha256": "da48b7061dc74cdc300213ca2e4b6f0d124ac5aab5aa7f2da84d3c3451d07066",
+      "page": 353
+    }
+  ],
+  "syntheses/forest-fires.md": [
+    {
+      "source_id": "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
+      "sha256": "26dc3610938c5b8f91e85b4179ee1092f20aa03684135d0534b8ad2ab9629023",
+      "page": 140
+    },
+    {
+      "source_id": "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos",
+      "sha256": "557959d2c8996b990487e9d2acd501ca4048f29e3c7a6fe27e49f8fc1c554fd8",
+      "page": 139
+    },
+    {
+      "source_id": "drive-1RWGLrOzFO32Jxrlv-B2n_PafSFoRVySn",
+      "sha256": "747fadeaf55107fbf9fbb5965696912195b4795436a9f300c009a4f5e5d9839a",
+      "page": 142
+    }
+  ],
+  "syntheses/protected-areas-management.md": [
+    {
+      "source_id": "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
+      "sha256": "26dc3610938c5b8f91e85b4179ee1092f20aa03684135d0534b8ad2ab9629023",
+      "page": 57
+    },
+    {
+      "source_id": "drive-1oLnz6N8ueMCEL8p2HnPDtT7dx1tAE8RB",
+      "sha256": "9f0ff38111fe9092e96e8bed6e602f92a5b1e63f6cd9bbcb856d76dc3b7fb391",
+      "page": 75
+    },
+    {
+      "source_id": "drive-1C-SRfbklf00M5rsLajYO_2nFCdmCL1fi",
+      "sha256": "da48b7061dc74cdc300213ca2e4b6f0d124ac5aab5aa7f2da84d3c3451d07066",
+      "page": 81
+    }
+  ],
+  "syntheses/tourism-pressure.md": [
+    {
+      "source_id": "drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ",
+      "sha256": "c813f2671ebb235dd3291076f3c728bb78d821391024e2bce754849c79fa992a",
+      "page": 280
+    },
+    {
+      "source_id": "drive-1oYm8VhJ3_eRNdxbrGfLXhf6_vI6s6SJq",
+      "sha256": "6363b7b441d241e4718714b0062a2e011647e14b8219193f0a40a08270568e8e",
+      "page": 287
+    },
+    {
+      "source_id": "drive-1C-SRfbklf00M5rsLajYO_2nFCdmCL1fi",
+      "sha256": "da48b7061dc74cdc300213ca2e4b6f0d124ac5aab5aa7f2da84d3c3451d07066",
+      "page": 81
+    },
+    {
+      "source_id": "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos",
+      "sha256": "557959d2c8996b990487e9d2acd501ca4048f29e3c7a6fe27e49f8fc1c554fd8",
+      "page": 202
+    }
+  ],
+  "syntheses/groundwater-geological-monitoring.md": [
+    {
+      "source_id": "drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0",
+      "sha256": "60ccb6065b32d959457faf9745023d763c9f6641ad7c9c8cdee7a88fea454139",
+      "page": 106
+    },
+    {
+      "source_id": "drive-1ScikzOKs0VW7ZZS1XWKyoOfcHeYklUEP",
+      "sha256": "48bfd75a6c75a685d4f5ff2ea52cd1aba78d6d0a6bd45fbd311d5305a9b84c54",
+      "page": 91
+    },
+    {
+      "source_id": "drive-1oYm8VhJ3_eRNdxbrGfLXhf6_vI6s6SJq",
+      "sha256": "6363b7b441d241e4718714b0062a2e011647e14b8219193f0a40a08270568e8e",
+      "page": 101
+    }
   ]
 }

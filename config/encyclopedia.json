@@ -1,0 +1,826 @@
+{
+  "version": 1,
+  "updated_at": "2026-10-22",
+  "discovery": {
+    "new_topics": 16,
+    "new_articles": 14,
+    "deferred_topics": 2
+  },
+  "evidence_levels": {
+    "multiyear_text": "Содержательные страницы нескольких лет прочитаны; достаточны для текста с ограничениями, но не автоматически для числового тренда.",
+    "reviewed_overview": "Существующая аналитическая статья с происхождением утверждений; уровень не означает внешнюю экспертизу.",
+    "located_pages": "Содержательные страницы найдены; нужна дополнительная проверка перед публикацией статьи."
+  },
+  "sections": [
+    {
+      "id": "life",
+      "title": "Живые сообщества",
+      "subtopics": [
+        {
+          "id": "fish",
+          "title": "Рыбы и воспроизводство",
+          "topics": [
+            {
+              "id": "fish-and-biodiversity",
+              "title": "Рыбы и биоразнообразие: почему одного показателя недостаточно",
+              "article": "syntheses/fish-and-biodiversity.md",
+              "status": "published",
+              "sprint_new": false,
+              "evidence_level": "reviewed_overview",
+              "sources": [
+                {
+                  "source_id": "drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ",
+                  "sha256": "c813f2671ebb235dd3291076f3c728bb78d821391024e2bce754849c79fa992a",
+                  "page": 47
+                },
+                {
+                  "source_id": "drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ",
+                  "sha256": "c813f2671ebb235dd3291076f3c728bb78d821391024e2bce754849c79fa992a",
+                  "page": 54
+                },
+                {
+                  "source_id": "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos",
+                  "sha256": "557959d2c8996b990487e9d2acd501ca4048f29e3c7a6fe27e49f8fc1c554fd8",
+                  "page": 63
+                }
+              ],
+              "gap": "Сопоставимость количественных рядов и подлинность зеркал проверяются отдельно."
+            },
+            {
+              "id": "baikal-omul",
+              "title": "Байкальский омуль: экологические группы и естественное воспроизводство",
+              "article": "syntheses/baikal-omul.md",
+              "status": "published",
+              "sprint_new": true,
+              "evidence_level": "multiyear_text",
+              "sources": [
+                {
+                  "source_id": "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
+                  "sha256": "26dc3610938c5b8f91e85b4179ee1092f20aa03684135d0534b8ad2ab9629023",
+                  "page": 42
+                },
+                {
+                  "source_id": "drive-1RWGLrOzFO32Jxrlv-B2n_PafSFoRVySn",
+                  "sha256": "747fadeaf55107fbf9fbb5965696912195b4795436a9f300c009a4f5e5d9839a",
+                  "page": 49
+                },
+                {
+                  "source_id": "drive-1RWGLrOzFO32Jxrlv-B2n_PafSFoRVySn",
+                  "sha256": "747fadeaf55107fbf9fbb5965696912195b4795436a9f300c009a4f5e5d9839a",
+                  "page": 50
+                },
+                {
+                  "source_id": "drive-1C-SRfbklf00M5rsLajYO_2nFCdmCL1fi",
+                  "sha256": "da48b7061dc74cdc300213ca2e4b6f0d124ac5aab5aa7f2da84d3c3451d07066",
+                  "page": 64
+                }
+              ],
+              "gap": "Сверить методы учёта производителей и личинок по рекам."
+            },
+            {
+              "id": "baikal-sturgeon",
+              "title": "Байкальский осётр: охрана и искусственное воспроизводство",
+              "article": "syntheses/baikal-sturgeon.md",
+              "status": "published",
+              "sprint_new": true,
+              "evidence_level": "multiyear_text",
+              "sources": [
+                {
+                  "source_id": "drive-1ScikzOKs0VW7ZZS1XWKyoOfcHeYklUEP",
+                  "sha256": "48bfd75a6c75a685d4f5ff2ea52cd1aba78d6d0a6bd45fbd311d5305a9b84c54",
+                  "page": 51
+                },
+                {
+                  "source_id": "drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0",
+                  "sha256": "60ccb6065b32d959457faf9745023d763c9f6641ad7c9c8cdee7a88fea454139",
+                  "page": 222
+                },
+                {
+                  "source_id": "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos",
+                  "sha256": "557959d2c8996b990487e9d2acd501ca4048f29e3c7a6fe27e49f8fc1c554fd8",
+                  "page": 67
+                }
+              ],
+              "gap": "Нужны данные выживания и возврата выпущенной молоди."
+            }
+          ]
+        },
+        {
+          "id": "plankton",
+          "title": "Планктон, обрастания и дно",
+          "topics": [
+            {
+              "id": "phytoplankton",
+              "title": "Фитопланктон Байкала: сезонность, численность и биомасса",
+              "article": "syntheses/phytoplankton.md",
+              "status": "published",
+              "sprint_new": true,
+              "evidence_level": "multiyear_text",
+              "sources": [
+                {
+                  "source_id": "drive-1ScikzOKs0VW7ZZS1XWKyoOfcHeYklUEP",
+                  "sha256": "48bfd75a6c75a685d4f5ff2ea52cd1aba78d6d0a6bd45fbd311d5305a9b84c54",
+                  "page": 41
+                },
+                {
+                  "source_id": "drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0",
+                  "sha256": "60ccb6065b32d959457faf9745023d763c9f6641ad7c9c8cdee7a88fea454139",
+                  "page": 32
+                },
+                {
+                  "source_id": "drive-1oYm8VhJ3_eRNdxbrGfLXhf6_vI6s6SJq",
+                  "sha256": "6363b7b441d241e4718714b0062a2e011647e14b8219193f0a40a08270568e8e",
+                  "page": 52
+                }
+              ],
+              "gap": "Разные районы и сезоны; общего временного ряда нет."
+            },
+            {
+              "id": "spirogyra-observations",
+              "title": "Спирогира: где её находили и что означает обнаружение",
+              "article": "syntheses/spirogyra-observations.md",
+              "status": "published",
+              "sprint_new": true,
+              "evidence_level": "multiyear_text",
+              "sources": [
+                {
+                  "source_id": "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
+                  "sha256": "26dc3610938c5b8f91e85b4179ee1092f20aa03684135d0534b8ad2ab9629023",
+                  "page": 40
+                },
+                {
+                  "source_id": "drive-1jl98YhWpGzbTkJXflFXv0fHB7yKqPRJr",
+                  "sha256": "80935438545af9b1fd55811ea6b4345822b62301ba472e71e76f1a67f7b4967d",
+                  "page": 39
+                },
+                {
+                  "source_id": "drive-1oLnz6N8ueMCEL8p2HnPDtT7dx1tAE8RB",
+                  "sha256": "9f0ff38111fe9092e96e8bed6e602f92a5b1e63f6cd9bbcb856d76dc3b7fb391",
+                  "page": 55
+                }
+              ],
+              "gap": "Сетные и грунтовые пробы не дают единой площади зарастания."
+            },
+            {
+              "id": "epishura-benthos",
+              "title": "Эпишура и донные беспозвоночные: биологические показатели качества среды",
+              "article": "syntheses/epishura-benthos.md",
+              "status": "published",
+              "sprint_new": true,
+              "evidence_level": "multiyear_text",
+              "sources": [
+                {
+                  "source_id": "drive-1C-SRfbklf00M5rsLajYO_2nFCdmCL1fi",
+                  "sha256": "da48b7061dc74cdc300213ca2e4b6f0d124ac5aab5aa7f2da84d3c3451d07066",
+                  "page": 49
+                },
+                {
+                  "source_id": "drive-1jl98YhWpGzbTkJXflFXv0fHB7yKqPRJr",
+                  "sha256": "80935438545af9b1fd55811ea6b4345822b62301ba472e71e76f1a67f7b4967d",
+                  "page": 32
+                },
+                {
+                  "source_id": "drive-1ScikzOKs0VW7ZZS1XWKyoOfcHeYklUEP",
+                  "sha256": "48bfd75a6c75a685d4f5ff2ea52cd1aba78d6d0a6bd45fbd311d5305a9b84c54",
+                  "page": 42
+                }
+              ],
+              "gap": "Нужно стандартизовать орудия, глубины и группы организмов."
+            }
+          ]
+        },
+        {
+          "id": "seal",
+          "title": "Верхний трофический уровень",
+          "topics": [
+            {
+              "id": "baikal-seal",
+              "title": "Байкальская нерпа: численность, воспроизводство и ограничения сравнения",
+              "article": "syntheses/baikal-seal.md",
+              "status": "published",
+              "sprint_new": false,
+              "evidence_level": "reviewed_overview",
+              "sources": [
+                {
+                  "source_id": "drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ",
+                  "sha256": "c813f2671ebb235dd3291076f3c728bb78d821391024e2bce754849c79fa992a",
+                  "page": 53
+                },
+                {
+                  "source_id": "drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ",
+                  "sha256": "c813f2671ebb235dd3291076f3c728bb78d821391024e2bce754849c79fa992a",
+                  "page": 54
+                },
+                {
+                  "source_id": "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos",
+                  "sha256": "557959d2c8996b990487e9d2acd501ca4048f29e3c7a6fe27e49f8fc1c554fd8",
+                  "page": 69
+                }
+              ],
+              "gap": "Сопоставимость количественных рядов и подлинность зеркал проверяются отдельно."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "water",
+      "title": "Качество воды и химические вещества",
+      "subtopics": [
+        {
+          "id": "water-methods",
+          "title": "Нормы и оценка качества",
+          "topics": [
+            {
+              "id": "water-quality-evidence",
+              "title": "Качество воды: нормы, станции и локальные превышения",
+              "article": "syntheses/water-quality-evidence.md",
+              "status": "published",
+              "sprint_new": false,
+              "evidence_level": "reviewed_overview",
+              "sources": [
+                {
+                  "source_id": "drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ",
+                  "sha256": "c813f2671ebb235dd3291076f3c728bb78d821391024e2bce754849c79fa992a",
+                  "page": 17
+                },
+                {
+                  "source_id": "drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ",
+                  "sha256": "c813f2671ebb235dd3291076f3c728bb78d821391024e2bce754849c79fa992a",
+                  "page": 19
+                },
+                {
+                  "source_id": "drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ",
+                  "sha256": "c813f2671ebb235dd3291076f3c728bb78d821391024e2bce754849c79fa992a",
+                  "page": 30
+                },
+                {
+                  "source_id": "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos",
+                  "sha256": "557959d2c8996b990487e9d2acd501ca4048f29e3c7a6fe27e49f8fc1c554fd8",
+                  "page": 18
+                },
+                {
+                  "source_id": "official-b4e3fcfe0e41e26ea03b",
+                  "sha256": "f42cd72201a7bb8652d10a571c5f472e9f9bd738d78939d676b13d0ee6146920",
+                  "page": 158
+                },
+                {
+                  "source_id": "official-b4e3fcfe0e41e26ea03b",
+                  "sha256": "f42cd72201a7bb8652d10a571c5f472e9f9bd738d78939d676b13d0ee6146920",
+                  "page": 159
+                }
+              ],
+              "gap": "Сопоставимость количественных рядов и подлинность зеркал проверяются отдельно."
+            }
+          ]
+        },
+        {
+          "id": "organic",
+          "title": "Органические загрязнители",
+          "topics": [
+            {
+              "id": "persistent-organic-pollutants",
+              "title": "Устойчивые органические загрязнители: ПХБ, пестициды и разные среды",
+              "article": "syntheses/persistent-organic-pollutants.md",
+              "status": "published",
+              "sprint_new": true,
+              "evidence_level": "multiyear_text",
+              "sources": [
+                {
+                  "source_id": "drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0",
+                  "sha256": "60ccb6065b32d959457faf9745023d763c9f6641ad7c9c8cdee7a88fea454139",
+                  "page": 302
+                },
+                {
+                  "source_id": "drive-1RWGLrOzFO32Jxrlv-B2n_PafSFoRVySn",
+                  "sha256": "747fadeaf55107fbf9fbb5965696912195b4795436a9f300c009a4f5e5d9839a",
+                  "page": 287
+                },
+                {
+                  "source_id": "official-b4e3fcfe0e41e26ea03b",
+                  "sha256": "f42cd72201a7bb8652d10a571c5f472e9f9bd738d78939d676b13d0ee6146920",
+                  "page": 167
+                }
+              ],
+              "gap": "Разные среды и состав сумм конгенеров нельзя склеивать."
+            },
+            {
+              "id": "ports-oil",
+              "title": "Порты Южного Байкала и нефтяные углеводороды",
+              "article": null,
+              "status": "research",
+              "sprint_new": true,
+              "evidence_level": "located_pages",
+              "sources": [
+                {
+                  "source_id": "drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0",
+                  "sha256": "60ccb6065b32d959457faf9745023d763c9f6641ad7c9c8cdee7a88fea454139",
+                  "page": 17
+                },
+                {
+                  "source_id": "drive-1oLnz6N8ueMCEL8p2HnPDtT7dx1tAE8RB",
+                  "sha256": "9f0ff38111fe9092e96e8bed6e602f92a5b1e63f6cd9bbcb856d76dc3b7fb391",
+                  "page": 38
+                }
+              ],
+              "gap": "Сверить отдельные порты, максимумы/средние, нормы и природные нефтепроявления; статья не создана."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "places",
+      "title": "Районы озера и водный режим",
+      "subtopics": [
+        {
+          "id": "lake-districts",
+          "title": "Локальные полигоны",
+          "topics": [
+            {
+              "id": "selenga-sediments",
+              "title": "Авандельта Селенги: донные отложения и грунтовая вода",
+              "article": "syntheses/selenga-sediments.md",
+              "status": "published",
+              "sprint_new": true,
+              "evidence_level": "multiyear_text",
+              "sources": [
+                {
+                  "source_id": "drive-1RWGLrOzFO32Jxrlv-B2n_PafSFoRVySn",
+                  "sha256": "747fadeaf55107fbf9fbb5965696912195b4795436a9f300c009a4f5e5d9839a",
+                  "page": 32
+                },
+                {
+                  "source_id": "drive-1oYm8VhJ3_eRNdxbrGfLXhf6_vI6s6SJq",
+                  "sha256": "6363b7b441d241e4718714b0062a2e011647e14b8219193f0a40a08270568e8e",
+                  "page": 40
+                },
+                {
+                  "source_id": "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
+                  "sha256": "26dc3610938c5b8f91e85b4179ee1092f20aa03684135d0534b8ad2ab9629023",
+                  "page": 26
+                },
+                {
+                  "source_id": "drive-1RWGLrOzFO32Jxrlv-B2n_PafSFoRVySn",
+                  "sha256": "747fadeaf55107fbf9fbb5965696912195b4795436a9f300c009a4f5e5d9839a",
+                  "page": 31
+                }
+              ],
+              "gap": "Проверить станции, методы и сухую/влажную массу."
+            },
+            {
+              "id": "north-baikal-water",
+              "title": "Северный Байкал: район БАМ и фоновые наблюдения",
+              "article": "syntheses/north-baikal-water.md",
+              "status": "published",
+              "sprint_new": true,
+              "evidence_level": "multiyear_text",
+              "sources": [
+                {
+                  "source_id": "drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0",
+                  "sha256": "60ccb6065b32d959457faf9745023d763c9f6641ad7c9c8cdee7a88fea454139",
+                  "page": 19
+                },
+                {
+                  "source_id": "drive-1oLnz6N8ueMCEL8p2HnPDtT7dx1tAE8RB",
+                  "sha256": "9f0ff38111fe9092e96e8bed6e602f92a5b1e63f6cd9bbcb856d76dc3b7fb391",
+                  "page": 36
+                },
+                {
+                  "source_id": "official-b4e3fcfe0e41e26ea03b",
+                  "sha256": "f42cd72201a7bb8652d10a571c5f472e9f9bd738d78939d676b13d0ee6146920",
+                  "page": 161
+                }
+              ],
+              "gap": "Уточнить фоновые значения и неизменность вертикалей."
+            }
+          ]
+        },
+        {
+          "id": "inflow-level",
+          "title": "Притоки и регулирование",
+          "topics": [
+            {
+              "id": "river-inputs-2025",
+              "title": "Притоки Байкала: водный сток и вынос веществ в 2024–2025 годах",
+              "article": "syntheses/river-inputs-2025.md",
+              "status": "published",
+              "sprint_new": false,
+              "evidence_level": "reviewed_overview",
+              "sources": [
+                {
+                  "source_id": "official-b4e3fcfe0e41e26ea03b",
+                  "sha256": "f42cd72201a7bb8652d10a571c5f472e9f9bd738d78939d676b13d0ee6146920",
+                  "page": 1
+                },
+                {
+                  "source_id": "official-b4e3fcfe0e41e26ea03b",
+                  "sha256": "f42cd72201a7bb8652d10a571c5f472e9f9bd738d78939d676b13d0ee6146920",
+                  "page": 156
+                },
+                {
+                  "source_id": "official-b4e3fcfe0e41e26ea03b",
+                  "sha256": "f42cd72201a7bb8652d10a571c5f472e9f9bd738d78939d676b13d0ee6146920",
+                  "page": 158
+                },
+                {
+                  "source_id": "official-b4e3fcfe0e41e26ea03b",
+                  "sha256": "f42cd72201a7bb8652d10a571c5f472e9f9bd738d78939d676b13d0ee6146920",
+                  "page": 165
+                },
+                {
+                  "source_id": "official-b4e3fcfe0e41e26ea03b",
+                  "sha256": "f42cd72201a7bb8652d10a571c5f472e9f9bd738d78939d676b13d0ee6146920",
+                  "page": 170
+                }
+              ],
+              "gap": "Сопоставимость количественных рядов и подлинность зеркал проверяются отдельно."
+            },
+            {
+              "id": "water-level-regulation",
+              "title": "Уровень Байкала: приточность, регулирование и системы высот",
+              "article": "syntheses/water-level-regulation.md",
+              "status": "published",
+              "sprint_new": true,
+              "evidence_level": "multiyear_text",
+              "sources": [
+                {
+                  "source_id": "drive-1ScikzOKs0VW7ZZS1XWKyoOfcHeYklUEP",
+                  "sha256": "48bfd75a6c75a685d4f5ff2ea52cd1aba78d6d0a6bd45fbd311d5305a9b84c54",
+                  "page": 13
+                },
+                {
+                  "source_id": "drive-1oYm8VhJ3_eRNdxbrGfLXhf6_vI6s6SJq",
+                  "sha256": "6363b7b441d241e4718714b0062a2e011647e14b8219193f0a40a08270568e8e",
+                  "page": 15
+                },
+                {
+                  "source_id": "drive-1jl98YhWpGzbTkJXflFXv0fHB7yKqPRJr",
+                  "sha256": "80935438545af9b1fd55811ea6b4345822b62301ba472e71e76f1a67f7b4967d",
+                  "page": 12
+                }
+              ],
+              "gap": "Нужны первичные суточные ряды и проверка арифметики источника."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pressure",
+      "title": "Источники нагрузки",
+      "subtopics": [
+        {
+          "id": "legacy-waste",
+          "title": "Промышленное наследие и отходы",
+          "topics": [
+            {
+              "id": "bcbk-legacy",
+              "title": "Наследие БЦБК: накопители, подземные воды и коммунальные стоки",
+              "article": "syntheses/bcbk-legacy.md",
+              "status": "published",
+              "sprint_new": true,
+              "evidence_level": "multiyear_text",
+              "sources": [
+                {
+                  "source_id": "drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0",
+                  "sha256": "60ccb6065b32d959457faf9745023d763c9f6641ad7c9c8cdee7a88fea454139",
+                  "page": 170
+                },
+                {
+                  "source_id": "drive-1jl98YhWpGzbTkJXflFXv0fHB7yKqPRJr",
+                  "sha256": "80935438545af9b1fd55811ea6b4345822b62301ba472e71e76f1a67f7b4967d",
+                  "page": 95
+                },
+                {
+                  "source_id": "drive-1oLnz6N8ueMCEL8p2HnPDtT7dx1tAE8RB",
+                  "sha256": "9f0ff38111fe9092e96e8bed6e602f92a5b1e63f6cd9bbcb856d76dc3b7fb391",
+                  "page": 249
+                },
+                {
+                  "source_id": "drive-1oLnz6N8ueMCEL8p2HnPDtT7dx1tAE8RB",
+                  "sha256": "9f0ff38111fe9092e96e8bed6e602f92a5b1e63f6cd9bbcb856d76dc3b7fb391",
+                  "page": 250
+                },
+                {
+                  "source_id": "drive-1C-SRfbklf00M5rsLajYO_2nFCdmCL1fi",
+                  "sha256": "da48b7061dc74cdc300213ca2e4b6f0d124ac5aab5aa7f2da84d3c3451d07066",
+                  "page": 353
+                }
+              ],
+              "gap": "Нужны балансы переноса и фактические результаты очистки."
+            },
+            {
+              "id": "waste-and-pollution",
+              "title": "Отходы и загрязнение: территория, класс опасности и меры управления",
+              "article": "syntheses/waste-and-pollution.md",
+              "status": "published",
+              "sprint_new": false,
+              "evidence_level": "reviewed_overview",
+              "sources": [
+                {
+                  "source_id": "drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ",
+                  "sha256": "c813f2671ebb235dd3291076f3c728bb78d821391024e2bce754849c79fa992a",
+                  "page": 252
+                },
+                {
+                  "source_id": "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos",
+                  "sha256": "557959d2c8996b990487e9d2acd501ca4048f29e3c7a6fe27e49f8fc1c554fd8",
+                  "page": 327
+                }
+              ],
+              "gap": "Сопоставимость количественных рядов и подлинность зеркал проверяются отдельно."
+            }
+          ]
+        },
+        {
+          "id": "emissions",
+          "title": "Атмосферные выбросы",
+          "topics": [
+            {
+              "id": "air-pollution",
+              "title": "Атмосферный воздух: выбросы теплоэнергетики и границы сравнения",
+              "article": "syntheses/air-pollution.md",
+              "status": "published",
+              "sprint_new": false,
+              "evidence_level": "reviewed_overview",
+              "sources": [
+                {
+                  "source_id": "drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ",
+                  "sha256": "c813f2671ebb235dd3291076f3c728bb78d821391024e2bce754849c79fa992a",
+                  "page": 168
+                },
+                {
+                  "source_id": "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos",
+                  "sha256": "557959d2c8996b990487e9d2acd501ca4048f29e3c7a6fe27e49f8fc1c554fd8",
+                  "page": 166
+                }
+              ],
+              "gap": "Сопоставимость количественных рядов и подлинность зеркал проверяются отдельно."
+            }
+          ]
+        },
+        {
+          "id": "visits",
+          "title": "Посещение и инфраструктура",
+          "topics": [
+            {
+              "id": "tourism-pressure",
+              "title": "Туризм: сезонная нагрузка, почвы и управление инфраструктурой",
+              "article": "syntheses/tourism-pressure.md",
+              "status": "published",
+              "sprint_new": true,
+              "evidence_level": "multiyear_text",
+              "sources": [
+                {
+                  "source_id": "drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ",
+                  "sha256": "c813f2671ebb235dd3291076f3c728bb78d821391024e2bce754849c79fa992a",
+                  "page": 280
+                },
+                {
+                  "source_id": "drive-1oYm8VhJ3_eRNdxbrGfLXhf6_vI6s6SJq",
+                  "sha256": "6363b7b441d241e4718714b0062a2e011647e14b8219193f0a40a08270568e8e",
+                  "page": 287
+                },
+                {
+                  "source_id": "drive-1C-SRfbklf00M5rsLajYO_2nFCdmCL1fi",
+                  "sha256": "da48b7061dc74cdc300213ca2e4b6f0d124ac5aab5aa7f2da84d3c3451d07066",
+                  "page": 81
+                },
+                {
+                  "source_id": "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos",
+                  "sha256": "557959d2c8996b990487e9d2acd501ca4048f29e3c7a6fe27e49f8fc1c554fd8",
+                  "page": 202
+                }
+              ],
+              "gap": "Различать период наблюдения, прогноз и фактическое посещение."
+            }
+          ]
+        },
+        {
+          "id": "sewage",
+          "title": "Коммунальная очистка",
+          "topics": [
+            {
+              "id": "municipal-treatment",
+              "title": "Очистные сооружения и коммунальный сброс Байкальска",
+              "article": null,
+              "status": "research",
+              "sprint_new": true,
+              "evidence_level": "located_pages",
+              "sources": [
+                {
+                  "source_id": "drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0",
+                  "sha256": "60ccb6065b32d959457faf9745023d763c9f6641ad7c9c8cdee7a88fea454139",
+                  "page": 15
+                },
+                {
+                  "source_id": "drive-1oLnz6N8ueMCEL8p2HnPDtT7dx1tAE8RB",
+                  "sha256": "9f0ff38111fe9092e96e8bed6e602f92a5b1e63f6cd9bbcb856d76dc3b7fb391",
+                  "page": 249
+                }
+              ],
+              "gap": "Отделить оператора, коммунальный сток и наследие производства, проверить объёмы и массы; статья не создана."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "conservation",
+      "title": "Леса и охраняемые территории",
+      "subtopics": [
+        {
+          "id": "forests",
+          "title": "Пожары и защита лесов",
+          "topics": [
+            {
+              "id": "forest-fires",
+              "title": "Лесные пожары: учёт последствий и меры предупреждения",
+              "article": "syntheses/forest-fires.md",
+              "status": "published",
+              "sprint_new": true,
+              "evidence_level": "multiyear_text",
+              "sources": [
+                {
+                  "source_id": "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
+                  "sha256": "26dc3610938c5b8f91e85b4179ee1092f20aa03684135d0534b8ad2ab9629023",
+                  "page": 140
+                },
+                {
+                  "source_id": "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos",
+                  "sha256": "557959d2c8996b990487e9d2acd501ca4048f29e3c7a6fe27e49f8fc1c554fd8",
+                  "page": 139
+                },
+                {
+                  "source_id": "drive-1RWGLrOzFO32Jxrlv-B2n_PafSFoRVySn",
+                  "sha256": "747fadeaf55107fbf9fbb5965696912195b4795436a9f300c009a4f5e5d9839a",
+                  "page": 142
+                }
+              ],
+              "gap": "Различаются число пожаров, пройденная площадь и погибшие насаждения."
+            }
+          ]
+        },
+        {
+          "id": "reserves",
+          "title": "Управление ООПТ",
+          "topics": [
+            {
+              "id": "protected-areas-management",
+              "title": "Охраняемые территории: наблюдения, посещение и природоохранная работа",
+              "article": "syntheses/protected-areas-management.md",
+              "status": "published",
+              "sprint_new": true,
+              "evidence_level": "multiyear_text",
+              "sources": [
+                {
+                  "source_id": "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
+                  "sha256": "26dc3610938c5b8f91e85b4179ee1092f20aa03684135d0534b8ad2ab9629023",
+                  "page": 57
+                },
+                {
+                  "source_id": "drive-1oLnz6N8ueMCEL8p2HnPDtT7dx1tAE8RB",
+                  "sha256": "9f0ff38111fe9092e96e8bed6e602f92a5b1e63f6cd9bbcb856d76dc3b7fb391",
+                  "page": 75
+                },
+                {
+                  "source_id": "drive-1C-SRfbklf00M5rsLajYO_2nFCdmCL1fi",
+                  "sha256": "da48b7061dc74cdc300213ca2e4b6f0d124ac5aab5aa7f2da84d3c3451d07066",
+                  "page": 81
+                }
+              ],
+              "gap": "Выбранные страницы не охватывают все ООПТ; нужны результаты сохранения видов."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "methods",
+      "title": "Мониторинг и проверка знаний",
+      "subtopics": [
+        {
+          "id": "underground",
+          "title": "Подземная среда и геологические процессы",
+          "topics": [
+            {
+              "id": "groundwater-geological-monitoring",
+              "title": "Подземные воды и геологические процессы: как устроена сеть мониторинга",
+              "article": "syntheses/groundwater-geological-monitoring.md",
+              "status": "published",
+              "sprint_new": true,
+              "evidence_level": "multiyear_text",
+              "sources": [
+                {
+                  "source_id": "drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0",
+                  "sha256": "60ccb6065b32d959457faf9745023d763c9f6641ad7c9c8cdee7a88fea454139",
+                  "page": 106
+                },
+                {
+                  "source_id": "drive-1ScikzOKs0VW7ZZS1XWKyoOfcHeYklUEP",
+                  "sha256": "48bfd75a6c75a685d4f5ff2ea52cd1aba78d6d0a6bd45fbd311d5305a9b84c54",
+                  "page": 91
+                },
+                {
+                  "source_id": "drive-1oYm8VhJ3_eRNdxbrGfLXhf6_vI6s6SJq",
+                  "sha256": "6363b7b441d241e4718714b0062a2e011647e14b8219193f0a40a08270568e8e",
+                  "page": 101
+                }
+              ],
+              "gap": "Нет полного ряда по координатам и фильтрам скважин."
+            }
+          ]
+        },
+        {
+          "id": "interpretation",
+          "title": "Сопоставимость и общая картина",
+          "topics": [
+            {
+              "id": "emissions-and-comparability",
+              "title": "Выбросы теплоэнергетики: что подтверждает ретроспективный ряд",
+              "article": "syntheses/emissions-and-comparability.md",
+              "status": "published",
+              "sprint_new": false,
+              "evidence_level": "reviewed_overview",
+              "sources": [
+                {
+                  "source_id": "drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ",
+                  "sha256": "c813f2671ebb235dd3291076f3c728bb78d821391024e2bce754849c79fa992a",
+                  "page": 168
+                },
+                {
+                  "source_id": "drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ",
+                  "sha256": "c813f2671ebb235dd3291076f3c728bb78d821391024e2bce754849c79fa992a",
+                  "page": 19
+                }
+              ],
+              "gap": "Сопоставимость количественных рядов и подлинность зеркал проверяются отдельно."
+            },
+            {
+              "id": "environmental-problems",
+              "title": "Экологические проблемы Байкала: связанная картина и пределы знаний",
+              "article": "syntheses/environmental-problems.md",
+              "status": "published",
+              "sprint_new": false,
+              "evidence_level": "reviewed_overview",
+              "sources": [
+                {
+                  "source_id": "drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ",
+                  "sha256": "c813f2671ebb235dd3291076f3c728bb78d821391024e2bce754849c79fa992a",
+                  "page": 168
+                },
+                {
+                  "source_id": "drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ",
+                  "sha256": "c813f2671ebb235dd3291076f3c728bb78d821391024e2bce754849c79fa992a",
+                  "page": 17
+                },
+                {
+                  "source_id": "drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ",
+                  "sha256": "c813f2671ebb235dd3291076f3c728bb78d821391024e2bce754849c79fa992a",
+                  "page": 252
+                },
+                {
+                  "source_id": "drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ",
+                  "sha256": "c813f2671ebb235dd3291076f3c728bb78d821391024e2bce754849c79fa992a",
+                  "page": 53
+                },
+                {
+                  "source_id": "drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ",
+                  "sha256": "c813f2671ebb235dd3291076f3c728bb78d821391024e2bce754849c79fa992a",
+                  "page": 54
+                },
+                {
+                  "source_id": "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos",
+                  "sha256": "557959d2c8996b990487e9d2acd501ca4048f29e3c7a6fe27e49f8fc1c554fd8",
+                  "page": 166
+                },
+                {
+                  "source_id": "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos",
+                  "sha256": "557959d2c8996b990487e9d2acd501ca4048f29e3c7a6fe27e49f8fc1c554fd8",
+                  "page": 18
+                },
+                {
+                  "source_id": "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos",
+                  "sha256": "557959d2c8996b990487e9d2acd501ca4048f29e3c7a6fe27e49f8fc1c554fd8",
+                  "page": 327
+                },
+                {
+                  "source_id": "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos",
+                  "sha256": "557959d2c8996b990487e9d2acd501ca4048f29e3c7a6fe27e49f8fc1c554fd8",
+                  "page": 69
+                }
+              ],
+              "gap": "Сопоставимость количественных рядов и подлинность зеркал проверяются отдельно."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence_labels": {
+    "multiyear_text": "Достаточно для описания по нескольким годам",
+    "reviewed_overview": "Ранее подготовленный обзор с источниками",
+    "located_pages": "Страницы найдены, проверка не завершена"
+  }
+}

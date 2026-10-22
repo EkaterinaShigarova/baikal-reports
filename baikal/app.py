@@ -99,6 +99,23 @@ def wiki_list():
     ]
 
 
+@app.get("/api/wiki/catalog")
+def encyclopedia_catalog():
+    from .encyclopedia import catalog
+
+    return catalog()
+
+
+@app.get("/api/wiki/search")
+def encyclopedia_search(
+    q: str = Query(min_length=1, max_length=300),
+    limit: int = Query(default=30, ge=1, le=100),
+):
+    from .encyclopedia import search_articles
+
+    return search_articles(q, limit)
+
+
 @app.get("/api/wiki/{name:path}", response_class=PlainTextResponse)
 def wiki_page(name: str):
     path = (WIKI / name).resolve()

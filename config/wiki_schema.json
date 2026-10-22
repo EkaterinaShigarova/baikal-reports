@@ -1,1 +1,28 @@
-{"version":1,"page_types":["source","topic","entity","index"],"required_sections":["Источники и доказательства","Ограничения"],"citation_format":"[source_id:pN](../sources/source_id.md#page-N)","provenance_fields":["source_id","sha256","page","quote"],"human_notes_marker":"<!-- HUMAN NOTES -->","operations":["ingest","query","lint"]}
+{
+  "version": 1,
+  "page_types": [
+    "source",
+    "topic",
+    "entity",
+    "index",
+    "synthesis",
+    "catalog"
+  ],
+  "required_sections": [
+    "Источники и доказательства",
+    "Ограничения"
+  ],
+  "citation_format": "[source_id:pN](../sources/source_id.md#page-N)",
+  "provenance_fields": [
+    "source_id",
+    "sha256",
+    "page",
+    "quote"
+  ],
+  "human_notes_marker": "<!-- HUMAN NOTES -->",
+  "operations": [
+    "ingest",
+    "query",
+    "lint"
+  ]
+}

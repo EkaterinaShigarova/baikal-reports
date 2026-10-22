@@ -218,6 +218,12 @@ def build():
         changed += write_page(WIKI / "entities" / f"{key}.md", "\n".join(lines))
         index.append((f"entities/{key}.md", name))
     # Include human-authored synthesis and saved queries in the index too.
+    from .encyclopedia import render_catalog
+
+    catalog_text = render_catalog(ROOT)
+    if catalog_text:
+        changed += write_page(WIKI / "catalog.md", catalog_text)
+        index.insert(0, ("catalog.md", "Тематическая энциклопедия: разделы и подтемы"))
     known = {p for p, _ in index}
     for folder in ("sources", "topics", "entities", "syntheses", "queries"):
         for path in sorted((WIKI / folder).glob("*.md")):
@@ -276,6 +282,10 @@ def lint():
     errors = []
     warnings = []
     cat = {s["id"]: s for s in load_sources()["sources"]}
+    from .encyclopedia import catalog, validate_catalog, check_evidence
+
+    errors.extend(validate_catalog(catalog(ROOT), ROOT, cat))
+    errors.extend(check_evidence(ROOT)["errors"])
     provenance = read_json(ROOT / "datasets/article_provenance.json", {})
     for name, refs in provenance.items():
         if not (WIKI / name).is_file():

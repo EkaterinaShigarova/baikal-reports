@@ -25,3 +25,10 @@ Use the existing checkout. Cloud tasks are isolated; do not create a Git worktre
 - Test download integrity, resumability, citation correctness, comparisons and API behavior. Use synthetic PDFs for unit tests; real evidence must come from real reports.
 - Keep large files, raw responses, secrets and generated page images out of Git. Commit only code, documentation, compact reviewed datasets, manifests and wiki.
 - Do not delete existing user files. Publish milestones on a feature branch; do not merge to main automatically.
+
+## Editorial encyclopedia
+- `config/encyclopedia.json` defines sections, subtopics, published articles and research topics. `wiki/catalog.md` is generated from it; preserve human notes.
+- New synthesis must cite substantive pages, never just a table of contents. Distinguish report year from observation period, observed facts from author interpretation, and completed actions from plans.
+- Add exact cached-page evidence to `datasets/encyclopedia_evidence.json` and source revisions to `datasets/article_provenance.json`. A textual synthesis across years does not approve a numerical time series.
+- Keep research topics without an article until evidence is sufficient. Do not add placeholder articles to reach a target count.
+- Run `python scripts/check_encyclopedia.py --require-local` when caches are present; ordinary lint also checks the committed evidence inventory and catalog. No PDF/OCR rerun is needed to edit articles.

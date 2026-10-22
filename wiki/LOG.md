@@ -19,3 +19,9 @@
 ## [2026-10-21T17:25:53+00:00] synthesis | Official Rosgidromet 2025 review: river inputs, 88 reviewed values; water-quality observation-unit discrepancy preserved.
 
 ## [2026-10-21T17:27:51+00:00] ingest | Обновлено страниц: 21; источников с извлечёнными страницами: 11
+
+## [2026-10-22T02:34:04+00:00] encyclopedia | 14 new substantive articles, selected evidence from all reporting years 2015–2025; source revisions recorded. No PDF extraction or paid API.
+
+## [2026-10-22T02:39:09+00:00] ingest | Обновлено страниц: 2; источников с извлечёнными страницами: 11
+
+## [2026-10-22T02:45:51+00:00] ingest | Обновлено страниц: 1; источников с извлечёнными страницами: 11
