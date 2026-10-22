@@ -20,6 +20,8 @@
 
 Обеспеченность: Ранее подготовленный обзор с источниками. Сопоставимость количественных рядов и подлинность зеркал проверяются отдельно.
 
+Статус проверки: Требуется научная рецензия. Научная рецензия требуется.
+
 [drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ:p47](sources/drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ.md#page-47) · доклад 2018.
 [drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ:p54](sources/drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ.md#page-54) · доклад 2018.
 [drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos:p63](sources/drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos.md#page-63) · доклад 2024.
@@ -27,6 +29,8 @@
 - [Байкальский омуль: экологические группы и естественное воспроизводство](syntheses/baikal-omul.md)
 
 Обеспеченность: Достаточно для описания по нескольким годам. Сверить методы учёта производителей и личинок по рекам.
+
+Статус проверки: Проверен AI-агентом по первоисточнику. Научная рецензия требуется.
 
 [drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab:p42](sources/drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab.md#page-42) · доклад 2015.
 [drive-1RWGLrOzFO32Jxrlv-B2n_PafSFoRVySn:p49](sources/drive-1RWGLrOzFO32Jxrlv-B2n_PafSFoRVySn.md#page-49) · доклад 2019.
@@ -36,6 +40,8 @@
 - [Байкальский осётр: охрана и искусственное воспроизводство](syntheses/baikal-sturgeon.md)
 
 Обеспеченность: Достаточно для описания по нескольким годам. Нужны данные выживания и возврата выпущенной молоди.
+
+Статус проверки: Требуется научная рецензия. Научная рецензия требуется.
 
 [drive-1ScikzOKs0VW7ZZS1XWKyoOfcHeYklUEP:p51](sources/drive-1ScikzOKs0VW7ZZS1XWKyoOfcHeYklUEP.md#page-51) · доклад 2020.
 [drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0:p222](sources/drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0.md#page-222) · доклад 2016.
@@ -48,6 +54,8 @@
 
 Обеспеченность: Достаточно для описания по нескольким годам. Разные районы и сезоны; общего временного ряда нет.
 
+Статус проверки: Проверен AI-агентом по первоисточнику. Научная рецензия требуется.
+
 [drive-1ScikzOKs0VW7ZZS1XWKyoOfcHeYklUEP:p41](sources/drive-1ScikzOKs0VW7ZZS1XWKyoOfcHeYklUEP.md#page-41) · доклад 2020.
 [drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0:p32](sources/drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0.md#page-32) · доклад 2016.
 [drive-1oYm8VhJ3_eRNdxbrGfLXhf6_vI6s6SJq:p52](sources/drive-1oYm8VhJ3_eRNdxbrGfLXhf6_vI6s6SJq.md#page-52) · доклад 2022.
@@ -56,6 +64,8 @@
 
 Обеспеченность: Достаточно для описания по нескольким годам. Сетные и грунтовые пробы не дают единой площади зарастания.
 
+Статус проверки: Проверен AI-агентом по первоисточнику. Научная рецензия требуется.
+
 [drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab:p40](sources/drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab.md#page-40) · доклад 2015.
 [drive-1jl98YhWpGzbTkJXflFXv0fHB7yKqPRJr:p39](sources/drive-1jl98YhWpGzbTkJXflFXv0fHB7yKqPRJr.md#page-39) · доклад 2017.
 [drive-1oLnz6N8ueMCEL8p2HnPDtT7dx1tAE8RB:p55](sources/drive-1oLnz6N8ueMCEL8p2HnPDtT7dx1tAE8RB.md#page-55) · доклад 2021.
@@ -63,6 +73,8 @@
 - [Эпишура и донные беспозвоночные: биологические показатели качества среды](syntheses/epishura-benthos.md)
 
 Обеспеченность: Достаточно для описания по нескольким годам. Нужно стандартизовать орудия, глубины и группы организмов.
+
+Статус проверки: Требуется научная рецензия. Научная рецензия требуется.
 
 [drive-1C-SRfbklf00M5rsLajYO_2nFCdmCL1fi:p49](sources/drive-1C-SRfbklf00M5rsLajYO_2nFCdmCL1fi.md#page-49) · доклад 2023.
 [drive-1jl98YhWpGzbTkJXflFXv0fHB7yKqPRJr:p32](sources/drive-1jl98YhWpGzbTkJXflFXv0fHB7yKqPRJr.md#page-32) · доклад 2017.
@@ -74,6 +86,8 @@
 - [Байкальская нерпа: численность, воспроизводство и ограничения сравнения](syntheses/baikal-seal.md)
 
 Обеспеченность: Ранее подготовленный обзор с источниками. Сопоставимость количественных рядов и подлинность зеркал проверяются отдельно.
+
+Статус проверки: Проверен AI-агентом по первоисточнику. Научная рецензия требуется.
 
 [drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ:p53](sources/drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ.md#page-53) · доклад 2018.
 [drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ:p54](sources/drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ.md#page-54) · доклад 2018.
@@ -90,6 +104,8 @@
 
 Обеспеченность: Ранее подготовленный обзор с источниками. Сопоставимость количественных рядов и подлинность зеркал проверяются отдельно.
 
+Статус проверки: Проверен AI-агентом по первоисточнику. Научная рецензия требуется.
+
 [drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ:p17](sources/drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ.md#page-17) · доклад 2018.
 [drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ:p19](sources/drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ.md#page-19) · доклад 2018.
 [drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ:p30](sources/drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ.md#page-30) · доклад 2018.
@@ -103,6 +119,8 @@
 - [Устойчивые органические загрязнители: ПХБ, пестициды и разные среды](syntheses/persistent-organic-pollutants.md)
 
 Обеспеченность: Достаточно для описания по нескольким годам. Разные среды и состав сумм конгенеров нельзя склеивать.
+
+Статус проверки: Проверен AI-агентом по первоисточнику. Научная рецензия требуется.
 
 [drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0:p302](sources/drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0.md#page-302) · доклад 2016.
 [drive-1RWGLrOzFO32Jxrlv-B2n_PafSFoRVySn:p287](sources/drive-1RWGLrOzFO32Jxrlv-B2n_PafSFoRVySn.md#page-287) · доклад 2019.
@@ -126,6 +144,8 @@
 
 Обеспеченность: Достаточно для описания по нескольким годам. Проверить станции, методы и сухую/влажную массу.
 
+Статус проверки: Требуется научная рецензия. Научная рецензия требуется.
+
 [drive-1RWGLrOzFO32Jxrlv-B2n_PafSFoRVySn:p32](sources/drive-1RWGLrOzFO32Jxrlv-B2n_PafSFoRVySn.md#page-32) · доклад 2019.
 [drive-1oYm8VhJ3_eRNdxbrGfLXhf6_vI6s6SJq:p40](sources/drive-1oYm8VhJ3_eRNdxbrGfLXhf6_vI6s6SJq.md#page-40) · доклад 2022.
 [drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab:p26](sources/drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab.md#page-26) · доклад 2015.
@@ -134,6 +154,8 @@
 - [Северный Байкал: район БАМ и фоновые наблюдения](syntheses/north-baikal-water.md)
 
 Обеспеченность: Достаточно для описания по нескольким годам. Уточнить фоновые значения и неизменность вертикалей.
+
+Статус проверки: Проверен AI-агентом по первоисточнику. Научная рецензия требуется.
 
 [drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0:p19](sources/drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0.md#page-19) · доклад 2016.
 [drive-1oLnz6N8ueMCEL8p2HnPDtT7dx1tAE8RB:p36](sources/drive-1oLnz6N8ueMCEL8p2HnPDtT7dx1tAE8RB.md#page-36) · доклад 2021.
@@ -146,6 +168,8 @@
 
 Обеспеченность: Ранее подготовленный обзор с источниками. Сопоставимость количественных рядов и подлинность зеркал проверяются отдельно.
 
+Статус проверки: Требуется научная рецензия. Научная рецензия требуется.
+
 [official-b4e3fcfe0e41e26ea03b:p1](sources/official-b4e3fcfe0e41e26ea03b.md#page-1) · доклад 2025.
 [official-b4e3fcfe0e41e26ea03b:p156](sources/official-b4e3fcfe0e41e26ea03b.md#page-156) · доклад 2025.
 [official-b4e3fcfe0e41e26ea03b:p158](sources/official-b4e3fcfe0e41e26ea03b.md#page-158) · доклад 2025.
@@ -155,6 +179,8 @@
 - [Уровень Байкала: приточность, регулирование и системы высот](syntheses/water-level-regulation.md)
 
 Обеспеченность: Достаточно для описания по нескольким годам. Нужны первичные суточные ряды и проверка арифметики источника.
+
+Статус проверки: Проверен AI-агентом по первоисточнику. Научная рецензия требуется.
 
 [drive-1ScikzOKs0VW7ZZS1XWKyoOfcHeYklUEP:p13](sources/drive-1ScikzOKs0VW7ZZS1XWKyoOfcHeYklUEP.md#page-13) · доклад 2020.
 [drive-1oYm8VhJ3_eRNdxbrGfLXhf6_vI6s6SJq:p15](sources/drive-1oYm8VhJ3_eRNdxbrGfLXhf6_vI6s6SJq.md#page-15) · доклад 2022.
@@ -171,6 +197,8 @@
 
 Обеспеченность: Достаточно для описания по нескольким годам. Нужны балансы переноса и фактические результаты очистки.
 
+Статус проверки: Проверен AI-агентом по первоисточнику. Научная рецензия требуется.
+
 [drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0:p170](sources/drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0.md#page-170) · доклад 2016.
 [drive-1jl98YhWpGzbTkJXflFXv0fHB7yKqPRJr:p95](sources/drive-1jl98YhWpGzbTkJXflFXv0fHB7yKqPRJr.md#page-95) · доклад 2017.
 [drive-1oLnz6N8ueMCEL8p2HnPDtT7dx1tAE8RB:p249](sources/drive-1oLnz6N8ueMCEL8p2HnPDtT7dx1tAE8RB.md#page-249) · доклад 2021.
@@ -180,6 +208,8 @@
 - [Отходы и загрязнение: территория, класс опасности и меры управления](syntheses/waste-and-pollution.md)
 
 Обеспеченность: Ранее подготовленный обзор с источниками. Сопоставимость количественных рядов и подлинность зеркал проверяются отдельно.
+
+Статус проверки: Требуется научная рецензия. Научная рецензия требуется.
 
 [drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ:p252](sources/drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ.md#page-252) · доклад 2018.
 [drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos:p327](sources/drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos.md#page-327) · доклад 2024.
@@ -191,6 +221,8 @@
 
 Обеспеченность: Ранее подготовленный обзор с источниками. Сопоставимость количественных рядов и подлинность зеркал проверяются отдельно.
 
+Статус проверки: Проверен AI-агентом по первоисточнику. Научная рецензия требуется.
+
 [drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ:p168](sources/drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ.md#page-168) · доклад 2018.
 [drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos:p166](sources/drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos.md#page-166) · доклад 2024.
 
@@ -200,6 +232,8 @@
 - [Туризм: сезонная нагрузка, почвы и управление инфраструктурой](syntheses/tourism-pressure.md)
 
 Обеспеченность: Достаточно для описания по нескольким годам. Различать период наблюдения, прогноз и фактическое посещение.
+
+Статус проверки: Проверен AI-агентом по первоисточнику. Научная рецензия требуется.
 
 [drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ:p280](sources/drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ.md#page-280) · доклад 2018.
 [drive-1oYm8VhJ3_eRNdxbrGfLXhf6_vI6s6SJq:p287](sources/drive-1oYm8VhJ3_eRNdxbrGfLXhf6_vI6s6SJq.md#page-287) · доклад 2022.
@@ -227,6 +261,8 @@
 
 Обеспеченность: Достаточно для описания по нескольким годам. Различаются число пожаров, пройденная площадь и погибшие насаждения.
 
+Статус проверки: Требуется научная рецензия. Научная рецензия требуется.
+
 [drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab:p140](sources/drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab.md#page-140) · доклад 2015.
 [drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos:p139](sources/drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos.md#page-139) · доклад 2024.
 [drive-1RWGLrOzFO32Jxrlv-B2n_PafSFoRVySn:p142](sources/drive-1RWGLrOzFO32Jxrlv-B2n_PafSFoRVySn.md#page-142) · доклад 2019.
@@ -237,6 +273,8 @@
 - [Охраняемые территории: наблюдения, посещение и природоохранная работа](syntheses/protected-areas-management.md)
 
 Обеспеченность: Достаточно для описания по нескольким годам. Выбранные страницы не охватывают все ООПТ; нужны результаты сохранения видов.
+
+Статус проверки: Требуется научная рецензия. Научная рецензия требуется.
 
 [drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab:p57](sources/drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab.md#page-57) · доклад 2015.
 [drive-1oLnz6N8ueMCEL8p2HnPDtT7dx1tAE8RB:p75](sources/drive-1oLnz6N8ueMCEL8p2HnPDtT7dx1tAE8RB.md#page-75) · доклад 2021.
@@ -253,6 +291,8 @@
 
 Обеспеченность: Достаточно для описания по нескольким годам. Нет полного ряда по координатам и фильтрам скважин.
 
+Статус проверки: Требуется научная рецензия. Научная рецензия требуется.
+
 [drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0:p106](sources/drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0.md#page-106) · доклад 2016.
 [drive-1ScikzOKs0VW7ZZS1XWKyoOfcHeYklUEP:p91](sources/drive-1ScikzOKs0VW7ZZS1XWKyoOfcHeYklUEP.md#page-91) · доклад 2020.
 [drive-1oYm8VhJ3_eRNdxbrGfLXhf6_vI6s6SJq:p101](sources/drive-1oYm8VhJ3_eRNdxbrGfLXhf6_vI6s6SJq.md#page-101) · доклад 2022.
@@ -264,12 +304,16 @@
 
 Обеспеченность: Ранее подготовленный обзор с источниками. Сопоставимость количественных рядов и подлинность зеркал проверяются отдельно.
 
+Статус проверки: Проверен AI-агентом по первоисточнику. Научная рецензия требуется.
+
 [drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ:p168](sources/drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ.md#page-168) · доклад 2018.
 [drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ:p19](sources/drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ.md#page-19) · доклад 2018.
 
 - [Экологические проблемы Байкала: связанная картина и пределы знаний](syntheses/environmental-problems.md)
 
 Обеспеченность: Ранее подготовленный обзор с источниками. Сопоставимость количественных рядов и подлинность зеркал проверяются отдельно.
+
+Статус проверки: Требуется научная рецензия. Научная рецензия требуется.
 
 [drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ:p168](sources/drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ.md#page-168) · доклад 2018.
 [drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ:p17](sources/drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ.md#page-17) · доклад 2018.

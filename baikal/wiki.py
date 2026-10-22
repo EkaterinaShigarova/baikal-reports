@@ -218,6 +218,9 @@ def build():
         changed += write_page(WIKI / "entities" / f"{key}.md", "\n".join(lines))
         index.append((f"entities/{key}.md", name))
     # Include human-authored synthesis and saved queries in the index too.
+    from .scientific_review import sync_review_pages
+
+    changed += sync_review_pages(ROOT)
     from .encyclopedia import render_catalog
 
     catalog_text = render_catalog(ROOT)
@@ -286,6 +289,11 @@ def lint():
 
     errors.extend(validate_catalog(catalog(ROOT), ROOT, cat))
     errors.extend(check_evidence(ROOT)["errors"])
+    from .scientific_review import validate as validate_scientific_review
+
+    review = validate_scientific_review(ROOT)
+    errors.extend(review["errors"])
+    warnings.extend(review["warnings"])
     provenance = read_json(ROOT / "datasets/article_provenance.json", {})
     for name, refs in provenance.items():
         if not (WIKI / name).is_file():

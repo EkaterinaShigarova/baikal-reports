@@ -54,6 +54,14 @@ def render_catalog(root=ROOT):
                     f"Обеспеченность: {labels.get(topic['evidence_level'], topic['evidence_level'])}. {topic['gap']}",
                     "",
                 ]
+                if topic.get("article"):
+                    from .scientific_review import registry, label
+
+                    if registry(root)["articles"]:
+                        lines += [
+                            f"Статус проверки: {label(topic['article'], root)}. Научная рецензия требуется.",
+                            "",
+                        ]
                 for ref in topic["sources"]:
                     sid, n = ref["source_id"], ref["page"]
                     lines.append(

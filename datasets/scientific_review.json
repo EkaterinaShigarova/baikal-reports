@@ -1,0 +1,698 @@
+{
+  "version": 1,
+  "reviewed_at": "2026-10-22",
+  "reviewer_type": "ai_agent",
+  "institutional_approval": false,
+  "status_labels": {
+    "automatic_draft": "Автоматический черновик",
+    "ai_source_checked": "Проверен AI-агентом по первоисточнику",
+    "needs_scientific_review": "Требуется научная рецензия",
+    "specialist_verified": "Проверен специалистом"
+  },
+  "articles": {
+    "syntheses/phytoplankton.md": {
+      "status": "ai_source_checked",
+      "reviewer_type": "ai_agent",
+      "reviewed_at": "2026-10-22",
+      "claim_ids": [
+        "phytoplankton-01",
+        "phytoplankton-02",
+        "phytoplankton-03",
+        "phytoplankton-04",
+        "phytoplankton-05"
+      ],
+      "scientific_review_required": true,
+      "human_confirmation": null,
+      "source_revisions": {
+        "drive-1ScikzOKs0VW7ZZS1XWKyoOfcHeYklUEP": "48bfd75a6c75a685d4f5ff2ea52cd1aba78d6d0a6bd45fbd311d5305a9b84c54",
+        "drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0": "60ccb6065b32d959457faf9745023d763c9f6641ad7c9c8cdee7a88fea454139",
+        "drive-1oYm8VhJ3_eRNdxbrGfLXhf6_vI6s6SJq": "6363b7b441d241e4718714b0062a2e011647e14b8219193f0a40a08270568e8e"
+      },
+      "coverage": "Существенные фактические/методические смысловые блоки, перечисленные в реестре; повторы не считаются повторно.",
+      "body_sha256": "5733f267e4c4abb33122e2c5faca2c47fc2a1f8b2d69550b2bc98be0a7197e71"
+    },
+    "syntheses/protected-areas-management.md": {
+      "status": "needs_scientific_review",
+      "reviewer_type": null,
+      "reviewed_at": null,
+      "claim_ids": [],
+      "scientific_review_required": true,
+      "human_confirmation": null,
+      "source_revisions": {},
+      "coverage": "Проверка существенных утверждений в рамках этого спринта не выполнялась."
+    },
+    "syntheses/tourism-pressure.md": {
+      "status": "ai_source_checked",
+      "reviewer_type": "ai_agent",
+      "reviewed_at": "2026-10-22",
+      "claim_ids": [
+        "tourism-pressure-01",
+        "tourism-pressure-02",
+        "tourism-pressure-03",
+        "tourism-pressure-04"
+      ],
+      "scientific_review_required": true,
+      "human_confirmation": null,
+      "source_revisions": {
+        "drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ": "c813f2671ebb235dd3291076f3c728bb78d821391024e2bce754849c79fa992a",
+        "drive-1oYm8VhJ3_eRNdxbrGfLXhf6_vI6s6SJq": "6363b7b441d241e4718714b0062a2e011647e14b8219193f0a40a08270568e8e",
+        "drive-1C-SRfbklf00M5rsLajYO_2nFCdmCL1fi": "da48b7061dc74cdc300213ca2e4b6f0d124ac5aab5aa7f2da84d3c3451d07066",
+        "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos": "557959d2c8996b990487e9d2acd501ca4048f29e3c7a6fe27e49f8fc1c554fd8"
+      },
+      "coverage": "Существенные фактические/методические смысловые блоки, перечисленные в реестре; повторы не считаются повторно.",
+      "body_sha256": "d75b93f4fd07b8e35400011ddb36085c59cf326e9d0392e4f1fd47abe0f4d96c"
+    },
+    "syntheses/waste-and-pollution.md": {
+      "status": "needs_scientific_review",
+      "reviewer_type": null,
+      "reviewed_at": null,
+      "claim_ids": [],
+      "scientific_review_required": true,
+      "human_confirmation": null,
+      "source_revisions": {},
+      "coverage": "Проверка существенных утверждений в рамках этого спринта не выполнялась."
+    },
+    "syntheses/forest-fires.md": {
+      "status": "needs_scientific_review",
+      "reviewer_type": null,
+      "reviewed_at": null,
+      "claim_ids": [],
+      "scientific_review_required": true,
+      "human_confirmation": null,
+      "source_revisions": {},
+      "coverage": "Проверка существенных утверждений в рамках этого спринта не выполнялась."
+    },
+    "syntheses/groundwater-geological-monitoring.md": {
+      "status": "needs_scientific_review",
+      "reviewer_type": null,
+      "reviewed_at": null,
+      "claim_ids": [],
+      "scientific_review_required": true,
+      "human_confirmation": null,
+      "source_revisions": {},
+      "coverage": "Проверка существенных утверждений в рамках этого спринта не выполнялась."
+    },
+    "syntheses/spirogyra-observations.md": {
+      "status": "ai_source_checked",
+      "reviewer_type": "ai_agent",
+      "reviewed_at": "2026-10-22",
+      "claim_ids": [
+        "spirogyra-observations-01",
+        "spirogyra-observations-02",
+        "spirogyra-observations-03",
+        "spirogyra-observations-04",
+        "spirogyra-observations-05",
+        "spirogyra-observations-06"
+      ],
+      "scientific_review_required": true,
+      "human_confirmation": null,
+      "source_revisions": {
+        "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab": "26dc3610938c5b8f91e85b4179ee1092f20aa03684135d0534b8ad2ab9629023",
+        "drive-1oLnz6N8ueMCEL8p2HnPDtT7dx1tAE8RB": "9f0ff38111fe9092e96e8bed6e602f92a5b1e63f6cd9bbcb856d76dc3b7fb391",
+        "drive-1jl98YhWpGzbTkJXflFXv0fHB7yKqPRJr": "80935438545af9b1fd55811ea6b4345822b62301ba472e71e76f1a67f7b4967d"
+      },
+      "coverage": "Существенные фактические/методические смысловые блоки, перечисленные в реестре; повторы не считаются повторно.",
+      "body_sha256": "41fec1849fdceec139be57579a0a9174a7fe6cc432d92841809b6716f93f7f2d"
+    },
+    "syntheses/selenga-sediments.md": {
+      "status": "needs_scientific_review",
+      "reviewer_type": null,
+      "reviewed_at": null,
+      "claim_ids": [],
+      "scientific_review_required": true,
+      "human_confirmation": null,
+      "source_revisions": {},
+      "coverage": "Проверка существенных утверждений в рамках этого спринта не выполнялась."
+    },
+    "syntheses/environmental-problems.md": {
+      "status": "needs_scientific_review",
+      "reviewer_type": null,
+      "reviewed_at": null,
+      "claim_ids": [],
+      "scientific_review_required": true,
+      "human_confirmation": null,
+      "source_revisions": {},
+      "coverage": "Проверка существенных утверждений в рамках этого спринта не выполнялась."
+    },
+    "syntheses/river-inputs-2025.md": {
+      "status": "needs_scientific_review",
+      "reviewer_type": null,
+      "reviewed_at": null,
+      "claim_ids": [],
+      "scientific_review_required": true,
+      "human_confirmation": null,
+      "source_revisions": {},
+      "coverage": "Проверка существенных утверждений в рамках этого спринта не выполнялась."
+    },
+    "syntheses/emissions-and-comparability.md": {
+      "status": "ai_source_checked",
+      "reviewer_type": "ai_agent",
+      "reviewed_at": "2026-10-22",
+      "claim_ids": [
+        "emissions-and-comparability-01",
+        "emissions-and-comparability-02",
+        "emissions-and-comparability-03",
+        "emissions-and-comparability-04"
+      ],
+      "scientific_review_required": true,
+      "human_confirmation": null,
+      "source_revisions": {
+        "drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ": "c813f2671ebb235dd3291076f3c728bb78d821391024e2bce754849c79fa992a"
+      },
+      "coverage": "Существенные фактические/методические смысловые блоки, перечисленные в реестре; повторы не считаются повторно.",
+      "body_sha256": "57a8b1ad5407e9e8c6d9540505ac8a8abacd999e33d4493388d2f4d925b5fe3f"
+    },
+    "syntheses/epishura-benthos.md": {
+      "status": "needs_scientific_review",
+      "reviewer_type": null,
+      "reviewed_at": null,
+      "claim_ids": [],
+      "scientific_review_required": true,
+      "human_confirmation": null,
+      "source_revisions": {},
+      "coverage": "Проверка существенных утверждений в рамках этого спринта не выполнялась."
+    },
+    "syntheses/fish-and-biodiversity.md": {
+      "status": "needs_scientific_review",
+      "reviewer_type": null,
+      "reviewed_at": null,
+      "claim_ids": [],
+      "scientific_review_required": true,
+      "human_confirmation": null,
+      "source_revisions": {},
+      "coverage": "Проверка существенных утверждений в рамках этого спринта не выполнялась."
+    },
+    "syntheses/water-quality-evidence.md": {
+      "status": "ai_source_checked",
+      "reviewer_type": "ai_agent",
+      "reviewed_at": "2026-10-22",
+      "claim_ids": [
+        "water-quality-evidence-01",
+        "water-quality-evidence-02",
+        "water-quality-evidence-03",
+        "water-quality-evidence-04",
+        "water-quality-evidence-05",
+        "water-quality-evidence-06",
+        "water-quality-evidence-07"
+      ],
+      "scientific_review_required": true,
+      "human_confirmation": null,
+      "source_revisions": {
+        "drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ": "c813f2671ebb235dd3291076f3c728bb78d821391024e2bce754849c79fa992a",
+        "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos": "557959d2c8996b990487e9d2acd501ca4048f29e3c7a6fe27e49f8fc1c554fd8",
+        "official-b4e3fcfe0e41e26ea03b": "f42cd72201a7bb8652d10a571c5f472e9f9bd738d78939d676b13d0ee6146920"
+      },
+      "coverage": "Существенные фактические/методические смысловые блоки, перечисленные в реестре; повторы не считаются повторно.",
+      "body_sha256": "6bf2c6d457a4b286e43ad6398623885fb4d1dcb65ca414f88745fd7595dd6268"
+    },
+    "syntheses/baikal-seal.md": {
+      "status": "ai_source_checked",
+      "reviewer_type": "ai_agent",
+      "reviewed_at": "2026-10-22",
+      "claim_ids": [
+        "baikal-seal-01",
+        "baikal-seal-02",
+        "baikal-seal-03",
+        "baikal-seal-04",
+        "baikal-seal-05",
+        "baikal-seal-06"
+      ],
+      "scientific_review_required": true,
+      "human_confirmation": null,
+      "source_revisions": {
+        "drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ": "c813f2671ebb235dd3291076f3c728bb78d821391024e2bce754849c79fa992a",
+        "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos": "557959d2c8996b990487e9d2acd501ca4048f29e3c7a6fe27e49f8fc1c554fd8"
+      },
+      "coverage": "Существенные фактические/методические смысловые блоки, перечисленные в реестре; повторы не считаются повторно.",
+      "body_sha256": "62c8cac10645658bddcf74cec3ce3f4879a0739bda87e05d5f766b881138831d"
+    },
+    "syntheses/air-pollution.md": {
+      "status": "ai_source_checked",
+      "reviewer_type": "ai_agent",
+      "reviewed_at": "2026-10-22",
+      "claim_ids": [
+        "air-pollution-01",
+        "air-pollution-02",
+        "air-pollution-03",
+        "air-pollution-04",
+        "air-pollution-05"
+      ],
+      "scientific_review_required": true,
+      "human_confirmation": null,
+      "source_revisions": {
+        "drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ": "c813f2671ebb235dd3291076f3c728bb78d821391024e2bce754849c79fa992a",
+        "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos": "557959d2c8996b990487e9d2acd501ca4048f29e3c7a6fe27e49f8fc1c554fd8"
+      },
+      "coverage": "Существенные фактические/методические смысловые блоки, перечисленные в реестре; повторы не считаются повторно.",
+      "body_sha256": "8ce05cb712c9e0859c6bd86a4191d35448f90397f352bc91f6d4280d7adbd858"
+    },
+    "syntheses/baikal-sturgeon.md": {
+      "status": "needs_scientific_review",
+      "reviewer_type": null,
+      "reviewed_at": null,
+      "claim_ids": [],
+      "scientific_review_required": true,
+      "human_confirmation": null,
+      "source_revisions": {},
+      "coverage": "Проверка существенных утверждений в рамках этого спринта не выполнялась."
+    },
+    "syntheses/baikal-omul.md": {
+      "status": "ai_source_checked",
+      "reviewer_type": "ai_agent",
+      "reviewed_at": "2026-10-22",
+      "claim_ids": [
+        "baikal-omul-01",
+        "baikal-omul-02",
+        "baikal-omul-03",
+        "baikal-omul-04"
+      ],
+      "scientific_review_required": true,
+      "human_confirmation": null,
+      "source_revisions": {
+        "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab": "26dc3610938c5b8f91e85b4179ee1092f20aa03684135d0534b8ad2ab9629023",
+        "drive-1RWGLrOzFO32Jxrlv-B2n_PafSFoRVySn": "747fadeaf55107fbf9fbb5965696912195b4795436a9f300c009a4f5e5d9839a",
+        "drive-1C-SRfbklf00M5rsLajYO_2nFCdmCL1fi": "da48b7061dc74cdc300213ca2e4b6f0d124ac5aab5aa7f2da84d3c3451d07066"
+      },
+      "coverage": "Существенные фактические/методические смысловые блоки, перечисленные в реестре; повторы не считаются повторно.",
+      "body_sha256": "41a4d1e3f1f703272337c68cc64887ef56a975a142405e47f179610e96726693"
+    },
+    "syntheses/bcbk-legacy.md": {
+      "status": "ai_source_checked",
+      "reviewer_type": "ai_agent",
+      "reviewed_at": "2026-10-22",
+      "claim_ids": [
+        "bcbk-legacy-01",
+        "bcbk-legacy-02",
+        "bcbk-legacy-03",
+        "bcbk-legacy-04",
+        "bcbk-legacy-05"
+      ],
+      "scientific_review_required": true,
+      "human_confirmation": null,
+      "source_revisions": {
+        "drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0": "60ccb6065b32d959457faf9745023d763c9f6641ad7c9c8cdee7a88fea454139",
+        "drive-1jl98YhWpGzbTkJXflFXv0fHB7yKqPRJr": "80935438545af9b1fd55811ea6b4345822b62301ba472e71e76f1a67f7b4967d",
+        "drive-1oLnz6N8ueMCEL8p2HnPDtT7dx1tAE8RB": "9f0ff38111fe9092e96e8bed6e602f92a5b1e63f6cd9bbcb856d76dc3b7fb391",
+        "drive-1C-SRfbklf00M5rsLajYO_2nFCdmCL1fi": "da48b7061dc74cdc300213ca2e4b6f0d124ac5aab5aa7f2da84d3c3451d07066"
+      },
+      "coverage": "Существенные фактические/методические смысловые блоки, перечисленные в реестре; повторы не считаются повторно.",
+      "body_sha256": "19eddf4539331370b44313c55887dcfe97beed3c9885dd7ac4b4190fa73700dc"
+    },
+    "syntheses/north-baikal-water.md": {
+      "status": "ai_source_checked",
+      "reviewer_type": "ai_agent",
+      "reviewed_at": "2026-10-22",
+      "claim_ids": [
+        "north-baikal-water-01",
+        "north-baikal-water-02",
+        "north-baikal-water-03",
+        "north-baikal-water-04"
+      ],
+      "scientific_review_required": true,
+      "human_confirmation": null,
+      "source_revisions": {
+        "drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0": "60ccb6065b32d959457faf9745023d763c9f6641ad7c9c8cdee7a88fea454139",
+        "drive-1oLnz6N8ueMCEL8p2HnPDtT7dx1tAE8RB": "9f0ff38111fe9092e96e8bed6e602f92a5b1e63f6cd9bbcb856d76dc3b7fb391",
+        "official-b4e3fcfe0e41e26ea03b": "f42cd72201a7bb8652d10a571c5f472e9f9bd738d78939d676b13d0ee6146920"
+      },
+      "coverage": "Существенные фактические/методические смысловые блоки, перечисленные в реестре; повторы не считаются повторно.",
+      "body_sha256": "cbaf04973fc5d860f201ea4c3e66c12bd20c11285dac85f5b685d1e296d5e899"
+    },
+    "syntheses/water-level-regulation.md": {
+      "status": "ai_source_checked",
+      "reviewer_type": "ai_agent",
+      "reviewed_at": "2026-10-22",
+      "claim_ids": [
+        "water-level-regulation-01",
+        "water-level-regulation-02",
+        "water-level-regulation-03",
+        "water-level-regulation-04",
+        "water-level-regulation-05"
+      ],
+      "scientific_review_required": true,
+      "human_confirmation": null,
+      "source_revisions": {
+        "drive-1ScikzOKs0VW7ZZS1XWKyoOfcHeYklUEP": "48bfd75a6c75a685d4f5ff2ea52cd1aba78d6d0a6bd45fbd311d5305a9b84c54",
+        "drive-1oYm8VhJ3_eRNdxbrGfLXhf6_vI6s6SJq": "6363b7b441d241e4718714b0062a2e011647e14b8219193f0a40a08270568e8e",
+        "drive-1jl98YhWpGzbTkJXflFXv0fHB7yKqPRJr": "80935438545af9b1fd55811ea6b4345822b62301ba472e71e76f1a67f7b4967d"
+      },
+      "coverage": "Существенные фактические/методические смысловые блоки, перечисленные в реестре; повторы не считаются повторно.",
+      "body_sha256": "951628fbd73e799ef0e74a5035a1db669b3765eef1008937a0ae311af85d68a2"
+    },
+    "syntheses/persistent-organic-pollutants.md": {
+      "status": "ai_source_checked",
+      "reviewer_type": "ai_agent",
+      "reviewed_at": "2026-10-22",
+      "claim_ids": [
+        "persistent-organic-pollutants-01",
+        "persistent-organic-pollutants-02",
+        "persistent-organic-pollutants-03",
+        "persistent-organic-pollutants-04"
+      ],
+      "scientific_review_required": true,
+      "human_confirmation": null,
+      "source_revisions": {
+        "drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0": "60ccb6065b32d959457faf9745023d763c9f6641ad7c9c8cdee7a88fea454139",
+        "drive-1RWGLrOzFO32Jxrlv-B2n_PafSFoRVySn": "747fadeaf55107fbf9fbb5965696912195b4795436a9f300c009a4f5e5d9839a",
+        "official-b4e3fcfe0e41e26ea03b": "f42cd72201a7bb8652d10a571c5f472e9f9bd738d78939d676b13d0ee6146920"
+      },
+      "coverage": "Существенные фактические/методические смысловые блоки, перечисленные в реестре; повторы не считаются повторно.",
+      "body_sha256": "a8d5d3a19f3cbcd3535b01de3378ea256dce532c26ef0cd6271406b3298c7e0c"
+    }
+  },
+  "issues": [
+    {
+      "id": "water-level-arithmetic",
+      "title": "Арифметика уровенных отметок 2020",
+      "status": "unresolved_source",
+      "claim_ids": [
+        "water-level-regulation-04"
+      ],
+      "evidence": [
+        {
+          "source_id": "drive-1ScikzOKs0VW7ZZS1XWKyoOfcHeYklUEP",
+          "sha256": "48bfd75a6c75a685d4f5ff2ea52cd1aba78d6d0a6bd45fbd311d5305a9b84c54",
+          "report_year": 2020,
+          "page": 13,
+          "quote": "ых ГЭС,\nуровня воды озера Байкал и указаниями Федерального агентства водных ресурсов.\n    На  01.01.2020 средний  уровень воды  в  озере Байкал  находился  на  отметке\n456,48 м ТО, что на 0,16 м ниже, чем в 2019 году на эту дату (01.01.2019 – 456,64 м ТО) и\nна 0,5 м выше среднемноголетнего значения уровня (456,43 м ТО).\n     Средний уровень озера Байкал был сработан до отметки 456,17 м ТО (22.04–24.04.2020).\n     Вскрытие Байкала от ледового покрова происходило на 9–23 дня раньше нормы.\nОчищение ото льда озеро Байкал произошло на 12–32 дня раньше среднемноголетних\nсроков. Как следствие, увеличение притока в озеро произошло раньше обычных сроков.\n     Наполнение озера Байкал началос",
+          "quote_basis": "exact_cached_page_text",
+          "original_page_visually_checked": true,
+          "source_authenticity": "mirror_unverified"
+        }
+      ],
+      "source_versions": [
+        "Напечатано: 456,48 м ТО; норма 456,43 м ТО; превышение 0,5 м.",
+        "Арифметическая разность напечатанных отметок: 0,05 м. Это вычисление, не исправленное наблюдение."
+      ],
+      "conclusion": "Оригинал подтверждает внутреннее расхождение, поэтому ошибка извлечения исключена для этих трёх чисел. По странице нельзя определить, какой исходный элемент надо исправить.",
+      "next_step": "Первичный уровенный ряд и официальное уточнение Росводресурсов/авторов доклада.",
+      "specialist_required": true
+    },
+    {
+      "id": "spirogyra-terminology",
+      "title": "Названия Spirogyra и типы проб",
+      "status": "partially_resolved",
+      "claim_ids": [
+        "spirogyra-observations-05",
+        "spirogyra-observations-06"
+      ],
+      "evidence": [
+        {
+          "source_id": "drive-1jl98YhWpGzbTkJXflFXv0fHB7yKqPRJr",
+          "sha256": "80935438545af9b1fd55811ea6b4345822b62301ba472e71e76f1a67f7b4967d",
+          "report_year": 2017,
+          "page": 39,
+          "quote": " % соответственно.\n          Весь сезон в гидробиологических пробах обнаруживали нитчатую зелёную водоросль\n       рода Spirogyra Link. Частота встречаемости спирогиры сохранилась на уровне прошлого года.\n                 2. В районе Северного Байкала средние показатели гетеротрофов по сравнению\n       с прошлым годом уменьшились летом в 1,4 раза, осенью – в 5,9 раза. Сезонное снижение\n       средних значений происходило от июля к сентябрю в 1,2 раза до 345,08 кл/мл.\n           Зелёная нитчатая водоросль рода Spirogyra Link в июне была зафиксирована в половине\n      проб зоопланктона",
+          "quote_basis": "exact_cached_page_text",
+          "original_page_visually_checked": true,
+          "source_authenticity": "mirror_unverified"
+        },
+        {
+          "source_id": "drive-1oLnz6N8ueMCEL8p2HnPDtT7dx1tAE8RB",
+          "sha256": "9f0ff38111fe9092e96e8bed6e602f92a5b1e63f6cd9bbcb856d76dc3b7fb391",
+          "report_year": 2021,
+          "page": 55,
+          "quote": "о.\n      2. По всей обследованной акватории озера встречалась несвойственная озеру Байкал\nхаровая водоросль рода Spirogyra Link. Количество спирогиры увеличивалось к концу ве-\nгетационного периода.\n      3. В районе КОС г. Байкальска в период ледовой съемки нитчатая водоросль обна-\nружена в 34 % отобранных проб грунта с макрозообентосом. Нити водоросли находили в\nгрунте, поднятом с глубин от 18 до 120 м на полигоне, преимущественно с восточной сто-\nроны от точки выпуска условно чистых вод. На фоновом участке спирогира отмечена на\nглубине 50 м. В толще воды при отборе зоопланктона сет",
+          "quote_basis": "exact_cached_page_text",
+          "original_page_visually_checked": true,
+          "source_authenticity": "mirror_unverified"
+        },
+        {
+          "source_id": "drive-1oLnz6N8ueMCEL8p2HnPDtT7dx1tAE8RB",
+          "sha256": "9f0ff38111fe9092e96e8bed6e602f92a5b1e63f6cd9bbcb856d76dc3b7fb391",
+          "report_year": 2021,
+          "page": 55,
+          "quote": " фоновом участке спирогира отмечена на\nглубине 50 м. В толще воды при отборе зоопланктона сетью Джеди в марте единичные\nнити водоросли выловлены на одной станции, расположенной в 1 км западнее труб сбро-\nса, в 1,2 км от берега, в июне – в 7 % проб (с удалением от берега от 300 м до 4 км). В ав-\nгусте в зоопланктоне спирогира встречена в 61 % проб, отобранных на полигоне, на во-\nсточных и западных разрезах. Максимальное скопление водоросли отмечено в точке вы-\nпуска условно чистых вод и северо-восточнее труб сброса, на расстоянии до 2,5 км от бе-\nрега. На репере спирогира не обнаружена.\n      4. В районе трассы БАМ харовая водоросль рода Spirogyra Link в течение всего се-\nзона встречалась в зоопланктонных пробах. Летом нитчатка обнаружена почти в половине\nпроб (48 %), отобранных вдоль западного побережья и на северной оконечности озера.\nНаибольшие скопления отмечены на участке от устья р. Слюдянки до порта Северобай-\nкальск. В ",
+          "quote_basis": "exact_cached_page_text",
+          "original_page_visually_checked": true,
+          "source_authenticity": "mirror_unverified"
+        }
+      ],
+      "source_versions": [
+        "2017: нитчатая зелёная водоросль рода Spirogyra.",
+        "2021: харовая водоросль рода Spirogyra; отдельно грунт и зоопланктон, сеть Джеди."
+      ],
+      "conclusion": "Разные слова и методы сверены с оригиналами. Смена вида, таксономическая ошибка и площадь зарастания из них не следуют. Единой систематической схемы и идентификации видов на выбранных страницах нет.",
+      "next_step": "Альголог: систематический объём групп, идентификация до вида, стандартизация сетных/грунтовых/обрастательных проб.",
+      "specialist_required": true
+    },
+    {
+      "id": "chloride-background",
+      "title": "Одинаковый фон нитратов и хлоридов в обзоре 2025",
+      "status": "unresolved_source",
+      "claim_ids": [
+        "north-baikal-water-03",
+        "north-baikal-water-04"
+      ],
+      "evidence": [
+        {
+          "source_id": "official-b4e3fcfe0e41e26ea03b",
+          "sha256": "f42cd72201a7bb8652d10a571c5f472e9f9bd738d78939d676b13d0ee6146920",
+          "report_year": 2025,
+          "page": 161,
+          "quote": "    Обзор состояния и загрязнения окружающей среды в Российской Федерации за 2025 год\n\n   В районе северной оконечности озера, отбор проб проводился в июне и сентябре. В 2025 г. водородный показатель\nсреды изменялся в диапазоне 7,40 - 8,50 ед. рН, среднее значение составило 7,90 ед. рН. Максимальное значение\nмассовой концентрации растворённого в воде кислорода составило 12,5 мг/л (12,1 мг/л в 2024 г.) со средним\nзначением 10,5 мг/л (10,6 мг/л в 2024 г.). В воде отмечалось увеличение максимальной концентрации нитратов –\n0,328 мг/л (фон 0,124 мг/л), минеральных веществ – 104 мг/л (фон 97 мг/л), хлоридов – 1,3 мг/л (фон 0,124 мг/л),\nсреднегодовые  концентрация  находились  на  уровне  фоновых  значений.  Максимальные  и  среднегодовые\nконцентрации  остальных наблюдаемых  показателей  в  данном  районе  сохранились  на прежнем  уровне  и\nсоответствовали фоновым значениям.\n   В районе Селенгинского мелководья в 2025 г. водородный показатель изменялся в пределах от 8,07 до 8,13 ед. рН.\nМаксимальное содержание  растворённого кислорода составило  9,7 мг/л  (9,6 мг/л в 2024 г.) Среднегодовые\nконцентрации азота нитратного и фосфора фосфатного были незначительно выше фоновых значени",
+          "quote_basis": "exact_cached_page_text",
+          "original_page_visually_checked": true,
+          "source_authenticity": "official_verified"
+        },
+        {
+          "source_id": "official-b4e3fcfe0e41e26ea03b",
+          "sha256": "f42cd72201a7bb8652d10a571c5f472e9f9bd738d78939d676b13d0ee6146920",
+          "report_year": 2025,
+          "page": 161,
+          "quote": " (10,6 мг/л в 2024 г.). В воде отмечалось увеличение максимальной концентрации нитратов –\n0,328 мг/л (фон 0,124 мг/л), минеральных веществ – 104 мг/л (фон 97 мг/л), хлоридов – 1,3 мг/л (фон 0,124 мг/л),\nсреднегодовые  концентрация  находились  на  уровне  фоновых  значений.  Максимальные  и  среднегодовые\nконцентрации  остальных наблюдаемых  показателей  в  данном  районе  сохранились  на прежнем  уровне  и\nсоответствовали фоновым значениям.\n   В районе Селенгинского мелководья в 2025 г. водородный показатель изменялся в пределах от 8,07 до 8,13 ед. рН.\nМаксимальное содержание  растворённого кислорода составило  9,7 мг/л  (9,6 мг/л в 2024 г.) Среднегодовые\nконцентрации азота нитрат",
+          "quote_basis": "exact_cached_page_text",
+          "original_page_visually_checked": true,
+          "source_authenticity": "official_verified"
+        }
+      ],
+      "source_versions": [
+        "Нитраты: максимум 0,328 мг/л; фон 0,124 мг/л.",
+        "Хлориды: максимум 1,3 мг/л; фон 0,124 мг/л."
+      ],
+      "conclusion": "Оба значения 0,124 напечатаны на оригинальной странице. Само совпадение не доказывает опечатку. Статистика и состав фоновой выборки не раскрыты, замена числа недопустима.",
+      "next_step": "Таблицы первичного гидрохимического контроля 2025, референтные станции и вид фоновой статистики.",
+      "specialist_required": true
+    },
+    {
+      "id": "report-vs-observation-year",
+      "title": "Год документа, события и планового горизонта",
+      "status": "resolved_in_wiki",
+      "claim_ids": [
+        "tourism-pressure-02",
+        "bcbk-legacy-01",
+        "tourism-pressure-04"
+      ],
+      "evidence": [
+        {
+          "source_id": "drive-1oYm8VhJ3_eRNdxbrGfLXhf6_vI6s6SJq",
+          "sha256": "6363b7b441d241e4718714b0062a2e011647e14b8219193f0a40a08270568e8e",
+          "report_year": 2022,
+          "page": 287,
+          "quote": "(пик зимнего сезона). В остальные месяцы\nдоля потока туристов составляет от 1 до 8 %.\n    В 2021 году отмечалось увеличение доли самодеятельного, организованного и зим-\nнего спортивного отдыха за счет снижения потока экскурсантов. Соотношение доли само-\nдеятельных и организованных туристов следующее: в 2019 году – 1 : 2,6, в 2020 году –\n3,4 : 1, в 2021 году – 2,2 : 1.\n    В 2021 году соотношения долей различных категорий отдыхающих в структуре ту-\nристского потока сохранялись примерно на уровне 2020 года. Территориями, испытыва-\nющими максимальную рекреационную  нагрузку, остаются Утуликско-Байкальская и\nСнежинская ТРЗ: поток экскурсантов в направлении Теплых озер и по экологической тро-\nпе вдоль р. Снежной составил 30 % за летний период от годового потока; зимний спор-\nтивный отдых на горнолыжном курорте «Гора Соболиная» – 37 % за зимний период\nот годового потока. Данные показатели заставляют обращать пристальное внимание\nна указанные территории с позиции воздействия туристско-рекреационной деятельности\nна природные экосистемы.\n    В отчетном году исследован опыт организации туристско-рекреационных  зон\nна территориях с особыми условиями природопользования (на примере озера Байкал).\nРассмотрены особенности организации туристско-рекреационной деятельности на терри-\nториях с высокой степенью территориальной и институциональной уникальности, пред-\nставлен теоретико-методологический подход к выделению и определению целей развития\nтерриторий   приоритетного   туристско-рекреационного   освоения   –   туристско-\nрекреационных зон (ТРЗ) на побережье озера Байкал (рис. 2.6.6).\n\n                                                       Рис.  2.6.6. ТРЗ Муринская. Предвари-",
+          "quote_basis": "exact_cached_page_text",
+          "original_page_visually_checked": false,
+          "source_authenticity": "mirror_unverified"
+        },
+        {
+          "source_id": "drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0",
+          "sha256": "60ccb6065b32d959457faf9745023d763c9f6641ad7c9c8cdee7a88fea454139",
+          "report_year": 2016,
+          "page": 170,
+          "quote": ".    756,7  1286,5  3861,3  4327,02   н .д.      –      –\n           переработку\n\n        Подземные воды в районе ОАО «Байкальский ЦБК»\n       В 2015 г. в связи с закрытием химической лаборатории ОАО «Байкальский ЦБК» пере-\n      стало вести мониторинг на промплощадке, картах хранения шлам-лигнина и золо-шлакоот-\n      вале ТЭЦ. Химический состав подземных вод за 2016 г. был изучен по пробам, отобранным\n      из береговых скважин при ведении государственного мониторинга. В пробах воды зафик-\n      сировано высокое содержание сульфатов – 2,71 ПДК (в 2015 г. – 1,71 ПДК), железа – 4,43–\n       10,5 ПДК (в 2015 г. – 9,2 ПДК), сухого остатка воды – 1,71–2,44 г/л (в 2015 г. – 1,57 г/л).\n          Карты-накопители шлам-лигнина участка «Солзан» расположены по берегам р. Бол. Оси-\n       новка, на левом берегу в 0,75 км, а на правом – в 0,35 км от оз. Байкал. В отчётный период в\n      подземных водах было подтверждено высокое содержание железа – до 7,3 ПДК (в 2015 г. – до\n       2,8 ПДК) и марганца – 2,2 ПДК (в 2015 г. – 1,8 ПДК).\n          Карты-накопители участка «Бабха» расположены на правом берегу р. Бабхи в 1,35 км от\n      берега оз. Байкала. В 2015–2016 гг. государственный мониторинг на этом участке не прово-\n       дился.\n          Состояние воды, донных отложений и гидробионтов в зоне воздействия сточных вод\n    ОАО «Байкальский ЦБК» проанализировано в подразделах 1.1.1.2, 1.1.1.3 и 1.1.1.4 данного\n      доклада.\n        Надзорные мероприятия\n       В период с 18.04.2016 г. по 18.05.2016 г. во исполнение поручения Правительства Рос-\n      сийской Федерации от 10.12.2015 г. № АХ-П9-8340 и утверждённого приказом Ро",
+          "quote_basis": "exact_cached_page_text",
+          "original_page_visually_checked": false,
+          "source_authenticity": "mirror_unverified"
+        },
+        {
+          "source_id": "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos",
+          "sha256": "557959d2c8996b990487e9d2acd501ca4048f29e3c7a6fe27e49f8fc1c554fd8",
+          "report_year": 2024,
+          "page": 202,
+          "quote": "ока                                                тыс. чел/год                   8,6\n 4. Социально-экономический эффект от организации ОЭЗ к 2027 г.\n          - новые рабочие места                                                         тыс. чел.                360\n          - объём предоставляемых услуг                                        млрд руб.                1\n          - доля туристического сектора и смежных отраслей в занятость                %                    н/д\n          - вклад туристического сектора и смежных отраслей в ВРП                   %                    н/д\n 5. Налоговые поступления от туристического сектора и смежных отраслей к 2027 г.     млрд руб.                  0,64\n\nТаблица 1.3.9.3 – Объем средств финансирования, направленного на мероприятия по реализации проекта\nсоздания ОЭЗ «Ворота Байкала», млн руб.\n       Субъект                            Федеральный     Бюджет субъектов     Внебюджетные                           Год                                                                     ",
+          "quote_basis": "exact_cached_page_text",
+          "original_page_visually_checked": false,
+          "source_authenticity": "mirror_unverified"
+        }
+      ],
+      "source_versions": [
+        "Доклад 2022: туристский поток в абзаце относится к 2021.",
+        "Доклад 2016: прекращение производственного мониторинга БЦБК отнесено к 2015.",
+        "Доклад 2024: социально-экономические эффекты ОЭЗ приведены к 2027."
+      ],
+      "conclusion": "Периоды разделены явно. Обзор Росгидромета за 2025 выпущен в 2026; дата имени файла не используется как отчётный год. Это библиографическое/хронологическое разрешение, не научная сертификация статистики.",
+      "next_step": "Сохранять отдельные поля года доклада и периода каждого последующего наблюдения.",
+      "specialist_required": false
+    },
+    {
+      "id": "seal-methods",
+      "title": "Сопоставимость оценок нерпы 2018/2024",
+      "status": "unresolved_methods",
+      "claim_ids": [
+        "baikal-seal-02",
+        "baikal-seal-03",
+        "baikal-seal-05"
+      ],
+      "evidence": [
+        {
+          "source_id": "drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ",
+          "sha256": "c813f2671ebb235dd3291076f3c728bb78d821391024e2bce754849c79fa992a",
+          "report_year": 2018,
+          "page": 53,
+          "quote": " несомнен-\n        но, свидетельствует о высокой численности байкальской нерпы.\n          Традиционный учёт численности приплода нерпы был провёден Байкальским филиалом\n     ФГБНУ «Госрыбцентр» в марте-апреле 2018 года по всей акватории Байкала (28 стандарт-\n      ных разрезов, 196 учётных площадок). Расчётная численность приплода – 26,1 тыс. голов,\n      при этом статистическая ошибка расчёта численности приплода составила не более 13 %.\n      Общая численность популяции байкальской нерпы в 2018 году, по сравнению с 2017 годом,\n       увеличилась на 9,3 тыс. особей и составила 137,6 тыс. экз.\n          Высокая численность нерпы подтверждается и косвенными показателями, свидетель-\n      ствующими о расширении мест её обитания. Все чаще нерпа встречается на мелководных\n       участках Байкала, особенно в местах постановки сетных орудий лова.\n          Летом 2018 года, после освобождения озера ото льда, Байкальским филиалом ФГБНУ\n       «Госрыбцентр» было проведено исследование участков побережья протяжённостью около\n       200 км, которое показало, что первоначально озвученная величина гибели нерпы осенью\n       2017 года была значительно занижена. Согласно полученным результатам, количество по-\n      гибших животных составило не менее 1 тыс. экз. Данная величина ориентировочна, посколь-\n       ку неизвестно, сколько погибших особей нерпы утонуло, а сколько было выброш",
+          "quote_basis": "exact_cached_page_text",
+          "original_page_visually_checked": false,
+          "source_authenticity": "mirror_unverified"
+        },
+        {
+          "source_id": "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos",
+          "sha256": "557959d2c8996b990487e9d2acd501ca4048f29e3c7a6fe27e49f8fc1c554fd8",
+          "report_year": 2024,
+          "page": 69,
+          "quote": "нка репродукционного потенциала).          Величина ОДУ нерпы, при условии сохранения\n    Традиционный  учет  численности  приплода    общей  численности  популяции  на  стабильном\nнерпы был проведен Байкальским филиалом ФГБНУ     уровне, как показывают расчеты, составляет не\n«ВНИРО» в апреле 2024 г. в южной и средней части    менее 5-6 тыс. шт. в год. Принимая во внимание\nБайкала. Расчетная численность приплода для всего    существующий  запрет  промышленной  добычи\nозера – 29,1 тыс. особей.                             (вылова) нерпы, на 2021-2024 гг. ОДУ установлен в\n    Общая  численность  популяции  байкальской    объеме  3000  голов.  Аналогичный  объем ОДУ\nнерпы в 2024 г., согласно расчетам, составила 163,2    установлен на 2025 г.\nтыс. особей.                                        Динамика  расчетного приплода  (для  всего\n    Согласно  правилам  рыболовства,  промыш-     озера), расчетной общей численности популяции и\nленная  добыча  байкальской нерпы  запрещена.    промысла с учетом незаконной добычи нерпы с\nПромысел проводится только в целях обеспечения    2015 г. по 2024 г. отражена на рисунке 1.1.1.35.\n\n\n\n\n\nРисунок 1.1.1.35 – Динамика расчетного приплода (для всего озера), расчетной общей численности\nи промысла нерпы в 2015–2024 гг.\n\n\n\n\n\n66",
+          "quote_basis": "exact_cached_page_text",
+          "original_page_visually_checked": false,
+          "source_authenticity": "mirror_unverified"
+        },
+        {
+          "source_id": "drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ",
+          "sha256": "c813f2671ebb235dd3291076f3c728bb78d821391024e2bce754849c79fa992a",
+          "report_year": 2018,
+          "page": 53,
+          "quote": " несомнен-\n        но, свидетельствует о высокой численности байкальской нерпы.\n          Традиционный учёт численности приплода нерпы был провёден Байкальским филиалом\n     ФГБНУ «Госрыбцентр» в марте-апреле 2018 года по всей акватории Байкала (28 стандарт-\n      ных разрезов, 196 учётных площадок). Расчётная численность приплода – 26,1 тыс. голов,\n      при этом статистическая ошибка расчёта численности приплода составила не более 13 %.\n      Общая численность популяции байкальской нерпы в 2018 году, по сравнению с 2017 годом,\n       увеличилась на 9,3 тыс. особей и составила 137,6 тыс. экз.\n          Высокая численность нерпы подтверждается и косвенными показателями, свидетель-\n      ствующими о расширении мест её обитания. Все чаще нерпа встречается на мелководных\n       участках Байкала, особенно в местах постановки сетных орудий лова.\n          Летом 2018 года, после освобождения озера ото льда, Байкальским филиалом ФГБНУ\n       «Госрыбцентр» было проведено исследование участков побережья протяжённостью около\n       200 км, которое показало, что первоначально озвученн",
+          "quote_basis": "exact_cached_page_text",
+          "original_page_visually_checked": false,
+          "source_authenticity": "mirror_unverified"
+        },
+        {
+          "source_id": "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos",
+          "sha256": "557959d2c8996b990487e9d2acd501ca4048f29e3c7a6fe27e49f8fc1c554fd8",
+          "report_year": 2024,
+          "page": 69,
+          "quote": "нка репродукционного потенциала).          Величина ОДУ нерпы, при условии сохранения\n    Традиционный  учет  численности  приплода    общей  численности  популяции  на  стабильном\nнерпы был проведен Байкальским филиалом ФГБНУ     уровне, как показывают расчеты, составляет не\n«ВНИРО» в апреле 2024 г. в южной и средней части    менее 5-6 тыс. шт. в год. Принимая во внимание\nБайкала. Расчетная численность приплода для всего    существующий  запрет  промышленной  добычи\nозера – 29,1 тыс. особей.                             (вылова) нерпы, на 2021-2024 гг. ОДУ установлен в\n    Общая  численность  популяции  байкальской    объеме  3000  голов.  Аналогичный  объем ОДУ\nнерпы в 2024 г., согласно расчетам, составила 163,2    установлен на 2025 г.\nтыс. особей.                                        Динамика  расчетного приплода  (для  всего\n    Согласно  правилам  рыболовства,  промыш-     озера), расчетной общей численности популяции и\nленная  добыча  байкальской нерпы  запрещена.    промысла с учетом незаконной добычи нерпы с\nПромысел проводится только в целях обеспечения    2015 г. по 2024 г. отражена на рисунке 1.1.1.35.\n\n\n\n\n\nРисунок 1.1.1.35 – Динамика расчетного приплода (для всего озера), расчетной общей численности\nи промысла нерпы в 2015–2024 гг.\n\n\n\n\n\n66",
+          "quote_basis": "exact_cached_page_text",
+          "original_page_visually_checked": false,
+          "source_authenticity": "mirror_unverified"
+        }
+      ],
+      "source_versions": [
+        "2018: вся акватория, 28 разрезов, 196 площадок; приплод 26,1 тыс., популяция 137,6 тыс.",
+        "2024: южная/средняя части, расчёт для всего озера; приплод 29,1 тыс., популяция 163,2 тыс."
+      ],
+      "conclusion": "Числа и пространственные описания подтверждены. Сопоставимость не доказана, но и принципиальная несовместимость не установлена. Ошибка ≤13% в докладе 2018 относится к приплоду.",
+      "next_step": "Специалист по учёту нерпы: схемы экстраполяции, модель популяции, ошибки оценок и пересмотры ретроспективы.",
+      "specialist_required": true
+    },
+    {
+      "id": "water-observation-methods",
+      "title": "Методы отбора и фенолы за один и тот же 2024 год",
+      "status": "unresolved_source",
+      "claim_ids": [
+        "water-quality-evidence-03",
+        "water-quality-evidence-06",
+        "water-quality-evidence-07"
+      ],
+      "evidence": [
+        {
+          "source_id": "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos",
+          "sha256": "557959d2c8996b990487e9d2acd501ca4048f29e3c7a6fe27e49f8fc1c554fd8",
+          "report_year": 2024,
+          "page": 18,
+          "quote": "                       1. СОСТОЯНИЕ ОКРУЖАЮЩЕЙ СРЕДЫ НА БАЙКАЛЬСКОЙ ПРИРОДНОЙ ТЕРРИТОРИИ\n\nГидрохимические наблюдения в контрольном 100-метровом створе\n    В контрольном 100-метровом створе было про-       В воде контрольного 100-метрового створа по\nведено 7 съемок: в феврале, марте, апреле, июне,    сравнению с 2023 г. среднее содержание растворен-\nавгусте, сентябре и октябре, было отобрано 147     ного кислорода существенно не изменилось и со-\nпроб.                                              ставило 11,50 мг/дм3, максимальное содержание\n    Оценка показателей качества воды оз. Байкал    растворенного кислорода составило 13,46 мг/дм3\nв контрольном 100-метровом створе проводилась в     (февраль), минимальное – 9,42 мг/дм3 (сентябрь);\nсоответствии со специальными нормами  (ПДК),    средняя величина рН воды составила 7,87 ед. рН,\nвведенными с 01.01.1985 (разработаны Росгидро-    значения варьировали от 7,62 до 8,16 ед. рН.\nметом для контрольного створа БЦБК), которые со-       В течение 2024  г. концентрация взвешенных\nответствуют следующим значениям (мг/дм3): мине-    веществ находилась в диапазоне от 1,0 (0,9 ПДК) до\nральные вещества – 117,0; взвешенные вещества –     2,1 мг/дм3 (1,9 ПДК); максимальное содержание фе-\n1,1, сульфаты – 10,0; хлориды – 2; фенолы – 0,001;    нолов превышало норму в 2,0 раза в 5 пробах: в\nводородный показатель от 6,5 до 8,5 ед. рН. Крите-     феврале, марте и апреле.\nрием оценки качества воды для серы несульфатной        Данные о нарушении качества воды оз. Байкал\nявляется фоновое значение, равное средней ее кон-    в исследуемом районе в 2024 г. по сравнению с\nцентрации в воде оз. Байкал (0,10 мг/дм3).             2023 г. приведены в таблице (таблица 1.1.1.3).\n\nТаблица 1.1.1.3 – Сведения о нарушениях качества воды оз. Байкал в 100-метровом контрольном\nстворе в районе влияния сточных вод КОС г. Байкальска в 2024 г.\n             Показатели                  Пределы                                                           Количество проб: общее – с    Максимальное превышение    (ПДК для 100-метрового створа          концентраций,                                                           нарушениями ПДК             ПДК, число раз                оз. Байкал)                      мг/дм3\n\nрН (6,5-8,5 ед.)                                  7,62 – 8,16                147 – 0                     –\n\nСумма минеральных соединений                                           95 – 105                 147 – 0                     –(117 мг/дм3)\n\nСульфаты (10 мг/дм3)                              5,1 – 7,7                 147 – 0                     –\n\nХлориды (2 мг/дм3)                                0,6 – 1,4                 147 – 0                     –\n\nЛетучие фенолы                                                                                                   2,0 ПДК,                                              0,001 – 0,002               70 – 5(0,001 мг/дм3)                                                                                  5 раз\n\n\n    В 2024  г. по сравнению с 2023  г. средне-        Максимальные   концентрации   сульфатов\nгодовая концентрация азота нитратного и общего    превышали предельно допустимые концентрации в\nувеличилась в 1,4 раза. Среднее содержание ми-      1,1-1,7 раза в 2010-2012 гг. (максимум отмечен в\nнеральных и взвешенных веществ, сульфатов,    2010 г.). Начиная с 2013  г. по настоящее время,\nсеры общей, органических веществ по ХПК, хло-    содержание  сульфатов  в  воде  оз.  Байкал  в\nридов, летучих фенолов, азота нитритного, угле-    контрольном   створе   находится  в   пре",
+          "quote_basis": "exact_cached_page_text",
+          "original_page_visually_checked": true,
+          "source_authenticity": "mirror_unverified"
+        },
+        {
+          "source_id": "official-b4e3fcfe0e41e26ea03b",
+          "sha256": "f42cd72201a7bb8652d10a571c5f472e9f9bd738d78939d676b13d0ee6146920",
+          "report_year": 2025,
+          "page": 159,
+          "quote": "  сульфатные ионы – 10 мг/л;\n   o   хлоридные ионы – 2 мг/л;\n   o   фенолы – 0,001 мг/л;\n\nТаблица 4.3. Сведения о нарушениях качества воды озера Байкал в районе контрольного 100 метрового створа\n\n\n                                   Пределы концентраций,    Число наблюдений: общее –       Максимальное\n             Показатели                       мг/дм3                с нарушениями норм         превышение норм\n\n                                        2024 г.        2025 г.         2024 г.        2025 г.      2024 г.       2025 г.\n\n Водородный показатель, ед. pH           7,6 - 8,2       7,5 - 8,3         7 - 0          7 - 0              –                 –\n\n Сумма минеральных соединений,\n                                        95 - 105       96 - 103         7 - 0          7 - 0              –                 – мг/л\n\n Сульфаты, мг/л                           5,1 - 7,7       5,6 - 7,9         7 - 0          7 - 0              –                 –\n\n Хлориды, мг/л                            0,6 - 1,4       0,5 - 0,9         7 - 0          7 - 0              –                 –\n\n Летучие фенолы, мг/л                   0,0 - 0,002     0,0 - 0,002        7 - 7          7 - 7          2            2\n\n\n   В районе 100-метрового контрольного створа, расположенного в месте глубоководного выпуска КОС г. Байкальска\nв 2025 г. содержание летучих фенолов превысило установленные нормы. Повышенные концентрации летучих\nфенолов наблюдались в каждой из семи съёмок.\n   В районе выпуска КОС г. Байкальска (ранее район БЦБК) в 2025 г. отбор проб проводился в марте, июне и августе\nс горизонтов 0,5 м, 25-50 м, 75-100 м, 200 м и придонном слое. Водородный показатель среды находился в пределах\nнормы 6,7 - 8,3 ед. рН (6,9 - 8,3 ед. рН в 2024 г.). Среднегодовое значение массовой концентрации растворённого в\nводе кислорода снизилось относительно 2024 г. и составило 12,0 мг/л (13,5 мг/л в 2024 г.). Максимальное значение\nрастворенного в воде кислорода наблюдалось в марте в поверхностном слое – 14,5 мг/л. Насыщение воды кислородом\nсоставляло в среднем 96%.\n   Содержание сульфатов и хлоридов в воде исследуемого района было незначительным, их максимальные\nконцентрации составили 7,7 мг/л и",
+          "quote_basis": "exact_cached_page_text",
+          "original_page_visually_checked": true,
+          "source_authenticity": "official_verified"
+        },
+        {
+          "source_id": "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos",
+          "sha256": "557959d2c8996b990487e9d2acd501ca4048f29e3c7a6fe27e49f8fc1c554fd8",
+          "report_year": 2024,
+          "page": 18,
+          "quote": "                       1. СОСТОЯНИЕ ОКРУЖАЮЩЕЙ СРЕДЫ НА БАЙКАЛЬСКОЙ ПРИРОДНОЙ ТЕРРИТОРИИ\n\nГидрохимические наблюдения в контрольном 100-метровом створе\n    В контрольном 100-метровом створе было про-       В воде контрольного 100-метрового створа по\nведено 7 съемок: в феврале, марте, апреле, июне,    сравнению с 2023 г. среднее содержание растворен-\nавгусте, сентябре и октябре, было отобрано 147     ного кислорода существенно не изменилось и со-\nпроб.                                              ставило 11,50 мг/дм3, максимальное содержание\n    Оценка показателей качества воды оз. Байкал    растворенного кислорода составило 13,46 мг/дм3\nв контрольном 100-метровом створе проводилась в     (февраль), минимальное – 9,42 мг/дм3 (сентябрь);\nсоответствии со специальными нормами  (ПДК),    средняя величина рН воды составила 7,87 ед. рН,\nвведенными с 01.01.1985 (разработаны Росгидро-    значения варьировали от 7,62 до 8,16 ед. рН.\nметом для контрольного створа БЦБК), которые со-       В течение 2024  г. концентрация взвешенных\nответствуют следующим значениям (мг/дм3): мине-    веществ находилась в диапазоне от 1,0 (0,9 ПДК) до\nральные вещества – 117,0; взвешенные вещества –     2,1 мг/дм3 (1,9 ПДК); максимальное содержание фе-\n1,1, сульфаты – 10,0; хлориды – 2; фенолы – 0,001;    нолов превышало норму в 2,0 раза в 5 пробах: в\nводородный показатель от 6,5 до 8,5 ед. рН. Крите-     феврале, марте и апреле.\nрием оценки качества воды для серы несульфатной        Данные о нарушении качества воды оз. Байкал\nявляется фоновое значение, равное средней ее кон-    в исследуемом районе в 2024 г. по сравнению с\nцентрации в воде оз. Байкал (0,10 мг/дм3).             2023 г. приведены в таблице (таблица 1.1.1.3).\n\nТаблица 1.1.1.3 – Сведения о нарушениях качества воды оз. Байкал в 100-метровом контрольном\nстворе в районе влияния сточных вод КОС г. Байкальска в 2024 г.\n             Показатели                  Пределы                                                           Количество проб: общее – с    Максимальное превышение    (ПДК для 100-метрового створа          концентраций,                                                           нарушениями ПДК             ПДК, число раз                оз. Байкал)                      мг/дм3\n\nрН (6,5-8,5 ед.)                                  7,62 – 8,16                147 – 0                     –\n\nСумма минеральных соединений                                           95 – 105                 147 – 0                     –(117 мг/дм3)\n\nСульфаты (10 мг/дм3)                              5,1 – 7,7                 147 – 0                     –\n\nХлориды (2 мг/дм3)                                0,6 – 1,4                 147 – 0                     –\n\nЛетучие фенолы                                                                                                   2,0 ПДК,                                              0,001 – 0,002               70 – 5(0,001 мг/дм3)                                                                                  5 раз\n\n\n    В 2024  г. по сравнению с 2023  г. средне-        Максимальные   концентрации   сульфатов\nгодовая концентрация азота нитратного и общего    превышали предельно допустимые концентрации в\nувеличилась в 1,4 раза. Среднее содержание ми-      1,1-1,7 раза в 2010-2012 гг. (максимум отмечен в\nнеральных и взвешенных веществ, сульфатов,    2010 г.). Начиная с 2013  г. по настоящее время,\nсеры общей, органических веществ по ХПК, хло-    содержание  сульфатов  в  воде  оз.  Байкал  в\nридов, летучих фенолов, азота нитритного, угле-    контрольном   створе   находится  в   пре",
+          "quote_basis": "exact_cached_page_text",
+          "original_page_visually_checked": true,
+          "source_authenticity": "mirror_unverified"
+        },
+        {
+          "source_id": "drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ",
+          "sha256": "c813f2671ebb235dd3291076f3c728bb78d821391024e2bce754849c79fa992a",
+          "report_year": 2018,
+          "page": 17,
+          "quote": "ориды – 2; фенолы – 0,001; водородный показатель\n       от 6,5 до 8,5 единиц рН.\n         На акватории озера было выполнено три съёмки – в марте, в июне и в августе. Пробы\n      воды отбирали с горизонтов 0-0,5 м, 25-50 м, 75-100 м, 200 м и из придонного горизонта.\n     В контрольном 100-метровом створе было проведено 7 съёмок: в феврале, марте, апреле,\n       июне, августе, сентябре, октябре.\n          Анализ  результатов  гидрохимических  наблюдений, проведённых  на  полигоне\n       250 км2, показал, что как средние, так и максимальные концентрации контролируемых\n       показателей (минеральных веществ, кремния, фенолов, нефтепродуктов, сульфатов, хло-\n       ридов, свинца, марганца, никеля, кадмия, железа, меди, цинка, кобальта, ванадия, мо-\n       либдена, алюминия, бериллия и хрома и ртути) не превышали ПДК. В максимальных\n       значениях зафиксировано превышение ПДК (в а",
+          "quote_basis": "exact_cached_page_text",
+          "original_page_visually_checked": false,
+          "source_authenticity": "mirror_unverified"
+        },
+        {
+          "source_id": "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos",
+          "sha256": "557959d2c8996b990487e9d2acd501ca4048f29e3c7a6fe27e49f8fc1c554fd8",
+          "report_year": 2024,
+          "page": 18,
+          "quote": "                       1. СОСТОЯНИЕ ОКРУЖАЮЩЕЙ СРЕДЫ НА БАЙКАЛЬСКОЙ ПРИРОДНОЙ ТЕРРИТОРИИ\n\nГидрохимические наблюдения в контрольном 100-метровом створе\n    В контрольном 100-метровом створе было про-       В воде контрольного 100-метрового створа по\nведено 7 съемок: в феврале, марте, апреле, июне,    сравнению с 2023 г. среднее содержание растворен-\nавгусте, сентябре и октябре, было отобрано 147     ного кислорода существенно не изменилось и со-\nпроб.                                              ставило 11,50 мг/дм3, максимальное содержание\n    Оценка показателей качества воды оз. Байкал    растворенного кислорода составило 13,46 мг/дм3\nв контрольном 100-метровом створе проводилась в     (февраль), минимальное – 9,42 мг/дм3 (сентябрь);\nсоответствии со специальными нормами  (ПДК),    средняя величина рН воды составила 7,87 ед. рН,\nвведенными с 01.01.1985 (разработаны Росгидро-    значения варьировали от 7,62 до 8,16 ед. рН.\nметом для контрольного створа БЦБК), которые со-       В течение 2024  г. концентрация взвешенных\nответствуют следующим значениям (мг/дм3): мине-    веществ находилась в диапазоне от 1,0 (0,9 ПДК) до\nральные вещества – 117,0; взвешенные вещества –     2,1 мг/дм3 (1,9 ПДК); максимальное содержание фе-\n1,1, сульфаты – 10,0; хлориды – 2; фенолы – 0,001;    нолов превышало норму в 2,0 раза в 5 пробах: в\nводородный показатель от 6,5 до 8,5 ед. рН. Крите- ",
+          "quote_basis": "exact_cached_page_text",
+          "original_page_visually_checked": true,
+          "source_authenticity": "mirror_unverified"
+        },
+        {
+          "source_id": "official-b4e3fcfe0e41e26ea03b",
+          "sha256": "f42cd72201a7bb8652d10a571c5f472e9f9bd738d78939d676b13d0ee6146920",
+          "report_year": 2025,
+          "page": 159,
+          "quote": "                           Рис. 4.17. Минерализация воды озера Байкал в 2025 г., мг/л\n\n   В районе 100-метрового контрольного створа в 2025 г. отбор проб проводился с февраля по октябрь, на пяти\nвертикалях с отбором проб воды через 10 м по глубине. Данные о нарушении качества воды озера Байкал в\nисследуемом районе в 2025 г. по сравнению с 2024 г. приведены в таблице 4.3.\n   Оценка качества воды озера Байкал в контрольном створе проводилась в соответствии с нормами, введёнными\nдля створа с 01.01.1985 г.:\n   o   рН – 6,5-8,5 ед.,\n   o   сумма минеральных веществ – 117 мг/л;\n   o   сульфатные ионы – 10 мг/л;\n   o   хлоридные ионы – 2 мг/л;\n   o   фенолы – 0,001 мг/л;\n\nТаблица 4.3. Сведения о нарушениях качества воды озера Байкал в районе контрольного 100 метрового створа\n\n\n         ",
+          "quote_basis": "exact_cached_page_text",
+          "original_page_visually_checked": true,
+          "source_authenticity": "official_verified"
+        }
+      ],
+      "source_versions": [
+        "Доклад 2024, PDF 18: 7 съёмок, 147 проб всего; фенолы 70–5, диапазон 0,001–0,002 мг/дм³; 5 проб с превышениями в феврале/марте/апреле.",
+        "Обзор 2025, PDF 159, ретроспективная колонка 2024: фенолы 7–7, диапазон 0,0–0,002 мг/дм³.",
+        "Обзор 2025, колонка 2025 и пояснение: 7–7, повышенные концентрации в каждой из семи съёмок."
+      ],
+      "conclusion": "Два оригинала подтверждают расхождение, не ошибку распознавания колонок. мг/л и мг/дм³ эквивалентны. Если считать семь ретроспективных записей семью съёмками с нарушениями за 2024, такая трактовка не согласуется с пятью пробами в трёх месяцах без дополнительных данных. Метод агрегации ретроспективной строки не раскрыт. Общая доля/тренд превышений не рассчитывается.",
+      "next_step": "Росгидромет: первичные журналы, совпадение станций/горизонтов и правила ретроспективной агрегации.",
+      "specialist_required": true
+    }
+  ],
+  "findings": [
+    {
+      "id": "F01",
+      "kind": "wiki_error",
+      "claim_id": "water-quality-evidence-01",
+      "description": "Пункты наблюдений без доказательства названы фоновыми.",
+      "action": "Снято неподтверждённое обобщение; класс качества не изменён."
+    },
+    {
+      "id": "F02",
+      "kind": "wiki_error",
+      "claim_id": "spirogyra-observations-05",
+      "description": "Различие групповых названий квалифицировано как таксономическая несогласованность без систематической схемы.",
+      "action": "Сохранены оба названия; диагностика ошибки/смены вида снята."
+    },
+    {
+      "id": "F03",
+      "kind": "wiki_error",
+      "claim_id": "water-quality-evidence-06",
+      "description": "Разная детализация названа установленной характеристикой, объясняющей расхождение счётчиков, хотя связь выборок не показана.",
+      "action": "Объяснение сделано гипотезой и показано, почему его недостаточно для нарушений 2024."
+    },
+    {
+      "id": "F04",
+      "kind": "project_context_error",
+      "claim_id": null,
+      "description": "Проект обозначен университетским вопреки уточнённому автором научно-исследовательскому контексту.",
+      "action": "Исправлены README и только существующая текстовая метка HTML. Указана работа автора в ИДСТУ СО РАН без официального одобрения/публикации институтом.",
+      "basis": "explicit user instruction in this sprint"
+    }
+  ]
+}

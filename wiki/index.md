@@ -25,6 +25,7 @@
 - [Озеро Байкал](entities/baikal.md)
 - [Река Селенга](entities/selenga.md)
 - [Байкальская природная территория](entities/baikal-natural-area.md)
+- [Проверка знаний и нерешённые вопросы](topics/knowledge-quality.md)
 - [Атмосферный воздух: выбросы теплоэнергетики и границы сравнения](syntheses/air-pollution.md)
 - [Байкальский омуль: экологические группы и естественное воспроизводство](syntheses/baikal-omul.md)
 - [Байкальская нерпа: численность, воспроизводство и ограничения сравнения](syntheses/baikal-seal.md)

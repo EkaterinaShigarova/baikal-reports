@@ -1,5 +1,9 @@
 # Экологические проблемы Байкала: связанная картина и пределы знаний
 
+<!-- REVIEW STATUS START -->
+Статус: **Требуется научная рецензия**. Требуется научная рецензия. [Объём проверки](../topics/knowledge-quality.md#article-environmental-problems).
+<!-- REVIEW STATUS END -->
+
 ## Почему нет одного универсального индекса
 
 Государственные доклады описывают состояние воды, биоты, атмосферные выбросы, отходы и меры охраны на разных пространственных уровнях. Одновременно могут существовать фоновые пункты с водой, характеризуемой как «условно чистая», и локальные превышения у выпуска сточных вод. Численность нерпы, нерестовый запас омуля и выбросы теплоэнергетики не являются взаимозаменяемыми измерениями «состояния Байкала». [drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ:p17](../sources/drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ.md#page-17) [drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos:p18](../sources/drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos.md#page-18) [drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos:p69](../sources/drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos.md#page-69)
