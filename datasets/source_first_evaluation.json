@@ -1,0 +1,489 @@
+{
+  "version": 1,
+  "research_date": "2026-10-22",
+  "baseline_commit": "f16be211bf7db8329d4c4f95b71aa1419654beb6",
+  "mode": "source_first_experimental",
+  "experiment_id": "2015191799511e6004e00bce52cbe874fe5681b95a0438d289fc71f76d720a95",
+  "manifest_path": "data/wiki_updates/source_first_experiments/2015191799511e6004e00bce52cbe874fe5681b95a0438d289fc71f76d720a95.json",
+  "manifest_file_sha256": "ed045d7d95296560546262e12de1a33691ef4b24f33c95cb8d3861e6527c5e71",
+  "manifest_content_digest": "2015191799511e6004e00bce52cbe874fe5681b95a0438d289fc71f76d720a95",
+  "protocol_path": "docs/SOURCE_FIRST_PROTOCOL.md",
+  "protocol_sha256": "6c29f6b48bedb0d71023a88dc16eaf870a2555e8ca46da2bf9c2eb0684757c6d",
+  "source_first_module_sha256": "20eb996c29a0bb252ec8a9453476a5940d51138cda7bf2475b66d866f6bf0f7a",
+  "runner_sha256": "e2cbda900e5b709a600e995ed46828fc2d43880a6877e8af59b6703043e23f88",
+  "extract_prompt_sha256": "c9977ae9b01aa765591e53cc7f478e58eaf9673e8987b52b8e1e209e6fc4d250",
+  "compare_prompt_sha256": "9b71c0a988ab585f92546de92d0867f9d5d1208c49000670c9a67944d512e832",
+  "baseline_report_sha256": "e67b9471c407682bc098341fd5290ff1afcab21b12a96b168dbe5eb111f6028f",
+  "model_profile": {
+    "id": "qwen25-7b-q4km",
+    "repo": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+    "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f",
+    "license": "apache-2.0",
+    "max_total_bytes": 6442450944,
+    "memory_limit_min_bytes": 17179869184,
+    "memory_available_min_bytes": 17179869184,
+    "disk_reserve_bytes": 3221225472,
+    "request_timeout_seconds": 600,
+    "files": [
+      {
+        "filename": "qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+        "bytes": 3993201344,
+        "sha256": "dfce12e3862a5283ccfb88221b48480e58745165de856439950d0f22590580db"
+      },
+      {
+        "filename": "qwen2.5-7b-instruct-q4_k_m-00002-of-00002.gguf",
+        "bytes": 689872288,
+        "sha256": "539cf93f78e887edea1c04e2d7d8cdaca9d01dae9c9025bcb8accbe29df3d72a"
+      }
+    ]
+  },
+  "runtime": {
+    "model_bundle": {
+      "profile": "qwen25-7b-q4km",
+      "repo": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f",
+      "license": "apache-2.0",
+      "files": [
+        {
+          "filename": "qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+          "bytes": 3993201344,
+          "sha256": "dfce12e3862a5283ccfb88221b48480e58745165de856439950d0f22590580db"
+        },
+        {
+          "filename": "qwen2.5-7b-instruct-q4_k_m-00002-of-00002.gguf",
+          "bytes": 689872288,
+          "sha256": "539cf93f78e887edea1c04e2d7d8cdaca9d01dae9c9025bcb8accbe29df3d72a"
+        }
+      ],
+      "total_bytes": 4683073632
+    },
+    "server_sha256": "ea2082a6ea129e3fbe0e32c4a57cf0fd754572b5a0fb824b89b9ed80b64836f6",
+    "server_version": "version: 0.7.0-dev (build 1, commit 620d222)\nbuilt with GNU 14.2.0 for Linux x86_64",
+    "backend_probe": {
+      "exit_code": 0,
+      "output": "Available devices:\n  (none)"
+    },
+    "threads": 4,
+    "context_tokens": 8192,
+    "gpu_layers": 0,
+    "resources_before": {
+      "memory_limit_bytes": 34359738368,
+      "memory_available_bytes": 23956234240,
+      "disk_free_bytes": 22122475520,
+      "cpu_affinity_count": 5,
+      "cpu_quota": "400000 100000"
+    },
+    "server_log_path": "data/llm-evaluation/source-first-server-1792678973390739376.log",
+    "timeout_seconds": 600,
+    "command": [
+      "/workspace/baikal-reports/data/llm-runtime/build-avx2/bin/llama-server",
+      "-m",
+      "/workspace/baikal-reports/data/models/qwen25-7b-q4km/qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+      "--alias",
+      "baikal-local-evaluation",
+      "-c",
+      "8192",
+      "-t",
+      "4",
+      "-tb",
+      "4",
+      "-ngl",
+      "0",
+      "--parallel",
+      "1",
+      "--batch-size",
+      "256",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "35083"
+    ],
+    "server_wall_seconds": 173.041,
+    "peak_child_rss_kib": 8146296,
+    "shared_libraries_sha256": {
+      "data/llm-runtime/build-avx2/bin/libllama-server-impl.so": "975f1be730d9c62ebcb3b3ac6e86ab06a26e55fd1d712e40872cc81cf9ee78e3",
+      "data/llm-runtime/build-avx2/bin/libggml.so.0.27.0": "824923cfd81c0ce60cb424984bda301cede6cbf4aa38ed668a0bbf93e60c220d",
+      "data/llm-runtime/build-avx2/bin/libmtmd.so.0.7.0": "307c478edcef785cf8d49b1fc1f7022b495947e67788c7d9bb3261ee48197012",
+      "data/llm-runtime/build-avx2/bin/libllama-common.so.0.7.0": "4217e3999fb62ba9072c883e1e75841acc59f4e2aabe87cf8ae5356c6e77d9a4",
+      "data/llm-runtime/build-avx2/bin/libggml-base.so.0.27.0": "eeaf4e97b568dee9e6af83759d1e16b22f57e370ee503fdc6c7a4c0698db9096",
+      "data/llm-runtime/build-avx2/bin/libggml-cpu.so.0.27.0": "9097a7714db48b912e5db1f1326c86e843887b2a38d6831d661a1ee55ade584d",
+      "data/llm-runtime/build-avx2/bin/libllama.so.0.7.0": "33f255d60f0770d04e733dae01ffad85fde66c748e2d7e6e6e1916864ecc0ac1"
+    }
+  },
+  "extraction_path": "data/llm-evaluation/source-first-extract-f16be21.json",
+  "extraction_file_sha256": "f04d7da1a9f60c023a5f57cc7382d6f988bf652bc3bb3c6aaad43ed91d166a3d",
+  "cases": [
+    {
+      "topic": "baikal-sturgeon",
+      "raw_run_id": "9b2557a4d352a07d415cab61ee1fa13d8e5d9e8aa648aea01bd6100ac8137dc6",
+      "raw_run_path": "data/wiki_updates/source_first_runs/9b2557a4d352a07d415cab61ee1fa13d8e5d9e8aa648aea01bd6100ac8137dc6.json",
+      "raw_run_file_sha256": "9ff33ef42bc686dcaff5dc26a62801072c05e06e082fadcf69a86ea9afe4d66f",
+      "raw_response_sha256": "2cff9c1c6a7183317d23b3785e0947486e77a56eb786d01b79564f8e4e3f4cc9",
+      "request_sha256": "da1335406deb29384e6591db8ffe71df840d372a9acca58b14870b4403fdaae8",
+      "source_fragments_identical_to_7b_v2": true,
+      "source_only_user_keys": [
+        "source_fragments"
+      ],
+      "article_sha256": "59c8be41094a9fd76d117dd9138ba22d15cdeabd8d9c24474f7d20c8df13245b",
+      "article_path": "wiki/syntheses/baikal-sturgeon.md",
+      "source_fragments": [
+        {
+          "fragment_id": "S1",
+          "source_id": "drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0",
+          "sha256": "60ccb6065b32d959457faf9745023d763c9f6641ad7c9c8cdee7a88fea454139",
+          "page": 222,
+          "report_year": 2016,
+          "observation_period": null,
+          "quote": "Для получения икры в 2016 г. использовались производители маточного стада\n       осётра, выращенные на Гусиноозёрском осетровом рыбоводном хозяйстве (ГОРХ) ФГБУ\n      «Байкалрыбвод». Молодь осётра подращивалась в бассейнах ИЦА-2, установленных в цехе\n1.4  подращивания молоди Селенгинского экспериментального рыбоводного завода, а также в      бассейнах и лотках ГОРХ.",
+          "quote_basis": "exact_cached_page_text",
+          "source_authenticity": "mirror_unverified",
+          "novelty": "already_quoted_fragment",
+          "publication_year": null
+        },
+        {
+          "fragment_id": "S2",
+          "source_id": "drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0",
+          "sha256": "60ccb6065b32d959457faf9745023d763c9f6641ad7c9c8cdee7a88fea454139",
+          "page": 222,
+          "report_year": 2016,
+          "observation_period": null,
+          "quote": "В результате подращивания получено и выпущено в р. Селенгу\n      1044 тыс. шт. молоди осётра, в т.ч. 1029 тыс. шт. средней навеской 3,0 г в целях выполнения\n      государственного задания (рис. 1.4.6.3).",
+          "quote_basis": "exact_cached_page_text",
+          "source_authenticity": "mirror_unverified",
+          "novelty": "already_quoted_fragment",
+          "publication_year": null
+        }
+      ],
+      "real_responses": 1,
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 138,
+        "prompt_tokens": 767,
+        "total_tokens": 905,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "elapsed_seconds": 44.692,
+      "programmatic_errors": [
+        "ValueError: Invalid extraction object/limitations"
+      ],
+      "programmatically_admitted_facts": 0,
+      "fact_audit": [
+        {
+          "diagnostic_candidate_id": "candidate-4e451f658486d6e3",
+          "model_record": {
+            "text": "В результате подращивания получено и выпущено в р. Селенгу 1044 тыс. шт. молоди осётра.",
+            "evidence_ids": [
+              "S2"
+            ],
+            "observation_year": 2016,
+            "indicator": "выпущено молоди осётра",
+            "unit": "тыс. шт.",
+            "territory": "р. Селенга",
+            "statement_kind": "observed",
+            "limitations": []
+          },
+          "statement_support_assessment": "statement_text_supported_but_record_not_admissible",
+          "fully_admissible": false,
+          "reason": "The release statement is in S2 and already in Wiki. Observation year2016 is not explicit in selected S2; empty fact/global limitations. The expected1029thousand/3.0g subgroup is omitted.",
+          "expert_review": false
+        }
+      ],
+      "model_source_conflicts": [],
+      "model_global_limitations": [],
+      "comparison_status": "not_run_extraction_rejected",
+      "novelty_model_evaluated": false,
+      "drafts_created": 0
+    },
+    {
+      "topic": "selenga-sediments",
+      "raw_run_id": "934125a6461f7d897b36cf310debb0919346942f1f3bfc1a71c0d7f26632acb7",
+      "raw_run_path": "data/wiki_updates/source_first_runs/934125a6461f7d897b36cf310debb0919346942f1f3bfc1a71c0d7f26632acb7.json",
+      "raw_run_file_sha256": "3a7af059c692bb901e3879f32bd8b18c3d3c6d96f8cf278e7923e08616e5a8de",
+      "raw_response_sha256": "99169f8ee4fe17fed7bf7a66b750d82328bfbfe650798dbe9b724f1b862b8fa8",
+      "request_sha256": "4cac9624cfd197f7e08ddc5a66cfa4e4edc43b81ce0c2ef230aa3c4037104e6c",
+      "source_fragments_identical_to_7b_v2": true,
+      "source_only_user_keys": [
+        "source_fragments"
+      ],
+      "article_sha256": "a67b8fbbfda3d9716f31c291485877d576d8c315587604486a411d85918984e6",
+      "article_path": "wiki/syntheses/selenga-sediments.md",
+      "source_fragments": [
+        {
+          "fragment_id": "S1",
+          "source_id": "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
+          "sha256": "26dc3610938c5b8f91e85b4179ee1092f20aa03684135d0534b8ad2ab9629023",
+          "page": 26,
+          "report_year": 2015,
+          "observation_period": null,
+          "quote": "Максимальное содержание ПАУ, бенз(а)пирена и канцерогенных аренов в 2015 г. были\n      отмечены на авандельте реки непосредственно напротив выносов протокой Усть-Харауз:\n       124,9 нг/г с.о., 61,8 нг/г с.о. и 7,9 нг/г с.о. (таблица 1.1.1.3.6). Уровень загрязненности на\n1.1  авандельте р. Селенга по бенз(а)пирену можно отнести к фоновому значению, а по сумме    ПАУ – как слабо загрязненному. Однако следует отметить, что содержание канцерогенных\n      аренов в 2015 г. увеличилось по сравнению с 2014 г. в 2,7 раза.",
+          "quote_basis": "exact_cached_page_text",
+          "source_authenticity": "mirror_unverified",
+          "novelty": "already_quoted_fragment",
+          "publication_year": null
+        },
+        {
+          "fragment_id": "S2",
+          "source_id": "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
+          "sha256": "26dc3610938c5b8f91e85b4179ee1092f20aa03684135d0534b8ad2ab9629023",
+          "page": 26,
+          "report_year": 2015,
+          "observation_period": null,
+          "quote": "Содержание полициклических ароматических углеводородов в донных отложениях\n                       на авандельте р. Селенга в 2011–2015 гг., в нг/г с.о.\n                     (в числителе – интервалы значений, в знаменателе – средние значения)\n                                                                    Канцерогены –  Канцерогены –                   БП –     БП –     ПАУ –     ПАУ –          Годы                                                       протока Усть-    весь полигон                         протока       весь        весь       протока         наблюдений                                                    Харауз (% от   (% от суммы                       Усть-Харауз   полигон    полигон    Усть-Харауз                                                              суммы ПАУ)      ПАУ)\n                               0,5–7,8       0,1–7,8     20,0–125,9     27,2–125,9        6,4–22,9           1,2–22,9            2011 г.                                  3,2            1,4          57,0           70,4         17,8 (31,2 %)      10,2 (17,5 %)\n                               0,8–1,7       0,2–1,7      17,7–61,5      19,9–61,5        7,0–11,0           4,7–11,2            2013 г.                                  1,0            1,0          33,4           33,8          9,3 (27,8 %)        8,4 (25,1 %)\n                               0,8–3,1       0,1–3,0     24,3–149,9     65,4–149,9        7,2–17,1           1,2–17,1            2014 г.                                  1,7            1,0          65,7          103,0        11,0 (16,7 %)       6,3 (9,6 %)\n                               1,2–7,9       0,1–7,9      3,0–124,9     24,3–124,9        9,9–61,8           1,0–61,8            2015 г.                                  3,9            2,1          36,9           61,7         30,3 (49,2 %)      17,1 (43,5 %)\n        Изменение по\n        средним (%),       129,4        110         –43,8          –40,1            175,5             171,4\n        2015 г. / 2014 г.",
+          "quote_basis": "exact_cached_page_text",
+          "source_authenticity": "mirror_unverified",
+          "novelty": "already_quoted_fragment",
+          "publication_year": null
+        }
+      ],
+      "real_responses": 1,
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 636,
+        "prompt_tokens": 1513,
+        "total_tokens": 2149,
+        "prompt_tokens_details": {
+          "cached_tokens": 462
+        }
+      },
+      "elapsed_seconds": 123.953,
+      "programmatic_errors": [
+        "ValueError: Invalid extraction object/limitations"
+      ],
+      "programmatically_admitted_facts": 0,
+      "fact_audit": [
+        {
+          "diagnostic_candidate_id": "candidate-5c4ce13b78d30343",
+          "model_record": {
+            "text": "Максимальное содержание ПАУ в 2015 г. было 124,9 нг/г с.о. на авандельте реки непосредственно напротив выносов протокой Усть-Харауз.",
+            "evidence_ids": [
+              "S1"
+            ],
+            "observation_year": 2015,
+            "indicator": "ПАУ",
+            "unit": "нг/г с.о.",
+            "territory": "авандельте реки непосредственно напротив выносов протокой Усть-Харауз",
+            "statement_kind": "observed",
+            "limitations": []
+          },
+          "statement_support_assessment": "statement_text_supported_but_record_not_admissible",
+          "fully_admissible": false,
+          "reason": "PAH maximum124.9 is supported by both prose and table; fact/global limitations are empty. This detail already occurs in the existing article.",
+          "expert_review": false
+        },
+        {
+          "diagnostic_candidate_id": "candidate-f25dc7f51deef06b",
+          "model_record": {
+            "text": "Максимальное содержание бенз(а)пирена в 2015 г. было 61,8 нг/г с.о. на авандельте реки непосредственно напротив выносов протокой Усть-Харауз.",
+            "evidence_ids": [
+              "S1"
+            ],
+            "observation_year": 2015,
+            "indicator": "бенз(а)пирен",
+            "unit": "нг/г с.о.",
+            "territory": "авандельте реки непосредственно напротив выносов протокой Усть-Харауз",
+            "statement_kind": "observed",
+            "limitations": []
+          },
+          "statement_support_assessment": "literal_prose_supported_but_conflicting_table_not_qualified",
+          "fully_admissible": false,
+          "reason": "Literal source prose gives this value, but table2015 reverses BP/carcinogen maxima. Output states it as an unqualified measurement, with no conflict note or interpretation limits. Do not repair or promote either version.",
+          "expert_review": false
+        },
+        {
+          "diagnostic_candidate_id": "candidate-f541a0d99568c47b",
+          "model_record": {
+            "text": "Максимальное содержание канцерогенных аренов в 2015 г. было 7,9 нг/г с.о. на авандельте реки непосредственно напротив выносов протокой Усть-Харауз.",
+            "evidence_ids": [
+              "S1"
+            ],
+            "observation_year": 2015,
+            "indicator": "канцерогенные арены",
+            "unit": "нг/г с.о.",
+            "territory": "авандельте реки непосредственно напротив выносов протокой Усть-Харауз",
+            "statement_kind": "observed",
+            "limitations": []
+          },
+          "statement_support_assessment": "literal_prose_supported_but_conflicting_table_not_qualified",
+          "fully_admissible": false,
+          "reason": "Literal source prose gives this value, but table2015 reverses BP/carcinogen maxima. Output states it as an unqualified measurement, with no conflict note or interpretation limits. Do not repair or promote either version.",
+          "expert_review": false
+        },
+        {
+          "diagnostic_candidate_id": "candidate-0a788f5faf95b1b0",
+          "model_record": {
+            "text": "Содержание канцерогенных аренов в 2015 г. увеличилось по сравнению с 2014 г. в 2,7 раза.",
+            "evidence_ids": [
+              "S1"
+            ],
+            "observation_year": 2015,
+            "indicator": "канцерогенные арены",
+            "unit": null,
+            "territory": null,
+            "statement_kind": "observed",
+            "limitations": []
+          },
+          "statement_support_assessment": "statement_text_supported_but_record_not_admissible",
+          "fully_admissible": false,
+          "reason": "Statement text is supported by S1; fact/global limitations are empty. Ratio2.7 is an author-reported comparison, not an independently verified comparable observation; unit/territory fields are null in this ratio record.",
+          "expert_review": false
+        }
+      ],
+      "model_source_conflicts": [],
+      "model_global_limitations": [],
+      "comparison_status": "not_run_extraction_rejected",
+      "novelty_model_evaluated": false,
+      "drafts_created": 0
+    }
+  ],
+  "gate_test": {
+    "command_exit_code": 1,
+    "log_path": "data/llm-evaluation/source-first-compare-blocked-f16be21.log",
+    "log_sha256": "299a03f4a48cea7e27953eda6adb51465fa045beda1f58ed2dab74c330af53b6",
+    "reason": "Valid immutable extraction run required",
+    "model_started_for_gate_test": false,
+    "generation_requests_for_gate_test": 0,
+    "editorial_or_source_approval_created": false
+  },
+  "summary": {
+    "real_generation_attempts": 2,
+    "real_responses": 2,
+    "extraction_responses": 2,
+    "comparison_responses": 0,
+    "unused_request_slots": 2,
+    "raw_fact_records": 5,
+    "programmatically_admitted_facts": 0,
+    "fully_admissible_source_first_facts": 0,
+    "uncontested_statement_texts": 3,
+    "literal_selected_prose_support": 5,
+    "conflicting_values_without_qualification": 2,
+    "records_with_empty_limitations": 5,
+    "responses_with_empty_global_limitations": 2,
+    "observation_year_not_explicit_in_selected_fragment_records": 1,
+    "source_conflicts_reported": 0,
+    "known_source_conflict_preserved": false,
+    "expected_sturgeon_release_subgroup_extracted": false,
+    "ratio2_7_extracted": true,
+    "new_source_supported_detail_relative_to_article_in_raw_output": 1,
+    "new_details_not_already_seen_in_previous_7b_output": 0,
+    "novelty_model_evaluated": false,
+    "novelty_accuracy": null,
+    "editorially_reviewable_additions": 0,
+    "drafts_created": 0,
+    "wiki_changes": 0,
+    "observations_added": 0,
+    "fabricated_environmental_numeric_values_in_statement_text": 0,
+    "fabricated_causal_claims": 0,
+    "expert_review": false
+  },
+  "comparison_rows": [
+    {
+      "approach": "Qwen1.5B v2 previous single-stage",
+      "real_requests": 2,
+      "raw_claim_or_fact_blocks": 1,
+      "statement_blocks_supported_by_selected_evidence_without_unsupported_inference": 0,
+      "programmatic_responses_accepted": 0,
+      "source_supported_new_detail_mentioned": 0,
+      "correct_new_detail_labels": 0,
+      "usable_updates": 0,
+      "known2015_discrepancy_preserved": false,
+      "elapsed_seconds": 96.097,
+      "peak_child_rss_kib": 2111708,
+      "errors": [
+        "Input echo/no claims for sturgeon",
+        "Unsupported significant variation thesis",
+        "Fabricated Wiki excerpt/conflict",
+        "Wrong topic ID/limitations type"
+      ]
+    },
+    {
+      "approach": "Qwen7B v2 previous single-stage",
+      "real_requests": 2,
+      "raw_claim_or_fact_blocks": 4,
+      "statement_blocks_supported_by_selected_evidence_without_unsupported_inference": 3,
+      "programmatic_responses_accepted": 2,
+      "source_supported_new_detail_mentioned": 1,
+      "correct_new_detail_labels": 0,
+      "usable_updates": 0,
+      "known2015_discrepancy_preserved": false,
+      "elapsed_seconds": 265.996,
+      "peak_child_rss_kib": 8253248,
+      "errors": [
+        "Sturgeon stock statement bound to irrelevant2016 release fragments",
+        "Unsupported2020 observation period",
+        "Ratio2.7 falsely already_present",
+        "Known discrepancy omitted"
+      ]
+    },
+    {
+      "approach": "Qwen7B source-first extraction; comparison blocked",
+      "real_requests": 2,
+      "raw_claim_or_fact_blocks": 5,
+      "statement_blocks_supported_by_selected_evidence_without_unsupported_inference": 3,
+      "programmatic_responses_accepted": 0,
+      "source_supported_new_detail_mentioned": 1,
+      "correct_new_detail_labels": null,
+      "usable_updates": 0,
+      "known2015_discrepancy_preserved": false,
+      "elapsed_seconds": 173.041,
+      "peak_child_rss_kib": 8146296,
+      "errors": [
+        "Empty limitations in both responses and all5 facts",
+        "2016 year not explicit in selected S2",
+        "Two conflicting prose maxima asserted without qualification",
+        "Expected release subgroup omitted",
+        "No real novelty comparison because source gate failed"
+      ]
+    }
+  ],
+  "limitations": [
+    "Two fixed cases; source-first changed task and schema, not a matched prompt/model-only ablation.",
+    "Intermediate source review is required by architecture; no candidate passed strict structure to reach that gate in this actual run.",
+    "Three supported statement texts are not three accepted fact records or verified observations.",
+    "The second-stage model quality was not tested in reality; synthetic tests do not replace that experiment.",
+    "A wrong observation-year attribution can use an existing report-year token without inventing a numeric value.",
+    "Source mirrors remain mirror_unverified. This is not scientific expert review."
+  ],
+  "conclusion": "No demonstrated improvement in usable knowledge updates. Source isolation and fail-closed boundary work, but factual extraction misses limitations/ambiguity/subgroup and prevents the actual second stage. Do not label the two-stage real experiment successful.",
+  "next_step": {
+    "scope": "One new bounded preregistered extraction evaluation, before any Wiki comparison; no new model and no unchanged repeat.",
+    "changes_to_test": [
+      "Local structured decoding/JSON schema for required arrays/types, without auto-inserting boilerplate limitations or scientific approval.",
+      "Preserve prose and a separately verified column mapping of this one cached2015 table as two typed evidence views; keep both conflicting values and provenance, no bulk PDF/OCR.",
+      "Constrain evidence spans/temporal-role selection so a report-year cannot masquerade as a quoted observation-year; separately assess omission of1029thousand/3.0g."
+    ],
+    "success_gate": "At least one complete source-supported fact with honest limitations and preserved relevant source contradiction before a real novelty request.",
+    "implementation_or_additional_calls_this_sprint": false
+  },
+  "preservation": {
+    "analytical_articles": 22,
+    "reviewed_observations": 168,
+    "checkpoints": 3878,
+    "pdfs": 11,
+    "protected_files_sha256_matches": 31,
+    "pdf_sha256_matches": 11,
+    "checkpoint_size_mtime_matches": 3878,
+    "all_published_wiki_files_unchanged": true
+  },
+  "paid_api_used": false,
+  "documents_sent_to_external_llm": false,
+  "model_downloaded": false,
+  "runtime_rebuilt": false,
+  "technical_validation": {
+    "unittest_passed": 105,
+    "unittest_failed": 0,
+    "ruff_f_errors": 0,
+    "wiki_lint_errors": 0,
+    "wiki_lint_warnings": 13,
+    "scientific_evidence_references_checked_locally": 162,
+    "encyclopedia_records_checked_locally": 47,
+    "observations_checked_locally": 168,
+    "exact_frozen_fragments_checked_locally": 4,
+    "raw_model_runs_checked_locally": 2,
+    "relative_markdown_file_links_checked": 62,
+    "closed_gate_test_before_runtime": true,
+    "frozen_protocol_and_executed_code_unchanged": true,
+    "all_published_wiki_files_unchanged": true
+  }
+}
