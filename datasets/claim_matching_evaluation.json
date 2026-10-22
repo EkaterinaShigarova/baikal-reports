@@ -1,0 +1,564 @@
+{
+  "version": 1,
+  "research_date": "2026-10-23",
+  "baseline_commit": "3ce5604ae73e77dfda2587e0470d499899d167bc",
+  "preregistered_execution_commit": "ed40345417875a0bbab3b794aba17e9df6a85261",
+  "commit_precedes_generation": true,
+  "experiment_id": "564fdf6b83120ba4f8952b8933525972f72286444aa19f49c8cf2687e3c374c4",
+  "manifest_path": "data/wiki_updates/claim_comparison_experiments/564fdf6b83120ba4f8952b8933525972f72286444aa19f49c8cf2687e3c374c4.json",
+  "manifest_file_sha256": "6c112e1c34957b5d9ecbdba5042608b81401e0f1515081b0dd97fe5131c82cea",
+  "pins": {
+    "baikal/claim_matching.py": "84e22eeaa3b11ce2517909ebc19a3d3b45962032f5073bc022bcf07008e662f5",
+    "scripts/evaluate_claim_matching.py": "4d5e2f368704aa98ddf894ff002f7117fc98ae0a99e3a020ea13a702e80afd2e",
+    "docs/CLAIM_MATCHING_PROTOCOL.md": "2622530457bc52ce8800c058561457a916c63b3fe82038c7795e2fd93522717f",
+    "datasets/selenga_claim_registry.json": "15938639127aa0e374e83eef0689f6d4bed19c5e51cf53ac81b330e20515f33d",
+    "datasets/claim_comparison_benchmark.json": "e87ce99ab7c5c15139c83c773970dff95920cb575dff2403ebe9a54b639842a7",
+    "datasets/typed_evidence_2015.json": "a5f8cde78ed687654ba666ebdda1a426b10b5128696b67a168e82f1f8ba88c89",
+    "datasets/novelty_evaluation.json": "fc8dc0d3d71c1e14f0c81e9f62ea14279965ed4d9481526c3d55a4f4ce58ed13",
+    "baikal/typed_fact_context.py": "e920c8ac7e21b7bcb90d1bc98e478c4c293a21af7c53fc6cd4210f648db233d7",
+    "scripts/evaluate_source_first.py": "e2cbda900e5b709a600e995ed46828fc2d43880a6877e8af59b6703043e23f88"
+  },
+  "model_profile": {
+    "id": "qwen25-7b-q4km",
+    "repo": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+    "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f",
+    "license": "apache-2.0",
+    "max_total_bytes": 6442450944,
+    "memory_limit_min_bytes": 17179869184,
+    "memory_available_min_bytes": 17179869184,
+    "disk_reserve_bytes": 3221225472,
+    "request_timeout_seconds": 600,
+    "files": [
+      {
+        "filename": "qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+        "bytes": 3993201344,
+        "sha256": "dfce12e3862a5283ccfb88221b48480e58745165de856439950d0f22590580db"
+      },
+      {
+        "filename": "qwen2.5-7b-instruct-q4_k_m-00002-of-00002.gguf",
+        "bytes": 689872288,
+        "sha256": "539cf93f78e887edea1c04e2d7d8cdaca9d01dae9c9025bcb8accbe29df3d72a"
+      }
+    ]
+  },
+  "runtime": {
+    "model_bundle": {
+      "profile": "qwen25-7b-q4km",
+      "repo": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f",
+      "license": "apache-2.0",
+      "files": [
+        {
+          "filename": "qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+          "bytes": 3993201344,
+          "sha256": "dfce12e3862a5283ccfb88221b48480e58745165de856439950d0f22590580db"
+        },
+        {
+          "filename": "qwen2.5-7b-instruct-q4_k_m-00002-of-00002.gguf",
+          "bytes": 689872288,
+          "sha256": "539cf93f78e887edea1c04e2d7d8cdaca9d01dae9c9025bcb8accbe29df3d72a"
+        }
+      ],
+      "total_bytes": 4683073632
+    },
+    "server_sha256": "ea2082a6ea129e3fbe0e32c4a57cf0fd754572b5a0fb824b89b9ed80b64836f6",
+    "server_version": "version: 0.7.0-dev (build 1, commit 620d222)\nbuilt with GNU 14.2.0 for Linux x86_64",
+    "backend_probe": {
+      "exit_code": 0,
+      "output": "Available devices:\n  (none)"
+    },
+    "threads": 4,
+    "context_tokens": 8192,
+    "gpu_layers": 0,
+    "resources_before": {
+      "memory_limit_bytes": 34359738368,
+      "memory_available_bytes": 23947796480,
+      "disk_free_bytes": 22118035456,
+      "cpu_affinity_count": 5,
+      "cpu_quota": "400000 100000"
+    },
+    "server_log_path": "data/llm-evaluation/source-first-server-1792686420486919325.log",
+    "timeout_seconds": 600,
+    "command": [
+      "/workspace/baikal-reports/data/llm-runtime/build-avx2/bin/llama-server",
+      "-m",
+      "/workspace/baikal-reports/data/models/qwen25-7b-q4km/qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+      "--alias",
+      "baikal-local-evaluation",
+      "-c",
+      "8192",
+      "-t",
+      "4",
+      "-tb",
+      "4",
+      "-ngl",
+      "0",
+      "--parallel",
+      "1",
+      "--batch-size",
+      "256",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "41351"
+    ],
+    "server_wall_seconds": 356.132,
+    "peak_child_rss_kib": 8523780
+  },
+  "real_model_executed": true,
+  "model_downloaded": false,
+  "runtime_rebuilt": false,
+  "documents_sent_to_external_llm": false,
+  "paid_api_used": false,
+  "registry": {
+    "path": "datasets/selenga_claim_registry.json",
+    "file_sha256": "15938639127aa0e374e83eef0689f6d4bed19c5e51cf53ac81b330e20515f33d",
+    "claims": 7,
+    "article_sha256": "a67b8fbbfda3d9716f31c291485877d576d8c315587604486a411d85918984e6",
+    "coverage": "Семь выбранных утверждений статьи об ароматических загрязнителях в сводке 2015 года. Частичный реестр, не все предложения статьи. Отсутствие совпадения не доказывает новизну.",
+    "source_documents": 1,
+    "physical_source_pages": 1,
+    "exact_source_fragments": 2,
+    "review_kind": "source_comparison_non_expert",
+    "expert_review": false
+  },
+  "benchmark": {
+    "path": "datasets/claim_comparison_benchmark.json",
+    "file_sha256": "e87ce99ab7c5c15139c83c773970dff95920cb575dff2403ebe9a54b639842a7",
+    "expected_counts": {
+      "already_present": 2,
+      "new_detail": 2,
+      "contradiction": 2,
+      "insufficient_evidence": 2
+    },
+    "scoped_comparisons_not_independent_environmental_observations": true,
+    "contradictions_are_existing_source_attribution_pairs_not_new_wiki_conflicts": true,
+    "I1_explicit_incomplete_projection": true,
+    "expected_answers_not_sent_to_model": true
+  },
+  "case_results": [
+    {
+      "case_id": "A1",
+      "fact_id": "M97996f7f2e5eced0",
+      "expected_classification": "already_present",
+      "scope": "Сравнение с релевантными утверждениями статьи; new_detail остаётся кандидатом до отдельной проверки полной статьи.",
+      "structural_route": {
+        "route": "deterministic",
+        "classification": "already_present",
+        "reason": "exact_typed_statement_match",
+        "claim_ids": [
+          "L1f11e4bf4a239adc"
+        ]
+      },
+      "model": null,
+      "actual_classification": "already_present",
+      "correct": true,
+      "semantic_expected_reason": "Число 7,9, максимум БП, единица/период/сводный объект и атрибуция таблице совпадают с утверждением статьи.",
+      "manual_review_is_expert": false
+    },
+    {
+      "case_id": "A2",
+      "fact_id": "Mf3958060051443a2",
+      "expected_classification": "already_present",
+      "scope": "Сравнение с релевантными утверждениями статьи; new_detail остаётся кандидатом до отдельной проверки полной статьи.",
+      "structural_route": {
+        "route": "llm_required",
+        "classification": null,
+        "reason": "no_decisive_structural_match_not_proof_of_novelty",
+        "claim_ids": [
+          "La650412754bb0a9f"
+        ]
+      },
+      "model": {
+        "run_id": "b5c45e6374fc5a1c9196af410d65e510e34401476b770a02ac180aa4b681b1e3",
+        "path": "data/wiki_updates/claim_comparison_runs/b5c45e6374fc5a1c9196af410d65e510e34401476b770a02ac180aa4b681b1e3.json",
+        "file_sha256": "5e7794b88225167e138babff4e18d51381a1284347649bc287dedafce3f1df2f",
+        "request_sha256": "cc8721ccf1a622ec80844f9ecafce4c27c61698f6f10aefd16bdcf23acd2e4ea",
+        "raw_response_sha256": "d618516ff9fb556dff8758ccdcbda4ed6064f0ca4de336534808707eb9e82d89",
+        "model_content_sha256": "d96cfff67ee89baa147c1556107bfb9d62ff3c76b9756efc6a06bffae197b711",
+        "finish_reason": "stop",
+        "parsed": {
+          "fact_id": "Mf3958060051443a2",
+          "classification": "new_detail",
+          "basis": "same_scoped_statement",
+          "supporting_claim_ids": [
+            "L1788d9bc5db328b3",
+            "L1f11e4bf4a239adc",
+            "La650412754bb0a9f"
+          ],
+          "preserved_conflict_ids": [
+            "K_BP_ORDER_2015",
+            "K_CARC_ORDER_2015"
+          ]
+        },
+        "errors": [
+          "ValueError: Decision and structured explanation disagree"
+        ],
+        "usage": {
+          "completion_tokens": 135,
+          "prompt_tokens": 2913,
+          "total_tokens": 3048,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "elapsed_seconds": 138.132,
+        "context_preflight": {
+          "prompt_tokens_native": 2913,
+          "output_tokens_reserved": 512,
+          "safety_reserve": 128,
+          "context_tokens": 8192,
+          "generation_requests": 0
+        },
+        "semantic_review": {
+          "run_id": "b5c45e6374fc5a1c9196af410d65e510e34401476b770a02ac180aa4b681b1e3",
+          "status": "rejected",
+          "reason": "Ответ завершён, но classification=new_detail противоречит basis=same_scoped_statement. Программа правильно отклонила его. По существу фоновое значение и фоновый уровень — одна оценка в источнике и статье; числовые максимумы не превращают её в новую деталь. Правильный код basis не используется для ремонта неверного класса."
+        }
+      },
+      "actual_classification": null,
+      "correct": false,
+      "semantic_expected_reason": "Фоновое значение в источнике и фоновый уровень в статье передают ту же качественную оценку; это не новое число или новая классификация.",
+      "manual_review_is_expert": false
+    },
+    {
+      "case_id": "N1",
+      "fact_id": "Fef1cdb41001456e0",
+      "expected_classification": "new_detail",
+      "scope": "Сравнение с релевантными утверждениями статьи; new_detail остаётся кандидатом до отдельной проверки полной статьи.",
+      "structural_route": {
+        "route": "llm_required",
+        "classification": null,
+        "reason": "no_decisive_structural_match_not_proof_of_novelty",
+        "claim_ids": []
+      },
+      "model": {
+        "run_id": "36edbdba773126fd3035cd665363efa3d307eedcc75d2b805034d525a1b06316",
+        "path": "data/wiki_updates/claim_comparison_runs/36edbdba773126fd3035cd665363efa3d307eedcc75d2b805034d525a1b06316.json",
+        "file_sha256": "cd19a49ccb727e1bd99f258fdd820cffd8c9a73aea17293d9f5c1bd973c161ef",
+        "request_sha256": "19256ee6818a5f88ce769cf7e3628e0d61d5b8f96719b41b7d2bdae29bc12565",
+        "raw_response_sha256": "c974b12eda24b63461213959f76b4cf203a873faea0d3fe385891f2d6ea837ab",
+        "model_content_sha256": "ce4d1c7a1a9623a50ca1a63cfca1b888b125dc0795df3527614215c60a86fe2e",
+        "finish_reason": "stop",
+        "parsed": {
+          "fact_id": "Fef1cdb41001456e0",
+          "classification": "insufficient_evidence",
+          "basis": "missing_comparison_basis",
+          "supporting_claim_ids": [],
+          "preserved_conflict_ids": [
+            "K_BP_ORDER_2015",
+            "K_CARC_ORDER_2015"
+          ]
+        },
+        "errors": [],
+        "usage": {
+          "completion_tokens": 86,
+          "prompt_tokens": 3026,
+          "total_tokens": 3112,
+          "prompt_tokens_details": {
+            "cached_tokens": 587
+          }
+        },
+        "elapsed_seconds": 114.358,
+        "context_preflight": {
+          "prompt_tokens_native": 3026,
+          "output_tokens_reserved": 512,
+          "safety_reserve": 128,
+          "context_tokens": 8192,
+          "generation_requests": 0
+        },
+        "semantic_review": {
+          "run_id": "36edbdba773126fd3035cd665363efa3d307eedcc75d2b805034d525a1b06316",
+          "status": "rejected",
+          "reason": "Среднее БП 2,1 нг/г с.о. по всему полигону за 2015 подтверждено прежним source-checked фактом и собственной ячейкой T2015_C2 с подписью/годом. Оно не выражено переданными максимумами/качественной оценкой; полная статья также не содержит этого среднего или словесного эквивалента. В рамках задачи это новая деталь-кандидат, не автоматически разрешённая публикация. Insufficient_evidence не соответствует заранее заданной области сравнения."
+        }
+      },
+      "actual_classification": "insufficient_evidence",
+      "correct": false,
+      "semantic_expected_reason": "Сохранённое среднее БП 2,1 по всему полигону отсутствует в полной статье. Максимумы и фон не выражают это среднее.",
+      "manual_review_is_expert": false
+    },
+    {
+      "case_id": "N2",
+      "fact_id": "Fb1a1009f18b2ca3b",
+      "expected_classification": "new_detail",
+      "scope": "Сравнение с релевантными утверждениями статьи; new_detail остаётся кандидатом до отдельной проверки полной статьи.",
+      "structural_route": {
+        "route": "llm_required",
+        "classification": null,
+        "reason": "no_decisive_structural_match_not_proof_of_novelty",
+        "claim_ids": []
+      },
+      "model": {
+        "run_id": "f2d110bf520c3d57d9ed3cc562b364c2bbf8cbe408d807fcaa74f5eb0effe611",
+        "path": "data/wiki_updates/claim_comparison_runs/f2d110bf520c3d57d9ed3cc562b364c2bbf8cbe408d807fcaa74f5eb0effe611.json",
+        "file_sha256": "58a578b93940dbf18ee08adc7e8e18b003c9f583d036a35e118d1f4fb166869d",
+        "request_sha256": "0488e5ce02c4a4fc7770d0b50a6f86a070a62680973e51532d10b36d2aa84fb9",
+        "raw_response_sha256": "5ad65abf323610dabbcc9e3c0f001bd2506e63f5caa7f3a1002d7c24c1bb2dba",
+        "model_content_sha256": "0f3e7ef5ee2b421751fdf3941639cb64cb3ac1278491b780980e7aee7a81c516",
+        "finish_reason": "stop",
+        "parsed": {
+          "fact_id": "Fb1a1009f18b2ca3b",
+          "classification": "insufficient_evidence",
+          "basis": "missing_comparison_basis",
+          "supporting_claim_ids": [],
+          "preserved_conflict_ids": [
+            "K_BP_ORDER_2015",
+            "K_CARC_ORDER_2015"
+          ]
+        },
+        "errors": [],
+        "usage": {
+          "completion_tokens": 88,
+          "prompt_tokens": 2690,
+          "total_tokens": 2778,
+          "prompt_tokens_details": {
+            "cached_tokens": 588
+          }
+        },
+        "elapsed_seconds": 99.491,
+        "context_preflight": {
+          "prompt_tokens_native": 2690,
+          "output_tokens_reserved": 512,
+          "safety_reserve": 128,
+          "context_tokens": 8192,
+          "generation_requests": 0
+        },
+        "semantic_review": {
+          "run_id": "f2d110bf520c3d57d9ed3cc562b364c2bbf8cbe408d807fcaa74f5eb0effe611",
+          "status": "rejected",
+          "reason": "Среднее ПАУ 36,9 нг/г с.о. по всему полигону за 2015 подтверждено прежним фактом и T2015_C3. Максимум/слабое загрязнение не являются этим средним; полная статья просмотрена и среднего не содержит. Открытая атрибуция максимумов БП/канцерогенов и неподтверждённая сопоставимость лет не делают невозможным такое сравнение. Insufficient_evidence не выделяет верный кандидат."
+        }
+      },
+      "actual_classification": "insufficient_evidence",
+      "correct": false,
+      "semantic_expected_reason": "Сохранённое среднее ПАУ 36,9 по всему полигону отсутствует в полной статье; максимум и слабое загрязнение не являются его эквивалентом.",
+      "manual_review_is_expert": false
+    },
+    {
+      "case_id": "C1",
+      "fact_id": "M97996f7f2e5eced0",
+      "expected_classification": "contradiction",
+      "scope": "Отношение к указанному сообщению прозы, не новизна относительно всей Wiki. Конфликт таблицы и прозы уже документирован.",
+      "structural_route": {
+        "route": "deterministic",
+        "classification": "contradiction",
+        "reason": "documented_source_attribution_conflict",
+        "claim_ids": [
+          "L1788d9bc5db328b3"
+        ],
+        "conflict_id": "K_BP_ORDER_2015",
+        "new_wiki_conflict": false
+      },
+      "model": null,
+      "actual_classification": "contradiction",
+      "correct": true,
+      "semantic_expected_reason": "Таблица относит максимум 7,9 к БП, проза по порядку перечисления — 61,8. Это реальное документированное расхождение атрибуции, уже сохранённое в статье, не новый конфликт Wiki.",
+      "manual_review_is_expert": false
+    },
+    {
+      "case_id": "C2",
+      "fact_id": "M83532bdc7952d8a8",
+      "expected_classification": "contradiction",
+      "scope": "Отношение к указанному сообщению прозы, не новизна относительно всей Wiki. Конфликт таблицы и прозы уже документирован.",
+      "structural_route": {
+        "route": "deterministic",
+        "classification": "contradiction",
+        "reason": "documented_source_attribution_conflict",
+        "claim_ids": [
+          "Lf6d5c12cfac9bb25"
+        ],
+        "conflict_id": "K_CARC_ORDER_2015",
+        "new_wiki_conflict": false
+      },
+      "model": null,
+      "actual_classification": "contradiction",
+      "correct": true,
+      "semantic_expected_reason": "Таблица относит максимум 61,8 к канцерогенным аренам, проза — 7,9. Оба варианта действительно напечатаны; правильное измерение из этого не выбирается.",
+      "manual_review_is_expert": false
+    },
+    {
+      "case_id": "I1",
+      "fact_id": "Pdd6294b22596eef3",
+      "expected_classification": "insufficient_evidence",
+      "scope": "Сравнение с релевантными утверждениями статьи; new_detail остаётся кандидатом до отдельной проверки полной статьи.",
+      "structural_route": {
+        "route": "deterministic",
+        "classification": "insufficient_evidence",
+        "reason": "missing_comparison_dimension",
+        "claim_ids": []
+      },
+      "model": null,
+      "actual_classification": "insufficient_evidence",
+      "correct": true,
+      "semantic_expected_reason": "В контрольном входе отсутствует период наблюдения и цитата без даты не позволяет восстановить его из report_year. Это намеренно неполная проекция.",
+      "manual_review_is_expert": false
+    },
+    {
+      "case_id": "I2",
+      "fact_id": "U5e0a5517c29f5799",
+      "expected_classification": "insufficient_evidence",
+      "scope": "Сравнение с релевантными утверждениями статьи; new_detail остаётся кандидатом до отдельной проверки полной статьи.",
+      "structural_route": {
+        "route": "deterministic",
+        "classification": "insufficient_evidence",
+        "reason": "unresolved_source_value_cannot_be_asserted_as_truth",
+        "claim_ids": []
+      },
+      "model": null,
+      "actual_classification": "insufficient_evidence",
+      "correct": true,
+      "semantic_expected_reason": "При конфликте прозы и таблицы нельзя признать один из максимумов истинным без первичных результатов; атрибутированное сообщение и истинное измерение — разные задачи.",
+      "manual_review_is_expert": false
+    }
+  ],
+  "by_category": {
+    "already_present": {
+      "checked": 2,
+      "correct": 1,
+      "incorrect": 1
+    },
+    "new_detail": {
+      "checked": 2,
+      "correct": 0,
+      "incorrect": 2
+    },
+    "contradiction": {
+      "checked": 2,
+      "correct": 2,
+      "incorrect": 0
+    },
+    "insufficient_evidence": {
+      "checked": 2,
+      "correct": 2,
+      "incorrect": 0
+    }
+  },
+  "summary": {
+    "checked": 8,
+    "correct": 5,
+    "incorrect": 3,
+    "deterministic_decisions": 5,
+    "deterministic_correct": 5,
+    "real_model_requests": 3,
+    "completed_real_model_responses": 3,
+    "programmatically_admissible_model_responses": 2,
+    "model_correct": 0,
+    "model_incorrect_or_rejected": 3,
+    "inconsistent_classification_basis": 1,
+    "false_abstentions": 2,
+    "accepted_new_detail_candidates": 0,
+    "known_previous_details_confirmed_absent_by_separate_review": 2,
+    "newly_extracted_facts": 0,
+    "published_changes": 0,
+    "observations_added": 0
+  },
+  "elapsed_generation_seconds": 351.981,
+  "comparison_with_previous": {
+    "baseline_report": "datasets/novelty_evaluation.json",
+    "baseline_report_sha256": "fc8dc0d3d71c1e14f0c81e9f62ea14279965ed4d9481526c3d55a4f4ce58ed13",
+    "overlapping_mean_cases": [
+      {
+        "case_id": "N1",
+        "fact_id": "Fef1cdb41001456e0",
+        "expected": "new_detail",
+        "previous_actual": "insufficient_evidence",
+        "previous_correct": false,
+        "current_actual": "insufficient_evidence",
+        "current_correct": false
+      },
+      {
+        "case_id": "N2",
+        "fact_id": "Fb1a1009f18b2ca3b",
+        "expected": "new_detail",
+        "previous_actual": "insufficient_evidence",
+        "previous_correct": false,
+        "current_actual": "insufficient_evidence",
+        "current_correct": false
+      }
+    ],
+    "previous_overlap_correct": 0,
+    "current_overlap_correct": 0,
+    "no_previous_balanced_baseline_for_other_six_cases": true,
+    "previous_one_request_three_facts_seconds": 346.314,
+    "current_three_single_fact_requests_seconds": 351.981,
+    "caveat": "Only two mean facts overlap. Five deterministic correct decisions are not an improvement in model accuracy. Context and tasks differ; one narrow dependent benchmark does not estimate general performance."
+  },
+  "semantic_review": {
+    "id": "937ff29fcc9fea97ac5c0f386b6aac52c6aed01adfbe957253541167f03f78ea",
+    "path": "data/wiki_updates/claim_comparison_reviews/937ff29fcc9fea97ac5c0f386b6aac52c6aed01adfbe957253541167f03f78ea.json",
+    "file_sha256": "fe0d20502a3661c29b22e360efbb1677542660dba1bc3ed5769329749b4a1417",
+    "decision": {
+      "experiment_id": "564fdf6b83120ba4f8952b8933525972f72286444aa19f49c8cf2687e3c374c4",
+      "article_sha256": "a67b8fbbfda3d9716f31c291485877d576d8c315587604486a411d85918984e6",
+      "review_kind": "semantic_comparison_non_expert",
+      "expert_review": false,
+      "research_date": "2026-10-23",
+      "cases": {
+        "A2": {
+          "run_id": "b5c45e6374fc5a1c9196af410d65e510e34401476b770a02ac180aa4b681b1e3",
+          "status": "rejected",
+          "reason": "Ответ завершён, но classification=new_detail противоречит basis=same_scoped_statement. Программа правильно отклонила его. По существу фоновое значение и фоновый уровень — одна оценка в источнике и статье; числовые максимумы не превращают её в новую деталь. Правильный код basis не используется для ремонта неверного класса."
+        },
+        "N1": {
+          "run_id": "36edbdba773126fd3035cd665363efa3d307eedcc75d2b805034d525a1b06316",
+          "status": "rejected",
+          "reason": "Среднее БП 2,1 нг/г с.о. по всему полигону за 2015 подтверждено прежним source-checked фактом и собственной ячейкой T2015_C2 с подписью/годом. Оно не выражено переданными максимумами/качественной оценкой; полная статья также не содержит этого среднего или словесного эквивалента. В рамках задачи это новая деталь-кандидат, не автоматически разрешённая публикация. Insufficient_evidence не соответствует заранее заданной области сравнения."
+        },
+        "N2": {
+          "run_id": "f2d110bf520c3d57d9ed3cc562b364c2bbf8cbe408d807fcaa74f5eb0effe611",
+          "status": "rejected",
+          "reason": "Среднее ПАУ 36,9 нг/г с.о. по всему полигону за 2015 подтверждено прежним фактом и T2015_C3. Максимум/слабое загрязнение не являются этим средним; полная статья просмотрена и среднего не содержит. Открытая атрибуция максимумов БП/канцерогенов и неподтверждённая сопоставимость лет не делают невозможным такое сравнение. Insufficient_evidence не выделяет верный кандидат."
+        }
+      },
+      "limits": "Проверена категория и смысл опоры по сохранённым источникам/полной статье. Это не экспертиза специалистом и не установление официальной подлинности зеркала."
+    }
+  },
+  "candidate_packet": null,
+  "candidate_gate": {
+    "executed_on_actual_rejected_results": true,
+    "returned": null,
+    "module_sha256": "d93e99e5adcdb149b9afd38eedc7b4bf41add6d745d1052b9be5c19c15fb7353",
+    "positive_persistence_tested_only_with_explicit_synthetic_fixtures": true,
+    "no_editorial_approval": true
+  },
+  "preservation": {
+    "baseline_path": "data/llm-evaluation/baseline-3ce5604.json",
+    "baseline_file_sha256": "5d8ba23586328dc1065498bce51922361f78bf63a876bcd172532cb0a6155b66",
+    "protected_files_unchanged": 37,
+    "wiki_files_unchanged": 49,
+    "synthesis_articles_unchanged": 22,
+    "reviewed_observations_unchanged": 168,
+    "page_checkpoints_same_size_mtime": 3878,
+    "pdfs_same_sha256": 11
+  },
+  "validation": {
+    "unit_tests_passed": 144,
+    "wiki_lint_errors": 0,
+    "scientific_reference_checks": 162,
+    "encyclopedia_record_checks": 47,
+    "observation_record_checks": 168,
+    "registry_claim_bindings_checked": 7,
+    "benchmark_cases_checked": 8,
+    "year_coverage_warnings_retained": true,
+    "public_checkout_without_data_checked": true,
+    "relative_documentation_file_links_checked": 90,
+    "source_page_26_anchor_checked": true
+  },
+  "interpretation": {
+    "demonstrated": [
+      "Exact typed presence, known source discrepancy and missing-data gates matched all five preregistered deterministic cases.",
+      "No environmental values, dates, citations or units were generated or promoted.",
+      "The model did not help any of its three assigned cases. A2 has an inconsistent class/basis; its partly correct basis was not used to repair the response.",
+      "N1/N2 remain source-supported details absent from the full article, but were not recognized by the model. No accepted model candidate."
+    ],
+    "not_established": [
+      "General accuracy across other articles, years or unseen terminology.",
+      "Whether model capacity, source uncertainty, context selection or the mixed novelty/coverage task is the primary cause.",
+      "A new contradiction of the Wiki: C1/C2 were already documented source-order alternatives."
+    ],
+    "next_step": "Separate relation-to-a-specific-claim from article-coverage status. Review registry coverage and independently validate controlled terminology, then evaluate semantic entailment on held-out pairs. Keep structurally unmatched source-supported records as unapproved evidence candidates; do not ask a model to prove global absence from a partial registry or require another repetition of these cases."
+  },
+  "published": false,
+  "expert_review": false
+}
