@@ -6,6 +6,7 @@ import json
 import re
 import shutil
 import urllib.request
+from urllib.parse import urlsplit, urlunsplit
 from pathlib import Path
 from baikal.core import ROOT, atomic_json, sha256
 from baikal.evaluation import resources
@@ -14,6 +15,39 @@ REPO = "Qwen/Qwen2.5-1.5B-Instruct-GGUF"
 FILENAME = "qwen2.5-1.5b-instruct-q4_k_m.gguf"
 API = f"https://huggingface.co/api/models/{REPO}?blobs=true"
 MAX_BYTES = 2 * 1024**3
+
+
+def public_url(url):
+    """Keep the failing host/path, excluding expiring CDN authorization queries."""
+    parsed = urlsplit(url)
+    return urlunsplit((parsed.scheme, parsed.netloc, parsed.path, "", ""))
+
+
+class ModelAccessError(OSError):
+    def __init__(self, url, cause):
+        self.blocked_url = public_url(url)
+        reason = str(cause).replace(url, self.blocked_url)
+        super().__init__(f"Request failed at {self.blocked_url}: {reason}")
+
+
+class DownloadRedirects(urllib.request.HTTPRedirectHandler):
+    def __init__(self, url):
+        self.current_url = url
+
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        redirected = super().redirect_request(req, fp, code, msg, headers, newurl)
+        if redirected is not None:
+            self.current_url = redirected.full_url
+        return redirected
+
+
+def open_model_url(url, timeout):
+    redirects = DownloadRedirects(url)
+    opener = urllib.request.build_opener(redirects)
+    try:
+        return opener.open(url, timeout=timeout)
+    except OSError as exc:
+        raise ModelAccessError(redirects.current_url, exc) from exc
 
 
 def plan(metadata, res):
@@ -72,7 +106,7 @@ def download(info, directory):
             created = True
             h = hashlib.sha256()
             total = 0
-            with urllib.request.urlopen(info["url"], timeout=60) as response:
+            with open_model_url(info["url"], timeout=60) as response:
                 while chunk := response.read(1024 * 1024):
                     total += len(chunk)
                     if total > info["bytes"] or total > MAX_BYTES:
@@ -97,13 +131,17 @@ if __name__ == "__main__":
     parser.add_argument("--metadata-only", action="store_true")
     parser.add_argument("--directory", type=Path, default=ROOT / "data/models")
     args = parser.parse_args()
+    stage_url = API
     try:
         res = resources()
-        with urllib.request.urlopen(API, timeout=20) as response:
+        with open_model_url(API, timeout=20) as response:
             metadata = json.load(response)
         info = plan(metadata, res)
         if not args.metadata_only:
+            stage_url = info["url"]
             info["local_path"] = str(download(info, args.directory))
         print(json.dumps(info, ensure_ascii=False, indent=2))
     except (OSError, ValueError) as exc:
-        parser.exit(1, f"Model acquisition failed at {API}: {exc}\n")
+        if isinstance(exc, ModelAccessError):
+            parser.exit(1, f"Model acquisition failed: {exc}\n")
+        parser.exit(1, f"Model acquisition failed at {public_url(stage_url)}: {exc}\n")

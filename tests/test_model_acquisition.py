@@ -5,9 +5,18 @@ import subprocess
 import sys
 import tempfile
 import unittest
+import urllib.error
+import urllib.request
 from pathlib import Path
 from unittest.mock import patch
-from scripts.download_evaluation_model import plan, download, FILENAME, MAX_BYTES
+from scripts.download_evaluation_model import (
+    plan,
+    download,
+    FILENAME,
+    MAX_BYTES,
+    open_model_url,
+    ModelAccessError,
+)
 from baikal.core import ROOT
 
 
@@ -63,7 +72,7 @@ class ModelAcquisition(unittest.TestCase):
             root = Path(d)
             info = plan(self.metadata(), self.resource())
             with patch(
-                "scripts.download_evaluation_model.urllib.request.urlopen",
+                "scripts.download_evaluation_model.open_model_url",
                 return_value=io.BytesIO(b"GGUF" * 4),
             ):
                 with self.assertRaisesRegex(ValueError, "budget"):
@@ -82,9 +91,56 @@ class ModelAcquisition(unittest.TestCase):
             p = root / FILENAME
             p.write_bytes(b"Existing model")
             with patch(
-                "scripts.download_evaluation_model.urllib.request.urlopen"
+                "scripts.download_evaluation_model.open_model_url"
             ) as network:
                 with self.assertRaisesRegex(ValueError, "left unchanged"):
                     download(plan(self.metadata(), self.resource()), root)
                 network.assert_not_called()
             self.assertEqual(p.read_bytes(), b"Existing model")
+
+    def test_redirect_failure_reports_cdn_without_signed_query_and_cleans_partial(self):
+        signed = "https://us.aws.cdn.hf.co/xet-bridge-us/example?Signature=private-token"
+
+        def fake_opener(handler):
+            class Opener:
+                def open(self, url, timeout):
+                    handler.redirect_request(
+                        urllib.request.Request(url),
+                        None,
+                        302,
+                        "Found",
+                        {},
+                        signed,
+                    )
+                    raise urllib.error.URLError("Tunnel connection failed: 403 Forbidden")
+
+            return Opener()
+
+        with tempfile.TemporaryDirectory() as d:
+            root = Path(d)
+            with patch(
+                "scripts.download_evaluation_model.urllib.request.build_opener",
+                side_effect=fake_opener,
+            ):
+                with self.assertRaises(ModelAccessError) as raised:
+                    download(plan(self.metadata(), self.resource()), root)
+            self.assertEqual(
+                raised.exception.blocked_url,
+                "https://us.aws.cdn.hf.co/xet-bridge-us/example",
+            )
+            self.assertIn("Tunnel connection failed: 403 Forbidden", str(raised.exception))
+            self.assertNotIn("private-token", str(raised.exception))
+            self.assertFalse((root / FILENAME).exists())
+            self.assertFalse((root / (FILENAME + ".partial")).exists())
+
+    def test_metadata_connection_failure_reports_metadata_host(self):
+        url = "https://huggingface.co/api/models/example?blobs=true"
+        with patch(
+            "scripts.download_evaluation_model.urllib.request.OpenerDirector.open",
+            side_effect=urllib.error.URLError("Tunnel connection failed: 403 Forbidden"),
+        ):
+            with self.assertRaises(ModelAccessError) as raised:
+                open_model_url(url, timeout=1)
+        self.assertEqual(
+            raised.exception.blocked_url, "https://huggingface.co/api/models/example"
+        )

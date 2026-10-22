@@ -1,55 +1,57 @@
 {
-  "version": 1,
+  "version": 2,
   "date": "2026-10-22",
-  "baseline_commit": "e8497fdc125a95c37b2e5b2e824df8d81af12b5d",
-  "status": "blocked_model_acquisition",
+  "baseline_commit": "d55b5ebe2334797610b50c19a1ca5ec0536f1c6a",
+  "status": "blocked_model_cdn",
   "main_experiment_complete": false,
   "model_inference_executed": false,
   "model_used": null,
   "model_sha256": null,
   "planned_model": {
     "repo": "Qwen/Qwen2.5-1.5B-Instruct-GGUF",
-    "file": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
-    "metadata_verified": false,
+    "revision": "91cad51170dc346986eccefdc2dd33a9da36ead9",
+    "filename": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "bytes": 1117320736,
+    "sha256": "6a1a2eb6d15622bf3c96857206351ba97e1af16c30d7a74ee38970e434e9407e",
+    "license": "apache-2.0",
+    "url": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct-GGUF/resolve/91cad51170dc346986eccefdc2dd33a9da36ead9/qwen2.5-1.5b-instruct-q4_k_m.gguf?download=true",
+    "metadata_verified": true,
+    "weights_sha256_verified": false,
     "max_download_bytes": 2147483648
   },
   "model_generated_updates": 0,
   "model_bytes_downloaded": 0,
-  "runtime_installed": false,
+  "runtime_installed": true,
   "paid_api_called": false,
   "project_evidence_sent_to_external_service": false,
   "resources": {
     "memory_limit_bytes": 34359738368,
-    "memory_available_bytes": 32840671232,
-    "disk_free_bytes": 29044367360,
+    "memory_available_bytes": 34257780736,
+    "disk_free_bytes": 32034562048,
     "cpu_affinity_count": 5,
     "cpu_quota": "400000 100000"
   },
   "network_probes": [
     {
       "url": "https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct-GGUF?blobs=true",
-      "status": "proxy_connect_rejected",
-      "error": "Tunnel connection failed: 403 Forbidden"
+      "status": 200,
+      "method": "GET",
+      "metadata_validated": true
     },
     {
-      "url": "https://abetlen.github.io/llama-cpp-python/whl/cpu/llama-cpp-python/",
-      "status": "proxy_connect_rejected",
-      "error": "Tunnel connection failed: 403 Forbidden"
+      "url": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct-GGUF/resolve/91cad51170dc346986eccefdc2dd33a9da36ead9/qwen2.5-1.5b-instruct-q4_k_m.gguf?download=true",
+      "status": 302,
+      "method": "HEAD",
+      "redirect_to": "https://us.aws.cdn.hf.co/xet-bridge-us/66e98ae0be5913b903da60c1/6ca5463cf24c16cd56d7ad7461524d813b07b3f29889b2fbdbb8286a7e97a14a"
     },
     {
-      "url": "https://modelscope.cn/api/v1/models/Qwen/Qwen2.5-1.5B-Instruct-GGUF/repo/files?Revision=master&Recursive=true",
+      "url": "https://us.aws.cdn.hf.co/xet-bridge-us/66e98ae0be5913b903da60c1/6ca5463cf24c16cd56d7ad7461524d813b07b3f29889b2fbdbb8286a7e97a14a",
       "status": "proxy_connect_rejected",
-      "error": "Tunnel connection failed: 403 Forbidden"
-    },
-    {
-      "url": "https://gpt4all.io/models/models3.json",
-      "status": "proxy_connect_rejected",
-      "error": "Tunnel connection failed: 403 Forbidden"
-    },
-    {
-      "url": "https://registry.ollama.ai/v2/library/qwen2.5/manifests/1.5b",
-      "status": "proxy_connect_rejected",
-      "error": "Tunnel connection failed: 403 Forbidden"
+      "method": "HEAD",
+      "error": "Tunnel connection failed: 403 Forbidden",
+      "proxy_connect_authority": "us.aws.cdn.hf.co:443",
+      "cause": "Proxy refused the TLS tunnel; its policy rationale is not exposed. No response from model CDN origin was received.",
+      "signed_query_omitted": true
     }
   ],
   "available_distribution_metadata": [
@@ -64,7 +66,7 @@
       "url": "https://github.com/ggml-org/llama.cpp/releases/tag/v0.7.0",
       "status": 200,
       "source_commit": "620d2225cc436ab0b001e3200e590e3b286ef9ab",
-      "binary_built_or_executed": false
+      "binary_built_or_executed": true
     }
   ],
   "preparation": {
@@ -129,8 +131,8 @@
     "reviewed_observations_changed": 0,
     "resources": {
       "memory_limit_bytes": 34359738368,
-      "memory_available_bytes": 32840671232,
-      "disk_free_bytes": 29044367360,
+      "memory_available_bytes": 32847314944,
+      "disk_free_bytes": 31766659072,
       "cpu_affinity_count": 5,
       "cpu_quota": "400000 100000"
     }
@@ -156,12 +158,13 @@
     "scientific_review_blocks": 107
   },
   "limitations": [
-    "No actual local language model was loaded or run.",
-    "Synthetic transport/approval tests are not model inference or actual human review.",
-    "No model quality comparison with lexical routing is possible without generation."
+    "Official model metadata and LFS SHA256 are available, but weights could not be downloaded through the CDN proxy tunnel.",
+    "The runtime CLI was built and executed; no model was loaded and no inference server was started.",
+    "Neither prepared case produced a model answer; semantic quality, hallucinations and comparison with lexical routing remain unassessed.",
+    "Synthetic transport/approval tests are not model inference or actual human review."
   ],
   "technical_validation": {
-    "unittest_passed": 66,
+    "unittest_passed": 68,
     "unittest_failed": 0,
     "wiki_lint_errors": 0,
     "wiki_lint_warnings": "Missing processed source years 2003–2014 and 2026",
@@ -173,5 +176,127 @@
     "unchanged_analytical_articles": 22,
     "immutable_pdf_sha256_checked": 11,
     "expert_approval": false
-  }
+  },
+  "checked_at": "2026-10-22T18:01:37.468017+08:00",
+  "timezone": "Asia/Irkutsk",
+  "model_responses_received": 0,
+  "runtime": {
+    "source_repository": "https://github.com/ggml-org/llama.cpp.git",
+    "source_tag": "v0.7.0",
+    "source_commit": "620d2225cc436ab0b001e3200e590e3b286ef9ab",
+    "server_sha256": "b316a0c9f8c3e183faba31bff9ce751ea905468beff613e4ff1a58278874771c",
+    "server_version": "version: 0.7.0-dev (build 1, commit 620d222)\nbuilt with GNU 14.2.0 for Linux x86_64",
+    "shared_libraries_sha256": {
+      "data/llm-runtime/build/bin/libggml-base.so.0.27.0": "1d01fcc3593495a787f54d6cd110932f933c084b5008652072be6d98d8aa046f",
+      "data/llm-runtime/build/bin/libllama-server-impl.so": "e231e3492a281e8a07491162ee1cf541c9c12ff7a842e499b2adbe0a445c1c16",
+      "data/llm-runtime/build/bin/libllama-common.so.0.7.0": "b68cf952c6f67eee46638b2506ffc36d23275699efe472df4df8b9857ce76b24",
+      "data/llm-runtime/build/bin/libllama.so.0.7.0": "97e683e165cfa0c5bbcc15acff16e7238b941a65dcbe3642201ae7007fe4f83a",
+      "data/llm-runtime/build/bin/libggml.so.0.27.0": "e2511092f68bf706fb92abd2e41ba54d50f717a717bdc5b982aa27085520facc",
+      "data/llm-runtime/build/bin/libggml-cpu.so.0.27.0": "879d0fa5c0c8362aec5eb0ec6f8db54cfb35517b46c23b45e02c817f10bf9288",
+      "data/llm-runtime/build/bin/libmtmd.so.0.7.0": "e1fd69f005eff43726f313b8d0d3d298f9121e9b46e41bca28130525bba52c2b"
+    },
+    "cmake_version": "cmake version 4.4.4",
+    "compiler_version": "g++ (Debian 14.2.0-19) 14.2.0",
+    "build_flags": [
+      "CMAKE_BUILD_TYPE=Release",
+      "GGML_CUDA=OFF",
+      "LLAMA_CURL=OFF",
+      "LLAMA_BUILD_TESTS=OFF",
+      "LLAMA_BUILD_SERVER=ON"
+    ],
+    "build_jobs": 4,
+    "model_loaded": false,
+    "inference_executed": false,
+    "resources_after_build": {
+      "memory_limit_bytes": 34359738368,
+      "memory_available_bytes": 33851179008,
+      "disk_free_bytes": 31735001088,
+      "cpu_affinity_count": 5,
+      "cpu_quota": "400000 100000"
+    },
+    "command_line_executed": true,
+    "model_server_started": false,
+    "command_exit_codes": {
+      "--version": 0,
+      "--help": 0
+    }
+  },
+  "acquisition_attempt": {
+    "method": "GET",
+    "command": ".venv/bin/python scripts/download_evaluation_model.py",
+    "status": "proxy_connect_rejected",
+    "error": "Tunnel connection failed: 403 Forbidden",
+    "followup_diagnostic": "One HEAD redirect trace identified the CDN address; no further model download attempts.",
+    "partial_removed": true,
+    "model_bytes_saved": 0,
+    "raw_network_trace_path": "data/llm-evaluation/network-trace-20261022.json",
+    "raw_network_trace_sha256": "d66c7a3f19ff26028a7105964763e4d885349618d220b97dd9b30386730269bb"
+  },
+  "case_results": [
+    {
+      "topic": "baikal-sturgeon",
+      "status": "not_run_model_unavailable",
+      "actual_model_response_received": false,
+      "semantic_quality_evaluated": false,
+      "hallucinations": null
+    },
+    {
+      "topic": "selenga-sediments",
+      "status": "not_run_model_unavailable",
+      "actual_model_response_received": false,
+      "semantic_quality_evaluated": false,
+      "hallucinations": null
+    }
+  ],
+  "attempt_history": [
+    {
+      "date": "2026-10-22",
+      "baseline_commit": "e8497fdc125a95c37b2e5b2e824df8d81af12b5d",
+      "status": "blocked_model_acquisition",
+      "model_inference_executed": false,
+      "model_generated_updates": 0,
+      "runtime_installed": false,
+      "network_probes": [
+        {
+          "url": "https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct-GGUF?blobs=true",
+          "status": "proxy_connect_rejected",
+          "error": "Tunnel connection failed: 403 Forbidden"
+        },
+        {
+          "url": "https://abetlen.github.io/llama-cpp-python/whl/cpu/llama-cpp-python/",
+          "status": "proxy_connect_rejected",
+          "error": "Tunnel connection failed: 403 Forbidden"
+        },
+        {
+          "url": "https://modelscope.cn/api/v1/models/Qwen/Qwen2.5-1.5B-Instruct-GGUF/repo/files?Revision=master&Recursive=true",
+          "status": "proxy_connect_rejected",
+          "error": "Tunnel connection failed: 403 Forbidden"
+        },
+        {
+          "url": "https://gpt4all.io/models/models3.json",
+          "status": "proxy_connect_rejected",
+          "error": "Tunnel connection failed: 403 Forbidden"
+        },
+        {
+          "url": "https://registry.ollama.ai/v2/library/qwen2.5/manifests/1.5b",
+          "status": "proxy_connect_rejected",
+          "error": "Tunnel connection failed: 403 Forbidden"
+        }
+      ],
+      "technical_validation": {
+        "unittest_passed": 66,
+        "unittest_failed": 0,
+        "wiki_lint_errors": 0,
+        "wiki_lint_warnings": "Missing processed source years 2003–2014 and 2026",
+        "scientific_evidence_references_checked": 162,
+        "encyclopedia_evidence_checked": 47,
+        "observation_records_checked": 168,
+        "unchanged_checkpoint_inventory_and_metadata": 3878,
+        "unchanged_protected_files": 28,
+        "unchanged_analytical_articles": 22,
+        "immutable_pdf_sha256_checked": 11,
+        "expert_approval": false
+      }
+    }
+  ]
 }
