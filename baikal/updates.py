@@ -246,6 +246,11 @@ def load_proposal(root, pid, topic):
     for ref in packet["evidence"]:
         if sources.get(ref["source_id"], {}).get("sha256") != ref["sha256"]:
             raise ValueError("Stale proposal source revision; propose again")
+        if (
+            "report_year" in ref
+            and sources[ref["source_id"]].get("report_year") != ref["report_year"]
+        ):
+            raise ValueError("Stale proposal reporting year; propose again")
         page = read_json(
             root
             / "data/processed"

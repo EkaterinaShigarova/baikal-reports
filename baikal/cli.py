@@ -30,6 +30,12 @@ def main(argv=None):
     u.add_argument("--source", required=True)
     u.add_argument("--pages", type=int, nargs="+")
     u.add_argument("--limit", type=int, default=20)
+    c = sub.add_parser("prepare-change")
+    c.add_argument("--draft", required=True)
+    c.add_argument("--claims", type=int, nargs="+", required=True)
+    c = sub.add_parser("apply-change")
+    c.add_argument("--change", required=True)
+    c.add_argument("--approval", required=True)
     q = sub.add_parser("query")
     q.add_argument("question")
     q.add_argument("--save", action="store_true")
@@ -37,6 +43,11 @@ def main(argv=None):
     s.add_argument("topic")
     s.add_argument(
         "--proposal", help="ID of a local evidence proposal; draft stays unpublished"
+    )
+    s.add_argument(
+        "--assess-update",
+        action="store_true",
+        help="Compare with bounded existing article context",
     )
     s.add_argument(
         "--allow-remote",
@@ -141,7 +152,26 @@ def main(argv=None):
 
             print(
                 synthesize(
-                    args.topic, allow_remote=args.allow_remote, proposal=args.proposal
+                    args.topic,
+                    allow_remote=args.allow_remote,
+                    proposal=args.proposal,
+                    assessment=args.assess_update,
+                )
+            )
+        elif args.command == "prepare-change":
+            from .editorial import prepare
+
+            print(
+                json.dumps(
+                    prepare(args.draft, args.claims), ensure_ascii=False, indent=2
+                )
+            )
+        elif args.command == "apply-change":
+            from .editorial import apply
+
+            print(
+                json.dumps(
+                    apply(args.change, args.approval), ensure_ascii=False, indent=2
                 )
             )
         elif args.command == "serve":

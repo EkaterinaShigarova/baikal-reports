@@ -1,0 +1,206 @@
+"""Prepare cases or launch an actual, local GGUF runtime. No model downloads."""
+
+import argparse
+import json
+import os
+import resource
+import socket
+import subprocess
+import time
+import uuid
+import urllib.request
+from pathlib import Path
+from baikal.core import ROOT, atomic_json, read_json, sha256
+from baikal.evaluation import prepare_cases, resources
+from baikal.llm import synthesize
+
+
+def run(args, prepared):
+    if not args.model_file or not args.model_sha256 or not args.server_binary:
+        raise ValueError(
+            "--run requires --model-file, --model-sha256 and --server-binary"
+        )
+    model, server = args.model_file.resolve(), args.server_binary.resolve()
+    res = resources()
+    if (
+        model.stat().st_size > 2 * 1024**3
+        or res["memory_limit_bytes"] < 8 * 1024**3
+        or res["memory_available_bytes"] < 4 * 1024**3
+        or res["disk_free_bytes"] < 2 * 1024**3
+    ):
+        raise ValueError(
+            "Bounded experiment requires model <=2 GiB, RAM limit >=8 GiB, available RAM >=4 GiB and free disk >=2 GiB"
+        )
+    with model.open("rb") as f:
+        if f.read(4) != b"GGUF":
+            raise ValueError("Expected a GGUF model header")
+    if sha256(model) != args.model_sha256:
+        raise ValueError("Model SHA256 mismatch")
+    version = subprocess.run(
+        [str(server), "--version"],
+        capture_output=True,
+        text=True,
+        timeout=10,
+        check=True,
+    )
+    with socket.socket() as sock:
+        sock.bind(("127.0.0.1", 0))
+        port = sock.getsockname()[1]
+    command = [
+        str(server),
+        "-m",
+        str(model),
+        "--alias",
+        "baikal-local-evaluation",
+        "-c",
+        "8192",
+        "-t",
+        "4",
+        "-tb",
+        "4",
+        "-ngl",
+        "0",
+        "--parallel",
+        "1",
+        "--batch-size",
+        "256",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        str(port),
+    ]
+    metadata = {
+        "model_sha256": args.model_sha256,
+        "model_file_name": model.name,
+        "model_bytes": model.stat().st_size,
+        "server_sha256": sha256(server),
+        "server_version": (version.stdout + version.stderr).strip(),
+        "threads": 4,
+        "context_tokens": 8192,
+        "gpu_layers": 0,
+    }
+    log_path = ROOT / "data/llm-evaluation" / f"server-{uuid.uuid4().hex}.log"
+    log_path.parent.mkdir(parents=True, exist_ok=True)
+    metadata["server_log_path"] = str(log_path.relative_to(ROOT))
+    opener = urllib.request.build_opener(urllib.request.ProxyHandler({}))
+    changed_env = ["BAIKAL_LLM_URL", "BAIKAL_LLM_MODEL", "BAIKAL_LLM_API_KEY"]
+    old_env = {k: os.environ.get(k) for k in changed_env}
+    started = time.monotonic()
+    results = []
+    received_generation = False
+    with log_path.open("w") as log:
+        process = subprocess.Popen(command, stdout=log, stderr=subprocess.STDOUT)
+        try:
+            deadline = time.monotonic() + 60
+            while True:
+                if process.poll() is not None:
+                    raise ValueError("Local runtime exited; inspect ignored server.log")
+                try:
+                    with opener.open(
+                        f"http://127.0.0.1:{port}/health", timeout=1
+                    ) as response:
+                        if response.status == 200:
+                            break
+                except OSError:
+                    if time.monotonic() >= deadline:
+                        raise ValueError("Local runtime readiness timed out")
+                    time.sleep(0.3)
+            os.environ["BAIKAL_LLM_URL"] = (
+                f"http://127.0.0.1:{port}/v1/chat/completions"
+            )
+            os.environ["BAIKAL_LLM_MODEL"] = "baikal-local-evaluation"
+            os.environ.pop("BAIKAL_LLM_API_KEY", None)
+            for case in prepared["cases"]:
+                previous = set((ROOT / "data/wiki_updates/llm_runs").glob("*.json"))
+                try:
+                    outcome = synthesize(
+                        case["topic"],
+                        proposal=case["proposal_id"],
+                        assessment=True,
+                        runtime=metadata,
+                    )
+                    results.append(
+                        {
+                            "case": case["id"],
+                            "status": "draft_pending_semantic_review",
+                            **outcome,
+                        }
+                    )
+                except ValueError as exc:
+                    results.append(
+                        {"case": case["id"], "status": "rejected", "reason": str(exc)}
+                    )
+                for path in (
+                    set((ROOT / "data/wiki_updates/llm_runs").glob("*.json")) - previous
+                ):
+                    record = read_json(path)
+                    try:
+                        content = json.loads(record.get("raw_response", "{}"))[
+                            "choices"
+                        ][0]["message"]["content"]
+                        received_generation |= bool(content)
+                    except (ValueError, KeyError, IndexError, TypeError):
+                        pass
+        finally:
+            process.terminate()
+            try:
+                process.wait(timeout=10)
+            except subprocess.TimeoutExpired:
+                process.kill()
+                process.wait()
+            for key, value in old_env.items():
+                if value is None:
+                    os.environ.pop(key, None)
+                else:
+                    os.environ[key] = value
+    return {
+        **prepared,
+        "status": "generated_pending_semantic_review"
+        if received_generation
+        else "inference_failed",
+        "model_inference_executed": received_generation,
+        "runtime": metadata,
+        "resources": res,
+        "elapsed_seconds": round(time.monotonic() - started, 3),
+        "peak_child_rss_kib": resource.getrusage(resource.RUSAGE_CHILDREN).ru_maxrss,
+        "results": results,
+        "model_generated_updates": sum(
+            r["status"] == "draft_pending_semantic_review" for r in results
+        ),
+        "semantic_quality_evaluated": False,
+        "hallucinations_assessed": False,
+    }
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description=__doc__)
+    mode = parser.add_mutually_exclusive_group()
+    mode.add_argument("--prepare-only", action="store_true")
+    mode.add_argument("--run", action="store_true")
+    parser.add_argument("--model-file", type=Path)
+    parser.add_argument("--model-sha256")
+    parser.add_argument("--server-binary", type=Path)
+    parser.add_argument(
+        "--output", type=Path, default=ROOT / "data/llm-evaluation/result.json"
+    )
+    args = parser.parse_args()
+    try:
+        result = prepare_cases()
+        result["resources"] = resources()
+        if args.run:
+            result = run(args, result)
+        atomic_json(args.output, result)
+        print(
+            json.dumps(
+                {
+                    "status": result["status"],
+                    "cases": len(result["cases"]),
+                    "model_inference_executed": result["model_inference_executed"],
+                    "model_generated_updates": result["model_generated_updates"],
+                    "output": str(args.output),
+                },
+                ensure_ascii=False,
+            )
+        )
+    except (ValueError, OSError, subprocess.SubprocessError) as exc:
+        parser.exit(1, f"Local evaluation failed: {exc}\n")

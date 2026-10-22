@@ -1,10 +1,14 @@
 # Immutable originals and processing products stay local
 /data/
 /.venv/
+/.venv-llm/
 /.tools/
 /.cache/
 *.pdf
 *.PDF
+*.gguf
+*.safetensors
+pytorch_model*.bin
 *.sqlite*
 *.db
 *.partial

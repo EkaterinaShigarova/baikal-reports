@@ -1,0 +1,177 @@
+{
+  "version": 1,
+  "date": "2026-10-22",
+  "baseline_commit": "e8497fdc125a95c37b2e5b2e824df8d81af12b5d",
+  "status": "blocked_model_acquisition",
+  "main_experiment_complete": false,
+  "model_inference_executed": false,
+  "model_used": null,
+  "model_sha256": null,
+  "planned_model": {
+    "repo": "Qwen/Qwen2.5-1.5B-Instruct-GGUF",
+    "file": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "metadata_verified": false,
+    "max_download_bytes": 2147483648
+  },
+  "model_generated_updates": 0,
+  "model_bytes_downloaded": 0,
+  "runtime_installed": false,
+  "paid_api_called": false,
+  "project_evidence_sent_to_external_service": false,
+  "resources": {
+    "memory_limit_bytes": 34359738368,
+    "memory_available_bytes": 32840671232,
+    "disk_free_bytes": 29044367360,
+    "cpu_affinity_count": 5,
+    "cpu_quota": "400000 100000"
+  },
+  "network_probes": [
+    {
+      "url": "https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct-GGUF?blobs=true",
+      "status": "proxy_connect_rejected",
+      "error": "Tunnel connection failed: 403 Forbidden"
+    },
+    {
+      "url": "https://abetlen.github.io/llama-cpp-python/whl/cpu/llama-cpp-python/",
+      "status": "proxy_connect_rejected",
+      "error": "Tunnel connection failed: 403 Forbidden"
+    },
+    {
+      "url": "https://modelscope.cn/api/v1/models/Qwen/Qwen2.5-1.5B-Instruct-GGUF/repo/files?Revision=master&Recursive=true",
+      "status": "proxy_connect_rejected",
+      "error": "Tunnel connection failed: 403 Forbidden"
+    },
+    {
+      "url": "https://gpt4all.io/models/models3.json",
+      "status": "proxy_connect_rejected",
+      "error": "Tunnel connection failed: 403 Forbidden"
+    },
+    {
+      "url": "https://registry.ollama.ai/v2/library/qwen2.5/manifests/1.5b",
+      "status": "proxy_connect_rejected",
+      "error": "Tunnel connection failed: 403 Forbidden"
+    }
+  ],
+  "available_distribution_metadata": [
+    {
+      "url": "https://pypi.org/pypi/llama-cpp-python/json",
+      "status": 200,
+      "version": "0.3.36",
+      "sdist_bytes": 76589250,
+      "installed": false
+    },
+    {
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/v0.7.0",
+      "status": 200,
+      "source_commit": "620d2225cc436ab0b001e3200e590e3b286ef9ab",
+      "binary_built_or_executed": false
+    }
+  ],
+  "preparation": {
+    "status": "prepared_only",
+    "model_inference_executed": false,
+    "model_generated_updates": 0,
+    "cases": [
+      {
+        "id": "11166def4822d605345f57c4e5cf0ef2494c69f47ced208d8cd407926710fcd3",
+        "topic": "baikal-sturgeon",
+        "proposal_id": "af115a757d2d49e4b0920614d34cd2b04397d526aa1852f1924ed24d55caaf9e",
+        "path": "data/wiki_updates/evaluation_inputs/11166def4822d605345f57c4e5cf0ef2494c69f47ced208d8cd407926710fcd3.json",
+        "lexical_proposal_id": "794e15cb11ab975dee91fb593323b356ec12808d9f8edc48a1bae02ea8813e14",
+        "diagnostics": {
+          "lexical_window_contains_other_fish": true,
+          "reference_new_detail": "1029 тыс. шт. со средней навеской 3,0 г: проверить как деталь выпуска, не выживаемость"
+        },
+        "article_sha256": "59c8be41094a9fd76d117dd9138ba22d15cdeabd8d9c24474f7d20c8df13245b",
+        "source_pages": [
+          {
+            "source_id": "drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0",
+            "sha256": "60ccb6065b32d959457faf9745023d763c9f6641ad7c9c8cdee7a88fea454139",
+            "page": 222,
+            "report_year": 2016
+          },
+          {
+            "source_id": "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos",
+            "sha256": "557959d2c8996b990487e9d2acd501ca4048f29e3c7a6fe27e49f8fc1c554fd8",
+            "page": 67,
+            "report_year": 2024
+          }
+        ],
+        "article_context_truncated": false
+      },
+      {
+        "id": "3b4186a8826c3173e598ea00778893fd62efe9353d35bf88c35ca49b585bbff1",
+        "topic": "selenga-sediments",
+        "proposal_id": "09e06b7f3237a9e33fbdf06b48b58ec18428275e077021c6d56f9cbc146ca9a0",
+        "path": "data/wiki_updates/evaluation_inputs/3b4186a8826c3173e598ea00778893fd62efe9353d35bf88c35ca49b585bbff1.json",
+        "lexical_proposal_id": "25718271f24b342c13aac6591fda74b389c5d085149d71c748cf8e25bba88a60",
+        "diagnostics": {
+          "lexical_window_contains_2015_carcinogen_row": false,
+          "curated_window_contains_2015_carcinogen_row": true
+        },
+        "article_sha256": "a67b8fbbfda3d9716f31c291485877d576d8c315587604486a411d85918984e6",
+        "source_pages": [
+          {
+            "source_id": "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
+            "sha256": "26dc3610938c5b8f91e85b4179ee1092f20aa03684135d0534b8ad2ab9629023",
+            "page": 26,
+            "report_year": 2015
+          }
+        ],
+        "article_context_truncated": false
+      }
+    ],
+    "lexical_baseline": {
+      "proposals": 10,
+      "topics": 7
+    },
+    "published_articles_changed": 0,
+    "reviewed_observations_changed": 0,
+    "resources": {
+      "memory_limit_bytes": 34359738368,
+      "memory_available_bytes": 32840671232,
+      "disk_free_bytes": 29044367360,
+      "cpu_affinity_count": 5,
+      "cpu_quota": "400000 100000"
+    }
+  },
+  "semantic_model_quality": {
+    "assessed": false,
+    "hallucinations": null,
+    "correct_novelty_classifications": null,
+    "correct_conflicts": null,
+    "generated_claims": null
+  },
+  "editorial_workflow_test": {
+    "execution_kind": "synthetic_unit_fixtures",
+    "actual_repository_applied_changes": 0,
+    "human_approval_received": false,
+    "expert_review_claimed": false
+  },
+  "scientific_inventory": {
+    "analytical_articles": 22,
+    "documents": 11,
+    "page_checkpoints": 3878,
+    "reviewed_observations": 168,
+    "scientific_review_blocks": 107
+  },
+  "limitations": [
+    "No actual local language model was loaded or run.",
+    "Synthetic transport/approval tests are not model inference or actual human review.",
+    "No model quality comparison with lexical routing is possible without generation."
+  ],
+  "technical_validation": {
+    "unittest_passed": 66,
+    "unittest_failed": 0,
+    "wiki_lint_errors": 0,
+    "wiki_lint_warnings": "Missing processed source years 2003–2014 and 2026",
+    "scientific_evidence_references_checked": 162,
+    "encyclopedia_evidence_checked": 47,
+    "observation_records_checked": 168,
+    "unchanged_checkpoint_inventory_and_metadata": 3878,
+    "unchanged_protected_files": 28,
+    "unchanged_analytical_articles": 22,
+    "immutable_pdf_sha256_checked": 11,
+    "expert_approval": false
+  }
+}
