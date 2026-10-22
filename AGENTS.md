@@ -48,3 +48,7 @@ This is the author's research project at the Matrosov Institute for System Dynam
 - Preserve complete preceding article versions and manual notes when preparing an update. Source revisions and unresolved issues must remain visible; do not auto-promote candidates into reviewed observations.
 - Update assessment must include bounded existing article context and distinguish report year, observation period and publication year. Retain raw responses and rejection reasons locally. Loopback document requests must bypass environment proxies.
 - `prepare-change` creates a reviewable addition; `apply-change` requires an explicit snapshot-bound editorial decision. Never invent a human approval on the user's behalf. Synthetic decisions must carry `test_only` and are forbidden in the actual repository. Editorial acceptance does not grant specialist status or refresh scientific review hashes.
+
+## User guide maintenance
+- When user-facing capabilities change significantly, review and update `docs/USER_GUIDE.md` alongside the technical documentation. Keep this Russian beginner guide aligned with real file paths, tested commands, current limitations and actual experimental results.
+- The current guide is a draft. Before final project delivery, prepare a separate final personal memo, a reference for the main datasets/tables, and detailed Windows/VS Code instructions; do not label these finished before they are written and checked.
