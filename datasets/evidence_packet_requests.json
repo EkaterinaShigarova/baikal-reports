@@ -1,0 +1,273 @@
+{
+  "version": 1,
+  "requests": [
+    {
+      "id": "climate",
+      "title": "Температура воздуха иркутской части БПТ: годовые и сезонные характеристики",
+      "object": "air_temperature",
+      "territory": "irkutsk_bpt",
+      "fact_ids": [
+        "C15-ANOM",
+        "C22-NORM",
+        "C22-JAN"
+      ],
+      "indicators": [],
+      "min_documents": 2,
+      "min_facts": 2,
+      "limitations": [
+        {
+          "id": "climate-L1",
+          "text": "Не указаны базовый период климатической нормы, общий набор станций и метод пространственного агрегирования."
+        },
+        {
+          "id": "climate-L2",
+          "text": "Годовая и месячная аномалии не взаимозаменяемы; две годовые характеристики не доказывают климатический тренд."
+        },
+        {
+          "id": "climate-L3",
+          "text": "Зеркала не сверены с официальными экземплярами; годы публикации неизвестны."
+        }
+      ],
+      "missing_evidence": [
+        "station_series",
+        "normal_reference_period",
+        "aggregation_method"
+      ],
+      "search_terms": [
+        "климатические",
+        "температура"
+      ],
+      "contradictions": [
+        {
+          "id": "spring-2015-descriptions",
+          "evidence_ids": [
+            "SPR15-C",
+            "SPR15-H"
+          ],
+          "status": "unresolved_descriptions_not_proven_same_measurement",
+          "description": "Климатический подраздел сообщает о раннем наступлении весны по переходу температуры через ноль, охотничий подраздел называет весну поздней. Районы наблюдения и критерии начала сезона не согласованы; обе формулировки сохраняются."
+        }
+      ]
+    },
+    {
+      "id": "fleet",
+      "title": "Приём судовых загрязнённых вод на Самотлоре в порту Байкал",
+      "object": "ship_water_receipt",
+      "territory": "port_baikal",
+      "fact_ids": [
+        "F15-TOTAL",
+        "F15-OILY",
+        "F15-NODISCHARGE",
+        "F22-TOTAL",
+        "F22-OILY"
+      ],
+      "indicators": [],
+      "min_documents": 2,
+      "min_facts": 2,
+      "limitations": [
+        {
+          "id": "fleet-L1",
+          "text": "Масса принятой воды не равна массе нефти и не является сбросом в озеро."
+        },
+        {
+          "id": "fleet-L2",
+          "text": "Категория нефтесодержащих вод 2015 не имеет указанного порога; продолжение 2022 указывает 15 % и более, сопоставимость не подтверждена."
+        },
+        {
+          "id": "fleet-L3",
+          "text": "Не установлены охват всех судов, неучтённые потоки и эффективность очистки; годы публикации зеркал неизвестны."
+        }
+      ],
+      "missing_evidence": [
+        "category_crosswalk",
+        "complete_receipt_logs",
+        "influent_effluent_analyses"
+      ],
+      "search_terms": [
+        "Самотлор",
+        "подсланевых"
+      ],
+      "contradictions": []
+    },
+    {
+      "id": "roads",
+      "title": "Экологическое воздействие автотранспорта в границах БПТ",
+      "object": "road_transport",
+      "territory": "bpt",
+      "fact_ids": [
+        "A15-STOCK",
+        "A22-OWNERSHIP",
+        "A22-COVERAGE"
+      ],
+      "indicators": [
+        "road_pollutant_emission",
+        "transport_environmental_pressure"
+      ],
+      "min_documents": 2,
+      "min_facts": 2,
+      "limitations": [
+        {
+          "id": "roads-L1",
+          "text": "Число машин по целой области нельзя переносить в БПТ."
+        },
+        {
+          "id": "roads-L2",
+          "text": "Общий парк машин и обеспеченность легковыми на тысячу жителей — разные показатели."
+        },
+        {
+          "id": "roads-L3",
+          "text": "Примечание таблицы отделяет муниципальные данные БПТ и непубликуемые сведения; нет данных не означает ноль."
+        }
+      ],
+      "missing_evidence": [
+        "bpt_specific_emissions",
+        "traffic_and_fuel_data",
+        "spatially_matched_exposure"
+      ],
+      "search_terms": [
+        "автомобильный",
+        "транспорт"
+      ],
+      "contradictions": []
+    },
+    {
+      "id": "hunting",
+      "title": "Оценки охотничьих ресурсов иркутской части БПТ и ограничения учёта",
+      "object": "hunting_resources",
+      "territory": "irkutsk_bpt",
+      "fact_ids": [
+        "H15-BOAR",
+        "H22-BOAR",
+        "H22-DEER",
+        "H22-ZMU"
+      ],
+      "indicators": [],
+      "min_documents": 2,
+      "min_facts": 2,
+      "limitations": [
+        {
+          "id": "hunting-L1",
+          "text": "Оценка численности, лимит и фактическая добыча различаются; сезоны охоты могут пересекать годы."
+        },
+        {
+          "id": "hunting-L2",
+          "text": "Для кабана не восстановлена сопоставимая методика; объяснение регуляции в источнике не является независимой причинной оценкой проекта."
+        },
+        {
+          "id": "hunting-L3",
+          "text": "Для стадного северного оленя источник отдельно предупреждает о значительной ошибке ЗМУ; не переносить её автоматически на другие виды."
+        }
+      ],
+      "missing_evidence": [
+        "primary_census_methods",
+        "uncertainty_by_species",
+        "territorial_crosswalk"
+      ],
+      "search_terms": [
+        "охотничьих",
+        "БПТ"
+      ],
+      "contradictions": []
+    },
+    {
+      "id": "forest-actions",
+      "title": "Выполненные меры противопожарного обустройства лесов",
+      "object": "forest_prevention",
+      "territory": "bpt",
+      "fact_ids": [
+        "FF19-ACTIONS"
+      ],
+      "indicators": [
+        "completed_preventive_actions"
+      ],
+      "min_documents": 2,
+      "min_facts": 2,
+      "limitations": [
+        {
+          "id": "forest-actions-L1",
+          "text": "Выполненные работы не измеряют предотвращённые пожары; региональная область фрагмента не принимается за сводку всей БПТ."
+        }
+      ],
+      "missing_evidence": [
+        "causal_effectiveness_study"
+      ],
+      "search_terms": [
+        "противопожарному",
+        "обустройству"
+      ],
+      "contradictions": []
+    },
+    {
+      "id": "winter-tourism",
+      "title": "Зимний спортивный отдых на Горе Соболиной",
+      "object": "winter_sports",
+      "territory": "bpt",
+      "fact_ids": [
+        "TW21-WINTER"
+      ],
+      "indicators": [
+        "seasonal_recreational_use"
+      ],
+      "min_documents": 2,
+      "min_facts": 2,
+      "limitations": [
+        {
+          "id": "winter-tourism-L1",
+          "text": "В докладе 2022 описана структура потока 2021; посещение не является измеренным экологическим ущербом."
+        }
+      ],
+      "missing_evidence": [
+        "site_specific_impact_measurements"
+      ],
+      "search_terms": [
+        "Соболиная",
+        "зимний"
+      ],
+      "contradictions": []
+    }
+  ],
+  "benchmark": [
+    {
+      "id": "E01",
+      "request_id": "climate",
+      "expected": {
+        "action": "new_article_candidate",
+        "target_id": null
+      },
+      "basis": "Самостоятельный предмет температуры воздуха; два документа и три факта с ограничениями, не доказательство отсутствия каждой детали в 22 статьях."
+    },
+    {
+      "id": "E02",
+      "request_id": "roads",
+      "expected": {
+        "action": "insufficient",
+        "target_id": null
+      },
+      "basis": "Нужных экологических показателей по БПТ нет в выбранных карточках; региональные показатели и сноска не заменяют их."
+    },
+    {
+      "id": "E03",
+      "request_id": "forest-actions",
+      "expected": {
+        "action": "extend_existing",
+        "target_id": "forest-fires"
+      },
+      "basis": "Та же предметная область и ранее описанные меры. Это маршрутизация, не новое дополнение: факт уже покрыт статьёй."
+    },
+    {
+      "id": "E04",
+      "request_id": "winter-tourism",
+      "expected": {
+        "action": "subtopic",
+        "target_id": "tourism-pressure"
+      },
+      "basis": "Узкий вид туризма внутри существующей статьи; соответствующий сезонный факт уже описан, самостоятельная статья не обоснована."
+    }
+  ],
+  "model_case_ids": [
+    "E01",
+    "E02",
+    "E03"
+  ],
+  "max_model_requests": 3
+}

@@ -1,0 +1,1122 @@
+{
+  "cases": [
+    {
+      "experiment_id": "831feab2a5b9bb7ea3598789964e948d808ca30d01eb40b6296ea6d60d76acd3",
+      "case_id": "E01",
+      "parsed": {
+        "action": "new_article_candidate",
+        "target_id": "water-level-regulation",
+        "reason": "The existing article 'Уровень Байкала: приточность, регулирование и системы высот' does not cover air temperature data. The provided facts and limitations suggest the need for a new article focusing on air temperature characteristics in the",
+        "fact_novelty": "already_covered",
+        "sections": [
+          {
+            "kind": "observations",
+            "fact_ids": [
+              "C15-ANOM",
+              "C22-NORM",
+              "C22-JAN"
+            ],
+            "limitation_ids": [
+              "climate-L1",
+              "climate-L2",
+              "climate-L3"
+            ]
+          },
+          {
+            "kind": "context",
+            "fact_ids": [],
+            "limitation_ids": []
+          }
+        ]
+      },
+      "check": {
+        "errors": [
+          "Separate article unsupported by scope/evidence",
+          "Unproved existing-fact assertion"
+        ],
+        "program_gate_passed": false,
+        "semantic_review_required": true,
+        "published": false,
+        "expert_review": false,
+        "editorial_decision": null
+      },
+      "errors": [],
+      "elapsed_seconds": 124.056,
+      "usage": {
+        "completion_tokens": 195,
+        "prompt_tokens": 2459,
+        "total_tokens": 2654,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "preflight": {
+        "prompt_tokens_native": 2459,
+        "output_tokens_reserved": 400,
+        "safety_reserve": 128,
+        "context_tokens": 8192,
+        "generation_requests": 0
+      },
+      "published": false,
+      "run_id": "544ef1af1ced4d3cecb1c1f038011a8ff0d0bee7e440ef0b32af58a61ac14372",
+      "path": "data/wiki_updates/packet_runs/544ef1af1ced4d3cecb1c1f038011a8ff0d0bee7e440ef0b32af58a61ac14372.json",
+      "raw_response_sha256": "bbbedf7293e059e456df85aa2e98950ab54d2562b77fbb0f3813668758b1b09a",
+      "content_review": {
+        "decision_correct": false,
+        "action_label_correct": true,
+        "source_selection_correct": true,
+        "plan_accepted": false,
+        "reason": "Направление новой статьи выбрано, но target_id ошибочно указывает статью об уровне воды; одновременно объявлено already_covered без подтверждающего совпадения. Объяснение о непокрытии данных также не доказывает отсутствие во всей статье. Формальные поля противоречат друг другу.",
+        "issues": [
+          "wrong_target_for_new_article",
+          "unproved_already_covered",
+          "partial_context_absence_assertion"
+        ],
+        "review_kind": "nonexpert_source_and_article_cross_check",
+        "expert_review": false,
+        "editorial_decision": null
+      }
+    },
+    {
+      "experiment_id": "831feab2a5b9bb7ea3598789964e948d808ca30d01eb40b6296ea6d60d76acd3",
+      "case_id": "E02",
+      "parsed": {
+        "action": "extend_existing",
+        "target_id": null,
+        "reason": "Текущая статья не содержит фактов о воздействии автотранспорта на окружающую среду в границах БПТ. Необходимы дополнительные исследования и данные.",
+        "fact_novelty": "not_established",
+        "sections": [
+          {
+            "kind": "observations",
+            "fact_ids": [],
+            "limitation_ids": []
+          },
+          {
+            "kind": "limits",
+            "fact_ids": [],
+            "limitation_ids": [
+              "roads-L1",
+              "roads-L2",
+              "roads-L3"
+            ]
+          },
+          {
+            "kind": "context",
+            "fact_ids": [],
+            "limitation_ids": []
+          }
+        ]
+      },
+      "check": {
+        "errors": [
+          "Target scope mismatch",
+          "Missing factual basis or required limitations"
+        ],
+        "program_gate_passed": false,
+        "semantic_review_required": true,
+        "published": false,
+        "expert_review": false,
+        "editorial_decision": null
+      },
+      "errors": [],
+      "elapsed_seconds": 31.393,
+      "usage": {
+        "completion_tokens": 178,
+        "prompt_tokens": 603,
+        "total_tokens": 781,
+        "prompt_tokens_details": {
+          "cached_tokens": 290
+        }
+      },
+      "preflight": {
+        "prompt_tokens_native": 603,
+        "output_tokens_reserved": 400,
+        "safety_reserve": 128,
+        "context_tokens": 8192,
+        "generation_requests": 0
+      },
+      "published": false,
+      "run_id": "f75f840abd16c641bb5eea711f0c4b70ba2d2a97fdea5c873bc2034cab62bc8d",
+      "path": "data/wiki_updates/packet_runs/f75f840abd16c641bb5eea711f0c4b70ba2d2a97fdea5c873bc2034cab62bc8d.json",
+      "raw_response_sha256": "dd6e99f41f986cfb46cc7991f084a9434679b3f138e7233286c7b3bcb255aa75",
+      "content_review": {
+        "decision_correct": false,
+        "action_label_correct": false,
+        "source_selection_correct": true,
+        "plan_accepted": false,
+        "reason": "В объяснении распознана нехватка данных, но выбран extend_existing без адресата и создан раздел наблюдений с пустыми фактами. Текущая статья в контексте не передавалась; утверждать её содержание нельзя.",
+        "issues": [
+          "action_reason_inconsistent",
+          "missing_target",
+          "empty_observations",
+          "invented_current_article_reference"
+        ],
+        "review_kind": "nonexpert_source_and_article_cross_check",
+        "expert_review": false,
+        "editorial_decision": null
+      }
+    },
+    {
+      "experiment_id": "831feab2a5b9bb7ea3598789964e948d808ca30d01eb40b6296ea6d60d76acd3",
+      "case_id": "E03",
+      "parsed": {
+        "action": "extend_existing",
+        "target_id": "forest-fires",
+        "reason": "The existing article on forest fires already covers the aspects of forest management and prevention, but the specific data on completed preventive actions in the regional section of BPT is not included.",
+        "fact_novelty": "not_established",
+        "sections": [
+          {
+            "kind": "observations",
+            "fact_ids": [
+              "FF19-ACTIONS"
+            ],
+            "limitation_ids": []
+          },
+          {
+            "kind": "context",
+            "fact_ids": [],
+            "limitation_ids": [
+              "forest-actions-L1"
+            ]
+          }
+        ]
+      },
+      "check": {
+        "errors": [],
+        "program_gate_passed": true,
+        "semantic_review_required": true,
+        "published": false,
+        "expert_review": false,
+        "editorial_decision": null
+      },
+      "errors": [],
+      "elapsed_seconds": 59.987,
+      "usage": {
+        "completion_tokens": 148,
+        "prompt_tokens": 1376,
+        "total_tokens": 1524,
+        "prompt_tokens_details": {
+          "cached_tokens": 290
+        }
+      },
+      "preflight": {
+        "prompt_tokens_native": 1376,
+        "output_tokens_reserved": 400,
+        "safety_reserve": 128,
+        "context_tokens": 8192,
+        "generation_requests": 0
+      },
+      "published": false,
+      "run_id": "fc7aca56b52115a3477e1f46afc112809f7e01f8f4a6c6dff42a6ff254f7f21e",
+      "path": "data/wiki_updates/packet_runs/fc7aca56b52115a3477e1f46afc112809f7e01f8f4a6c6dff42a6ff254f7f21e.json",
+      "raw_response_sha256": "35fd9602020f8588c6e213cce4b74a0515a74c743e1f65b896fcaa0ae0e88cf3",
+      "content_review": {
+        "decision_correct": true,
+        "action_label_correct": true,
+        "source_selection_correct": true,
+        "plan_accepted": false,
+        "reason": "Маршрут forest-fires верен, gate пройден. Качественное сообщение о выполненных мерах уже описано. Формулировка specific data ... is not included не обоснована: если речь о числах сырой выдержки, они не выделены как отдельные проверенные факты/новизна. В экспериментальной проекции передавался ID совпадения, но не полный совпавший абзац; это ограничение подготовки контекста.",
+        "issues": [
+          "unproved_specific_data_novelty",
+          "matched_claim_quote_missing_in_v1_projection"
+        ],
+        "review_kind": "nonexpert_source_and_article_cross_check",
+        "expert_review": false,
+        "editorial_decision": null
+      }
+    }
+  ],
+  "experiment_id": "831feab2a5b9bb7ea3598789964e948d808ca30d01eb40b6296ea6d60d76acd3",
+  "pins": {
+    "baikal/evidence_packets.py": "3422d4741d89ee9789ea14a621a94203c4920a06c07ce474b55010aa90eb7f60",
+    "scripts/evaluate_evidence_packets.py": "29d27084e0391562f7f0d805494bba2094fa370a27778811dc40058daa1e7886",
+    "datasets/evidence_packet_registry.json": "b94d8a2362b0078cdde3a0e89f9e84653bba94bc64a9ab2e92556ef819db4243",
+    "datasets/evidence_packet_requests.json": "6b5a6f2a7e0f21588063f21029de18b2a9029cc8797f1f1393735011d826cf20",
+    "docs/EVIDENCE_PACKET_PROTOCOL.md": "df3cbddcfbbfa7af32acfc029fa5161d3dcdbd183191fcacde4e7b439b1a32f1",
+    "config/sources.json": "298e339a85f31668cd0668012119796f8be331436faafe185a11861e81e7aa51",
+    "config/encyclopedia.json": "661a45ae734590f395497ff85e2501b50eb1b797faa260d2625e44707feb5703",
+    "baikal/packet_context.py": "ae148302d4440b94525984ef7e96f0e43558bce6f6f888a5619627aa93150ad3",
+    "scripts/build_evidence_packets.py": "8d5a431c95197dd2ea727fb96654e2d361e102912961f32dd094ad7e02f923dc",
+    "baikal/packet_terms.py": "64e268fb16eb514fa959951da90ab7790af7c6f3b3ab462738032fd0e12e82fe",
+    "config/packet_indicators.json": "2fa58f8d54e43e1fc845035d1824884dcbce96099a26cf2ebf31768872649489"
+  },
+  "runtime": {
+    "model_bundle": {
+      "profile": "qwen25-7b-q4km",
+      "repo": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f",
+      "license": "apache-2.0",
+      "files": [
+        {
+          "filename": "qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+          "bytes": 3993201344,
+          "sha256": "dfce12e3862a5283ccfb88221b48480e58745165de856439950d0f22590580db"
+        },
+        {
+          "filename": "qwen2.5-7b-instruct-q4_k_m-00002-of-00002.gguf",
+          "bytes": 689872288,
+          "sha256": "539cf93f78e887edea1c04e2d7d8cdaca9d01dae9c9025bcb8accbe29df3d72a"
+        }
+      ],
+      "total_bytes": 4683073632
+    },
+    "server_sha256": "ea2082a6ea129e3fbe0e32c4a57cf0fd754572b5a0fb824b89b9ed80b64836f6",
+    "server_version": "version: 0.7.0-dev (build 1, commit 620d222)\nbuilt with GNU 14.2.0 for Linux x86_64",
+    "backend_probe": {
+      "exit_code": 0,
+      "output": "Available devices:\n  (none)"
+    },
+    "threads": 4,
+    "context_tokens": 8192,
+    "gpu_layers": 0,
+    "resources_before": {
+      "memory_limit_bytes": 34359738368,
+      "memory_available_bytes": 23928492032,
+      "disk_free_bytes": 22107070464,
+      "cpu_affinity_count": 5,
+      "cpu_quota": "400000 100000"
+    },
+    "server_log_path": "data/llm-evaluation/source-first-server-1792698816181391950.log",
+    "timeout_seconds": 600,
+    "command": [
+      "/workspace/baikal-reports/data/llm-runtime/build-avx2/bin/llama-server",
+      "-m",
+      "/workspace/baikal-reports/data/models/qwen25-7b-q4km/qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+      "--alias",
+      "baikal-local-evaluation",
+      "-c",
+      "8192",
+      "-t",
+      "4",
+      "-tb",
+      "4",
+      "-ngl",
+      "0",
+      "--parallel",
+      "1",
+      "--batch-size",
+      "256",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "36133"
+    ],
+    "server_wall_seconds": 218.949,
+    "peak_child_rss_kib": 8375820
+  },
+  "status": "completed",
+  "published": false,
+  "expert_review": false,
+  "version": 1,
+  "baseline_commit": "8de003fafa62bfba904f391e93dbeb45290c6315",
+  "reviewed_at": "2026-10-23T04:01:47.309866+08:00",
+  "source_check": {
+    "facts": 17,
+    "excerpts": 19,
+    "local_excerpts": 19,
+    "article_scope_inventory": 22,
+    "expert_review": false
+  },
+  "packets": [
+    {
+      "id": "climate",
+      "packet_id": "9300e1bf55d8542c57d10b07c55898b222b26af97ac2c902d3fc3f7f30deb76f",
+      "packet_path": "data/wiki_updates/evidence_packets/9300e1bf55d8542c57d10b07c55898b222b26af97ac2c902d3fc3f7f30deb76f.json",
+      "prepared_context_id": "a6d149749f962e1a0bbd5d1051ed80f0efb3f2afdcc33778d4ef4fe69e7baef4",
+      "prepared_context_path": "data/wiki_updates/packet_contexts/a6d149749f962e1a0bbd5d1051ed80f0efb3f2afdcc33778d4ef4fe69e7baef4.json",
+      "readiness": {
+        "eligible_facts": 3,
+        "distinct_source_documents": 2,
+        "enough_for_scoped_overview": true,
+        "trend_approved": false,
+        "missing_evidence": [
+          "station_series",
+          "normal_reference_period",
+          "aggregation_method"
+        ]
+      },
+      "decision": {
+        "action": "new_article_candidate",
+        "target_id": null,
+        "fact_novelty": "not_established",
+        "whole_article_absence": "not_established"
+      },
+      "search_leads": {
+        "status": "unreviewed_search_hits",
+        "query": "\"климатические\" OR \"температура\"",
+        "hits": [
+          {
+            "source_id": "drive-1C-SRfbklf00M5rsLajYO_2nFCdmCL1fi",
+            "page": 182,
+            "snippet": " … В ноч-  часы преобладала положительная [температура]\n   ные часы [температура] воздуха понижалась до  воздуха, значения которой достигали +15°С,\n    −40°С, −45°С (на побережье … "
+          },
+          {
+            "source_id": "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
+            "page": 164,
+            "snippet": "      164                                                            Государственный доклад\n          1.2.8.  [Климатические] условия\n                (ФГБУ «Иркутское УГМС» Росгидромета; ФГБУ «Забайкальское УГМС» Росгидромета)\n       В 2 0 1 5 г. в ч … "
+          },
+          {
+            "source_id": "drive-1jl98YhWpGzbTkJXflFXv0fHB7yKqPRJr",
+            "page": 153,
+            "snippet": " … 2        В 2017 году в части территории Иркутской области, входящей в Байкальскую\n      природную территорию, средняя годовая [температура] воздуха на 1,5-2,5 °С … "
+          },
+          {
+            "source_id": "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos",
+            "page": 153,
+            "snippet": " … [Климатические] условия\n(ФГБУ «Иркутское УГМС» Росгидромета, Бурятский ЦГМС – фили-\nал ФГБУ «Забайкальское УГМС» Росгидромета, ФГБУ «Забайкаль-\nское УГМС» Росгидромета)\n                                              дневные часы [температура] воздуха повышалась … "
+          },
+          {
+            "source_id": "drive-1ScikzOKs0VW7ZZS1XWKyoOfcHeYklUEP",
+            "page": 170,
+            "snippet": " … В ночные часы\n[температура] воздуха понижалась до –30 °С, –35 °С, в северной части территории до –\n40 С. Местами по югу [температура] воздуха не … "
+          },
+          {
+            "source_id": "drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0",
+            "page": 161,
+            "snippet": " … [Климатические] условия\n          (ФГБУ «Иркутское УГМС» Росгидромета;\n            Бурятский ЦГМС – филиал ФГБУ «Забайкальское УГМС» Росгидромета;\n         ФГБУ «Забайкальское УГМС» Росгидромета)                                                                 1.2\n    Средняя годовая [температура] воздуха в … "
+          },
+          {
+            "source_id": "drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ",
+            "page": 155,
+            "snippet": " … В январе средняя месячная [температура] воздуха на большей части территории была на\n        1-3 °С ниже средних многолетних значений (местами по северу территории и … "
+          },
+          {
+            "source_id": "drive-1oYm8VhJ3_eRNdxbrGfLXhf6_vI6s6SJq",
+            "page": 172,
+            "snippet": " … [Климатические] условия\n        (ФГБУ «Иркутское УГМС» Росгидромета, Бурятский ЦГМС – филиал\nФГБУ «Забайкальское УГМС» Росгидромета, ФГБУ «Забайкальское УГМС» Росгидромета)\n     Средняя годовая [температура] воздуха на части территории … "
+          },
+          {
+            "source_id": "drive-1oLnz6N8ueMCEL8p2HnPDtT7dx1tAE8RB",
+            "page": 287,
+            "snippet": " … Усредненные за месяц суммарные концентрации 21 соединения ПАУ (нг/м-3),\n      [температура] воздуха (Т оС), приземного давления (Р0) в г. Иркутске и р.п … "
+          },
+          {
+            "source_id": "drive-1RWGLrOzFO32Jxrlv-B2n_PafSFoRVySn",
+            "page": 163,
+            "snippet": " … В январе средняя месячная [температура] воздуха была на 2-5 С выше обычного. В\nначале месяца в ночные часы [температура] воздуха на большей части … "
+          },
+          {
+            "source_id": "drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0",
+            "page": 205,
+            "snippet": " … Среднемесячная [температура]\nвоздуха в большинстве районов около средних многолетних значений. В первых двух дека-\nдах апреля осадки выпадали в виде снега, в третьей декаде … "
+          },
+          {
+            "source_id": "drive-1ScikzOKs0VW7ZZS1XWKyoOfcHeYklUEP",
+            "page": 206,
+            "snippet": " … На состояние\nпопуляций значительное влияние оказывают [климатические] условия в выводковый пери-\nод, а также значительное антропогенное воздействие от использования лесов, пожаров и\nиной деятельности … "
+          }
+        ]
+      },
+      "related_articles": [
+        {
+          "id": "water-level-regulation",
+          "scope_relation": "related_distinct_subject",
+          "fact_overlap": []
+        }
+      ]
+    },
+    {
+      "id": "fleet",
+      "packet_id": "f8a724c3ffa3bf09f99d34f5759de9dd1aca384abc34470a986aa5f28251a9e9",
+      "packet_path": "data/wiki_updates/evidence_packets/f8a724c3ffa3bf09f99d34f5759de9dd1aca384abc34470a986aa5f28251a9e9.json",
+      "prepared_context_id": "1a504723d5d14ab8f2376bc0892ed7539e3ba67aa3e00b1146d7e343246ef212",
+      "prepared_context_path": "data/wiki_updates/packet_contexts/1a504723d5d14ab8f2376bc0892ed7539e3ba67aa3e00b1146d7e343246ef212.json",
+      "readiness": {
+        "eligible_facts": 5,
+        "distinct_source_documents": 2,
+        "enough_for_scoped_overview": true,
+        "trend_approved": false,
+        "missing_evidence": [
+          "category_crosswalk",
+          "complete_receipt_logs",
+          "influent_effluent_analyses"
+        ]
+      },
+      "decision": {
+        "action": "new_article_candidate",
+        "target_id": null,
+        "fact_novelty": "not_established",
+        "whole_article_absence": "not_established"
+      },
+      "search_leads": {
+        "status": "unreviewed_search_hits",
+        "query": "\"Самотлор\" OR \"подсланевых\"",
+        "hits": [
+          {
+            "source_id": "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos",
+            "page": 194,
+            "snippet": " … По результатам освидетельствования каждому    (СКПО) «[Самотлор]» в порту Байкал. Флот сторонних\nсудну выдается свидетельство о предотвращении     организаций, занимающийся сбором [подсланевых]\nзагрязнения окружающей среды. Кроме … "
+          },
+          {
+            "source_id": "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
+            "page": 230,
+            "snippet": " … Флот сторон­\n      них организаций в части сбора [подсланевых] вод обслуживается на договорных началах. За\n      навигацию 2015 г. на СКПО «[Самотлор]» всего сдано вод 607 … "
+          },
+          {
+            "source_id": "drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0",
+            "page": 228,
+            "snippet": " … Флот сторонних ор-\n      ганизаций в части сбора [подсланевых] вод обслуживается на договорных началах. За навигацию\n      2016 г. на СКПО «[Самотлор]» всего сдано 600,82 … "
+          },
+          {
+            "source_id": "drive-1ScikzOKs0VW7ZZS1XWKyoOfcHeYklUEP",
+            "page": 225,
+            "snippet": " … Флот сто-\nронних организаций в части сбора [подсланевых] вод обслуживается на договорных усло-\nвиях. За навигацию 2020 года на СКПО «[Самотлор]» всего сдано вод … "
+          },
+          {
+            "source_id": "drive-1C-SRfbklf00M5rsLajYO_2nFCdmCL1fi",
+            "page": 229,
+            "snippet": " … и [подсланевых]\n         по выбросам, также оформляется свидетель-  вод на очистку судну комплексной переработки\n          ство о соответствии. Информация о соответ-  отходов (СКПО) «[Самотлор]» в порту … "
+          },
+          {
+            "source_id": "drive-1oYm8VhJ3_eRNdxbrGfLXhf6_vI6s6SJq",
+            "page": 224,
+            "snippet": " … Флот сто-\nронних организаций в части сбора [подсланевых] вод обслуживается на договорных усло-\nвиях. За навигацию 2022 года на СКПО «[Самотлор]» всего сдано вод … "
+          },
+          {
+            "source_id": "drive-1oLnz6N8ueMCEL8p2HnPDtT7dx1tAE8RB",
+            "page": 227,
+            "snippet": " … Флот сто-\nронних организаций в части сбора [подсланевых] вод обслуживается на договорных усло-\nвиях. За навигацию 2021 года на СКПО «[Самотлор]» всего сдано вод … "
+          },
+          {
+            "source_id": "drive-1RWGLrOzFO32Jxrlv-B2n_PafSFoRVySn",
+            "page": 213,
+            "snippet": " … Флот сто-\nронних организаций в части сбора [подсланевых] вод обслуживается на договорных усло-\nвиях. За навигацию 2019 года на СКПО «[Самотлор]» всего сдано вод … "
+          },
+          {
+            "source_id": "drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ",
+            "page": 206,
+            "snippet": " … Флот сто-\nронних организаций в части сбора [подсланевых] вод обслуживается на договорных услови-\nях. За навигацию 2018 года на СКПО «[Самотлор]» всего сдано вод … "
+          },
+          {
+            "source_id": "drive-1jl98YhWpGzbTkJXflFXv0fHB7yKqPRJr",
+            "page": 209,
+            "snippet": " … Флот сторонних\n       организаций в части сбора [подсланевых] вод обслуживается на договорных началах. За нави-\n      гацию 2017 года на СКПО «[Самотлор]» всего сдано вод 660 … "
+          },
+          {
+            "source_id": "drive-1oLnz6N8ueMCEL8p2HnPDtT7dx1tAE8RB",
+            "page": 228,
+            "snippet": " … На акватории озера Байкал и Иркутского водохранилища находится одно несамо-\nходное судно по приему и переработке [подсланевых] и сточно-фановых вод – «[Самотлор]»,\nэксплуатируемое АО … "
+          },
+          {
+            "source_id": "drive-1RWGLrOzFO32Jxrlv-B2n_PafSFoRVySn",
+            "page": 215,
+            "snippet": " … На акватории озера Байкал и Иркутского водохранилища находится одно несамо-\nходное судно по приёму и переработке [подсланевых] и сточно-фановых вод – «[Самотлор]»,\nэксплуатируемое ПАО … "
+          }
+        ]
+      },
+      "related_articles": [
+        {
+          "id": "waste-and-pollution",
+          "scope_relation": "related_distinct_subject",
+          "fact_overlap": []
+        },
+        {
+          "id": "water-quality-evidence",
+          "scope_relation": "related_distinct_subject",
+          "fact_overlap": []
+        }
+      ]
+    },
+    {
+      "id": "roads",
+      "packet_id": "ee508cbe9eec3c8802d9dfec44b8985876d2c7bdc6c375f5ffc2558d8fba99e4",
+      "packet_path": "data/wiki_updates/evidence_packets/ee508cbe9eec3c8802d9dfec44b8985876d2c7bdc6c375f5ffc2558d8fba99e4.json",
+      "prepared_context_id": "83caf6b720db977a5b77e2d5e01d419904f530bea046e6e75efcdaca86c46069",
+      "prepared_context_path": "data/wiki_updates/packet_contexts/83caf6b720db977a5b77e2d5e01d419904f530bea046e6e75efcdaca86c46069.json",
+      "readiness": {
+        "eligible_facts": 0,
+        "distinct_source_documents": 0,
+        "enough_for_scoped_overview": false,
+        "trend_approved": false,
+        "missing_evidence": [
+          "bpt_specific_emissions",
+          "traffic_and_fuel_data",
+          "spatially_matched_exposure"
+        ]
+      },
+      "decision": {
+        "action": "insufficient",
+        "target_id": null,
+        "fact_novelty": "not_established",
+        "whole_article_absence": "not_established"
+      },
+      "search_leads": {
+        "status": "unreviewed_search_hits",
+        "query": "\"автомобильный\" OR \"транспорт\"",
+        "hits": [
+          {
+            "source_id": "drive-1C-SRfbklf00M5rsLajYO_2nFCdmCL1fi",
+            "page": 231,
+            "snippet": " … Антропогенные объекты и их влияние на окружающую среду                                                                229\n\n           1.3.7.2 [Автомобильный] [транспорт]\n        ■Иркутскстат,\n        ■Забайкалкрайстат,\n        ■Бурятстат\n\n         [Автомобильный] [транспорт] играет значитель-  отходов, таких … "
+          },
+          {
+            "source_id": "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos",
+            "page": 196,
+            "snippet": " … [Автомобильный] [транспорт]\n(Иркутскстат, Бурятстат, Забайкалкрайстат)\n    [Автомобильный] [транспорт] играет значитель-    ных отходов, таких как батареи и покрышки, также\nную роль в современном обществе, обеспечивая    может … "
+          },
+          {
+            "source_id": "drive-1C-SRfbklf00M5rsLajYO_2nFCdmCL1fi",
+            "page": 398,
+            "snippet": " … [Автомобильный] [транспорт]\n                ной статистики по Иркутской области (Иркутскстат)                                                                                                                  1.3.10. Социальное положение населения\n\n\n\n\n\n                                                                                                          https://38.rosstat.gov.ru/folder/96239\n\n        28     Территориальный орган … "
+          },
+          {
+            "source_id": "drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ",
+            "page": 8,
+            "snippet": " … [Автомобильный] [транспорт]                                     210\n            1.3.7.3. Железнодорожный [транспорт]                                    211\n        1.3.8. Туризм и отдых                                                   212\n        1.3.9. Экологические правонарушения                                     218\n        1 … "
+          },
+          {
+            "source_id": "drive-1jl98YhWpGzbTkJXflFXv0fHB7yKqPRJr",
+            "page": 8,
+            "snippet": " … [Автомобильный] [транспорт]                                      211\n            1.3.7.3. Железнодорожный [транспорт]                                   212\n        1.3.8. Туризм и отдых                                                   214\n        1.3.9. Экологические правонарушения                                     220\n        1 … "
+          },
+          {
+            "source_id": "drive-1RWGLrOzFO32Jxrlv-B2n_PafSFoRVySn",
+            "page": 8,
+            "snippet": " … [Автомобильный] [транспорт] ………………………………………….   215\n            1.3.7.3. Железнодорожный [транспорт] ……………………………………….   216\n        1.3.8. Туризм и отдых ……………………………………………………………..   217\n        1.3.9. Экологические правонарушения …………………………………………..   224\n        1 … "
+          },
+          {
+            "source_id": "drive-1ScikzOKs0VW7ZZS1XWKyoOfcHeYklUEP",
+            "page": 7,
+            "snippet": " … [Автомобильный] [транспорт]…...................................................................   227\n         1.3.7.3. Железнодорожный [транспорт]…..............................................................   228\n      1.3.8. Туризм и отдых………………………………………………………………..   229\n      1.3.9. Экологические правонарушения…………..…………………………………   235\n      1 … "
+          },
+          {
+            "source_id": "drive-1oLnz6N8ueMCEL8p2HnPDtT7dx1tAE8RB",
+            "page": 8,
+            "snippet": " … [Автомобильный] [транспорт]……………………………………………….  229\n         1.3.7.3. Железнодорожный [транспорт]……………………………………………  230\n      1.3.8. Туризм и отдых…………………………………………………………………  232\n      1.3.9. Экологические правонарушения…………..…………………………………..  238\n      1 … "
+          },
+          {
+            "source_id": "drive-1oYm8VhJ3_eRNdxbrGfLXhf6_vI6s6SJq",
+            "page": 4,
+            "snippet": " … [Автомобильный] [транспорт]……………………………………………….  226\n         1.3.7.3. Железнодорожный [транспорт]……………………………………………  228\n      1.3.8. Туризм и отдых…………………………………………………………………  229\n      1.3.9. Экологические правонарушения…………..…………………………………..  235\n      1 … "
+          },
+          {
+            "source_id": "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
+            "page": 6,
+            "snippet": " … 8.  [Транспорт]  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  229\n         1.4.8.1.  Байкальский флот  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  229\n         1.4.8.2.  [Автомобильный] [транспорт]  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  233\n         1.4.8.3.  Железнодорожный [транспорт]  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  234 … "
+          },
+          {
+            "source_id": "drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0",
+            "page": 7,
+            "snippet": " … [Автомобильный] [транспорт]  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  231\n         1.4.8.3. Железнодорожный [транспорт]  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  232\n         1.4.8.4. Трубопроводы  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 233\n     1.4.9. Туризм и отдых  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  234\n     1 … "
+          },
+          {
+            "source_id": "drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0",
+            "page": 180,
+            "snippet": "      180                                                            Государственный доклад\n      вод (ЛВРЗ), авиационный завод, предприятия строительной промышленности, железнодо-\n     рожный и [автомобильный] [транспорт], отопительные котельные.\n       В ыбр о с ы. По данным … "
+          }
+        ]
+      },
+      "related_articles": []
+    },
+    {
+      "id": "hunting",
+      "packet_id": "58ef9a8af8cff221eb2c78b0a30874a28f4c8b4cae28040cc0f21a81e0066774",
+      "packet_path": "data/wiki_updates/evidence_packets/58ef9a8af8cff221eb2c78b0a30874a28f4c8b4cae28040cc0f21a81e0066774.json",
+      "prepared_context_id": "7144b70f3300597ba16fd4b6ae2d0563540b4d9d2ea9fc299283b49488805b6a",
+      "prepared_context_path": "data/wiki_updates/packet_contexts/7144b70f3300597ba16fd4b6ae2d0563540b4d9d2ea9fc299283b49488805b6a.json",
+      "readiness": {
+        "eligible_facts": 4,
+        "distinct_source_documents": 2,
+        "enough_for_scoped_overview": true,
+        "trend_approved": false,
+        "missing_evidence": [
+          "primary_census_methods",
+          "uncertainty_by_species",
+          "territorial_crosswalk"
+        ]
+      },
+      "decision": {
+        "action": "new_article_candidate",
+        "target_id": null,
+        "fact_novelty": "not_established",
+        "whole_article_absence": "not_established"
+      },
+      "search_leads": {
+        "status": "unreviewed_search_hits",
+        "query": "\"охотничьих\" OR \"БПТ\"",
+        "hits": [
+          {
+            "source_id": "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos",
+            "page": 179,
+            "snippet": " … В [БПТ] входят 13 районов Иркутской области:       Общая  площадь   [охотничьих]   угодий  на\nАнгарский,  Баяндаевский,  Боханский,  Иркутский,    территории [БПТ] составляет 9902,35 тыс.  га, из … "
+          },
+          {
+            "source_id": "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos",
+            "page": 180,
+            "snippet": " … [БПТ] функционируют 12 государственных природно-        Информация о распространении [охотничьих] ре-\nбиологических заказников регионального значения     сурсов (по видам) и добыче копытных животных,\nи 52 памятника … "
+          },
+          {
+            "source_id": "drive-1C-SRfbklf00M5rsLajYO_2nFCdmCL1fi",
+            "page": 218,
+            "snippet": " … Оценка изменения численности населения основных видов\n   [охотничьих] животных на [БПТ] в Забайкальском крае\n\n        Основные виды [охотничьих] животных            Послепромысловая численность (особей) по [БПТ]                        % изменения\n                                                                                                                                                          к … "
+          },
+          {
+            "source_id": "drive-1oYm8VhJ3_eRNdxbrGfLXhf6_vI6s6SJq",
+            "page": 199,
+            "snippet": " … Иркутская область\n    Общая площадь [охотничьих] угодий на [БПТ] в пределах Иркутской области составля-\nет 10 009,8 тыс. га, из которых площадь закрепленных [охотничьих] … "
+          },
+          {
+            "source_id": "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
+            "page": 204,
+            "snippet": " … В таблице 1.4.5.1\n      приведена оценка изменения численности населения [охотничьих] видов животных на [БПТ] по\n      сравнению с 2014 г. Оценка изменения добычи … "
+          },
+          {
+            "source_id": "drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0",
+            "page": 201,
+            "snippet": " … В таблице 1.4.5.1\nприведена оценка изменения численности населения [охотничьих] видов животных на [БПТ] по\nсравнению с 2015 г. Оценка изменения добычи … "
+          },
+          {
+            "source_id": "drive-1jl98YhWpGzbTkJXflFXv0fHB7yKqPRJr",
+            "page": 181,
+            "snippet": " … В таблице 1.4.5.1\n       приведена оценка изменения численности населения [охотничьих] видов животных на [БПТ] по\n      сравнению с 2016 годом. Оценка изменения добычи … "
+          },
+          {
+            "source_id": "drive-1C-SRfbklf00M5rsLajYO_2nFCdmCL1fi",
+            "page": 219,
+            "snippet": " … Антропогенные объекты и их влияние на окружающую среду                                                                217\n\n\n\n\n                    Основные виды [охотничьих] животных           Добыча в сезоны охоты гг. (особей) по [БПТ]                           % изменения к\n                                                                                                                                                                       сезону … "
+          },
+          {
+            "source_id": "drive-1RWGLrOzFO32Jxrlv-B2n_PafSFoRVySn",
+            "page": 188,
+            "snippet": " … В\nтаблице 1.3.4.1 приведена оценка изменения численности населения [охотничьих] видов\nживотных на [БПТ] по сравнению с 2018 годом. Оценка изменения добычи … "
+          },
+          {
+            "source_id": "drive-1oYm8VhJ3_eRNdxbrGfLXhf6_vI6s6SJq",
+            "page": 203,
+            "snippet": "Государственный доклад\n\n    Республика Бурятия\n    Площадь [охотничьих] угодий Республики Бурятия в пределах [БПТ] (за исключением\nБаунтовского, части Муйского и Окинского районов) составляет 16 706,7 … "
+          },
+          {
+            "source_id": "drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ",
+            "page": 180,
+            "snippet": " … приведена оценка изменения численности населения [охотничьих] видов животных на [БПТ] по\nсравнению с 2017 годом. Оценка изменения добычи основных видов [охотничьих] животных\nпредставлена в … "
+          },
+          {
+            "source_id": "drive-1C-SRfbklf00M5rsLajYO_2nFCdmCL1fi",
+            "page": 216,
+            "snippet": "214                                           Государственный доклад «О состоянии озера Байкал и мерах по его охране в 2023 году»\n\n\n   Сведения о добыче [охотничьих] ресурсов в (се-      Нелимитируемые                    Численность … "
+          }
+        ]
+      },
+      "related_articles": [
+        {
+          "id": "protected-areas-management",
+          "scope_relation": "related_distinct_subject",
+          "fact_overlap": []
+        }
+      ]
+    },
+    {
+      "id": "forest-actions",
+      "packet_id": "2ebf7cd78516d753851177acca9db49cc70ca53090902dab896cde62a230c7d9",
+      "packet_path": "data/wiki_updates/evidence_packets/2ebf7cd78516d753851177acca9db49cc70ca53090902dab896cde62a230c7d9.json",
+      "prepared_context_id": "e6ec334f68d76aaae021eea8b6fc0b5afbb0c24349a09bd2ab13733423442c42",
+      "prepared_context_path": "data/wiki_updates/packet_contexts/e6ec334f68d76aaae021eea8b6fc0b5afbb0c24349a09bd2ab13733423442c42.json",
+      "readiness": {
+        "eligible_facts": 1,
+        "distinct_source_documents": 1,
+        "enough_for_scoped_overview": false,
+        "trend_approved": false,
+        "missing_evidence": [
+          "causal_effectiveness_study"
+        ]
+      },
+      "decision": {
+        "action": "extend_existing",
+        "target_id": "forest-fires",
+        "fact_novelty": "not_established",
+        "whole_article_absence": "not_established"
+      },
+      "search_leads": {
+        "status": "unreviewed_search_hits",
+        "query": "\"противопожарному\" OR \"обустройству\"",
+        "hits": [
+          {
+            "source_id": "drive-1jl98YhWpGzbTkJXflFXv0fHB7yKqPRJr",
+            "page": 130,
+            "snippet": " … е с о в\n   В 2017 году выполнены следующие мероприятия по [противопожарному] [обустройству]\nлесов в граница БПТ:\n    – строительство дорог противопожарного назначения – 40,4 км … "
+          },
+          {
+            "source_id": "drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ",
+            "page": 133,
+            "snippet": " … е с о в\n        В 2018 году выполнены следующие мероприятия по [противопожарному] [обустройству]\n       лесов в граница БПТ:\n           – строительство дорог противопожарного назначения 31,9 км … "
+          },
+          {
+            "source_id": "drive-1jl98YhWpGzbTkJXflFXv0fHB7yKqPRJr",
+            "page": 128,
+            "snippet": " … были выполнены следующие\nмероприятия по [противопожарному] [обустройству] лесов:\n    – строительство лесных дорог – 266,6 км;\n    – реконструкция лесных дорог – 602 км;\n    – устройство противопожарных минерализованных полос, разрывов … "
+          },
+          {
+            "source_id": "drive-1oLnz6N8ueMCEL8p2HnPDtT7dx1tAE8RB",
+            "page": 153,
+            "snippet": " … В  отчетном  году  силами  филиалов\nКГСАУ «Забайкаллесхоз» и арендаторов лесных участков выполнены следующие меро-\nприятия по [противопожарному] [обустройству] лесов в границах БПТ:\n     – строительство дорог … "
+          },
+          {
+            "source_id": "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
+            "page": 140,
+            "snippet": " … на землях лесного фонда Иркутской области были выполнены следующие ме­\n      роприятия по [противопожарному] [обустройству] лесов:\n             –  строительство лесных дорог – 1192,4 км;\n               1)  В данном … "
+          },
+          {
+            "source_id": "drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0",
+            "page": 137,
+            "snippet": " … выполнены следующие мероприятия по [противопожарному] [обустройству] ле-\nсов в границах БПТ:\n    – строительство дорог противопожарного назначения – 57 км;\n    – реконструкция и эксплуатация лесных дорог – 172 км … "
+          },
+          {
+            "source_id": "drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0",
+            "page": 136,
+            "snippet": " … были выполнены следующие\n      мероприятия по [противопожарному] [обустройству] лесов:\n          – строительство лесных дорог – 249,3 км;\n1.2      – реконструкция лесных дорог – 521,8 км;          – устройство противопожарных … "
+          },
+          {
+            "source_id": "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
+            "page": 142,
+            "snippet": " … выполнены следующие мероприятия по [противопожарному] [обустройству] ле­\n      сов в граница БПТ:\n             –  строительство дорог противопожарного назначения – 103 км;\n             –  реконструкция лесных дорог – 46,4 км;\n             –  эксплуатация … "
+          },
+          {
+            "source_id": "drive-1ScikzOKs0VW7ZZS1XWKyoOfcHeYklUEP",
+            "page": 153,
+            "snippet": " … С целью предупреждения лесных пожаров\nна Байкальской природной территории в 2020 году выполнены следующие мероприятия\nпо [противопожарному] [обустройству] лесов: строительство лесных дорог, предназначенных\nдля … "
+          },
+          {
+            "source_id": "drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ",
+            "page": 132,
+            "snippet": " … 2в 2018 году выполнены следующие мероприятия по [противопожарному] [обустройству] лесов:\n    – строительство лесных дорог – 250,21 км;\n    – реконструкция лесных дорог – 510,473 км;\n    – устройство противопожарных … "
+          },
+          {
+            "source_id": "drive-1RWGLrOzFO32Jxrlv-B2n_PafSFoRVySn",
+            "page": 142,
+            "snippet": " … С целью предупреждения лесных пожаров на Байкальской природной террито-\nрии в 2019 году выполнены следующие мероприятия по [противопожарному] [обустройству]\nлесов:  строительство  лесных   дорог,  предназначенных … "
+          },
+          {
+            "source_id": "drive-1jl98YhWpGzbTkJXflFXv0fHB7yKqPRJr",
+            "page": 262,
+            "snippet": " … документации по организации    9 990,0   Снижение негативного влияния отходов\n и [обустройству] приёмных пунктов нефтесодержа-              на состояние окружающей среды\n щих, хозяйственно-бытовых сточных вод … "
+          }
+        ]
+      },
+      "related_articles": [
+        {
+          "id": "forest-fires",
+          "scope_relation": "same_subject",
+          "fact_overlap": [
+            "FF19-ACTIONS"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "winter-tourism",
+      "packet_id": "d7163488a68a20d9b7735a7710c400030351592bb45373db4adb6f832d6c3a08",
+      "packet_path": "data/wiki_updates/evidence_packets/d7163488a68a20d9b7735a7710c400030351592bb45373db4adb6f832d6c3a08.json",
+      "prepared_context_id": "9d46cfb15c21d62af874401ed5d253d7d31e8a254e5f71708a3476ca95844485",
+      "prepared_context_path": "data/wiki_updates/packet_contexts/9d46cfb15c21d62af874401ed5d253d7d31e8a254e5f71708a3476ca95844485.json",
+      "readiness": {
+        "eligible_facts": 1,
+        "distinct_source_documents": 1,
+        "enough_for_scoped_overview": false,
+        "trend_approved": false,
+        "missing_evidence": [
+          "site_specific_impact_measurements"
+        ]
+      },
+      "decision": {
+        "action": "subtopic",
+        "target_id": "tourism-pressure",
+        "fact_novelty": "not_established",
+        "whole_article_absence": "not_established"
+      },
+      "search_leads": {
+        "status": "unreviewed_search_hits",
+        "query": "\"Соболиная\" OR \"зимний\"",
+        "hits": [
+          {
+            "source_id": "drive-1oYm8VhJ3_eRNdxbrGfLXhf6_vI6s6SJq",
+            "page": 287,
+            "snippet": " … Снежной составил 30 % за летний период от годового потока; [зимний] спор-\nтивный отдых на горнолыжном курорте «Гора [Соболиная]» – 37 % за [зимний] период\nот годового … "
+          },
+          {
+            "source_id": "drive-1jl98YhWpGzbTkJXflFXv0fHB7yKqPRJr",
+            "page": 216,
+            "snippet": " … Схема   размещения   особой   экономической   зоны   в   Иркутской\nобласти, участок «Гора [Соболиная]»\n\n   По  итогам  2017  года  в ОЭЗ  зарегистрировано  6  резидентов  с планируемым\nобъёмом инвестиций … "
+          },
+          {
+            "source_id": "drive-1oYm8VhJ3_eRNdxbrGfLXhf6_vI6s6SJq",
+            "page": 233,
+            "snippet": " … ООО «Талисман  Байкал», ООО «Планета И», ООО «Талисман [Соболиная]»,\nООО «Эдельвейс», ООО «Регионэнерго»).\n    В целях обеспечения функционирования резидентов ОЭЗ Правительством Иркут-\nской области осуществляется … "
+          },
+          {
+            "source_id": "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
+            "page": 239,
+            "snippet": " … а – участок\n«Гора [Соболиная]», б – участок «Большое Голоустное»."
+          },
+          {
+            "source_id": "drive-1oLnz6N8ueMCEL8p2HnPDtT7dx1tAE8RB",
+            "page": 235,
+            "snippet": " … ООО «БГК Гора [Соболиная]» (якор-\nный  резидент), ООО «Байкал-Аква», ООО «Гринвальд Байкал», ООО «УЮТ+»,\nООО «Вектор  Байкальск», ООО  «БратскТурИнвест», ООО  «Байкал-Альпика»,\nООО … "
+          },
+          {
+            "source_id": "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
+            "page": 236,
+            "snippet": " … территория ОЭЗ ТРТ «Ворота Байкала» представлена участками Иркутского и\n      Слюдянского районов Иркутской области («Большое Голоустное» и «Гора [Соболиная]», со­\n       ответственно). Общая площадь данных участков … "
+          },
+          {
+            "source_id": "drive-1oLnz6N8ueMCEL8p2HnPDtT7dx1tAE8RB",
+            "page": 236,
+            "snippet": " … Схема размещения особой экономической зоны в Иркутской области,\n                                         П Н С П Н С                          участок «Гора [Соболиная]»\n\n    В декабре 2021 года четыре компании подали … "
+          },
+          {
+            "source_id": "drive-1RWGLrOzFO32Jxrlv-B2n_PafSFoRVySn",
+            "page": 221,
+            "snippet": " … Схема  размещения  особой  экономической  зоны  в  Иркутской\nобласти, участок «Гора [Соболиная]»\n\n    В 2019 году утверждён Перечень запланированных к строительству объектов инфра-\nструктуры ОЭЗ (Дополнительным … "
+          },
+          {
+            "source_id": "drive-1ScikzOKs0VW7ZZS1XWKyoOfcHeYklUEP",
+            "page": 233,
+            "snippet": " … Схема размещения особой экономической зоны в Иркутской\n                              области, участок «Гора [Соболиная]»\n\n    В декабре 2019 года заключено Соглашение о предоставлении субсидии из феде-\nрального бюджета … "
+          },
+          {
+            "source_id": "drive-1VJ2SzyWQ_xLpzOX-SR09GB7_oAI1GYr0",
+            "page": 235,
+            "snippet": " … Схема размещения особой экономической зоны в Иркутской области, участок «Гора\n[Соболиная]».\n\nв Иркутской области актуализирован Перспективный план развития ОЭЗ на территории Ир-\nкутской области … "
+          },
+          {
+            "source_id": "drive-1ScikzOKs0VW7ZZS1XWKyoOfcHeYklUEP",
+            "page": 231,
+            "snippet": " … В ОЭЗ зарегистрировано восемь резидентов с планируемым объемом инвестиций\nсвыше 2,4 млрд руб. (ООО «БГК «Гора [Соболиная]» (якорный резидент), ООО «Байкал-\nАква», ООО … "
+          },
+          {
+            "source_id": "drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ",
+            "page": 214,
+            "snippet": " … Схема размещения особой экономической зоны в Иркутской области, участок\n«Гора [Соболиная]»\n   В апреле 2018 года началось строительство первой очереди объектов инфраструктуры\nОЭЗ. На завершение … "
+          }
+        ]
+      },
+      "related_articles": [
+        {
+          "id": "tourism-pressure",
+          "scope_relation": "subtopic_of_article",
+          "fact_overlap": [
+            "TW21-WINTER"
+          ]
+        }
+      ]
+    }
+  ],
+  "benchmark": [
+    {
+      "id": "E01",
+      "expected": {
+        "action": "new_article_candidate",
+        "target_id": null
+      },
+      "actual": {
+        "action": "new_article_candidate",
+        "target_id": null,
+        "fact_novelty": "not_established",
+        "whole_article_absence": "not_established"
+      },
+      "correct": true,
+      "basis": "Самостоятельный предмет температуры воздуха; два документа и три факта с ограничениями, не доказательство отсутствия каждой детали в 22 статьях."
+    },
+    {
+      "id": "E02",
+      "expected": {
+        "action": "insufficient",
+        "target_id": null
+      },
+      "actual": {
+        "action": "insufficient",
+        "target_id": null,
+        "fact_novelty": "not_established",
+        "whole_article_absence": "not_established"
+      },
+      "correct": true,
+      "basis": "Нужных экологических показателей по БПТ нет в выбранных карточках; региональные показатели и сноска не заменяют их."
+    },
+    {
+      "id": "E03",
+      "expected": {
+        "action": "extend_existing",
+        "target_id": "forest-fires"
+      },
+      "actual": {
+        "action": "extend_existing",
+        "target_id": "forest-fires",
+        "fact_novelty": "not_established",
+        "whole_article_absence": "not_established"
+      },
+      "correct": true,
+      "basis": "Та же предметная область и ранее описанные меры. Это маршрутизация, не новое дополнение: факт уже покрыт статьёй."
+    },
+    {
+      "id": "E04",
+      "expected": {
+        "action": "subtopic",
+        "target_id": "tourism-pressure"
+      },
+      "actual": {
+        "action": "subtopic",
+        "target_id": "tourism-pressure",
+        "fact_novelty": "not_established",
+        "whole_article_absence": "not_established"
+      },
+      "correct": true,
+      "basis": "Узкий вид туризма внутри существующей статьи; соответствующий сезонный факт уже описан, самостоятельная статья не обоснована."
+    }
+  ],
+  "drafts": [
+    {
+      "path": "docs/drafts/air-temperature-irkutsk-bpt.md",
+      "sha256": "7f87bf3513e51dc4fc96263a9c0ec2201a7d309441dfdd40339f91aec47588f6",
+      "status": "unpublished_editorial_draft",
+      "origin": "source_synthesis_nonexpert_not_model_plan",
+      "expert_review": false,
+      "published": false,
+      "editorial_decision": null,
+      "blocks": [
+        {
+          "heading": "Предмет и территория",
+          "text": "## Предмет и территория\n\nТемпература воздуха характеризует атмосферные условия территории. Она не заменяет температуру озёрной воды, состояние отдельных видов или показатель загрязнения. Здесь рассматривается только часть Иркутской области, включённая в Байкальскую природную территорию, как она описана в климатических подразделах докладов за 2015 и 2022 годы. Это не средняя характеристика всей БПТ и не температура поверхности Байкала. Оба источника прямо называют иркутскую часть территории. [2015: физическая PDF164](../../wiki/sources/drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab.md#page-164) [2022: физическая PDF172](../../wiki/sources/drive-1oYm8VhJ3_eRNdxbrGfLXhf6_vI6s6SJq.md#page-172)\n\nДоклады позволяют сопоставить способы описания конкретных лет и отделить годовую характеристику от месячной. Они пока не дают проверенного ряда по неизменным станциям. Одинаковое название территории не доказывает одинаковый состав пунктов и правила пространственного обобщения.\n\n",
+          "fact_ids": [
+            "C15-ANOM",
+            "C22-NORM"
+          ],
+          "evidence_ids": [
+            "C15",
+            "C22"
+          ],
+          "kind": "scope_and_methodological_limit"
+        },
+        {
+          "heading": "Что сообщают выбранные годы",
+          "text": "## Что сообщают выбранные годы\n\nДоклад за 2015 год сообщает, что средняя годовая температура воздуха на указанной территории превышала многолетние значения на **2–4 °С**. Это отклонение годовой температуры от многолетнего уровня, а не сама абсолютная температура и не разность с другим выбранным годом. В данном фрагменте не раскрыты базовый период нормы, набор станций и правило получения диапазона. Поэтому его нельзя свести к единственной средней величине по всей территории. [2015: PDF164](../../wiki/sources/drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab.md#page-164)\n\nДоклад за 2022 год характеризует среднюю годовую температуру воздуха в иркутской части БПТ как близкую к средним многолетним значениям. Слово «близкая» здесь сохраняется как качественная характеристика источника: оно не переводится в нулевую аномалию. Выбранная страница также описывает год через различия сезонов — умеренно холодную зиму, тёплую весну и прохладное лето. Это описание конкретного года, а не установленная долгосрочная тенденция. [2022: PDF172](../../wiki/sources/drive-1oYm8VhJ3_eRNdxbrGfLXhf6_vI6s6SJq.md#page-172)\n\n| Период наблюдения | Показатель | Сообщение источника | Граница интерпретации |\n| --- | --- | --- | --- |\n| 2015 год | Отклонение средней годовой температуры от многолетних значений | Выше на 2–4 °С | Не абсолютная температура; пространственное обобщение не восстановлено |\n| 2022 год | Соотношение средней годовой температуры с многолетними значениями | Близка к ним | Не автоматически нулевая аномалия |\n| Январь 2022 | Отклонение средней месячной температуры от многолетних значений | Выше на 1–4 °С | Один месяц не характеризует среднее за год |\n\nОснования таблицы — те же физические страницы PDF164 и PDF172; идентификаторы карточек `C15-ANOM`, `C22-NORM`, `C22-JAN` сохранены в [доказательном реестре](../../datasets/evidence_packet_registry.json). Новых строк в observations эта таблица не создаёт.\n\n",
+          "fact_ids": [
+            "C15-ANOM",
+            "C22-NORM",
+            "C22-JAN"
+          ],
+          "evidence_ids": [
+            "C15",
+            "C22",
+            "C22J"
+          ],
+          "kind": "attributed_facts"
+        },
+        {
+          "heading": "Почему месячное и годовое описание не противоречат друг другу",
+          "text": "## Почему месячное и годовое описание не противоречат друг другу\n\nНа той же странице за 2022 год январская средняя месячная температура описана как превышающая многолетние значения на **1–4 °С**. Положительное отклонение в январе не опровергает качественную характеристику годовой температуры как близкой к норме: месячный и годовой показатели имеют разные периоды усреднения. При этом проект не восстанавливает годовой баланс аномалий из нескольких приведённых в тексте месяцев. [2022: PDF172](../../wiki/sources/drive-1oYm8VhJ3_eRNdxbrGfLXhf6_vI6s6SJq.md#page-172)\n\nСопоставлять два годовых описания также следует осторожно. Для расчёта числового изменения нужны одинаковые определения показателя, климатическая норма, станции и пространственные веса. В выбранных выдержках этих сведений недостаточно. Здесь не делается вывод об «охлаждении Байкала», прекращении потепления или влиянии температуры на численность животных.\n\n",
+          "fact_ids": [
+            "C22-JAN",
+            "C22-NORM"
+          ],
+          "evidence_ids": [
+            "C22",
+            "C22J"
+          ],
+          "kind": "fact_and_interpretive_limit"
+        },
+        {
+          "heading": "Неодинаковые сообщения о весне в докладе за 2015 год",
+          "text": "## Неодинаковые сообщения о весне в докладе за 2015 год\n\nКлиматический подраздел сообщает, что весна наступила раньше обычного, и связывает описание с устойчивым переходом средней суточной температуры через ноль. Охотничий подраздел того же доклада называет наступление весны поздним и описывает чередование холодной погоды с мокрым снегом и тёплых периодов. Обе формулировки сохранены. [Климат: PDF164](../../wiki/sources/drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab.md#page-164) [Охотничье хозяйство: PDF205](../../wiki/sources/drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab.md#page-205)\n\nЭто расхождение описаний, но ещё не доказанный конфликт одинаковых измерений. Не установлены общий набор районов, критерий начала весны в охотничьем описании и даты наблюдений, к которым относится его оценка. Возможное различие метеорологического и хозяйственно-биологического понимания сезона — вопрос для проверки, а не готовое объяснение. Выбрать одну формулировку как правильную по этим выдержкам нельзя.\n\n",
+          "fact_ids": [],
+          "evidence_ids": [
+            "SPR15-C",
+            "SPR15-H"
+          ],
+          "kind": "unresolved_descriptions"
+        },
+        {
+          "heading": "Неопределённости и дальнейшая проверка",
+          "text": "## Неопределённости и дальнейшая проверка\n\nДля количественного анализа нужны первичные станционные ряды, периоды климатической нормы, правила расчёта средних и пространственного агрегирования, сведения об изменении сети наблюдений. Для сопоставления сезонных сообщений нужны районы и критерии начала сезона. Пока отсутствующие значения остаются неизвестными; график многолетнего тренда не строится.\n\nГоды 2015 и 2022 обозначают отчётные годы, а конкретные периоды наблюдений отдельно названы в тексте. Январь относится к 2022 году. Годы публикации используемых зеркальных экземпляров не установлены. Их соответствие официальным экземплярам ведомств остаётся отдельной задачей. Проверка точности выдержки и SHA256 не подтверждает автоматически качество климатической методики.\n\n",
+          "fact_ids": [],
+          "evidence_ids": [],
+          "kind": "methodological_gaps"
+        }
+      ]
+    }
+  ],
+  "editorial_decision": null,
+  "follow_up_leads": [
+    {
+      "source_id": "drive-1y2zBx9zaIIBEdcyHf7kwIwOOaA-uaeos",
+      "sha256": "557959d2c8996b990487e9d2acd501ca4048f29e3c7a6fe27e49f8fc1c554fd8",
+      "page": 196,
+      "report_year": 2024,
+      "publication_year": null,
+      "quote": "1. СОСТОЯНИЕ ОКРУЖАЮЩЕЙ СРЕДЫ НА БАЙКАЛЬСКОЙ ПРИРОДНОЙ ТЕРРИТОРИИ\n\n1.3.7.2. Автомобильный транспорт\n(Иркутскстат, Бурятстат, Забайкалкрайстат)\n    Автомобильный транспорт играет значитель-    ных отходов, таких как батареи и покрышки, также\nную роль в современном обществе, обеспечивая    может негативно сказаться на состоянии экоси-\nмобильность и доступность для населения. Одна-     стем. Несомненно, блага автомобильного транс-\nко его влияние на экологическую обстановку вы-    порта превышают потенциальный экологический\nзывает серьезные беспокойства. Автомобили яв-    ущерб от его использования. В пределах Байкаль-\nляются одним из основных источников выбросов     ского региона фиксируется ежегодное увеличение\nпарниковых газов, таких как углекислый газ (CO2),    автомобильного  транспорта, постоянно  зареги-\nметан (CH4) и оксиды азота (NOx). Эти вещества    стрированного в границах трех субъектов Россий-\nспособствуют глобальным изменениям климата.    ской Федерации – Иркутской области, Республики\nКроме того, автомобили выбрасывают загрязня-    Бурятия и Забайкальского края.\nющие вещества, такие как угарный газ (CO), диок-        Источниками данных выступили сведения,\nсид серы (SO2) и твердые частицы, которые ока-    предоставленные  региональными  подразделе-\nзывают  негативное  воздействие  на  качество    ниями Росстата. В скобках указаны данные непо-\nвоздуха и здоровье человека. Автомобильный    средственно по БПТ, в случае их наличия. В неко-\nтранспорт также является источником значитель-    торых случаях предоставление статистических\nного шумового загрязнения, особенно в городах.    данных закрыто на условиях конфиденциально-\nПри эксплуатации автомобилей происходит утечка    сти этих данных. Показатели автомобильного\nмасла, топлива и других химических веществ, что    транспорта по субъектам Российской Федерации\nможет привести к загрязнению почвы и водных    и в границах БПТ в 2022-2024 гг. представлены в\nобъектов. Неправильная утилизация автомобиль-    таблице 1.3.7.4.",
+      "checkpoint_sha256": "94995346df3e5073666247232e3eebe49161533f0d12dc7d9387dac13e18c6a6",
+      "status": "located_not_qualified_as_target_measurement",
+      "reason": "Общие экологические утверждения и описание региональной/муниципальной статистики не являются измеренной экологической нагрузкой автотранспорта по БПТ. Возможна дальнейшая целевая проверка таблицы; пакет E02 после опыта не менялся."
+    }
+  ],
+  "visual_inspections": [
+    {
+      "source_id": "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
+      "pdf_sha256": "26dc3610938c5b8f91e85b4179ee1092f20aa03684135d0534b8ad2ab9629023",
+      "page": 164,
+      "image_path": "data/evidence-packets-8de003f/view-2015-164.png",
+      "image_sha256": "534afe210192f5ba236365433f03ab2fa9ea80c20d483b8cc8872974904ec45f",
+      "matrix_scale": 1.25,
+      "expert_review": false
+    },
+    {
+      "source_id": "drive-1oYm8VhJ3_eRNdxbrGfLXhf6_vI6s6SJq",
+      "pdf_sha256": "6363b7b441d241e4718714b0062a2e011647e14b8219193f0a40a08270568e8e",
+      "page": 225,
+      "image_path": "data/evidence-packets-8de003f/view-2022-225.png",
+      "image_sha256": "3220238ca1df48f314f8b034ce36893c54443bc5cf7c271b2417cb401fadf9d6",
+      "matrix_scale": 1.25,
+      "expert_review": false
+    }
+  ],
+  "post_experiment_projection": {
+    "version": 2,
+    "module": "baikal/packet_context.py",
+    "real_model_tested": false,
+    "change": "Prepared matched_article_claims with exact version-bound quotes; three recorded responses used frozen v1 projection. No repeat or rescore.",
+    "additional_check": "Controlled indicator definitions, units/statistics, all month stems; prepared after generation, not a new model trial."
+  },
+  "summary": {
+    "directions_reviewed": 4,
+    "packets": 6,
+    "source_checked_cards": 17,
+    "exact_excerpts": 19,
+    "structural_cases": 4,
+    "structural_correct": 4,
+    "real_model_responses": 3,
+    "model_action_labels_correct": 2,
+    "model_correct": 1,
+    "model_gate_passed": 1,
+    "model_plans_content_accepted": 0,
+    "new_source_synthesis_drafts": 1,
+    "new_published_articles": 0,
+    "new_reviewed_observations": 0
+  },
+  "tests": {
+    "unittest": 196,
+    "wiki_lint_errors": 0,
+    "scientific_references": 162,
+    "encyclopedia_references": 47,
+    "reviewed_observations": 168,
+    "relative_links_checked": 173,
+    "physical_pdf_anchors_checked": 29,
+    "link_errors": [],
+    "public_copy_without_data_checked": true
+  },
+  "preservation": {
+    "unchanged_protected_tracked_files": 227,
+    "allowed_updated_documents": [
+      "PROGRESS.md",
+      "docs/LLM_EVALUATION.md",
+      "docs/REMAINING.md",
+      "docs/USER_GUIDE.md"
+    ],
+    "published_articles": 22,
+    "reviewed_observations": 168,
+    "checkpoints_size_mtime_unchanged": 3878,
+    "pdf_sha256_unchanged": 11,
+    "prior_drafts_unchanged": [
+      "docs/drafts/ports-and-petroleum.md",
+      "docs/drafts/municipal-wastewater.md"
+    ],
+    "errors": []
+  }
+}

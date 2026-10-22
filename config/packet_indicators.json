@@ -1,0 +1,187 @@
+{
+  "version": 1,
+  "indicators": {
+    "annual_temperature_anomaly": {
+      "definition": "Отклонение средней годовой температуры воздуха от многолетнего уровня",
+      "units": [
+        "degC"
+      ],
+      "statistics": [
+        "range_of_annual_anomaly"
+      ],
+      "message_kinds": [
+        "observed"
+      ]
+    },
+    "annual_temperature_relative_norm": {
+      "definition": "Качественное соотношение средней годовой температуры с многолетним уровнем",
+      "units": [
+        null
+      ],
+      "statistics": [
+        "not_applicable"
+      ],
+      "message_kinds": [
+        "observed"
+      ]
+    },
+    "monthly_temperature_anomaly": {
+      "definition": "Отклонение средней месячной температуры воздуха от многолетнего уровня",
+      "units": [
+        "degC"
+      ],
+      "statistics": [
+        "range_of_monthly_anomaly"
+      ],
+      "message_kinds": [
+        "observed"
+      ]
+    },
+    "received_water_mass": {
+      "definition": "Масса вод, принятых на очистку; не масса загрязнителя и не сброс в озеро",
+      "units": [
+        "t_water"
+      ],
+      "statistics": [
+        "navigation_total"
+      ],
+      "message_kinds": [
+        "observed"
+      ]
+    },
+    "received_oily_water_mass": {
+      "definition": "Масса вод категории нефтесодержащих; пороги категории сохраняются отдельно",
+      "units": [
+        "t_water"
+      ],
+      "statistics": [
+        "navigation_total"
+      ],
+      "message_kinds": [
+        "observed"
+      ]
+    },
+    "treated_water_disposal_route": {
+      "definition": "Атрибутированное описание передачи или сброса очищенных вод",
+      "units": [
+        null
+      ],
+      "statistics": [
+        "not_applicable"
+      ],
+      "message_kinds": [
+        "observed"
+      ]
+    },
+    "total_vehicle_stock": {
+      "definition": "Число всех автомобилей на указанной территории",
+      "units": [
+        "thousand_cars"
+      ],
+      "statistics": [
+        "regional_total"
+      ],
+      "message_kinds": [
+        "observed"
+      ]
+    },
+    "passenger_car_ownership": {
+      "definition": "Число легковых автомобилей на тысячу жителей",
+      "units": [
+        "cars_per_1000_people"
+      ],
+      "statistics": [
+        "ownership_ratio"
+      ],
+      "message_kinds": [
+        "observed"
+      ]
+    },
+    "territorial_redaction": {
+      "definition": "Примечание о территориальном охвате и непубликации данных",
+      "units": [
+        null
+      ],
+      "statistics": [
+        "not_applicable"
+      ],
+      "message_kinds": [
+        "methodological_note"
+      ]
+    },
+    "population_estimate": {
+      "definition": "Оценка числа животных конкретного вида, не добыча/лимит",
+      "units": [
+        "individuals"
+      ],
+      "statistics": [
+        "population_estimate"
+      ],
+      "message_kinds": [
+        "observed"
+      ]
+    },
+    "survey_method_limitation": {
+      "definition": "Ограничение метода учёта, не ошибка каждого показателя",
+      "units": [
+        null
+      ],
+      "statistics": [
+        "not_applicable"
+      ],
+      "message_kinds": [
+        "methodological_note"
+      ]
+    },
+    "completed_preventive_actions": {
+      "definition": "Выполненные меры профилактики, не предотвращённый ущерб",
+      "units": [
+        null
+      ],
+      "statistics": [
+        "not_applicable"
+      ],
+      "message_kinds": [
+        "completed_action"
+      ]
+    },
+    "seasonal_recreational_use": {
+      "definition": "Качественное описание сезонного вида посещения, не измеренный ущерб",
+      "units": [
+        null
+      ],
+      "statistics": [
+        "not_applicable"
+      ],
+      "message_kinds": [
+        "observed"
+      ]
+    },
+    "road_pollutant_emission": {
+      "definition": "Выброс конкретного загрязнителя автотранспортом за период; в текущих карточках отсутствует",
+      "units": [],
+      "statistics": [],
+      "message_kinds": []
+    },
+    "transport_environmental_pressure": {
+      "definition": "Требует отдельного операционального определения воздействия; число машин само по себе его не заменяет",
+      "units": [],
+      "statistics": [],
+      "message_kinds": []
+    }
+  },
+  "month_stems": {
+    "1": "январ",
+    "2": "феврал",
+    "3": "март",
+    "4": "апрел",
+    "5": "мае",
+    "6": "июн",
+    "7": "июл",
+    "8": "август",
+    "9": "сентябр",
+    "10": "октябр",
+    "11": "ноябр",
+    "12": "декабр"
+  }
+}
