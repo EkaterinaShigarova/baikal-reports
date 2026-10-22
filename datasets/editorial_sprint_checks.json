@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "baseline_commit": "d048220796db033c49c5b0ddb159e906bc530efe",
+  "scope": "Source/editorial review and unpublished draft preparation; no expert or publication approval.",
+  "pins": {
+    "baikal/draft_review.py": "3b3d84820dfb03330e15e1676d12e78a1abfd4d946c2cf0ed7af4d52c1160cce",
+    "scripts/check_editorial_review.py": "7c6533b2f35a3c14436f254349c205f687d5d48d94083b0c592630de8e3489cf",
+    "scripts/audit_pipeline_transfer.py": "6b2a41b75260b07c73a1debf660162be86fe3c9d08a819fb66a275c550456365",
+    "datasets/editorial_scientific_review.json": "4dc477a35e7aff1d521eb582abae2cf04a4f1061384e7b127817cb802be9426f",
+    "datasets/editorial_draft_provenance.json": "d0a3169e8088b1960636167f005351c174ff996f085df58aa2f1e98ebbd7d36a",
+    "datasets/pipeline_transfer_audit.json": "48c188d834d6c6f3dd22747eaa983a19ddfe31da9af12736c9a51c4ea262861a"
+  },
+  "checks": {
+    "unit_tests_passed": 177,
+    "unit_tests_failed": 0,
+    "wiki_lint_errors": 0,
+    "wiki_lint_existing_warnings": "Missing title-verified processed sources for 2003–2014 and 2026 remain.",
+    "scientific_references_checked": 162,
+    "encyclopedia_references_checked": 47,
+    "reviewed_observations_checked": 168,
+    "new_source_excerpt_references_checked": 18,
+    "source_documents": 8,
+    "unique_physical_source_pages": 14,
+    "targeted_visual_pdf_pages": 6,
+    "relative_document_links_checked": 178,
+    "physical_page_links_checked": 37,
+    "public_copy_without_private_data_tested": true
+  },
+  "preservation": {
+    "wiki_files": 49,
+    "analytical_articles": 22,
+    "reviewed_observations": 168,
+    "page_checkpoints": 3878,
+    "original_pdfs": 11,
+    "unchanged_protected_files": 170,
+    "checkpoint_method": "size and mtime_ns",
+    "original_pdf_method": "SHA256"
+  },
+  "results": {
+    "existing_candidates_recommended_for_editorial_review": 3,
+    "new_article_drafts": 2,
+    "published_new_articles": 0,
+    "new_llm_requests": 0,
+    "new_verified_observation_rows": 0
+  },
+  "expert_review": false,
+  "editorial_decision": null,
+  "published": false
+}

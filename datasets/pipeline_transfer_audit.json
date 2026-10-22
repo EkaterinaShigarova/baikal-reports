@@ -1,0 +1,26 @@
+{
+  "test_only": true,
+  "real_reports_downloaded": 0,
+  "real_corpus_pages_processed": 0,
+  "synthetic_pages": 2,
+  "first_extracted_pages": 1,
+  "resumed_extracted_pages": 2,
+  "cached_pages_on_resume": 1,
+  "first_checkpoint_preserved": true,
+  "synthetic_pdf_sha256": "6e361273837d1b8e28db3b3d8d112bb0d4d3183fe3ed55450ce4f72e35af5b77",
+  "new_topic_config_only": "forest-transfer-control",
+  "proposals": 1,
+  "repeated_page_proposals": 0,
+  "unmatched_routes_reported": 2,
+  "generic_comparison": "same_fact",
+  "notes_preserved": true,
+  "reviewed_observations_preserved": true,
+  "published": false,
+  "llm_called": false,
+  "limits": [
+    "Tests cached local PDF extraction/resume and config-based lexical proposals, not a fresh Internet download.",
+    "Synthetic text is not a state report; title/year/authenticity and scientific extraction were not validated.",
+    "No expert judgment, arbitrary-topic model reasoning or fully automatic article creation is demonstrated."
+  ],
+  "script_sha256": "6b2a41b75260b07c73a1debf660162be86fe3c9d08a819fb66a275c550456365"
+}
