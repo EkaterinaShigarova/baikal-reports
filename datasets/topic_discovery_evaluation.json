@@ -1,0 +1,693 @@
+{
+  "experiment_id": "e30cb539868b5c5c6582d9a470f32fc4995ff5cc15acf5e5f2b0bbbcccd514da",
+  "cases": [
+    {
+      "case_id": "D01",
+      "run_id": "e25ff71cbdfa8f744ca763ef3ac9f66c7b553d05a1a30d3b79c317a9370a64b5",
+      "path": "data/wiki_updates/topic_runs/e25ff71cbdfa8f744ca763ef3ac9f66c7b553d05a1a30d3b79c317a9370a64b5.json",
+      "raw_response_sha256": "00fa4b43265fc1ebc939e383e89a664b9c56f1a97cd1144d74a257756fa16b80",
+      "parsed": {
+        "decision": "new_article",
+        "target_id": null,
+        "title": "Порты Южного Байкала и нефтяные углеводороды",
+        "reason": "Предмет различается от существующих статей, так как фокусируется на конкретных портах и нефтепродуктах, что не охвачено в других статьях.",
+        "relations": [
+          {
+            "article_id": "north-baikal-water",
+            "relation": "overlaps"
+          },
+          {
+            "article_id": "water-quality-evidence",
+            "relation": "overlaps"
+          }
+        ],
+        "sections": [
+          {
+            "kind": "observations",
+            "evidence_ids": [
+              "P16",
+              "P21",
+              "P25"
+            ]
+          },
+          {
+            "kind": "limitations",
+            "evidence_ids": [
+              "P16",
+              "P21",
+              "P25",
+              "P16",
+              "P21",
+              "P25"
+            ]
+          }
+        ],
+        "limitation_ids": [
+          "L1",
+          "L2",
+          "L3"
+        ]
+      },
+      "check": {
+        "errors": [
+          "Separate subject scope not identified"
+        ],
+        "evidence_ids": [
+          "P16",
+          "P21",
+          "P25"
+        ],
+        "program_gate_passed": false,
+        "semantic_review_required": true,
+        "whole_wiki_novelty": "unverified",
+        "published": false,
+        "expert_review": false,
+        "editorial_decision": null
+      },
+      "errors": [],
+      "elapsed_seconds": 247.631,
+      "usage": {
+        "completion_tokens": 228,
+        "prompt_tokens": 4814,
+        "total_tokens": 5042,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "retained": null,
+      "context_preflight": {
+        "prompt_tokens_native": 4814,
+        "output_tokens_reserved": 950,
+        "safety_reserve": 128,
+        "context_tokens": 8192,
+        "generation_requests": 0
+      },
+      "content_review": {
+        "decision_matches_preregistered": true,
+        "source_ids_valid": true,
+        "essential_evidence_selected": true,
+        "outline_sufficient": false,
+        "unsupported_claims": [
+          {
+            "quote": "что не охвачено в других статьях",
+            "issue": "Отсутствие во всех статьях не установлено частичным контекстом."
+          }
+        ],
+        "confirmed_misinterpretations": [],
+        "explanation": "Направление отдельной портовой статьи совпало с эталоном. Связи overlaps не передают заявленное различие предмета; план повторяет те же источники в двух разделах. Выбор north-baikal-water объясняется общей PDF161, а не совпадением территории.",
+        "editorial_recommendation": "revise_not_approved",
+        "review_method": "source_and_article_cross_check_nonexpert",
+        "human_approval": null,
+        "expert_review": false
+      }
+    },
+    {
+      "case_id": "D02",
+      "run_id": "5b55f9956fef5841b0eb8d80c19f6538b5c822e7f17107068f71ab86ddebcdac",
+      "path": "data/wiki_updates/topic_runs/5b55f9956fef5841b0eb8d80c19f6538b5c822e7f17107068f71ab86ddebcdac.json",
+      "raw_response_sha256": "ddfc6e421087787c2fd101f4435e9737193dfa01faeba0686c0b1dc84eb009e2",
+      "parsed": {
+        "decision": "new_article",
+        "target_id": null,
+        "title": "Коммунальные сточные воды Байкальска: сброс, контроль и влияние",
+        "reason": "Предмет различается от существующих статей, фокусирующихся на других аспектах Байкала.",
+        "relations": [
+          {
+            "article_id": "water-quality-evidence",
+            "relation": "overlaps"
+          },
+          {
+            "article_id": "bcbk-legacy",
+            "relation": "overlaps"
+          }
+        ],
+        "sections": [
+          {
+            "kind": "methods",
+            "evidence_ids": [
+              "S16",
+              "S21OP",
+              "S21VOL",
+              "S21AB",
+              "PH24",
+              "PH25"
+            ]
+          },
+          {
+            "kind": "observations",
+            "evidence_ids": [
+              "S16",
+              "S21OP",
+              "S21VOL",
+              "S21AB",
+              "PH24",
+              "PH25"
+            ]
+          },
+          {
+            "kind": "limitations",
+            "evidence_ids": [
+              "PH24",
+              "PH25",
+              "S21OP",
+              "S21VOL",
+              "S21AB",
+              "S16"
+            ]
+          }
+        ],
+        "limitation_ids": [
+          "L1",
+          "L2",
+          "L3"
+        ]
+      },
+      "check": {
+        "errors": [
+          "Separate subject scope not identified"
+        ],
+        "evidence_ids": [
+          "PH24",
+          "PH25",
+          "S16",
+          "S21AB",
+          "S21OP",
+          "S21VOL"
+        ],
+        "program_gate_passed": false,
+        "semantic_review_required": true,
+        "whole_wiki_novelty": "unverified",
+        "published": false,
+        "expert_review": false,
+        "editorial_decision": null
+      },
+      "errors": [],
+      "elapsed_seconds": 308.155,
+      "usage": {
+        "completion_tokens": 282,
+        "prompt_tokens": 6188,
+        "total_tokens": 6470,
+        "prompt_tokens_details": {
+          "cached_tokens": 460
+        }
+      },
+      "retained": null,
+      "context_preflight": {
+        "prompt_tokens_native": 6188,
+        "output_tokens_reserved": 950,
+        "safety_reserve": 128,
+        "context_tokens": 8192,
+        "generation_requests": 0
+      },
+      "content_review": {
+        "decision_matches_preregistered": true,
+        "source_ids_valid": true,
+        "essential_evidence_selected": true,
+        "outline_sufficient": false,
+        "unsupported_claims": [
+          {
+            "quote": "фокусирующихся на других аспектах Байкала",
+            "issue": "Не раскрыто, что коммунальные стоки и контроль уже описаны в bcbk-legacy и water-quality-evidence. Различие нового узкого предмета остаётся редакционной гипотезой."
+          }
+        ],
+        "confirmed_misinterpretations": [],
+        "explanation": "Направление совпало с эталоном, но почти все фрагменты повторены в каждом разделе. Обе версии фенолов сохранены выбором ID и обязательного ограничения, не обнаружены моделью самостоятельно. Влияние в названии шире доказанного показателя эффективности.",
+        "editorial_recommendation": "revise_not_approved",
+        "review_method": "source_and_article_cross_check_nonexpert",
+        "human_approval": null,
+        "expert_review": false
+      }
+    },
+    {
+      "case_id": "D03",
+      "run_id": "2c4eca2f6f63bd774adf9c3f4bf2915a8be271faae0d3a5a63213be7e2b1bdba",
+      "path": "data/wiki_updates/topic_runs/2c4eca2f6f63bd774adf9c3f4bf2915a8be271faae0d3a5a63213be7e2b1bdba.json",
+      "raw_response_sha256": "327761f0c6ab5f250048cfec351bb6ff3ecb08a699217224a93fcca992170074",
+      "parsed": {
+        "decision": "new_article",
+        "target_id": null,
+        "title": "Береговое обследование байкальской нерпы и методы оценки популяции",
+        "reason": "Предмет различается от существующих статей, так как фокусируется на методах и масштабе обследования, что не охвачено в текущих статьях.",
+        "relations": [
+          {
+            "article_id": "baikal-seal",
+            "relation": "overlaps"
+          },
+          {
+            "article_id": "environmental-problems",
+            "relation": "overlaps"
+          }
+        ],
+        "sections": [
+          {
+            "kind": "methods",
+            "evidence_ids": [
+              "COAST18",
+              "N18"
+            ]
+          },
+          {
+            "kind": "observations",
+            "evidence_ids": [
+              "COAST18",
+              "N18"
+            ]
+          }
+        ],
+        "limitation_ids": [
+          "L1",
+          "L2"
+        ]
+      },
+      "check": {
+        "errors": [
+          "New article needs multiple documents and no existing target",
+          "Separate subject scope not identified"
+        ],
+        "evidence_ids": [
+          "COAST18",
+          "N18"
+        ],
+        "program_gate_passed": false,
+        "semantic_review_required": true,
+        "whole_wiki_novelty": "unverified",
+        "published": false,
+        "expert_review": false,
+        "editorial_decision": null
+      },
+      "errors": [],
+      "elapsed_seconds": 190.872,
+      "usage": {
+        "completion_tokens": 235,
+        "prompt_tokens": 4088,
+        "total_tokens": 4323,
+        "prompt_tokens_details": {
+          "cached_tokens": 455
+        }
+      },
+      "retained": null,
+      "context_preflight": {
+        "prompt_tokens_native": 4088,
+        "output_tokens_reserved": 950,
+        "safety_reserve": 128,
+        "context_tokens": 8192,
+        "generation_requests": 0
+      },
+      "content_review": {
+        "decision_matches_preregistered": false,
+        "source_ids_valid": true,
+        "essential_evidence_selected": true,
+        "outline_sufficient": false,
+        "unsupported_claims": [],
+        "confirmed_misinterpretations": [
+          {
+            "quote": "фокусируется на методах и масштабе обследования, что не охвачено в текущих статьях",
+            "issue": "В переданном абзаце baikal-seal уже описаны учёт, разрезы, площадки и ошибка приплода. Только конкретная береговая деталь отсутствует по прежнему полному разбору статьи."
+          }
+        ],
+        "explanation": "Модель предложила дубликат вместо дополнения. Два фрагмента одного доклада не являются несколькими документами; gate это отклонил.",
+        "editorial_recommendation": "reject_duplicate_refer_existing_candidate",
+        "review_method": "source_and_article_cross_check_nonexpert",
+        "human_approval": null,
+        "expert_review": false
+      }
+    },
+    {
+      "case_id": "D04",
+      "run_id": "e8b2ae5017d3783af633d11b0ecf91fbe6e28f289146960d318ecf333eb282c0",
+      "path": "data/wiki_updates/topic_runs/e8b2ae5017d3783af633d11b0ecf91fbe6e28f289146960d318ecf333eb282c0.json",
+      "raw_response_sha256": "a12ca9f90d9c88e07a35a234ebf839ffeb68e6910642815471249c24f3d1360e",
+      "parsed": {
+        "decision": "new_article",
+        "target_id": null,
+        "title": "Очистные сооружения Байкальска: эффективность удаления загрязняющих веществ",
+        "reason": "Предмет различается от существующих статей, так как они фокусируются на других аспектах экологии Байкала, в то время как новая статья будет посвящена конкретно эффективности очистных сооружений.",
+        "relations": [
+          {
+            "article_id": "bcbk-legacy",
+            "relation": "overlaps"
+          },
+          {
+            "article_id": "river-inputs-2025",
+            "relation": "overlaps"
+          }
+        ],
+        "sections": [
+          {
+            "kind": "methods",
+            "evidence_ids": [
+              "S21VOL"
+            ]
+          },
+          {
+            "kind": "limitations",
+            "evidence_ids": [
+              "S21VOL"
+            ]
+          },
+          {
+            "kind": "comparison",
+            "evidence_ids": [
+              "S21VOL"
+            ]
+          }
+        ],
+        "limitation_ids": [
+          "L1"
+        ]
+      },
+      "check": {
+        "errors": [
+          "New article needs multiple documents and no existing target",
+          "Separate subject scope not identified"
+        ],
+        "evidence_ids": [
+          "S21VOL"
+        ],
+        "program_gate_passed": false,
+        "semantic_review_required": true,
+        "whole_wiki_novelty": "unverified",
+        "published": false,
+        "expert_review": false,
+        "editorial_decision": null
+      },
+      "errors": [],
+      "elapsed_seconds": 160.718,
+      "usage": {
+        "completion_tokens": 232,
+        "prompt_tokens": 3492,
+        "total_tokens": 3724,
+        "prompt_tokens_details": {
+          "cached_tokens": 454
+        }
+      },
+      "retained": null,
+      "context_preflight": {
+        "prompt_tokens_native": 3492,
+        "output_tokens_reserved": 950,
+        "safety_reserve": 128,
+        "context_tokens": 8192,
+        "generation_requests": 0
+      },
+      "content_review": {
+        "decision_matches_preregistered": false,
+        "source_ids_valid": true,
+        "essential_evidence_selected": true,
+        "outline_sufficient": false,
+        "unsupported_claims": [],
+        "confirmed_misinterpretations": [
+          {
+            "quote": "новая статья будет посвящена конкретно эффективности очистных сооружений",
+            "issue": "Единственный объём сброса не измеряет удаление загрязнений; нет входных/выходных концентраций и методики, что прямо указано в пакете. Фрагмент не подтверждает разделы о методах/сравнении эффективности."
+          }
+        ],
+        "explanation": "Следовало отложить тему заявленной эффективности. Модель сохранила ограничение по ID, но не применила его к выбору темы и плана.",
+        "editorial_recommendation": "defer_missing_evidence",
+        "review_method": "source_and_article_cross_check_nonexpert",
+        "human_approval": null,
+        "expert_review": false
+      }
+    }
+  ],
+  "runtime": {
+    "model_bundle": {
+      "profile": "qwen25-7b-q4km",
+      "repo": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f",
+      "license": "apache-2.0",
+      "files": [
+        {
+          "filename": "qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+          "bytes": 3993201344,
+          "sha256": "dfce12e3862a5283ccfb88221b48480e58745165de856439950d0f22590580db"
+        },
+        {
+          "filename": "qwen2.5-7b-instruct-q4_k_m-00002-of-00002.gguf",
+          "bytes": 689872288,
+          "sha256": "539cf93f78e887edea1c04e2d7d8cdaca9d01dae9c9025bcb8accbe29df3d72a"
+        }
+      ],
+      "total_bytes": 4683073632
+    },
+    "server_sha256": "ea2082a6ea129e3fbe0e32c4a57cf0fd754572b5a0fb824b89b9ed80b64836f6",
+    "server_version": "version: 0.7.0-dev (build 1, commit 620d222)\nbuilt with GNU 14.2.0 for Linux x86_64",
+    "backend_probe": {
+      "exit_code": 0,
+      "output": "Available devices:\n  (none)"
+    },
+    "threads": 4,
+    "context_tokens": 8192,
+    "gpu_layers": 0,
+    "resources_before": {
+      "memory_limit_bytes": 34359738368,
+      "memory_available_bytes": 23934451712,
+      "disk_free_bytes": 22110326784,
+      "cpu_affinity_count": 5,
+      "cpu_quota": "400000 100000"
+    },
+    "server_log_path": "data/llm-evaluation/source-first-server-1792695582221397816.log",
+    "timeout_seconds": 600,
+    "command": [
+      "/workspace/baikal-reports/data/llm-runtime/build-avx2/bin/llama-server",
+      "-m",
+      "/workspace/baikal-reports/data/models/qwen25-7b-q4km/qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+      "--alias",
+      "baikal-local-evaluation",
+      "-c",
+      "8192",
+      "-t",
+      "4",
+      "-tb",
+      "4",
+      "-ngl",
+      "0",
+      "--parallel",
+      "1",
+      "--batch-size",
+      "256",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "33501"
+    ],
+    "server_wall_seconds": 911.242,
+    "peak_child_rss_kib": 9126724
+  },
+  "status": "completed",
+  "published": false,
+  "expert_review": false,
+  "version": 1,
+  "baseline_commit": "f57c3755b201cff0df0995c4c559880aac412292",
+  "reviewed_at_utc": "2026-10-22T19:16:29.639986+00:00",
+  "pins": {
+    "baikal/topic_discovery.py": "ebacb608e77de8214cb6d9d37f4639abff60573e7c9248f93113e26e8a911017",
+    "scripts/discover_topics.py": "c4fc38b63d49a53ec72c194771d421abebbb5d96bcf2f6fd76e524e291922b11",
+    "datasets/topic_discovery_tasks.json": "546e84ead9fac361332827b89413dd2d2e6402fc36e7e3bb438a4210555cc6b3",
+    "docs/TOPIC_DISCOVERY_PROTOCOL.md": "793c8234ae42e0a1c369d9b4297c46295f90b4da2bbe9d92920d3ca17f764c1f",
+    "config/encyclopedia.json": "661a45ae734590f395497ff85e2501b50eb1b797faa260d2625e44707feb5703",
+    "config/sources.json": "298e339a85f31668cd0668012119796f8be331436faafe185a11861e81e7aa51"
+  },
+  "model_profile": {
+    "id": "qwen25-7b-q4km",
+    "repo": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+    "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f",
+    "license": "apache-2.0",
+    "max_total_bytes": 6442450944,
+    "memory_limit_min_bytes": 17179869184,
+    "memory_available_min_bytes": 17179869184,
+    "disk_reserve_bytes": 3221225472,
+    "request_timeout_seconds": 600,
+    "files": [
+      {
+        "filename": "qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+        "bytes": 3993201344,
+        "sha256": "dfce12e3862a5283ccfb88221b48480e58745165de856439950d0f22590580db"
+      },
+      {
+        "filename": "qwen2.5-7b-instruct-q4_k_m-00002-of-00002.gguf",
+        "bytes": 689872288,
+        "sha256": "539cf93f78e887edea1c04e2d7d8cdaca9d01dae9c9025bcb8accbe29df3d72a"
+      }
+    ]
+  },
+  "editorial_decision": null,
+  "prior_drafts": {
+    "docs/drafts/ports-and-petroleum.md": "c32f367d178900efedd0ab563884006a6a6d60e2d9b77907702ee515d93b80bf",
+    "docs/drafts/municipal-wastewater.md": "06eed8c5b0f9efa9a6a47b3021053d429e3048a8e07bd465e728a70b102c0964"
+  },
+  "scan": {
+    "pages_read": 3878,
+    "pages_excluded": 133,
+    "repeated_heading_leads": 159,
+    "local_report_sha256": "a5e68e4f9b9efed6d3e7e7c96eee6dad88c813b4f447ecbd68915da9aecf3f6e",
+    "additional_leads": [
+      {
+        "key": "автомобильный транспорт",
+        "distinct_documents": 10,
+        "example_evidence": [
+          {
+            "source_id": "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
+            "sha256": "26dc3610938c5b8f91e85b4179ee1092f20aa03684135d0534b8ad2ab9629023",
+            "page": 233,
+            "heading": "Автомобильный транспорт",
+            "quote": "    1.4.8.2.  Автомобильный транспорт\n              (Иркутскстат; Бурятстат; Забайкалкрайстат; ГУ МВД России по Иркутской области;\n         УОООП МВД по Республике Бурятия; УМВД России по Забайкальскому краю)\n   В Иркутской области в 2015 г. насчитывалось 912,7 тыс. автомобилей, из них находя­                                                                 1.4\nщихся в собственности юридических лиц – 90,2 тыс., в собственности физических лиц –\n822,5 тыс. Автотранспортом общего пользования перевезено грузов 65,2 млн тонн, что на\n47 % меньше, чем в 2014 г. (123,4 млн тонн), а пассажиров 59 млн человек, что на 18 % мень­\nше, чем в 2014 г. (72,3 млн человек).\n   В Республике Бурятия в 2015 г. насчитывалось 358,5 тыс. автомобилей, из",
+            "checkpoint_sha256": "35df782b80f15c97409c1367bae1bc90afc73effe98bf36074befa7903c77680"
+          },
+          {
+            "source_id": "drive-1oYm8VhJ3_eRNdxbrGfLXhf6_vI6s6SJq",
+            "sha256": "6363b7b441d241e4718714b0062a2e011647e14b8219193f0a40a08270568e8e",
+            "page": 227,
+            "heading": "Автомобильный транспорт",
+            "quote": "\n                     1.3.7.2. Автомобильный транспорт\n               (Иркутскстат, Забайкалкрайстат, Бурятстат,\n           ФГБУН Институт географии им. В.Б. Сочавы СО РАН)\n\n    В Иркутской области в отчетном году насчитывалось 10,6 тыс. грузовых автомоби-\nлей. Автомобильным транспортом в 2022 году перевезено 31,8 млн т грузов, что на 7,1 %\nменьше, чем в прошлом году (34,2 млн т), 95 млн пассажиров, что почти соответствует\nуровню 2021 г. (95,1 млн чел.). В Иркутской области в 2022 году на 1000 чел. приходилось\n270 легковых автомобилей (в 2021 г. – 268).\n    В Республике Бурятия в 2022 году насчитывалось 3,2 тыс. грузовых автомобилей.\nАвтомобильным транспортом в отчетном году перевезено 6,6 млн т грузов (на 22,2 %\nбольше, чем в 2021 году (5,4 мл",
+            "checkpoint_sha256": "9a243de431417408227e361ba96e4e86b30b0d517835713f3abb95b61af8611b"
+          }
+        ],
+        "status": "unreviewed_research_lead_not_new_article"
+      },
+      {
+        "key": "охотничье хозяйство",
+        "distinct_documents": 10,
+        "example_evidence": [
+          {
+            "source_id": "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
+            "sha256": "26dc3610938c5b8f91e85b4179ee1092f20aa03684135d0534b8ad2ab9629023",
+            "page": 204,
+            "heading": "Охотничье хозяйство",
+            "quote": "          1.4.5.  Охотничье хозяйство\n                  (Служба по охране и использованию животного мира Иркутской области; Служба по\n                   охране и  использованию  животного мира  Республики  Бурятия;  Госохотслужба\n1.4               Забайкальского края)\n          Ведение охотничьего хозяйства на Байкальской природной территории регламентиру­\n      ется Статьей 36 «Использование лесов для осуществления видов деятельности в сфере\n      охотничьего хозяйства» Лесного кодекса Российской Федерации от 04.12.2006 г. № 200-ФЗ\n      и Федеральным законом от 24.07.2009 г. № 209-ФЗ «Об охоте и о сохранении охотничьих ре­\n      сурсов и о внесении изменений в отдельные законодательные акты Российской Федерации».\n         Пра",
+            "checkpoint_sha256": "1c47dc02183e4b0a26a6ed29bbb4846763a0320a66e26ce64a78ddd8b1456bab"
+          },
+          {
+            "source_id": "drive-1oYm8VhJ3_eRNdxbrGfLXhf6_vI6s6SJq",
+            "sha256": "6363b7b441d241e4718714b0062a2e011647e14b8219193f0a40a08270568e8e",
+            "page": 198,
+            "heading": "Охотничье хозяйство",
+            "quote": "\n                    1.3.4. Охотничье хозяйство\n          (Министерство лесного комплекса Иркутской области;\n Служба по охране и использованию объектов животного мира Иркутской обла-\n сти; Республиканская служба по охране, контролю и регулированию использова-\n   ния объектов животного мира, отнесенных к объектам охоты, контролю и\n надзору в сфере природопользования (Бурприроднадзор) Министерства природ-\nных ресурсов и экологии Республики Бурятия; Министерство природных ресурсов\n                            Забайкальского края)\n\n     Правовое регулирование в области охоты и сохранения охотничьих ресурсов на Бай-\nкальской природной территории регламентируется:\n     – Федеральным законом от 24.07.2009 № 209-ФЗ «Об охоте и о сохранении охотни",
+            "checkpoint_sha256": "5cd7633ad3b2a5aa6f2f9b238a10d7eec76bbb04b6da727a7a0d41e0499cf8bd"
+          }
+        ],
+        "status": "unreviewed_research_lead_not_new_article"
+      },
+      {
+        "key": "байкальский флот",
+        "distinct_documents": 10,
+        "example_evidence": [
+          {
+            "source_id": "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
+            "sha256": "26dc3610938c5b8f91e85b4179ee1092f20aa03684135d0534b8ad2ab9629023",
+            "page": 229,
+            "heading": "Байкальский флот",
+            "quote": "    1.4.8.1.  Байкальский флот\n             (Восточно-Сибирский филиал ФАУ «Российский Речной Регистр»; Центр Государ­  1.4             ственной инспекции по маломерным судам МЧС России по Иркутской области; Центр\n             Государственной инспекции по маломерным судам ГУ МЧС России по Республике Буря­\n               тия; ФБУ «Администрация Байкало-Ангарского бассейна внутренних водных путей»;\n         ПАО «Восточно-Сибирское речное пароходство»)\n   Внутренний водный транспорт\n    Озеро Байкал входит в «Перечень внутренних водных путей Российской Федерации»,\nутвержденный распоряжением Правительства Российской Федерации от 19.12.2002  г.\n№ 1800-р, относится ко II группе водных путей с их протяженностью 2356 км.\n   Флот",
+            "checkpoint_sha256": "bcb6306514236c4a47ae8823a9d15ba56c85946a40ad0b6ad982839b332dd5b8"
+          },
+          {
+            "source_id": "drive-1oYm8VhJ3_eRNdxbrGfLXhf6_vI6s6SJq",
+            "sha256": "6363b7b441d241e4718714b0062a2e011647e14b8219193f0a40a08270568e8e",
+            "page": 223,
+            "heading": "Байкальский флот",
+            "quote": "\n                            1.3.7.1. Байкальский флот\n      (Восточно-Сибирский филиал Российского классификационного общества,\n              Главное управление МЧС России по Республики Бурятия,\n  ФБУ «Администрация Байкало-Ангарского бассейна внутренних водных путей»,\n              АО «Восточно-Сибирское речное пароходство»)\n\n     Озеро Байкал входит в «Перечень внутренних водных путей Российской Федерации»,\nутвержденный     распоряжением     Правительства     Российской     Федерации\nот 19.12.2002 № 1800-р, относится ко  II группе водных путей с их протяженностью\n2 356,6 км.\n     Флот, задействованный на озере Байкал и состоящий в 2022 году на классификаци-\nонном учете в Восточно-Сибирском филиале Российского классификационного общества\n(ВСФ",
+            "checkpoint_sha256": "46835e50986ee20a5f08fa40237e389837068306dd6cc1dbb3213d930e376057"
+          }
+        ],
+        "status": "unreviewed_research_lead_not_new_article"
+      },
+      {
+        "key": "климатические условия",
+        "distinct_documents": 10,
+        "example_evidence": [
+          {
+            "source_id": "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
+            "sha256": "26dc3610938c5b8f91e85b4179ee1092f20aa03684135d0534b8ad2ab9629023",
+            "page": 164,
+            "heading": "Климатические условия",
+            "quote": "          1.2.8.  Климатические условия\n                (ФГБУ «Иркутское УГМС» Росгидромета; ФГБУ «Забайкальское УГМС» Росгидромета)\n       В 2 0 1 5 г. в ч а с т и т е р р и т о р и и Иркут ской област и, входящей в Байкаль­\n1.2  скую природную территорию, средняя годовая температура воздуха превысила многолетние\n      значения на 2–4 °С за счет значительных положительных температурных аномалий, отмечав­\n     шихся большую часть года.\n         Первые зимние месяцы года были теплее обычного, средняя месячная температура воз­\n      духа превысила многолетние значения на 2–7 °С. В периоды похолоданий в южной части и\n      на побережье Байкала, температура воздуха в ночные часы понижалась до –22 °С, – 30 °С.\n      Отмечалось 3–6 дне",
+            "checkpoint_sha256": "d8b99acb0d677cfa893c03c5e636694dcde2f76b6eb6179d1ac6197527683e6b"
+          },
+          {
+            "source_id": "drive-1oYm8VhJ3_eRNdxbrGfLXhf6_vI6s6SJq",
+            "sha256": "6363b7b441d241e4718714b0062a2e011647e14b8219193f0a40a08270568e8e",
+            "page": 172,
+            "heading": "Климатические условия",
+            "quote": "\n                  1.2.8. Климатические условия\n        (ФГБУ «Иркутское УГМС» Росгидромета, Бурятский ЦГМС – филиал\nФГБУ «Забайкальское УГМС» Росгидромета, ФГБУ «Забайкальское УГМС» Росгидромета)\n     Средняя годовая температура воздуха на части территории Иркутской области, вхо-\nдящей в Байкальскую природную территорию, в 2022 году была близка к средним много-\nлетним значениям и составила –3, +2 °С. В целом год характеризовался умеренно холод-\nной зимой, теплой весной и прохладным летом.\n    В январе средняя месячная температура воздуха превысила средние многолетние\nзначения на 1–4 С. В периоды похолоданий в ночные часы температура воздуха понижа-\nлась до –30 С, –35 С, в северной и средней частях экологической зоны атмосферного\nвлия",
+            "checkpoint_sha256": "ed6cbbd8b38f34a4a2db40cc845db94ccf66be090e96736f53e0b692a00cbec3"
+          }
+        ],
+        "status": "unreviewed_research_lead_not_new_article"
+      }
+    ],
+    "new_scientifically_confirmed_topics": 0
+  },
+  "summary": {
+    "real_model_responses": 4,
+    "correct_topic_decisions": 2,
+    "incorrect_topic_decisions": 2,
+    "program_gate_passed": 0,
+    "new_model_markdown_plans": 0,
+    "editorially_approved": 0,
+    "new_published_articles": 0,
+    "new_reviewed_observations": 0,
+    "note": "Controlled small topic-triage set, not general accuracy or fact-novelty benchmark. Known limitations supplied, not independently discovered."
+  },
+  "editorial_queue": {
+    "new_articles": [
+      {
+        "case_id": "D01",
+        "status": "model_plan_rejected_prior_curated_draft_still_pending",
+        "existing_draft": "docs/drafts/ports-and-petroleum.md"
+      },
+      {
+        "case_id": "D02",
+        "status": "model_plan_rejected_prior_curated_draft_still_pending",
+        "existing_draft": "docs/drafts/municipal-wastewater.md"
+      }
+    ],
+    "additions": [
+      {
+        "case_id": "D03",
+        "status": "model_duplicate_rejected_use_prior_source_checked_candidate",
+        "registry": "datasets/editorial_scientific_review.json",
+        "candidate": "SOURCE-COAST-2018"
+      }
+    ],
+    "unresolved_contradictions": {
+      "registry": "datasets/editorial_scientific_review.json",
+      "issue_ids": [
+        "phenol-counts",
+        "seal-methods",
+        "selenga-methods"
+      ]
+    },
+    "missing_evidence": [
+      {
+        "case_id": "D04",
+        "needed": [
+          "concentrations_before_after",
+          "pollutant_mass_and_flow",
+          "sampling_and_treatment_method",
+          "operation_regime"
+        ],
+        "status": "deferred"
+      }
+    ]
+  },
+  "preservation": {
+    "tracked_protected_files_unchanged": 178,
+    "wiki_files_unchanged": 49,
+    "published_articles_unchanged": 22,
+    "reviewed_observations_unchanged": 168,
+    "checkpoints_unchanged_size_mtime": 3878,
+    "pdf_sha256_unchanged": 11,
+    "changed_protected_files": []
+  },
+  "tests": {
+    "unittest_passed": 186,
+    "wiki_lint_errors": 0,
+    "scientific_evidence_references": 162,
+    "encyclopedia_evidence_references": 47,
+    "reviewed_observations_checked": 168,
+    "prior_editorial_excerpts_checked": 18,
+    "relative_markdown_links_checked": 153,
+    "physical_page_links_checked": 17,
+    "link_errors": [],
+    "public_copy_without_data_checked": true
+  }
+}
