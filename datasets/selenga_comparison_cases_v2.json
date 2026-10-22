@@ -1,0 +1,943 @@
+{
+  "version": 2,
+  "research_date": "2026-10-23",
+  "article_sha256": "a67b8fbbfda3d9716f31c291485877d576d8c315587604486a411d85918984e6",
+  "registry_sha256": "5a4b0541b7884397350ca9b11e8f297aaa9dfcc88c4d67dbf5fbfb014df5258a",
+  "sources": [
+    {
+      "id": "S2",
+      "source_id": "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
+      "sha256": "26dc3610938c5b8f91e85b4179ee1092f20aa03684135d0534b8ad2ab9629023",
+      "page": 26,
+      "report_year": 2015,
+      "observation_period": null,
+      "quote": "Содержание полициклических ароматических углеводородов в донных отложениях\n                       на авандельте р. Селенга в 2011–2015 гг., в нг/г с.о.\n                     (в числителе – интервалы значений, в знаменателе – средние значения)\n                                                                    Канцерогены –  Канцерогены –                   БП –     БП –     ПАУ –     ПАУ –          Годы                                                       протока Усть-    весь полигон                         протока       весь        весь       протока         наблюдений                                                    Харауз (% от   (% от суммы                       Усть-Харауз   полигон    полигон    Усть-Харауз                                                              суммы ПАУ)      ПАУ)\n                               0,5–7,8       0,1–7,8     20,0–125,9     27,2–125,9        6,4–22,9           1,2–22,9            2011 г.                                  3,2            1,4          57,0           70,4         17,8 (31,2 %)      10,2 (17,5 %)\n                               0,8–1,7       0,2–1,7      17,7–61,5      19,9–61,5        7,0–11,0           4,7–11,2            2013 г.                                  1,0            1,0          33,4           33,8          9,3 (27,8 %)        8,4 (25,1 %)\n                               0,8–3,1       0,1–3,0     24,3–149,9     65,4–149,9        7,2–17,1           1,2–17,1            2014 г.                                  1,7            1,0          65,7          103,0        11,0 (16,7 %)       6,3 (9,6 %)\n                               1,2–7,9       0,1–7,9      3,0–124,9     24,3–124,9        9,9–61,8           1,0–61,8            2015 г.                                  3,9            2,1          36,9           61,7         30,3 (49,2 %)      17,1 (43,5 %)\n        Изменение по\n        средним (%),       129,4        110         –43,8          –40,1            175,5             171,4\n        2015 г. / 2014 г.",
+      "quote_basis": "exact_cached_page_text",
+      "source_authenticity": "mirror_unverified",
+      "novelty": "already_quoted_fragment",
+      "publication_year": null
+    },
+    {
+      "id": "S1",
+      "source_id": "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
+      "sha256": "26dc3610938c5b8f91e85b4179ee1092f20aa03684135d0534b8ad2ab9629023",
+      "page": 26,
+      "report_year": 2015,
+      "observation_period": null,
+      "quote": "Максимальное содержание ПАУ, бенз(а)пирена и канцерогенных аренов в 2015 г. были\n      отмечены на авандельте реки непосредственно напротив выносов протокой Усть-Харауз:\n       124,9 нг/г с.о., 61,8 нг/г с.о. и 7,9 нг/г с.о. (таблица 1.1.1.3.6). Уровень загрязненности на\n1.1  авандельте р. Селенга по бенз(а)пирену можно отнести к фоновому значению, а по сумме    ПАУ – как слабо загрязненному. Однако следует отметить, что содержание канцерогенных\n      аренов в 2015 г. увеличилось по сравнению с 2014 г. в 2,7 раза.",
+      "quote_basis": "exact_cached_page_text",
+      "source_authenticity": "mirror_unverified",
+      "novelty": "already_quoted_fragment",
+      "publication_year": null
+    },
+    {
+      "id": "E19_31",
+      "source_id": "drive-1RWGLrOzFO32Jxrlv-B2n_PafSFoRVySn",
+      "sha256": "747fadeaf55107fbf9fbb5965696912195b4795436a9f300c009a4f5e5d9839a",
+      "page": 31,
+      "report_year": 2019,
+      "publication_year": null,
+      "quote": "Состояние донных отложений на авандельте реки Селенги\n    В 2019 году проведена одна съёмка в сентябре, отобрано 12 проб с глубины 23 –\n58 м. В 2019 году, в сравнении со съёмкой 2018 года, среднее содержание растворённого\nкислорода в грунтовой воде увеличилось в 1,4 раза до значения 9,27 мг/дм3. В грунтовой\nводе увеличилось среднее содержание азота аммонийного в 3,2 раза, железа (II) – в 1,5\nраза, железа (III) – в 3,3 раза, летучих фенолов – с нулевых значений до 0,001 мг/дм3, азота\nнитритного и нитратного – с нулевых значений до 0,005 и 0,031 мг/дм3 соответственно.\nСреднее содержание фосфора фосфатного уменьшилось в 1,7 раза. Уровень водородного",
+      "source_authenticity": "mirror_unverified"
+    },
+    {
+      "id": "E19_32",
+      "source_id": "drive-1RWGLrOzFO32Jxrlv-B2n_PafSFoRVySn",
+      "sha256": "747fadeaf55107fbf9fbb5965696912195b4795436a9f300c009a4f5e5d9839a",
+      "page": 32,
+      "report_year": 2019,
+      "publication_year": null,
+      "quote": "30\n\nпоказателя рН находился в диапазоне 7,53-8,03.\n    В донных отложениях увеличилось среднее содержание органического углерода в 1,3\nраза,  уменьшилось  содержание  сульфидной  серы  в  5,2  раза,  легкогидролизуемых\nуглеводов (ЛГУ) – в 4,7 раза, трудногидролизуемых углеводов (ТГУ) – в 1,7 раза, по\nлигниногумусовому комплексу (ЛГК) – в 1,5 раза. Среднее содержание органического\nазота и значение, рассчитанное по отношению ТГУ+ЛГК к общей органике остались на\nуровне 2018 года.\n     Гидрохимическая характеристика грунтовой воды и геохимическая характеристика\nдонных отложений на авандельте р. Селенги представлены в таблицах 1.1.1.3.3 и 1.1.1.3.4.\n\n                                                              Таблица 1.1.1.3.3\n    Гидрохимические характеристики грунтовой воды на авандельте р. Селенги,\n     2019 год, мг/дм3 (числитель - пределы, знаменатель - среднее значение)\n                            Показатель                       сентябрь\n         1  Растворённый кислород                                  8,64 - 10,02\n                                                                           9,27\n         2  Минеральный азот                                     0,008 - 0,141\n                                                                         0,068\n         3  Фосфатный фосфор                                    0,001 - 0,017\n                                                                         0,006\n         4  Органические кислоты, летучие                                                                                                     -\n         5  Органические кислоты, нелетучие                                                                                                     -\n         6  Летучие фенолы                                        0,000 - 0,002\n                                                                         0,001\n\n                                                              Таблица 1.1.1.3.4\n     Геохимические характеристики донных отложений на авандельте р. Селенги,\n           2019 год, (числитель - пределы, знаменатель - среднее значение)\n\n                             Показатель                        сентябрь\n        1   Органический азот, %                                        0,15 - 0,52\n                                                                              0,27\n        2   Органический углерод, %                                    0,95 - 3,99\n                                                                              1,92\n        3   Сульфидная сера, мг/кг                                      1,28 - 188,53\n                                                                           28,47\n        4   Легкогидролизуемые углеводы (ЛГУ), %                      0,12 - 0,84\n                                                                              0,47\n        5   Трудногидролизуемые углеводы (ТГУ), %                    0,13 - 0,58\n                                                                              0,33\n        6   Лигнино-гумусовый комплекс (ЛГК), %                       0,47 - 1,25\n                                                                              0,78\n        7  ТГУ+ЛГК / Общая сумма органических веществ, %           13 - 44\n                                                                     26",
+      "source_authenticity": "mirror_unverified"
+    },
+    {
+      "id": "E22_40",
+      "source_id": "drive-1oYm8VhJ3_eRNdxbrGfLXhf6_vI6s6SJq",
+      "sha256": "6363b7b441d241e4718714b0062a2e011647e14b8219193f0a40a08270568e8e",
+      "page": 40,
+      "report_year": 2022,
+      "publication_year": null,
+      "quote": "О состоянии озера Байкал и мерах по его охране в 2022 году\n\n                                                           Таблица 1.1.1.3.4\n            Гидрохимическая характеристика грунтовой воды\n             в районе авандельты р. Селенги, 2022 год, мг/дм3\n             (числитель – пределы, знаменатель – среднее значение)\n№                     Показатель                            Сентябрь\n                                                                          8,08–10,34 1     Растворенный кислород                                                                               9,30\n                                                                         0,017–0,041 2     Минеральный азот                                                                            0,024\n                                                                         0,007–0,016 3    Фосфатный фосфор                                                                            0,010\n 4     Органические кислоты, летучие                                     –\n 5     Органические кислоты, нелетучие                                   –\n                                                                         0,000–0,003 6     Летучие фенолы                                                                            0,001\n\n\n                                                           Таблица 1.1.1.3.5\n            Геохимическая характеристика донных отложений\n                в районе авандельты р. Селенги, 2022 год\n             (числитель – пределы, знаменатель – среднее значение)\n№                     Показатель                            Сентябрь\n                                                                            0,07–0,90 1     Органический азот, %                                                                                0,27\n                                                                            0,90–2,48 2     Органический углерод, %                                                                                1,77\n                                                                            1,64–7,17 3     Сульфидная сера, мг/кг                                                                                4,20\n                                                                            0,12–0,95 4     Легкогидролизуемые углеводы (ЛГУ), %                                                                                0,63\n                                                                            0,92–2,08 5     Трудногидролизуемые углеводы (ТГУ), %                                                                                1,43\n                                                                            1,44–2,44 6     Лигнино-гумусовый комплекс (ЛГК), %                                                                                2,03\n                                                                     55–85 7    ТГУ+ЛГК / общая сумма органических веществ, %                                                                      70\n\n\n                                                           Таблица 1.1.1.3.6\n            Гидрохимическая характеристика грунтовой воды\n             озера Байкал в районе трассы БАМ, 2022 год, мг/дм3\n             (числитель – пределы, знаменатель – среднее значение)\n№                 Показатель                Июнь            Сентябрь\n                                                         6,85–11,33             6,18–10,66 1     Растворенный кислород                                                              9,87                    8,60\n                                                        0,122–0,345            0,002–0,609 2    Минеральный азот                                                           0,218                  0,127\n                                                        0,000–0,031            0,003–0,067 3    Фосфатный фосфор                                                           0,007                  0,018\n                                                       –                    – 4     Органические кислоты, летучие\n                                                       –                    – 5     Органические кислоты, нелетучие\n                                                        0,000–0,003            0,000–0,003 6     Летучие фенолы                                                           0,001                  0,001\n\n\n\n\n                                      39",
+      "source_authenticity": "mirror_unverified"
+    },
+    {
+      "id": "LEVEL20",
+      "source_id": "drive-1ScikzOKs0VW7ZZS1XWKyoOfcHeYklUEP",
+      "sha256": "48bfd75a6c75a685d4f5ff2ea52cd1aba78d6d0a6bd45fbd311d5305a9b84c54",
+      "page": 13,
+      "report_year": 2020,
+      "publication_year": null,
+      "quote": "На  01.01.2020 средний  уровень воды  в  озере Байкал  находился  на  отметке\n456,48 м ТО, что на 0,16 м ниже, чем в 2019 году на эту дату (01.01.2019 – 456,64 м ТО) и\nна 0,5 м выше среднемноголетнего значения уровня (456,43 м ТО).",
+      "source_authenticity": "mirror_unverified"
+    },
+    {
+      "id": "FORECAST18",
+      "source_id": "drive-1QKhC57MB-qveIXhYWKGfSOkTmzdFw_mJ",
+      "sha256": "c813f2671ebb235dd3291076f3c728bb78d821391024e2bce754849c79fa992a",
+      "page": 112,
+      "report_year": 2018,
+      "publication_year": null,
+      "quote": "В местах дефляции трава не прорастает из-за выдувания плодородного слоя почв\n(д. Ялга). Активность процессов в 2018 году ориентировочно была близка к средней. Про-\nтяжённость наблюдаемых активных явлений составила около 5,42 км. Изменения степени\nактивности процесса не ожидается в ближайшие годы при отсутствии климатических ано-\nмалий.",
+      "source_authenticity": "mirror_unverified"
+    }
+  ],
+  "examples": [
+    {
+      "case_id": "V01",
+      "fact": {
+        "features": {
+          "object": "съёмка авандельты",
+          "indicator": "число съёмок",
+          "value": "1",
+          "statistic": "count",
+          "unit": "съёмка",
+          "territory": "авандельта Селенги",
+          "period": {
+            "year": 2019,
+            "month": 9
+          },
+          "message_kind": "observation",
+          "value_kind": "numeric",
+          "attribution": "source_statement",
+          "comparison_scope": "specified_event_or_table"
+        },
+        "source_evidence_id": "E19_31",
+        "source_binding": "f8fe886f8737e1823408bbab663ee5c8041ed194225036229d1215ee2e5a4a61",
+        "text": "Сентябрьское обследование авандельты в 2019 было единственным за год.",
+        "fact_id": "SURVEY-PARAPHRASE-5acaa2560b2c"
+      },
+      "target": {
+        "target_id": "Vbe2067f0ef252681",
+        "features": {
+          "object": "съёмка авандельты",
+          "indicator": "число съёмок",
+          "value": "1",
+          "statistic": "count",
+          "unit": "съёмка",
+          "territory": "авандельта Селенги",
+          "period": {
+            "year": 2019,
+            "month": 9
+          },
+          "message_kind": "observation",
+          "value_kind": "numeric",
+          "attribution": "source_statement",
+          "comparison_scope": "specified_event_or_table"
+        },
+        "article_quote": "В 2019 году на авандельте проведена одна сентябрьская съёмка с отбором грунтовой воды и донного материала.",
+        "source_evidence_ids": [
+          "E19_31",
+          "E19_32"
+        ]
+      },
+      "scope": "article",
+      "expected": {
+        "relation": "same_fact",
+        "article_presence": "present_in_registered_passage",
+        "reason": "Число съёмок один и период совпадают, новая формулировка не новое событие.",
+        "expert_review": false
+      },
+      "fact_sha256": "f6a5d61abed0677e60cf6e9bb5d272fb50c184a34c50967e2fcc67c5875e2011",
+      "target_sha256": "ad25f070ae98ed3158be4260bb6bf1b5f2f92e87674c39d6daf33ae8854680c9"
+    },
+    {
+      "case_id": "V02",
+      "fact": {
+        "features": {
+          "object": "съёмка авандельты",
+          "indicator": "число отобранных проб",
+          "value": "12",
+          "statistic": "count",
+          "unit": "проба",
+          "territory": "авандельта Селенги",
+          "period": {
+            "year": 2019,
+            "month": 9
+          },
+          "message_kind": "observation",
+          "value_kind": "numeric",
+          "attribution": "source_statement",
+          "comparison_scope": "specified_event_or_table"
+        },
+        "source_evidence_id": "E19_31",
+        "source_binding": "f8fe886f8737e1823408bbab663ee5c8041ed194225036229d1215ee2e5a4a61",
+        "text": "Источник сообщает об отборе 12 проб в сентябрьской съёмке; разбивка по средам не установлена.",
+        "fact_id": "SAMPLES12-3a0d6a6ad112"
+      },
+      "target": {
+        "target_id": "Vbe2067f0ef252681",
+        "features": {
+          "object": "съёмка авандельты",
+          "indicator": "число съёмок",
+          "value": "1",
+          "statistic": "count",
+          "unit": "съёмка",
+          "territory": "авандельта Селенги",
+          "period": {
+            "year": 2019,
+            "month": 9
+          },
+          "message_kind": "observation",
+          "value_kind": "numeric",
+          "attribution": "source_statement",
+          "comparison_scope": "specified_event_or_table"
+        },
+        "article_quote": "В 2019 году на авандельте проведена одна сентябрьская съёмка с отбором грунтовой воды и донного материала.",
+        "source_evidence_ids": [
+          "E19_31",
+          "E19_32"
+        ]
+      },
+      "scope": "article",
+      "expected": {
+        "relation": "incomparable",
+        "article_presence": "unknown_requires_full_article_review",
+        "reason": "Число проб не число съёмок; статья число проб не называет. Отсутствие совпадения ещё не доказательство отсутствия во всей статье.",
+        "expert_review": false
+      },
+      "fact_sha256": "8e7ee67bbf6ecbeb66d67ab81da8dbbce8e33718f126ac82c6459cf56c511c76",
+      "target_sha256": "ad25f070ae98ed3158be4260bb6bf1b5f2f92e87674c39d6daf33ae8854680c9"
+    },
+    {
+      "case_id": "V03",
+      "fact": {
+        "features": {
+          "object": "грунтовая вода",
+          "indicator": "Растворённый кислород",
+          "value": "9,30",
+          "statistic": "mean",
+          "unit": "мг/дм3",
+          "territory": "авандельта Селенги",
+          "period": {
+            "year": 2022,
+            "month": 9
+          },
+          "message_kind": "observation",
+          "value_kind": "numeric",
+          "attribution": "source_statement",
+          "comparison_scope": "specified_event_or_table"
+        },
+        "source_evidence_id": "E22_40",
+        "source_binding": "f92a0401f84493fb8673d397788a0e041fc8dccdf1ffe02d93194f5d7e633615",
+        "text": "Среднее растворённого кислорода в грунтовой воде, сентябрь 2022.",
+        "fact_id": "O22-c53a7a763de1",
+        "source_cell": {
+          "table_index": 0,
+          "row_index": 1,
+          "column_index": 2,
+          "row": [
+            "1",
+            "Растворенный кислород",
+            "8,08–10,34\n9,30"
+          ],
+          "header": [
+            "№",
+            "Показатель",
+            "Сентябрь"
+          ],
+          "raw_value": "8,08–10,34\n9,30"
+        }
+      },
+      "target": {
+        "target_id": "D-f325b0df5755",
+        "features": {
+          "object": "грунтовая вода",
+          "indicator": "Растворённый кислород",
+          "value": "10,34",
+          "statistic": "maximum",
+          "unit": "мг/дм3",
+          "territory": "авандельта Селенги",
+          "period": {
+            "year": 2022,
+            "month": 9
+          },
+          "message_kind": "observation",
+          "value_kind": "numeric",
+          "attribution": "source_statement",
+          "comparison_scope": "specified_event_or_table"
+        },
+        "source_evidence_id": "E22_40",
+        "source_binding": "f92a0401f84493fb8673d397788a0e041fc8dccdf1ffe02d93194f5d7e633615",
+        "text": "Верхняя граница диапазона кислорода 2022; не среднее.",
+        "fact_id": "MAX22-62a71e73aa80",
+        "source_cell": {
+          "table_index": 0,
+          "row_index": 1,
+          "column_index": 2,
+          "row": [
+            "1",
+            "Растворенный кислород",
+            "8,08–10,34\n9,30"
+          ],
+          "header": [
+            "№",
+            "Показатель",
+            "Сентябрь"
+          ],
+          "raw_value": "8,08–10,34\n9,30"
+        }
+      },
+      "scope": "source_pair",
+      "expected": {
+        "relation": "incomparable",
+        "article_presence": "not_applicable_source_pair",
+        "reason": "Среднее и верхняя граница диапазона не взаимозаменяемы.",
+        "expert_review": false
+      },
+      "fact_sha256": "24659f2e54e45c0072bb5970ff445e572db22f8e21f610c99a39f9a440784dcb",
+      "target_sha256": "b79c051024565fed78212cb94ad6207775e5cf95b13acaa1efbc721f5941f430"
+    },
+    {
+      "case_id": "V04",
+      "fact": {
+        "features": {
+          "object": "грунтовая вода",
+          "indicator": "Растворённый кислород",
+          "value": "9,27",
+          "statistic": "mean",
+          "unit": "мг/дм3",
+          "territory": "авандельта Селенги",
+          "period": {
+            "year": 2019,
+            "month": 9
+          },
+          "message_kind": "observation",
+          "value_kind": "numeric",
+          "attribution": "source_statement",
+          "comparison_scope": "specified_event_or_table"
+        },
+        "source_evidence_id": "E19_32",
+        "source_binding": "aca9a844b2c1d6173c76d1ace1cf05c694f48595f4ad8027025f40a5afa42842",
+        "text": "Среднее растворённого кислорода в грунтовой воде, сентябрь 2019.",
+        "fact_id": "O19-0604392d43e4",
+        "source_cell": {
+          "table_index": 0,
+          "row_index": 1,
+          "column_index": 2,
+          "row": [
+            "1",
+            "Растворённый кислород",
+            "8,64 - 10,02\n9,27"
+          ],
+          "header": [
+            "",
+            "Показатель",
+            "сентябрь"
+          ],
+          "raw_value": "8,64 - 10,02\n9,27"
+        }
+      },
+      "target": {
+        "target_id": "D-7c7f0055345b",
+        "features": {
+          "object": "грунтовая вода",
+          "indicator": "Растворённый кислород",
+          "value": "9,30",
+          "statistic": "mean",
+          "unit": "мг/дм3",
+          "territory": "авандельта Селенги",
+          "period": {
+            "year": 2022,
+            "month": 9
+          },
+          "message_kind": "observation",
+          "value_kind": "numeric",
+          "attribution": "source_statement",
+          "comparison_scope": "specified_event_or_table"
+        },
+        "source_evidence_id": "E22_40",
+        "source_binding": "f92a0401f84493fb8673d397788a0e041fc8dccdf1ffe02d93194f5d7e633615",
+        "text": "Среднее растворённого кислорода в грунтовой воде, сентябрь 2022.",
+        "fact_id": "O22-c53a7a763de1",
+        "source_cell": {
+          "table_index": 0,
+          "row_index": 1,
+          "column_index": 2,
+          "row": [
+            "1",
+            "Растворенный кислород",
+            "8,08–10,34\n9,30"
+          ],
+          "header": [
+            "№",
+            "Показатель",
+            "Сентябрь"
+          ],
+          "raw_value": "8,08–10,34\n9,30"
+        }
+      },
+      "scope": "source_pair",
+      "expected": {
+        "relation": "incomparable",
+        "article_presence": "not_applicable_source_pair",
+        "reason": "Сентябрь 2019 и сентябрь 2022 не одно наблюдение; тренд не выводится.",
+        "expert_review": false
+      },
+      "fact_sha256": "497990f6d537d515cff249a9b5e13dc2fd5edd7f4ba85d51c865ded6544625dc",
+      "target_sha256": "373077b486dc678945fedbcaed2ce8058be3d0cfeb21113c0f56be6ca36ab9fd"
+    },
+    {
+      "case_id": "V05",
+      "fact": {
+        "features": {
+          "object": "грунтовая вода",
+          "indicator": "Растворённый кислород",
+          "value": "9,30",
+          "statistic": "mean",
+          "unit": "мг/дм3",
+          "territory": "авандельта Селенги",
+          "period": {
+            "year": 2022,
+            "month": 9
+          },
+          "message_kind": "observation",
+          "value_kind": "numeric",
+          "attribution": "source_statement",
+          "comparison_scope": "specified_event_or_table"
+        },
+        "source_evidence_id": "E22_40",
+        "source_binding": "f92a0401f84493fb8673d397788a0e041fc8dccdf1ffe02d93194f5d7e633615",
+        "text": "Среднее растворённого кислорода в грунтовой воде, сентябрь 2022.",
+        "fact_id": "O22-c53a7a763de1",
+        "source_cell": {
+          "table_index": 0,
+          "row_index": 1,
+          "column_index": 2,
+          "row": [
+            "1",
+            "Растворенный кислород",
+            "8,08–10,34\n9,30"
+          ],
+          "header": [
+            "№",
+            "Показатель",
+            "Сентябрь"
+          ],
+          "raw_value": "8,08–10,34\n9,30"
+        }
+      },
+      "target": {
+        "target_id": "D-34398f3fc056",
+        "features": {
+          "object": "грунтовая вода",
+          "indicator": "Растворённый кислород",
+          "value": "8,60",
+          "statistic": "mean",
+          "unit": "мг/дм3",
+          "territory": "район трассы БАМ",
+          "period": {
+            "year": 2022,
+            "month": 9
+          },
+          "message_kind": "observation",
+          "value_kind": "numeric",
+          "attribution": "source_statement",
+          "comparison_scope": "specified_event_or_table"
+        },
+        "source_evidence_id": "E22_40",
+        "source_binding": "f92a0401f84493fb8673d397788a0e041fc8dccdf1ffe02d93194f5d7e633615",
+        "text": "Среднее кислорода в районе трассы БАМ, сентябрь 2022; другая таблица.",
+        "fact_id": "BAM22-1de77c05430d",
+        "source_cell": {
+          "table_index": 2,
+          "row_index": 1,
+          "column_index": 3,
+          "row": [
+            "1",
+            "Растворенный кислород",
+            "6,85–11,33\n9,87",
+            "6,18–10,66\n8,60"
+          ],
+          "header": [
+            "№",
+            "Показатель",
+            "Июнь",
+            "Сентябрь"
+          ],
+          "raw_value": "6,18–10,66\n8,60"
+        }
+      },
+      "scope": "source_pair",
+      "expected": {
+        "relation": "incomparable",
+        "article_presence": "not_applicable_source_pair",
+        "reason": "Авандельта и район БАМ — разные территории, хотя страница одна.",
+        "expert_review": false
+      },
+      "fact_sha256": "24659f2e54e45c0072bb5970ff445e572db22f8e21f610c99a39f9a440784dcb",
+      "target_sha256": "e7ad1979e919e4ad62a500cc6927bf7d5618ad553f20b8e60e7f4bf841f05e82"
+    },
+    {
+      "case_id": "V06",
+      "fact": {
+        "features": {
+          "object": "процессы дефляции",
+          "indicator": "степень активности",
+          "value": "изменений не ожидается при отсутствии климатических аномалий",
+          "statistic": "qualitative",
+          "unit": null,
+          "territory": "участки, описанные в сводке 2018",
+          "period": null,
+          "message_kind": "forecast",
+          "value_kind": "qualitative",
+          "attribution": "source_statement",
+          "comparison_scope": "specified_event_or_table"
+        },
+        "source_evidence_id": "FORECAST18",
+        "source_binding": "99cd634931586b9a9a389dc326ae8a36004df62809134f485273de8a74bfb844",
+        "text": "В ближайшие годы изменений активности дефляции не ожидается при отсутствии климатических аномалий.",
+        "fact_id": "FORECAST-b893ae158377"
+      },
+      "target": {
+        "target_id": "D-5f2716f877e5",
+        "features": {
+          "object": "процессы дефляции",
+          "indicator": "степень активности",
+          "value": "ориентировочно близка к средней",
+          "statistic": "qualitative",
+          "unit": null,
+          "territory": "участки, описанные в сводке 2018",
+          "period": {
+            "year": 2018
+          },
+          "message_kind": "observation",
+          "value_kind": "qualitative",
+          "attribution": "source_statement",
+          "comparison_scope": "specified_event_or_table"
+        },
+        "source_evidence_id": "FORECAST18",
+        "source_binding": "99cd634931586b9a9a389dc326ae8a36004df62809134f485273de8a74bfb844",
+        "text": "Активность в 2018 ориентировочно близка к средней.",
+        "fact_id": "OBS18-6a68829451fe"
+      },
+      "scope": "source_pair",
+      "expected": {
+        "relation": "incomparable",
+        "article_presence": "not_applicable_source_pair",
+        "reason": "Прогноз не наблюдение; точный год прогноза не придуман.",
+        "expert_review": false
+      },
+      "fact_sha256": "e397de3b63e04dd843f0d225691b12fc0261672ed831e6061f38f93abad4d54e",
+      "target_sha256": "33357c9c35c747810c170913c361f424def662b9a13e8998eb160f6a2f52ca6a"
+    },
+    {
+      "case_id": "V07",
+      "fact": {
+        "features": {
+          "object": "грунтовая вода",
+          "indicator": "направленность гидрохимических изменений",
+          "value": "рост одних показателей и снижение других",
+          "statistic": "qualitative_comparison",
+          "unit": null,
+          "territory": "авандельта Селенги",
+          "period": {
+            "observation_year": 2019,
+            "reference": "предыдущая съёмка"
+          },
+          "message_kind": "source_interpretation",
+          "value_kind": "qualitative",
+          "attribution": "source_statement",
+          "comparison_scope": "specified_event_or_table"
+        },
+        "source_evidence_id": "E19_31",
+        "source_binding": "f8fe886f8737e1823408bbab663ee5c8041ed194225036229d1215ee2e5a4a61",
+        "text": "В съёмке 2019 относительно предыдущей съёмки наблюдались рост одних показателей и снижение других.",
+        "fact_id": "DIRECTIONS-4d0a40dfb88b"
+      },
+      "target": {
+        "target_id": "V6e86d99bfb11236e",
+        "features": {
+          "object": "грунтовая вода",
+          "indicator": "направленность гидрохимических изменений",
+          "value": "разнонаправленные изменения",
+          "statistic": "qualitative_comparison",
+          "unit": null,
+          "territory": "авандельта Селенги",
+          "period": {
+            "observation_year": 2019,
+            "reference": "предыдущая съёмка"
+          },
+          "message_kind": "source_interpretation",
+          "value_kind": "qualitative",
+          "attribution": "source_statement",
+          "comparison_scope": "specified_event_or_table"
+        },
+        "article_quote": "Доклад описывает разнонаправленные изменения растворённого кислорода, соединений азота, железа и фосфатного фосфора относительно предыдущей съёмки.",
+        "source_evidence_ids": [
+          "E19_31"
+        ]
+      },
+      "scope": "article",
+      "expected": {
+        "relation": "semantic_equivalent",
+        "article_presence": "present_in_registered_passage",
+        "reason": "Это перефразирование разнонаправленных изменений без новых знаков отдельных веществ. Нужна отдельная смысловая сверка.",
+        "expert_review": false
+      },
+      "fact_sha256": "9be79824d55145e70d3ef55feda85b670685208a4a042239f956785c167180fe",
+      "target_sha256": "749c8a4834d2b8b8a62673e0100bbc80abd0d34654e227bca0221999c15d3fdb"
+    },
+    {
+      "case_id": "V08",
+      "fact": {
+        "features": {
+          "object": "уровень Байкала",
+          "indicator": "превышение среднемноголетнего уровня",
+          "value": "0,05",
+          "statistic": "difference",
+          "unit": "м",
+          "territory": "озеро Байкал",
+          "period": {
+            "date": "2020-01-01"
+          },
+          "message_kind": "reported_numeric_relation",
+          "value_kind": "numeric",
+          "attribution": "source_statement",
+          "comparison_scope": "specified_event_or_table"
+        },
+        "source_evidence_id": "LEVEL20",
+        "source_binding": "2798e0d4f06d9a40991a9f393517c7ba799ef739b0309ef7e5e75b5175314a39",
+        "text": "Только расчёт согласованности 456,48 − 456,43 = 0,05; не исправленное наблюдение.",
+        "arithmetic_check": {
+          "group": "level-2020-printed-consistency",
+          "operands": [
+            "456.48",
+            "456.43"
+          ],
+          "source_binding": "2798e0d4f06d9a40991a9f393517c7ba799ef739b0309ef7e5e75b5175314a39"
+        },
+        "fact_id": "LEVEL-CALC-d5f01527deef"
+      },
+      "target": {
+        "target_id": "D-de719ee4fa74",
+        "features": {
+          "object": "уровень Байкала",
+          "indicator": "превышение среднемноголетнего уровня",
+          "value": "0,5",
+          "statistic": "difference",
+          "unit": "м",
+          "territory": "озеро Байкал",
+          "period": {
+            "date": "2020-01-01"
+          },
+          "message_kind": "reported_numeric_relation",
+          "value_kind": "numeric",
+          "attribution": "source_statement",
+          "comparison_scope": "specified_event_or_table"
+        },
+        "source_evidence_id": "LEVEL20",
+        "source_binding": "2798e0d4f06d9a40991a9f393517c7ba799ef739b0309ef7e5e75b5175314a39",
+        "text": "В источнике одновременно 456,48; 456,43; разность 0,5 м.",
+        "arithmetic_group": "level-2020-printed-consistency",
+        "fact_id": "LEVEL-LITERAL-0a3324faeb05"
+      },
+      "scope": "source_pair",
+      "expected": {
+        "relation": "documented_arithmetic_discrepancy",
+        "article_presence": "not_applicable_source_pair",
+        "reason": "Чистая арифметика против напечатанной разности; все исходные отметки/разность сохранены, истинная гидрология не исправляется.",
+        "expert_review": false
+      },
+      "fact_sha256": "d4e8a6303a3e7bc39e4a658c32e42570e2abb47c6516fcf7d1a9972f0e9ac3af",
+      "target_sha256": "f19bdf26dbbe122182ebba814bf9e1f8e4eed40ad18c5bac87471c57faecf17a"
+    },
+    {
+      "case_id": "V09",
+      "fact": {
+        "features": {
+          "object": "грунтовая вода",
+          "indicator": "органические кислоты летучие",
+          "value": null,
+          "statistic": "mean",
+          "unit": "мг/дм3",
+          "territory": "авандельта Селенги",
+          "period": {
+            "year": 2022,
+            "month": 9
+          },
+          "message_kind": "observation",
+          "value_kind": "numeric",
+          "attribution": "source_statement",
+          "comparison_scope": "specified_event_or_table"
+        },
+        "source_evidence_id": "E22_40",
+        "source_binding": "f92a0401f84493fb8673d397788a0e041fc8dccdf1ffe02d93194f5d7e633615",
+        "text": "Для летучих органических кислот стоит прочерк, значение неизвестно.",
+        "fact_id": "DASH-36baf98cc17d"
+      },
+      "target": {
+        "target_id": "D-7c148a38aac0",
+        "features": {
+          "object": "грунтовая вода",
+          "indicator": "органические кислоты летучие",
+          "value": null,
+          "statistic": "mean",
+          "unit": "мг/дм3",
+          "territory": "авандельта Селенги",
+          "period": {
+            "year": 2022,
+            "month": 9
+          },
+          "message_kind": "observation",
+          "value_kind": "numeric",
+          "attribution": "source_statement",
+          "comparison_scope": "specified_event_or_table"
+        },
+        "source_evidence_id": "E22_40",
+        "source_binding": "f92a0401f84493fb8673d397788a0e041fc8dccdf1ffe02d93194f5d7e633615",
+        "text": "Та же строка с прочерком, не ноль.",
+        "fact_id": "DASHREF-f80b5e1f69dc"
+      },
+      "scope": "source_pair",
+      "expected": {
+        "relation": "insufficient",
+        "article_presence": "not_applicable_source_pair",
+        "reason": "Два отсутствующих значения не совпавшие числовые нули.",
+        "expert_review": false
+      },
+      "fact_sha256": "eb2beabc828fac1a6e7e8328d01a866899dfd8d905db4f0acc1b2a18a35e10dd",
+      "target_sha256": "ba4aeb61c3d858a6d75d4c116e5c3e2238d07cbf6e390ded56b091280425cf2c"
+    },
+    {
+      "case_id": "V10",
+      "fact": {
+        "features": {
+          "object": "грунтовая вода",
+          "indicator": "Растворённый кислород",
+          "value": "9,27",
+          "statistic": "mean",
+          "unit": "мг/дм3",
+          "territory": "авандельта Селенги",
+          "period": {
+            "year": 2019,
+            "month": 9
+          },
+          "message_kind": "observation",
+          "value_kind": "numeric",
+          "attribution": "source_statement",
+          "comparison_scope": "specified_event_or_table"
+        },
+        "source_evidence_id": "E19_32",
+        "source_binding": "aca9a844b2c1d6173c76d1ace1cf05c694f48595f4ad8027025f40a5afa42842",
+        "text": "Среднее растворённого кислорода в грунтовой воде, сентябрь 2019.",
+        "fact_id": "O19-0604392d43e4",
+        "source_cell": {
+          "table_index": 0,
+          "row_index": 1,
+          "column_index": 2,
+          "row": [
+            "1",
+            "Растворённый кислород",
+            "8,64 - 10,02\n9,27"
+          ],
+          "header": [
+            "",
+            "Показатель",
+            "сентябрь"
+          ],
+          "raw_value": "8,64 - 10,02\n9,27"
+        }
+      },
+      "target": {
+        "target_id": "D-0d9eccf3e54d",
+        "features": {
+          "object": "донные отложения",
+          "indicator": "органический азот",
+          "value": "0,27",
+          "statistic": "mean",
+          "unit": "%",
+          "territory": "авандельта Селенги",
+          "period": {
+            "year": 2019,
+            "month": 9
+          },
+          "message_kind": "observation",
+          "value_kind": "numeric",
+          "attribution": "source_statement",
+          "comparison_scope": "specified_event_or_table"
+        },
+        "source_evidence_id": "E19_32",
+        "source_binding": "aca9a844b2c1d6173c76d1ace1cf05c694f48595f4ad8027025f40a5afa42842",
+        "text": "Органический азот в донных отложениях; другая среда, показатель и единица.",
+        "fact_id": "NSED19-3102bf1378f0",
+        "source_cell": {
+          "table_index": 1,
+          "row_index": 1,
+          "column_index": 2,
+          "row": [
+            "1",
+            "Органический азот, %",
+            "0,15 - 0,52\n0,27"
+          ],
+          "header": [
+            "",
+            "Показатель",
+            "сентябрь"
+          ],
+          "raw_value": "0,15 - 0,52\n0,27"
+        }
+      },
+      "scope": "source_pair",
+      "expected": {
+        "relation": "incomparable",
+        "article_presence": "not_applicable_source_pair",
+        "reason": "Разные объект/показатель/единица; проценты осадка не мг/дм3 грунтовой воды.",
+        "expert_review": false
+      },
+      "fact_sha256": "497990f6d537d515cff249a9b5e13dc2fd5edd7f4ba85d51c865ded6544625dc",
+      "target_sha256": "dbc29c06cf1f300ec5732d1b4273c1fc330b1f77a495e256c761fcb3f6a441af"
+    },
+    {
+      "case_id": "V11",
+      "fact": {
+        "features": {
+          "object": "грунтовая вода",
+          "indicator": "Растворённый кислород",
+          "value": "9,27",
+          "statistic": "mean",
+          "unit": "мг/дм³",
+          "territory": "авандельта Селенги",
+          "period": {
+            "year": 2019,
+            "month": 9
+          },
+          "message_kind": "observation",
+          "value_kind": "numeric",
+          "attribution": "source_statement",
+          "comparison_scope": "specified_event_or_table"
+        },
+        "source_evidence_id": "E19_32",
+        "source_binding": "aca9a844b2c1d6173c76d1ace1cf05c694f48595f4ad8027025f40a5afa42842",
+        "text": "Среднее растворённого кислорода в грунтовой воде, сентябрь 2019.",
+        "fact_id": "TYPO-fe9b7421c2c9",
+        "source_cell": {
+          "table_index": 0,
+          "row_index": 1,
+          "column_index": 2,
+          "row": [
+            "1",
+            "Растворённый кислород",
+            "8,64 - 10,02\n9,27"
+          ],
+          "header": [
+            "",
+            "Показатель",
+            "сентябрь"
+          ],
+          "raw_value": "8,64 - 10,02\n9,27"
+        }
+      },
+      "target": {
+        "target_id": "D-54d70f6da8b4",
+        "features": {
+          "object": "грунтовая вода",
+          "indicator": "Растворённый кислород",
+          "value": "9,27",
+          "statistic": "mean",
+          "unit": "мг/дм3",
+          "territory": "авандельта Селенги",
+          "period": {
+            "year": 2019,
+            "month": 9
+          },
+          "message_kind": "observation",
+          "value_kind": "numeric",
+          "attribution": "source_statement",
+          "comparison_scope": "specified_event_or_table"
+        },
+        "source_evidence_id": "E19_32",
+        "source_binding": "aca9a844b2c1d6173c76d1ace1cf05c694f48595f4ad8027025f40a5afa42842",
+        "text": "Среднее растворённого кислорода в грунтовой воде, сентябрь 2019.",
+        "fact_id": "O19-0604392d43e4",
+        "source_cell": {
+          "table_index": 0,
+          "row_index": 1,
+          "column_index": 2,
+          "row": [
+            "1",
+            "Растворённый кислород",
+            "8,64 - 10,02\n9,27"
+          ],
+          "header": [
+            "",
+            "Показатель",
+            "сентябрь"
+          ],
+          "raw_value": "8,64 - 10,02\n9,27"
+        }
+      },
+      "scope": "source_pair",
+      "expected": {
+        "relation": "same_fact",
+        "article_presence": "not_applicable_source_pair",
+        "reason": "Только типографическое представление кубического дециметра, числового пересчёта нет.",
+        "expert_review": false
+      },
+      "fact_sha256": "5689f267e16a0f86235d0055984c2124106d535924e5a9367be415a6758418a3",
+      "target_sha256": "4d079e2f3bf1acfda32d5d1fed816b8b84fa706483b44080cf30e0365a27c82f"
+    },
+    {
+      "case_id": "V12",
+      "fact": {
+        "features": {
+          "object": "съёмка авандельты",
+          "indicator": "глубины отбора проб",
+          "value": "23–58",
+          "statistic": "range",
+          "unit": "м",
+          "territory": "авандельта Селенги",
+          "period": {
+            "year": 2019,
+            "month": 9
+          },
+          "message_kind": "observation",
+          "value_kind": "numeric",
+          "attribution": "source_statement",
+          "comparison_scope": "specified_event_or_table"
+        },
+        "source_evidence_id": "E19_31",
+        "source_binding": "f8fe886f8737e1823408bbab663ee5c8041ed194225036229d1215ee2e5a4a61",
+        "text": "В докладе указаны глубины отбора 23–58 м; это диапазон, не средняя глубина.",
+        "fact_id": "DEPTH-29911f2dc898"
+      },
+      "target": {
+        "target_id": "Vbe2067f0ef252681",
+        "features": {
+          "object": "съёмка авандельты",
+          "indicator": "число съёмок",
+          "value": "1",
+          "statistic": "count",
+          "unit": "съёмка",
+          "territory": "авандельта Селенги",
+          "period": {
+            "year": 2019,
+            "month": 9
+          },
+          "message_kind": "observation",
+          "value_kind": "numeric",
+          "attribution": "source_statement",
+          "comparison_scope": "specified_event_or_table"
+        },
+        "article_quote": "В 2019 году на авандельте проведена одна сентябрьская съёмка с отбором грунтовой воды и донного материала.",
+        "source_evidence_ids": [
+          "E19_31",
+          "E19_32"
+        ]
+      },
+      "scope": "article",
+      "expected": {
+        "relation": "incomparable",
+        "article_presence": "unknown_requires_full_article_review",
+        "reason": "Источник содержит новую деталь глубин, не выраженную числом съёмок; требуется полная статья.",
+        "expert_review": false
+      },
+      "fact_sha256": "7e6ed4f57b14ac3b41e5e2c6ad2b261cfb942630263e3d8e1bb1a078775cb7c1",
+      "target_sha256": "ad25f070ae98ed3158be4260bb6bf1b5f2f92e87674c39d6daf33ae8854680c9"
+    }
+  ],
+  "max_model_requests": 1,
+  "model_case": "V07",
+  "no_previous_eight_cases_reused": true,
+  "expected_answers_are_preregistered": true,
+  "expert_review": false
+}

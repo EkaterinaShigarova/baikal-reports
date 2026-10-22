@@ -1,0 +1,1617 @@
+{
+  "version": 2,
+  "research_date": "2026-10-23",
+  "article": {
+    "path": "wiki/syntheses/selenga-sediments.md",
+    "sha256": "a67b8fbbfda3d9716f31c291485877d576d8c315587604486a411d85918984e6"
+  },
+  "previous_registry": {
+    "path": "datasets/selenga_claim_registry.json",
+    "sha256": "15938639127aa0e374e83eef0689f6d4bed19c5e51cf53ac81b330e20515f33d"
+  },
+  "inventory": [
+    {
+      "id": "U01",
+      "quote": "Грунтовая вода и донные отложения авандельты — разные среды, отличные от поверхностной воды реки и от годового выноса веществ через замыкающий створ.",
+      "start": 331,
+      "end": 480
+    },
+    {
+      "id": "U02",
+      "quote": "Доклады представляют для них отдельные гидрохимические и геохимические характеристики.",
+      "start": 481,
+      "end": 567
+    },
+    {
+      "id": "U03",
+      "quote": "Значение в воде нельзя напрямую сравнивать с содержанием в сухом донном материале.",
+      "start": 568,
+      "end": 650
+    },
+    {
+      "id": "U04",
+      "quote": "В докладе 2015 года максимумы содержания исследованных ароматических углеводородов отмечены напротив выносов протоки Усть-Харауз.",
+      "start": 901,
+      "end": 1030
+    },
+    {
+      "id": "U05",
+      "quote": "По бенз(а)пирену источник относит загрязнённость к фоновому уровню, а по сумме ПАУ — к слабому загрязнению.",
+      "start": 1031,
+      "end": 1138
+    },
+    {
+      "id": "U06",
+      "quote": "Эти две оценки относятся к разным показателям и не противоречат друг другу автоматически.",
+      "start": 1139,
+      "end": 1228
+    },
+    {
+      "id": "U07",
+      "quote": "На той же странице отдельно обсуждается изменение содержания канцерогенных аренов.",
+      "start": 1229,
+      "end": 1311
+    },
+    {
+      "id": "U08",
+      "quote": "В 2019 году на авандельте проведена одна сентябрьская съёмка с отбором грунтовой воды и донного материала.",
+      "start": 1422,
+      "end": 1528
+    },
+    {
+      "id": "U09",
+      "quote": "Доклад описывает разнонаправленные изменения растворённого кислорода, соединений азота, железа и фосфатного фосфора относительно предыдущей съёмки.",
+      "start": 1529,
+      "end": 1676
+    },
+    {
+      "id": "U10",
+      "quote": "Это локальное сезонное сравнение авторов; оно не является средней годовой характеристикой всей Селенги.",
+      "start": 1677,
+      "end": 1780
+    },
+    {
+      "id": "U11",
+      "quote": "Таблицы 2022 года снова разделяют грунтовую воду и донные отложения.",
+      "start": 1891,
+      "end": 1959
+    },
+    {
+      "id": "U12",
+      "quote": "Для отдельных показателей приведены интервалы и средние значения; для части веществ стоят прочерки.",
+      "start": 1960,
+      "end": 2059
+    },
+    {
+      "id": "U13",
+      "quote": "Прочерк не имеет однозначного значения «ноль»: без пояснения метода он не должен превращаться в числовое наблюдение.",
+      "start": 2060,
+      "end": 2176
+    },
+    {
+      "id": "U14",
+      "quote": "Структурная преемственность таблиц облегчает поиск, но ещё не доказывает одинаковую выборку станций.",
+      "start": 2177,
+      "end": 2277
+    },
+    {
+      "id": "U15",
+      "quote": "В первом абзаце PDF-страницы 26 после перечисления «ПАУ, бенз(а)пирена и канцерогенных аренов» напечатаны максимумы 124,9; 61,8; 7,9 нг/г с.о.",
+      "start": 2542,
+      "end": 2684
+    },
+    {
+      "id": "U16",
+      "quote": "В таблице 1.1.1.3.6 за 2015 год максимум БП составляет 7,9, а канцерогенов — 61,8 нг/г с.о.",
+      "start": 2685,
+      "end": 2776
+    },
+    {
+      "id": "U17",
+      "quote": "Изображение оригинала подтверждает это расхождение порядка двух последних показателей.",
+      "start": 2777,
+      "end": 2863
+    },
+    {
+      "id": "U18",
+      "quote": "Проект сохраняет обе записи и не выбирает исправленное значение: нужны первичные результаты анализа или уточнение составителей.",
+      "start": 2864,
+      "end": 2991
+    },
+    {
+      "id": "U19",
+      "quote": "Числа из спорного абзаца не включаются в проверенные наблюдения.",
+      "start": 2992,
+      "end": 3056
+    },
+    {
+      "id": "U20",
+      "quote": "Эта неоднозначность не отменяет того, что разные классификационные оценки относятся к бенз(а)пирену и сумме ПАУ.",
+      "start": 3057,
+      "end": 3169
+    },
+    {
+      "id": "U21",
+      "quote": "Наблюдения подтверждают неоднородность авандельты и необходимость различать протоки, среды и химические группы.",
+      "start": 3298,
+      "end": 3409
+    },
+    {
+      "id": "U22",
+      "quote": "По выбранным страницам нельзя утверждать, что дельта полностью задерживает загрязнение или, наоборот, является постоянным источником для всего озера.",
+      "start": 3410,
+      "end": 3559
+    },
+    {
+      "id": "U23",
+      "quote": "Для оценки таких функций нужны балансы поступления, осаждения и переноса, а не только локальные концентрации.",
+      "start": 3560,
+      "end": 3669
+    },
+    {
+      "id": "U24",
+      "quote": "Новые числовые ряды по донным отложениям не сформированы: не проверены соответствие станций, влажная/сухая масса и методики определения.",
+      "start": 3697,
+      "end": 3833
+    },
+    {
+      "id": "U25",
+      "quote": "Речной вынос за 2024–2025 годы уже имеется в другом наборе, но относится к иному объекту измерения.",
+      "start": 3834,
+      "end": 3933
+    },
+    {
+      "id": "U26",
+      "quote": "Между ним и данными грунтовой воды прямого преобразования нет.",
+      "start": 3934,
+      "end": 3996
+    }
+  ],
+  "inventory_rule": "26 substantive sentence units; compound sentences are not guaranteed atomic claims. Headings/navigation/review banner excluded; manual notes empty.",
+  "cards": [
+    {
+      "unit_ids": [
+        "U15"
+      ],
+      "article_evidence": {
+        "start": 2542,
+        "end": 2684,
+        "quote": "В первом абзаце PDF-страницы 26 после перечисления «ПАУ, бенз(а)пирена и канцерогенных аренов» напечатаны максимумы 124,9; 61,8; 7,9 нг/г с.о."
+      },
+      "source_evidence_ids": [
+        "S1"
+      ],
+      "features": {
+        "object": "донные отложения авандельты Селенги",
+        "indicator": "бенз(а)пирен",
+        "value": "61,8",
+        "statistic": "maximum",
+        "unit": "нг/г с.о.",
+        "territory": "авандельта Селенги — область отчётной сводки",
+        "period": {
+          "start": 2015,
+          "end": 2015
+        },
+        "message_kind": "reported_observation",
+        "value_kind": "numeric",
+        "attribution": "prose",
+        "comparison_scope": "reported_summary"
+      },
+      "observation_years": [
+        2015
+      ],
+      "review_status": "source_checked_non_expert",
+      "matchable": true,
+      "expert_review": false,
+      "limitations": [
+        "Зафиксировано сообщение доклада, а не независимо подтверждённое измерение; зеркало mirror_unverified.",
+        "Территория максимума задана здесь только как область отчётной сводки авандельты; это не координаты станции и не разрешение сравнивать разные выборки.",
+        "Год публикации неизвестен. Автоматизированная сверка не является научной экспертизой.",
+        "Подтверждено атрибутированное сообщение, не истинность спорного измерения."
+      ],
+      "source_support": "direct_attributed_statement",
+      "legacy_record": {
+        "key": "prose_bp_max",
+        "features": {
+          "object": "донные отложения авандельты Селенги",
+          "indicator": "бенз(а)пирен",
+          "value": "61,8",
+          "qualitative_value": null,
+          "value_kind": "quantitative",
+          "statistic": "maximum",
+          "unit": "нг/г с.о.",
+          "territory": "авандельта Селенги — область отчётной сводки",
+          "period": {
+            "start": 2015,
+            "end": 2015
+          },
+          "statement_kind": "reported_observation",
+          "comparison_scope": "reported_summary",
+          "attribution": "prose"
+        },
+        "article_evidence": {
+          "start": 2542,
+          "end": 2684,
+          "quote": "В первом абзаце PDF-страницы 26 после перечисления «ПАУ, бенз(а)пирена и канцерогенных аренов» напечатаны максимумы 124,9; 61,8; 7,9 нг/г с.о."
+        },
+        "source_evidence_ids": [
+          "S1"
+        ],
+        "source_location": {
+          "role": "prose",
+          "cell_ids": [],
+          "year_basis": "2015 row for table; same 2015 paragraph context for prose assessments"
+        },
+        "report_year": 2015,
+        "publication_year": null,
+        "review_status": "source_comparison_non_expert",
+        "expert_review": false,
+        "limitations": [
+          "Зафиксировано сообщение доклада, а не независимо подтверждённое измерение; зеркало mirror_unverified.",
+          "Территория максимума задана здесь только как область отчётной сводки авандельты; это не координаты станции и не разрешение сравнивать разные выборки.",
+          "Год публикации неизвестен. Автоматизированная сверка не является научной экспертизой."
+        ],
+        "claim_id": "L1788d9bc5db328b3"
+      },
+      "indicator": "бенз(а)пирен",
+      "statistic_type": "maximum",
+      "territory": "авандельта Селенги — область отчётной сводки",
+      "unit": "нг/г с.о.",
+      "publication_year": null,
+      "card_id": "Va1717fe930f90aa5"
+    },
+    {
+      "unit_ids": [
+        "U15"
+      ],
+      "article_evidence": {
+        "start": 2542,
+        "end": 2684,
+        "quote": "В первом абзаце PDF-страницы 26 после перечисления «ПАУ, бенз(а)пирена и канцерогенных аренов» напечатаны максимумы 124,9; 61,8; 7,9 нг/г с.о."
+      },
+      "source_evidence_ids": [
+        "S1"
+      ],
+      "features": {
+        "object": "донные отложения авандельты Селенги",
+        "indicator": "канцерогенные арены",
+        "value": "7,9",
+        "statistic": "maximum",
+        "unit": "нг/г с.о.",
+        "territory": "авандельта Селенги — область отчётной сводки",
+        "period": {
+          "start": 2015,
+          "end": 2015
+        },
+        "message_kind": "reported_observation",
+        "value_kind": "numeric",
+        "attribution": "prose",
+        "comparison_scope": "reported_summary"
+      },
+      "observation_years": [
+        2015
+      ],
+      "review_status": "source_checked_non_expert",
+      "matchable": true,
+      "expert_review": false,
+      "limitations": [
+        "Зафиксировано сообщение доклада, а не независимо подтверждённое измерение; зеркало mirror_unverified.",
+        "Территория максимума задана здесь только как область отчётной сводки авандельты; это не координаты станции и не разрешение сравнивать разные выборки.",
+        "Год публикации неизвестен. Автоматизированная сверка не является научной экспертизой.",
+        "Подтверждено атрибутированное сообщение, не истинность спорного измерения."
+      ],
+      "source_support": "direct_attributed_statement",
+      "legacy_record": {
+        "key": "prose_carc_max",
+        "features": {
+          "object": "донные отложения авандельты Селенги",
+          "indicator": "канцерогенные арены",
+          "value": "7,9",
+          "qualitative_value": null,
+          "value_kind": "quantitative",
+          "statistic": "maximum",
+          "unit": "нг/г с.о.",
+          "territory": "авандельта Селенги — область отчётной сводки",
+          "period": {
+            "start": 2015,
+            "end": 2015
+          },
+          "statement_kind": "reported_observation",
+          "comparison_scope": "reported_summary",
+          "attribution": "prose"
+        },
+        "article_evidence": {
+          "start": 2542,
+          "end": 2684,
+          "quote": "В первом абзаце PDF-страницы 26 после перечисления «ПАУ, бенз(а)пирена и канцерогенных аренов» напечатаны максимумы 124,9; 61,8; 7,9 нг/г с.о."
+        },
+        "source_evidence_ids": [
+          "S1"
+        ],
+        "source_location": {
+          "role": "prose",
+          "cell_ids": [],
+          "year_basis": "2015 row for table; same 2015 paragraph context for prose assessments"
+        },
+        "report_year": 2015,
+        "publication_year": null,
+        "review_status": "source_comparison_non_expert",
+        "expert_review": false,
+        "limitations": [
+          "Зафиксировано сообщение доклада, а не независимо подтверждённое измерение; зеркало mirror_unverified.",
+          "Территория максимума задана здесь только как область отчётной сводки авандельты; это не координаты станции и не разрешение сравнивать разные выборки.",
+          "Год публикации неизвестен. Автоматизированная сверка не является научной экспертизой."
+        ],
+        "claim_id": "Lf6d5c12cfac9bb25"
+      },
+      "indicator": "канцерогенные арены",
+      "statistic_type": "maximum",
+      "territory": "авандельта Селенги — область отчётной сводки",
+      "unit": "нг/г с.о.",
+      "publication_year": null,
+      "card_id": "V4329f871572c1f5e"
+    },
+    {
+      "unit_ids": [
+        "U15"
+      ],
+      "article_evidence": {
+        "start": 2542,
+        "end": 2684,
+        "quote": "В первом абзаце PDF-страницы 26 после перечисления «ПАУ, бенз(а)пирена и канцерогенных аренов» напечатаны максимумы 124,9; 61,8; 7,9 нг/г с.о."
+      },
+      "source_evidence_ids": [
+        "S1"
+      ],
+      "features": {
+        "object": "донные отложения авандельты Селенги",
+        "indicator": "сумма ПАУ",
+        "value": "124,9",
+        "statistic": "maximum",
+        "unit": "нг/г с.о.",
+        "territory": "авандельта Селенги — область отчётной сводки",
+        "period": {
+          "start": 2015,
+          "end": 2015
+        },
+        "message_kind": "reported_observation",
+        "value_kind": "numeric",
+        "attribution": "prose",
+        "comparison_scope": "reported_summary"
+      },
+      "observation_years": [
+        2015
+      ],
+      "review_status": "source_checked_non_expert",
+      "matchable": true,
+      "expert_review": false,
+      "limitations": [
+        "Зафиксировано сообщение доклада, а не независимо подтверждённое измерение; зеркало mirror_unverified.",
+        "Территория максимума задана здесь только как область отчётной сводки авандельты; это не координаты станции и не разрешение сравнивать разные выборки.",
+        "Год публикации неизвестен. Автоматизированная сверка не является научной экспертизой.",
+        "Подтверждено атрибутированное сообщение, не истинность спорного измерения."
+      ],
+      "source_support": "direct_attributed_statement",
+      "legacy_record": {
+        "key": "prose_pah_max",
+        "features": {
+          "object": "донные отложения авандельты Селенги",
+          "indicator": "сумма ПАУ",
+          "value": "124,9",
+          "qualitative_value": null,
+          "value_kind": "quantitative",
+          "statistic": "maximum",
+          "unit": "нг/г с.о.",
+          "territory": "авандельта Селенги — область отчётной сводки",
+          "period": {
+            "start": 2015,
+            "end": 2015
+          },
+          "statement_kind": "reported_observation",
+          "comparison_scope": "reported_summary",
+          "attribution": "prose"
+        },
+        "article_evidence": {
+          "start": 2542,
+          "end": 2684,
+          "quote": "В первом абзаце PDF-страницы 26 после перечисления «ПАУ, бенз(а)пирена и канцерогенных аренов» напечатаны максимумы 124,9; 61,8; 7,9 нг/г с.о."
+        },
+        "source_evidence_ids": [
+          "S1"
+        ],
+        "source_location": {
+          "role": "prose",
+          "cell_ids": [],
+          "year_basis": "2015 row for table; same 2015 paragraph context for prose assessments"
+        },
+        "report_year": 2015,
+        "publication_year": null,
+        "review_status": "source_comparison_non_expert",
+        "expert_review": false,
+        "limitations": [
+          "Зафиксировано сообщение доклада, а не независимо подтверждённое измерение; зеркало mirror_unverified.",
+          "Территория максимума задана здесь только как область отчётной сводки авандельты; это не координаты станции и не разрешение сравнивать разные выборки.",
+          "Год публикации неизвестен. Автоматизированная сверка не является научной экспертизой."
+        ],
+        "claim_id": "L8c8c408673aac019"
+      },
+      "indicator": "сумма ПАУ",
+      "statistic_type": "maximum",
+      "territory": "авандельта Селенги — область отчётной сводки",
+      "unit": "нг/г с.о.",
+      "publication_year": null,
+      "card_id": "V4d35bd3197453a8e"
+    },
+    {
+      "unit_ids": [
+        "U16"
+      ],
+      "article_evidence": {
+        "start": 2685,
+        "end": 2776,
+        "quote": "В таблице 1.1.1.3.6 за 2015 год максимум БП составляет 7,9, а канцерогенов — 61,8 нг/г с.о."
+      },
+      "source_evidence_ids": [
+        "S2"
+      ],
+      "features": {
+        "object": "донные отложения авандельты Селенги",
+        "indicator": "бенз(а)пирен",
+        "value": "7,9",
+        "statistic": "maximum",
+        "unit": "нг/г с.о.",
+        "territory": "авандельта Селенги — область отчётной сводки",
+        "period": {
+          "start": 2015,
+          "end": 2015
+        },
+        "message_kind": "reported_observation",
+        "value_kind": "numeric",
+        "attribution": "table",
+        "comparison_scope": "reported_summary"
+      },
+      "observation_years": [
+        2015
+      ],
+      "review_status": "source_checked_non_expert",
+      "matchable": true,
+      "expert_review": false,
+      "limitations": [
+        "Зафиксировано сообщение доклада, а не независимо подтверждённое измерение; зеркало mirror_unverified.",
+        "Территория максимума задана здесь только как область отчётной сводки авандельты; это не координаты станции и не разрешение сравнивать разные выборки.",
+        "Год публикации неизвестен. Автоматизированная сверка не является научной экспертизой.",
+        "Подтверждено атрибутированное сообщение, не истинность спорного измерения."
+      ],
+      "source_support": "direct_attributed_statement",
+      "legacy_record": {
+        "key": "table_bp_max",
+        "features": {
+          "object": "донные отложения авандельты Селенги",
+          "indicator": "бенз(а)пирен",
+          "value": "7,9",
+          "qualitative_value": null,
+          "value_kind": "quantitative",
+          "statistic": "maximum",
+          "unit": "нг/г с.о.",
+          "territory": "авандельта Селенги — область отчётной сводки",
+          "period": {
+            "start": 2015,
+            "end": 2015
+          },
+          "statement_kind": "reported_observation",
+          "comparison_scope": "reported_summary",
+          "attribution": "table"
+        },
+        "article_evidence": {
+          "start": 2685,
+          "end": 2776,
+          "quote": "В таблице 1.1.1.3.6 за 2015 год максимум БП составляет 7,9, а канцерогенов — 61,8 нг/г с.о."
+        },
+        "source_evidence_ids": [
+          "S2"
+        ],
+        "source_location": {
+          "role": "table",
+          "cell_ids": [
+            "T2015_C1",
+            "T2015_C2"
+          ],
+          "year_basis": "2015 row for table; same 2015 paragraph context for prose assessments"
+        },
+        "report_year": 2015,
+        "publication_year": null,
+        "review_status": "source_comparison_non_expert",
+        "expert_review": false,
+        "limitations": [
+          "Зафиксировано сообщение доклада, а не независимо подтверждённое измерение; зеркало mirror_unverified.",
+          "Территория максимума задана здесь только как область отчётной сводки авандельты; это не координаты станции и не разрешение сравнивать разные выборки.",
+          "Год публикации неизвестен. Автоматизированная сверка не является научной экспертизой."
+        ],
+        "claim_id": "L1f11e4bf4a239adc"
+      },
+      "indicator": "бенз(а)пирен",
+      "statistic_type": "maximum",
+      "territory": "авандельта Селенги — область отчётной сводки",
+      "unit": "нг/г с.о.",
+      "publication_year": null,
+      "card_id": "Vaceb849aeaa1fe2d"
+    },
+    {
+      "unit_ids": [
+        "U16"
+      ],
+      "article_evidence": {
+        "start": 2685,
+        "end": 2776,
+        "quote": "В таблице 1.1.1.3.6 за 2015 год максимум БП составляет 7,9, а канцерогенов — 61,8 нг/г с.о."
+      },
+      "source_evidence_ids": [
+        "S2"
+      ],
+      "features": {
+        "object": "донные отложения авандельты Селенги",
+        "indicator": "канцерогенные арены",
+        "value": "61,8",
+        "statistic": "maximum",
+        "unit": "нг/г с.о.",
+        "territory": "авандельта Селенги — область отчётной сводки",
+        "period": {
+          "start": 2015,
+          "end": 2015
+        },
+        "message_kind": "reported_observation",
+        "value_kind": "numeric",
+        "attribution": "table",
+        "comparison_scope": "reported_summary"
+      },
+      "observation_years": [
+        2015
+      ],
+      "review_status": "source_checked_non_expert",
+      "matchable": true,
+      "expert_review": false,
+      "limitations": [
+        "Зафиксировано сообщение доклада, а не независимо подтверждённое измерение; зеркало mirror_unverified.",
+        "Территория максимума задана здесь только как область отчётной сводки авандельты; это не координаты станции и не разрешение сравнивать разные выборки.",
+        "Год публикации неизвестен. Автоматизированная сверка не является научной экспертизой.",
+        "Подтверждено атрибутированное сообщение, не истинность спорного измерения."
+      ],
+      "source_support": "direct_attributed_statement",
+      "legacy_record": {
+        "key": "table_carc_max",
+        "features": {
+          "object": "донные отложения авандельты Селенги",
+          "indicator": "канцерогенные арены",
+          "value": "61,8",
+          "qualitative_value": null,
+          "value_kind": "quantitative",
+          "statistic": "maximum",
+          "unit": "нг/г с.о.",
+          "territory": "авандельта Селенги — область отчётной сводки",
+          "period": {
+            "start": 2015,
+            "end": 2015
+          },
+          "statement_kind": "reported_observation",
+          "comparison_scope": "reported_summary",
+          "attribution": "table"
+        },
+        "article_evidence": {
+          "start": 2685,
+          "end": 2776,
+          "quote": "В таблице 1.1.1.3.6 за 2015 год максимум БП составляет 7,9, а канцерогенов — 61,8 нг/г с.о."
+        },
+        "source_evidence_ids": [
+          "S2"
+        ],
+        "source_location": {
+          "role": "table",
+          "cell_ids": [
+            "T2015_C5",
+            "T2015_C6"
+          ],
+          "year_basis": "2015 row for table; same 2015 paragraph context for prose assessments"
+        },
+        "report_year": 2015,
+        "publication_year": null,
+        "review_status": "source_comparison_non_expert",
+        "expert_review": false,
+        "limitations": [
+          "Зафиксировано сообщение доклада, а не независимо подтверждённое измерение; зеркало mirror_unverified.",
+          "Территория максимума задана здесь только как область отчётной сводки авандельты; это не координаты станции и не разрешение сравнивать разные выборки.",
+          "Год публикации неизвестен. Автоматизированная сверка не является научной экспертизой."
+        ],
+        "claim_id": "L48f482bcea6de637"
+      },
+      "indicator": "канцерогенные арены",
+      "statistic_type": "maximum",
+      "territory": "авандельта Селенги — область отчётной сводки",
+      "unit": "нг/г с.о.",
+      "publication_year": null,
+      "card_id": "V7b92343d6e5d38c1"
+    },
+    {
+      "unit_ids": [
+        "U05"
+      ],
+      "article_evidence": {
+        "start": 1031,
+        "end": 1138,
+        "quote": "По бенз(а)пирену источник относит загрязнённость к фоновому уровню, а по сумме ПАУ — к слабому загрязнению."
+      },
+      "source_evidence_ids": [
+        "S1"
+      ],
+      "features": {
+        "object": "донные отложения авандельты Селенги",
+        "indicator": "бенз(а)пирен",
+        "value": "фоновый уровень",
+        "statistic": "classification",
+        "unit": null,
+        "territory": "авандельта Селенги — область отчётной сводки",
+        "period": {
+          "start": 2015,
+          "end": 2015
+        },
+        "message_kind": "author_assessment",
+        "value_kind": "qualitative",
+        "attribution": "prose",
+        "comparison_scope": "reported_summary"
+      },
+      "observation_years": [
+        2015
+      ],
+      "review_status": "source_checked_non_expert",
+      "matchable": true,
+      "expert_review": false,
+      "limitations": [
+        "Зафиксировано сообщение доклада, а не независимо подтверждённое измерение; зеркало mirror_unverified.",
+        "Территория максимума задана здесь только как область отчётной сводки авандельты; это не координаты станции и не разрешение сравнивать разные выборки.",
+        "Год публикации неизвестен. Автоматизированная сверка не является научной экспертизой.",
+        "Подтверждено атрибутированное сообщение, не истинность спорного измерения."
+      ],
+      "source_support": "direct_attributed_statement",
+      "legacy_record": {
+        "key": "bp_background",
+        "features": {
+          "object": "донные отложения авандельты Селенги",
+          "indicator": "бенз(а)пирен",
+          "value": null,
+          "qualitative_value": "фоновый уровень",
+          "value_kind": "qualitative",
+          "statistic": "classification",
+          "unit": null,
+          "territory": "авандельта Селенги — область отчётной сводки",
+          "period": {
+            "start": 2015,
+            "end": 2015
+          },
+          "statement_kind": "author_assessment",
+          "comparison_scope": "reported_summary",
+          "attribution": "prose"
+        },
+        "article_evidence": {
+          "start": 1031,
+          "end": 1138,
+          "quote": "По бенз(а)пирену источник относит загрязнённость к фоновому уровню, а по сумме ПАУ — к слабому загрязнению."
+        },
+        "source_evidence_ids": [
+          "S1"
+        ],
+        "source_location": {
+          "role": "prose",
+          "cell_ids": [],
+          "year_basis": "2015 row for table; same 2015 paragraph context for prose assessments"
+        },
+        "report_year": 2015,
+        "publication_year": null,
+        "review_status": "source_comparison_non_expert",
+        "expert_review": false,
+        "limitations": [
+          "Зафиксировано сообщение доклада, а не независимо подтверждённое измерение; зеркало mirror_unverified.",
+          "Территория максимума задана здесь только как область отчётной сводки авандельты; это не координаты станции и не разрешение сравнивать разные выборки.",
+          "Год публикации неизвестен. Автоматизированная сверка не является научной экспертизой."
+        ],
+        "claim_id": "La650412754bb0a9f"
+      },
+      "indicator": "бенз(а)пирен",
+      "statistic_type": "classification",
+      "territory": "авандельта Селенги — область отчётной сводки",
+      "unit": null,
+      "publication_year": null,
+      "card_id": "V1c4a4e29215f8f47"
+    },
+    {
+      "unit_ids": [
+        "U05"
+      ],
+      "article_evidence": {
+        "start": 1031,
+        "end": 1138,
+        "quote": "По бенз(а)пирену источник относит загрязнённость к фоновому уровню, а по сумме ПАУ — к слабому загрязнению."
+      },
+      "source_evidence_ids": [
+        "S1"
+      ],
+      "features": {
+        "object": "донные отложения авандельты Селенги",
+        "indicator": "сумма ПАУ",
+        "value": "слабое загрязнение",
+        "statistic": "classification",
+        "unit": null,
+        "territory": "авандельта Селенги — область отчётной сводки",
+        "period": {
+          "start": 2015,
+          "end": 2015
+        },
+        "message_kind": "author_assessment",
+        "value_kind": "qualitative",
+        "attribution": "prose",
+        "comparison_scope": "reported_summary"
+      },
+      "observation_years": [
+        2015
+      ],
+      "review_status": "source_checked_non_expert",
+      "matchable": true,
+      "expert_review": false,
+      "limitations": [
+        "Зафиксировано сообщение доклада, а не независимо подтверждённое измерение; зеркало mirror_unverified.",
+        "Территория максимума задана здесь только как область отчётной сводки авандельты; это не координаты станции и не разрешение сравнивать разные выборки.",
+        "Год публикации неизвестен. Автоматизированная сверка не является научной экспертизой.",
+        "Подтверждено атрибутированное сообщение, не истинность спорного измерения."
+      ],
+      "source_support": "direct_attributed_statement",
+      "legacy_record": {
+        "key": "pah_weak",
+        "features": {
+          "object": "донные отложения авандельты Селенги",
+          "indicator": "сумма ПАУ",
+          "value": null,
+          "qualitative_value": "слабое загрязнение",
+          "value_kind": "qualitative",
+          "statistic": "classification",
+          "unit": null,
+          "territory": "авандельта Селенги — область отчётной сводки",
+          "period": {
+            "start": 2015,
+            "end": 2015
+          },
+          "statement_kind": "author_assessment",
+          "comparison_scope": "reported_summary",
+          "attribution": "prose"
+        },
+        "article_evidence": {
+          "start": 1031,
+          "end": 1138,
+          "quote": "По бенз(а)пирену источник относит загрязнённость к фоновому уровню, а по сумме ПАУ — к слабому загрязнению."
+        },
+        "source_evidence_ids": [
+          "S1"
+        ],
+        "source_location": {
+          "role": "prose",
+          "cell_ids": [],
+          "year_basis": "2015 row for table; same 2015 paragraph context for prose assessments"
+        },
+        "report_year": 2015,
+        "publication_year": null,
+        "review_status": "source_comparison_non_expert",
+        "expert_review": false,
+        "limitations": [
+          "Зафиксировано сообщение доклада, а не независимо подтверждённое измерение; зеркало mirror_unverified.",
+          "Территория максимума задана здесь только как область отчётной сводки авандельты; это не координаты станции и не разрешение сравнивать разные выборки.",
+          "Год публикации неизвестен. Автоматизированная сверка не является научной экспертизой."
+        ],
+        "claim_id": "Lcab0a28f7d6147fb"
+      },
+      "indicator": "сумма ПАУ",
+      "statistic_type": "classification",
+      "territory": "авандельта Селенги — область отчётной сводки",
+      "unit": null,
+      "publication_year": null,
+      "card_id": "Va2c2df006bfa7f60"
+    },
+    {
+      "unit_ids": [
+        "U01"
+      ],
+      "article_evidence": {
+        "start": 331,
+        "end": 480,
+        "quote": "Грунтовая вода и донные отложения авандельты — разные среды, отличные от поверхностной воды реки и от годового выноса веществ через замыкающий створ."
+      },
+      "source_evidence_ids": [
+        "E19_32",
+        "E22_40"
+      ],
+      "features": null,
+      "observation_years": [
+        2019,
+        2022
+      ],
+      "review_status": "source_checked_non_expert",
+      "matchable": false,
+      "expert_review": false,
+      "limitations": [
+        "Источник/контекст указан отдельно от силы подтверждения. Не формировать числовое наблюдение из интерпретации или пробела.",
+        "Год публикации неизвестен; научной экспертизы нет.",
+        "Проверены заголовки и описание представления таблиц; все ячейки не валидированы этим утверждением."
+      ],
+      "source_support": "direct_article_statement_checked",
+      "indicator": "Грунтовая вода и донные отложения авандельты — разные среды, отличные от поверхностной воды реки и о",
+      "statistic_type": null,
+      "territory": "авандельта Селенги",
+      "unit": null,
+      "publication_year": null,
+      "card_id": "V9b54f6dda3b49fe0"
+    },
+    {
+      "unit_ids": [
+        "U02"
+      ],
+      "article_evidence": {
+        "start": 481,
+        "end": 567,
+        "quote": "Доклады представляют для них отдельные гидрохимические и геохимические характеристики."
+      },
+      "source_evidence_ids": [
+        "E19_32",
+        "E22_40"
+      ],
+      "features": null,
+      "observation_years": [
+        2019,
+        2022
+      ],
+      "review_status": "source_checked_non_expert",
+      "matchable": false,
+      "expert_review": false,
+      "limitations": [
+        "Источник/контекст указан отдельно от силы подтверждения. Не формировать числовое наблюдение из интерпретации или пробела.",
+        "Год публикации неизвестен; научной экспертизы нет.",
+        "Проверены заголовки и описание представления таблиц; все ячейки не валидированы этим утверждением."
+      ],
+      "source_support": "direct_article_statement_checked",
+      "indicator": "Доклады представляют для них отдельные гидрохимические и геохимические характеристики.",
+      "statistic_type": null,
+      "territory": "авандельта Селенги",
+      "unit": null,
+      "publication_year": null,
+      "card_id": "V9f979a45bf854b2e"
+    },
+    {
+      "unit_ids": [
+        "U03"
+      ],
+      "article_evidence": {
+        "start": 568,
+        "end": 650,
+        "quote": "Значение в воде нельзя напрямую сравнивать с содержанием в сухом донном материале."
+      },
+      "source_evidence_ids": [
+        "E19_32",
+        "E22_40"
+      ],
+      "features": null,
+      "observation_years": [
+        2019,
+        2022
+      ],
+      "review_status": "interpretation_or_method_limit_needs_review",
+      "matchable": false,
+      "expert_review": false,
+      "limitations": [
+        "Источник/контекст указан отдельно от силы подтверждения. Не формировать числовое наблюдение из интерпретации или пробела.",
+        "Год публикации неизвестен; научной экспертизы нет."
+      ],
+      "source_support": "context_only_not_a_literal_source_fact",
+      "indicator": "Значение в воде нельзя напрямую сравнивать с содержанием в сухом донном материале.",
+      "statistic_type": null,
+      "territory": "авандельта Селенги",
+      "unit": null,
+      "publication_year": null,
+      "card_id": "Va0f90d00ccc6ac93"
+    },
+    {
+      "unit_ids": [
+        "U04"
+      ],
+      "article_evidence": {
+        "start": 901,
+        "end": 1030,
+        "quote": "В докладе 2015 года максимумы содержания исследованных ароматических углеводородов отмечены напротив выносов протоки Усть-Харауз."
+      },
+      "source_evidence_ids": [
+        "S1"
+      ],
+      "features": null,
+      "observation_years": [
+        2015
+      ],
+      "review_status": "source_checked_non_expert",
+      "matchable": false,
+      "expert_review": false,
+      "limitations": [
+        "Источник/контекст указан отдельно от силы подтверждения. Не формировать числовое наблюдение из интерпретации или пробела.",
+        "Год публикации неизвестен; научной экспертизы нет."
+      ],
+      "source_support": "direct_article_statement_checked",
+      "indicator": "В докладе 2015 года максимумы содержания исследованных ароматических углеводородов отмечены напротив",
+      "statistic_type": "maximum",
+      "territory": "авандельта Селенги",
+      "unit": "нг/г с.о.",
+      "publication_year": null,
+      "card_id": "V86c33bc27ffdaa13"
+    },
+    {
+      "unit_ids": [
+        "U06"
+      ],
+      "article_evidence": {
+        "start": 1139,
+        "end": 1228,
+        "quote": "Эти две оценки относятся к разным показателям и не противоречат друг другу автоматически."
+      },
+      "source_evidence_ids": [
+        "S1"
+      ],
+      "features": null,
+      "observation_years": [
+        2015
+      ],
+      "review_status": "interpretation_or_method_limit_needs_review",
+      "matchable": false,
+      "expert_review": false,
+      "limitations": [
+        "Источник/контекст указан отдельно от силы подтверждения. Не формировать числовое наблюдение из интерпретации или пробела.",
+        "Год публикации неизвестен; научной экспертизы нет."
+      ],
+      "source_support": "context_only_not_a_literal_source_fact",
+      "indicator": "Эти две оценки относятся к разным показателям и не противоречат друг другу автоматически.",
+      "statistic_type": null,
+      "territory": "авандельта Селенги",
+      "unit": null,
+      "publication_year": null,
+      "card_id": "V699613b9a0d15172"
+    },
+    {
+      "unit_ids": [
+        "U07"
+      ],
+      "article_evidence": {
+        "start": 1229,
+        "end": 1311,
+        "quote": "На той же странице отдельно обсуждается изменение содержания канцерогенных аренов."
+      },
+      "source_evidence_ids": [
+        "S1"
+      ],
+      "features": null,
+      "observation_years": [
+        2015
+      ],
+      "review_status": "source_checked_non_expert",
+      "matchable": false,
+      "expert_review": false,
+      "limitations": [
+        "Источник/контекст указан отдельно от силы подтверждения. Не формировать числовое наблюдение из интерпретации или пробела.",
+        "Год публикации неизвестен; научной экспертизы нет."
+      ],
+      "source_support": "direct_article_statement_checked",
+      "indicator": "На той же странице отдельно обсуждается изменение содержания канцерогенных аренов.",
+      "statistic_type": null,
+      "territory": "авандельта Селенги",
+      "unit": null,
+      "publication_year": null,
+      "card_id": "V9f695453304b71b0"
+    },
+    {
+      "unit_ids": [
+        "U08"
+      ],
+      "article_evidence": {
+        "start": 1422,
+        "end": 1528,
+        "quote": "В 2019 году на авандельте проведена одна сентябрьская съёмка с отбором грунтовой воды и донного материала."
+      },
+      "source_evidence_ids": [
+        "E19_31",
+        "E19_32"
+      ],
+      "features": {
+        "object": "съёмка авандельты",
+        "indicator": "число съёмок",
+        "value": "1",
+        "statistic": "count",
+        "unit": "съёмка",
+        "territory": "авандельта Селенги",
+        "period": {
+          "year": 2019,
+          "month": 9
+        },
+        "message_kind": "observation",
+        "value_kind": "numeric",
+        "attribution": "source_statement",
+        "comparison_scope": "specified_event_or_table"
+      },
+      "observation_years": [
+        2019
+      ],
+      "review_status": "source_checked_non_expert",
+      "matchable": true,
+      "expert_review": false,
+      "limitations": [
+        "Источник/контекст указан отдельно от силы подтверждения. Не формировать числовое наблюдение из интерпретации или пробела.",
+        "Год публикации неизвестен; научной экспертизы нет.",
+        "В статье названы одна съёмка и среды; 12 проб/глубины из источника не переносятся в поля утверждения статьи."
+      ],
+      "source_support": "direct_article_statement_checked",
+      "indicator": "число съёмок",
+      "statistic_type": "count",
+      "territory": "авандельта Селенги",
+      "unit": "съёмка",
+      "publication_year": null,
+      "card_id": "Vbe2067f0ef252681"
+    },
+    {
+      "unit_ids": [
+        "U09"
+      ],
+      "article_evidence": {
+        "start": 1529,
+        "end": 1676,
+        "quote": "Доклад описывает разнонаправленные изменения растворённого кислорода, соединений азота, железа и фосфатного фосфора относительно предыдущей съёмки."
+      },
+      "source_evidence_ids": [
+        "E19_31"
+      ],
+      "features": {
+        "object": "грунтовая вода",
+        "indicator": "направленность гидрохимических изменений",
+        "value": "разнонаправленные изменения",
+        "statistic": "qualitative_comparison",
+        "unit": null,
+        "territory": "авандельта Селенги",
+        "period": {
+          "observation_year": 2019,
+          "reference": "предыдущая съёмка"
+        },
+        "message_kind": "source_interpretation",
+        "value_kind": "qualitative",
+        "attribution": "source_statement",
+        "comparison_scope": "specified_event_or_table"
+      },
+      "observation_years": [
+        2019
+      ],
+      "review_status": "source_checked_non_expert",
+      "matchable": true,
+      "expert_review": false,
+      "limitations": [
+        "Источник/контекст указан отдельно от силы подтверждения. Не формировать числовое наблюдение из интерпретации или пробела.",
+        "Год публикации неизвестен; научной экспертизы нет."
+      ],
+      "source_support": "direct_article_statement_checked",
+      "indicator": "направленность гидрохимических изменений",
+      "statistic_type": "qualitative_comparison",
+      "territory": "авандельта Селенги",
+      "unit": null,
+      "publication_year": null,
+      "card_id": "V6e86d99bfb11236e"
+    },
+    {
+      "unit_ids": [
+        "U10"
+      ],
+      "article_evidence": {
+        "start": 1677,
+        "end": 1780,
+        "quote": "Это локальное сезонное сравнение авторов; оно не является средней годовой характеристикой всей Селенги."
+      },
+      "source_evidence_ids": [
+        "E19_31"
+      ],
+      "features": null,
+      "observation_years": [
+        2019
+      ],
+      "review_status": "interpretation_or_method_limit_needs_review",
+      "matchable": false,
+      "expert_review": false,
+      "limitations": [
+        "Источник/контекст указан отдельно от силы подтверждения. Не формировать числовое наблюдение из интерпретации или пробела.",
+        "Год публикации неизвестен; научной экспертизы нет."
+      ],
+      "source_support": "context_only_not_a_literal_source_fact",
+      "indicator": "Это локальное сезонное сравнение авторов; оно не является средней годовой характеристикой всей Селен",
+      "statistic_type": null,
+      "territory": "авандельта Селенги",
+      "unit": null,
+      "publication_year": null,
+      "card_id": "Ve6cea641a2a897f3"
+    },
+    {
+      "unit_ids": [
+        "U11"
+      ],
+      "article_evidence": {
+        "start": 1891,
+        "end": 1959,
+        "quote": "Таблицы 2022 года снова разделяют грунтовую воду и донные отложения."
+      },
+      "source_evidence_ids": [
+        "E22_40"
+      ],
+      "features": null,
+      "observation_years": [
+        2022
+      ],
+      "review_status": "source_checked_non_expert",
+      "matchable": false,
+      "expert_review": false,
+      "limitations": [
+        "Источник/контекст указан отдельно от силы подтверждения. Не формировать числовое наблюдение из интерпретации или пробела.",
+        "Год публикации неизвестен; научной экспертизы нет.",
+        "Проверены заголовки и описание представления таблиц; все ячейки не валидированы этим утверждением."
+      ],
+      "source_support": "direct_article_statement_checked",
+      "indicator": "Таблицы 2022 года снова разделяют грунтовую воду и донные отложения.",
+      "statistic_type": null,
+      "territory": "авандельта Селенги",
+      "unit": null,
+      "publication_year": null,
+      "card_id": "V64076533c07a6a0d"
+    },
+    {
+      "unit_ids": [
+        "U12"
+      ],
+      "article_evidence": {
+        "start": 1960,
+        "end": 2059,
+        "quote": "Для отдельных показателей приведены интервалы и средние значения; для части веществ стоят прочерки."
+      },
+      "source_evidence_ids": [
+        "E22_40"
+      ],
+      "features": null,
+      "observation_years": [
+        2022
+      ],
+      "review_status": "source_checked_non_expert",
+      "matchable": false,
+      "expert_review": false,
+      "limitations": [
+        "Источник/контекст указан отдельно от силы подтверждения. Не формировать числовое наблюдение из интерпретации или пробела.",
+        "Год публикации неизвестен; научной экспертизы нет.",
+        "Проверены заголовки и описание представления таблиц; все ячейки не валидированы этим утверждением."
+      ],
+      "source_support": "direct_article_statement_checked",
+      "indicator": "Для отдельных показателей приведены интервалы и средние значения; для части веществ стоят прочерки.",
+      "statistic_type": null,
+      "territory": "авандельта Селенги",
+      "unit": null,
+      "publication_year": null,
+      "card_id": "V79ae01a85a2cc908"
+    },
+    {
+      "unit_ids": [
+        "U13"
+      ],
+      "article_evidence": {
+        "start": 2060,
+        "end": 2176,
+        "quote": "Прочерк не имеет однозначного значения «ноль»: без пояснения метода он не должен превращаться в числовое наблюдение."
+      },
+      "source_evidence_ids": [
+        "E22_40"
+      ],
+      "features": null,
+      "observation_years": [
+        2022
+      ],
+      "review_status": "interpretation_or_method_limit_needs_review",
+      "matchable": false,
+      "expert_review": false,
+      "limitations": [
+        "Источник/контекст указан отдельно от силы подтверждения. Не формировать числовое наблюдение из интерпретации или пробела.",
+        "Год публикации неизвестен; научной экспертизы нет."
+      ],
+      "source_support": "context_only_not_a_literal_source_fact",
+      "indicator": "Прочерк не имеет однозначного значения «ноль»: без пояснения метода он не должен превращаться в числ",
+      "statistic_type": null,
+      "territory": "авандельта Селенги",
+      "unit": null,
+      "publication_year": null,
+      "card_id": "Vee0757b000e2d8aa"
+    },
+    {
+      "unit_ids": [
+        "U14"
+      ],
+      "article_evidence": {
+        "start": 2177,
+        "end": 2277,
+        "quote": "Структурная преемственность таблиц облегчает поиск, но ещё не доказывает одинаковую выборку станций."
+      },
+      "source_evidence_ids": [
+        "E19_32",
+        "E22_40"
+      ],
+      "features": null,
+      "observation_years": [
+        2019,
+        2022
+      ],
+      "review_status": "interpretation_or_method_limit_needs_review",
+      "matchable": false,
+      "expert_review": false,
+      "limitations": [
+        "Источник/контекст указан отдельно от силы подтверждения. Не формировать числовое наблюдение из интерпретации или пробела.",
+        "Год публикации неизвестен; научной экспертизы нет."
+      ],
+      "source_support": "context_only_not_a_literal_source_fact",
+      "indicator": "Структурная преемственность таблиц облегчает поиск, но ещё не доказывает одинаковую выборку станций.",
+      "statistic_type": null,
+      "territory": "авандельта Селенги",
+      "unit": null,
+      "publication_year": null,
+      "card_id": "V45c95a13744734cc"
+    },
+    {
+      "unit_ids": [
+        "U17"
+      ],
+      "article_evidence": {
+        "start": 2777,
+        "end": 2863,
+        "quote": "Изображение оригинала подтверждает это расхождение порядка двух последних показателей."
+      },
+      "source_evidence_ids": [
+        "S1",
+        "S2"
+      ],
+      "features": null,
+      "observation_years": null,
+      "review_status": "prior_review_reused",
+      "matchable": false,
+      "expert_review": false,
+      "limitations": [
+        "Источник/контекст указан отдельно от силы подтверждения. Не формировать числовое наблюдение из интерпретации или пробела.",
+        "Год публикации неизвестен; научной экспертизы нет."
+      ],
+      "source_support": "context_only_not_a_literal_source_fact",
+      "review_record": {
+        "path": "datasets/scientific_review_claims.json",
+        "sha256": "8316e6ead1e3a240caa8b139e42829af200323aabd10ca5f5ea1137f0fb2b075",
+        "claim_id": "selenga-sediments-05",
+        "note": "Запись прежнего просмотра изображения, не новый визуальный аудит."
+      },
+      "context_years": [
+        2015
+      ],
+      "indicator": "Изображение оригинала подтверждает это расхождение порядка двух последних показателей.",
+      "statistic_type": null,
+      "territory": "авандельта Селенги",
+      "unit": null,
+      "publication_year": null,
+      "card_id": "V8b0a831762a6856e"
+    },
+    {
+      "unit_ids": [
+        "U18"
+      ],
+      "article_evidence": {
+        "start": 2864,
+        "end": 2991,
+        "quote": "Проект сохраняет обе записи и не выбирает исправленное значение: нужны первичные результаты анализа или уточнение составителей."
+      },
+      "source_evidence_ids": [
+        "S1",
+        "S2"
+      ],
+      "features": null,
+      "observation_years": null,
+      "review_status": "repository_state_checked",
+      "matchable": false,
+      "expert_review": false,
+      "limitations": [
+        "Источник/контекст указан отдельно от силы подтверждения. Не формировать числовое наблюдение из интерпретации или пробела.",
+        "Год публикации неизвестен; научной экспертизы нет."
+      ],
+      "source_support": "context_only_not_a_literal_source_fact",
+      "repository_evidence": [
+        {
+          "path": "datasets/observations.json",
+          "sha256": "5f97f74152f4446435c852ce9b3dfae659603138111068f862a6d6a830071c83"
+        },
+        {
+          "path": "datasets/selenga_claim_registry.json",
+          "sha256": "15938639127aa0e374e83eef0689f6d4bed19c5e51cf53ac81b330e20515f33d"
+        }
+      ],
+      "context_years": [
+        2015
+      ],
+      "indicator": "Проект сохраняет обе записи и не выбирает исправленное значение: нужны первичные результаты анализа ",
+      "statistic_type": null,
+      "territory": "авандельта Селенги",
+      "unit": null,
+      "publication_year": null,
+      "card_id": "V4cdcaef292fe9fad"
+    },
+    {
+      "unit_ids": [
+        "U19"
+      ],
+      "article_evidence": {
+        "start": 2992,
+        "end": 3056,
+        "quote": "Числа из спорного абзаца не включаются в проверенные наблюдения."
+      },
+      "source_evidence_ids": [
+        "S1"
+      ],
+      "features": null,
+      "observation_years": null,
+      "review_status": "repository_state_checked",
+      "matchable": false,
+      "expert_review": false,
+      "limitations": [
+        "Источник/контекст указан отдельно от силы подтверждения. Не формировать числовое наблюдение из интерпретации или пробела.",
+        "Год публикации неизвестен; научной экспертизы нет."
+      ],
+      "source_support": "context_only_not_a_literal_source_fact",
+      "repository_evidence": [
+        {
+          "path": "datasets/observations.json",
+          "sha256": "5f97f74152f4446435c852ce9b3dfae659603138111068f862a6d6a830071c83"
+        },
+        {
+          "path": "datasets/selenga_claim_registry.json",
+          "sha256": "15938639127aa0e374e83eef0689f6d4bed19c5e51cf53ac81b330e20515f33d"
+        }
+      ],
+      "context_years": [
+        2015
+      ],
+      "indicator": "Числа из спорного абзаца не включаются в проверенные наблюдения.",
+      "statistic_type": null,
+      "territory": "авандельта Селенги",
+      "unit": null,
+      "publication_year": null,
+      "card_id": "Ve9b3f7f549df9b87"
+    },
+    {
+      "unit_ids": [
+        "U20"
+      ],
+      "article_evidence": {
+        "start": 3057,
+        "end": 3169,
+        "quote": "Эта неоднозначность не отменяет того, что разные классификационные оценки относятся к бенз(а)пирену и сумме ПАУ."
+      },
+      "source_evidence_ids": [
+        "S1",
+        "S2"
+      ],
+      "features": null,
+      "observation_years": [
+        2015
+      ],
+      "review_status": "interpretation_or_method_limit_needs_review",
+      "matchable": false,
+      "expert_review": false,
+      "limitations": [
+        "Источник/контекст указан отдельно от силы подтверждения. Не формировать числовое наблюдение из интерпретации или пробела.",
+        "Год публикации неизвестен; научной экспертизы нет."
+      ],
+      "source_support": "context_only_not_a_literal_source_fact",
+      "indicator": "Эта неоднозначность не отменяет того, что разные классификационные оценки относятся к бенз(а)пирену ",
+      "statistic_type": null,
+      "territory": "авандельта Селенги",
+      "unit": null,
+      "publication_year": null,
+      "card_id": "Vf83ab078d1aa2717"
+    },
+    {
+      "unit_ids": [
+        "U21"
+      ],
+      "article_evidence": {
+        "start": 3298,
+        "end": 3409,
+        "quote": "Наблюдения подтверждают неоднородность авандельты и необходимость различать протоки, среды и химические группы."
+      },
+      "source_evidence_ids": [
+        "S1",
+        "E19_31",
+        "E22_40"
+      ],
+      "features": null,
+      "observation_years": null,
+      "review_status": "interpretation_or_method_limit_needs_review",
+      "matchable": false,
+      "expert_review": false,
+      "limitations": [
+        "Источник/контекст указан отдельно от силы подтверждения. Не формировать числовое наблюдение из интерпретации или пробела.",
+        "Год публикации неизвестен; научной экспертизы нет."
+      ],
+      "source_support": "context_only_not_a_literal_source_fact",
+      "indicator": "Наблюдения подтверждают неоднородность авандельты и необходимость различать протоки, среды и химичес",
+      "statistic_type": null,
+      "territory": "авандельта Селенги",
+      "unit": null,
+      "publication_year": null,
+      "card_id": "V2144cef48a046433"
+    },
+    {
+      "unit_ids": [
+        "U22"
+      ],
+      "article_evidence": {
+        "start": 3410,
+        "end": 3559,
+        "quote": "По выбранным страницам нельзя утверждать, что дельта полностью задерживает загрязнение или, наоборот, является постоянным источником для всего озера."
+      },
+      "source_evidence_ids": [
+        "S1",
+        "E19_31",
+        "E22_40"
+      ],
+      "features": null,
+      "observation_years": null,
+      "review_status": "interpretation_or_method_limit_needs_review",
+      "matchable": false,
+      "expert_review": false,
+      "limitations": [
+        "Источник/контекст указан отдельно от силы подтверждения. Не формировать числовое наблюдение из интерпретации или пробела.",
+        "Год публикации неизвестен; научной экспертизы нет."
+      ],
+      "source_support": "context_only_not_a_literal_source_fact",
+      "indicator": "По выбранным страницам нельзя утверждать, что дельта полностью задерживает загрязнение или, наоборот",
+      "statistic_type": null,
+      "territory": "авандельта Селенги",
+      "unit": null,
+      "publication_year": null,
+      "card_id": "V27e662c052df9a4d"
+    },
+    {
+      "unit_ids": [
+        "U25"
+      ],
+      "article_evidence": {
+        "start": 3834,
+        "end": 3933,
+        "quote": "Речной вынос за 2024–2025 годы уже имеется в другом наборе, но относится к иному объекту измерения."
+      },
+      "source_evidence_ids": [
+        "E19_31"
+      ],
+      "features": null,
+      "observation_years": [
+        2024,
+        2025
+      ],
+      "review_status": "repository_scope_ambiguous_needs_editorial_review",
+      "matchable": false,
+      "expert_review": false,
+      "limitations": [
+        "Источник/контекст указан отдельно от силы подтверждения. Не формировать числовое наблюдение из интерпретации или пробела.",
+        "Год публикации неизвестен; научной экспертизы нет.",
+        "В observations за 2024–2025 нет территорий Селенги. Есть другие притоки: Баргузин, Турка, Верхняя Ангара и Тыя. Общая ссылка не подтверждает ряд Селенги."
+      ],
+      "source_support": "context_only_not_a_literal_source_fact",
+      "repository_evidence": [
+        {
+          "path": "datasets/observations.json",
+          "sha256": "5f97f74152f4446435c852ce9b3dfae659603138111068f862a6d6a830071c83"
+        },
+        {
+          "path": "datasets/selenga_claim_registry.json",
+          "sha256": "15938639127aa0e374e83eef0689f6d4bed19c5e51cf53ac81b330e20515f33d"
+        }
+      ],
+      "indicator": "Речной вынос за 2024–2025 годы уже имеется в другом наборе, но относится к иному объекту измерения.",
+      "statistic_type": null,
+      "territory": null,
+      "unit": null,
+      "publication_year": null,
+      "card_id": "V47b0f3d4a4e5429c"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S2",
+      "source_id": "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
+      "sha256": "26dc3610938c5b8f91e85b4179ee1092f20aa03684135d0534b8ad2ab9629023",
+      "page": 26,
+      "report_year": 2015,
+      "observation_period": null,
+      "quote": "Содержание полициклических ароматических углеводородов в донных отложениях\n                       на авандельте р. Селенга в 2011–2015 гг., в нг/г с.о.\n                     (в числителе – интервалы значений, в знаменателе – средние значения)\n                                                                    Канцерогены –  Канцерогены –                   БП –     БП –     ПАУ –     ПАУ –          Годы                                                       протока Усть-    весь полигон                         протока       весь        весь       протока         наблюдений                                                    Харауз (% от   (% от суммы                       Усть-Харауз   полигон    полигон    Усть-Харауз                                                              суммы ПАУ)      ПАУ)\n                               0,5–7,8       0,1–7,8     20,0–125,9     27,2–125,9        6,4–22,9           1,2–22,9            2011 г.                                  3,2            1,4          57,0           70,4         17,8 (31,2 %)      10,2 (17,5 %)\n                               0,8–1,7       0,2–1,7      17,7–61,5      19,9–61,5        7,0–11,0           4,7–11,2            2013 г.                                  1,0            1,0          33,4           33,8          9,3 (27,8 %)        8,4 (25,1 %)\n                               0,8–3,1       0,1–3,0     24,3–149,9     65,4–149,9        7,2–17,1           1,2–17,1            2014 г.                                  1,7            1,0          65,7          103,0        11,0 (16,7 %)       6,3 (9,6 %)\n                               1,2–7,9       0,1–7,9      3,0–124,9     24,3–124,9        9,9–61,8           1,0–61,8            2015 г.                                  3,9            2,1          36,9           61,7         30,3 (49,2 %)      17,1 (43,5 %)\n        Изменение по\n        средним (%),       129,4        110         –43,8          –40,1            175,5             171,4\n        2015 г. / 2014 г.",
+      "quote_basis": "exact_cached_page_text",
+      "source_authenticity": "mirror_unverified",
+      "novelty": "already_quoted_fragment",
+      "publication_year": null
+    },
+    {
+      "id": "S1",
+      "source_id": "drive-1FFG7dMsfKpCRp3yWVm8m2C9vjxK8ATab",
+      "sha256": "26dc3610938c5b8f91e85b4179ee1092f20aa03684135d0534b8ad2ab9629023",
+      "page": 26,
+      "report_year": 2015,
+      "observation_period": null,
+      "quote": "Максимальное содержание ПАУ, бенз(а)пирена и канцерогенных аренов в 2015 г. были\n      отмечены на авандельте реки непосредственно напротив выносов протокой Усть-Харауз:\n       124,9 нг/г с.о., 61,8 нг/г с.о. и 7,9 нг/г с.о. (таблица 1.1.1.3.6). Уровень загрязненности на\n1.1  авандельте р. Селенга по бенз(а)пирену можно отнести к фоновому значению, а по сумме    ПАУ – как слабо загрязненному. Однако следует отметить, что содержание канцерогенных\n      аренов в 2015 г. увеличилось по сравнению с 2014 г. в 2,7 раза.",
+      "quote_basis": "exact_cached_page_text",
+      "source_authenticity": "mirror_unverified",
+      "novelty": "already_quoted_fragment",
+      "publication_year": null
+    },
+    {
+      "id": "E19_31",
+      "source_id": "drive-1RWGLrOzFO32Jxrlv-B2n_PafSFoRVySn",
+      "sha256": "747fadeaf55107fbf9fbb5965696912195b4795436a9f300c009a4f5e5d9839a",
+      "page": 31,
+      "report_year": 2019,
+      "publication_year": null,
+      "quote": "Состояние донных отложений на авандельте реки Селенги\n    В 2019 году проведена одна съёмка в сентябре, отобрано 12 проб с глубины 23 –\n58 м. В 2019 году, в сравнении со съёмкой 2018 года, среднее содержание растворённого\nкислорода в грунтовой воде увеличилось в 1,4 раза до значения 9,27 мг/дм3. В грунтовой\nводе увеличилось среднее содержание азота аммонийного в 3,2 раза, железа (II) – в 1,5\nраза, железа (III) – в 3,3 раза, летучих фенолов – с нулевых значений до 0,001 мг/дм3, азота\nнитритного и нитратного – с нулевых значений до 0,005 и 0,031 мг/дм3 соответственно.\nСреднее содержание фосфора фосфатного уменьшилось в 1,7 раза. Уровень водородного",
+      "source_authenticity": "mirror_unverified"
+    },
+    {
+      "id": "E19_32",
+      "source_id": "drive-1RWGLrOzFO32Jxrlv-B2n_PafSFoRVySn",
+      "sha256": "747fadeaf55107fbf9fbb5965696912195b4795436a9f300c009a4f5e5d9839a",
+      "page": 32,
+      "report_year": 2019,
+      "publication_year": null,
+      "quote": "30\n\nпоказателя рН находился в диапазоне 7,53-8,03.\n    В донных отложениях увеличилось среднее содержание органического углерода в 1,3\nраза,  уменьшилось  содержание  сульфидной  серы  в  5,2  раза,  легкогидролизуемых\nуглеводов (ЛГУ) – в 4,7 раза, трудногидролизуемых углеводов (ТГУ) – в 1,7 раза, по\nлигниногумусовому комплексу (ЛГК) – в 1,5 раза. Среднее содержание органического\nазота и значение, рассчитанное по отношению ТГУ+ЛГК к общей органике остались на\nуровне 2018 года.\n     Гидрохимическая характеристика грунтовой воды и геохимическая характеристика\nдонных отложений на авандельте р. Селенги представлены в таблицах 1.1.1.3.3 и 1.1.1.3.4.\n\n                                                              Таблица 1.1.1.3.3\n    Гидрохимические характеристики грунтовой воды на авандельте р. Селенги,\n     2019 год, мг/дм3 (числитель - пределы, знаменатель - среднее значение)\n                            Показатель                       сентябрь\n         1  Растворённый кислород                                  8,64 - 10,02\n                                                                           9,27\n         2  Минеральный азот                                     0,008 - 0,141\n                                                                         0,068\n         3  Фосфатный фосфор                                    0,001 - 0,017\n                                                                         0,006\n         4  Органические кислоты, летучие                                                                                                     -\n         5  Органические кислоты, нелетучие                                                                                                     -\n         6  Летучие фенолы                                        0,000 - 0,002\n                                                                         0,001\n\n                                                              Таблица 1.1.1.3.4\n     Геохимические характеристики донных отложений на авандельте р. Селенги,\n           2019 год, (числитель - пределы, знаменатель - среднее значение)\n\n                             Показатель                        сентябрь\n        1   Органический азот, %                                        0,15 - 0,52\n                                                                              0,27\n        2   Органический углерод, %                                    0,95 - 3,99\n                                                                              1,92\n        3   Сульфидная сера, мг/кг                                      1,28 - 188,53\n                                                                           28,47\n        4   Легкогидролизуемые углеводы (ЛГУ), %                      0,12 - 0,84\n                                                                              0,47\n        5   Трудногидролизуемые углеводы (ТГУ), %                    0,13 - 0,58\n                                                                              0,33\n        6   Лигнино-гумусовый комплекс (ЛГК), %                       0,47 - 1,25\n                                                                              0,78\n        7  ТГУ+ЛГК / Общая сумма органических веществ, %           13 - 44\n                                                                     26",
+      "source_authenticity": "mirror_unverified"
+    },
+    {
+      "id": "E22_40",
+      "source_id": "drive-1oYm8VhJ3_eRNdxbrGfLXhf6_vI6s6SJq",
+      "sha256": "6363b7b441d241e4718714b0062a2e011647e14b8219193f0a40a08270568e8e",
+      "page": 40,
+      "report_year": 2022,
+      "publication_year": null,
+      "quote": "О состоянии озера Байкал и мерах по его охране в 2022 году\n\n                                                           Таблица 1.1.1.3.4\n            Гидрохимическая характеристика грунтовой воды\n             в районе авандельты р. Селенги, 2022 год, мг/дм3\n             (числитель – пределы, знаменатель – среднее значение)\n№                     Показатель                            Сентябрь\n                                                                          8,08–10,34 1     Растворенный кислород                                                                               9,30\n                                                                         0,017–0,041 2     Минеральный азот                                                                            0,024\n                                                                         0,007–0,016 3    Фосфатный фосфор                                                                            0,010\n 4     Органические кислоты, летучие                                     –\n 5     Органические кислоты, нелетучие                                   –\n                                                                         0,000–0,003 6     Летучие фенолы                                                                            0,001\n\n\n                                                           Таблица 1.1.1.3.5\n            Геохимическая характеристика донных отложений\n                в районе авандельты р. Селенги, 2022 год\n             (числитель – пределы, знаменатель – среднее значение)\n№                     Показатель                            Сентябрь\n                                                                            0,07–0,90 1     Органический азот, %                                                                                0,27\n                                                                            0,90–2,48 2     Органический углерод, %                                                                                1,77\n                                                                            1,64–7,17 3     Сульфидная сера, мг/кг                                                                                4,20\n                                                                            0,12–0,95 4     Легкогидролизуемые углеводы (ЛГУ), %                                                                                0,63\n                                                                            0,92–2,08 5     Трудногидролизуемые углеводы (ТГУ), %                                                                                1,43\n                                                                            1,44–2,44 6     Лигнино-гумусовый комплекс (ЛГК), %                                                                                2,03\n                                                                     55–85 7    ТГУ+ЛГК / общая сумма органических веществ, %                                                                      70\n\n\n                                                           Таблица 1.1.1.3.6\n            Гидрохимическая характеристика грунтовой воды\n             озера Байкал в районе трассы БАМ, 2022 год, мг/дм3\n             (числитель – пределы, знаменатель – среднее значение)\n№                 Показатель                Июнь            Сентябрь\n                                                         6,85–11,33             6,18–10,66 1     Растворенный кислород                                                              9,87                    8,60\n                                                        0,122–0,345            0,002–0,609 2    Минеральный азот                                                           0,218                  0,127\n                                                        0,000–0,031            0,003–0,067 3    Фосфатный фосфор                                                           0,007                  0,018\n                                                       –                    – 4     Органические кислоты, летучие\n                                                       –                    – 5     Органические кислоты, нелетучие\n                                                        0,000–0,003            0,000–0,003 6     Летучие фенолы                                                           0,001                  0,001\n\n\n\n\n                                      39",
+      "source_authenticity": "mirror_unverified"
+    }
+  ],
+  "deferred": [
+    {
+      "unit_id": "U23",
+      "quote": "Для оценки таких функций нужны балансы поступления, осаждения и переноса, а не только локальные концентрации.",
+      "reason": "Для требования балансов нужна отдельная методическая библиография; локальные цитаты не являются прямым доказательством всей формулировки.",
+      "status": "deferred_not_a_verified_fact",
+      "context_source_ids": [
+        "E19_31",
+        "E22_40"
+      ]
+    },
+    {
+      "unit_id": "U24",
+      "quote": "Новые числовые ряды по донным отложениям не сформированы: не проверены соответствие станций, влажная/сухая масса и методики определения.",
+      "reason": "Состояние проекта и непроверенные методики требуют отдельного реестра сопоставимости, а не фиктивного экологического показателя.",
+      "status": "deferred_not_a_verified_fact",
+      "context_source_ids": [
+        "E19_31",
+        "E22_40"
+      ]
+    },
+    {
+      "unit_id": "U26",
+      "quote": "Между ним и данными грунтовой воды прямого преобразования нет.",
+      "reason": "Требуется отдельное описание модели/границ пересчёта речного выноса и грунтовой воды; не нормализовано как доказанный природный факт.",
+      "status": "deferred_not_a_verified_fact",
+      "context_source_ids": [
+        "E19_31",
+        "E22_40"
+      ]
+    }
+  ],
+  "absence_authorized": false,
+  "semantic_completeness_established": false,
+  "expert_review": false
+}
